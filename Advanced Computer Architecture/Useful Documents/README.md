@@ -2,9 +2,9 @@
 
 
 ## Tomasulo Algorithm
-1. First list item
-   - First nested list item
-     - Second nested list item
+1. Useful documents for read
+   - [CS422](https://www.cse.iitk.ac.in/users/biswap/CS422/L12-Tomasulo.pdf)
+   - 
 
 
 ## Scoreboarding Algorithm
