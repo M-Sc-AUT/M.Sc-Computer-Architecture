@@ -35,7 +35,7 @@ $ python3 main.py
  ```
 - The output of the code is as follows:
 
-![images][https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Advanced%20Computer%20Architecture/Useful%20Documents/Images/img2.png]
+![images](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Advanced%20Computer%20Architecture/Useful%20Documents/Images/img2.png)
 
 
 
