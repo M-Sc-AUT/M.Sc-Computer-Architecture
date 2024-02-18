@@ -8,8 +8,8 @@
 2. Useful videos:
    - [Link1]()
 3. Simulator:
-   - 
-4. 
+   In this code we developed a python code for simulation Tomasulo algorithm
+5. 
 
 
 ## Scoreboarding Algorithm
