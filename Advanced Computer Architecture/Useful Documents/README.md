@@ -16,7 +16,12 @@ In this code we developed a python code for simulation Tomasulo algorithm. You c
 
 #### How run?
 - In first, you should write an assembly code in ``code.in`` file like below:
-![images](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Advanced%20Computer%20Architecture/Useful%20Documents/Images)
+
+```assembly
+console.log('javascript')
+```
+
+
 - 
 
 
