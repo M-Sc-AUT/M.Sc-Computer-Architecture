@@ -29,6 +29,8 @@ Bne R1 R0 -12
 Add.d F20 F2 F2
 ```
 - after write instructions code, you should run ``main.py`` file with this command:
+
+
 ``` $ python3 main.py ```
 
 
