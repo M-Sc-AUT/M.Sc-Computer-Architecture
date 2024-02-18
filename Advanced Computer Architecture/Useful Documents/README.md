@@ -16,6 +16,7 @@ In this code we developed a python code for simulation Tomasulo algorithm. You c
 
 #### How run?
 - In first, you should write an assembly code in ``code.in`` file
+- 
 
 
 
