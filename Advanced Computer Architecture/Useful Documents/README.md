@@ -7,7 +7,9 @@
    - [CS425](https://www.info425.ece.mcgill.ca/tutorials/T06-Tomasulo.pdf), Mcgill University
 2. Useful videos:
    - [Link1]()
-3. 
+3. Simulator:
+   - 
+4. 
 
 
 ## Scoreboarding Algorithm
