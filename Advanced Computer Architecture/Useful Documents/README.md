@@ -2,8 +2,9 @@
 
 
 ## Tomasulo Algorithm
-1.Useful document for read
-2. rrr
+1. First list item
+   - First nested list item
+     - Second nested list item
 
 
 ## Scoreboarding Algorithm
