@@ -6,7 +6,7 @@
    - [CS422](https://www.cse.iitk.ac.in/users/biswap/CS422/L12-Tomasulo.pdf), Indian Institute of Technology Kanpur
    - [CS425](https://www.info425.ece.mcgill.ca/tutorials/T06-Tomasulo.pdf), Mcgill University
 2. Useful videos:
-   - []()
+   - [Link1]()
 3. 
 
 
