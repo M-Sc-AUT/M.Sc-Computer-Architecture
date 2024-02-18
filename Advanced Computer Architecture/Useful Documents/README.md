@@ -15,7 +15,7 @@
 In this code we developed a python code for simulation Tomasulo algorithm. You can check source code [here](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Advanced%20Computer%20Architecture/Useful%20Documents/Simulator/Tomasulo)
 
 #### How run?
-- In first, you should write an assembly code in ``code.in`` file like below:
+- In first, you should write an instruction in assembly code in ``code.in`` file like below:
 
 ```asm
 Ld F2 0(R1)
@@ -28,9 +28,8 @@ Addi R2 R2 -4
 Bne R1 R0 -12
 Add.d F20 F2 F2
 ```
-
-
-- 
+- after write instructions code, you should run ``main.py`` file with this command:
+``` $ python3 main.py ```
 
 
 
