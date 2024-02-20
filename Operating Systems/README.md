@@ -1,6 +1,6 @@
 # CE303: Operating Systems- Fall 2023
 
-### Instructor: [Dr. Ahmad Javasi](https://ce.aut.ac.ir/~sajavadi/)
+### Instructor: [Dr. Ahmad Javasi](https://scholar.google.com/citations?user=Va7RTUsAAAAJ&hl=en)
 ### E-mail: [sajavadi@aut.ac.ir](mailto:sajavadi@aut.ac.ir)
 
 ### Reference:
