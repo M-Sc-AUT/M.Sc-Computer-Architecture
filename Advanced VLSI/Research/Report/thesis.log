@@ -1,0 +1,1728 @@
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.1.7)  14 FEB 2024 23:17
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2023-06-01>
+L3 programming layer <2023-06-05>
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@chapter=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (./styles/common.tex
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen141
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count190
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count191
+\leftroot@=\count192
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count193
+\DOTSCASE@=\count194
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count195
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count196
+\dotsspace@=\muskip16
+\c@parentequation=\count197
+\dspbrk@lvl=\count198
+\tag@help=\toks19
+\row@=\count199
+\column@=\count266
+\maxfields@=\count267
+\andhelp@=\toks20
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks21
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-05-16 v7.00y Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-05-16 v2.51 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count268
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count269
+)
+\@linkdim=\dimen150
+\Hy@linkcounter=\count270
+\Hy@pagecounter=\count271
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-05-16 v7.00y Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count272
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-05-16 v7.00y Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4050.
+Package hyperref Info: Hyper figures OFF on input line 4167.
+Package hyperref Info: Link nesting OFF on input line 4172.
+Package hyperref Info: Hyper index ON on input line 4175.
+Package hyperref Info: Plain pages OFF on input line 4182.
+Package hyperref Info: Backreferencing OFF on input line 4187.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4434.
+\c@Hy@tempcnt=\count273
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4772.
+\XeTeXLinkMargin=\dimen151
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count274
+\Field@Width=\dimen152
+\Fld@charsize=\dimen153
+Package hyperref Info: Hyper figures OFF on input line 6051.
+Package hyperref Info: Link nesting OFF on input line 6056.
+Package hyperref Info: Hyper index ON on input line 6059.
+Package hyperref Info: backreferencing OFF on input line 6066.
+Package hyperref Info: Link coloring ON on input line 6069.
+Package hyperref Info: Link coloring with OCG OFF on input line 6076.
+Package hyperref Info: PDF/A mode OFF on input line 6081.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count275
+\c@Item=\count276
+\c@Hfootnote=\count277
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2023-05-16 v7.00y Hyperref driver for XeTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box53
+\c@Hy@AnnotLevel=\count278
+\HyField@AnnotCount=\count279
+\Fld@listcount=\count280
+\c@bookmark@seq@number=\count281
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip53
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2022/19/23 v0.72 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Package option `usenames' ignored on input line 218.
+Package xcolor Info: Driver file: xetex.def on input line 227.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count282
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count283
+\pstFP@xia=\count284
+\pstFP@xib=\count285
+\pstFP@xfa=\count286
+\pstFP@xfb=\count287
+\pstFP@rega=\count288
+\pstFP@regb=\count289
+\pstFP@regs=\count290
+\pstFP@times=\count291
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen154
+\pgfutil@tempdimb=\dimen155
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box54
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks29
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen156
+\pgf@xa=\dimen157
+\pgf@xb=\dimen158
+\pgf@xc=\dimen159
+\pgf@y=\dimen160
+\pgf@ya=\dimen161
+\pgf@yb=\dimen162
+\pgf@yc=\dimen163
+\c@pgf@counta=\count292
+\c@pgf@countb=\count293
+\c@pgf@countc=\count294
+\c@pgf@countd=\count295
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen164
+\pgfmath@count=\count296
+\pgfmath@box=\box55
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count297
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen165
+\pgffor@skip=\dimen166
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+))
+\psLoopIndex=\count298
+
+`PSTricks' v3.19  <2023/04/30> (tvz,hv)
+\pst@dima=\dimen167
+\pst@dimb=\dimen168
+\pst@dimc=\dimen169
+\pst@dimd=\dimen170
+\pst@dimg=\dimen171
+\pst@dimh=\dimen172
+\pst@dimm=\dimen173
+\pst@dimn=\dimen174
+\pst@dimo=\dimen175
+\pst@dimp=\dimen176
+\pst@hbox=\box56
+\pst@ibox=\box57
+\pst@boxg=\box58
+\pst@cnta=\count299
+\pst@cntb=\count300
+\pst@cntc=\count301
+\pst@cntd=\count302
+\pst@cntg=\count303
+\pst@cnth=\count304
+\pst@cntm=\count305
+\pst@cntn=\count306
+\pst@cnto=\count307
+\pst@cntp=\count308
+\@zero=\count309
+\pst@toks=\toks35
+--- We are running latex or xelatex ---
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-color.tex)
+\psunit=\dimen177
+\psxunit=\dimen178
+\psyunit=\dimen179
+\pst@C@@rType=\count310
+\pslinewidth=\dimen180
+\psk@startLW=\dimen181
+\psk@endLW=\dimen182
+
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-arrows.tex
+\pshooklength=\dimen183
+\pshookwidth=\dimen184
+)
+\pst@customdefs=\toks36
+
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-dots.tex)
+\pslinearc=\dimen185
+\pst@symbolStep=\dimen186
+\pst@symbolWidth=\dimen187
+\pst@symbolLinewidth=\dimen188
+\everypsbox=\toks37
+\psframesep=\dimen189
+\pslabelsep=\dimen190
+\sh@wgridXunit=\dimen191
+\sh@wgridYunit=\dimen192
+\pst@shift=\dimen193
+\ps@imagectr=\count311
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg
+Using PSTricks configuration for LaTeX+dvipdfmx
+)))
+File: pstricks.tex 2023/04/30 v3.19 `PSTricks' (tvz,hv)
+ (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+
+>>> Loading XeTeX special macros
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-xetex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+)
+\Gin@req@height=\dimen194
+\Gin@req@width=\dimen195
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip54
+\subfigcapskip=\skip55
+\subfigcaptopadj=\dimen196
+\subfigbottomskip=\skip56
+\subfigcapmargin=\dimen197
+\subfiglabelskip=\skip57
+\c@subfigure=\count312
+\c@lofdepth=\count313
+\c@subtable=\count314
+\c@lotdepth=\count315
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip58
+\subfig@bottom=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen198
+\WF@size=\dimen199
+\c@WF@wrappedlines=\count316
+\WF@box=\box59
+\WF@everypar=\toks38
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count317
+\Gm@cntv=\count318
+\c@Gm@tempcnt=\count319
+\Gm@bindingoffset=\dimen256
+\Gm@wd@mp=\dimen257
+\Gm@odd@mp=\dimen258
+\Gm@even@mp=\dimen259
+\Gm@layoutwidth=\dimen260
+\Gm@layoutheight=\dimen261
+\Gm@layouthoffset=\dimen262
+\Gm@layoutvoffset=\dimen263
+\Gm@dimlist=\toks39
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/euscript.sty
+Package: euscript 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count320
+\mult@box=\box60
+\multicol@leftmargin=\dimen264
+\c@unbalance=\count321
+\c@collectmore=\count322
+\doublecol@number=\count323
+\multicoltolerance=\count324
+\multicolpretolerance=\count325
+\full@width=\dimen265
+\page@free=\dimen266
+\premulticols=\dimen267
+\postmulticols=\dimen268
+\multicolsep=\skip60
+\multicolbaselineskip=\skip61
+\partial@page=\box61
+\last@line=\box62
+\mc@boxedresult=\box63
+\maxbalancingoverflow=\dimen269
+\mult@rightbox=\box64
+\mult@grightbox=\box65
+\mult@firstbox=\box66
+\mult@gfirstbox=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\c@minrows=\count326
+\c@columnbadness=\count327
+\c@finalcolumnbadness=\count328
+\last@try=\dimen270
+\multicolovershoot=\dimen271
+\multicolundershoot=\dimen272
+\mult@nat@firstbox=\box104
+\colbreak@box=\box105
+\mc@col@check@num=\count329
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count330
+\multirow@dima=\skip63
+\bigstrutjot=\dimen273
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen274
+\captionmargin=\dimen275
+\caption@leftmargin=\dimen276
+\caption@rightmargin=\dimen277
+\caption@width=\dimen278
+\caption@indent=\dimen279
+\caption@parindent=\dimen280
+\caption@hangindent=\dimen281
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count331
+\c@continuedfloat=\count332
+Package caption Info: hyperref package is loaded.
+Package caption Info: subfigure package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count333
+\lst@gtempboxa=\box106
+\lst@token=\toks40
+\lst@length=\count334
+\lst@currlwidth=\dimen282
+\lst@column=\count335
+\lst@pos=\count336
+\lst@lostspace=\dimen283
+\lst@width=\dimen284
+\lst@newlines=\count337
+\lst@lineno=\count338
+\lst@maxwidth=\dimen285
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count339
+\lst@skipnumbers=\count340
+\lst@framebox=\box107
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/xepersian.sty
+Package: xepersian 2022/10/30 v24.8 (Release Women, Life, and Freedom) Persian 
+typesetting in XeLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-06-05 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2023-04-19 L3 backend support: XeTeX
+\g__graphics_track_int=\count341
+\l__pdf_internal_box=\box108
+\g__pdf_backend_object_int=\count342
+\g__pdf_backend_annotation_int=\count343
+\g__pdf_backend_link_int=\count344
+))
+Package: xparse 2023-02-02 L3 Experimental document command parser
+)
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count345
+\l__fontspec_language_int=\count346
+\l__fontspec_strnum_int=\count347
+\l__fontspec_tmp_int=\count348
+\l__fontspec_tmpa_int=\count349
+\l__fontspec_tmpb_int=\count350
+\l__fontspec_tmpc_int=\count351
+\l__fontspec_em_int=\count352
+\l__fontspec_emdef_int=\count353
+\l__fontspec_strong_int=\count354
+\l__fontspec_strongdef_int=\count355
+\l__fontspec_tmpa_dim=\dimen286
+\l__fontspec_tmpb_dim=\dimen287
+\l__fontspec_tmpc_dim=\dimen288
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/xepersian-persiancal.sty
+Package: xepersian-persiancal 2012/07/25 v0.2 provides Persian calendar
+\XePersian@i=\count356
+\XePersian@y=\count357
+\XePersian@m=\count358
+\XePersian@d=\count359
+\XePersian@latini=\count360
+\XePersian@persiani=\count361
+\XePersian@latinii=\count362
+\XePersian@persianii=\count363
+\XePersian@latiniii=\count364
+\XePersian@persianiii=\count365
+\XePersian@latiniv=\count366
+\XePersian@persianiv=\count367
+\XePersian@latinv=\count368
+\XePersian@persianv=\count369
+\XePersian@latinvi=\count370
+\XePersian@persianvi=\count371
+\XePersian@latinvii=\count372
+\XePersian@persianvii=\count373
+\XePersian@latinviii=\count374
+\XePersian@persianviii=\count375
+\XePersian@latinix=\count376
+\XePersian@persianix=\count377
+\XePersian@latinx=\count378
+\XePersian@persianx=\count379
+\XePersian@latinxi=\count380
+\XePersian@persianxi=\count381
+\XePersian@latinxii=\count382
+\XePersian@persianxii=\count383
+\XePersian@persianxiii=\count384
+\XePersian@temp=\count385
+\XePersian@temptwo=\count386
+\XePersian@tempthree=\count387
+\XePersian@yModHundred=\count388
+\XePersian@thirtytwo=\count389
+\XePersian@dn=\count390
+\XePersian@sn=\count391
+\XePersian@mminusone=\count392
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/xepersian-mathdigitspec.st
+y
+Package: xepersian-mathdigitspec 2022/05/20 v1.2.0 Unicode Persian math digits 
+in XeLaTeX
+) (/usr/share/texlive/texmf-dist/tex/xelatex/bidi/bidi.sty
+Package: bidi 2023/01/18 v39.7 (Release Serge Lang) Bidirectional typesetting i
+n plain TeX and LaTeX
+
+****************************************************
+* 
+* bidi package (Bidirectional typesetting in
+* plain TeX and LaTeX, using XeTeX engine)
+* 
+* Description: A convenient interface for
+* typesetting bidirectional texts in plain TeX
+* and LaTeX. The package includes adaptations
+* for use with many other commonly-used packages.
+* 
+* Copyright (c) 2007--2023 Vafa Khalighi
+* Copyright (c) 2018--2020 bidi-tex GitHub organization
+* 
+* v39.7 (Release Serge Lang), 2023/01/18
+* 
+* License: LaTeX Project Public License, version
+* 1.3c or higher (your choice)
+* 
+* Location on CTAN: /macros/xetex/latex/bidi
+* 
+* Issue tracker: https://github.com/kvafa/bidi/issues
+* 
+* Discussions: https://github.com/kvafa/bidi/discussions
+* 
+* Primary author of bidi package: Vafa Khalighi.
+* 
+****************************************************
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/biditools.sty
+Package: biditools 2022/06/15 v2.3 Programming tools for bidi package
+\@bidi@envbody=\toks41
+\@bidi@emptytoks=\toks42
+\bidi@poscount=\count393
+\bidi@tempcountb=\count394
+\bidi@temptoksa=\toks43
+\bidi@temptoksb=\toks44
+\bidi@dummies=\count395
+\bidi@are@these@correct=\toks45
+\bidi@toks@lista=\toks46
+\bidi@toks@listb=\toks47
+\bidi@stack@length=\count396
+\bidi@empty@stack=\toks48
+\bidi@looprepeat@depth=\count397
+)
+(/usr/share/texlive/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2022-04-07 v2.34 Module abspage for zref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2022-04-07 v2.34 Module base for zref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count398
+Package zref Info: New property: abspage on input line 65.
+)
+\@bidi@copyins@=\insert252
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/latex-xetex-bidi.def
+File: latex-xetex-bidi.def 2022/07/04 v1.4.9 bidi adaptations for `latex.ltx' f
+or XeTeX engine
+\bidi@n@everypar=\toks49
+\bidi@column@check@number=\count399
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/footnote-xetex-bidi.def
+File: footnote-xetex-bidi.def 2023/01/18 v1.2 bidi footnote macros for XeTeX en
+gine
+\c@footdir@label=\count400
+\footdir@toks=\toks50
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/book-xetex-bidi.def
+File: book-xetex-bidi.def 2017/06/09 v1.0 bidi adaptations for standard book cl
+ass for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/amsmath-xetex-bidi.def
+File: amsmath-xetex-bidi.def 2020/05/16 v1.2 bidi adaptations for amsmath packa
+ge for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/amstext-xetex-bidi.def
+File: amstext-xetex-bidi.def 2016/09/12 v0.2 bidi adaptations for amstext packa
+ge for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/caption-xetex-bidi.def
+File: caption-xetex-bidi.def 2010/07/25 v0.1 bidi adaptations for caption packa
+ge for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/caption3-xetex-bidi.def
+File: caption3-xetex-bidi.def 2013/04/01 v0.1 bidi adaptations for caption3 pac
+kage for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/color-xetex-bidi.def
+File: color-xetex-bidi.def 2013/04/08 v0.2 bidi adaptations for color package f
+or XeTeX engine
+LaTeX Info: Redefining \color on input line 49.
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/xcolor-xetex-bidi.def
+File: xcolor-xetex-bidi.def 2022/06/13 v0.3 bidi adaptations for xcolor package
+ for XeTeX engine
+LaTeX Info: Redefining \color on input line 48.
+LaTeX Info: Redefining \bidicolor on input line 91.
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/wrapfig-xetex-bidi.def
+File: wrapfig-xetex-bidi.def 2014/04/23 v0.3 bidi adaptations for wrapfig packa
+ge for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/graphicx-xetex-bidi.def
+File: graphicx-xetex-bidi.def 2017/06/17 v0.5 bidi adaptations for graphicx pac
+kage for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/geometry-xetex-bidi.def
+File: geometry-xetex-bidi.def 2017/01/14 v0.2 bidi adaptations for geometry pac
+kage for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/hyperref-xetex-bidi.def
+File: hyperref-xetex-bidi.def 2018/11/11 v1.1 bidi adaptations for hyperref pac
+kage for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/listings-xetex-bidi.def
+File: listings-xetex-bidi.def 2018/09/15 v1.5 bidi adaptations for listings pac
+kage for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/pstricks-xetex-bidi.def
+File: pstricks-xetex-bidi.def 2022/09/22 v0.6 bidi adaptations for pstricks pac
+kage for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/subfigure-xetex-bidi.def
+File: subfigure-xetex-bidi.def 2010/03/01 v0.1 bidi adaptations for subfigure p
+ackage for XeTeX engine
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/multicol-xetex-bidi.def
+File: multicol-xetex-bidi.def 2022/07/10 v1.4 bidi adaptations for multicol pac
+kage for XeTeX engine
+))
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/loadingorder-xetex-bidi.def
+File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
+ last package loaded
+)
+\bidi@digits=\count401
+\bidi@digits@charclass=\XeTeXcharclass1
+\bidi@sepmark@charclass=\XeTeXcharclass2
+)
+****************************************************
+* 
+* xepersian package (Persian for LaTeX, using XeTeX engine)
+* 
+* Description: The package supports Persian
+* typesetting, using fonts provided in the
+* distribution.
+* 
+* Copyright (c) 2008--2022 Vafa Khalighi
+* Copyright (c) 2018--2020 bidi-tex GitHub Organization
+* 
+* v24.8 (Release Women, Life, and Freedom), 2022/10/30
+* 
+* License: LaTeX Project Public License, version
+* 1.3c or higher (your choice)
+* 
+* Location on CTAN: /macros/xetex/latex/xepersian
+* 
+* Issue tracker: https://github.com/kvafa/xepersian/issues
+* 
+* Discussions: https://github.com/kvafa/xepersian/discussions
+* 
+* Primary author of xepersian package: Vafa Khalighi.
+* 
+****************************************************
+\xepersian@tcl=\count402
+\xepersian@ilg=\dimen289
+\xepersian@strutilg=\dimen290
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/loadingorder-xepersian.def
+File: loadingorder-xepersian.def 2018/09/29 v0.5 making sure that xepersian is 
+the last package loaded
+) (/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/footnote-xepersian.def
+File: footnote-xepersian.def 2017/08/09 v0.6 footnote macros for xepersian pack
+age
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/listings-xepersian.def
+File: listings-xepersian.def 2014/07/17 v0.3 bilingual captions for listings pa
+ckage
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/hyperref-xepersian.def
+File: hyperref-xepersian.def 2022/10/30 v0.8 xepersian adaptations for hyperref
+ package
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/url-xepersian.def
+File: url-xepersian.def 2022/02/18 v0.1 adaptations for url package
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/book-xepersian.def
+File: book-xepersian.def 2010/07/25 v0.2 adaptations for standard book class
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/localise-xepersian.def
+File: localise-xepersian.def 2022/06/06 v0.2c Persian localisation of LaTeX2e
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/latex-localise-commands-xe
+persian.def
+File: latex-localise-commands-xepersian.def 2014/02/05 v0.3 Persian localisatio
+n of LaTeX2e commands
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/xepersian-localise-command
+s-xepersian.def
+File: xepersian-localise-commands-xepersian.def 2012/07/25 v0.2 Persian localis
+ation of XePersian commands
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/latex-localise-environment
+s-xepersian.def
+File: latex-localise-environments-xepersian.def 2022/06/06 v0.3 Persian localis
+ation of LaTeX2e environments
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/xepersian-localise-environ
+ments-xepersian.def
+File: xepersian-localise-environments-xepersian.def 2010/07/25 v0.1 Persian loc
+alisation of XePersian and bidi environments
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/latex-localise-messages-xe
+persian.def
+File: latex-localise-messages-xepersian.def 2011/03/01 v0.1 localising LaTeX2e 
+messages
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/latex-localise-misc-xepers
+ian.def
+File: latex-localise-misc-xepersian.def 2012/01/01 v0.2 miscellaneous Persian l
+ocalisation of LaTeX2e
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/packages-localise-xepersia
+n.def
+File: packages-localise-xepersian.def 2013/04/24 v0.2 localising LaTeX2e Packag
+es
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/color-localise-xepersian.d
+ef
+File: color-localise-xepersian.def 2011/03/01 v0.1 localising color package
+)))
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/extrafootnotefeatures-xetex-bid
+i.def
+File: extrafootnotefeatures-xetex-bidi.def 2023/01/18 v2.5 bidi extra footnote 
+features for XeTeX engine
+\bidi@columnwidth=\dimen291
+\footmarkwidth=\skip64
+\footinsdim=\skip65
+\bidi@absolutepage@count=\count403
+\bidi@absolutefootnote@count=\count404
+\footinsv@r=\insert251
+\footinsv@l=\insert250
+\@mpfootinsv@r=\insert249
+\@mpfootinsv@l=\insert248
+\m@m@k=\count405
+\m@m@h=\dimen292
+\m@mipn@skip=\skip66
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xepersian/extrafootnotefeatures-xepe
+rsian.def
+File: extrafootnotefeatures-xepersian.def 2012/01/01 v0.2 footnote macros for e
+xtrafootnotefeatures option of xepersian package
+)
+
+Package fontspec Info: Font family 'lmroman10-regular(0)' created for font
+(fontspec)             'lmroman10-regular' with options
+(fontspec)             [Ligatures=TeX,Path,BoldFont={lmroman10-bold},BoldItalic
+Font={lmroman10-bolditalic},ItalicFont={lmroman10-italic},SmallCapsFont={lmroma
+ncaps10-regular},SlantedFont={lmromanslant10-regular},BoldSlantedFont={lmromans
+lant10-bold}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[lmroman10-regular]/OT:script=latn;language=dflt;map
+ping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[lmromancaps10-regular]/OT:script=latn;language=dflt
+;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[lmroman10-bold]/OT:script=latn;language=dflt;mappin
+g=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[lmromancaps10-regular]/OT:script=latn;language=dflt
+;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[lmroman10-italic]/OT:script=latn;language=dflt;mapp
+ing=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[lmromancaps10-regular]/OT:script=latn;language=dflt
+;mapping=tex-text;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->"[lmromanslant10-regular]/OT:script=latn;language=dfl
+t;mapping=tex-text;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->"[lmromancaps10-regular]/OT:script=latn;language=dflt
+;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[lmroman10-bolditalic]/OT:script=latn;language=dflt;
+mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[lmromancaps10-regular]/OT:script=latn;language=dflt
+;mapping=tex-text;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->"[lmromanslant10-bold]/OT:script=latn;language=dflt;m
+apping=tex-text;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->"[lmromancaps10-regular]/OT:script=latn;language=dflt
+;mapping=tex-text;"
+
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count406
+\c@ALG@rem=\count407
+\c@ALG@nested=\count408
+\ALG@tlm=\skip67
+\ALG@thistlm=\skip68
+\c@ALG@Lnr=\count409
+\c@ALG@blocknr=\count410
+\c@ALG@storecount=\count411
+\c@ALG@tmpcounter=\count412
+\ALG@tmplength=\skip69
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (./styles/alg-fa.tex)
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: 
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 693.27942pt, 79.49744pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=693.27942pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-31.8738pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=28.90755pt
+* \marginparwidth=38.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package fontspec Info: Font family 'Yas(0)' created for font 'Yas' with
+(fontspec)             options
+(fontspec)             [RawFeature={script=arab},Ligatures=PersianTeX,Scale=1.0
+9,Extension=.ttf,Path=styles/fonts/,BoldFont=Yas,ItalicFont=YAS
+(fontspec)             IT,BoldItalicFont=YAS BDIT].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1.09]"[styles/fonts/Yas.ttf]/OT:script=latn;langua
+ge=dflt;script=arab;mapping=persian-tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.09]"[styles/fonts/Yas.ttf]/OT:script=latn;langua
+ge=dflt;script=arab;mapping=persian-tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1.09]"[styles/fonts/YAS
+(fontspec)             IT.ttf]/OT:script=latn;language=dflt;script=arab;mapping
+=persian-tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1.09]"[styles/fonts/YAS
+(fontspec)             BDIT.ttf]/OT:script=latn;language=dflt;script=arab;mappi
+ng=persian-tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/Yas(0)/m/n' will be
+(Font)              scaled to size 13.07996pt on input line 51.
+
+Package fontspec Info: Font family 'Yas(1)' created for font 'Yas' with
+(fontspec)             options
+(fontspec)             [Ligatures=PersianTeX,Scale=1.09,Extension=.ttf,Path=sty
+les/fonts/,BoldFont=YAS
+(fontspec)             BD,ItalicFont=YAS IT,BoldItalicFont=YAS BDIT].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1.09]"[styles/fonts/Yas.ttf]/OT:script=latn;langua
+ge=dflt;mapping=persian-tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.09]"[styles/fonts/YAS
+(fontspec)             BD.ttf]/OT:script=latn;language=dflt;mapping=persian-tex
+-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1.09]"[styles/fonts/YAS
+(fontspec)             IT.ttf]/OT:script=latn;language=dflt;mapping=persian-tex
+-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1.09]"[styles/fonts/YAS
+(fontspec)             BDIT.ttf]/OT:script=latn;language=dflt;mapping=persian-t
+ex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+Package xepersian-mathdigitspec Info: DefiningthedefaultPersianmathdigitsfontas
+'Yas' on input line 60.
+\symOPERATORS=\mathgroup6
+\symnew@mathbf@font@digits=\mathgroup7
+\symnew@mathit@font@digits=\mathgroup8
+\symnew@mathrm@font@digits=\mathgroup9
+
+Package fontspec Info: Font family 'XBKayhanPook(0)' created for font 'XB
+(fontspec)             Kayhan Pook' with options
+(fontspec)             [RawFeature={script=arab},Ligatures=PersianTeX,Scale=1,P
+ath=styles/fonts/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[styles/fonts/XB Kayhan
+(fontspec)             Pook]/OT:script=latn;language=dflt;script=arab;mapping=p
+ersian-tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+\c@قضیه=\count413
+\c@مسئله=\count414
+\c@تعریف=\count415
+\c@مثال=\count416
+) (./styles/custom.tex) (./thesis.aux (./front/info.aux) (./front/template/titl
+e.aux) (./front/abstract.aux)
+(./chapters/introduction.aux) (./chapters/preliminaries.aux)
+(./chapters/literature.aux) (./chapters/results.aux) (./bibs/bibs.aux)
+(./front/abstract-eng.aux) (./front/template/title-eng.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
+8.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+Package hyperref Info: Link coloring ON on input line 28.
+ (./thesis.out)
+(./thesis.out)
+\@outlinefile=\write3
+\openout3 = `thesis.out'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 693.27942pt, 79.49744pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=693.27942pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-31.8738pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=28.90755pt
+* \marginparwidth=38.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count417
+\openout2 = `front/info.aux'.
+
+(./front/info.tex)
+\openout2 = `front/template/title.aux'.
+
+ (./front/template/title.tex
+File: front/template/images/logo.png Graphic file (type bmp)
+<front/template/images/logo.png>
+LaTeX Font Info:    Font shape `TU/Yas(0)/m/n' will be
+(Font)              scaled to size 15.69594pt on input line 10.
+LaTeX Font Info:    Font shape `TU/Yas(0)/m/n' will be
+(Font)              scaled to size 22.60652pt on input line 20.
+LaTeX Font Info:    Font shape `TU/Yas(0)/b/n' will be
+(Font)              scaled to size 22.60652pt on input line 20.
+LaTeX Font Info:    Font shape `TU/Yas(0)/b/n' will be
+(Font)              scaled to size 15.69594pt on input line 25.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/n' will be
+(Font)              scaled to size 13.07996pt on input line 34.
+ [1
+
+
+
+
+
+
+])
+\openout2 = `front/abstract.aux'.
+
+ (./front/abstract.tex
+LaTeX Font Info:    Font shape `TU/Yas(0)/b/n' will be
+(Font)              scaled to size 13.07996pt on input line 7.
+
+[1
+
+
+
+])
+LaTeX Font Info:    Font shape `TU/Yas(0)/m/n' will be
+(Font)              scaled to size 27.11911pt on input line 51.
+LaTeX Font Info:    Font shape `TU/Yas(0)/b/n' will be
+(Font)              scaled to size 27.11911pt on input line 51.
+ (./thesis.toc
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 13.07996pt on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/n' will be
+(Font)              scaled to size 8.71997pt on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/n' will be
+(Font)              scaled to size 6.53998pt on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(1)/bx/n' in size <12> not available
+(Font)              Font shape `TU/Yas(1)/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 13.07996pt on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(1)/bx/n' in size <8> not available
+(Font)              Font shape `TU/Yas(1)/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 8.71997pt on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(1)/bx/n' in size <6> not available
+(Font)              Font shape `TU/Yas(1)/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 6.53998pt on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/it' will be
+(Font)              scaled to size 13.07996pt on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/it' will be
+(Font)              scaled to size 8.71997pt on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/it' will be
+(Font)              scaled to size 6.53998pt on input line 2.
+ [2
+
+
+
+])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [3]
+(./thesis.lot)
+\tf@lot=\write5
+\openout5 = `thesis.lot'.
+
+ [4
+
+] (./thesis.lof)
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
+
+ [5
+
+]
+\openout2 = `chapters/introduction.aux'.
+
+ (./chapters/introduction.tex
+فصل 1.
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 27.11911pt on input line 2.
+LaTeX Font Info:    Font shape `TU/Yas(0)/m/n' will be
+(Font)              scaled to size 8.71997pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(0)/m/n' will be
+(Font)              scaled to size 10.89996pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/n' will be
+(Font)              scaled to size 10.89996pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/n' will be
+(Font)              scaled to size 7.62997pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/n' will be
+(Font)              scaled to size 5.44998pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/bx/n' in size <10> not available
+(Font)              Font shape `TU/Yas(1)/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 10.89996pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/bx/n' in size <7> not available
+(Font)              Font shape `TU/Yas(1)/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 7.62997pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/bx/n' in size <5> not available
+(Font)              Font shape `TU/Yas(1)/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 5.44998pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/it' will be
+(Font)              scaled to size 10.89996pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/it' will be
+(Font)              scaled to size 7.62997pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(1)/m/it' will be
+(Font)              scaled to size 5.44998pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(0)/m/n' will be
+(Font)              scaled to size 7.62997pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Yas(0)/m/n' will be
+(Font)              scaled to size 18.83513pt on input line 14.
+LaTeX Font Info:    Font shape `TU/Yas(0)/b/n' will be
+(Font)              scaled to size 18.83513pt on input line 14.
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 18.83513pt on input line 14.
+[1
+
+
+]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 36.
+
+LaTeX Font Info:    Font shape `TU/Yas(0)/m/n' will be
+(Font)              scaled to size 11.93546pt on input line 36.
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 37.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 38.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 43.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 44.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 45.
+
+[2]) [3]
+\openout2 = `chapters/preliminaries.aux'.
+
+ (./chapters/preliminaries.tex
+فصل 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2.
+
+[4
+
+
+
+
+]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 26.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 27.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 28.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 42.
+
+[5]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 43.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 44.
+
+File: figs/img1_DREAMPlace2_flow.png Graphic file (type bmp)
+<figs/img1_DREAMPlace2_flow.png>
+LaTeX Font Info:    Font shape `TU/Yas(0)/b/n' will be
+(Font)              scaled to size 11.93546pt on input line 52.
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 11.93546pt on input line 52.
+File: figs/img1_trainW.png Graphic file (type bmp)
+<figs/img1_trainW.png>
+File: figs/img2_trainNet.png Graphic file (type bmp)
+<figs/img2_trainNet.png>
+[6]
+File: figs/img3_output_circular.png Graphic file (type bmp)
+<figs/img3_output_circular.png>
+File: figs/img4.png Graphic file (type bmp)
+<figs/img4.png>
+File: figs/img5.png Graphic file (type bmp)
+<figs/img5.png>
+File: figs/img6.png Graphic file (type bmp)
+<figs/img6.png>
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 128.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 129.
+
+[7]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 130.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 131.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 132.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 133.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 134.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 135.
+
+[8]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 141.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 142.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 143.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 144.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 145.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 146.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 147.
+
+[9]
+LaTeX Font Info:    Font shape `TU/Yas(1)/b/n' will be
+(Font)              scaled to size 15.69594pt on input line 158.
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 194--200
+[][]
+ []
+
+[11]) [12]
+\openout2 = `chapters/literature.aux'.
+
+ (./chapters/literature.tex
+فصل 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2.
+
+[13
+
+
+
+
+]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 25.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 26.
+
+File: figs/img8.png Graphic file (type bmp)
+<figs/img8.png>
+[14]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 52.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 53.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 66.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 67.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 68.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 69.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 70.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 71.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 77.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 78.
+
+[15]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 79.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 80.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 81.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 82.
+
+
+Overfull \hbox (0.232pt too wide) in paragraph at lines 103--112
+[]\TU/lmtt/m/n/12 # * Pytorch 1.7.1. Other version may also work, but have not 
+been tested. []
+ []
+
+
+Overfull \hbox (22.89204pt too wide) in paragraph at lines 103--112
+[][]\TU/lmtt/m/n/12 $[] mamba install pytorch==1.7.1 torchvision==0.8.2 cudatoo
+lkit=11.0 -c pytorch []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--112
+[][]
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 117--124
+[][]
+ []
+
+[17]) [18]
+\openout2 = `chapters/results.aux'.
+
+ (./chapters/results.tex
+فصل 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2.
+
+File: figs/img9.png Graphic file (type bmp)
+<figs/img9.png>
+File: figs/img10.png Graphic file (type bmp)
+<figs/img10.png>
+[19
+
+
+
+
+] [20]) [21]
+\openout2 = `bibs/bibs.aux'.
+
+ (./bibs/bibs.tex (./thesis.bbl [22
+
+
+
+
+
+])) [23]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 441.01773pt, 71.13188pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=441.01773pt
+* \textheight=591.5302pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-2.73714pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=28.90755pt
+* \marginparwidth=38.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout2 = `front/abstract-eng.aux'.
+
+
+(./front/abstract-eng.tex) [24
+
+
+
+
+]
+\openout2 = `front/template/title-eng.aux'.
+
+ (./front/template/title-eng.tex
+File: front/template/images/logo.png Graphic file (type bmp)
+<front/template/images/logo.png>
+) [25
+
+
+
+]
+(./thesis.aux (./front/info.aux) (./front/template/title.aux)
+(./front/abstract.aux) (./chapters/introduction.aux)
+(./chapters/preliminaries.aux) (./chapters/literature.aux)
+(./chapters/results.aux) (./bibs/bibs.aux) (./front/abstract-eng.aux)
+(./front/template/title-eng.aux))
+ ***********
+LaTeX2e <2023-06-01>
+L3 programming layer <2023-06-05>
+ ***********
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: CD2BE93DEAF0EEB7689C94434BC917C4;5408.
+ ) 
+Here is how much of TeX's memory you used:
+ 28089 strings out of 476387
+ 536312 string characters out of 5798474
+ 1858390 words of memory out of 5000000
+ 47993 multiletter control sequences out of 15000+600000
+ 520595 words of font info for 124 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 99i,7n,120p,1351b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on thesis.pdf (31 pages).

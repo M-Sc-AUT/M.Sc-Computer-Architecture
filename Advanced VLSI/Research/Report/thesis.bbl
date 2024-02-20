@@ -1,0 +1,62 @@
+\begin{thebibliography}{10}
+
+\bibitem{article1}
+Y.~Lin, S.~Dhar, W.~Li, H.~Ren, B.~Khailany, and D.~Z. Pan.
+\newblock Dreamplace: Deep learning toolkit-enabled gpu acceleration for modern
+  vlsi placement.
+\newblock {\em Proceedings of the 56th Annual Design Automation Conference},
+  (117):1 -- 6, 2019.
+
+\bibitem{article2}
+J.~Mai, J.~Wang, Z.~Di, G.~Luo, Y.~Liang, and Y.~Lin.
+\newblock Openparf: An open-source placement and routing framework for
+  large-scale heterogeneous fpgas with deep learning toolkit.
+\newblock {\em IEEE 15th International Conference on ASIC (ASICON)}, 2023.
+
+\bibitem{article3}
+T.~Lin, C.~Chu, and G.~Wu.
+\newblock Polar 3.0: An ultrafast global placement engine.
+\newblock {\em IEEE}, pages 520 -- 527, 2015.
+
+\bibitem{article4}
+A.~Ludwin, V.~Betz, and K.~Padalia.
+\newblock High-quality, deterministic parallel placement for fpgas on commodity
+  hardware.
+\newblock {\em ACM}, pages 14 -- 23, 2008.
+
+\bibitem{article5}
+W.~Li, M.~Li, J.~Wang, , and D.~Z. Pan.
+\newblock Utplacef 3.0: A parallelization framework for modern fpga global
+  placement.
+\newblock {\em ACM}, pages 922 -- 928, 2017.
+
+\bibitem{article6}
+J.~Cong and Y.~Zou.
+\newblock Parallel multi-level analytical global placement on graphics
+  processing units.
+\newblock {\em ACM}, pages 681 -- 688, 2009.
+
+\bibitem{article7}
+C.~Lin and M.~D. Wong.
+\newblock Accelerate analytical placement with gpu: A generic approach.
+\newblock {\em IEEE}, pages 1345 -- 1350, 2018.
+
+\bibitem{article8}
+C.~Lin and M.~D. Wong.
+\newblock Ntuplace3: An analytical placer for large-scale mixed-size designs
+  with preplaced blocks and density constraints.
+\newblock {\em IEEE TCAD}, 27(7):1228 -- 1240, 2008.
+
+\bibitem{article9}
+K.~E. Murray, S.~Whitty, S.~Liu, J.~Luu, , and V.~Betz.
+\newblock Timing-driven titan: Enabling large benchmarks and exploring the gap
+  between academic and commercial cad.
+\newblock {\em ACM TRETS}, pages 1 -- 18, 2015.
+
+\bibitem{article10}
+S.~Yang, C.~Mulpuri, S.~Reddy, M.~Kalase, S.~Dasasathyan, M.~E. Dehkordi,
+  M.~Tom, , and R.~Aggarwal.
+\newblock Clock-aware fpga placement contest.
+\newblock {\em ISPD}, pages 159 -- 164, 2017.
+
+\end{thebibliography}

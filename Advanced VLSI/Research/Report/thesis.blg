@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: front/info.aux
+A level-1 auxiliary file: front/template/title.aux
+A level-1 auxiliary file: front/abstract.aux
+A level-1 auxiliary file: chapters/introduction.aux
+A level-1 auxiliary file: chapters/preliminaries.aux
+A level-1 auxiliary file: chapters/literature.aux
+A level-1 auxiliary file: chapters/results.aux
+A level-1 auxiliary file: bibs/bibs.aux
+The style file: ./styles/packages/unsrtabbrv.bst
+A level-1 auxiliary file: front/abstract-eng.aux
+A level-1 auxiliary file: front/template/title-eng.aux
+Database file #1: bibs/full.bib
+Database file #2: bibs/refs.bib
+Warning--there's a number but no volume in article1
+Name 9 in "S. Yang and C. Mulpuri and S. Reddy and M. Kalase and S. Dasasathyan and M. E. Dehkordi and M. Tom and and R. Aggarwal," has a comma at the end for entry article10
+while executing---line 952 of file ./styles/packages/unsrtabbrv.bst
+You've used 10 entries,
+            1791 wiz_defined-function locations,
+            924 strings with 13030 characters,
+and the built_in function-call counts, 3407 in all, are:
+= -- 313
+> -- 152
+< -- 7
++ -- 54
+- -- 44
+* -- 217
+:= -- 494
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 10
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 162
+empty$ -- 284
+format.name$ -- 44
+if$ -- 808
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 10
+newline$ -- 53
+num.names$ -- 10
+pop$ -- 27
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 129
+stack$ -- 0
+substring$ -- 287
+swap$ -- 83
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 26
+width$ -- 12
+write$ -- 111
+(There was 1 error message)
