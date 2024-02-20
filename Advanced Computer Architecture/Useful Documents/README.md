@@ -247,3 +247,73 @@ and optimizing program execution.
 
 
 ## Tournament Branch Predictor
+![images](Images/img7.png)
+
+
+A Tournament Branch Predictor is a sophisticated technique used in computer architecture to predict the
+outcome of conditional branches in a program execution flow. Conditional branches occur when the program's
+control flow depends on a condition, such as an "if" statement.
+
+
+Here's how a Tournament Branch Predictor generally works:
+
+Component Predictors: The predictor consists of multiple smaller predictors, typically two types: a local
+predictor and a global predictor.
+
+Local Predictor: This component predicts the branch outcome based on the history of that particular branch. It
+maintains a small buffer or table that records the outcomes of previous executions of the same branch. It may
+use techniques like a pattern history table (PHT) or a finite state machine (FSM) to predict outcomes.
+
+Global Predictor: This component predicts the branch outcome based on the global behavior of branches across
+the program. It observes patterns across different branches and uses them to make predictions. It might use
+techniques like a global history register (GHR) combined with a pattern table.
+
+Selection Mechanism: The output of both local and global predictors is combined using a selection mechanism.
+This mechanism can be as simple as choosing one predictor over the other based on past performance, or it can
+be more sophisticated, such as using a meta-predictor to predict which predictor is likely to perform better for a
+particular branch.
+
+Tournament Mechanism: The selection mechanism is often implemented as a "tournament" where the two
+predictors compete against each other. The winner of this tournament, i.e., the predictor that is deemed most
+accurate for a given branch, is chosen to make the final prediction.
+
+Update Mechanism: After the branch outcome is known, the predictors are updated accordingly. This update
+mechanism ensures that the predictors adapt to changes in program behavior over time. For instance, if a
+predictor's prediction was correct, its internal state might be adjusted to favor that prediction in the future.
+
+By combining the strengths of local and global predictors, a Tournament Branch Predictor aims to achieve higher
+accuracy in predicting branch outcomes, thereby improving the performance of the processor by reducing
+pipeline stalls due to branch mispredictions. These predictors are vital components of modern processors,
+contributing significantly to their overall efficiency and performance.
+
+## TAGE
+The TAGE branch predictor by André Seznec and Pierre Michaud is the best branch predictor today, winning the
+last two branch predictor competitions (CBP2 and CBP3). It was introduced in a 2006 paper:
+
+A case for (partially) tagged Geometric History Length Branch Prediction André Seznec, Pierre Michaud Journal
+of Instruction Level Parallelism (JILP), 2006.
+
+History Register: TAGE maintains a global history register, which records the outcomes of recent branches. This
+register is used as an index into the tagged tables.
+
+Tagged Tables: TAGE consists of multiple tables, typically referred to as T0, T1, T2, ..., Tk. Each table
+corresponds to a different geometrically increasing history length. For example, T0 might have a short history
+length (e.g., 3 bits), while Tk might have a longer history length (e.g., 12 bits). These tables store predictions for
+branches based on their history.
+
+Tag Generation: When a branch occurs, the history register is used to generate a tag. The tag is essentially a
+condensed representation of the branch history, which is used to index into the tagged tables.
+
+Prediction: TAGE retrieves predictions from multiple tagged tables based on the generated tag. The predictions
+from each table are combined using a weighted scheme, with more weight given to predictions from tables with
+longer history lengths. This helps TAGE adapt to different patterns of branch behavior.
+
+Final Prediction: The final prediction is generated based on the combined predictions from all tagged tables.
+Typically, the prediction with the highest confidence (e.g., the prediction from the table with the longest history
+length) is selected as the final prediction.
+
+Adaptation: TAGE dynamically adjusts the history lengths and other parameters based on the accuracy of past
+predictions. If a prediction turns out to be incorrect, TAGE updates its internal state to improve future
+predictions.
+
+![images](Images/img8.png)
