@@ -461,3 +461,7 @@ In this code we developed Perceptron Branch Prediction for gem5. You can check s
 4. Add source file in `SConscript`
 5. Add corresponding branch predictor class in `BranchPredictor.py`
 6. Modify `se.py` to select the PerceptronLocalBP branch predictor for CPU(s)
+
+
+# acknowledgement
+This document was collected by Shayan Naghizadeh and [Reza Adinepour](https://github.com/rezaAdinepour)
