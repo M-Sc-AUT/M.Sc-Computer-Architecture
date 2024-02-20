@@ -51,5 +51,8 @@ $ python3 main.py
 
 
 ### Useful videos:
-   - [Tomasulo's Algorithm Introduction](https://www.youtube.com/watch?v=vJeqr9KXqqs&t=525s)
-   - [Tomasulo's Algorithm example](https://www.youtube.com/watch?v=uKhFewz4cWA)
+   - [Score boarding Introduction](https://www.youtube.com/watch?v=nOd0VSkeE0A)
+   - [Score Boarding Example](https://www.youtube.com/watch?v=ewl_wXY0d2E)
+
+
+This videos are very useful for understanding of Score Boarding Algorithm
