@@ -149,6 +149,54 @@ while (a < 5)
    if(a % 2 == 0) {.....}
    a++;
 }
-```   
+```
 
+In this case, the static branch prediction technique would make an assumption about whether the if condition is
+true or false.
+
+
+The first time a conditional jump instruction is encountered, there is not much information to base a prediction
+on. But the branch predictor keeps records of whether branches are taken or not taken. When it encounters a
+conditional jump that has been seen several times before, then it can base the prediction on the history1.
+
+
+However, it’s important to note that static prediction is easier than dynamic prediction. Also, the compiler can
+determine whether a branch is likely to be taken or not taken based on analysis or profile information.
+
+
+## Next line predictor
+The NLP is a branch prediction technique used to improve instruction fetching efficiency.
+
+Unlike more complex predictors, the NLP focuses on predicting whether the next instruction (i.e., the one
+immediately following the current instruction) will be executed or not.
+
+
+It operates at the instruction level, aiming to minimize pipeline stalls caused by incorrect predictions.
+
+
+### How NLP Works:
+The NLP doesn’t rely on extensive historical data or complex state machines.
+Instead, it uses simple heuristics based on observed patterns during execution.
+Here’s how it typically works:
+When an instruction is fetched, the NLP predicts whether the next instruction will be executed.
+If the prediction is correct, the pipeline continues smoothly.
+
+If the prediction is incorrect (e.g., due to a branch), the pipeline stalls briefly while the correct path is
+determined.
+
+### Limitations:
+The NLP is effective for simple control flow patterns but may struggle with more complex branches.
+It doesn’t consider branch targets or long-term behavior.
+If the program exhibits intricate branching behavior, other predictors (such as BTBs or tournament predictors)
+may be more accurate.
+
+
+### Trade-Offs:
+The NLP sacrifices accuracy for speed.
+While it’s not always perfect, its low latency makes it valuable for maintaining a well-fed instruction pipeline.
+In summary, the NLP is a lightweight, quick-to-decide branch predictor that helps keep the CPU humming along
+efficiently.
+
+
+## Dynamic branch predictor
 
