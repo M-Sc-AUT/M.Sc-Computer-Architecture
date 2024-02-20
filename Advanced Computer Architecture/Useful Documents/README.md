@@ -45,3 +45,11 @@ $ python3 main.py
 
 
 ## Scoreboarding Algorithm
+### Useful documents for read: (with respectively)
+   - [CS422](https://www.cse.iitk.ac.in/users/biswap/CS422/L12-Tomasulo.pdf), Indian Institute of Technology Kanpur
+   - [CS425](https://www.info425.ece.mcgill.ca/tutorials/T06-Tomasulo.pdf), Mcgill University
+
+
+### Useful videos:
+   - [Tomasulo's Algorithm Introduction](https://www.youtube.com/watch?v=vJeqr9KXqqs&t=525s)
+   - [Tomasulo's Algorithm example](https://www.youtube.com/watch?v=uKhFewz4cWA)
