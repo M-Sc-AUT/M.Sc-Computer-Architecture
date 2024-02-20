@@ -120,5 +120,5 @@ prediction. But the jump prediction keeps the information whether the jumps are 
 a conditional jump that it has encountered several times, it can base the prediction on history. Jump prediction
 may, for example, detect whether a conditional jump is performed often, or if it is performed once in a while.
 
-
+![images](Images/img4.png)
 
