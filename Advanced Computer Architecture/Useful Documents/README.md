@@ -122,3 +122,6 @@ may, for example, detect whether a conditional jump is performed often, or if it
 
 ![images](Images/img4.png)
 
+
+## Static Branch Predictor
+
