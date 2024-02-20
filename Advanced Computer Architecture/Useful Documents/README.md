@@ -435,4 +435,4 @@ including branch prediction, with the aim of improving prediction accuracy and o
 However, overcoming the challenges mentioned above remains a significant hurdle in deploying neural network-
 based predictors in practical processor designs.
 
-You cam find persian version of this document [here]().
+You cam find persian version of this document [here](BP-FA.pdf).
