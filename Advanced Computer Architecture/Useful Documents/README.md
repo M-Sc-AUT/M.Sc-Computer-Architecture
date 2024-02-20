@@ -86,3 +86,25 @@ $ python3 scoreboard.py
 ![images](Images/img3.png)
 
 
+
+
+
+
+
+# Branch Prediction
+In computer architecture, a branch predictor is a digital circuit that tries to guess which way a branch (e.g., an if–
+then–else structure) will go before this is known definitively. The purpose of the branch predictor is to improve
+the flow in the instruction pipeline. Branch predictors play a critical role in achieving high performance in many
+modern pipelined microprocessor architectures.
+
+
+Junction jumping is usually implemented with a conditional jump instruction. A jump condition can either be "not-
+taken" and continue execution with the first code jump immediately after the conditional jump, or it can be "taken"
+and jump to a different location in program memory, where the second code jump is stored. It is not known exactly
+whether the conditional jump will be taken or not-taken until it is calculated and the conditional jump passes
+through the execution part of the pipeline. pass, it waits before the next instruction in the pipeline can enter fetch
+mode. Jump prediction tries to avoid wasting time by trying to guess whether a conditional jump is likely to be
+taken or not taken. A guess is most likely fetched and executed speculatively. If it is later determined that the
+guess was wrong, then the speculative execution or execution of a portion of the executed instructions is ignored
+and the pipeline starts over with the correct jump, imposing a delay.
+
