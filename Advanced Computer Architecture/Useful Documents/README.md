@@ -46,7 +46,7 @@ $ python3 main.py
 
 ## Scoreboarding Algorithm
 ### Useful documents for read: (with respectively)
-   - [CS252]([https://www.cse.iitk.ac.in/users/biswap/CS422/L12-Tomasulo.pdf](https://people.eecs.berkeley.edu/~kubitron/courses/cs252-S12/lectures/lec07-dynasched2.pdf), Berkeley University
+   - [CS252](https://people.eecs.berkeley.edu/~kubitron/courses/cs252-S12/lectures/lec07-dynasched2.pdf), Berkeley University
    - [CS252](http://users.utcluj.ro/~sebestyen/_Word_docs/Cursuri/SSC_course_5_Scoreboard_ex.pdf), Technical University of Cluj-Napoca
 
 
