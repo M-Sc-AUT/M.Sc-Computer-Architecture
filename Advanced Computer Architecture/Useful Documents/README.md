@@ -317,3 +317,22 @@ predictions. If a prediction turns out to be incorrect, TAGE updates its interna
 predictions.
 
 ![images](Images/img8.png)
+
+
+Suppose we have a loop in a program with the following branch behavior:
+- Iteration 1: Branch taken
+- Iteration 2: Branch not taken
+- Iteration 3: Branch taken
+- Iteration 4: Branch not taken
+- Iteration 5: Branch taken
+
+
+Now, let's say TAGE maintains three tables: T0, T1, and T2, with history lengths of 1, 2, and 3 respectively.
+
+- T0 Table (1-bit history): This table remembers only the outcome of the last branch. Based on the recent history, it might predict the next branch as taken
+- T1 Table (2-bit history): This table remembers the outcomes of the last two branches. It might recognize the alternating pattern and predict the next branch as not taken.
+- T2 Table (3-bit history): This table remembers the outcomes of the last three branches. It might recognize the pattern of "taken, not taken, taken" and predict the next branch as taken.
+
+Now, TAGE combines predictions from all three tables. Since T2 has the longest history and has recognized a
+pattern, its prediction might have more weight. So, TAGE might predict that the next branch will be taken.
+
