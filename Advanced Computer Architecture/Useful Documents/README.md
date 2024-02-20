@@ -445,14 +445,14 @@ In this code we developed Perceptron Branch Prediction for gem5
 
 ## Contents
 * src/cpu/pred
-  * `perceptron_local.*`
-  * `perceptron.hh`
-  * `BranchPredictor.py`
-  * `SConscript`
+  * `Code/Perceptron Branch Prediction/perceptron_local.*`
+  * `Code/Perceptron Branch Prediction/perceptron.hh`
+  * `Code/Perceptron Branch Prediction/BranchPredictor.py`
+  * `Code/Perceptron Branch Prediction/SConscript`
 * build/X86/params
-  * `PerceptronLocalBP.hh`
+  * `Code/Perceptron Branch Prediction/PerceptronLocalBP.hh`
 * configs/example
-  * `se.py`
+  * `Code/Perceptron Branch Prediction/se.py`
   
 ## Instructions
 1. Implement PerceptronLocalBP branch predictor class in `perceptron_local.*`
