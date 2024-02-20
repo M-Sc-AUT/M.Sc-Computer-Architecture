@@ -1,4 +1,4 @@
-# CE5402: Memory Technologies - Spring 2024
+# CE5431: Memory Technologies - Spring 2024
 
 ### Instructor: [Dr. Hamed Farbeh](https://scholar.google.com/citations?user=PAZOYiAAAAAJ)
 ### E-mail: [farbeh@aut.ac.ir](mailto:farbeh@aut.ac.ir)
