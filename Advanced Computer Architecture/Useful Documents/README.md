@@ -338,3 +338,4 @@ pattern, its prediction might have more weight. So, TAGE might predict that the 
 
 ## Perceptron branch predictor
 ![images](Images/img9.png)
+
