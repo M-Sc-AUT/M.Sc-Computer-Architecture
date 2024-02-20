@@ -57,6 +57,7 @@
 | 8 | CE5331 | Game Theory |
 | 9 | CE5652 | Coding and Information Theory |
 | 10 | CE5308 | Parallel Algorithms |
+| 11 | CE5502 | ‫‪Neural Computing and Deep Learning |
 
 
 
