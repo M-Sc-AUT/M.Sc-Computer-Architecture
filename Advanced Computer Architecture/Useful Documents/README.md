@@ -336,3 +336,5 @@ Now, let's say TAGE maintains three tables: T0, T1, and T2, with history lengths
 Now, TAGE combines predictions from all three tables. Since T2 has the longest history and has recognized a
 pattern, its prediction might have more weight. So, TAGE might predict that the next branch will be taken.
 
+## Perceptron branch predictor
+![images](Images/img9.png)
