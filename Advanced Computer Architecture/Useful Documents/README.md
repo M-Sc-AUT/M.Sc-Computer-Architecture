@@ -8,7 +8,9 @@
 
 
 ### Useful videos:
-   - [Link1]()
+   - [Tomasulo's Algorithm Introduction](https://www.youtube.com/watch?v=vJeqr9KXqqs&t=525s)
+   - [Tomasulo's Algorithm example](https://www.youtube.com/watch?v=uKhFewz4cWA)
+This videos are very useful for understanding of Tomasulo Algorithm
 
 
 ### Simulator:
