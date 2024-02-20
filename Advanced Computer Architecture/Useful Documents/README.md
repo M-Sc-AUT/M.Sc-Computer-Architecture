@@ -339,3 +339,98 @@ pattern, its prediction might have more weight. So, TAGE might predict that the 
 ## Perceptron branch predictor
 ![images](Images/img9.png)
 
+The perceptron branch predictor is a type of branch predictor that uses a machine learning algorithm called a
+perceptron to make predictions about the outcome of conditional branches in a program. Here's how it works:
+Initialization: The perceptron branch predictor initializes a set of perceptrons. Each perceptron corresponds to a
+unique combination of branch history bits.
+Branch History: When a branch instruction is encountered during program execution, the perceptron branch
+predictor uses a fixed-size history register to capture the recent history of branch outcomes. Each bit in the
+history register represents the outcome (taken or not taken) of a recent branch.
+Feature Vector: The history register serves as a feature vector, which is used as input to the perceptrons. Each
+perceptron has weights associated with its inputs (the branch history bits).
+Prediction: The perceptron calculates a weighted sum of its inputs (history bits) and applies a threshold function
+to generate a prediction. If the weighted sum exceeds a certain threshold, the perceptron predicts that the
+branch will be taken; otherwise, it predicts that the branch will not be taken.
+
+
+Updating Weights: After the branch outcome is known, the perceptron predictor updates the weights of the
+perceptrons based on the prediction error. This updating process helps the perceptron predictor adapt to
+changes in branch behavior over time.
+Multiple Perceptrons: The perceptron branch predictor typically maintains multiple perceptrons, each trained to
+recognize different patterns in the branch history. By combining predictions from multiple perceptrons, the
+predictor can achieve better accuracy in predicting branch outcomes.
+In summary, the perceptron branch predictor uses a set of perceptrons trained on branch history to make
+predictions about the outcome of conditional branches. It continuously updates the weights of the perceptrons
+based on prediction errors, allowing it to adapt to changes in program behavior and improve prediction accuracy
+over time.
+
+
+## Agree predictor
+**E. Sprangle, R. S. Chappell, M. Alsup, and Y. N. Patt. The Agree Predictor: A Mechanism for Reducing
+Negative Branch History Interference. ISCA-24, June 1997.**
+
+The Agree predictor is a type of dynamic branch predictor that aims to improve prediction accuracy by leveraging
+the agreement among multiple prediction components. Here's how it works:
+
+Multiple Prediction Components: The Agree predictor consists of multiple prediction components, each using a
+different prediction strategy or history length. These components can include local predictors, global predictors,
+neural network predictors, or any other prediction mechanism.
+
+Prediction Agreement: When a branch is encountered during program execution, each prediction component
+independently generates its prediction for the branch outcome (taken or not taken). The predictor then
+compares these predictions to determine if there is agreement among the components.
+
+Consensus Decision: If a high level of agreement exists among the prediction components (e.g., if the majority of
+components predict the same outcome), the Agree predictor selects this consensus prediction as the final
+prediction for the branch. This consensus decision helps improve prediction accuracy, as it reflects the
+combined insights of multiple prediction strategies.
+
+Disagreement Handling: In cases where the prediction components do not agree (e.g., if predictions are evenly
+split or if there is no clear consensus), the Agree predictor may employ additional mechanisms to resolve the
+
+disagreement. This could involve using a fallback prediction strategy, dynamically adjusting prediction weights,
+or employing a tie-breaking mechanism.
+
+Adaptation and Learning: Like other dynamic predictors, the Agree predictor continuously adapts and learns
+from the outcomes of past predictions. If a prediction is incorrect, the predictor updates its internal state or
+adjusts the weights of its prediction components to improve future predictions. This adaptation process helps
+the Agree predictor optimize its performance over time.
+
+Overall, the Agree predictor exploits the agreement among multiple prediction components to make more
+accurate predictions about branch outcomes. By considering the collective insights of diverse prediction
+strategies, it can effectively navigate various program execution scenarios and improve overall prediction
+accuracy.
+
+### Why we don't use other NNs in branch predictor?
+While neural networks have shown remarkable success in various machine learning tasks, including natural
+language processing, image recognition, and even certain aspects of computer architecture, they haven't been
+widely adopted for branch prediction for several reasons:
+
+Complexity and Overhead: Neural networks, especially deep neural networks, can be computationally intensive
+and memory-hungry. Implementing them in hardware for branch prediction can significantly increase the
+complexity and overhead of the processor, potentially offsetting any gains in prediction accuracy.
+
+Training Overhead: Training a neural network for branch prediction would require a large dataset of branch
+histories and outcomes. While such data can be collected through simulations or real executions, the training
+process itself can be time-consuming and resource-intensive.
+
+Latency: Neural networks typically introduce additional latency due to the computation required for inference. In
+the context of branch prediction, where prediction accuracy and speed are critical for maintaining high processor
+performance, any additional latency introduced by neural network-based predictors could be detrimental.
+
+Dynamicity: The behavior of branch patterns in programs can change dynamically based on various factors such
+as input data, program phases, and runtime conditions. Neural networks might struggle to adapt quickly to such
+changes compared to other predictors that are specifically designed to handle dynamic behavior efficiently.
+
+Power Consumption: Implementing neural networks in hardware can increase power consumption, which is a
+crucial consideration in modern processor design, especially in mobile and battery-powered devices.
+
+Interpretability: Neural networks are often considered black-box models, meaning it can be challenging to
+understand why they make certain predictions. In contrast, traditional branch predictors like tournament
+predictors offer more transparency, making it easier for architects to analyze and optimize their behavior.
+
+While neural networks haven't been widely adopted for branch prediction, there's ongoing research in this area.
+Researchers are exploring ways to leverage neural networks for various aspects of computer architecture,
+including branch prediction, with the aim of improving prediction accuracy and overall processor performance.
+However, overcoming the challenges mentioned above remains a significant hurdle in deploying neural network-
+based predictors in practical processor designs.
