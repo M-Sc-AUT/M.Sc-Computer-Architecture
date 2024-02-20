@@ -464,4 +464,4 @@ In this code we developed Perceptron Branch Prediction for gem5. You can check s
 
 
 # acknowledgement
-This document was collected by Shayan Naghizadeh and [Reza Adinepour](https://github.com/rezaAdinepour)
+This document was collected by [Reza Adinepour](https://github.com/rezaAdinepour) and [Shayan Naghizadeh](https://github.com/shayan-naghizade)
