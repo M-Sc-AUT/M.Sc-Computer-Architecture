@@ -108,3 +108,17 @@ taken or not taken. A guess is most likely fetched and executed speculatively. I
 guess was wrong, then the speculative execution or execution of a portion of the executed instructions is ignored
 and the pipeline starts over with the correct jump, imposing a delay.
 
+
+The time wasted in misprediction is equal to the number of steps in the pipeline. From the fetch stage to the
+execution stage. Newer microprocessors tend to have relatively long pipelines so that latency mispredictions occur
+between 10 and 20 clock cycles. Consequently, making a longer pipeline increases the need for more advanced
+jump prediction.
+
+
+The first time a conditional jump execution is encountered, there is not much information based on the
+prediction. But the jump prediction keeps the information whether the jumps are taken or not. When it encounters
+a conditional jump that it has encountered several times, it can base the prediction on history. Jump prediction
+may, for example, detect whether a conditional jump is performed often, or if it is performed once in a while.
+
+
+
