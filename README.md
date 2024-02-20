@@ -20,7 +20,7 @@
 | Row  | Course ID |  Course Name |
 | ------------- | :-: | ------------- |
 | 1 | CE5430 | VLSI Design Algorithms |
-| 2 | CE5431 | Memory Technologies |
+| 2 | CE5431 | [Memory Technologies](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Memory%20Technologies) |
 | 3 | CE5432 | High-Speed Digital Integrated Circuits Design |
 | 4 | CE5433 | Quantum Computing |
 | 5 | CE5434 | Network Processor Architecture |
