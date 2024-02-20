@@ -28,7 +28,7 @@
 | 7 | CE5436 | Computer Arithmetic |
 | 8 | CE5437 | System on Chip |
 | 9 | CE5438 | Data Storage Systems |
-| 10 | CE5439 | Embedded Systems Modeling and Design |
+| 10 | CE5439 | [Embedded Systems Modeling and Design](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Embedded%20Systems%20Modeling%20and%20Design) |
 | 11 | CE5440 | Cyber-Physical Systems |
 | 12 | CE5441 | Cloud Computing |
 | 13 | CE5442 | Parallel Processing |
