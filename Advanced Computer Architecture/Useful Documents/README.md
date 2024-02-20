@@ -81,7 +81,7 @@ $ python3 scoreboard.py
  ```
 - The output of the code is as follows:
 
-![images](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Advanced%20Computer%20Architecture/Useful%20Documents/Images/img3.png)
+![images](Images/img3.png)
 
 
 This videos are very useful for understanding of Score Boarding Algorithm
