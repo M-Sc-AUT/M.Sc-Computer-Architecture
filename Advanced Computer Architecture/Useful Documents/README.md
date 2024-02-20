@@ -55,4 +55,24 @@ $ python3 main.py
    - [Score Boarding Example](https://www.youtube.com/watch?v=ewl_wXY0d2E)
 
 
+
+### Simulator:
+In this code we developed a python code for simulation Scoreboarding algorithm. You can check source code [here]()
+
+#### How run?
+- In first, you should write an instruction in assembly code in ``code.in`` file like below:
+
+```asm
+
+```
+- After write instructions code, you should run ``main.py`` file with this command:
+
+``` 
+$ python3 main.py
+ ```
+- The output of the code is as follows:
+
+![images]()
+
+
 This videos are very useful for understanding of Score Boarding Algorithm
