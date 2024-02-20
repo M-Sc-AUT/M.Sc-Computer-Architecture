@@ -11,7 +11,7 @@
    - [Tomasulo's Algorithm Introduction](https://www.youtube.com/watch?v=vJeqr9KXqqs&t=525s)
    - [Tomasulo's Algorithm example](https://www.youtube.com/watch?v=uKhFewz4cWA)
 
-This videos are very useful for understanding of Tomasulo Algorithm
+This videos are very useful for understanding of Tomasulo Algorithm.
 
 
 ### Simulator:
@@ -55,6 +55,8 @@ $ python3 main.py
    - [Score Boarding Example](https://www.youtube.com/watch?v=ewl_wXY0d2E)
 
 
+This videos are very useful for understanding of Score Boarding Algorithm.
+
 
 ### Simulator:
 In this code we developed a python code for simulation Scoreboarding algorithm. You can check source code [here](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Advanced%20Computer%20Architecture/Useful%20Documents/Simulator/Scoreboarding)
@@ -84,4 +86,3 @@ $ python3 scoreboard.py
 ![images](Images/img3.png)
 
 
-This videos are very useful for understanding of Score Boarding Algorithm
