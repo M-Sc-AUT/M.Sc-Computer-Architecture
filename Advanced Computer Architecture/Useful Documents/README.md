@@ -124,4 +124,31 @@ may, for example, detect whether a conditional jump is performed often, or if it
 
 
 ## Static Branch Predictor
+![images](Images/img5.png)
+
+
+A static branch predictor is a simple branch prediction technique used in computer architecture. It does not rely
+on the dynamic history of code execution. Instead, it predicts the outcome of a branch based solely on the
+branch instruction.
+
+
+In computer architecture, a branch predictor is a digital circuit that tries to guess which way a branch (e.g., an if–
+then–else structure) will go before this is known definitively. The purpose of the branch predictor is to improve
+the flow in the instruction pipeline1.
+
+
+In the case of static branch prediction, the underlying hardware assumes that either the branch is not taken
+always or the branch is taken always. For example, consider the following code:
+
+
+```c
+int a = 0;
+while (a < 5)
+{
+   // branch instruction, condition either true or false
+   if(a % 2 == 0) {.....}
+   a++;
+}
+```   
+
 
