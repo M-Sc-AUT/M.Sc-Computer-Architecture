@@ -199,4 +199,51 @@ efficiently.
 
 
 ## Dynamic branch predictor
+![images](Images/img6.png)
+First proposed in 1979-1980.
+US Patent #4,370,711, Branch predictor using random access memory, James. E. Smith
 
+
+Dynamic branch predictors work by dynamically analyzing the behavior of branches during program execution to
+make predictions about their future outcomes. Here's how they typically operate:
+
+
+History Register: The predictor maintains a history register or buffer that records the outcomes of recent branch
+instructions. This register stores a sequence of bits, each representing the outcome (taken or not taken) of a
+past branch.
+
+
+Pattern Recognition: The predictor analyzes patterns in the branch history to make predictions about future
+branches. It may use various techniques to identify recurring patterns or correlations between past branch
+outcomes and future behavior.
+
+
+Prediction Mechanism: Based on the observed patterns in the branch history, the predictor employs a prediction
+mechanism to estimate the likelihood of a branch being taken or not taken. This mechanism can be simple, such
+as using a table lookup based on the branch history, or more sophisticated, such as using machine learning
+algorithms like neural networks or perceptrons.
+
+
+Adaptation: Dynamic predictors continuously adapt and update their prediction mechanisms based on feedback
+from the actual outcomes of branches. If a prediction is incorrect, the predictor adjusts its internal state to
+improve future predictions. This adaptation process allows the predictor to learn from past behavior and adapt
+to changes in program execution patterns.
+
+
+Multiple Levels of Prediction: Many dynamic predictors use multiple levels of prediction to capture different
+types of patterns in branch behavior. For example, they may include global predictors that analyze overall
+program behavior, as well as local predictors that focus on specific regions of code.
+
+
+Hybridization: Dynamic predictors may also incorporate other prediction strategies, such as static predictors or
+history-based predictors, to complement their dynamic analysis. This hybridization allows the predictor to
+leverage the strengths of different prediction approaches and improve overall prediction accuracy.
+
+
+Overall, dynamic branch predictors use real-time analysis of branch behavior to make accurate predictions about
+future branches, adapting their strategies based on observed patterns and feedback from past predictions. This
+dynamic and adaptive approach helps to improve performance by reducing the number of mispredicted branches
+and optimizing program execution.
+
+
+## Tournament Branch Predictor
