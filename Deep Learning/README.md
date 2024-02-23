@@ -4,9 +4,9 @@
 ### E-mail: [safa@aut.ac.ir](mailto:safa@aut.ac.ir)
 
 ### Reference:
- J. L. Hennessy and D. A. Patterson, *Computer Architecture: A Quantitative Approach,* 6th Edition, Morgan Kaufmann, 2017 ([find here](https://github.com/rezaAdinepour/M.Sc-AUT/tree/main/Advanced%20Computer%20Architecture/Reference))
+ S. Haykin, *Neural Network and Learning Machine,* 3rd Edition, Pearson Education, 2008 ([find here](https://github.com/rezaAdinepour/M.Sc-AUT/tree/main/Advanced%20Computer%20Architecture/Reference))
 
-
+Neural Network and Learning Machine - haykin.3ed.2009.pdf
 
  ### Scores:
 | Row | type | Total (from 22) |
