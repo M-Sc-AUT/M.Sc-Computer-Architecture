@@ -4,6 +4,7 @@
 ### E-mail: [msedighi@aut.ac.ir](mailto:msedighi@aut.ac.ir)
 
 ### Reference:
+ E. A. Lee and S. A. Seshia, *Introduction to Embedded Systems - A Cyber-Physical Systems Approach,* 2nd Edition, MIT Press, 2017 ([find here](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Deep%20Learning/Reference))
  
 ### Scores:
 | Row | type | Portion |
