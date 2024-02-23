@@ -4,9 +4,8 @@
 ### E-mail: [safa@aut.ac.ir](mailto:safa@aut.ac.ir)
 
 ### Reference:
- S. Haykin, *Neural Network and Learning Machine,* 3rd Edition, Pearson Education, 2008 ([find here](https://github.com/rezaAdinepour/M.Sc-AUT/tree/main/Advanced%20Computer%20Architecture/Reference))
+ S. Haykin, *Neural Network and Learning Machine,* 3rd Edition, Pearson Education, 2008 ([find here](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Deep%20Learning/Reference))
 
-Neural Network and Learning Machine - haykin.3ed.2009.pdf
 
  ### Scores:
 | Row | type | Total (from 22) |
@@ -15,7 +14,3 @@ Neural Network and Learning Machine - haykin.3ed.2009.pdf
 | 2 | Assignment | 4 |
 | 3 | Project | 4 |
 | 4 | Final | 10 |
-
-### Simulator:
-
-
