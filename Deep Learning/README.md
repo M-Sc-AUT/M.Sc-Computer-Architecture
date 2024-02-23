@@ -9,8 +9,7 @@
 
  ### Scores:
 | Row | type | Total (from 22) |
-| --- | :-:  | :-: |  
-| 1 | Quiz | 4 |
-| 2 | Assignment | 4 |
-| 3 | Project | 4 |
-| 4 | Final | 10 |
+| --- | :-:  | :-: |
+| 1 | Assignment | 10 |
+| 2 | Research | 4 |
+| 3 | Final | 6 |
