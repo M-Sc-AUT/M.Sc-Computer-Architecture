@@ -13,3 +13,6 @@
 | 1 | Assignment | 10 |
 | 2 | Research | 4 |
 | 3 | Final | 6 |
+
+### Telegram Group:
+You can click  [here](https://t.me/+3NGHZ4OkLoI5YjEx) to join the group
