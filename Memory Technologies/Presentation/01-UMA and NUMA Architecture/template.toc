@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Memory Architecture Overview}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Uniform Memory Access (UMA)}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Non-uniform Memory Access (NUMA)}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Cache-only Memory Access (COMA)}{10}{0}{1}
+\beamer@sectionintoc {2}{Code Snippets}{10}{0}{2}
+\beamer@sectionintoc {3}{Differences between UMA and NUMA}{11}{0}{3}
