@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: slide.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ref.bib
+Repeated entry---line 18 of file ref.bib
+ : @book{ref1
+ :           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 27 of file ref.bib
+ : @book{ref1
+ :           ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "bibitem1"
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty publisher in ref1
+
+Done.
+You've used 7 entries,
+            4087 wiz_defined-function locations,
+            867 strings with 8787 characters,
+and the built_in function-call counts, 5883 in all, are:
+= -- 458
+> -- 174
+< -- 50
++ -- 92
+- -- 33
+* -- 304
+:= -- 872
+add.period$ -- 14
+call.type$ -- 7
+change.case$ -- 6
+chr.to.int$ -- 108
+cite$ -- 8
+duplicate$ -- 407
+empty$ -- 443
+format.name$ -- 39
+if$ -- 1353
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 77
+newline$ -- 44
+num.names$ -- 7
+pop$ -- 173
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 445
+stack$ -- 0
+substring$ -- 258
+swap$ -- 348
+text.length$ -- 14
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 7
+warning$ -- 1
+while$ -- 27
+width$ -- 8
+write$ -- 91
+(There were 2 error messages)
