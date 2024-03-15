@@ -1,0 +1,17 @@
+\beamer@slide {start}{1}
+\beamer@slide {fig:Successful build}{13}
+\beamer@slide {fig:cache config file}{14}
+\beamer@slide {fig:Output report}{15}
+\beamer@slide {fig:Memory hierarchy in NVSIM}{18}
+\beamer@slide {fig:NVSIM successful build}{21}
+\beamer@slide {fig:sample.cfg config file1}{22}
+\beamer@slide {fig:Output of simulation}{23}
+\beamer@slide {fig:Main block of DRAMSim}{27}
+\beamer@slide {fig:DRAMSim built target}{30}
+\beamer@slide {fig:Output report of DRAMSim}{32}
+\beamer@slide {fig:Interarrival latancy}{34}
+\beamer@slide {fig:Read latancy}{35}
+\beamer@slide {fig:Write latancy}{36}
+\beamer@slide {fig:Structure of SimpleScaler}{39}
+\beamer@slide {fig:Build successful}{42}
+\beamer@slide {fig:Report of test-math program}{44}

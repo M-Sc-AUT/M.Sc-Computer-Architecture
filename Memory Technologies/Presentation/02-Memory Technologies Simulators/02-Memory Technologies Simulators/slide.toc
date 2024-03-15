@@ -1,0 +1,9 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Full-system simulators}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Memory simulators}{7}{0}{1}
+\beamer@sectionintoc {2}{CACTI}{9}{0}{2}
+\beamer@sectionintoc {3}{NVSIM}{16}{0}{3}
+\beamer@sectionintoc {4}{DRAMSIM}{24}{0}{4}
+\beamer@sectionintoc {5}{SimpleScaler}{37}{0}{5}
+\beamer@sectionintoc {6}{References}{45}{0}{6}
