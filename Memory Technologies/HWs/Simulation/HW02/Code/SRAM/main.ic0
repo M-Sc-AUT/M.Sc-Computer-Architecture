@@ -1,0 +1,58 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "23:29:28 03/18/2009 "
+* "netlist" "d:\aut\mt_hw02\sram\main.sp "
+* "runtitle" "* **************************************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ bl1 =   0.            
++ bl1_not =   1.8000        
++ bl2_not = 219.4396m       
++ bl3_not = 219.4396m       
++ bl_1 =   1.8000        
++ bl_2 =   0.            
++ bl_3 =   0.            
++ blnot1 =   0.            
++ in11 =   0.            
++ in11! =   1.7490        
++ in22 =   0.            
++ in22! =   1.7490        
++ in33 =   0.            
++ q1_1 =  85.1581n       
++ q1_1not =   1.8000        
++ q1_2 = 668.4716m       
++ q1_2not = 668.4716m       
++ q1_3 = 668.4716m       
++ q1_3not = 668.4716m       
++ q2_1 =   1.7441        
++ q2_1not =   4.2489m       
++ q2_2 = 668.4721m       
++ q2_2not = 668.4721m       
++ q2_3 = 668.4721m       
++ q2_3not = 668.4721m       
++ q3_1 =   1.7441        
++ q3_1not =   4.2489m       
++ q3_2 = 668.4721m       
++ q3_2not = 668.4721m       
++ q3_3 = 668.4721m       
++ q3_3not = 668.4721m       
++ vdd =   1.8000        
++ wl1 =   0.            
++ wl2 = 193.9767m       
++ wl3 = 193.9767m       
++ wl4 =  93.6111m       
++ xword1.bl11 =  85.0698n       
++ xword1.bl21 = 108.7424m       
++ xword1.bl33 = 108.7424m       
++ xword2.bl11 = 269.0627m       
++ xword2.bl21 = 267.7146m       
++ xword2.bl33 = 267.7146m       
++ xword3.bl11 = 269.0627m       
++ xword3.bl21 = 267.7146m       
++ xword3.bl33 = 267.7146m       
+***   END: Saved Operating Point ***                     

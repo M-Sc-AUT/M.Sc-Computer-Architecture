@@ -1,0 +1,69 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "23:55:16 03/18/2009 "
+* "netlist" "d:\aut\mt_hw02\dram\main.sp "
+* "runtitle" "* **************************************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ bl1_not =   1.0827        
++ bl2_not =   1.0827        
++ bl3_not =   1.0827        
++ bl_1 =   0.            
++ bl_2 =   0.            
++ bl_3 =   0.            
++ in11 =   0.            
++ in11! =   1.7490        
++ in22 =   0.            
++ in22! =   1.7490        
++ in33 =   0.            
++ vdd =   1.8000        
++ vps =   0.            
++ vps1 =   1.0513        
++ vps2 =   1.0513        
++ vps3 =   1.0513        
++ wl1 =   0.            
++ wl2 = 193.8078m       
++ wl3 = 193.8078m       
++ wl4 =  93.6112m       
++ xword1.bl11 =   1.0827        
++ xword1.bl21 =   1.0827        
++ xword1.bl33 =   1.0827        
++ xword2.bl11 =   1.0827        
++ xword2.bl21 =   1.0827        
++ xword2.bl33 =   1.0827        
++ xword3.bl11 =   1.0827        
++ xword3.bl21 =   1.0827        
++ xword3.bl33 =   1.0827        
++ xword1.xdram1.1 = 120.2817m       
++ xword1.xdram1.3 =   3.0000        
++ xword1.xdram1.7 = 120.2818m       
++ xword1.xdram2.1 = 120.2817m       
++ xword1.xdram2.3 =   3.0000        
++ xword1.xdram2.7 = 120.2818m       
++ xword1.xdram3.1 = 120.2817m       
++ xword1.xdram3.3 =   3.0000        
++ xword1.xdram3.7 = 120.2818m       
++ xword2.xdram1.1 = 273.9822m       
++ xword2.xdram1.3 =   3.0000        
++ xword2.xdram1.7 = 273.9822m       
++ xword2.xdram2.1 = 273.9822m       
++ xword2.xdram2.3 =   3.0000        
++ xword2.xdram2.7 = 273.9822m       
++ xword2.xdram3.1 = 273.9822m       
++ xword2.xdram3.3 =   3.0000        
++ xword2.xdram3.7 = 273.9822m       
++ xword3.xdram1.1 = 273.9822m       
++ xword3.xdram1.3 =   3.0000        
++ xword3.xdram1.7 = 273.9822m       
++ xword3.xdram2.1 = 273.9822m       
++ xword3.xdram2.3 =   3.0000        
++ xword3.xdram2.7 = 273.9822m       
++ xword3.xdram3.1 = 273.9822m       
++ xword3.xdram3.3 =   3.0000        
++ xword3.xdram3.7 = 273.9822m       
+***   END: Saved Operating Point ***                     
