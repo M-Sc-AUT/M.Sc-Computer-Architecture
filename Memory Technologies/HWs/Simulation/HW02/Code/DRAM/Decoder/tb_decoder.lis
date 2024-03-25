@@ -1,0 +1,23 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: d:\aut\mt_hw02\dram\decoder\tb_decoder.sp                         
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   NOVINSYSTEM          HOSTNAME: NOVINSYSTEM-PC 
+  lic: HOSTID: 00241d50ceae         PID:      492 
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid 00241d50ceae 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+ **error** (D:\AUT\MT_HW02\DRAM\Inverter\Inverter.sp:8)definition of model pmos not found. Please specify a defined model name.
+
+               ***** job aborted
+  lic: Release hspice token(s) 

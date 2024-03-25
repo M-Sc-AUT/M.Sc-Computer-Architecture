@@ -1,0 +1,15 @@
+       1 xnot1.
+       2 xnot2.
+       3 xdecoder.
+       4 xword1.
+       5 xword2.
+       6 xword3.
+       7 xword1.xsram1.
+       8 xword1.xsram2.
+       9 xword1.xsram3.
+      10 xword2.xsram1.
+      11 xword2.xsram2.
+      12 xword2.xsram3.
+      13 xword3.xsram1.
+      14 xword3.xsram2.
+      15 xword3.xsram3.
