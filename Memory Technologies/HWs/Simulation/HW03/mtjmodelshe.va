@@ -1,0 +1,203 @@
+//Title: Compact model of Spin-Transfer-Torque(STT)-driven Perpendicular Magnetic Anistropy (PMA) MTJ with Spin-Hall assistance
+//Version: Beta.1.0
+//Date:23 August 2015
+//Language: VerilogA
+
+/*-------------------------------------------
+Property: IEF, UMR8622, Univ.Paris Sud-CNRS
+Authors: Zhaohao WANG, Weisheng ZHAO, Jacques-Olivier Klein and Claude Chappert
+
+In this model, it takes into account the following mechanisms
+
+1.MTJ resistance calculation based on Brinkman model
+2.TMR dependence on the bias voltage
+3.Spin polarity calculation model for magnetic tunnel junction
+4.Dynamic model based on Landau-Lifshitz-Gilber (LLG) equation including STT and SHE torques
+---------------------------------------------*/
+`resetall
+`include "constants.vams"
+`include "disciplines.vams"
+
+//MTJ Shape definition
+`define rec 1
+`define ellip 2
+`define circle 3
+
+/*-------------------------------------------
+Electrical Constants
+---------------------------------------------*/
+
+`define e 1.6e-19	//Elementary charge
+`define m 9.11e-31	//Electron mass
+`define uB 9.274e-24	//Bohr Magneton
+`define u0 1.256637e-6	//Vacuum permeability
+`define hbas 1.0545e-34	//Reduced Planck constant	
+`define kB 1.38e-23	//Boltzmann constant
+
+module STT_model(T1,T2,T3,Tmz,Tx);
+
+inout T1,T2,T3;
+electrical T1,T2,T3;	//Actual terminals
+
+output Tmz;
+electrical Tmz;		//Virtual terminal monitoring the magnetization
+
+
+output Tx;
+electrical Tx;		//Virtual terminal outputing the potential of the node amongst T1~T3
+
+
+/*------------------------------------------
+MTJ and W Technology Parameters
+-------------------------------------------*/
+
+parameter real  alpha=0.03;	//Gilbert damping constant
+parameter real  TMR=3.0;	//TMR ratio under zero bias voltage
+parameter real  eta = 0.3;	//Spin Hall angle											
+parameter real  Hk=8e4;		//Perpendicular Magnetic Anisotropy in A/m
+parameter real  Ms=8.8e5;		//Saturation Field in the Free Layer in A/m
+parameter real  PhiBas=0.4;	//MgO barrier potential height in volt
+parameter real  Vh=0.5;		//Voltage bias when the TMR(real) is 1/2TMR(0) in Volt
+
+/*------------------------------------------
+MTJ Device Parameters
+-------------------------------------------*/
+parameter integer  SHAPE=1  from[1:3];		//Surface shape
+parameter real  tsl=1.0e-9 from[0.5e-9:1.5e-9];	//Free layer thickness in meter
+parameter real  a=90.0e-9;			//Surface length in meter
+parameter real  b=90.0e-9;			//Surface width in meter
+parameter real  r=45e-9;			//Surface radius in meter
+parameter real  tox=10.0e-10 from[8e-10:15e-10];	//MgO barrier thickness in meter
+
+/*------------------------------------------
+W strip Parameters
+-------------------------------------------*/
+parameter real  d=3e-9;		//Thickness in meter
+parameter real  l=50e-9;	//Length in meter
+parameter real  w=50e-9;	//Width in meter
+
+/*------------------------------------------
+State Parameters of MTJ and W
+-------------------------------------------*/
+parameter integer	PAP=1 from[0:1];		//Initial state of the MTJ, 0 = parallele, 1 = anti-parallele
+parameter real 		RA=10e-12 from[5e-12:15e-12];	//Resistance-area product of the MTJ in ohm-m2
+parameter real          rho = 2e-6;			//Resistivity of W in ohm-m
+
+parameter real 		T= 300;			//Temperature in Kelvin
+parameter real 		sim_step = 1e-12;	//Simulation time step in second
+
+//Variables
+real P;				//Spin polarization
+real FA;			//Coefficient used in Brinkman model
+real gamma;			//GyroMagnetic Ratio
+real surface;			//MTJ surface area
+real V12,V13,V23;		//Voltages across two terminals
+real Rp;  			//MTJ Resistance when the relative magnetization is parallel
+real R_MTJ;			//Real resistance of MTJ
+real R_W;  			//Resistance of W
+real theta,phi;  		//Angle of magnetization
+real delta_phi,delta_theta;	//Change of angle
+real delta_aver;		//Root square average value of theta deviaion
+real V_MTJ;  		     	//Voltage across the MTJ from top layer to bottom layer
+real ksi;			//Coefficient used in LLG equation
+real J_STT;			//Current density for STT
+real J_SHE;			//Current density for SHE
+real mz;			//Magnetization in z direction
+real E_thermal;			//Thermal stability energy
+real t_previous;		//Recording the simulation time
+
+analog begin
+
+//Initialization
+@(initial_step)begin
+	if (SHAPE==1)
+		surface=a*b;		//SQUARE
+	else if (SHAPE==2)
+		surface=`M_PI*a*b/4.0;	//ELLIPSE
+	else begin
+		surface=`M_PI*r*r;    	//ROUND
+	end
+	
+	P = sqrt(TMR/(2+TMR));	
+	gamma = 2*`uB/`hbas;			//GyroMagnetic Ratio
+	ksi = gamma*`hbas/(2*`e*tsl*Ms);	//Coefficient used in LLG equation
+	E_thermal = 0.5*`u0*Ms*Hk*tsl*surface;	//Thermal stability energy
+	delta_aver = sqrt(0.5*`kB*T/E_thermal);	//Root square average value of theta deviation
+
+	//MTJ resistance under zero bias
+	FA=3.3141e-7/RA;
+	Rp=(tox/(FA*sqrt(PhiBas)*surface))*exp(2*sqrt(2*`m*`e*PhiBas)*tox/`hbas);
+
+	//W strip resistance
+	R_W = rho*l/(d*w);
+
+	//Initial angles and mz
+	phi = 0;
+	if (PAP==0) begin
+		theta = delta_aver;
+		end
+	else begin
+		theta = `M_PI-delta_aver;
+	end
+	mz = cos(theta);
+	t_previous = $abstime;
+
+end
+//Initialization is finished here
+
+//Calculation of STT and SHE current density
+J_STT = -I(T1,Tx)/surface;
+if (V(T2)>V(T3))begin		
+		J_SHE = min(abs(V(Tx)-V(T2)),abs(V(Tx)-V(T3)))/(w*d*R_W);
+		// note: abs, min ba if neveshte shavad.
+		//J_SHE = min(abs(I(T2,Tx)),abs(I(Tx,T3)))/(w*d);
+		//J_SHE = (V(Tx)-V(T3))/((w*d)*R_W);
+		//J_SHE = 0;
+	end
+	
+else if (V(T2)<V(T3)) begin
+		J_SHE = -min(abs(V(Tx)-V(T2)),abs(V(Tx)-V(T3)))/(w*d*R_W);
+		//	J_SHE = -(V(Tx)-V(T2))/((w*d)*R_W);
+		//  J_SHE = -min(abs(I(T3,Tx)),abs(I(Tx,T2)))/(w*d);
+		//J_SHE = 0;
+	end
+else begin
+	J_SHE = 0;
+end
+//V(Test1)<+J_SHE;
+
+
+//Solving LLG equation including STT torque and SHE torque
+if (analysis("tran")) begin
+	delta_phi = ($abstime-t_previous)*(1.0/(1+alpha*alpha))*(gamma*`u0*Hk*cos(theta)-alpha*ksi*P*J_STT - 
+                             ksi*eta*J_SHE*(alpha*cos(theta)*cos(phi)-sin(phi))/sin(theta));
+	delta_theta = ($abstime-t_previous)*(1.0/(1+alpha*alpha))*(-alpha*gamma*`u0*Hk*cos(theta)*sin(theta) - ksi*P*J_STT*sin(theta) - 
+                             ksi*eta*J_SHE*(alpha*sin(phi)+cos(theta)*cos(phi)));
+	phi = phi + delta_phi;
+	theta = theta + delta_theta;
+	t_previous = $abstime;
+	$bound_step(sim_step);
+end
+
+//Limit the theta under the thermal fluctuation
+if(theta > `M_PI-delta_aver)
+	theta = `M_PI-delta_aver;
+else if (theta < delta_aver)
+	theta = delta_aver;
+	
+//Output mz
+mz = cos(theta);
+V(Tmz)<+mz;
+
+
+//Renew the current
+V(Tx)<+(0.5*V(T1)*R_W+(Rp*(1+(V(T1)-V(Tx))*(V(T1)-V(Tx))/(Vh*Vh)+TMR)/(1+(V(T1)-V(Tx))*(V(T1)-V(Tx))/(Vh*Vh)+0.5*(1+mz)*TMR))*(V(T2)+V(T3)))/
+			(2*(Rp*(1+(V(T1)-V(Tx))*(V(T1)-V(Tx))/(Vh*Vh)+TMR)/(1+(V(T1)-V(Tx))*(V(T1)-V(Tx))/(Vh*Vh)+0.5*(1+mz)*TMR))+0.5*R_W);
+R_MTJ = Rp*(1+(V(T1)-V(Tx))*(V(T1)-V(Tx))/(Vh*Vh)+TMR)/(1+(V(T1)-V(Tx))*(V(T1)-V(Tx))/(Vh*Vh)+0.5*(1+mz)*TMR);
+I(T1,Tx)<+((V(T1)-V(Tx))/R_MTJ);
+I(T2,Tx)<+(2*(V(T2)-V(Tx))/R_W);
+I(T3,Tx)<+(2*(V(T3)-V(Tx))/R_W);
+
+end
+endmodule
+
