@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+\usepackage[en,bordered]{uni-style}
+\usepackage{uni-math}
+\usepackage{graphicx,wrapfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumitem}
+
+
+
+\title{\href{https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Embedded Systems Modeling and Design}{\textcolor{black}{Embedded Systems}}}
+\prof{\href{https://scholar.google.com/citations?user=2RN0Y2YAAAAJ&hl=en}{\textcolor{black}{Prof. Sedighi}}}
+\subtitle{Chapter 15 - Reachability Analysis and Model Checking}
+\subject{Homework 10}
+\info{
+    \begin{tabular}{lr}
+        \href{https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Embedded Systems Modeling and Design}{\textcolor{black}{Reza Adinepour}} & ID: 402131055\\
+    \end{tabular}
+    }
+    \date{\today}
+    % \usepackage{xepersian}
+    % \settextfont{Yas}
+    \usepackage{uni-code}
+    
+    \begin{document}
+\maketitlepage
+\maketitlestart
+
+
+
+
+
+
+
+\section{Question 1}
+Consider the system M modeled by the hierarchical state machine of Figure 13.2,
+which models an interrupt-driven program.
+
+Model \textit{M} in the modeling language of a verification tool (such as SPIN). You will
+have to construct an environment model that asserts the interrupt. Use the verifica
+tion tool to check whether \textit{M} satisfies $\phi$, the property stated in Exercise 5:
+
+$$ \phi: \text{The main program eventually reaches program location C.} $$
+
+Explain the output you obtain from the verification tool.
+
+%\begin{center}
+%	\includegraphics*[width=0.6\linewidth]{images/img1}
+%	\captionof{figure}{Four pairs of actors whose type refinement relationships are explored in Exercise 1}
+%\end{center}
+
+
+\begin{qsolve}
+	To solve this exercise, various verification tools such as \texttt{PAT}, \texttt{Spin}, etc., can be used. According to the book's suggestion, Spin is used. This powerful tool has a large number of auxiliary packages that make it easier to use in different environments. Two examples of these tools are: \texttt{iSpin\footnote{\textcolor{magenta}{\texttt{http://spinroot.com/spin/Man/3\_SpinGUI.html}}}}, which is based on \texttt{TCL/TK}, and \texttt{jSpin\footnote{\textcolor{magenta}{\texttt{https://github.com/motib/jspin}}}}, which is developed using Java.
+	
+	In the Spin environment, a language called Promela is used, and the user guide for it is available on the Spin\footnote{\textcolor{magenta}{\texttt{http://spinroot.com/spin/Man/Quick.html}}} website. For this section, two processes are used: one for the \texttt{ISR} and one for the program inside the while loop. By running both simultaneously, it is assumed that an interrupt occurs in each section. The problem condition is checked with \texttt{timerCount == 0}, and if this happens, the program exits the loop related to the while section.
+	
+	The results obtained from Verify and Check are as follows:
+\end{qsolve}
+
+
+
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=0.9\linewidth]{images/img2}
+		\captionof{figure}{Output of \texttt{jSpin}}
+	\end{center}
+	
+	
+	The simulation results are not fully included in the report due to the large number of checks for the variable \texttt{timerCount} and also \texttt{inISR} (to control access to the variable while the \texttt{ISR} is running).
+	
+	\begin{center}
+		\includegraphics*[width=0.9\linewidth]{images/img3}
+		\captionof{figure}{Output of \texttt{jSpin}}
+	\end{center}
+\end{qsolve}
+
+
+
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=0.9\linewidth]{images/img4}
+		\captionof{figure}{Output of \texttt{jSpin}}
+	\end{center}
+	
+	It should be noted that to use this tool on Windows, you must use the 32-bit version of Cygwin (even on a 64-bit operating system), otherwise, you will encounter a word size error message. Additionally, the Cygwin installation path must be added to the environment variables; otherwise, you will encounter a compiler access error.
+\end{qsolve}
+
+
+\vfil
+\clearpage
+
+
+
+
+
+
+\section{Question 3}
+The notion of reachability has a nice symmetry. Instead of describing all states that
+are reachable from some initial state, it is just as easy to describe all states from
+which some state can be reached. Given a finite-state system \textit{M} , the \textbf{backward}
+\textbf{reachable states} of a set \textit{F} of states is the set \textit{B} of all states from which some state in \textit{F} can be reached. The following algorithm computes the set of backward reachable states for a given set of states \textit{F} :
+
+\begin{algorithm}
+	\caption{Backward Reachability}
+	\begin{algorithmic}[1]
+		\Require A set \( F \) of states and transition relation \( \delta \) for closed finite-state system \( M \)
+		\Ensure Set \( B \) of backward reachable states from \( F \) in \( M \)
+		\State \textbf{Initialize:} \( B := F \)
+		\State \( B_{\text{new}} := B \)
+		\While{\( B_{\text{new}} \neq \emptyset \)} 
+		\State \( B_{\text{new}} := \{ s \mid \exists s' \in B \text{ s.t. } s' \in \delta(s) \land s \notin B \} \)
+		\State \( B := B \cup B_{\text{new}} \)
+		\EndWhile
+	\end{algorithmic}
+\end{algorithm}
+
+Explain how this algorithm can check the property \textbf{G}$p$ on \textit{M} , where p is some
+property that is easily checked for each state $s$ in \textit{M} . You may assume that \textit{M} has exactly one initial state $s_0$ .
+
+
+\begin{qsolve}
+	This algorithm actually checks access to a set of states recursively by checking the access chain. (As explained in the problem statement, since the given pseudo-code seems incorrect in the initial assignment.) Now, if we want to check a case of \(Gp\), according to LTL formulas, we can check \(\neg F \neg p\). In this case, if we select a set of states where \(p\) is not true (\(\neg p\)) and the algorithm determines that these states are reachable, then the given condition is not met, and therefore the inverse is true. Of course, all these cases are correct provided that the interpretation of the problem statement is accurate.
+\end{qsolve}
+
+
+
+
+
+
+
+
+
+\vspace*{\fill}
+\begin{center}
+	\makeendpage
+
+\end{center}
+\vfill % equivalent to \vspace{\fill}
+\clearpage
+
+
+
+
+\end{document}

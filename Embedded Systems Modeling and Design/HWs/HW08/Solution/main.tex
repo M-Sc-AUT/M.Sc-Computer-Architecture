@@ -1,0 +1,178 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+\usepackage[en,bordered]{uni-style}
+\usepackage{uni-math}
+\usepackage{graphicx,wrapfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{enumitem}
+
+
+
+\title{\href{https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Embedded Systems Modeling and Design}{\textcolor{black}{Embedded Systems}}}
+\prof{\href{https://scholar.google.com/citations?user=2RN0Y2YAAAAJ&hl=en}{\textcolor{black}{Prof. Sedighi}}}
+\subtitle{Chapter 13 - Invariants and Temporal Logic}
+\subject{Homework 8}
+\info{
+    \begin{tabular}{lr}
+        \href{https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Embedded Systems Modeling and Design}{\textcolor{black}{Reza Adinepour}} & ID: 402131055\\
+    \end{tabular}
+    }
+    \date{\today}
+    % \usepackage{xepersian}
+    % \settextfont{Yas}
+    \usepackage{uni-code}
+    
+    \begin{document}
+\maketitlepage
+\maketitlestart
+
+
+
+
+
+
+
+\section{Question 2}
+Consider the following state machine:
+
+\begin{center}
+	\includegraphics*[width=0.4\linewidth]{images/img1}
+	\captionof{figure}{State machine of Q2}
+\end{center}
+
+(Recall that the dashed line represents a default transition.) For each of the fol
+lowing LTL formulas, determine whether it is true or false, and if it is false, give a
+counterexample:
+
+\begin{enumerate}
+	\item[(a)] \(x \implies \mathbf{Fb}\)
+	\item[(b)] \(\mathbf{G}(x \implies \mathbf{F}(y = 1))\)
+	\item[(c)] \((\mathbf{G}x) \implies \mathbf{F}(y = 1)\)
+	\item[(d)] \((\mathbf{G}x) \implies \mathbf{GF}(y = 1)\)
+	\item[(e)] \(\mathbf{G}((b \land \neg x) \implies \mathbf{FG}c)\)
+	\item[(f)] \(\mathbf{G}((b \land \neg x) \implies \mathbf{G}c)\)
+	\item[(g)] \((\mathbf{GF}\neg x) \implies \mathbf{FG}c\)
+\end{enumerate}
+
+
+\begin{qsolve}
+	(Recall that the dashed line represents a default transition.) For each of the following LTL formulas, determine whether it is true or false, and if it is false, give a counterexample:
+	
+	
+	
+	\begin{tabular}{rlcl}
+		(a) & \(x \implies \mathbf{Fb}\) & & T \\
+		(b) & \(\mathbf{G}(x \implies \mathbf{F}(y = 1))\) & & F \\
+		(c) & \((\mathbf{G}x) \implies \mathbf{F}(y = 1)\) & & F \\
+		(d) & \((\mathbf{G}x) \implies \mathbf{GF}(y = 1)\) & & F \\
+		(e) & \(\mathbf{G}((b \land \neg x) \implies \mathbf{FG}c)\) & & T \\
+		(f) & \(\mathbf{G}((b \land \neg x) \implies \mathbf{G}c)\) & & F \\
+		(g) & \((\mathbf{GF}\neg x) \implies \mathbf{FG}c\) & & F \\
+	\end{tabular}
+	
+	\vspace{1cm}
+	
+	\begin{enumerate}[label=(\alph*)]
+		\item 
+		\[
+		\begin{array}{c}
+			x / 1 \quad \text{True} \\
+			a \implies b \implies c
+		\end{array}
+		\]
+		\item 
+		\[
+		\begin{array}{c}
+			x / 1 \quad \text{True} \\
+			a \implies b \implies c
+		\end{array}
+		\]
+		\item 
+		\[
+		\begin{array}{c}
+			x / 1 \quad \text{True} \\
+			a \implies b \implies c
+		\end{array}
+		\]
+		\item 
+		\[
+		\begin{array}{c}
+			x / 1 \quad \text{True} \\
+			a \implies b \implies c
+		\end{array}
+		\]
+		\item 
+		\[
+		\begin{array}{c}
+			b \land \neg x / \\
+			b \implies b \ldots
+		\end{array}
+		\]
+		\item 
+		\[
+		\begin{array}{c}
+			\neg x / \\
+			a \implies a \ldots
+		\end{array}
+		\]
+	\end{enumerate}
+\end{qsolve}
+
+\vfil
+\clearpage
+
+
+
+
+
+
+
+
+\section{Question 4}
+This problem is concerned with specifying in linear temporal logic tasks to be per
+formed by a robot. Suppose the robot must visit a set of n locations $l_1, l_2, ..., l_n$ .
+Let $p_i$ be an atomic formula that is \textit{t}rue if and only if the robot visits location $l_i$.
+
+Give LTL formulas specifying the following tasks:
+
+\begin{enumerate}
+	\item[(a)] The robot must eventually visit at least one of the $n$ locations.
+	\item[(b)] The robot must eventually visit all $n$ locations, but in any order.
+	\item[(c)] The robot must eventually visit all n locations, in the order $l_1, l_2,..., l_n$.
+\end{enumerate}
+
+\begin{qsolve}
+	\begin{enumerate}
+		\item[(a)] 
+		$\mathbf{F}p_1 \lor \mathbf{F}p_2 \lor \mathbf{F}p_3 \lor \ldots \lor \mathbf{F}p_n$
+		
+		\item 
+		$\mathbf{F}p_1 \land \mathbf{F}p_2 \land \mathbf{F}p_3 \land \ldots \land \mathbf{F}p_n$
+		
+		\item 
+		$\mathbf{F}(p_n \land \ldots \mathbf{F}(p_3 \land \mathbf{F}(p_2 \land \mathbf{F}p_1)))$
+	\end{enumerate}
+\end{qsolve}
+
+\vfil
+
+
+
+
+
+
+
+\vspace*{\fill}
+\begin{center}
+	\makeendpage
+
+\end{center}
+\vfill % equivalent to \vspace{\fill}
+\clearpage
+
+
+
+
+\end{document}

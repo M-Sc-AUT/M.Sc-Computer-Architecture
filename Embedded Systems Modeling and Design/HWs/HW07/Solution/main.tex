@@ -1,0 +1,419 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+\usepackage[en,bordered]{uni-style}
+\usepackage{uni-math}
+\usepackage{graphicx,wrapfig}
+
+
+\title{\href{https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Embedded Systems Modeling and Design}{\textcolor{black}{Embedded Systems}}}
+\prof{\href{https://scholar.google.com/citations?user=2RN0Y2YAAAAJ&hl=en}{\textcolor{black}{Prof. Sedighi}}}
+\subtitle{Chapter 12 - Scheduling}
+\subject{Homework 7}
+\info{
+    \begin{tabular}{lr}
+        \href{https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Embedded Systems Modeling and Design}{\textcolor{black}{Reza Adinepour}} & ID: 402131055\\
+    \end{tabular}
+    }
+    \date{\today}
+    % \usepackage{xepersian}
+    % \settextfont{Yas}
+    \usepackage{uni-code}
+    
+    \begin{document}
+\maketitlepage
+\maketitlestart
+
+
+
+
+
+
+
+
+\section{Question 1}
+This problem studies fixed-priority scheduling. Consider two tasks to be executed
+periodically on a single processor, where task 1 has period $p_1 = 4$ and task 2 has
+period $p_2 = 6$.
+
+\begin{enumerate}
+	\item 
+	Let the execution time of task 1 be $e_1 = 1$. Find the maximum value for the
+	execution time $e_2$ of task 2 such that the RM schedule is feasible.
+	\begin{qsolve}
+		According to the proposed schedule:
+		\begin{center}
+			\includegraphics*[width=0.7\linewidth]{images/Q1/a.pdf}
+			\captionof{figure}{Time schedule of question 1-a}
+		\end{center}
+		The answer is 4.
+	\end{qsolve}
+	
+	
+	
+	
+	\item 
+	Again let the execution time of task 1 be $e_1 = 1$. Let non-RMS be a fixed
+	priority schedule that is not an RM schedule. Find the maximum value for the
+	execution time $e_2$of task 2 such that non-RMS is feasible.
+	\begin{qsolve}
+		According to the following formula:
+		$$ e_1+e_2\le p_1 $$
+		The answer is 3.
+	\end{qsolve}
+	
+	
+	\item 
+	For both your solutions to (a) and (b) above, find the processor utilization.
+	Which is better?
+	\begin{qsolve}
+		\begin{enumerate}
+			\item For RM mode, the idle rate of the system is equal to 1 cycle in 12 cycles.
+			\item For the non-RM mode, the idle rate of the system is equal to 3 cycles in 12 cycles. ُTherefore, in the RM mode, the number can be $\frac{11}{12}$ and in the non-RM mode reached of $\frac{9}{12}$ So, in RM mode, the amount of processor usage is higher.
+		\end{enumerate}
+	\end{qsolve}
+	
+	
+	
+	\item 
+	For RM scheduling, are there any values for $e_1$ and $e_2$ that yield 100\% utiliza
+	tion? If so, give an example.
+	\begin{qsolve}
+		If there is a need to run both, it seems it is not shared for 100\% of processor usage. but if possible, do not execute a task, it means $e$ is equal to zero and by equalizing $e$ and other $p$ tasks, we will reach 100\%.
+	\end{qsolve}
+\end{enumerate}
+\vfil
+\clearpage
+
+
+
+
+
+%\centering\includegraphics*[width=0.4\linewidth]{images/img1}
+%\captionof{figure}{State machine of question 2}
+%\raggedright Determine whether the following statement is true or false, and give a supporting argument:\newline
+
+
+
+
+
+
+
+\section{Question 2}
+This problem studies dynamic-priority scheduling. Consider two tasks to be exe
+cuted periodically on a single processor, where task 1 has period $p_1 = 4$ and task
+2 has period $p_2 = 6$. Let the deadlines for each invocation of the tasks be the end
+of their period. That is, the first invocation of task 1 has deadline 4, the second
+invocation of task 1 has deadline 8, and so on.
+
+\begin{enumerate}
+	\item 
+	Let the execution time of task 1 be $e_1 = 1$. Find the maximum value for the
+	execution time $e_2$ of task 2 such that EDF is feasible.
+	\begin{qsolve}
+		In the EDF (Earliest Deadline First) mode, an attempt is made to minimize the lateness as much as possible by executing each task with the nearest deadline. According to the text of the book, this is calculated using the following formula:
+		$$ L_{\text{max}} = \max_{i \in T} (f_i - d_i) $$
+		
+		If the value of \textit{L} can be kept negative or zero, the relationship is feasible.
+		\begin{center}
+			\includegraphics*[width=0.7\linewidth]{images/Q2/a.pdf}
+			\captionof{figure}{Time schedule of question 2-a}
+		\end{center}
+		
+		For this purpose, $e_2$ must be selected in such a way that the conditions for this are met and no gaps exist, as shown in the figure above. Therefore, considering the problem statement, we have:
+		
+		$$ K=\frac{(4(K+1))-1}{1+e_2} $$
+		
+		We test this equation for different values of $K$:
+		
+		For $K=1$, we have $e_2=6$ which is equal to $p_2$.
+		
+		For $K=2$, we have $e_2=4.5$ which correctly satisfies the equation. Therefore, the value $e_2=4.5$ is the answer to the question.
+	\end{qsolve}
+	
+	
+	\item 
+	For the value of $e_2$ that you found in part (a), compare the EDF schedule
+	against the RM schedule from Exercise 1 (a). Which schedule has less pre
+	emption? Which schedule has better utilization?
+	
+	\begin{qsolve}
+		Considering the scenario given in the previous question and the obtained value, there should be no pre-emption in EDF. However, pre-emption does occur in RM. Additionally, in EDF, we will achieve 100\% utilization, which is higher than in RM. 
+	\end{qsolve}
+\end{enumerate}
+\vfil
+\clearpage
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Question 3}
+This problem compares RM and EDF schedules. Consider two tasks with periods
+$p_1 = 2$ and $p_2 = 3$ and execution times $e_1 = e_2 = 1$. Assume that the deadline for
+each execution is the end of the period.
+
+\begin{enumerate}
+	\item 
+	Give the RM schedule for this task set and find the processor utilization.
+	How does this utilization compare to the Liu and Layland utilization bound of
+	(12.2)?
+	\begin{qsolve}
+		n every 6 time cycles, the first task must be executed 3 times and the second task 2 times.
+		Since $e_1=e_2=1e_1=e_2=1$, the total utilized time is 5.
+		Therefore, we have:
+		$$ \mu\le n(2^{\frac{1}{n}}-1)=\mu = \frac{5}{6}\approx 0.833 $$
+		
+		Therefore, for $n=2$, this number is approximately $0.82842$, which is less than the calculated value for $\mu$. Hence, RM is probably not feasible in this case.
+	\end{qsolve}
+	
+	
+	\item 
+	Show that any increase in $e_1$ or $e_2$ makes the RM schedule infeasible. If you
+	hold $e_1 = e_2 = 1$ and $p_2 = 3$ constant, is it possible to reduce $p_1$ below 2
+	and still get a feasible schedule? By how much? If you hold $e_1 = e_2 = 1$
+	and $p_1 = 2$ constant, is it possible to reduce $p_2$ below 3 and still get a feasible
+	schedule? By how much?
+	\begin{qsolve}
+		Intuitively, it can be said that given the value of $p_1$, this task is executed alternately. Therefore, if the execution time is changed, there will be no time left for the proper execution of the other task (unless the execution time of the other task is reduced by the same amount). For this reason, the execution time of $e_2$ cannot be increased either, because $e_1$ is executed alternately, leaving no room to increase the execution time of $e_2$.
+		
+		Mathematically, assuming 100\% processor utilization, $p_1$ can be considered equivalent to 1.5, meaning it is executed 4 times in 6 cycles, which with two executions of the other task equals 6. Similarly, for task2, assuming 3 executions, $p_2$ can be considered equal to 2, which with 3 executions of task1 equals 6.
+	\end{qsolve}
+	
+	
+	
+	\item 
+	Increase the execution time of task 2 to be $e_2 = 1.5$, and give an EDF sched-
+	ule. Is it feasible? What is the processor utilization?
+	\begin{qsolve}
+		Yes, this is possible using EDF. According to the problem definition, we have:
+		\begin{center}
+			\includegraphics*[width=0.3\linewidth]{images/Q3/c.pdf}
+			\captionof{figure}{Time schedule of question 3-c}
+		\end{center}
+		And the processor utilization is also 100\%.
+	\end{qsolve}
+	
+\end{enumerate}
+\vfil
+\clearpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Question 4}
+This problem, formulated by Hokeun Kim, also compares RM and EDF schedules.
+Consider two tasks to be executed periodically on a single processor, where task 1
+has period $p_1 = 4$ and task 2 has period $p_2 = 10$. Assume task 1 has execution
+time $e_1 = 1$, and task 2 has execution time $e_2 = 7$.
+
+\begin{enumerate}
+	\item 
+	Sketch a rate-monotonic schedule (for 20 time units, the least common multiple of 4 and 10). Is the schedule feasible?
+	\begin{qsolve}
+		\begin{center}
+			\includegraphics*[width=0.7\linewidth]{images/Q4/a.png}
+			\captionof{figure}{Time schedule of question 4-a}
+		\end{center}
+		Yes, it seems feasible.
+	\end{qsolve}
+	
+	
+	
+	
+	\item 
+	Now suppose task 1 and 2 contend for a mutex lock, assuming that the lock
+	is acquired at the beginning of each execution and released at the end of each
+	execution. Also, suppose that acquiring or releasing locks takes zero time
+	and the priority inheritance protocol is used. Is the rate-monotonic schedule
+	feasible?
+	\begin{qsolve}
+		No, specifically after the mutex is locked by task2, due to its long execution time, task1 misses its deadline.
+	\end{qsolve}
+	
+	
+	
+	\item 
+	Assume still that tasks 1 and 2 contend for a mutex lock, as in part (b). Sup
+	pose that task 2 is running an \textbf{anytime algorithm}, which is an algorithm that
+	can be terminated early and still deliver useful results. For example, it might
+	be an image processing algorithm that will deliver a lower quality image when
+	terminated early. Find the maximum value for the execution time $e_2$ of task
+	2 such that the rate-monotonic schedule is feasible. Construct the resulting
+	schedule, with the reduced execution time for task 2, and sketch the schedule
+	for 20 time units. You may assume that execution times are always positive
+	integers.
+	\begin{qsolve}
+		We decrease the value of $e_2$ one by one. For $e_2=6$, we have:
+		\begin{center}
+			\includegraphics*[width=0.7\linewidth]{images/Q4/c.pdf}
+			\captionof{figure}{Time schedule of question 4-c}
+		\end{center}
+	\end{qsolve}
+	
+	\begin{qsolve}
+		Which clearly shows that task1 misses its deadline in the $16^{th}$ time cycle.
+		
+		Since it is mentioned that the execution time is of integer type, for $e_2=5$, we have:
+		\begin{center}
+			\includegraphics*[width=0.7\linewidth]{images/Q4/c_2.pdf}
+			\captionof{figure}{Time schedule of question 4-c}
+		\end{center}
+		
+		Which seems correct. Therefore, with $e_2=5$, RM can be feasible.
+	\end{qsolve}
+	
+	
+	
+	\item 
+	For the original problem, where $e_1 = 1$ and $e_2 = 7$, and there is no mutex
+	lock, sketch an EDF schedule for 20 time units. For tie-breaking among task
+	executions with the same deadline, assume the execution of task 1 has higher
+	priority than the execution of task 2. Is the schedule feasible?
+	\begin{qsolve}
+		To solve this problem, we need to calculate the difference between the execution time of each task and its deadline, and execute the task with the smaller value. Additionally, if the values are equal, task1 has the priority.
+		\begin{center}
+			\includegraphics*[width=0.7\linewidth]{images/Q4/d.pdf}
+			\captionof{figure}{Time schedule of question 4-d}
+		\end{center}
+	\end{qsolve}
+	
+	
+	
+	\item 
+	Now consider adding a third task, task 3, which has period $p_3 = 5$ and ex
+	ecution time $e_3 = 2$. In addition, assume as in part (c) that we can adjust
+	execution time of task 2.\\
+	Find the maximum value for the execution time $e_2$ of task 2 such that the
+	EDF schedule is feasible and sketch the schedule for 20 time units. Again,
+	you may assume that the execution times are always positive integers. For
+	tie-breaking among task executions with the same deadline, assume task $i$ has
+	higher priority than task $j$ if $i < j$.)
+	\begin{qsolve}
+		For this case, within a span of 20 time cycles, task1 is executed 5 times and task3 is executed 4 times. Therefore, we have:
+		$$ 20-(5\times 1+4\times2)=7 $$
+		This amount is the total available time for task2, which, given $p_2=10$ and the need to execute task2 twice, and also considering the condition that the execution time must be an integer, we have:
+		$$ e_2=3 $$
+	\end{qsolve}
+\end{enumerate}
+
+\begin{qsolve}[Solution]
+	\begin{center}
+		\includegraphics*[width=0.7\linewidth]{images/Q4/e.pdf}
+		\captionof{figure}{Time schedule of question 4-e}
+	\end{center}
+\end{qsolve}
+\vfil
+\clearpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Question 5}
+This problem compares fixed vs. dynamic priorities, and is based on an example by
+Burns and Baruah (2008). Consider two periodic tasks, where task $\tau_1$ has period
+$p_1 = 2$, and task $\tau_2$ has period $p_2 = 3$. Assume that the execution times are $e_1 = 1$ and $e_2 = 1.5$. Suppose that the release time of execution $i$ of task $\tau_1$ is given by
+
+$$ r_{1,i}=0.5+2(i-1) $$
+
+for $i = 1, 2, ...$ . Suppose that the deadline of execution $i$ of task $\tau_1$ is given by
+
+$$ d_{1,i}=2i $$
+
+Correspondingly, assume that the release times and deadlines for task $\tau_2$ are
+
+$$ r_{2,i}=3(i-1) $$
+
+and
+
+$$ d_{2,i}=3i $$
+
+\begin{enumerate}
+	\item 
+	Give a feasible fixed-priority schedule.
+	\begin{qsolve}
+		Given the ambiguity in the problem statement, considering the previous questions, the task with higher priority is assumed. If this assumption is not made, each question must be solved twice: once for task1 with higher priority and once for task2 with higher priority.
+		\begin{center}
+			\includegraphics*[width=0.35\linewidth]{images/Q5/a.pdf}
+			\captionof{figure}{Time schedule of question 5-a}
+		\end{center}
+	\end{qsolve}
+	
+	
+	
+	\item 
+	Show that if the release times of all executions of task $\tau_1$ are reduced by 0.5,
+	then no fixed-priority schedule is feasible.
+	\begin{qsolve}
+		\begin{center}
+			\includegraphics*[width=0.35\linewidth]{images/Q5/b.pdf}
+			\captionof{figure}{Time schedule of question 5-b}
+		\end{center}
+		It is clear that in this case, task2 misses its deadline.
+	\end{qsolve}
+	
+	\item 
+	Give a feasible dynamic-priority schedule with the release times of task $\tau_1$
+	reduced to
+	
+	$$ r_{1,i}=2(i-1) $$
+	
+	\begin{qsolve}
+		In this case we have: 
+		$$ D_{2,2}=6\ D_{2,1}=3\ D_{1,3}=6\ D_{1,2}=4\ D_{1,1}=2 $$
+		\begin{center}
+			\includegraphics*[width=0.4\linewidth]{images/Q5/c.pdf}
+			\captionof{figure}{Time schedule of question 5-c}
+		\end{center}
+	\end{qsolve}
+\end{enumerate}
+
+
+
+\vspace*{\fill}
+\begin{center}
+	\makeendpage
+	All of this figures, draw with \texttt{ipe}. You can download this software here:\\
+	\href{https://ipe.otfried.org/}{\textcolor{magenta}{\texttt{ipe.otfried.org}}}
+
+\end{center}
+\vfill % equivalent to \vspace{\fill}
+\clearpage
+
+
+
+
+\end{document}

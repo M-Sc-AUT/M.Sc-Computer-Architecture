@@ -1,0 +1,193 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+\usepackage[en,bordered]{uni-style}
+\usepackage{uni-math}
+\usepackage{graphicx,wrapfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumitem}
+
+
+
+\title{\href{https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Embedded Systems Modeling and Design}{\textcolor{black}{Embedded Systems}}}
+\prof{\href{https://scholar.google.com/citations?user=2RN0Y2YAAAAJ&hl=en}{\textcolor{black}{Prof. Sedighi}}}
+\subtitle{Chapter 16 - Quantitative Analysis}
+\subject{Homework 11}
+\info{
+    \begin{tabular}{lr}
+        \href{https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Embedded Systems Modeling and Design}{\textcolor{black}{Reza Adinepour}} & ID: 402131055\\
+    \end{tabular}
+    }
+    \date{\today}
+    % \usepackage{xepersian}
+    % \settextfont{Yas}
+    \usepackage{uni-code}
+    
+    \begin{document}
+\maketitlepage
+\maketitlestart
+
+
+
+
+
+
+
+\section{Question 2}
+Consider the program given below:
+
+\begin{lstlisting}[language=C, keywordstyle=\color{blue}\bfseries, commentstyle=\color{green}, basicstyle=\ttfamily\small, numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt]
+void testFn(int *x, int flag) 
+{
+	while (flag != 1) 
+	{
+		flag = 1;
+		*x = flag;
+	}
+	if (*x > 0)
+		*x += 2;
+}
+\end{lstlisting}
+
+In answering the questions below, assume that \texttt{x} is not \texttt{NULL}.
+
+\begin{enumerate}
+	\item [(a)]
+	Draw the control-flow graph of this program. Identify the basic blocks with
+	unique IDs starting with 1.
+	\begin{qsolve}
+		\begin{center}
+			\includegraphics*[width=0.2\linewidth]{images/Q2.pdf}
+			\captionof{figure}{Control-flow graph of Q3}
+		\end{center}
+	\end{qsolve}
+	
+	Note that we have added a dummy source node, numbered 0, to represent the
+	entry to the function. For convenience, we have also introduced a dummy sink
+	node, although this is not strictly required.
+	
+	\item [(b)]
+	Is there a bound on the number of iterations of the while loop? Justify your
+	answer.
+	\begin{qsolve}
+		Yes, given that if the condition is true, \texttt{flag} will be set to 1, the \texttt{while} loop will therefore iterate at most once.
+	\end{qsolve}
+	
+	
+	\item [(c)]
+	How many total paths does this program have? How many of them are feasi
+	ble, and why?
+	\begin{qsolve}
+		"The program has 4 paths (two for the while loop and two for the if statement). If the program enters the while loop, the value of \texttt{*x} will be set to 1, thus one of the if conditions after the while loop will not be reachable. Therefore, it can be concluded that there are 3 reachable states."
+	\end{qsolve}
+	
+	
+	\item [(d)]
+	Write down the system of flow constraints, including any logical flow con
+	straints, for the control-flow graph of this program.
+	\begin{qsolve}
+			$$ x_0 = 1 $$
+			$$x_1 = 2$$
+			$$x_1 = d_{12} + d_{13}$$
+			$$x_2 = 1$$
+			$$x_2 = d_{12} = d_{21}$$
+			$$x_3 = d_{13} = d_{34} + d_{35}$$
+			$$x_4 = d_{34} = d_{45}$$
+			$$x_5 = d_{35} + d_{45}$$
+	\end{qsolve}
+	
+	
+	\item [(e)]
+	Consider running this program uninterrupted on a platform with a data cache.
+	Assume that the data pointed to by \texttt{x} is not present in the cache at the start of
+	this function.
+	
+	For each read/write access to \texttt{*x}, argue whether it will be a cache hit or miss.
+	Now, assume that \texttt{*x} is present in the cache at the start of this function. Iden
+	tify the basic blocks whose execution time will be impacted by this modified
+	assumption.
+	\begin{qsolve}
+		The topic of write-allocate versus no-write-allocate is not mentioned, so the more common write-allocate is considered. In this case, if the while loop executes, the first miss will occur at \texttt{ID=2}, and after that, it will be a hit. If the while loop does not execute, the first miss will occur at \texttt{ID=3}, and after that, it will be a hit. If a block containing \texttt{*x} is in memory, the two mentioned \texttt{IDs} will execute faster.
+	\end{qsolve}
+\end{enumerate}
+\vfil
+\clearpage
+
+
+
+
+
+
+\section{Question 3}
+Consider the function \texttt{check\_password} given below that takes two arguments: a
+user ID uid and candidate password \texttt{pwd} (both modeled as \texttt{ints} for simplicity).
+This function checks that password against a list of user IDs and passwords stored
+in an array, returning 1 if the password matches and 0 otherwise.
+
+
+
+
+
+\begin{enumerate}
+	\item [(a)]
+	Draw the control-flow graph of the function \texttt{check\_password}. State the num
+	ber of nodes (basic blocks) in the CFG. (Remember that each conditional
+	statement is considered a single basic block by itself.)
+	
+	Also state the number of paths from entry point to exit point (ignore path
+	feasibility).
+	
+	\begin{qsolve}
+		
+	\end{qsolve}
+	
+	
+	
+	
+	\item [(b)]
+	Suppose the array \texttt{all\_pwds} is sorted based on passwords (either increasing
+	or decreasing order). In this question, we explore if an external client that calls
+	\texttt{check\_password} can \textit{infer anything about the passwords} stored in \texttt{all\_pwds}
+	by repeatedly calling it and \textit{recording the execution time} of \texttt{check\_ password}.
+	Figuring out secret data from “physical” information, such as running time, is
+	known as a \textit{side-channel attack}.
+	In each of the following two cases, what, if anything, can the client infer about
+	the passwords in \texttt{all\_pwds}?
+	\begin{itemize}
+		\item The client has exactly one (uid, password) pair present in \texttt{all\_pwds}
+		\item The client has NO (uid, password) pairs present in in \texttt{all\_pwds}
+	\end{itemize}
+	Assume that the client knows the program but not the contents of the array
+	\texttt{all\_pwds}
+\end{enumerate}
+
+
+
+
+\begin{qsolve}
+
+\end{qsolve}
+
+
+
+
+
+
+
+
+
+\vspace*{\fill}
+\begin{center}
+	\makeendpage
+
+\end{center}
+\vfill % equivalent to \vspace{\fill}
+\clearpage
+
+
+
+
+\end{document}
