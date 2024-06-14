@@ -188,6 +188,8 @@
 	\textbf{پاسخ:} وزن ها را از \href{https://onedrive.live.com/?authkey=%21ANiQIk04073Gdfo&id=8F6F3FD340AC68D1%21332&cid=8F6F3FD340AC68D1}{\textcolor{magenta}{اینجا}}
 	دانلود می‌کنیم.
 	
+	پس از دانلود به مسیر شبیه‌ساز می‌رویم و با دستور 
+	
 	\subsection*{سوال 1:}
 	
 	همانطور که در کلاس یاد گرفتید، ساختار \lr{PIM} شامل تعدادی کاشی است و هر کاشی شامل تعدادی \lr{PE} است. در هر \lr{PE}، ما مدارهای ضروری و ساختار ضربدری سلول‌های حافظه را داریم. اگر اندازه ضربدری را کاهش دهیم چه اتفاقی می‌افتد؟ به عنوان مثال، آیا باید انتظار داشته باشیم که توان، تأخیر و دقت کاهش، افزایش یا تغییر نکند؟ پاسخ خود را به تفصیل توضیح دهید.
@@ -228,10 +230,11 @@
 	
 	\subsection*{سوال 2:}
 	
-	اگر بخواهیم PUM را به این شبیه‌ساز اضافه کنیم، کدام قسمت باید تغییر کند؟
+	اگر بخواهیم \lr{PUM} را به این شبیه‌ساز اضافه کنیم، کدام قسمت باید تغییر کند؟
 	
 	
 \textbf{پاسخ:‌ }
+
 تغییرات مورد نیاز برای اضاف کردن \lr{PUM} به شبیه‌ساز \lr{NVSim} به‌صورت زیر است:
 
 \subsection*{قسمت‌های کلیدی برای تغییر}
@@ -247,10 +250,11 @@
 	
 	
 	
-برای اعمال این تغییرات، فایل \texttt{SimConfig.ini} را باز کرده و کانفیگ‌های \lr{PUM} را به صورت زیر اضافه می‌کنیم.
+برای مثال می‌توان این تنظیمات را در فایل \texttt{SimConfig.ini} انجام داد:
 	\begin{latin}
 		\begin{verbatim}
 			[PUM]
+			um_enabled = True
 			memory_type = "RRAM"
 			access_pattern = "row-major"
 			pum_specific_param1 = value1
@@ -259,7 +263,12 @@
 	\end{latin}
 	
 	
-	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{images/6-Add_PUM_to_SimConfig.png}
+		\caption{اضافه کردن کانفیگ \lr{PUM}}
+		\label{اضافه کردن کانفیگ PUM}
+	\end{figure}
 	
 	
 	
@@ -268,29 +277,57 @@
 	
 	
 	\item \textbf{توصیف شبکه (\lr{\texttt{network.py}}):}
-	\begin{itemize}
-		\item فایل \texttt{network.py} را برای اضاف کردن \lr{PUM} به لایه‌ها تغییر می‌دهیم.
-		
-		\item این شامل تعریف نحوه تعامل عناصر PUM با لایه‌های شبکه عصبی و هر پیکربندی خاص مورد نیاز برای عملیات PUM می‌باشد.
-	\end{itemize}
 	
-	\item \textbf{ماژول‌های شبیه‌سازی:}
-	\begin{itemize}
-		\item ماژول‌های شبیه‌سازی را برای شامل کردن رفتار و عملکرد PUM تغییر دهید.
-		\item این شامل تغییرات در \texttt{MNSIM/Hardware Model/} و \texttt{MNSIM/Mapping Model/} برای انعکاس ویژگی‌های PUM از نظر توان، مساحت، تأخیر و مصرف انرژی می‌باشد.
-	\end{itemize}
+	اگر فایل \texttt{network.py} را باز کنیم، مشاهده می‌کنیم که همه تنظیمات لایه‌های مختلف شبکه در این فایل تنظیم شده است. می‌بایست این فایل را طوری تغییر دهیم که معماری \lr{PUM} را به لایه‌های مختلف اضافه کنیم و آن را با لایه‌های مختلف ارتباط دهیم. برای انجام تغییرات باید به مسیر زیر برویم:
+	\begin{latin}
+		\begin{verbatim}
+			MNSIM/Interface/
+		\end{verbatim} 
+	\end{latin}
 	
-	\item \textbf{ماژول‌های جدید برای PUM:}
-	\begin{itemize}
-		\item ماژول‌ها یا کلاس‌های پایتون جدیدی را برای نمایش سخت‌افزار PUM و رفتار آن پیاده‌سازی کنید.
-		\item این ممکن است شامل ایجاد فایل‌های جدید یا تغییرات اساسی در فایل‌های موجود در \texttt{MNSIM/Hardware Model/} و \texttt{MNSIM/Mapping Model/} باشد.
-	\end{itemize}
+	برای مثال می‌توان مطابق با سایر تنظیمات همین فایل، یک \texttt{if} دیگر به کد ها اضافه کرد.
 	
-	\item \textbf{مدل‌سازی دقت و عملکرد:}
-	\begin{itemize}
-		\item اطمینان حاصل کنید که مدل‌سازی دقت و عملکرد ویژگی‌های خاص PUM را در نظر می‌گیرد.
-		\item فایل \texttt{MNSIM/Interface/} را تغییر دهید تا جریان داده و الگوهای پردازش خاص PUM را مدیریت کند.
-	\end{itemize}
+	\begin{latin}
+		\begin{verbatim}
+			if(cate.startswith('pum_net')):
+				    layer_config_list.append({'type': 'pum_conv', 'in_channels': 3,
+					     'out_channels': 64, 'kernel_size': 3, 'padding': 1, 'stride': 2})
+				    layer_config_list.append({'type': 'relu'})
+				    layer_config_list.append({'type': 'pooling', 'mode': 'MAX',
+				       'kernel_size': 2, 'stride': 2})
+		\end{verbatim} 
+	\end{latin}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{images/7-Add_PUM_to_network.png}
+		\caption{اضافه کردن \lr{PUM} به فایل \texttt{network.py}}
+		\label{اضافه کردن PUM به فایل network}
+	\end{figure}
+	
+	
+	\item \textbf{تغییر ماژول‌های شبیه‌سازی:}\\
+	
+	پس از مرتبط کردن لایه‌های شبکه با معماری \lr{PUM} مورد نظر، می‌بایست توابع پیاده سازی آن نیز در سایر فایل‌های برنامه تعریف شود. برای انجام این کار می‌بایست به مسیر زیر برویم:
+	
+	\begin{latin}
+		\begin{verbatim}
+			MNSIM/Hardware_Model/ 
+		\end{verbatim} 
+	\end{latin}
+	
+	و فایل های زیر را مطابق با نیاز‌هایمان تغییر دهیم:
+	\begin{latin}
+		\begin{enumerate}
+			\item \texttt{Crossbar.py}
+			\item \texttt{PE.py}
+			\item \texttt{Device.py}
+			\item \texttt{Crossbar.py}
+			\item \texttt{PE.py}
+			\item \texttt{Tile.py}
+			\item \texttt{Buffer.py}
+		\end{enumerate} 
+	\end{latin}
 \end{enumerate}
 	
 	
