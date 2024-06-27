@@ -1,0 +1,19 @@
+\begin{frame}{How to use: Beamer Itemize}
+     \begin{itemize}[<+->]
+        \item add "[$\texttt{\detokenize{<+->}}$]" right after "begin" command of "itemize" Environment for showing items, slide by slide. (see "Frames/Introduction/Frame1")
+        
+        \item for customize appearance of items remove "[$\texttt{\detokenize{<+->}}$]", and use following commands in front of each "item" (see "Frames/Main/Frame-I-1"):
+            \begin{itemize}[<.->]
+                \item appear from a slide (for example slide 2), add $\texttt{\detokenize{<2->}}$
+                \item appear from a slide to another, use $\texttt{\detokenize{<2-4>}}$
+                \item appear only on one slide $\texttt{\detokenize{<2>}}$
+                \item appear from beggining to a slide $\texttt{\detokenize{<-2>}}$
+                \item appear in next slide of previously appeared slide $\texttt{\detokenize{<+>}}$ (and continue to end of frame $\texttt{\detokenize{<+->}}$)
+                \item appear at same time with previous slide $\texttt{\detokenize{<.>}}$ (and continue to end of frame $\texttt{\detokenize{<.->}}$)
+            \end{itemize}
+        \item use "block" Environment like this (also environments like 
+        definition", "theorem" and ... work same)
+        
+        \item By adding the appearance option in front of nested "itemize" environment, you can control it's items separately from the above itemize option.
+     \end{itemize}
+\end{frame}
