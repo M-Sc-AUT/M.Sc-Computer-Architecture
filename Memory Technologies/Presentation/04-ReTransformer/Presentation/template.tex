@@ -1,11 +1,11 @@
 %           ******************************************************
 %          **   course         : Memory Technologies             **
-%         ***   Presentation   : 01                              ***
-%        ****   Topic          : UMA and NUMA Architecture       ****
+%         ***   Presentation   : 04                              ***
+%        ****   Topic          : ReTransformer                   ****
 %        ****   AUTHOR         : Reza Adinepour                  ****
 %         ***   Student ID:    : 402131055                       ***
 %          **   Github         : github.com/rezaAdinepour/       **
-%           ******************************************************
+%           ***************************	***************************
 
 \documentclass[
 	12pt, % Set the default font size, options include: 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
@@ -17,7 +17,7 @@
 
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
 \usepackage{subcaption}
-
+\usepackage[dvipsnames]{xcolor}
 
 %----------------------------------------------------------------------------------------
 %	SELECT LAYOUT THEME
@@ -141,42 +141,48 @@
 %----------------------------------------------------------------------------------------
 %	PRESENTATION BODY SLIDES
 %----------------------------------------------------------------------------------------
-
-\section{Memory Architecture Overview}
-
-
-
+\section{Introduction to Transformer Network}
 \begin{frame}
-	\frametitle{Memory Architecture Overview}
-	\textbf{What is this structure?}\\
-	--- Defines how computer memory is organized and accessed.\\
-	\begin{enumerate}
-		\item \textcolor{red}{U}niform \textcolor{red}{M}emory \textcolor{red}{A}ccess (UMA) 
-		\item \textcolor{red}{N}on-\textcolor{red}{U}niform \textcolor{red}{M}emory \textcolor{red}{A	}ccess (NUMA)
-		\item \textcolor{red}{C}ache-\textcolor{red}{O}nly \textcolor{red}{M}emory \textcolor{red}{A}ccess (COMA)
-	\end{enumerate}
-	
-	\textbf{--- In this presentation we talk about UMA and NUMA Architecture}
+	\frametitle{What is a Transformer Network?}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{enumerate}
+				\item 
+				Introduced in \textbf{"Attention is All You Need"} (2017)
+				
+				\item 
+				Unlike traditional RNNs and LSTMs, Transformers \textbf{do not} process data sequentially but use a mechanism called \textbf{"self-attention"} to draw global dependencies between input and output.
+			\end{enumerate}
+		\end{column}
+		
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=5.3cm]{Images/img1.png}
+				\caption{Transformer Architecture}
+			\end{figure}
+		\end{column}
+	\end{columns}			
 \end{frame}
 
 
 
 
-\subsection{Uniform Memory Access (UMA)}
 
+\subsection{Why Use Transformers?}
 \begin{frame}
-	\frametitle{Uniform Memory Access (UMA)}
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.8\linewidth]{Images/img1}
-		\caption{Processors with equal access to memory}
-		\label{Illustrates processors with equal access to memory.}
-	\end{figure}
-	
+	\frametitle{Why Use Transformers?}
 	\begin{enumerate}
-		\item Same latency for all processors to access memory.
-		\item Hardware cache typically present with each processor.
+		\item
+		\textbf{Parallelization:}\\ Unlike RNNs, Transformers can process input data in parallel, leading to faster training times.
+		
+		\item
+		\textbf{Self-Attention Mechanism:}\\ This allows the model to weigh the importance of different words in a sentence, capturing long-range dependencies more effectively.
+		
+		\item 
+		\textbf{Scalability:}\\ Transformers can be scaled up effectively, leading to improved performance with more data and larger models.
+		
+		\item 
+		\textbf{Versatility:}\\ They are used in various applications, from machine translation and text generation to image processing and more.
 	\end{enumerate}	
 \end{frame}
 
@@ -184,28 +190,24 @@
 
 
 
+\subsection{Strengths of Transformer}
 \begin{frame}
-	\frametitle{Uniform Memory Access (UMA) (Cont.)}
+	\frametitle{Strengths of Transformer}
+	
 	
 	\begin{enumerate}
-		\item Equal memory access for all processors.
-		\item Shared memory, any processor can access any part at any time.
-		\item Simple, cost-effective, highly scalable.
+		\item
+		\textbf{\textcolor{ForestGreen}{Efficiency:}}\\ Due to parallel processing, they train faster on large datasets.
+		
+		\item
+		\textbf{\textcolor{ForestGreen}{Accuracy:}}\\ State-of-the-art performance in many tasks, particularly in NLP.
+		
+		\item 
+		\textbf{\textcolor{ForestGreen}{Flexibility:}}\\ Applicable to a wide range of tasks beyond language, such as image and speech processing.
+		
+		\item 
+		\textbf{\textcolor{ForestGreen}{Transfer Learning:}}\\ Pre-trained models like BERT and GPT can be fine-tuned for specific tasks with relatively small amounts of data.
 	\end{enumerate}
-	
-	\textcolor{green}{Advantages:}
-	\begin{enumerate}
-		\item \textbf{Ease of Implementation:} Minimal hardware modifications, cost-effective.
-		\item \textbf{Scalability:} Easily scales with more processors without impacting access times.
-	\end{enumerate}
-	
-	\textcolor{red}{Disadvantages:}
-	\begin{enumerate}
-		\item \textbf{Memory Contention:} Increased processors may lead to slower access times.
-		\item \textbf{Limited Bandwidth:} Shared memory bus can become a bottleneck.
-	\end{enumerate}
-
-
 \end{frame}
 
 
@@ -213,30 +215,24 @@
 
 
 
-
+\subsection{Weaknesses of Transformers}
 \begin{frame}
-	\frametitle{Uniform Memory Access (UMA) (Cont.)}
+	\frametitle{Weaknesses of Transformers}
 	
-	Example System:
 	\begin{enumerate}
-		\item \textbf{Symmetric Multiprocessing (SMP) System: }
-		\begin{enumerate}
-			\item Multiple processors share common memory.
-			\item Controlled by a single operating system.
-			\item Common in servers and high-performance computing.
-		\end{enumerate}
+		\item
+		\textbf{\textcolor{Red}{Resource-Intensive:}}\\ Require significant computational power and memory, especially for large models.
+		
+		\item
+		\textbf{\textcolor{Red}{Complexity:}}\\ More challenging to understand and implement compared to simpler models.
+		
+		\item 
+		\textbf{\textcolor{Red}{Data Requirements:}}\\ Performance often hinges on the availability of large-scale datasets for pre-training.
+		
+		\item 
+		\textbf{\textcolor{Red}{Inference Speed:}}\\ Performance bottlenecks during inference due to the scaled dot-product attention mechanism.
 	\end{enumerate}
-	
-	Summary:
-	\begin{enumerate}
-		\item \textbf{\textcolor{green}{Strengths:} Simplicity and scalability.}
-		\item \textbf{\textcolor{red}{Weaknesses:} Potential for memory contention and limited bandwidth in larger systems.}
-	\end{enumerate}
-	
 \end{frame}
-
-
-
 
 
 
@@ -245,47 +241,115 @@
 
 
 %------------------------------------------------
-
-
-\subsection{Non-uniform Memory Access (NUMA)}
-
+\section{Motivation}
 \begin{frame}
-	\frametitle{Non-uniform Memory Access (NUMA)}
 	
-	
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.5\linewidth]{Images/img2}
-		\caption{Processors with equal access to memory}
-		\label{Processors with local memory}
-	\end{figure}
+	In this paper:
+	\frametitle{Motivation}
 	
 	\begin{enumerate}
-		\item Each processor has its local memory.
+		\item
+		Developed \textbf{ReTransformer, a ReRAM-based Processing-in-Memory (PIM) architecture} specifically designed to accelerate Transformer models.
+		
+		\item 
+		Implemented \textbf{optimized MatMul operations} to reduce data dependency and intermediate result handling
+		
+		\item 
+		Designed a hybrid softmax mechanism combining in-memory logic and look-up tables for efficient softmax calculations.
+		
+		\item 
+		Introduced a \textbf{sub-matrix pipeline design} for better utilization of ReRAM crossbars and improved throughput.
 	\end{enumerate}
+\end{frame}
+
+%\begin{frame}
+%	\frametitle{Motivation}
+%	
+%	And Improvements Made is:
+%	\begin{enumerate}
+%		\item
+%		\textbf{Computing Efficiency: }\\
+%		ReTransformer improves computing efficiency by 23.21x compared to GPU and 3.25x compared to existing ReRAM-based designs like PipeLayer.
+%		
+%		\item 
+%		\textbf{Power Consumption:}\\
+%		Overall power consumption is reduced by 1086x compared to GPU and 2.82x compared to PipeLayer.
+%		
+%		\item 
+%		\textbf{Latency Reduction:}\\
+%		Optimized MatMul operations significantly reduce computation latency by 1.32x for smaller models and 1.16x for larger models.
+%		
+%		\item 
+%		\textbf{Softmax Efficiency:}\\
+%		The hybrid softmax design lowers power consumption by 32\% compared to traditional CMOS-based designs.
+%		
+%		\item 
+%		\textbf{Throughput Enhancement:}\\
+%		The finer granularity sub-matrix pipeline increases computational throughput by 1.18x for both evaluated Transformer models.
+%	\end{enumerate}
+%\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Motivation}
 	
-	
+	And Improvements Made is:
+	\begin{enumerate}
+		\item
+		\textbf{Computing Efficiency: }\\
+		23.21x improvement over GPU, 3.25x over PipeLayer.
+		
+		\item 
+		\textbf{Power Consumption:}\\
+		1086x reduction compared to GPU, 2.82x compared to PipeLayer.
+		
+		\item 
+		\textbf{Latency Reduction:}\\
+		1.32x for smaller models, 1.16x for larger models.
+		
+		\item 
+		\textbf{Softmax Efficiency:}\\
+		32\% lower power consumption compared to traditional CMOS-based designs.
+		
+		\item 
+		\textbf{Throughput Enhancement:}\\
+		1.18x increase in computational throughput.
+	\end{enumerate}
 \end{frame}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 \begin{frame}
-	\frametitle{Non-uniform Memory Access (NUMA) (Cont.)}
+	\frametitle{Motivation}
+	
+	This concept use in CNNs and RNNs. but we can't and cant be directly applied to Transformer due to the following reasons:
 	
 	\begin{enumerate}
-		\item Memory divided into multiple banks, each processor has its local bank.
-		\item Processors can access other banks, but at higher latency than local access.
-		\item Efficient memory resource use, potential better performance than UMA for certain workloads.
+		\item 
+		\textbf{Matrix-Matrix Multiplication:}\\ 
+		Transformers require frequent matrix-matrix multiplications, causing potential slowdowns and reduced efficiency due to intermediate result storage.
+		
+		\item 
+		\textbf{Different Computations:}\\
+		Unlike CNNs, Transformers use scaled dot-product attention, necessitating different computational approaches.
+		 
+		\item 
+		\textbf{Finer Pipeline Granularity:}\\
+		Transformer accelerators need a more detailed pipeline design compared to the layer-level granularity used in previous designs.
 	\end{enumerate}
-	
-	\textcolor{green}{Advantages:}
-	\begin{enumerate}
-		\item \textbf{Reduced Memory Contention:} Each processor has its local memory, minimizing contention.
-		\item \textbf{Increased Memory Bandwidth:} Local memory banks lead to higher bandwidth than UMA.
-		\item \textbf{Efficient Memory Use:} Allocation based on processor needs enhances resource utilization.
-	\end{enumerate}
-	
-	
 \end{frame}
 
 
