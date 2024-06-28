@@ -120,7 +120,7 @@
 %	TITLE SLIDE
 %----------------------------------------------------------------------------------------
 
-\begin{frame}
+\begin{frame}\label{start}
 	\titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
 	\centering\includegraphics[scale=0.13]{Images/Logo/logo2.png}
 \end{frame}
@@ -669,6 +669,24 @@
 \end{frame}
 
 
+
+
+
+
+
+\section{References}
+\begin{frame}{References}
+	
+	\hyperlink{start}{\beamerreturnbutton{Back to start}}
+	
+	\nocite{bibitem1}
+	\nocite{*}
+	\bibliographystyle{IEEEtran} 
+	\bibliography{ref}
+	
+\end{frame}
+
+
 %----------------------------------------------------------------------------------------
 %	CLOSING SLIDE
 %----------------------------------------------------------------------------------------
@@ -682,6 +700,13 @@
 		{\LARGE Questions? Comments?}\\
 		You can find this slides here:\\
 		\textcolor{blue}{\href{https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Memory Technologies}{\texttt{github.com/M-Sc-AUT/M.Sc-Computer-Architecture/Memory Technologies}}}
+		
+		In this term, I do 3 presentation with this topics:
+		\begin{enumerate}
+			\item Multiprocessors shared-memory Architecture
+			\item Exploring CACTI and NVSIM Simulators
+			\item Exploring DRAMSim and SimpleScaler Simulators
+		\end{enumerate}
 	\end{center}
 \end{frame}
 
