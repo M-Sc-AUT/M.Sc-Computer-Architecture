@@ -30,11 +30,11 @@
 \usepackage{fancyhdr} % Head note and footnote
     \pagestyle{fancy}
     \fancyhf{}
-    \fancyhead[L]{\footnotesize \fontfamily{cmss}\selectfont Memory Technologies} % Left of Head note
-    \fancyhead[R]{\footnotesize \fontfamily{cmss}\selectfont CE5431} % Right of Head note
+    \fancyhead[L]{\footnotesize \fontfamily{cmss}\selectfont Embedded Systems} % Left of Head note
+    \fancyhead[R]{\footnotesize \fontfamily{cmss}\selectfont CE5439} % Right of Head note
     \fancyfoot[L]{\footnotesize \fontfamily{cmss}\selectfont CE Dep.} % Left of Footnote
     \fancyfoot[C]{\thepage} % Center of Footnote
-    \fancyfoot[R]{\footnotesize \fontfamily{cmss}\selectfont Amirkabir University of Technology} % Right of Footnote
+    \fancyfoot[R]{\footnotesize \fontfamily{cmss}\selectfont AUT} % Right of Footnote
     \renewcommand{\footrulewidth}{0.4pt} % Footnote rule
 \usepackage{float} % Utilization of [H] in figures
 \usepackage{graphicx} % Figures in LaTeX
@@ -81,11 +81,11 @@
     \end{figure}
     \mbox{}\\[2.0cm]
     \textsc{\Huge \textbf{Embedded Systems Modeling and Design}}\\[1.0cm]
-    \textsc{\LARGE Instructor: Prof. Mehdi Sedighi}\\[2.5cm]
+    \textsc{\LARGE Instructor: \href{https://scholar.google.com/citations?user=2RN0Y2YAAAAJ&hl=en}{\textcolor{black}{Prof. Mehdi Sedighi}}}\\[2.5cm]
     \textsc{\LARGE Amirkabir University of Technology} \\%\\[1.0cm]
     \textsc{(Tehran polytechnic)}
     \HRule\\[0.4cm]
-    {\large \bf {\fontfamily{cmss}\selectfont Optimizing Algorithm Performance with HBM-PIM: A Matrix Multiplication Case Study} }\\[0.2cm]
+    {\large \bf {\fontfamily{cmss}\selectfont Design and Modeling of an Intelligent Automotive Airbag System \& Petri Net-Based Modeling of an Elevator System} }\\[0.2cm]
     \HRule\\[1.5cm]
 \end{center}
 
@@ -96,7 +96,7 @@
 \begin{center}
     \begin{minipage}{0.5\textwidth}
         \begin{flushleft}
-            Reza Adinepour\\
+            \href{https://rezaadinepour.github.io/}{\textcolor{black}{Reza Adinepour}}\\
         \end{flushleft}
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
@@ -119,31 +119,6 @@
 \setcounter{page}{0}
 
 \newpage
-\section*{Evaluation, Academic Integrity and Submition}
-\textbf{\textsc{Notes} on the project:}
-\subsection*{1- Evaluation}
-The evaluation of this project is based on the following:
-
-\begin{enumerate}
-	\item[a)] \textbf{Algorithm Implementation (10\%)}: Correctness and efficiency of the algorithm implementation.
-	\item[b)] \textbf{Simulation Setup (30\%)}: Proper configuration and usage of the PIMSimulator.
-	\item[c)] \textbf{Performance Analysis (30\%)}: Depth of analysis and understanding of performance metrics.
-	\item[d)] \textbf{Report Quality (20\%)}: Clarity, completeness, and professionalism of the report.
-	\item[e)] \textbf{Presentation (10\%)}: Effectiveness and clarity of the presentation.
-\end{enumerate}
-
-\subsection*{2- Academic Integrity}
-Each student is expected to adhere to the highest standards of academic integrity. Any form of copying or plagiarism will result in severe penalties. Ensure your work is original and properly referenced.
-
-\subsection*{3- Submission}
-The project submission guideline is as follows:
-
-\begin{enumerate}
-	\item[a)] \textbf{Progress Reports}: Submit reports via the Courses portal until the deadline. Each delay in your submission is not acceptable.
-	\item[b)] \textbf{Final Report and Code}: Submit your final report and source code in a zipped folder.
-	\item[c)] \textbf{Presentation}: Present your findings in class during the final project meeting.
-\end{enumerate}
-\newpage
 
 % ----------------------------------------------------------------------
 % Contents
@@ -159,12 +134,12 @@ The project submission guideline is as follows:
 % ------------------Section 1--------------------
 \section{Project Description}
 
-\subsection{Proposed of this project:}
+\subsection{Airbag System}
 Neurodegenerative diseases, including Alzheimer's In this project you are going to deal with processing in memory (PIM) structure. For surfing in real-world application of PIM, in this project you have to run an algorithm on real PIM device and report your result that you get.\\
 Based on the lack of accessibility of real PIM hardware you are going to using \href{https://github.com/SAITPublic/PIMSimulator}{PIMSimulator} which is based on HBM-PIM of Samsung.
 
 
-\subsection{Description of HBM-PIM:}
+\subsection{Elevator System}
 High Bandwidth Memory (HBM) is a type of memory that's made to transfer data quickly and use less energy. It's built by stacking memory layers on top of each other, which lets them connect directly and move data fast. At the base of these layers, there's a special piece that controls the flow of data to and from other parts of the computer. HBM is often used with powerful computer chips like GPUs because it can handle a lot of data at once, making everything run smoother and faster.
 
 Inside HBM, there are separate paths for data called pseudo-channels, and each one has smaller sections called banks where data is stored. When the computer needs to read data, it picks a specific path and bank, then grabs the data from there. This process is similar to how other types of memory work, but HBM's design lets it do this much quicker and with less energy.
