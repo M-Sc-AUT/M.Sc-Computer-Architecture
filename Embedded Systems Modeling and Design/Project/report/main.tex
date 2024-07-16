@@ -193,9 +193,182 @@ Additionally, there is another sensor that measures the distance between the dri
 
 
 
+\section{Definitions}
+\subsection{Embedded Systems and Cyber-Physical Systems}
+Embedded systems are specialized computing systems that are dedicated to performing specific tasks within a larger mechanical or electrical system. They are designed to optimize efficiency, reliability, and real-time operation, often with constrained resources. Cyber-Physical Systems (CPS), on the other hand, are integrations of computation, networking, and physical processes. They involve embedded computers and networks that monitor and control the physical processes, typically with feedback loops where physical processes affect computations and vice versa. CPSs are characterized by their ability to interact with the physical world and adapt to changing conditions in real-time.
+
+The intelligent automotive airbag system falls under the category of Cyber-Physical Systems (CPS). It integrates sensors (physical components), control algorithms (computational elements), and actuators (physical response mechanisms) to enhance passenger safety through real-time monitoring and adaptive response to collision scenarios.
 
 
-\subsection{Choose The Best MoC}
+\subsection{Model of Computation (MoC)}
+Models of Computation (MoC) refer to the theoretical frameworks and mathematical models used to design and analyze the behavior and performance of computational systems. MoCs provide a formal structure to represent how systems process information, execute operations, and interact with their environment. They help in defining the computational processes, synchronization, communication, and resource management within a system. Common models include finite state machines, dataflow models, event-driven models, and hybrid models, each suited to different types of computational tasks and system requirements.
+
+Here are several Models of Computation (MoCs) with their definitions:
+
+
+
+
+
+
+
+
+\subsubsection{Actor Model}
+The Actor Model is a conceptual model of concurrent computation that treats "actors" as the fundamental units of computation. In this model, actors are independent entities that communicate through asynchronous message passing, making it well-suited for designing distributed systems.
+
+The Actor Model is employed in distributed systems, parallel processing, and real-time applications.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\textwidth]{Images/img3.png}
+	\caption{Continuous-time simple actor model.}
+	\label{fig:Continuous-time Simple Actor Model}
+\end{figure}
+
+
+
+
+
+
+
+
+\subsubsection{Finite State Machines (FSM)}
+Finite State Machines are mathematical models of computation used to design both computer programs and sequential logic circuits. They are composed of a finite number of states, transitions between those states, and actions. FSMs are particularly useful for systems that can be clearly defined in terms of states and transitions, where each state represents a specific condition or situation of the system.
+
+FSMs are often used in control systems, protocol design, and digital circuit design.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{Images/img1.png}
+	\caption{Visual notation for a finite state machine.}
+	\label{fig:Visual notation for a finite state machine}
+\end{figure}
+
+
+
+
+
+
+
+
+\subsubsection{Hybrid Systems}
+Hybrid Models combine elements of different computation models to handle complex systems that require multiple paradigms. For instance, a hybrid model might integrate continuous and discrete event-driven behavior to capture the dynamics of physical systems along with digital control logic.
+
+Hybrid models are used in cyber-physical systems, robotics, and embedded systems where both continuous physical processes and discrete control logic must be managed.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Images/img4.png}
+	\caption{Notation for hybrid systems.}
+	\label{fig:Notation for hybrid systems.}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Timed Automaton}
+Synchronous Models are based on the concept that system components operate in lockstep, driven by a global clock. Every computation step is synchronized with this clock, making it easier to reason about timing and sequencing of operations.
+
+These models are widely used in digital circuit design, where precise timing is crucial, as well as in synchronous programming languages for real-time systems.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Images/img2.png}
+	\caption{A timed automaton variant of the traffic light controller.}
+	\label{fig:A timed automaton variant of the traffic light controller}
+\end{figure}
+
+
+
+
+
+
+
+
+\subsubsection{Dataflow}
+Dataflow Models represent computations as directed graphs where nodes represent operations or functions, and edges represent the data paths between them. In these models, the execution of operations is driven by the availability of data, rather than by a sequence of commands.
+
+In dataflow models, the signals providing communication between the actors are sequences
+of message, where each message is called a token. That is, a signal s is a partial
+function of the form:
+
+\begin{equation}
+	s:\mathbb{N} \rightarrow V_s,
+\end{equation}
+
+where $V_s$ is the type of the signal, and where the signal is defined on an initial segment
+$\{0, 1, ···, n\} \subset N$, or (for infinite executions) on the entire set $\mathbb{N}$. Each element $s(n)$ of this sequence is a token. A (determinate) actor will be described as a function that
+maps input sequences to output sequences.
+
+Dataflow models are commonly used in parallel computing, signal processing, and stream processing applications.
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Petri Nets}
+Definition: Petri Nets are graphical and mathematical tools for modeling concurrent, asynchronous, distributed, parallel, and nondeterministic systems. They consist of places, transitions, and tokens, where the state of the system is represented by the distribution of tokens across places.
+
+Petri Nets are used in the design and analysis of communication protocols, workflow management, and industrial process control.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Images/img5.png}
+	\caption{Notation for Petri Net.}
+	\label{fig:Notation for Petri Net}
+\end{figure}
+
+
+
+
+
+
+
+
+
+\subsubsection{Discrete Event-Driven Systems}
+Event-Driven Models focus on the processing of events or changes in state. The system reacts to incoming events, triggering specific responses or transitions. This model is effective for applications where events occur sporadically and the system must respond in real-time.
+
+Event-driven models are used in user interfaces, real-time systems, and reactive systems like automotive airbag systems.
+
+
+
+
+
+\section{Choose The Best MoC}
+For designing an intelligent automotive airbag system, the best Model of Computation is the \textbf{Event-Driven Model.} and in this design we use Discrete Event-Driven models for better description.
+
+The Event-Driven Model is well-suited for systems that need to respond promptly to external stimuli or events. In the context of an intelligent automotive airbag system, this model is ideal due to the following reasons:
+
+\begin{enumerate}
+	\item 
+	\textbf{Real-Time Responsiveness:} The airbag system must react instantly to collision events. The event-driven model ensures that the system can handle and prioritize these critical events with minimal delay.
+	
+	\item 
+	\textbf{Sensor Integration:} This model can efficiently manage inputs from multiple sensors (accelerometers, gyroscopes, pressure sensors) and process these events to determine the necessity and timing of airbag deployment.
+	
+	\item 
+	\textbf{Scalability and Modularity:} The event-driven approach allows for modular design, where each event (e.g., impact detection, seat occupancy) can be handled by specific modules. This makes the system easier to develop, test, and maintain.
+	
+	\item 
+	\textbf{Resource Efficiency:} It optimizes resource usage by only activating computational processes when specific events occur, rather than continuously polling sensors.
+\end{enumerate}
+
+
+
+
+
+
 
 
 
