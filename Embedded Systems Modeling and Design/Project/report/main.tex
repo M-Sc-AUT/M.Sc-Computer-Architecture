@@ -199,6 +199,16 @@ Embedded systems are specialized computing systems that are dedicated to perform
 
 The intelligent automotive airbag system falls under the category of Cyber-Physical Systems (CPS). It integrates sensors (physical components), control algorithms (computational elements), and actuators (physical response mechanisms) to enhance passenger safety through real-time monitoring and adaptive response to collision scenarios.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Images/img6.png}
+	\caption{Overview of cyber physical systems.}
+	\label{fig:Overview of cyber physical systems}
+\end{figure}
+
+
+
+
 
 \subsection{Model of Computation (MoC)}
 Models of Computation (MoC) refer to the theoretical frameworks and mathematical models used to design and analyze the behavior and performance of computational systems. MoCs provide a formal structure to represent how systems process information, execute operations, and interact with their environment. They help in defining the computational processes, synchronization, communication, and resource management within a system. Common models include finite state machines, dataflow models, event-driven models, and hybrid models, each suited to different types of computational tasks and system requirements.
@@ -370,6 +380,40 @@ The Event-Driven Model is well-suited for systems that need to respond promptly 
 
 
 
+\section{Design and Describe Model}
+
+\subsection{System Overview}
+
+
+\subsubsection{Sensors}
+In This design we have these sensors:
+\begin{enumerate}
+	\item \textbf{Impact Sensors: }Four sensors located at the front, rear, right, and left sides.
+	\item \textbf{Speed Sensor: }Measures the vehicle’s speed.
+	\item \textbf{Movement Direction Sensor: }Detects the vehicle’s movement direction (forward or backward).
+	\item \textbf{Driver Distance Sensor: }Measures the distance between the driver and the steering wheel.
+\end{enumerate}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Images/img7.png}
+	\caption{Location of sensors.}
+	\label{fig:Location of sensors}
+\end{figure}
+
+
+\subsubsection{Control Unit}
+\begin{enumerate}
+	\item Processes data from all sensors.
+	\item Determines which airbags to deploy and to what extent.
+\end{enumerate}
+
+\subsubsection{Actuators}
+\begin{enumerate}
+	\item \textbf{Front Airbag:} Positioned in front of the driver.
+	\item \textbf{Side Airbag:} Positioned to the left of the driver.
+\end{enumerate}
 
 
 
@@ -377,7 +421,23 @@ The Event-Driven Model is well-suited for systems that need to respond promptly 
 
 
 
-\subsection{Design and Describe Model}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{implementation}
 \subsection{WCET Estimation}
 \subsection{Real-time Checking}
