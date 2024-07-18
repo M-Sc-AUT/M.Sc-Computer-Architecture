@@ -442,12 +442,12 @@ While the airbag may ensure passenger safety in crash situations, its accidental
 
 \subsection{Semantics of Model}
 The system reads the sensor values $S_1$, $S_2$, $S_3$ and $S_4$ cyclically on every rising and falling edge of input $t \in [0, 1]$. each sensor values are checked for plausibility. The sensor values are considered plausible, if the value of sensor one ($S_1$) does not exceed or drop below the value of other sensors ($S_2, S_3, S_4$) by more than 5\%, i.e. $S_1 \in [0.95 \cdot S_2, 1.05 \cdot s2]$ and $S_1 \in [0.95 \cdot S_3, 1.05 \cdot s3]$ and $S_1 \in [0.95 \cdot S_4, 1.05 \cdot s4]$. If the sensor values
-are plausible and an acceleration greater than 3 is measured in 3 consecutive cycles, the airbag is fired. This is done by setting output variable fire to 1. If instead the sensor values are implausible, internal variable \texttt{error\_ctr} is incremented. This variable holds the number of implausible measurements, and if it reaches a value equal to 3, the output variable defect is set to 1, causing a shutdown of the complete airbag system and activating the service lamp to indicate a sensor defect of the airbag. After at least 3 consecutive cycles with plausible sensor values, the internal variable \texttt{error\_ctr} is reset.
+are plausible and an acceleration greater than 5 is measured in 5 consecutive cycles, the airbag is fired. This is done by setting output variable fire to 1. If instead the sensor values are implausible, internal variable \texttt{error\_ctr} is incremented. This variable holds the number of implausible measurements, and if it reaches a value equal to 5, the output variable defect is set to 1, causing a shutdown of the complete airbag system and activating the service lamp to indicate a sensor defect of the airbag. After at least 5 consecutive cycles with plausible sensor values, the internal variable \texttt{error\_ctr} is reset.
 
 
 
 
-
+$A < B$
 
 
 
