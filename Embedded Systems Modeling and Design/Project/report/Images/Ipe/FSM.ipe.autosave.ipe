@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20240718121635" modified="D:20240718134739"/>
+<info created="D:20240718121635" modified="D:20240718124838"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -331,7 +331,7 @@ h
 256 624 l
 </path>
 <text matrix="1 0 0 1 -124.373 5.98043" transformations="translations" pos="192 624" stroke="black" type="label" width="87.948" height="6.815" depth="1.93" valign="baseline">WaitForNextTrigger</text>
-<path matrix="1 0 0 1 -95.875 0.798959" stroke="black" pen="heavier" arrow="normal/normal">
+<path matrix="1 0 0 1 -95.875 0.798959" stroke="black" arrow="normal/normal">
 109.49 604.504 m
 126.762 622.855
 158.93 605.367 c
@@ -518,7 +518,7 @@ h
 207.626 496.027 m
 335.239 495.97 l
 </path>
-<text matrix="1 0 0 1 -37.1218 -9.91453" transformations="translations" pos="382.83 445.639" stroke="black" type="label" width="80.603" height="7.473" depth="2.49" valign="baseline">[plausible\_ctr$\ge$3] /</text>
+<text matrix="1 0 0 1 -37.1218 -9.91453" transformations="translations" pos="382.83 445.639" stroke="black" type="label" width="80.603" height="7.473" depth="2.49" valign="baseline">[plausible\_ctr$\ge$5] /</text>
 <text matrix="1 0 0 1 -14.7271 -2.75054" transformations="translations" pos="373.433 429.334" stroke="black" type="label" width="52.404" height="6.428" depth="1.93" valign="baseline">error\_ctr=0;</text>
 <path stroke="black">
 384.037 464.667 m
@@ -547,7 +547,7 @@ h
 271.981 352.009 l
 335.869 352.074 l
 </path>
-<text matrix="1 0 0 1 -53.1625 -0.693424" transformations="translations" pos="353.751 304.998" stroke="black" type="label" width="185.111" height="7.473" depth="2.49" valign="baseline">[$(S_1 &gt; 3) \land (S_2 &gt; 3) \land (S_3 &gt; 3) \land (S_4 &gt; 3)$]</text>
+<text matrix="1 0 0 1 -53.1625 -0.693424" transformations="translations" pos="353.751 304.998" stroke="black" type="label" width="185.111" height="7.473" depth="2.49" valign="baseline">[$(S_1 &gt; 5) \land (S_2 &gt; 5) \land (S_3 &gt; 5) \land (S_4 &gt; 5)$]</text>
 <path stroke="black">
 384.033 336.065 m
 384.033 311.885 l
@@ -588,7 +588,7 @@ h
 511.818 624.416 l
 160.545 624.162 l
 </path>
-<text matrix="1 0 0 1 -117.69 292.669" transformations="translations" pos="353.751 304.998" stroke="black" type="label" width="185.111" height="7.473" depth="2.49" valign="baseline">[$(S_1 &lt; 3) \lor (S_2 &lt; 3) \lor (S_3 &lt; 3) \lor (S_4 &lt; 3)$]</text>
+<text matrix="1 0 0 1 -117.69 292.669" transformations="translations" pos="353.751 304.998" stroke="black" type="label" width="185.111" height="7.473" depth="2.49" valign="baseline">[$(S_1 &lt; 5) \lor (S_2 &lt; 5) \lor (S_3 &lt; 5) \lor (S_4 &lt; 5)$]</text>
 <text matrix="1 0 0 1 -75.7882 453.753" transformations="translations" pos="370.386 175.739" stroke="black" type="label" width="56.831" height="7.473" depth="2.49" valign="baseline">[crash\_ctr$&lt;$3]</text>
 </page>
 </ipe>

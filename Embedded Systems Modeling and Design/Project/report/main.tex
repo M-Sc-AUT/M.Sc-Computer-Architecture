@@ -436,8 +436,18 @@ The side sensors also produce an analogue output between 0 and 1, which indicate
 	\item while a value of 0 represents the lowest probability of risk from the sides.
 \end{itemize}
 
+The main FSM design is shown in Fig. \ref{fig:Main state machine of the airbag system}. This FSM is designed at the highest level of abstraction, and the model details are ignored at this level. In the next step, each of these two states becomes a separate FSM with a hierarchical and cascade structure. We will explain each of them in the following sections.
 
-While the airbag may ensure passenger safety in crash situations, its accidental activation is harmful in situations, when no crash is present but indicated by erroneous sensor data. Therefore, certain safety mechanisms have to be applied to guarantee (up to a certain degree of confidence) that the airbag is only fired, if a real crash situation is present. Additionally, defect sensors should be recognised and notified (output \texttt{defect}). The state machine in \textcolor{blue}{Fig. 5} models the functionality ensuring the safe operation of the airbag controller.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Images/Ipe/FSM-top.pdf}
+	\caption{Main state machine of the airbag system}
+	\label{fig:Main state machine of the airbag system}
+\end{figure}
+
+
+While the airbag may ensure passenger safety in crash situations, its accidental activation is harmful in situations, when no crash is present but indicated by erroneous sensor data. Therefore, certain safety mechanisms have to be applied to guarantee (up to a certain degree of confidence) that the airbag is only fired, if a real crash situation is present. Additionally, defect sensors should be recognised and notified (output \texttt{defect}). The state machine in Fig. \ref{fig:Impact detection state machine} models the functionality ensuring the safe operation of the airbag controller.
 
 
 \subsection{Semantics of Model}
@@ -445,15 +455,18 @@ The system reads the sensor values $S_1$, $S_2$, $S_3$ and $S_4$ cyclically on e
 are plausible and an acceleration greater than 5 is measured in 5 consecutive cycles, the airbag is fired. This is done by setting output variable fire to 1. If instead the sensor values are implausible, internal variable \texttt{error\_ctr} is incremented. This variable holds the number of implausible measurements, and if it reaches a value equal to 5, the output variable defect is set to 1, causing a shutdown of the complete airbag system and activating the service lamp to indicate a sensor defect of the airbag. After at least 5 consecutive cycles with plausible sensor values, the internal variable \texttt{error\_ctr} is reset.
 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Images/Ipe/FSM.pdf}
+	\caption{Impact detection state machine}
+	\label{fig:Impact detection state machine}
+\end{figure}
 
 
-$A < B$
 
+After the \texttt{fire} command is issued, it is time to determine which airbag (driver's front or side) should be inflated and to what extent, based on the output of the distance sensor located on the steering wheel.
 
-
-
-
-
+To determine this, we design another sub-FSM that is responsible for controlling the two airbags in the vehicle. This FSM is arranged in a cascade with the main FSM and takes its input, fire, from the previous FSM. The designed FSM is shown in Figure 5.
 
 
 
