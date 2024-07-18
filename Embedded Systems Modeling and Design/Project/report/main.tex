@@ -416,6 +416,33 @@ In This design we have these sensors:
 \end{enumerate}
 
 
+\subsection{Syntax of Model}
+This system has four analogue inputs: $S_1 \in [-10, 10]$, $S_2\in [-10, 10]$, $S_3 \in [0, 1]$, and $S_4 \in [0, 1]$. These inputs represent acceleration sensors ($S_1$ and $S_2$) and impact sensors ($S_3$ and $S_4$) that are used by the controller to detect a crash situation and decide whether the airbag shall be fired or not (output fire).
+
+The outputs of sensors $S_1$ and $S_2$ are analogue signals that indicate the speed and direction of the vehicle's movement (with a maximum indicated speed of $100 \frac{Km}{h}$) in the range of -10 to +10.
+\begin{itemize}
+	\item 
+	If the sensor output is +10, it means the vehicle is moving forward at a speed of 100 $\frac{Km}{h}$.
+	
+	\item
+	If the sensor output is -10, it means the vehicle is moving backward at a speed of 100 $\frac{Km}{h}$.
+\end{itemize}
+
+
+The side sensors also produce an analogue output between 0 and 1, which indicates the probability and risk of an impact to the vehicle.
+
+\begin{itemize}
+	\item A value of 1 represents the highest probability of risk.
+	\item while a value of 0 represents the lowest probability of risk from the sides.
+\end{itemize}
+
+
+While the airbag may ensure passenger safety in crash situations, its accidental activation is harmful in situations, when no crash is present but indicated by erroneous sensor data. Therefore, certain safety mechanisms have to be applied to guarantee (up to a certain degree of confidence) that the airbag is only fired, if a real crash situation is present. Additionally, defect sensors should be recognised and notified (output \texttt{defect}). The state machine in \textcolor{blue}{Fig. 5} models the functionality ensuring the safe operation of the airbag controller.
+
+
+\subsection{Semantics of Model}
+The system reads the sensor values $S_1$, $S_2$, $S_3$ and $S_4$ cyclically on every rising and falling edge of input $t \in [0, 1]$. each sensor values are checked for plausibility. The sensor values are considered plausible, if the value of sensor one ($S_1$) does not exceed or drop below the value of other sensors ($S_2, S_3, S_4$) by more than 5\%, i.e. $S_1 \in [0.95 \cdot S_2, 1.05 \cdot s2]$ and $S_1 \in [0.95 \cdot S_3, 1.05 \cdot s3]$ and $S_1 \in [0.95 \cdot S_4, 1.05 \cdot s4]$. If the sensor values
+are plausible and an acceleration greater than 3 is measured in 3 consecutive cycles, the airbag is fired. This is done by setting output variable fire to 1. If instead the sensor values are implausible, internal variable \texttt{error\_ctr} is incremented. This variable holds the number of implausible measurements, and if it reaches a value equal to 3, the output variable defect is set to 1, causing a shutdown of the complete airbag system and activating the service lamp to indicate a sensor defect of the airbag. After at least 3 consecutive cycles with plausible sensor values, the internal variable \texttt{error\_ctr} is reset.
 
 
 
