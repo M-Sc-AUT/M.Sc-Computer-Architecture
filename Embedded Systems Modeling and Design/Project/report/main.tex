@@ -187,7 +187,7 @@ Additionally, there is another sensor that measures the distance between the dri
 	Estimate the WCET (Worst-Case Execution Time) for your program. For this, assume that each access to a sensor or actuator takes 1 ms and each atomic instruction takes 10 nanoseconds. To avoid bouncing, each sensor is read at least 3 times and at most 5 times, with the first 3 consistent readings being selected. Other tasks that the processor needs to handle will take up to 90\% of the processor's computational power. (If you think more assumptions are needed to solve this problem, specify them and proceed with solving the problem.)
 	
 	\item 
-	Can you guarantee that your design is real-time? In other words, can you ensure that the timing constraints mentioned above will be met? Provide a comprehensive explanation. 
+	Can you guarantee that your design is real-time? In other words, can you ensure that the timing constraints mentioned above will be met? Provide a comprehensive explanation.
 \end{enumerate}
 
 
@@ -466,18 +466,59 @@ are plausible and an acceleration greater than 5 is measured in 5 consecutive cy
 
 After the \texttt{fire} command is issued, it is time to determine which airbag (driver's front or side) should be inflated and to what extent, based on the output of the distance sensor located on the steering wheel.
 
-To determine this, we design another sub-FSM that is responsible for controlling the two airbags in the vehicle. This FSM is arranged in a cascade with the main FSM and takes its input, fire, from the previous FSM. The designed FSM is shown in Figure 5.
+To determine this, we design another sub-FSM that is responsible for controlling the two airbags in the vehicle. This FSM is arranged in a cascade with the main FSM and takes its input, fire, from the previous FSM. The designed FSM is shown in Fig.\ref{fig:Airbag control state machine}.
 
-
-
-
-
-
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Images/Ipe/FSM-air.pdf}
+	\caption{Airbag control state machine}
+	\label{fig:Airbag control state machine}
+\end{figure}
 
 
 
 \subsection{implementation}
+I would like to use STM32-Microcontrollers for the implementation phase of our airbag control system. Here are the reasons for this choice:
+
+\begin{itemize}
+	\item 
+	\textbf{Real-Time Responsiveness:} STM32 microcontrollers are equipped with a sophisticated nested vector interrupt controller (NVIC), which ensures minimal latency and high-priority handling of critical events such as collision detection. This is essential for meeting the real-time requirements of our airbag system.
+	
+	\item 
+	\textbf{Concurrency:} STM32 microcontrollers support concurrent processing through multiple interrupt sources, allowing simultaneous handling of sensor inputs and actuator controls. This capability is crucial for the efficient operation of our system, which relies on data from various sensors to make quick decisions.
+	
+	\item 
+	\textbf{Efficiency:} These microcontrollers are designed for low power consumption, which is beneficial for automotive applications. By using interrupts, the processor remains active only when necessary, saving energy and improving overall system efficiency.
+	
+	\item 
+	\textbf{Hardware Integration:} STM32 microcontrollers come with integrated peripherals such as ADCs (Analog-to-Digital Converters), timers, and communication interfaces (I2C, SPI, UART). These peripherals are essential for interfacing with the sensors and actuators in our airbag system, reducing the need for external components and simplifying the design.
+	
+	\item 
+	\textbf{Scalability:} The STM32 family offers a wide range of microcontrollers with varying capabilities. This allows us to scale our design based on the complexity and additional features required, providing flexibility for future enhancements.
+	
+	\item 
+	\textbf{Development Ecosystem:} STM32 microcontrollers are supported by a comprehensive set of development tools, such as STM32CubeMX and STM32CubeIDE, which simplify the configuration and development process. Additionally, the extensive documentation and large community support available for STM32 microcontrollers will help in troubleshooting and optimizing our system.
+\end{itemize}
+
+Given these advantages, I believe that STM32 microcontrollers are the best choice for the implementation phase of our airbag control system. They provide the necessary real-time performance, efficiency, and hardware integration to meet our project requirements effectively.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{WCET Estimation}
 \subsection{Real-time Checking}
 
