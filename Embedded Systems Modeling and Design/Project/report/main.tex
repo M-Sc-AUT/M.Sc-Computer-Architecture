@@ -750,9 +750,160 @@ Note: \textcolor{red}{This provides a good opportunity for students who did not 
 
 
 
-\cite{aljazzar2009safety}\cite{yang1997failure}\cite{nguyen2014mixed}\cite{mon2004intelligent}
-\cite{yulong2013intelligent}\cite{aliy2024modeling}\cite{STAirbagSystem}\cite{STM32SmartVest}
-\cite{FreescaleAirbagSolution}\cite{EmbeddedSystemAutomobiles}
+
+\section{Analysis of the Elevator Button Petri Net}
+
+Petri net diagram of in Fig.\ref{fig:Elevator Button Petri Net} illustrates the control logic behind the elevator button system, particularly focusing on the indicator lights for floor 1. this model effectively demonstrates the interaction between button presses and the elevator's response, ensuring clear communication of the elevator's status to the users.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Images/img11.png}
+	\caption{Elevator Button Petri Net}
+	\label{fig:Elevator Button Petri Net}
+\end{figure}
+
+\subsection{Key Components}
+
+\begin{enumerate}
+	\item \textbf{Places}:
+	\begin{itemize}
+		\item \textbf{IB1 (Internal Button 1)}: This place holds a token when the internal button to request floor 1 is pressed.
+		\item \textbf{OB1 (Outside Button 1)}: This place holds a token when the external button to request floor 1 is pressed.
+		\item \textbf{LB1\_ON (Light Button 1 ON)}: This place holds a token when the indicator light for floor 1 is turned on.
+		\item \textbf{LB1\_OFF (Light Button 1 OFF)}: This place holds a token when the indicator light for floor 1 is turned off.
+		\item \textbf{F1 (Floor 1)}: This place indicates that the elevator is currently at floor 1.
+	\end{itemize}
+	\item \textbf{Transitions}:
+	\begin{itemize}
+		\item The transitions illustrate the movement of tokens between places, simulating the actions taken when buttons are pressed and the elevator's arrival at a floor.
+	\end{itemize}
+\end{enumerate}
+
+\subsection{Behavioral Analysis}
+
+The Petri net captures the following behaviors in the elevator button system:
+
+\begin{enumerate}
+	\item \textbf{Button Press Detection}:
+	\begin{itemize}
+		\item When a user presses either the internal or external button for floor 1, a token is generated in the respective place (IB1 or OB1). This indicates that a request to move to floor 1 has been made.
+	\end{itemize}
+	\item \textbf{Indicator Light Activation}:
+	\begin{itemize}
+		\item If the indicator light for floor 1 is initially off (token in LB1\_OFF), the presence of a token in either IB1 or OB1 triggers the transitions leading to LB1\_ON. This transition represents the action of turning the indicator light on, signifying that the elevator has received the request to move to floor 1.
+	\end{itemize}
+	\item \textbf{Elevator Arrival Handling}:
+	\begin{itemize}
+		\item Once the elevator arrives at floor 1 (token placed in F1), the central transition is activated, moving the token from LB1\_ON back to LB1\_OFF. This action turns the indicator light off, indicating that the elevator has reached the requested floor and the request has been completed.
+	\end{itemize}
+\end{enumerate}
+
+
+\begin{itemize}
+	\item \textbf{Token Generation}: By generating tokens upon button presses, the system reliably tracks user requests, ensuring that no request is missed.
+	\item \textbf{Light Activation and Deactivation}: The transitions between LB1\_OFF and LB1\_ON effectively model the indicator light's behavior, providing immediate feedback to users about the elevator's status.
+	\item \textbf{Completion of Requests}: The handling of the elevator's arrival at floor 1 and the subsequent turning off of the indicator light ensures that the system resets appropriately, ready to handle new requests.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+\section{Analysis of the 4-Floor Elevator Petri Net}
+
+The Petri net diagram provided in Fig.\ref{fig:4-Floor Elevator Petri Net} models the control logic for a 4-floor elevator system. 
+
+
+\subsection{Key Components}
+
+\begin{itemize}
+	\item \textbf{Button Presses and Indicator Lights}:
+	\begin{itemize}
+		\item \textbf{B1\_ON, B2\_ON, B3\_ON, B4\_ON}: Tokens in these places indicate that the indicator light for the corresponding floor is on.
+		\item \textbf{B1\_OFF, B2\_OFF, B3\_OFF, B4\_OFF}: Tokens in these places indicate that the indicator light for the corresponding floor is off.
+	\end{itemize}
+	\item \textbf{Floor Positions}:
+	\begin{itemize}
+		\item \textbf{F1, F2, F3, F4}: These places represent the elevator's current position at the respective floors.
+	\end{itemize}
+	\item \textbf{Movement and Doors}:
+	\begin{itemize}
+		\item \textbf{moving\_up, moving\_down}: These places represent the elevator moving up or down, respectively.
+		\item \textbf{door\_open, door\_close}: These places represent the state of the elevator doors.
+	\end{itemize}
+\end{itemize}
+
+\subsection{Behavioral Analysis}
+
+The Petri net captures the following behaviors in the 4-floor elevator system:
+
+\begin{enumerate}
+	\item \textbf{Button Press and Indicator Light Activation}:
+	\begin{itemize}
+		\item When a button is pressed for a specific floor, a token is generated in the corresponding place (e.g., pressing the button for floor 1 generates a token in \textbf{B1\_ON} if the indicator light was off).
+		\item The presence of a token in places like \textbf{B1\_OFF} triggers transitions that move tokens to \textbf{B1\_ON}, turning the indicator light on and signaling that a request has been made.
+	\end{itemize}
+	\item \textbf{Elevator Movement}:
+	\begin{itemize}
+		\item The elevator moves up or down based on the requests. Tokens in \textbf{moving\_up} or \textbf{moving\_down} indicate the direction of the elevator.
+		\item Transitions between floor places (e.g., \textbf{F1} to \textbf{F2}) represent the elevator's movement between floors.
+	\end{itemize}
+	\item \textbf{Elevator Arrival and Door Operations}:
+	\begin{itemize}
+		\item When the elevator arrives at a floor, the corresponding token moves to the floor place (e.g., \textbf{F1} if the elevator is at floor 1).
+		\item The transitions for door operations (e.g., \textbf{door\_open} and \textbf{door\_close}) represent the opening and closing of the elevator doors upon arrival at a floor.
+	\end{itemize}
+	\item \textbf{Request Fulfillment and Light Deactivation}:
+	\begin{itemize}
+		\item Upon arriving at the requested floor, the central transition is activated, moving the token from places like \textbf{B1\_ON} back to \textbf{B1\_OFF}, turning the indicator light off and indicating that the request has been fulfilled.
+	\end{itemize}
+\end{enumerate}
+
+
+This Petri net provides a detailed and logical representation of the 4-floor elevator system's operation. It ensures that every step, from button press to elevator movement and door operation, is accurately modeled using tokens and transitions. This helps in visualizing the state changes and sequence of events within the system.
+
+\begin{itemize}
+	\item \textbf{Token Generation and Light Activation}:
+	\begin{itemize}
+		\item The generation of tokens upon button presses ensures that user requests are reliably tracked. The transitions effectively model the behavior of indicator lights, providing immediate feedback to users about the elevator's status.
+	\end{itemize}
+	\item \textbf{Elevator Movement and Positioning}:
+	\begin{itemize}
+		\item The transitions between floor places and movement states (up/down) ensure that the elevator's movement is accurately modeled, reflecting real-world operations.
+	\end{itemize}
+	\item \textbf{Door Operations and Request Fulfillment}:
+	\begin{itemize}
+		\item The handling of door operations and the deactivation of indicator lights upon fulfilling requests ensures that the system resets appropriately, ready to handle new requests.
+	\end{itemize}
+\end{itemize}
+
+%\cite{aljazzar2009safety}\cite{yang1997failure}\cite{nguyen2014mixed}\cite{mon2004intelligent}
+%\cite{yulong2013intelligent}\cite{aliy2024modeling}\cite{STAirbagSystem}\cite{STM32SmartVest}
+%\cite{FreescaleAirbagSolution}\cite{EmbeddedSystemAutomobiles}\cite{rozenberg1986petri}
+%\cite{cabasino2013introduction}
+
+
+\newpage
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\textwidth]{Images/img12.png}
+	\caption{4-Floor Elevator Petri Net}
+	\label{fig:4-Floor Elevator Petri Net}
+\end{figure}
+
+
+
+
+
+
+
 
 \newpage
 % ----------------------------------------------------------------------
