@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20240802164049" modified="D:20240802191349" title="rl" author="reza" tex="xetex"/>
+<info created="D:20240802164049" modified="D:20240802212015" title="rl" author="reza" tex="xetex"/>
 <preamble>\usepackage[documentdirection=lefttoright]{xepersian}
 \settextfont{Yas}</preamble>
 <ipestyle name="basic">
@@ -468,5 +468,12 @@ h
 <text matrix="1 0 0 1 -23.8561 -10.6298" transformations="translations" pos="368 896" stroke="black" type="label" width="49.044" height="7.061" depth="3.12" valign="baseline">\rl{احتمال خروجی}</text>
 <text matrix="1 0 0 1 -31.6158 16.8479" transformations="translations" pos="176.053 531.505" stroke="black" type="label" width="44.583" height="6.302" depth="3.12" valign="baseline">\rl{تعبیه موقعیتی}</text>
 <text matrix="1 0 0 1 242.207 16.1453" transformations="translations" pos="176.053 531.505" stroke="black" type="label" width="44.583" height="6.302" depth="3.12" valign="baseline">\rl{تعبیه موقعیتی}</text>
+<path stroke="black" arrow="normal/normal">
+240 720 m
+240 736 l
+304 736 l
+304 640 l
+320 640 l
+</path>
 </page>
 </ipe>
