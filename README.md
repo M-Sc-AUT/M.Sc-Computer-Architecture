@@ -40,7 +40,7 @@
 | 19 | CE5201 | Computer Security |
 | 20 | CE5601 | Advanced Computer Networks |
 | 21 | CE5622 | Performance Evaluation of Computer Systems and Networks |
-| 22 | CE5604 | Architecture of Network Devices |
+| 22 | CE5604 | [Architecture of Network Devices](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Network%20Device%20Architecture) |
 | 23 | CE5448 | Special Topics in Computer Systems Architecture I |
 | 24 | CE5449 | Special Topics in Computer Systems Architecture II |
 
