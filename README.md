@@ -12,7 +12,7 @@
 | 4 | CE5404 | Digital Systems Synthesis |
 | 5 | CE5405 | Low-Power Digital Systems Design |
 | 6 | CE5406 | Distributed Systems |
-| 7 | CE5407 | Dependable Systems Design |
+| 7 | CE5407 | [Dependable Systems Design](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Dependable%20System%20Design) |
 | 8 | - | [Seminar](https://github.com/rezaAdinepour/M.Sc-AUT/tree/main/Seminar) |
 | 9 | CE203 | [Operating Systems](https://github.com/rezaAdinepour/M.Sc-AUT/tree/main/Operating%20Systems) |
 
