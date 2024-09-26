@@ -8,7 +8,7 @@
 | ------------- | :-: | ------------- |
 | 1 | CE5401 | [Advanced VLSI Circuit Design](https://github.com/rezaAdinepour/M.Sc-AUT/tree/main/Advanced%20VLSI) |
 | 2 | CE5402 | [Advanced Computer Architecture](https://github.com/rezaAdinepour/M.Sc-AUT/tree/main/Advanced%20Computer%20Architecture) |
-| 3 | CE5403 | Reconfigurable Systems |
+| 3 | CE5403 | [Reconfigurable Systems](https://github.com/M-Sc-AUT/M.Sc-Computer-Architecture/tree/main/Reconfigurable%20Computing%20System) |
 | 4 | CE5404 | Digital Systems Synthesis |
 | 5 | CE5405 | Low-Power Digital Systems Design |
 | 6 | CE5406 | Distributed Systems |
