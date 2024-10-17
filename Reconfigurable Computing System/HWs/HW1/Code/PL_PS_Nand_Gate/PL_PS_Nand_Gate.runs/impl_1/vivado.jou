@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Oct 18 01:10:51 2024
+# Process ID: 11633
+# Current directory: /mnt/9636D17436D15639/University/CE Github Repository/M.Sc-Computer-Architecture/Reconfigurable Computing System/HWs/HW1/Code/PL_PS_Nand_Gate/PL_PS_Nand_Gate.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /mnt/9636D17436D15639/University/CE Github Repository/M.Sc-Computer-Architecture/Reconfigurable Computing System/HWs/HW1/Code/PL_PS_Nand_Gate/PL_PS_Nand_Gate.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /mnt/9636D17436D15639/University/CE Github Repository/M.Sc-Computer-Architecture/Reconfigurable Computing System/HWs/HW1/Code/PL_PS_Nand_Gate/PL_PS_Nand_Gate.runs/impl_1/vivado.jou
+# Running On: r3z4, OS: Linux, CPU Frequency: 3832.060 MHz, CPU Physical cores: 6, Host memory: 12383 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
