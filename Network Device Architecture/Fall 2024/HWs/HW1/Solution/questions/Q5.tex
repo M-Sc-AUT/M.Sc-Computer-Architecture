@@ -1,0 +1,61 @@
+\section{سوال پنجم}
+در معماری مسیریاب شکل زیر نقش هر یک از بخش‌های \lr{(Transponder/Transceiver - Traffic manager - Network processor - Framer - CPU - Switch fabric - Line card - Management controller - Router Controller)} را شرح دهید.
+
+
+\begin{center}
+	\includegraphics*[width=0.8\linewidth]{pics/img1.png}
+	\captionof{figure}{معماری یک مسیریاب نمونه}
+\end{center}
+
+
+\begin{qsolve}
+	\begin{enumerate}
+		\item 
+		\lr{\textbf{:Network processor}}\\
+		‫پرداش‬ ‫برای‬ ‫فهمیدن لینک‬ ‫خروجی‬ ‫را‬ ‫انجام‬ ‫می‬ ‫دهد‪.‬‬
+		
+		
+		\item 
+		\lr{\textbf{‫‪:Framer‬‬}}\\
+		امواجی که توسط \lr{Transiver} به رشته بیت تبدیل شده اند توسط \lr{Framer} دریافت می شوند و مشخص می شود که از کدام بیت تا کدام بیت آن یک \lr{Packet} است. بنابراین \lr{Packet} ها استخراج می شوند.
+		
+		
+		\item 
+		\lr{\textbf{‫‪:Traffic manager‬‬}}\\
+		وظیفه کنترل و مدیریت ترافیک بسته‌ها را بر عهده دارد.
+		
+		
+		
+		\item 
+		\lr{\textbf{‫‪:Transponder/Transceiver‬‬}}\\
+		فرستنده و گیرنده دستگاهی است که هم می تواند سیگنال‌ها را ارسال و هم دریافت کند. در یافت کننده، ورودی را به‌صورت امواج رادیویی گرفته و آن را به رشته‌بیت تبدیل می‌کند.
+		
+		\item 
+		\lr{\textbf{‫‪:Router controller‬‬}}\\
+		قسمتی از واحد \lr{Control plane} است که وظیفه‌ی اجرای پروتکل های مسیریابی را برعهده دارد.
+		
+		\item 
+		\lr{\textbf{‫‪:Management controller‬‬}}\\
+		قسمتی از واحد \lr{Managment plane} است که وظیفه‌ی اجرای پروتکل های مدیریتی را برعهده دارد.
+		
+		
+		\lr{\textbf{‫‪:Line card‬‬}}\\
+		ماژولی است که شامل \lr{Framer، Network Processor، Cpu، Transponder/Transceiver، Traffic Manager}
+	\end{enumerate}
+	
+\end{qsolve}
+
+
+
+\begin{qsolve}
+	\begin{enumerate}		
+		\item [7.]
+		\lr{\textbf{‫‪:Switch fabric‬‬}}\\
+		عمل \lr{Packet Switching} را انجام می­دهد.
+		
+		
+		\item [8.]
+		\lr{\textbf{‫‪:CPU‬‬}}\\
+		سیاست‌­های ترافیک را از واحد کنترل دریافت می­کند و روی \lr{Line card} ها اعمال می­کند.
+	\end{enumerate}
+\end{qsolve}
