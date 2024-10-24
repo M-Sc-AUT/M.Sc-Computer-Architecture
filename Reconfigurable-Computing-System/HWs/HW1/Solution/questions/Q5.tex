@@ -16,120 +16,120 @@
 استفاده نمایید. نسخه پیشنهادی ۲۰۲۰.۲ به بعد می‌باشد. به دلیل مشکل احتمالی در فعال‌ساز بهتر است از نسخه ۲۰۲۴ استفاده نشود. \newline \newline
 
 
-
-
-
-همانطور که در ویدئو نیز بیان شد، هدف در این قسمت، طراحی \lr{Co-Design} است. بدین منظور، برای طراحی یک گیت \lr{NAND} ساده، گیت \lr{AND} را با استفاده از \lr{Logic Block} های \lr{FPGA} طراحی می‌کنیم و ماژول \lr{NOT} را در هسته پردازشی یعنی \lr{CPU} طراحی کرده و اتصالات بین این دو طراحی را برقرار می‌کنیم.
-
-
-ذکر این نکته الزامی است که در این تمرین ما از بورد \texttt{EBAZ4205} که تراشه موجود بر روی آن \texttt{\lr{Zynq 7000}} است استفاده نمودیم. این آیسی در نرم‌افزار \lr{Vivado} با پارت‌نامبر \texttt{xc7z010clg400-3} شناخته می‌شود. تصویر این برد در «شکل \ref{fig:EBAZ}» آورده شده است:
-
-
-
-\begin{center}
-	\includegraphics*[width=0.7\linewidth]{pics/img2.jpg}
-	\captionof{figure}{بورد مورد استفاده در این تمرین}
-	\label{fig:EBAZ}
-\end{center}
-
-همچنین فایل \lr{Constrain} مربوط به این بورد را می‌توان از 
-\href{https://github.com/xjtuecho/EBAZ4205/blob/master/Development/EBAZ4205.xdc}{اینجا}
-دانلود کرد.
-
-
-در ابتدا پس از نصب نرم‌افزار و انتخاب آیسی، طراحی سمت \lr{PL} را انجام می‌دهیم. در این قسمت صرفا یک گیت \lr{AND} را طراحی می‌کنیم. کد نوشته شده برای ماژول \lr{AND} به‌صورت زیر است:
-
-\begin{latin}
-\begin{lstlisting}[label=case_sens, caption=AND Module for PL]
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
-
-entity NAND_gate is
-	Port ( a, b: in std_logic;
-		   y: out std_logic );
-end NAND_gate;
-
-architecture Behavioral of NAND_gate is
-
-begin
-
-	y <= a and b;
-
-end Behavioral;
-
-\end{lstlisting} 
-\end{latin}
-
-پس اط طراحی ماژول \lr{AND} می‌بایست نحوه \lr{Interconnection} سمت \lr{PL} و \lr{PS} را در درون تراشه برقرار کنیم.
-
-بدین منظور از قسمت طراحی دیاگرامی \lr{Vivado} پردازنده \lr{ZYNQ} را انتخاب می‌کنیم و همچنین از ماژول \lr{AND} خودمان نیز یک بلوک می‌سازیم. 
-
-با استفاده از بلوک‌های \texttt{\lr{AXI  GPIO}} می‌توانیم ارتباطات بین \lr{PL} و \lr{PS} را برقرار کنیم.
-
-درنهایت سیستم طراحی شده به‌صورت «شکل \ref{fig:vivado design}» می‌شود. 
-
-\begin{center}
-	\includegraphics*[width=1\linewidth]{pics/img3.png}
-	\captionof{figure}{طراحی \lr{PL} و \lr{PS} انجام شده}
-	\label{fig:vivado design}
-\end{center}
-
-پس از تکمیل شدن طراحی، می‌بایست گیت \lr{NOT} را نیز به‌صورت نرم‌افزاری (به زبان \texttt{c}) طراحی کنیم و سپس طراحی را سنتز نهایی کنیم.
-
-برای انجام این کار، نرم‌افزار \lr{Vitis Clasic} را اجرا می‌کنیم و یک \lr{Application Project} جدید می‌سازیم و فایل \texttt{\lr{.xsa}} ساخته شده در  مرحله قبل را به این پروژه اضافه می‌کنیم.
-
-پس از ایجاد پروژه کد گیت \lr{NOT} را به‌صورت زیر می‌نویسیم:
-
-\begin{latin}
-\begin{lstlisting}[label=case_sens, caption=AND Module for PL]
-#include <stdio.h>
-// #include "platform.h"
-#include "xgpio.h"
-#include "xparameters.h"
-#include "xil_printf.h"
-
-int main()
-{
-	init_platform();
-	
-	XGpio input, output;
-	int a;
-	int y;
-	
-	XGpio_Initialize(&input, XPAR_AXI_GPIO_0_DEVICE_ID);
-	XGpio_Initialize(&output, XPAR_AXI_GPIO_1_DEVICE_ID);
-	
-	XGpio_SetDataDirection(&input, 1, 1);
-	XGpio_SetDataDirection(&output, 1, 0);
-	
-	/* print("debug the code"); */
-	
-	while(1)
-	{
-		a = XGpio_DiscreteRead(&input, 1);
-		
-		if(a == 1)
-		{
-			y = 0;
-		}
-		else
-		{
-			y = 1;
-		}
-		
-		XGpio_DiscreteWrite(&output, 1, y);
-	}
-	
-	cleanup_platform();
-	return 0;
-}
-\end{lstlisting} 
-\end{latin}
-
-
-
-سپس بعد از سنتر کد، با قرار دادن فایل \lr{Bitstream} ایجاد شده در مرحله \lr{PL} به عنوان فایل پروگرام، طراحی \lr{Integrate} شده را بر روی بردمان پروگرم می‌کنیم.
-
-
-
+%
+%
+%
+%همانطور که در ویدئو نیز بیان شد، هدف در این قسمت، طراحی \lr{Co-Design} است. بدین منظور، برای طراحی یک گیت \lr{NAND} ساده، گیت \lr{AND} را با استفاده از \lr{Logic Block} های \lr{FPGA} طراحی می‌کنیم و ماژول \lr{NOT} را در هسته پردازشی یعنی \lr{CPU} طراحی کرده و اتصالات بین این دو طراحی را برقرار می‌کنیم.
+%
+%
+%ذکر این نکته الزامی است که در این تمرین ما از بورد \texttt{EBAZ4205} که تراشه موجود بر روی آن \texttt{\lr{Zynq 7000}} است استفاده نمودیم. این آیسی در نرم‌افزار \lr{Vivado} با پارت‌نامبر \texttt{xc7z010clg400-3} شناخته می‌شود. تصویر این برد در «شکل \ref{fig:EBAZ}» آورده شده است:
+%
+%
+%
+%\begin{center}
+%	\includegraphics*[width=0.7\linewidth]{pics/img2.jpg}
+%	\captionof{figure}{بورد مورد استفاده در این تمرین}
+%	\label{fig:EBAZ}
+%\end{center}
+%
+%همچنین فایل \lr{Constrain} مربوط به این بورد را می‌توان از 
+%\href{https://github.com/xjtuecho/EBAZ4205/blob/master/Development/EBAZ4205.xdc}{اینجا}
+%دانلود کرد.
+%
+%
+%در ابتدا پس از نصب نرم‌افزار و انتخاب آیسی، طراحی سمت \lr{PL} را انجام می‌دهیم. در این قسمت صرفا یک گیت \lr{AND} را طراحی می‌کنیم. کد نوشته شده برای ماژول \lr{AND} به‌صورت زیر است:
+%
+%\begin{latin}
+%\begin{lstlisting}[label=case_sens, caption=AND Module for PL]
+%library IEEE;
+%use IEEE.STD_LOGIC_1164.ALL;
+%
+%
+%entity NAND_gate is
+%	Port ( a, b: in std_logic;
+%		   y: out std_logic );
+%end NAND_gate;
+%
+%architecture Behavioral of NAND_gate is
+%
+%begin
+%
+%	y <= a and b;
+%
+%end Behavioral;
+%
+%\end{lstlisting} 
+%\end{latin}
+%
+%پس اط طراحی ماژول \lr{AND} می‌بایست نحوه \lr{Interconnection} سمت \lr{PL} و \lr{PS} را در درون تراشه برقرار کنیم.
+%
+%بدین منظور از قسمت طراحی دیاگرامی \lr{Vivado} پردازنده \lr{ZYNQ} را انتخاب می‌کنیم و همچنین از ماژول \lr{AND} خودمان نیز یک بلوک می‌سازیم. 
+%
+%با استفاده از بلوک‌های \texttt{\lr{AXI  GPIO}} می‌توانیم ارتباطات بین \lr{PL} و \lr{PS} را برقرار کنیم.
+%
+%درنهایت سیستم طراحی شده به‌صورت «شکل \ref{fig:vivado design}» می‌شود. 
+%
+%\begin{center}
+%	\includegraphics*[width=1\linewidth]{pics/img3.png}
+%	\captionof{figure}{طراحی \lr{PL} و \lr{PS} انجام شده}
+%	\label{fig:vivado design}
+%\end{center}
+%
+%پس از تکمیل شدن طراحی، می‌بایست گیت \lr{NOT} را نیز به‌صورت نرم‌افزاری (به زبان \texttt{c}) طراحی کنیم و سپس طراحی را سنتز نهایی کنیم.
+%
+%برای انجام این کار، نرم‌افزار \lr{Vitis Clasic} را اجرا می‌کنیم و یک \lr{Application Project} جدید می‌سازیم و فایل \texttt{\lr{.xsa}} ساخته شده در  مرحله قبل را به این پروژه اضافه می‌کنیم.
+%
+%پس از ایجاد پروژه کد گیت \lr{NOT} را به‌صورت زیر می‌نویسیم:
+%
+%\begin{latin}
+%\begin{lstlisting}[label=case_sens, caption=AND Module for PL]
+%#include <stdio.h>
+%// #include "platform.h"
+%#include "xgpio.h"
+%#include "xparameters.h"
+%#include "xil_printf.h"
+%
+%int main()
+%{
+%	init_platform();
+%	
+%	XGpio input, output;
+%	int a;
+%	int y;
+%	
+%	XGpio_Initialize(&input, XPAR_AXI_GPIO_0_DEVICE_ID);
+%	XGpio_Initialize(&output, XPAR_AXI_GPIO_1_DEVICE_ID);
+%	
+%	XGpio_SetDataDirection(&input, 1, 1);
+%	XGpio_SetDataDirection(&output, 1, 0);
+%	
+%	/* print("debug the code"); */
+%	
+%	while(1)
+%	{
+%		a = XGpio_DiscreteRead(&input, 1);
+%		
+%		if(a == 1)
+%		{
+%			y = 0;
+%		}
+%		else
+%		{
+%			y = 1;
+%		}
+%		
+%		XGpio_DiscreteWrite(&output, 1, y);
+%	}
+%	
+%	cleanup_platform();
+%	return 0;
+%}
+%\end{lstlisting} 
+%\end{latin}
+%
+%
+%
+%سپس بعد از سنتر کد، با قرار دادن فایل \lr{Bitstream} ایجاد شده در مرحله \lr{PL} به عنوان فایل پروگرام، طراحی \lr{Integrate} شده را بر روی بردمان پروگرم می‌کنیم.
+%
+%
+%
