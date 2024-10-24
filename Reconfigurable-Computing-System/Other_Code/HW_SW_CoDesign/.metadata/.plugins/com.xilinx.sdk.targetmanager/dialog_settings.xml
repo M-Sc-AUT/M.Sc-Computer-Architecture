@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="LED_Control_Final_system-bitFile" value="${project_loc:LED_Control_Final}/_ide/bitstream/LED_Control_wrapper.bit"/>
+	<item key="LED_Control_Final_system-bmmFile" value=""/>
+	<item key="LED_Control_Final_system-target" value="Local"/>
+	<item key="LED_Control_Final_system-device" value="Auto Detect"/>
+	<item key="LED_Control_Final_system-partial_bit" value="false"/>
+	<item key="LED_Control_Final_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="LED_Control_Final_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent JTAG-HS1 210205329746A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-JTAG-HS1-210205329746A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-JTAG-HS1-210205329746A-13722093-0&quot;}}]}"/>
+</section>

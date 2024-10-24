@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hello_uart_system-bitFile" value="${project_loc:hello_uart}/_ide/bitstream/design_1_wrapper.bit"/>
+	<item key="hello_uart_system-bmmFile" value=""/>
+	<item key="hello_uart_system-target" value="Local"/>
+	<item key="hello_uart_system-device" value="Auto Detect"/>
+	<item key="hello_uart_system-partial_bit" value="false"/>
+	<item key="hello_uart_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="hello_uart_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent JTAG-HS1 210205329746A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-JTAG-HS1-210205329746A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-JTAG-HS1-210205329746A-13722093-0&quot;}}]}"/>
+</section>
