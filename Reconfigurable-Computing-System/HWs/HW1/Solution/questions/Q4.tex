@@ -3,4 +3,75 @@
 
 \begin{qsolve}
 	
+	\begin{enumerate}
+		\item 
+		\textbf{معماری \lr{Disjoint}:}
+		در این معماری، اگر 	اتصالات را شماره گذاری کنیم، فقط آن‌هایی که شماره همنام دارند، مجاز به متصل شدن به یک‌دیگر هستند. برای مثال مطابق با شکل زیر، مسیر شماره صفر فقط می‌تواند به مسیر هایی با همین شماره متصل شود.
+		
+		\begin{center}
+			\includegraphics*[width=0.4\linewidth]{pics/Q4.png}
+			\captionof{figure}{معماری سوئیچ \lr{Disjoint}}
+			\label{معماری سوییچ دیسجوینت}
+		\end{center}
+		
+		این معماری انعطاف پذبری مسیریابی را کاهش می‌دهد. و میزان انعطاف‌پذیری این سوئیچ بلاک ها $F_s=3$ است.
+		
+		
+		
+		یعنی هر \lr{Wire} ورودی به سوئیچ بلاک فقط به ۳ \lr{Wire} هم شماره خودش می‌تواند متصل شود.
+		
+		
+		برای مثال می‌توان نحوه اتصال دو \lr{Connection Block} به یک‌دیگر را با معماری \lr{Disjoint} به‌صورت زیر نمایش داد:
+		
+		\begin{center}
+			\includegraphics*[width=0.5\linewidth]{pics/Q7.png}
+			\captionof{figure}{تصال دو \lr{Connection Block} به یک‌دیگر را با معماری \lr{Disjoint} }
+			\label{اتصال۱}
+		\end{center}
+		
+
+	\end{enumerate}
+\end{qsolve}
+
+
+\begin{qsolve}
+	
+	\begin{enumerate}
+		\item [2.]
+		\textbf{معماری \lr{Wilton}:}				در معماری \lr{Wilton} برخلاف معماری \lr{Disjoint} مقدار انعطاف پذیری در مسیریابی با تغییر ساختار اتصالات بهبود یافته است. در تین نوع معماری، سیم‌ها می‌توانند با یک الگوی مشخص به سیم‌های ناهمنام خود نیز متصل شوند. اما در این معماری نیز همانند معماری قبل $F_s=3 $ است. 
+			
+		\begin{center}
+			\includegraphics*[width=0.4\linewidth]{pics/Q5.png}
+			\captionof{figure}{معماری سوئیچ \lr{Wilton}}
+			\label{معماری سوئیچ ویلتون}
+		\end{center}
+			
+			
+			برای مثال می‌توان نحوه اتصال دو \lr{Connection Block} به یک‌دیگر را با معماری \lr{Wilton} به‌صورت زیر نمایش داد:
+			
+			\begin{center}
+				\includegraphics*[width=0.5\linewidth]{pics/Q8.png}
+				\captionof{figure}{تصال دو \lr{Connection Block} به یک‌دیگر را با معماری \lr{Wilton} }
+				\label{اتصال۲}
+			\end{center}
+			
+\end{enumerate}
+	
+	
+	
+	
+	در کنار این دو معماری، معماری‌های مختلف دیگری معرفی شده است که یکی از معروف ترین آن‌ها معماری \lr{Universal} است.
+	
+	در این معماری که شکل آن به‌صورت زیر است، انعطاف پذیری در اتصالات باهم بیشتر شده است. در این معماری نیز $F_s=3 $ است.
+	
+\end{qsolve}
+
+
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=0.4\linewidth]{pics/Q9.png}
+		\captionof{figure}{معماری سوئیچ \lr{Universal}}
+		\label{معماری سوئیچ یونیورسال}
+	\end{center}
+	
 \end{qsolve}
