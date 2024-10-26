@@ -1,0 +1,42 @@
+\section{سوال پنجم}
+
+توضیح دهید در خروجی قطعه کد زیر چه تعداد \texttt{*} چاپ خواهد شد؟ همچنین درختواره آن را نیز رسم نمایید.
+
+
+\begin{latin}
+\begin{lstlisting}[caption=Code of Q3, label=cpp_code_example]
+int main() 
+{
+	if (fork() || (!fork())) 
+	{
+		if (fork() && fork()) 
+		{
+			fork();
+		}
+	}
+	while (wait(NULL) > 0);
+	printf("* ");
+	
+	return 0;
+}
+\end{lstlisting}
+\end{latin}
+
+
+%\begin{latin}
+%\begin{verbatim}
+%int main() 
+%{
+%	if (fork() || (!fork())) 
+%	{
+%		if (fork() && fork()) 
+%		{
+%			fork();
+%		}
+%	}
+%	while (wait(NULL) > 0);
+%	printf("* ");
+%	return 0;
+%}
+%\end{verbatim}
+%\end{latin}
