@@ -14,3 +14,6 @@ timestamp=[2024-10-24 20:21:12], mode=BUILD, duration=0:00:00.671, duration_ms=6
 timestamp=[2024-10-24 20:21:21], mode=BUILD, duration=0:00:06.908, duration_ms=6908, data={name=hello_uart_system, configuration=Debug, clean_build=false}
 timestamp=[2024-10-24 20:24:53], mode=BUILD, duration=0:00:01.040, duration_ms=1040, data={name=hello_uart, configuration=Debug, clean_build=false}
 timestamp=[2024-10-24 20:25:01], mode=BUILD, duration=0:00:06.938, duration_ms=6938, data={name=hello_uart_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-29 17:04:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.145, duration_ms=2145, data={}
+timestamp=[2024-10-29 17:04:09], mode=WORKBENCH_START, duration=0:00:13.006, duration_ms=13006, data={}
+timestamp=[2024-10-29 17:04:10], mode=WORKBENCH_UI_INIT, duration=0:00:00.365, duration_ms=365, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,hello_uart,hello_uart_system}

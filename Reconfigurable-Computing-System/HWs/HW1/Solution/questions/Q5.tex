@@ -61,7 +61,7 @@ end Behavioral;
 \end{lstlisting} 
 \end{latin}
 
-پس اط طراحی ماژول \lr{AND} می‌بایست نحوه \lr{Interconnection} سمت \lr{PL} و \lr{PS} را در درون تراشه برقرار کنیم.
+پس از طراحی ماژول \lr{AND} می‌بایست نحوه \lr{Interconnection} سمت \lr{PL} و \lr{PS} را در درون تراشه برقرار کنیم.
 
 بدین منظور از قسمت طراحی دیاگرامی \lr{Vivado} پردازنده \lr{ZYNQ} را انتخاب می‌کنیم و همچنین از ماژول \lr{AND} خودمان نیز یک بلوک می‌سازیم. 
 
@@ -84,7 +84,7 @@ end Behavioral;
 \begin{latin}
 \begin{lstlisting}[label=case_sens, caption=Not Module for PS]
 #include <stdio.h>
-// #include "platform.h"
+#include "platform.h"
 #include "xgpio.h"
 #include "xparameters.h"
 #include "xil_printf.h"
@@ -103,7 +103,7 @@ int main()
 	XGpio_SetDataDirection(&input, 1, 1);
 	XGpio_SetDataDirection(&output, 1, 0);
 	
-	/* print("debug the code"); */
+	print("debug the code");
 	
 	while(1)
 	{
