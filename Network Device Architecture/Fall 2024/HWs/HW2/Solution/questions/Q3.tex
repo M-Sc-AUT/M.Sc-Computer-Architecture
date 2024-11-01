@@ -3,18 +3,101 @@
 
 درخت باینری نشان‌داده شده در زیر، از روی جدول جلورانی در یک مسیریاب ایجاد شده است و جست و جو در جدول جلورانی برای پیدا کردن شماره پورت خروجی با پیمایش این درخت انجام می‌گردد. (در این درخت باینری، گره‌های مشکی، پیشوندهای آدرس جدول جلورانی هستند و مقادیر آن‌ها بیانگر شماره پورت خروجی است.)
 
-\begin{itemize}
-	\item بسته‌ای با آدرس مقصد \lr{\texttt{90B28FF1}} از کدام پورت خارج می‌گردد؟ (آدرس‌های مقصد در مبنای ۱۶ نمایش داده شده‌اند.)
-	
-	\item بسته‌ای با آدرس مقصد \lr{\texttt{A2AB11C3}} از کدام پورت خارج می‌گردد؟
-	
-	\item آدرس پیشوندی \texttt{10101*} با پورت خروجی ۵۰ را به درخت اضافه نمایید.
-	
-	\item آدرس پیشوندی \texttt{10010*} با پورت خروجی ۲۲ را از درخت حذف نمایید.
-\end{itemize}
-
 
 \begin{center}
 	\includegraphics*[width=0.5\linewidth]{pics/img1.png}
 	\captionof{figure}{درخت باینری}
 \end{center}
+
+
+
+\begin{enumerate}
+	\item بسته‌ای با آدرس مقصد \lr{\texttt{90B28FF1}} از کدام پورت خارج می‌گردد؟ (آدرس‌های مقصد در مبنای ۱۶ نمایش داده شده‌اند.)
+	
+	\begin{qsolve}
+		بر اساس درخت داده شده، جدول مسیریابی به‌صورت زیر به‌دست می‌آید:
+		
+		\begin{latin}
+			\begin{center}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Prefix} & \textbf{Output Port} \\
+					\hline\hline
+					\texttt{*} & \texttt{10} \\
+					\hline\hline
+					\texttt{111*} & \texttt{8} \\
+					\hline
+					\texttt{110*} & \texttt{4} \\
+					\hline
+					\texttt{1000*} & \texttt{56} \\
+					\hline
+					\texttt{10010*} & \texttt{22} \\
+					\hline
+					\texttt{100100*} & \texttt{60} \\
+					\hline
+					\texttt{100111*} & \texttt{20} \\
+					\hline
+					\texttt{00*} & \texttt{12} \\
+					\hline
+					\texttt{0000*} & \texttt{5} \\
+					\hline
+				\end{tabular}
+			\end{center}
+		\end{latin}
+		
+		اگر معادل باینری آدرس داده شده را بنویسیم:
+		
+		\begin{latin}
+			\texttt{(0X90B28FF1) = 1001 0000 1011 0010 1000 1111 1111 0001}
+		\end{latin}
+		
+		می‌بینیم که براساس الگوریتم \lr{Longest Prefix Matching} بیشترین \lr{Matching} را با سطر ۶ جدول دارد. پس درنتیجه، این بسته از پورت شماره ۶۰ خارج می‌شود.
+	\end{qsolve}
+	
+	
+	
+	
+	
+	\item بسته‌ای با آدرس مقصد \lr{\texttt{A2AB11C3}} از کدام پورت خارج می‌گردد؟
+	\begin{qsolve}
+		معادل باینری آدرس داده شده را می‌نویسیم:
+		
+		\begin{latin}
+			\texttt{(0XA2AB11C3) = 1010 0010 1010 1011 0001 0001 1100 0011}
+		\end{latin}
+		
+		بیشترین \lr{Matching} را با سطر ۱ جدول است. پس، این بسته از پورت شماره ۱۰ خارج می‌شود.
+	\end{qsolve}
+	
+	
+	
+	
+	
+	
+	
+	\item آدرس پیشوندی \texttt{10101*} با پورت خروجی ۵۰ را به درخت اضافه نمایید.
+	\begin{qsolve}
+		\begin{center}
+			\includegraphics*[width=0.5\linewidth]{pics/q3_d.pdf}
+			\captionof{figure}{درخت جدید}
+		\end{center}
+	\end{qsolve}
+	
+	
+	
+	
+	\item آدرس پیشوندی \texttt{10010*} با پورت خروجی ۲۲ را از درخت حذف نمایید.
+
+	\begin{qsolve}
+		\begin{center}
+			\includegraphics*[width=0.5\linewidth]{pics/q3_c.pdf}
+			\captionof{figure}{درخت جدید}
+		\end{center}
+	\end{qsolve}
+
+\end{enumerate}
+
+
+
+
+

@@ -10,5 +10,76 @@
 
 
 \begin{qsolve}
+	مقدار \lr{Value} را برای هر گره می‌نویسیم و در هر مرحله که تکه‌ای از درخت را جدا می‌کنیم، این مقدار را آپدیت می‌کنیم و مقدار و مقدار آن را با رنگ قرمز درکنار هر \lr{Node} مشخص می‌کنیم.
 	
+	\textbf{باید $2\le Value \le 4 $ را جدا کنیم.}
+
+	\begin{enumerate}
+		\item 
+		\textbf{:Preorder}
+		
+		\begin{center}
+			\includegraphics*[width=0.7\linewidth]{pics/q10a.pdf}
+			\captionof{figure}{Preorder}
+		\end{center}
+		
+	\end{enumerate}
+	
+\end{qsolve}
+
+
+
+
+\begin{qsolve}
+	
+	\begin{latin}
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				Prefix & Bucket Prefixes & Bucket Size & Covering Prefix  \\
+				\hline\hline
+				\texttt{000*} & \texttt{000*},\texttt{00010*},\texttt{00011*} & 3 & \texttt{000*}  \\
+				\hline
+				\texttt{00*} & \texttt{0011*},\texttt{001110*} & 2 & \texttt{0011*}  \\
+				\hline
+				\texttt{0*} & \texttt{01*},\texttt{01101*},\texttt{011010*},\texttt{011011*} & 4 & \texttt{01*}  \\
+				\hline
+				\texttt{10*} & \texttt{100*},\texttt{10010*},\texttt{100110*} & 3 & \texttt{100*}  \\
+				\hline
+				\texttt{*} & \texttt{1*},\texttt{111*} & 2 & \texttt{1*}  \\
+				\hline
+			\end{tabular}
+		\end{center}
+	\end{latin}
+	
+	
+	\begin{enumerate}
+		\item [2.] \textbf{:Postorder}
+		
+		
+		\begin{center}
+			\includegraphics*[width=0.7\linewidth]{pics/110b.pdf}
+			\captionof{figure}{Postorder}
+		\end{center}
+		
+		
+		\begin{latin}
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|}
+					\hline
+					Prefix & Bucket Prefixes & Bucket Size & Covering Prefix  \\
+					\hline\hline
+					\texttt{0001*},\texttt{001*} & \texttt{00010*},\texttt{00011*},\texttt{0011*},\texttt{001110*} & 4 & \texttt{0001*},\texttt{0011*}  \\
+					\hline
+					\texttt{01*} & \texttt{01*},\texttt{01101*},\texttt{011010*},\texttt{011011*} & 4 & \texttt{01*},\texttt{01101*}  \\
+					\hline
+					\texttt{10*},\texttt{11*} & \texttt{100*},\texttt{10010*},\texttt{100110*},\texttt{111*} & 4 & \texttt{100*},\texttt{111*}  \\
+					\hline
+					\texttt{*} & \texttt{000*},\texttt{1*} & 2 & \texttt{1*},\texttt{000*}  \\
+					\hline
+				\end{tabular}
+			\end{center}
+		\end{latin}
+		
+	\end{enumerate}
 \end{qsolve}
