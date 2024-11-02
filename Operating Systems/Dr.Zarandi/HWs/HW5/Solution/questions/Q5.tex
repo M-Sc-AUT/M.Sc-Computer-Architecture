@@ -1,0 +1,42 @@
+\section{سوال پنجم}
+
+توضیح دهید در خروجی قطعه کد زیر چه تعداد \texttt{*} چاپ خواهد شد؟ همچنین درختواره آن را نیز رسم نمایید.
+
+
+\begin{latin}
+\begin{lstlisting}[caption=Code of Q3, label=cpp_code_example]
+int main() 
+{
+	if (fork() || (!fork())) 
+	{
+		if (fork() && fork()) 
+		{
+			fork();
+		}
+	}
+	while (wait(NULL) > 0);
+	printf("* ");
+	
+	return 0;
+}
+\end{lstlisting}
+\end{latin}
+
+
+\begin{qsolve}
+با توجه به درختواره زیر و جایگاه تابع \texttt{printf()} در کد، ۹ عدد * چاپ خواهد شد و درختواره آن نیز به‌صورت زیر است:
+
+
+\begin{center}
+	\includegraphics*[width=1\linewidth]{pics/img7.jpg}
+	\captionof{figure}{درختواره این سوال}
+\end{center}
+
+\end{qsolve}
+
+
+\begin{qsolve}
+	در این کد، ۱ پردازه والد و ۱۵ پردازه فرزند داریم.
+	
+	در شرط اول، ۲ پردازه با نام‌های $f_1 $ و $f_2 $ ایجاد می‌شود. در شرط دوم، پردازه $f_4 $ ایجاد می‌شود اما پردازه $f_5 $ فقط در پردازه‌های والد تولید می‌شود تا شرط حلقه ارضا شود و وارد آن شویم و درنهایت هم پردازه  $f_5 $ هم برای پردازه‌های والد قبلی خود ایجاد می‌شود.
+\end{qsolve}
