@@ -1,79 +1,54 @@
 \section{سوال سوم}
 
-مسیر اجرای کد زیر را در گراف حالت فرایند (\lr{Process state}) از شروع اجرا تا پایان اجرا مشخص کنید. توجه کنید سیستمی که این قطعه در آن اجرا می‌شود تک پردازنده می‌باشد.
+\begin{enumerate}
+	\item 
+	 \lr{race condition} چه مواقعی پیش می‌آید و باعث چه مشکلی می‌شود؟ چطور می‌توان از آن جلوگیری کرد؟
 
-
-\begin{latin}
-\begin{lstlisting}[caption=Code of Q3, label=cpp_code_example]
-int main()
-{
-	int n;
-	scanf("%d", &n);
-	n *= 10;
-	printf("%d", n);
+	\begin{qsolve}
+		
+	\end{qsolve}
 	
+	
+	
+	
+	\item 
+	در قطعه کد زیر توضیح دهید \lr{race condition} در کدام قسمت ممکن است به وجود بیاید و یک سناریو که باعث ناسازگاری داده می‌شود مثال بزنید.
+	
+	
+\begin{latin}
+\begin{lstlisting}[caption=Code of Q2, label=cpp_code_example]
+int shared_counter = 0;
+
+void* increment_counter(void* arg) 
+{
+	for (int i = 0; i < 1000000; ++i) 
+	{
+		shared_counter++;
+	}
+	return NULL;
+}
+
+int main() 
+{
+	pthread_t thread1, thread2;
+	pthread_create(&thread1, NULL, increment_counter, NULL);
+	pthread_create(&thread2, NULL, increment_counter, NULL);
+	
+	pthread_join(thread1, NULL);
+	pthread_join(thread2, NULL);
+	
+	printf("Final value of shared_counter: %d\n", shared_counter);
 	return 0;
 }
 \end{lstlisting}
 \end{latin}
-
-
-\begin{qsolve}
-	مطابق با تعریف آقای \lr{Silberschatz} در صفحه ۱۰۸، گراف حالت فرآیند به صورت زیر است:
 	
 	
-	\begin{center}
-		\includegraphics*[width=0.7\linewidth]{pics/img1.png}
-		\captionof{figure}{ساختار \lr{Process State}}
-	\end{center}
 	
-	طبق این تعریف می‌توان غرایند اجرای این کد را به‌صورت زیر نوشت:
 	
-	\begin{enumerate}
-		\item 
-		\textbf{\lr{:New}}\\
-		فرآیند در وضعیت \lr{New} شروع می‌شود، زمانی که برنامه (یعنی این کد) ایجاد می‌شود، اما هنوز برای اجرا پذیرفته نشده است. در این مرحله، سیستم‌عامل فرآیند را در حافظه تنظیم کرده و آن را برای اجرا آماده می‌کند.
-		
-		
-		
-		
-		\item 
-		\textbf{\lr{:Ready}}\\
-		پس از ایجاد فرآیند، به وضعیت \lr{Ready} می‌رویم. و در انتظار تخصیص پردازنده می‌مانیم. این وضعیت نشان می‌دهد که فرآیند در حافظه بارگذاری شده و برای اجرا آماده است، اما منتظر است تا پردازنده به آن اختصاص داده شود.
-		
-		
-		
-		
-		\item 
-		\textbf{\lr{:Running}}\\
-		پس از اینکه زمان‌بند پردازنده این فرآیند را انتخاب کرد، به وضعیت \lr{Running} وارد می‌شود. در اینجا فرآیند مراحل زیر را طی می‌کند:		
-
-	\end{enumerate}
-\end{qsolve}
-
-
-\begin{qsolve}[ادامه پاسخ ۳]
-	\begin{enumerate}
-		\item [ ]
-		\begin{itemize}
-				\item 						تابع \lr{\texttt{scanf()}} منتظر ورودی است، بنابراین در حالی که منتظر ورودی کاربر است، فرآیند ممکن است به طور موقت به وضعیت در انتظار \lr{Waiting} منتقل شود (اگر ورودی زمان‌بر باشد یا به \lr{I/O} نیاز داشته باشد).
-		
-				\item 						پس از دریافت ورودی، فرآیند مقدار \texttt{n} را در ۱۰ ضرب می‌کند که یک محاسبه است و در این مرحله در وضعیت در حال \lr{Running} باقی می‌ماند.
-					
-				\item 						سپس تابع \lr{\texttt{printf()}} برای نمایش نتیجه فراخوانی می‌شود که شامل عملیات \lr{I/O} است. اگر در عملیات \lr{I/O} تأخیر باشد، ممکن است به طور موقت دوباره به وضعیت \lr{Waiting} بازگردد.
-					
 	
-			\end{itemize}
-			
-			\item [4.]
-			\textbf{\lr{:Waiting}}\\					این وضعیت زمانی اعمال می‌شود که فرآیند نیاز دارد برای یک عملیات \LR{I/O} (مانند \lr{\texttt{scanf()}} یا \lr{\texttt{printf()}}) منتظر بماند. فرآیند ممکن است به طور موقت در وضعیت \lr{Waiting} باشد اگر عملیات \lr{I/O} با تأخیر انجام شود یا منتظر ورودی کاربر باشد، اما پس از اتمام
-			 \lr{I/O} دوباره به آماده یا در حال اجرا بازمی‌گردد.
-			
-			
-			\item [5.]
-			\textbf{\lr{:Terminated}}\\				پس از اتمام تمام دستورات (رسیدن به \lr{\texttt{return 0;}} ) فرآیند وارد وضعیت \lr{Terminated} می‌شود، به این معنی که اجرای آن به پایان رسیده و از سیستم خارج می‌شود.
+	\begin{qsolve}
 		
-		
-		
+	\end{qsolve}
+
 \end{enumerate}
-\end{qsolve}
