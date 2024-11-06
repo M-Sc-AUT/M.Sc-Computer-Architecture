@@ -15,7 +15,7 @@ set_part {xcvu11p-flga2577-1-e}
 create_clock -period 10 -name default
 config_cosim -rtl vhdl -tool xsim
 source "./sobel_edge_detector_PL/solution1/directives.tcl"
-csim_design -setup
+csim_design
 csynth_design
 cosim_design -rtl vhdl -tool xsim
 export_design -format ip_catalog
