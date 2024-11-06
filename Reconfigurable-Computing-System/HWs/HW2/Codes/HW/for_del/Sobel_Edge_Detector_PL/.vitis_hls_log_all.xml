@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] CSim file generation failed: compilation error(s)." projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:58:47.695+0330"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:57:19.491+0330"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:52:54.436+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'convolve_Pipeline_VITIS_LOOP_18_1_VITIS_LOOP_21_2' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_21_2'): Unable to schedule bus read operation ('a', convolution.cpp:31) on port 'gmem' (convolution.cpp:31) due to limited memory ports (II = 8). Please consider using a memory core with more ports or partitioning the array.&#xA;Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-885.html" projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:52:54.065+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'convolve_Pipeline_VITIS_LOOP_18_1_VITIS_LOOP_21_2' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_21_2'): Unable to schedule bus read operation ('a', convolution.cpp:31) on port 'gmem' (convolution.cpp:31) due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array.&#xA;Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-885.html" projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:52:54.038+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'convolve_Pipeline_VITIS_LOOP_18_1_VITIS_LOOP_21_2' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_21_2'): Unable to schedule bus read operation ('a', convolution.cpp:31) on port 'gmem' (convolution.cpp:31) due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array.&#xA;Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-885.html" projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:52:54.021+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'convolve_Pipeline_VITIS_LOOP_18_1_VITIS_LOOP_21_2' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_21_2'): Unable to schedule bus read operation ('a', convolution.cpp:31) on port 'gmem' (convolution.cpp:31) due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array.&#xA;Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-885.html" projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:52:53.993+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'convolve_Pipeline_VITIS_LOOP_18_1_VITIS_LOOP_21_2' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_21_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus read operation ('a', convolution.cpp:31) on port 'gmem' (convolution.cpp:31) and bus read operation ('a', convolution.cpp:31) on port 'gmem' (convolution.cpp:31).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:52:53.982+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'convolve_Pipeline_VITIS_LOOP_18_1_VITIS_LOOP_21_2' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_21_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read operation ('a', convolution.cpp:31) on port 'gmem' (convolution.cpp:31) and bus read operation ('a', convolution.cpp:31) on port 'gmem' (convolution.cpp:31).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:52:53.970+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 214-398] Updating loop lower bound from 1 to 3 for loop 'VITIS_LOOP_18_1' (convolution.cpp:18:22) in function 'convolve'. (convolution.cpp:7:0)" projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:52:53.655+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 207-4855] format specifies type 'double' but the argument has type 'int' (tb_convolution.cpp:27:29)" projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:52:45.928+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 207-4855] format specifies type 'double' but the argument has type 'int' (tb_convolution.cpp:16:29)" projectName="Sobel_Edge_Detector_PL" solutionName="solution1" date="2024-11-06T15:52:44.644+0330" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

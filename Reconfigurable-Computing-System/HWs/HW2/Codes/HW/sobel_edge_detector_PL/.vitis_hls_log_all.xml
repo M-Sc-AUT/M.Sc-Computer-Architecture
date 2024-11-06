@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] CSim file generation failed: compilation error(s)." projectName="sobel_edge_detector_PL" solutionName="solution1" date="2024-11-06T17:38:06.161+0330"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'convolve_Pipeline_VITIS_LOOP_21_2' (loop 'VITIS_LOOP_21_2'): Unable to schedule 'load' operation 32 bit ('a', convolution.cpp:31) on array 'x' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'x'.&#xA;Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-885.html" projectName="sobel_edge_detector_PL" solutionName="solution1" date="2024-11-06T17:37:06.232+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'convolve_Pipeline_VITIS_LOOP_21_2' (loop 'VITIS_LOOP_21_2'): Unable to schedule 'load' operation 32 bit ('a', convolution.cpp:31) on array 'x' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'x'.&#xA;Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-885.html" projectName="sobel_edge_detector_PL" solutionName="solution1" date="2024-11-06T17:37:06.183+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'convolve_Pipeline_VITIS_LOOP_21_2' (loop 'VITIS_LOOP_21_2'): Unable to schedule 'load' operation 32 bit ('a', convolution.cpp:31) on array 'x' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'x'.&#xA;Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-885.html" projectName="sobel_edge_detector_PL" solutionName="solution1" date="2024-11-06T17:37:06.175+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'convolve_Pipeline_VITIS_LOOP_21_2' (loop 'VITIS_LOOP_21_2'): Unable to schedule 'load' operation 32 bit ('a', convolution.cpp:31) on array 'x' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'x'.&#xA;Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-885.html" projectName="sobel_edge_detector_PL" solutionName="solution1" date="2024-11-06T17:37:06.168+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_18_1' (convolution.cpp:18:22) in function 'convolve' either the parent loop or sub loop is do-while loop.&#xA;Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-960.html" projectName="sobel_edge_detector_PL" solutionName="solution1" date="2024-11-06T17:37:05.973+0330" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,40 @@
+---
+MainSourceFile:  /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/sobel_edge_detector_PL/solution1/.autopilot/db/convolution.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_18_1:  '
+    FileOffset:      18
+    FilePath:        convolution.cpp
+    Replacements:    
+      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/sobel_edge_detector_PL/solution1/.autopilot/db/convolution.pp.0.cpp
+        Offset:          220946
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_18_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_21_2:  '
+    FileOffset:      21
+    FilePath:        convolution.cpp
+    Replacements:    
+      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/sobel_edge_detector_PL/solution1/.autopilot/db/convolution.pp.0.cpp
+        Offset:          220989
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_21_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25_3:  '
+    FileOffset:      25
+    FilePath:        convolution.cpp
+    Replacements:    
+      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/sobel_edge_detector_PL/solution1/.autopilot/db/convolution.pp.0.cpp
+        Offset:          221061
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_28_4:  '
+    FileOffset:      28
+    FilePath:        convolution.cpp
+    Replacements:    
+      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/sobel_edge_detector_PL/solution1/.autopilot/db/convolution.pp.0.cpp
+        Offset:          221118
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_28_4: '
+...

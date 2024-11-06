@@ -1,0 +1,51 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/solution1/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=convolve" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="convolution.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=x offset=slave bundle=gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="convolution.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=kernel offset=slave bundle=gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="convolution.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output offset=slave bundle=gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="convolution.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="convolution.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=5 -2" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="convolution.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="convolution.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="convolution.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4855" msg_severity="WARNING" msg_loc="tb_convolution.cpp:16:29" msg_body="format specifies type 'double' but the argument has type 'int'">
+        <args ClangWarningOption="format"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4855" msg_severity="WARNING" msg_loc="tb_convolution.cpp:27:29" msg_body="format specifies type 'double' but the argument has type 'int'">
+        <args ClangWarningOption="format"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="convolution.cpp:25:30" msg_body="Loop 'VITIS_LOOP_25_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_25_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="convolution.cpp:28:19" msg_body="Loop 'VITIS_LOOP_28_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_28_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="convolution.cpp:7:0" msg_body="Updating loop lower bound from 1 to 3 for loop 'VITIS_LOOP_18_1' (convolution.cpp:18:22) in function 'convolve'.">
+        <args LoopLoc="convolution.cpp:18:22" LoopName="VITIS_LOOP_18_1" NewBound="3" OldBound="1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="convolution.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_25_3' (convolution.cpp:25:30) in function 'convolve' completely with a factor of 3">
+        <args Factor="3" LoopLoc="convolution.cpp:25:30" LoopName="VITIS_LOOP_25_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="convolution.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_28_4' (convolution.cpp:28:19) in function 'convolve' completely with a factor of 3">
+        <args Factor="3" LoopLoc="convolution.cpp:28:19" LoopName="VITIS_LOOP_28_4"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

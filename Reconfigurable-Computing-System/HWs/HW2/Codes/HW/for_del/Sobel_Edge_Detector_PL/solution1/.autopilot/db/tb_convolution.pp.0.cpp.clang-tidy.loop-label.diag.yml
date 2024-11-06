@@ -1,0 +1,40 @@
+---
+MainSourceFile:  /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/solution1/.autopilot/db/tb_convolution.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_13_1:  '
+    FileOffset:      13
+    FilePath:        tb_convolution.cpp
+    Replacements:    
+      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/solution1/.autopilot/db/tb_convolution.pp.0.cpp
+        Offset:          783477
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_13_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_2:  '
+    FileOffset:      15
+    FilePath:        tb_convolution.cpp
+    Replacements:    
+      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/solution1/.autopilot/db/tb_convolution.pp.0.cpp
+        Offset:          783519
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_24_1:  '
+    FileOffset:      24
+    FilePath:        tb_convolution.cpp
+    Replacements:    
+      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/solution1/.autopilot/db/tb_convolution.pp.0.cpp
+        Offset:          783664
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_24_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_2:  '
+    FileOffset:      26
+    FilePath:        tb_convolution.cpp
+    Replacements:    
+      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/solution1/.autopilot/db/tb_convolution.pp.0.cpp
+        Offset:          783706
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_2: '
+...

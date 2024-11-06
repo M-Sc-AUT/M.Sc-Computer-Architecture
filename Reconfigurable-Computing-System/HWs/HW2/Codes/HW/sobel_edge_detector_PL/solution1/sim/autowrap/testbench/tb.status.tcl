@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/sobel_edge_detector_PL/solution1/./sim/autowrap/testbench/convolution.cpp_pre.cpp.tb.cpp

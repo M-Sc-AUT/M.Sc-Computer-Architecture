@@ -1,0 +1,140 @@
+
+
+================================================================
+== Synthesis Summary Report of 'convolve'
+================================================================
++ General Information: 
+    * Date:           Wed Nov  6 17:37:06 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        sobel_edge_detector_PL
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |                Modules                | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |         |           |           |     |
+    |                & Loops                | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +---------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ convolve                             |     -|  0.13|       65|  650.000|         -|       66|     -|        no|     -|  6 (~0%)|  524 (~0%)|  829 (~0%)|    -|
+    | o VITIS_LOOP_18_1                     |     -|  7.30|       59|  590.000|        20|        -|     3|        no|     -|        -|          -|          -|    -|
+    |  + convolve_Pipeline_VITIS_LOOP_21_2  |     -|  0.13|       17|  170.000|         -|       17|     -|        no|     -|  6 (~0%)|  213 (~0%)|  685 (~0%)|    -|
+    |   o VITIS_LOOP_21_2                   |    II|  7.30|       15|  150.000|         6|        5|     3|       yes|     -|        -|          -|          -|    -|
+    +---------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++-------------------+-----------+----------+
+| Port              | Direction | Bitwidth |
++-------------------+-----------+----------+
+| kernel_address0   | out       | 4        |
+| kernel_address1   | out       | 4        |
+| kernel_q0         | in        | 32       |
+| kernel_q1         | in        | 32       |
+| output_r_address0 | out       | 5        |
+| output_r_d0       | out       | 32       |
+| x_address0        | out       | 5        |
+| x_address1        | out       | 5        |
+| x_q0              | in        | 32       |
+| x_q1              | in        | 32       |
++-------------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| x        | in        | int*     |
+| kernel   | in        | int*     |
+| output   | out       | int*     |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+-------------------+---------+----------+
+| Argument | HW Interface      | HW Type | HW Usage |
++----------+-------------------+---------+----------+
+| x        | x_address0        | port    | offset   |
+| x        | x_ce0             | port    |          |
+| x        | x_q0              | port    |          |
+| x        | x_address1        | port    | offset   |
+| x        | x_ce1             | port    |          |
+| x        | x_q1              | port    |          |
+| kernel   | kernel_address0   | port    | offset   |
+| kernel   | kernel_ce0        | port    |          |
+| kernel   | kernel_q0         | port    |          |
+| kernel   | kernel_address1   | port    | offset   |
+| kernel   | kernel_ce1        | port    |          |
+| kernel   | kernel_q1         | port    |          |
+| output   | output_r_address0 | port    | offset   |
+| output   | output_r_ce0      | port    |          |
+| output   | output_r_we0      | port    |          |
+| output   | output_r_d0       | port    |          |
++----------+-------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                                 | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++--------------------------------------+-----+--------+-------------+-----+--------+---------+
+| + convolve                           | 6   |        |             |     |        |         |
+|   add_ln31_2_fu_195_p2               |     |        | add_ln31_2  | add | fabric | 0       |
+|  + convolve_Pipeline_VITIS_LOOP_21_2 | 6   |        |             |     |        |         |
+|    add_ln31_3_fu_392_p2              |     |        | add_ln31_3  | add | fabric | 0       |
+|    empty_7_fu_303_p2                 |     |        | empty_7     | add | fabric | 0       |
+|    add_ln31_4_fu_321_p2              |     |        | add_ln31_4  | add | fabric | 0       |
+|    add_ln31_5_fu_327_p2              |     |        | add_ln31_5  | add | fabric | 0       |
+|    add_ln31_fu_338_p2                |     |        | add_ln31    | add | fabric | 0       |
+|    add_ln31_6_fu_348_p2              |     |        | add_ln31_6  | add | fabric | 0       |
+|    add_ln31_7_fu_359_p2              |     |        | add_ln31_7  | add | fabric | 0       |
+|    add_ln31_1_fu_368_p2              |     |        | add_ln31_1  | add | fabric | 0       |
+|    add_ln31_8_fu_377_p2              |     |        | add_ln31_8  | add | fabric | 0       |
+|    add_ln31_9_fu_396_p2              |     |        | add_ln31_9  | add | fabric | 0       |
+|    empty_8_fu_400_p2                 |     |        | empty_8     | add | fabric | 0       |
+|    add_ln31_10_fu_411_p2             |     |        | add_ln31_10 | add | fabric | 0       |
+|    add_ln31_11_fu_417_p2             |     |        | add_ln31_11 | add | fabric | 0       |
+|    add_ln31_12_fu_427_p2             |     |        | add_ln31_12 | add | fabric | 0       |
+|    add_ln31_13_fu_437_p2             |     |        | add_ln31_13 | add | fabric | 0       |
+|    mul_32s_32s_32_1_1_U1             | 3   |        | mul_ln33    | mul | auto   | 0       |
+|    mul_32s_32s_32_1_1_U1             | 3   |        | mul_ln33_1  | mul | auto   | 0       |
+|    mul_32s_32s_32_1_1_U1             | 3   |        | mul_ln33_2  | mul | auto   | 0       |
+|    mul_32s_32s_32_1_1_U1             | 3   |        | mul_ln33_3  | mul | auto   | 0       |
+|    mul_32s_32s_32_1_1_U1             | 3   |        | mul_ln33_4  | mul | auto   | 0       |
+|    mul_32s_32s_32_1_1_U2             | 3   |        | mul_ln33_5  | mul | auto   | 0       |
+|    mul_32s_32s_32_1_1_U2             | 3   |        | mul_ln33_6  | mul | auto   | 0       |
+|    mul_32s_32s_32_1_1_U2             | 3   |        | mul_ln33_7  | mul | auto   | 0       |
+|    mul_32s_32s_32_1_1_U2             | 3   |        | mul_ln33_8  | mul | auto   | 0       |
+|    grp_fu_271_p2                     |     |        | add_ln33    | add | fabric | 0       |
+|    grp_fu_271_p2                     |     |        | add_ln33_1  | add | fabric | 0       |
++--------------------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

@@ -1,0 +1,94 @@
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          '> at '
+  - LoopLoc:         'convolution.cpp:21:26'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: convolution.cpp, Line: 25, Column: 30 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: convolution.cpp, Line: 28, Column: 34 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_28_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_3
+  - String:          ''' ('
+  - LoopLoc:         'convolution.cpp:25:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolve
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_28_4
+  - String:          ''' ('
+  - LoopLoc:         'convolution.cpp:28:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolve
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_28_4
+  - String:          ''' ('
+  - LoopLoc:         'convolution.cpp:28:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolve
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_28_4
+  - String:          ''' ('
+  - LoopLoc:         'convolution.cpp:28:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolve
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...

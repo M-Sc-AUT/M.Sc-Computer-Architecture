@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "convolve",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "convolve"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/sobel_edge_detector_PL/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "convolve",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "convolve"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/sobel_edge_detector_PL/solution1/csynth.tcl",
+    "sourceLine": 18,
+    "success": true
+  }
+]

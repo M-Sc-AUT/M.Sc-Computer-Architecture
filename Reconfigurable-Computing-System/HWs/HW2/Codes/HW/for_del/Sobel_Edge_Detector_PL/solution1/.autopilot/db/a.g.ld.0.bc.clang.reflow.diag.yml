@@ -1,0 +1,650 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: convolution.cpp, Line: 25, Column: 30 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: convolution.cpp, Line: 28, Column: 19 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_28_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '1'
+  - String:          ' to '
+  - NewBound:        '3'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ''' ('
+  - LoopLoc:         'convolution.cpp:18:22'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          convolve
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_3
+  - String:          ''' ('
+  - LoopLoc:         'convolution.cpp:25:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolve
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_28_4
+  - String:          ''' ('
+  - LoopLoc:         'convolution.cpp:28:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolve
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_28_4
+  - String:          ''' ('
+  - LoopLoc:         'convolution.cpp:28:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolve
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_28_4
+  - String:          ''' ('
+  - LoopLoc:         'convolution.cpp:28:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolve
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          ' '
+  - LoopLoc:         'convolution.cpp:21:19'
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_25_3.load.11
+  - OrigAccess:      load
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_25_3.load.18
+  - OrigAccess:      load
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_25_3.load.27
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep22seq
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          ' '
+  - LoopLoc:         'convolution.cpp:21:19'
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_25_3.load.44
+  - OrigAccess:      load
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_25_3.load.52
+  - OrigAccess:      load
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_25_3.load.60
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep23seq
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          ' '
+  - LoopLoc:         'convolution.cpp:21:19'
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_25_3.load.77
+  - OrigAccess:      load
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_25_3.load.85
+  - OrigAccess:      load
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_25_3.load.93
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: convolution.cpp, Line: 21, Column: 19 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep24seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          ' '
+  - LoopLoc:         'convolution.cpp:21:19'
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: convolution.cpp, Line: 36, Column: 26 }
+  - OrigDirection:   write
+  - OrigID:          VITIS_LOOP_25_3.store.102
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        kernel25seq
+  - ArrayName:       kernel
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.26
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.28
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.30
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.32
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.34
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.36
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.38
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.40
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.42
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: convolution.cpp, Line: 21, Column: 19 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: convolution.cpp, Line: 21, Column: 19 }
+  - OrigDirection:   write
+  - OrigID:          scevgep24seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'convolution.cpp:18:22'
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          scevgep22seq
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          scevgep23seq
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: convolution.cpp, Line: 21, Column: 19 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: convolution.cpp, Line: 21, Column: 19 }
+  - OrigDirection:   write
+  - OrigID:          scevgep24seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          ' '
+  - LoopLoc:         'convolution.cpp:21:19'
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+  - OrigDirection:   read
+  - OrigID:          kernel25seq
+  - ArrayName:       kernel
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: convolution.cpp, Line: 21, Column: 19 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          ' '
+  - LoopLoc:         'convolution.cpp:21:19'
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: convolution.cpp, Line: 21, Column: 19 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          '''('
+  - LoopLoc:         'convolution.cpp:21:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq4
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'convolve(int (*) [5], int (*) [3], int (*) [5])'
+    DebugLoc:        { File: convolution.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: convolution.cpp, Line: 31, Column: 10 }
+Function:        _Z8convolvePA5_iPA3_iS0_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

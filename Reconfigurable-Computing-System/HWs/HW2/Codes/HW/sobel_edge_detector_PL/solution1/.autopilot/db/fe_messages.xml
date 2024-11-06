@@ -1,0 +1,21 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/sobel_edge_detector_PL/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=convolve" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/sobel_edge_detector_PL/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="convolve" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=convolve" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="convolution.cpp:25:30" msg_body="Loop 'VITIS_LOOP_25_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_25_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="convolution.cpp:28:34" msg_body="Loop 'VITIS_LOOP_28_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_28_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="convolution.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_25_3' (convolution.cpp:25:30) in function 'convolve' completely with a factor of 3">
+        <args Factor="3" LoopLoc="convolution.cpp:25:30" LoopName="VITIS_LOOP_25_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="convolution.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_28_4' (convolution.cpp:28:34) in function 'convolve' completely with a factor of 3">
+        <args Factor="3" LoopLoc="convolution.cpp:28:34" LoopName="VITIS_LOOP_28_4"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
