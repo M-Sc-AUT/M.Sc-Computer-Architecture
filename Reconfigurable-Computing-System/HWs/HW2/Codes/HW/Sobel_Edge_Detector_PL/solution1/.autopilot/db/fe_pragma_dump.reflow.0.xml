@@ -1,0 +1,11 @@
+<pragmas>
+<pragma file="Sobel_Edge_Detector_PL/src/convolution.cpp" line="29" pragmaType="loop_tripcount" parentfunction="convolve" min="1" max="126" avg="63"/>
+<pragma file="Sobel_Edge_Detector_PL/src/convolution.cpp" line="32" pragmaType="pipeline" parentfunction="convolve" off="0" ii="1" rewind="0" style=""/>
+<pragma file="Sobel_Edge_Detector_PL/src/convolution.cpp" line="36" pragmaType="unroll" parentfunction="convolve" factor="-1" skip_exit_check="0"/>
+<pragma file="Sobel_Edge_Detector_PL/src/convolution.cpp" line="39" pragmaType="unroll" parentfunction="convolve" factor="-1" skip_exit_check="0"/>
+<pragma file="Sobel_Edge_Detector_PL/src/convolution.cpp" line="21" pragmaType="pipeline" parentfunction="convolve" off="0" ii="1" rewind="0" style=""/>
+<pragma file="Sobel_Edge_Detector_PL/src/convolution.cpp" line="9" pragmaType="interface" parentfunction="convolve" mode="m_axi" port="x" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="Sobel_Edge_Detector_PL/src/convolution.cpp" line="10" pragmaType="interface" parentfunction="convolve" mode="m_axi" port="kernel" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="Sobel_Edge_Detector_PL/src/convolution.cpp" line="11" pragmaType="interface" parentfunction="convolve" mode="m_axi" port="output" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="Sobel_Edge_Detector_PL/src/convolution.cpp" line="12" pragmaType="interface" parentfunction="convolve" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

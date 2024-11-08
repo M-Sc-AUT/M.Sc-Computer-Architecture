@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="convolution.cpp" path="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/src/convolution.cpp"/>
+    <originFiles name="convolution.h" path="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/src/convolution.h"/>
+    <originFiles name="edge_detection.cpp" path="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/src/edge_detection.cpp"/>
+    <originFiles name="edge_detection.h" path="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/src/edge_detection.h"/>
+    <originFiles name="edge_output.txt" path="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/edge_output.txt"/>
+    <originFiles name="input_matrix.txt" path="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/input_matrix.txt"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_convolution.cpp" path="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/src/tb_convolution.cpp"/>
+    <originFiles name="tb_convolution.h" path="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/src/tb_convolution.h"/>
+    <originFiles name="tb_edge_detection.cpp" path="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/src/tb_edge_detection.cpp"/>
+    <originFiles name="tb_edge_detection.h" path="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW2/Codes/HW/Sobel_Edge_Detector_PL/src/tb_edge_detection.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

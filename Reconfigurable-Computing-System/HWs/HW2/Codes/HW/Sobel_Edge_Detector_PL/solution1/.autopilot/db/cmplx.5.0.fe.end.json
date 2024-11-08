@@ -1,0 +1,47 @@
+{
+    "1": {
+        "name": "convolve_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_19_2",
+        "file": "Sobel_Edge_Detector_PL\/src\/convolution.cpp",
+        "fileloc": "17",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "convolve",
+        "file": "convolution.cpp",
+        "fileloc": "6",
+        "instructions": "34",
+        "total_instructions": "174",
+        "calls": "1 2",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "convolve_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_30_4",
+        "file": "Sobel_Edge_Detector_PL\/src\/convolution.cpp",
+        "fileloc": "14",
+        "instructions": "121",
+        "total_instructions": "121",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}
