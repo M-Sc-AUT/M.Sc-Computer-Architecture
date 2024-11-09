@@ -26,5 +26,57 @@ class Semaphore
 
 
 \begin{qsolve}
+	کلاس را به‌صورت زیر تکمیل می‌کنیم:
+\end{qsolve}
+
+\begin{latin}
+\begin{lstlisting}[caption=Complete code of Q5, label=cpp_code_example]
+// Semaphore class definition
+class Semaphore {
+	private:
+	int value; // semaphore counter
+	Queue<Process> queue; // queue to store waiting processes
+	
+	public:
+	// Constructor to set the initial value of the semaphore
+	Semaphore(int initialValue) {
+		value = initialValue;
+	}
+	
+	// wait method for entering the critical section
+	void wait(Process process) {
+		value--; // decrement the semaphore value
+		if (value < 0) {
+			queue.enqueue(process); // add the process to the queue
+			process.block(); // block the process
+		}
+	}
+	
+	// signal method for exiting the critical section
+	void signal() {
+		value++; // increment the semaphore value
+		if (value <= 0) {
+			Process nextProcess = queue.dequeue(); // dequeue a process
+			nextProcess.wakeup(); // wake up the process
+		}
+	}
+};
+\end{lstlisting}
+\end{latin}
+
+
+\begin{qsolve}
+	
+	\begin{itemize}
+		\item متغیر \texttt{value}: این متغیر شمارنده‌ای است که مقدار سمافور را نگه می‌دارد. اگر مقدار آن منفی شود، فرآیندها باید منتظر بمانند، که باعث برقراری شرط \lr{Mutual Exclusion} می‌شود.
+		
+		\item سازنده \lr{\texttt{Semaphore(int initialValue)}}: این سازنده مقدار اولیه سمافور را تنظیم می‌کند. این مقدار اولیه به شرط \lr{Mutual Exclusion} کمک می‌کند، زیرا برای سمافور باینری تنها یک فرآیند در هر زمان می‌تواند به ناحیه بحرانی دسترسی داشته باشد.
+		
+		\item متد \lr{\texttt{wait(Process process)}}: در این متد، اگر مقدار \texttt{value} منفی شود، فرآیند به صف اضافه شده و مسدود می‌شود. این عمل به شرط \lr{Bounded Waiting} کمک می‌کند، زیرا فرآیندها به ترتیب ورود در صف قرار گرفته و به نوبت از صف خارج می‌شوند.
+		
+		\item متد \texttt{\texttt{signal()}}: این متد مقدار \texttt{value} را افزایش می‌دهد و اگر فرآیندهایی در صف منتظر باشند، فرآیند بعدی را بیدار کرده و اجازه ورود می‌دهد. این امر باعث برقراری شرط \lr{Progress} و \lr{Bounded Waiting} می‌شود.
+	\end{itemize}
+	
+	این پیاده‌سازی سه شرط لازم برای مدیریت نواحی بحرانی را به‌طور کامل فراهم می‌کند و با استفاده از صف و کنترل متغیر \texttt{value}، به حفظ همگام‌سازی بین فرآیندها کمک می‌کند.
 	
 \end{qsolve}
