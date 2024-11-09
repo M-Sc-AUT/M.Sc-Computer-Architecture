@@ -1,0 +1,36 @@
+\section{سوال چهارم}
+
+دو پردازنده برای حل مسائل ناحیه بحرانی از روش‌های زیر استفاده کرده‌اند (متغیرهای \lr{L1} و \lr{L2} در هر دو مشترک هستند و مقدار \lr{Boolean} دارند و در ابتدا به صورت تصادفی مقداردهی شده‌اند). هر کدام از سه شرط \lr{Mutual Exclusion} و \lr{Progress} و \lr{Bounded Waiting} را بررسی کنید و توضیح دهید.
+
+
+
+
+
+\begin{multicols}{2}
+\centering
+\begin{latin}
+\begin{lstlisting}[caption=Code of Q4, label=cpp_code_example]
+// P2
+while (L1 == L2);
+//Critical Section
+L1 = L2;
+\end{lstlisting}
+\end{latin}
+\begin{latin}
+\begin{lstlisting}[caption=Code of Q4, label=cpp_code_example]
+// P1
+while (L1 != L2);
+//Critical Section
+L1 = !L2;
+\end{lstlisting}
+\end{latin}	
+\end{multicols}
+
+
+
+
+
+
+\begin{qsolve}
+	
+\end{qsolve}
