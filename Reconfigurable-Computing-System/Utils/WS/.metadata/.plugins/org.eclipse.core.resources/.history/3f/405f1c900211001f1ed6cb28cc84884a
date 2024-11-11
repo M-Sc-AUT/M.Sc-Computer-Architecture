@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="PDS_Eth_Test" location="E:/FPGA/WS_PDS_Ver1/PDS_Eth_Test" platform="E:/FPGA/WS_PDS_Ver1/PDS_Ver1/export/PDS_Ver1/PDS_Ver1.xpfm" platformUID="xilinx:ebaz4205::0.0(custom)" systemProject="PDS_Eth_Test_system" sysConfig="PDS_Ver1" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" dimmRepoPath="" mssSignature="bce86ac3e07ccd32e88c8aa3df3626e6">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.827642077" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.702327266">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="lwip_echo_server" hasBspSettings="true"/>
+</sdkproject:SdkProject>
