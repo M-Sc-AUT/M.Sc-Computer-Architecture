@@ -11,17 +11,176 @@
 
 
 \begin{qsolve}
+	عمده تفاوت بین این دو خانواده، جامعه و کارد مورد استفاده از آن‌هاست که آن هم بده‌دلیل ویژگی‌های خاص هر‌یک از این دو تراشه است. برای مثال تراشه‌های خانواده \lr{Cyclone} برای کاربردهای کم‌هزینه و با مصرف انرژی پایین طراحی شده است. به دلیل طراحی کم‌هزینه و اندازه کوچک‌تر، بیشتر در کاربردهای تجاری و صنعتی با پیچیدگی نه‌چندان زیاد مانند کنترل‌کننده‌ها، سیستم‌های ساده شبکه و دستگاه‌های مصرفی استفاده می‌شود. اما در مقابل تراشه‌های خانواده \lr{Stratix} از نظر عملکرد و منابع، در سطح بالاتری نسبت به \lr{Cyclone} قرار دارد و برای کاربردهای پیچیده و توان پردازشی بالا مناسب است. از \lr{Stratix} بیشتر در کاربردهای پیشرفته مانند پردازش سیگنال دیجیتال، شبکه‌های مخابراتی سرعت‌بالا، محاسبات سنگین، و کاربردهای هوافضا و نظامی استفاده می‌شود.
+	
+	در ادامه به‌طور دقیق با ارجاع به دیتاشیت‌های شرکت‌های سازنده این دو خانواده از تراشه‌ها را مقایسه می‌کنیم.
+	
+	
+	شرکت \lr{Intel} (\lr{Altera} سابق) اسم بلوک منطقی و قابل برنامه‌ریزی اش را \lr{LAB (Logic Array Block)}
+	نام‌گذاری کرده است. ساختار ارتباطات بین این بلوک‌ها برای تراشه های هردوخانواده یکسان و به‌صورت زیر است: (صفحه ۱۰ در \cite{ref1} و \cite{ref2})
+	
+	\begin{center}
+		\includegraphics*[width=0.8\linewidth]{pics/img2.png}
+		\captionof{figure}{ساختار ارتباطات میان \lr{LAB} ها}
+		\label{ساختار ارتباطات میان LAB ها}
+	\end{center}
+
+
+	ساختار \lr{LUT} ها در این دو خانواده متفاوت هست. در \lr{Cyclone} از \lr{LUT} های ۵ ورودی استفاده شده اما در \lr{Stratix} از \lr{LUT} های ۶ ورودی. (صفحه ۱۶ در \cite{ref1} و صفحه ۱۸ در \cite{ref2})
+\end{qsolve}
+
+
+
+
+\begin{qsolve}
+	برای \lr{Cyclone} به‌صورت زیر:
+	\begin{center}
+		\includegraphics*[width=0.8\linewidth]{pics/img4.png}
+		\captionof{figure}{ساختار \lr{LUT} ها در \lr{Cyclone}}
+		\label{ساختار LUT ها در Cyclone}
+	\end{center}
+	
+	
+	و برای \lr{Stratix} نیز به‌صورت زیر:
+	\begin{center}
+		\includegraphics*[width=0.8\linewidth]{pics/img3.png}
+		\captionof{figure}{ساختار \lr{LUT} ها در \lr{Stratix}}
+		\label{ساختار LUT ها در Stratix}
+	\end{center}
+	
+	
+	
+	
+	از منظر \lr{Memory} این این دو خانواده به شدت متفاوت از یکدیگر هستند. در \lr{Stratix} بلوک‌های پرسرعت حافظه به‌نام \lr{M20K} داریم در‌صورتی که در \lr{Cyclone} تنها \lr{M10K} داریم. مطابق با جدول شماره ۲-۱ در صفحه ۲۵ \cite{ref2} و صفحه ۲۰ از \cite{ref1} این دو خانواده از نظر مجموع حافظه نیز بسیار متفاوت هستند. به‌طوری که کمترین میزان حافظه در یکی از مدل‌های خانواده \lr{Stratix}،
+	۱۶ کیلو بیت است درصورتی که بیشترین حجم حافظه در خانواده \lr{Cyclone} تقریبا ۱۴ کیلوبیت است. تصویر این دو جدول در ادامه آورده شده است.
 	
 	
 \end{qsolve}
 
+
+
+\begin{qsolve}
+	جافظه‌های موجود در \lr{Cyclone}:
+	\begin{center}
+		\includegraphics*[width=0.8\linewidth]{pics/img6.png}
+		\captionof{figure}{حافظه‌های \lr{Cyclone} \cite{ref1}}
+		\label{حافظه‌های Cyclone}
+	\end{center}
+	
+	
+	جافظه‌های موجود در \lr{Cyclone}:
+	\begin{center}
+		\includegraphics*[width=0.8\linewidth]{pics/img5.png}
+		\captionof{figure}{حافظه‌های \lr{Stratix} \cite{ref2}}
+		\label{حافظه‌های Stratix}
+	\end{center}
+	
+	
+		از نظر تعداد ضرب‌کننده‌ها نیز در تراشه‌های خانواده \lr{Stratix} بیشتر هستند این مورد در جدول صفحه ۴۲ در \cite{ref1} و صفحه ۴۸ در \cite{ref2} آورده شده است.
+\end{qsolve}
+
+
+
+\begin{qsolve}
+	مقایسه این دو خانواده از نظر تعداد ضرب‌کننده:
+	\begin{center}
+		\includegraphics*[width=0.8\linewidth]{pics/img8.png}
+		\captionof{figure}{ضرب‌کننده‌های \lr{Stratix} \cite{ref2}}
+		\label{ضرب‌کننده‌های Cyclone}
+	\end{center}
+\end{qsolve}
+
+
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=0.8\linewidth]{pics/img7.png}
+		\captionof{figure}{ضرب‌کننده‌های \lr{Stratix} \cite{ref2}}
+		\label{ضرب‌کننده‌های Stratix}
+	\end{center}
+	
+	تراشه‌های خانواده \lr{Virtex} از شرکت \lr{Xilinx} را می‌توان از نظر سرعت و توان پردازشی، هم‌رده تراشه‌های \lr{Stratix} قرار داد. که در ادامه برخی از ویژگی‌های این خانواده را با خانواده \lr{Stratix} مقایسه می‌کنیم.
+	
+	در تراشه‌های شرکت \lr{Xilinx} نام بلوک‌های قابل برنامه‌ریزی \lr{CLB} است و ساختار آن تقریبا مشابه است با خانواده \lr{Stratix} 
+	
+	\begin{center}
+		\includegraphics*[width=0.5\linewidth]{pics/img9.png}
+		\captionof{figure}{ساختار \lr{CLB} ها در \lr{Virtex}}
+		\label{ساختار CLB ها در Virtex}
+	\end{center}
+	
+\end{qsolve}
+
+
+
+
+
+\begin{qsolve}
+	ساختار درونی هر \lr{CLB} به‌صورت زیر است:
+	
+	\begin{center}
+		\includegraphics*[width=1\linewidth]{pics/img10.png}
+		\captionof{figure}{ساختار درونی \lr{CLB} ها در \lr{Virtex} \cite{ref3}}
+		\label{ساختار درونی CLB ها در Virtex}
+	\end{center}
+	
+	
+	مطابق با توضیحات موجود در صفحه ۱۱ سند \cite{ref3} ورودی‌های \lr{LUT} ها در این خانواده نیز ۶ عددی هستند. همچنین از نظر مقدار منابع موجود در هر \lr{CLB} تراشه‌های این خانواده به‌صورت زیر تقسیم‌بندی می‌شوند:
+\end{qsolve}
+
+
+
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=1\linewidth]{pics/img11.png}
+		\captionof{figure}{منابع موجود در هر \lr{CLB} \cite{ref3}}
+		\label{منابع موجود در هر CLB}
+	\end{center}
+	
+	همانطور که مشخص است، تعداد منابع اعم از تعداد \lr{Slice}ها، تعداد \lr{LUT}ها و مقدار حافظه تقریبا با تراشه‌های خانواده \lr{Stratix} مشابه است و در مواردی بیشتر است.
+	
+	
+	مطابق با جدول ارائه شده در صفحه ۱۳ سند \cite{ref4} تراشه‌های این خانواده به‌طور میانگین بیش‌از ۵۰۰ بلوک محاسبات سریع \lr{DSP48} را دارند.
+	
+	
+	\begin{center}
+		\includegraphics*[width=1\linewidth]{pics/img12.png}
+		\captionof{figure}{تعداد بلوک‌های \lr{DSP48} موجود در هر تراشه خانواده \lr{Virtex} \cite{ref4}}
+		\label{تعداد بلوک‌های DSP48 موجود در هر تراشه خانواده Virtex}
+	\end{center}
+	
+	که برخلاف تراشه‌های خانواده \lr{Stratix} این بلوک می‌تواند ضرب سریع، جمع و عملیات‌های منطقی را انجام دهد. هر \lr{Slice} از این بلوک به‌صورت زیر است:
+\end{qsolve}
+
+
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=1\linewidth]{pics/img13.png}
+		\captionof{figure}{ساختار درونی بلوک \lr{DSP48}}
+		\label{درون بلوک DSP48}
+	\end{center}
+	
+	و درنهایت برای جمع‌بندی می‌توان گفت اگر در کاربردی نیاز به سرعت و محاسبات خیلی سریع نداشته باشیم و منابع زیادی هم نیاز نداشته باشیم، تراشه‌های خانواده \lr{Cyclone} با قیمت مناسب و توان مصرفی کمتر نسبت به دو خانواده دیگر انتخاب مناسبی است. اما اگر نیازمند توان پردازشی بالا و منابع زیادی باشیم می‌توانیم از یکی از خانواده‌های \lr[Stratix] و یا \lr{Virtex} استفاده کنیم. از انجایی که این دو خانواده تا حد زیادی شبیه به هم هستند انتخاب میان این دو تراشه کاملا به کاربرد و نیاز‌های ما از تراشه بستگی دارد.
+\end{qsolve}
  
 
 
-%\begin{latin}
-%	\begin{thebibliography}{9}
-%		\bibitem{ref1}
-%		Rajeev Jayaraman, Xilinx Inc, 2001 \href{https://www.doc.ic.ac.uk/~wl/teachlocal/arch/killasic.pdf}{https://www.doc.ic.ac.uk/~wl/teachlocal/arch/killasic.pdf}
-%		
-%	\end{thebibliography} 
-%\end{latin}
+\begin{latin}
+	\begin{thebibliography}{9}
+		\bibitem{ref1}
+		Cyclone® V Device Overview \href{https://www.intel.com/content/www/us/en/docs/programmable/683694/current/cyclone-v-device-overview.html}{[Link]}
+		
+		\bibitem{ref2}
+		Stratix® V Device Handbook
+		Volume 1: Device Interfaces and Integration \href{https://www.intel.com/content/www/us/en/docs/programmable/683694/current/cyclone-v-device-overview.html}{[Link]}
+		
+		\bibitem{ref3}
+		7 Series FPGAs
+		Configuration
+		User Guide \href{https://docs.amd.com/v/u/en-US/ug470_7Series_Config}{[Link]}
+		
+		\bibitem{ref4}
+		Virtex-6 FPGA
+		DSP48E1 Slice
+		User Guide \href{https://docs.amd.com/v/u/en-US/ug369}{[Link]}
+	\end{thebibliography} 
+\end{latin}

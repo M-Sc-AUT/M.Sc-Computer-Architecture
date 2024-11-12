@@ -5,5 +5,124 @@
 
 
 \begin{qsolve}
+	برای پاسخ به این سوال ابتدا نیاز است که دو مفهوم \lr{Post-Training Quantization (PQT)} و \lr{Quantization Aware-Training (QAT)} را توضیح دهیم.
+	
+	\begin{enumerate}
+		\item 
+		\textbf{\lr{Quantization post-training (PQT)}:}\\
+		اگر خیلی کوتاه بخواهم این مدل را توضیح دهم، بدین صورت است که پس از انجام کامل آموزش (در اینجا درمورد \lr{LLM} ها صحبت می‌کنم) تعداد بیت‌هایی که موردنیازمان نیستند را دور می‌ریزیم. این مدل همواره باعث کاهش دقت شبکه می‌شود. اما مزیتی که این مدل کوانتایز کردن دارد این است که سریع، ساده و آسان است زیرا نیازی به تغییر در ساختار آموزش یا بازآموزی مدل ندارند. \cite{ref1}
+		
+		
+		\textbf{\lr{Quantization aware training (QAT)}:}\\
+		روش دیگری که برای کوانتایز کردن شبکه‌های عصبی عمیق استفاده می‌شود، روش \lr{QAT} است. در مقایسه با \lr{PQT} این روش معمولاً به دقت بهتری منجر می‌شود، زیرا مدل از ابتدا برای سازگاری با کاهش دقت آموزش داده می‌شود. علاوه بر این، این روش امکان ادامه آموزش یا انجام تنظیمات دقیق را فراهم می‌کند که برای \lr{LLM} ها ضروری است. چالش اصلی در آموزش \lr{QAT} ، بهینه‌سازی است. یعنی با کاهش دقت، مدل سخت‌تر به همگرایی می‌رسد. علاوه بر این، مشخص نیست که آیا آموزش \lr{QAT} از قانون مقیاس‌پذیری مدل‌های زبانی عصبی پیروی می‌کند یا خیر. \cite{ref1}
+	\end{enumerate}
+	
+	
+	در ادامه به بررسی دو مقاله می‌پردازیم که \lr{QAT} را با ۲ بیت انجام می‌دهد. شاید در ابتدای کار کمی عجیب به‌نظر برسد اما در این باره بیل گیتس می‌گوید:
+	
+	\begin{latin}
+		" I don’t think there’s anything unique about human intelligence. All the neurons in the brain that make up perceptions and emotions operate in a binary fashion. "
+	\end{latin}
+	
+	
+	ساختار ارائه شده در این مدل به‌صورت شکل زیر است:
+	
+	\begin{center}
+		\includegraphics*[width=1\linewidth]{pics/img14.png}
+		\captionof{figure}{ساختار ارائه شده در \cite{ref1}}
+		\label{ساختار ارائه شده در ref1}
+	\end{center}
+	
+	
+	
 	
 \end{qsolve}
+
+
+\begin{qsolve}
+	بدین‌صورت است که در شبکه \lr{Transformer} لایه‌های \lr{Linear} و توابع فعال‌ساز و وزن‌ها را در زمان آموزش به‌صورت باینری درمی‌آورند و به‌صورت باینری آموزش را انجام می‌دهند. این کار نه‌تنها دقت را خیلی خراب نمی‌کند بله سرعت انجام محاسبات را بسیار بالا می‌برد و همچنین حافظه توان مصرفی، حافظه مورد نیاز نیز بسیار کاهش می‌یابد.
+	
+	در ابتدای کار ابتدا وزن‌ها را به مقادیر ۱+ و ۱− با استفاده از تابع علامت باینری می‌کنند. وزن‌ها را قبل از باینری‌سازی به مقدار میانگین صفر تنظیم می‌کنیم تا ظرفیت در یک محدوده عددی محدود افزایش یابد. از یک ضریب مقیاس‌دهی \(\beta\) پس از باینری‌سازی نیز استفاده می‌شود تا خطای \(\ell_2\) بین وزن‌های با مقدار حقیقی و وزن‌های باینری‌شده کاهش یابد. باینری‌سازی یک وزن \(W \in \mathbb{R}^{n \times m}\) به صورت زیر فرمول‌بندی می‌شود:
+	
+	\[
+	\widetilde{W} = \text{Sign}(W - \alpha),
+	\]
+	
+	\[
+	\text{Sign}(W_{ij}) = \begin{cases} 
+		+1, & \text{if } W_{ij} > 0, \\ 
+		-1, & \text{if } W_{ij} \leq 0, 
+	\end{cases}
+	\]
+	
+	\[
+	\alpha = \frac{1}{nm} \sum_{ij} W_{ij}
+	\]
+	
+	
+	سپس فعال‌سازی‌ها را به دقت \(b\)-بیتی کوانتیزه می‌کنند. سپس فعال‌سازی‌ها را به محدوده \([-Q_b, Q_b]\) (که \(Q_b = 2^{b-1}\) است) با ضرب در \(Q_b\) و تقسیم بر حداکثر مطلق ماتریس ورودی مقیاس می‌کند:
+	
+	\[
+	\widetilde{x} = \text{Quant}(x) = \text{Clip}\left(x \times \frac{Q_b}{\gamma}, -Q_b + \epsilon, Q_b - \epsilon\right),
+	\]
+	
+	\[
+	\text{Clip}(x, a, b) = \max(a, \min(b, x)), \quad \gamma = \|x\|_{\infty},
+	\]
+	
+	نتایج ارائه شده در این مقاله «شکل » نشان می‌دهد که با باینری کردن شبکه، میزان \lr{loss} شبکه با زمانی که از داده های \lr{Floating Point}
+	۱۶ بیتی استفاده می‌کنیم تقریبا برابر است و افزایش چشمگیری ندارد. همچنین از نظر \lr{Energy Cost} نیز با باینری کردن مدل، انرژی کمتری مصرف شده است.
+	
+	\begin{center}
+		\includegraphics*[width=0.9\linewidth]{pics/img15.png}
+		\captionof{figure}{نتایج ارائه شده در \cite{ref1}}
+		\label{ساخنتایجتار ارائه شده در ref1}
+	\end{center}
+\end{qsolve}
+
+\begin{qsolve}
+	مقاله \cite{ref2} که در ادامه مقاله \cite{ref1} منتشر شده است، به وزن‌ها مقدار ۱− هم اضافه می‌کند. یعنی شبکه را به سه مقدار ۱+ و ۰ و ۱− آموزش می‌دهد.
+	
+	
+	فرمول تبدیل وزن‌ها در این مقاله به‌صورت زیر تغییر می‌کند:
+	
+	\[
+	\widetilde{W} = \text{RoundClip}\left(\frac{W}{\gamma + \epsilon}, -1, 1\right),
+	\]
+	
+	\[
+	\text{RoundClip}(x, a, b) = \max(a, \min(b, \text{round}(x))),
+	\]
+	
+	\[
+	\gamma = \frac{1}{nm} \sum_{ij} |W_{ij}|.
+	\]
+	
+	در این مقاله نیز گزارش‌ها حاکی از کاهش سایز مدل، کاهش انرژی، کاهش اندک دقت است.
+	
+	\begin{center}
+		\includegraphics*[width=1\linewidth]{pics/img16.png}
+		\captionof{figure}{نتایج ارائه شده در \cite{ref2}}
+		\label{نتایج ارائه شده در ref2}
+	\end{center}
+	
+	
+\end{qsolve}
+
+
+
+
+
+
+\begin{latin}
+	\begin{thebibliography}{9}
+		\bibitem{ref1}
+		BitNet: Scaling 1-bit Transformers for Large Language Models
+		\href{https://arxiv.org/abs/2310.11453}{[Link]}
+		
+		
+		\bibitem{ref2}
+		The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits
+		\href{https://arxiv.org/abs/2402.17764}{[Link]}
+	\end{thebibliography} 
+\end{latin}
