@@ -3,6 +3,162 @@
 
 
 \begin{qsolve}
-
+	این سه خانواده را از نظر واحد‌های پردازشی تخصصی، شبکه روی تراشه حافظه و پهنای باند و پشتیبانی از انواع داده‌ها بررسی می‌کنیم:
 	
+	
+	
+	\begin{enumerate}
+		\item 
+		\textbf{منابع و واحدهای پردازش تخصصی:}
+		
+		\begin{enumerate}
+			\item 
+			\lr{:Speedster7t} این معماری دارای بلوک‌های پردازش یادگیری ماشین (\lr{MLP}) است که شامل آرایه‌ای از ضرب‌کننده‌ها، درخت جمع‌کننده و حافظه‌های داخلی می‌باشد. این بلوک‌ها برای عملیات ماتریسی و برداری در شبکه‌های عصبی بهینه شده‌اند. \cite{ref1}
+			
+			واحد‌های پردازشی این تراشه‌های این خانواده در \cite{ref1} آورده شده است.
+			
+			\begin{center}
+				\includegraphics*[width=1\linewidth]{pics/img17.png}
+				\captionof{figure}{واحد‌های پردازشی موجود در \lr{Speedster7t} \cite{ref4}}
+				\label{واحد‌های پردازشی موجود در Speedster7t}
+			\end{center}
+		\end{enumerate}
+	\end{enumerate}
 \end{qsolve}
+
+
+
+
+
+
+
+
+\begin{qsolve}
+	\begin{enumerate}
+		\item [ ]
+		\begin{enumerate} 
+			\item [ب)]
+			\lr{:Versal ACAP} این معماری از واحدهای هوش مصنوعی (\lr{AI Engines}) بهره می‌برد که پردازنده‌های برداری و اسکالر با حافظه‌های مجتمع هستند و برای تسریع عملیات شبکه‌های عصبی طراحی شده‌اند.
+			\cite{ref2}
+			
+			مطابق با جدول ارائه شده در صفحه یک سند \cite{ref4} منبع مخصوص \lr{AI} به‌صورت زیر ارائه می‌شود:
+			
+			\begin{center}
+				\includegraphics*[width=1\linewidth]{pics/img18.png}
+				\captionof{figure}{واحد‌های پردازشی موجود در \lr{Versal ACAP} \cite{ref5}}
+				\label{واحد‌های پردازشی موجود در Versal ACAP}
+			\end{center}
+			
+			
+			\item 
+			\lr{:Stratix 10} این معماری دارای بلوک‌های \lr{DSP} با قابلیت پشتیبانی از عملیات ممیز شناور و ثابت است، اما فاقد واحدهای تخصصی برای شبکه‌های عصبی مانند دو معماری دیگر می‌باشد.
+			\cite{ref3}
+			منابع این خانواده در سوال دوم مفصلا بررسی شده است.
+		\end{enumerate}
+		
+		\item [2.]
+		\textbf{شبکه روی تراشه (\lr{NoC}):}
+		\begin{enumerate}
+			\item 
+			\lr{:Speedster7t} مجهز به شبکه دو‌بعدی روی تراشه (\lr{2D NoC}) است که ارتباطات پرسرعت بین واحدهای مختلف را فراهم می‌کند و برای کاربردهای با پهنای باند بالا مناسب است. مطابق با صفحه ۲۵ در \cite{ref1}
+		
+			
+			\item 
+			\lr{:Versal ACAP} دارای \lr{NoC} برنامه‌پذیر است که ارتباطات کارآمد بین واحدهای پردازشی و حافظه‌ها را تسهیل می‌کند. \cite{ref6}
+		
+			
+			\item 
+			\lr{:Stratix 10} فاقد \lr{NoC} داخلی است و ارتباطات بین واحدها از طریق مسیرهای برنامه‌پذیر استاندارد \lr{FPGA} انجام می‌شود.
+		\end{enumerate}
+		
+		
+		\item [3.]
+		\textbf{حافظه و پهنای باند:}
+		\begin{enumerate}
+			\item 
+			\lr{:Speedster7t} از رابط‌های \lr{GDDR6} با پهنای باند بالا پشتیبانی می‌کند که برای پردازش داده‌های بزرگ در شبکه‌های عصبی مناسب است. \cite{ref7}
+			
+			\item 
+			\lr{:Versal ACAP} برخی مدل‌ها دارای حافظه \lr{HBM} هستند که پهنای باند بالایی را ارائه می‌دهد. 
+			
+			\item 
+			\lr{:Stratix 10} مدل‌های \lr{Stratix 10 MX} دارای حافظه \lr{HBM2} هستند که پهنای باند بالایی را فراهم می‌کند. 
+		\end{enumerate}
+	\end{enumerate}
+\end{qsolve}
+
+
+\begin{qsolve}
+	\begin{enumerate}
+		\item [4.]
+		\textbf{پشتیبانی از انواع داده:}
+		\begin{enumerate}
+			\item 
+			\lr{:Speedster7t} پشتیبانی از انواع داده مانند \texttt{int8}، \texttt{float16} و \texttt{bfloat16} را ارائه می‌دهد که برای کاربردهای یادگیری ماشین مناسب است. 
+			
+			
+			\item \lr{:Versal ACAP}
+			پشتیبانی از انواع داده متنوع از جمله \texttt{int8} و \texttt{float16} را دارد
+			
+			\item \lr{:Stratix 10}
+			پشتیبانی از انواع داده استاندارد مانند \texttt{int8} و \texttt{float16} را ارائه می‌دهد.
+		\end{enumerate}
+	\end{enumerate}
+\end{qsolve}
+
+
+
+
+
+
+\begin{latin}
+	\begin{thebibliography}{9}
+		\bibitem{ref1}
+		AI Benchmarking on Achronix Speedster®7t FPGAs
+		\href{https://www.achronix.com/sites/default/files/docs/AI_Micro_benchmarking_on_Achronix_Speedster7t_FPGA_WP999.pdf}{[Link]}
+		
+		
+		\bibitem{ref2}
+		Tensor Slices to the Rescue: Supercharging ML Acceleration on
+		FPGAs
+		\href{https://lca.ece.utexas.edu/pubs/Tensor_Slice___FPGA2021__Dec8_2020.pdf}{[Link]}
+		
+		
+		\bibitem{ref3}
+		Intel® Stratix® 10 Device Datasheet
+		\href{file:///home/reza/Downloads/s10_datasheet-683181-666450.pdf}{[Link]}
+		
+		
+		\bibitem{ref4}
+		Speedster7t FPGA
+		Datasheet (DS015)
+		\href{https://www.achronix.com/sites/default/files/docs/Speedster7t_FPGA_Datasheet_DS015_6.pdf}{[Link]}
+		
+		
+		\bibitem{ref5}
+		Versal Architecture and
+		Product Data Sheet: Overview
+		\href{https://www.mouser.com/datasheet/2/903/ds950_versal_overview-2634331.pdf}{[Link]}
+		
+		
+		
+		\bibitem{ref6}
+		Versal Architecture and
+		Product Data Sheet: Overview
+		\href{https://docs.amd.com/r/en-US/ug1273-versal-acap-design}{[Link]}
+		
+		
+		\bibitem{ref7}
+		https://www.achronix.com
+		\href{https://www.achronix.com/product/speedster7t-fpgas}{[Link]}
+		
+	\end{thebibliography} 
+\end{latin}
+
+
+
+
+
+
+
+
