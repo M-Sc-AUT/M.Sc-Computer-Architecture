@@ -19,3 +19,259 @@
  
  همچنین الگو گرفتن از کدهای مشابه با ارجاع به منبع، منع ندارد.
 
+
+
+
+\begin{qsolve}
+	این پروژه را به دو قسمت نرم‌افزاری و سخت‌افزاری تبدیل می‌کنیم. بخش سخت‌افزاری نیز به دو زیربخش \lr{PL} و \lr{PS} تقسیم می‌شود. در ابتدا توضیحی در مورد عملکر الگوریتم لبه‌یابی \lr{Sobel} می‌دهیم.
+	
+	این الگوریتم از دو قسمت اصلی تشکیل شده است:
+	\begin{itemize}
+		\item ضرایب کرنل عمودی و افقی
+		\item عملیات کانولوشن
+	\end{itemize}
+	
+	برای پیدا کردن لبه‌های عمودی و افقی در یک تصویر ضرایب کرنل در این الگوریتم به‌صورت زیر تنظیم شده است:
+	
+	\begin{equation*}
+		X\_kernel = 
+		\begin{bmatrix}
+			-1 & 0 & 1 \\
+			-1 & 0 & 1 \\
+			-1 & 0 & 1
+		\end{bmatrix}
+	\end{equation*}
+	
+	
+	\begin{equation*}
+		Y\_kernel = 
+		\begin{bmatrix}
+			-1 & -1 & -1 \\
+			 0 & 0 & 0 \\
+			 1 & 1 & 1
+		\end{bmatrix}
+	\end{equation*}
+	
+	این دو کرنل را به‌ترتیب در تصویر ورودی کانوالو می‌کنیم و سپس میانگین خروجی هر دو تصویر کانوالو شده را به‌عنوان لبه‌های تصویر گزارش می‌کنیم.
+	
+	بدین منظور، در ابتدا تابع کانولوشن را پیاده‌سازی می‌کنیم:
+\end{qsolve}
+
+
+
+
+
+\begin{latin}
+\begin{lstlisting}[language=Python,caption={Convolution Function}]
+def convolve(x, kernel):
+	x_height = x.shape[0]
+	x_width = x.shape[1]
+	
+	kernel_height = kernel.shape[0]
+	kernel_width = kernel.shape[1]
+	
+	H = (kernel_height - 1) // 2
+	W = (kernel_width - 1) // 2
+	
+	out = np.zeros((x_height, x_width))
+	# iterate over all the pixel of image X
+	for i in np.arange(H, x_height - H):
+		for j in np.arange(W, x_width - W):
+			Sum = 0
+			# iterate over the filter
+			for k in np.arange(-H, H + 1):
+				for l in np.arange(-W, W + 1):
+					# get the corresponding value from image and filter
+					a = x[i + k, j + l]
+					w = kernel[H + k, W + l]
+					Sum += (w * a)
+			out[i, j] = Sum
+		return out
+\end{lstlisting}
+\end{latin}
+
+
+
+
+\begin{qsolve}
+	سپس تصویر ورودی را می‌خوانیم و آن را به تصویر \texttt{grayScale} تبدیل می‌کنیم: \\ پ.ن: این تصویر صرفا به دلیل علاقه شدید \lr{TA} محترم درس به \lr{Windows} استفاده شده است و جنبه دیگری ندارد :) 
+	
+	\begin{center}
+		\includegraphics*[width=1\linewidth]{pics/img19.png}
+		\captionof{figure}{تصویر اصلی ورودی}
+		\label{تصویر اصلی ورودی}
+	\end{center}
+	
+	ابعاد تصویر خاکستری \lr{\texttt{(1080, 661)}} است. برای کاهش بار محاسبات و افزایش سرعت، کاهش کیفیت تصویر را به جان می‌خریم و ابعاد تصویر را به \lr{\texttt{(128, 128)}} کاهش می‌دهیم. تصویر \lr{Resize} شده به‌صورت زیر می‌شود:
+	
+	\begin{center}
+		\includegraphics*[width=0.5\linewidth]{pics/img20.png}
+		\captionof{figure}{تصویر \lr{Resize} شده}
+		\label{تصویر Resize شده}
+	\end{center}
+	
+	سپس هر دو کرنل را در تصویر ورودی ضرب می‌کنیم و خروجی آن به‌صورت زیر می‌شود:
+
+
+\end{qsolve}
+
+
+
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=1\linewidth]{pics/img21.png}
+		\captionof{figure}{لبه‌های افقی و عمودی پیدا شده}
+		\label{لبه‌های افقی و عمودی پیدا شده}
+	\end{center}
+	
+	سپس با استفاده از قطعه کد زیر میانگین هر دو لبه را به‌دست می‌آوریم و مقادیر هر پیکسل را بین ۰ تا ۲۵۵ نرمالایز می‌کنیم. تصویر «\ref{لبه‌های نهایی تصویر}» به‌عنوان خروجی نهایی لبه‌های تصویر به‌صورت نرم‌افزاری ارائه می‌شود:
+\end{qsolve}
+
+
+\begin{latin}
+\begin{lstlisting}[language=Python,caption={SW Edge Detector}]
+edge_out = np.sqrt(np.power(pre_x, 2) + np.power(pre_y, 2))
+edge_out = (edge_out / np.Max(edge_out)) * 255
+\end{lstlisting}
+\end{latin}
+
+
+
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=0.45\linewidth]{pics/img22.png}
+		\captionof{figure}{لبه‌های نهایی تصویر}
+		\label{لبه‌های نهایی تصویر}
+	\end{center}
+\end{qsolve}
+
+
+
+
+\begin{qsolve}
+	در فاز سخت‌افزاری پروژه، همین مراحل را مجددا انجام می‌دهیم تا بتوانیم خروجی‌های هر دو فاز را باهم مقایسه کنیم. 
+	
+	در این فاز از ابزار \lr{HLS} برای نوشتن سخت‌افزارمان استفاده کرده‌ایم. به دلیل آنکه حجم کد طولانی است، آن را در گزارش نمی‌آوریم اما می‌توانید به فایل \texttt{sobel\_edge\_detector.cpp} موجود در مسیر:
+	
+	\begin{latin}
+		\texttt{Codes/HW/Sobel\_Edge\_Detector\_PL/src}
+	\end{latin}
+	
+	مراجعه کنید. فایل \texttt{testBench} ماژول نوشته شده نیز در همین مسیر وجود دارد. فایل تست بدین صورت نوشته شده است که در ابتدا مقادیر پیکسل‌های تصویر خاکستری را از فایل \texttt{Linux.txt} می‌خواند و سپس الگوریتم را اجرا می‌کند و نتیجه را در فایل \texttt{edge\_linux\_hls} ذخیره می‌کند. سپس این فایل را به‌صورت زیر به تصویر تبدیل می‌کنیم و آن را نمایش می‌دهیم:
+\end{qsolve}
+
+
+\begin{latin}
+\begin{lstlisting}[language=Python,caption={SW Edge Detector}]
+img_array = np.loadtxt("Data/edge_linux_hls.txt", dtype=np.uint8)
+img = Image.fromarray(img_array)
+
+print("image shape: {}" .Format(img_array.shape))
+\end{lstlisting}
+\end{latin}
+
+
+\begin{qsolve}
+	خروجی لبه‌های محاسبه شده در ماژول \lr{HLS} به‌صورت زیر گزارش می‌شود:
+	
+	\begin{center}
+		\includegraphics*[width=0.5\linewidth]{pics/img23.png}
+		\captionof{figure}{لبه‌های پیدا شده در \lr{HLS}}
+		\label{لبه‌های پیدا شده در HLS}
+	\end{center}
+	
+	در گام بعد نیاز است که ارتباطات بین \lr{PL} و \lr{PS} را برقرار کنیم. بدین منظور ابتدا ماژول نوشته شده در \lr{HLS} را به‌صورت یک \lr{IP Core} اکسپورت می‌کنیم و آن را در \lr{Vivado} اضافه می‌کنیم.
+	
+	برای برقرای این ارتباط از بلوک‌های \texttt{AXI\_GPIO} استفاده می‌کنیم. ۲ بلوک را برای ارسال داده (عکس) به \lr{PL} و دریافت داده پردازش شده از \lr{PL} استفاده می‌کنیم. و از دو بلوک دیگر به عنوان سیگنال‌های کنترلی استفادهکردیم که در بخش مربوطه آن ها را توضیح می‌دهیم. ساختار نهایی طراحی به‌صورت زیر گزارش می‌شود:
+\end{qsolve}
+
+
+
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=1\linewidth]{pics/img24.png}
+		\captionof{figure}{دیاگرام طراحی شده برای ارتباط \lr{PL} و \lr{PS}}
+		\label{دیاگرام طراحی شده برای ارتباط PL و PS}
+	\end{center}
+\end{qsolve}
+
+و در نهایت پس از ساخت فایل \lr{Wrapper} ارتباط بین \lr{PL} و \lr{PS} را به‌صورت زیر در \lr{Vitis} برقرار کردیم:
+
+
+\begin{latin}
+\begin{lstlisting}[caption={SW Edge Detector}]
+int main()
+{
+	init_platform();
+	
+	XGpio data_input, data_output;
+	XGpio start, valid;
+	
+	unsigned char edge[ROWS][COLS];
+	
+	// GPIO 1, 2: output,
+	// GPIO 0, 3: input
+	XGpio_Initialize(&data_input, XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_Initialize(&valid, XPAR_AXI_GPIO_3_DEVICE_ID);
+	XGpio_Initialize(&data_output, XPAR_AXI_GPIO_1_DEVICE_ID);
+	XGpio_Initialize(&start, XPAR_AXI_GPIO_2_DEVICE_ID);
+	
+	// 0: output, 1: input
+	XGpio_SetDataDirection(&data_input, 1, 1);
+	XGpio_SetDataDirection(&valid, 1, 1);
+	XGpio_SetDataDirection(&data_output, 1, 0);
+	XGpio_SetDataDirection(&start, 1, 0);
+	
+	while(1)
+	{
+		if(XGpio_DiscreteRead(&valid, 1) == 1)
+		{
+			for(int i  = 0; i < ROWS; i++);
+			{
+				for(int j = 0; j < COLS; j++)
+				{
+					XGpio_DiscreteWrite(&data_output, 1, x[i][j]);
+				}
+			}
+			XGpio_DiscreteWrite(&start, 1, 1);
+		}
+		else
+		{
+			if(XGpio_DiscreteRead(&start, 1) == 1)
+			{
+				XGpio_DiscreteRead(&data_input, 1);
+			}
+			else
+			{
+				
+			};
+		}
+		
+	}
+	
+	// print("Hello World\n\r");
+	// print("Successfully ran Hello World application");
+	// cleanup_platform();
+	
+	
+	
+	return 0;
+}
+
+\end{lstlisting}
+\end{latin}
+
+
+
+
+\begin{qsolve}
+	در این کد، تصویر خاکستری به‌صورت یک آرایه ۲ بعدی \lr{HardCode} شده است. سپس با استفاده از دو سیگنال کنترلی \texttt{valid} و \texttt{start} ارسال و دریافت تصویر به \lr{PL} و \lr{PS} کنترل شده است.
+	
+	بدین صور که کاربر در‌صورتی که بخواهد تصویر را ارسال کنید می‌بایست سیگنال ورودی \texttt{valid} را یک کند سپس تصویر سطر به سطز خوانده می‌شود و مقدار هر پیکسل که ۸ بیتی است به \lr{PL} ارسال می‌شود. پس از آنکه تصویر به‌صورت کامل ارسال شد، سیگنال \texttt{start} یک می‌شود و این بدین منظور است که الگوریتم می‌تواند شروع به‌کار کند. پس از پیدا کردن لبه‌ها در \lr{PL} مجددا داده‌ها به‌صورت ۸بیت، ۸ بیت به \lr{PS} ارسال می‌شود.
+	
+\end{qsolve}
+
+
+
+
+
