@@ -1,0 +1,1182 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Nov 13 23:51:51 2024
+# Process ID: 10132
+# Current directory: C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_sobel_edge_detector_0_2_synth_1
+# Command line: vivado.exe -log design_1_sobel_edge_detector_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_sobel_edge_detector_0_2.tcl
+# Log file: C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_sobel_edge_detector_0_2_synth_1/design_1_sobel_edge_detector_0_2.vds
+# Journal file: C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_sobel_edge_detector_0_2_synth_1\vivado.jou
+# Running On: DESKTOP-A2LG1N2, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 4, Host memory: 8449 MB
+#-----------------------------------------------------------
+source design_1_sobel_edge_detector_0_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 566.895 ; gain = 181.965
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PL'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_sobel_edge_detector_0_2
+Command: synth_design -top design_1_sobel_edge_detector_0_2 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6964
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1415.160 ; gain = 440.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_sobel_edge_detector_0_2' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ip/design_1_sobel_edge_detector_0_2/synth/design_1_sobel_edge_detector_0_2.vhd:73]
+INFO: [Synth 8-3491] module 'sobel_edge_detector' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:11' bound to instance 'U0' of component 'sobel_edge_detector' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ip/design_1_sobel_edge_detector_0_2/synth/design_1_sobel_edge_detector_0_2.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:28]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_RAM_AUTO_1R1W.vhd:10' bound to instance 'temp_edge_U' of component 'sobel_edge_detector_temp_edge_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2327]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_temp_edge_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_RAM_AUTO_1R1W.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_temp_edge_RAM_AUTO_1R1W' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_RAM_AUTO_1R1W.vhd:28]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_1_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2339]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:29]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_2_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2353]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_3_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2367]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_4_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2381]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_5_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2395]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_6_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2409]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_7_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2423]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_8_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2437]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_9_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2451]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_10_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2465]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_11_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2479]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_12_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2493]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_13_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2507]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_14_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2521]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_15_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2535]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_16_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2549]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_17_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2563]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_18_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2577]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_19_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2591]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_20_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2605]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_21_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2619]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_22_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2633]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_23_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2647]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_24_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2661]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_25_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2675]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_26_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2689]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_27_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2703]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_28_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2717]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_29_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2731]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_30_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2745]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_31_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2759]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_32_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2773]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_33_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2787]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_34_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2801]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_35_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2815]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_36_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2829]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_37_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2843]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_38_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2857]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_39_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2871]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_40_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2885]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_41_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2899]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_42_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2913]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_43_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2927]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_44_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2941]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_45_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2955]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_46_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2969]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_47_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2983]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_48_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:2997]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_49_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3011]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_50_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3025]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_51_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3039]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_52_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3053]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_53_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3067]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_54_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3081]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_55_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3095]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_56_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3109]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_57_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3123]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_58_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3137]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_59_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3151]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_60_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3165]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_61_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3179]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_62_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3193]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_63_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3207]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_64_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3221]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_65_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3235]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_66_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3249]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_67_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3263]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_68_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3277]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_69_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3291]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_70_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3305]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_71_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3319]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_72_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3333]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_73_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3347]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_74_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3361]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_75_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3375]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_76_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3389]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_77_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3403]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_78_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3417]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_79_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3431]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_80_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3445]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_81_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3459]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_82_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3473]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_83_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3487]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_84_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3501]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_85_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3515]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_86_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3529]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_87_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3543]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_88_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3557]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_89_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3571]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_90_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3585]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_91_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3599]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_92_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3613]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_93_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3627]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_94_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3641]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_95_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3655]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_96_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3669]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_97_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3683]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' declared at 'c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W.vhd:11' bound to instance 'temp_edge_98_U' of component 'sobel_edge_detector_temp_edge_1_RAM_AUTO_1R1W' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:3697]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_sobel_edge_detector_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_26_2' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_sobel_edge_detector_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_26_2.vhd:529]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_flow_control_loop_pipe_sequential_init' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_flow_control_loop_pipe_sequential_init.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_flow_control_loop_pipe_sequential_init' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_flow_control_loop_pipe_sequential_init.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_sobel_edge_detector_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_26_2' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_sobel_edge_detector_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_26_2.vhd:529]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6.vhd:409]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1.vhd:27]
+INFO: [Synth 8-6157] synthesizing module 'sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1_ip' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/ip/sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1_ip' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/ip/sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1.vhd:27]
+INFO: [Synth 8-6157] synthesizing module 'sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1_ip' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/ip/sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/ip/sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1.vhd:28]
+INFO: [Synth 8-6157] synthesizing module 'sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/ip/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/ip/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1.vhd:28]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 7'b0000000 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter CASE1 bound to: 7'b0000001 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter CASE2 bound to: 7'b0000010 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter CASE3 bound to: 7'b0000011 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter CASE4 bound to: 7'b0000100 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter CASE5 bound to: 7'b0000101 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter CASE6 bound to: 7'b0000110 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter CASE7 bound to: 7'b0000111 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter CASE8 bound to: 7'b0001000 
+	Parameter din8_WIDTH bound to: 32 - type: integer 
+	Parameter CASE9 bound to: 7'b0001001 
+	Parameter din9_WIDTH bound to: 32 - type: integer 
+	Parameter CASE10 bound to: 7'b0001010 
+	Parameter din10_WIDTH bound to: 32 - type: integer 
+	Parameter CASE11 bound to: 7'b0001011 
+	Parameter din11_WIDTH bound to: 32 - type: integer 
+	Parameter CASE12 bound to: 7'b0001100 
+	Parameter din12_WIDTH bound to: 32 - type: integer 
+	Parameter CASE13 bound to: 7'b0001101 
+	Parameter din13_WIDTH bound to: 32 - type: integer 
+	Parameter CASE14 bound to: 7'b0001110 
+	Parameter din14_WIDTH bound to: 32 - type: integer 
+	Parameter CASE15 bound to: 7'b0001111 
+	Parameter din15_WIDTH bound to: 32 - type: integer 
+	Parameter CASE16 bound to: 7'b0010000 
+	Parameter din16_WIDTH bound to: 32 - type: integer 
+	Parameter CASE17 bound to: 7'b0010001 
+	Parameter din17_WIDTH bound to: 32 - type: integer 
+	Parameter CASE18 bound to: 7'b0010010 
+	Parameter din18_WIDTH bound to: 32 - type: integer 
+	Parameter CASE19 bound to: 7'b0010011 
+	Parameter din19_WIDTH bound to: 32 - type: integer 
+	Parameter CASE20 bound to: 7'b0010100 
+	Parameter din20_WIDTH bound to: 32 - type: integer 
+	Parameter CASE21 bound to: 7'b0010101 
+	Parameter din21_WIDTH bound to: 32 - type: integer 
+	Parameter CASE22 bound to: 7'b0010110 
+	Parameter din22_WIDTH bound to: 32 - type: integer 
+	Parameter CASE23 bound to: 7'b0010111 
+	Parameter din23_WIDTH bound to: 32 - type: integer 
+	Parameter CASE24 bound to: 7'b0011000 
+	Parameter din24_WIDTH bound to: 32 - type: integer 
+	Parameter CASE25 bound to: 7'b0011001 
+	Parameter din25_WIDTH bound to: 32 - type: integer 
+	Parameter CASE26 bound to: 7'b0011010 
+	Parameter din26_WIDTH bound to: 32 - type: integer 
+	Parameter CASE27 bound to: 7'b0011011 
+	Parameter din27_WIDTH bound to: 32 - type: integer 
+	Parameter CASE28 bound to: 7'b0011100 
+	Parameter din28_WIDTH bound to: 32 - type: integer 
+	Parameter CASE29 bound to: 7'b0011101 
+	Parameter din29_WIDTH bound to: 32 - type: integer 
+	Parameter CASE30 bound to: 7'b0011110 
+	Parameter din30_WIDTH bound to: 32 - type: integer 
+	Parameter CASE31 bound to: 7'b0011111 
+	Parameter din31_WIDTH bound to: 32 - type: integer 
+	Parameter CASE32 bound to: 7'b0100000 
+	Parameter din32_WIDTH bound to: 32 - type: integer 
+	Parameter CASE33 bound to: 7'b0100001 
+	Parameter din33_WIDTH bound to: 32 - type: integer 
+	Parameter CASE34 bound to: 7'b0100010 
+	Parameter din34_WIDTH bound to: 32 - type: integer 
+	Parameter CASE35 bound to: 7'b0100011 
+	Parameter din35_WIDTH bound to: 32 - type: integer 
+	Parameter CASE36 bound to: 7'b0100100 
+	Parameter din36_WIDTH bound to: 32 - type: integer 
+	Parameter CASE37 bound to: 7'b0100101 
+	Parameter din37_WIDTH bound to: 32 - type: integer 
+	Parameter CASE38 bound to: 7'b0100110 
+	Parameter din38_WIDTH bound to: 32 - type: integer 
+	Parameter CASE39 bound to: 7'b0100111 
+	Parameter din39_WIDTH bound to: 32 - type: integer 
+	Parameter CASE40 bound to: 7'b0101000 
+	Parameter din40_WIDTH bound to: 32 - type: integer 
+	Parameter CASE41 bound to: 7'b0101001 
+	Parameter din41_WIDTH bound to: 32 - type: integer 
+	Parameter CASE42 bound to: 7'b0101010 
+	Parameter din42_WIDTH bound to: 32 - type: integer 
+	Parameter CASE43 bound to: 7'b0101011 
+	Parameter din43_WIDTH bound to: 32 - type: integer 
+	Parameter CASE44 bound to: 7'b0101100 
+	Parameter din44_WIDTH bound to: 32 - type: integer 
+	Parameter CASE45 bound to: 7'b0101101 
+	Parameter din45_WIDTH bound to: 32 - type: integer 
+	Parameter CASE46 bound to: 7'b0101110 
+	Parameter din46_WIDTH bound to: 32 - type: integer 
+	Parameter CASE47 bound to: 7'b0101111 
+	Parameter din47_WIDTH bound to: 32 - type: integer 
+	Parameter CASE48 bound to: 7'b0110000 
+	Parameter din48_WIDTH bound to: 32 - type: integer 
+	Parameter CASE49 bound to: 7'b0110001 
+	Parameter din49_WIDTH bound to: 32 - type: integer 
+	Parameter CASE50 bound to: 7'b0110010 
+	Parameter din50_WIDTH bound to: 32 - type: integer 
+	Parameter CASE51 bound to: 7'b0110011 
+	Parameter din51_WIDTH bound to: 32 - type: integer 
+	Parameter CASE52 bound to: 7'b0110100 
+	Parameter din52_WIDTH bound to: 32 - type: integer 
+	Parameter CASE53 bound to: 7'b0110101 
+	Parameter din53_WIDTH bound to: 32 - type: integer 
+	Parameter CASE54 bound to: 7'b0110110 
+	Parameter din54_WIDTH bound to: 32 - type: integer 
+	Parameter CASE55 bound to: 7'b0110111 
+	Parameter din55_WIDTH bound to: 32 - type: integer 
+	Parameter CASE56 bound to: 7'b0111000 
+	Parameter din56_WIDTH bound to: 32 - type: integer 
+	Parameter CASE57 bound to: 7'b0111001 
+	Parameter din57_WIDTH bound to: 32 - type: integer 
+	Parameter CASE58 bound to: 7'b0111010 
+	Parameter din58_WIDTH bound to: 32 - type: integer 
+	Parameter CASE59 bound to: 7'b0111011 
+	Parameter din59_WIDTH bound to: 32 - type: integer 
+	Parameter CASE60 bound to: 7'b0111100 
+	Parameter din60_WIDTH bound to: 32 - type: integer 
+	Parameter CASE61 bound to: 7'b0111101 
+	Parameter din61_WIDTH bound to: 32 - type: integer 
+	Parameter CASE62 bound to: 7'b0111110 
+	Parameter din62_WIDTH bound to: 32 - type: integer 
+	Parameter CASE63 bound to: 7'b0111111 
+	Parameter din63_WIDTH bound to: 32 - type: integer 
+	Parameter CASE64 bound to: 7'b1000000 
+	Parameter din64_WIDTH bound to: 32 - type: integer 
+	Parameter CASE65 bound to: 7'b1000001 
+	Parameter din65_WIDTH bound to: 32 - type: integer 
+	Parameter CASE66 bound to: 7'b1000010 
+	Parameter din66_WIDTH bound to: 32 - type: integer 
+	Parameter CASE67 bound to: 7'b1000011 
+	Parameter din67_WIDTH bound to: 32 - type: integer 
+	Parameter CASE68 bound to: 7'b1000100 
+	Parameter din68_WIDTH bound to: 32 - type: integer 
+	Parameter CASE69 bound to: 7'b1000101 
+	Parameter din69_WIDTH bound to: 32 - type: integer 
+	Parameter CASE70 bound to: 7'b1000110 
+	Parameter din70_WIDTH bound to: 32 - type: integer 
+	Parameter CASE71 bound to: 7'b1000111 
+	Parameter din71_WIDTH bound to: 32 - type: integer 
+	Parameter CASE72 bound to: 7'b1001000 
+	Parameter din72_WIDTH bound to: 32 - type: integer 
+	Parameter CASE73 bound to: 7'b1001001 
+	Parameter din73_WIDTH bound to: 32 - type: integer 
+	Parameter CASE74 bound to: 7'b1001010 
+	Parameter din74_WIDTH bound to: 32 - type: integer 
+	Parameter CASE75 bound to: 7'b1001011 
+	Parameter din75_WIDTH bound to: 32 - type: integer 
+	Parameter CASE76 bound to: 7'b1001100 
+	Parameter din76_WIDTH bound to: 32 - type: integer 
+	Parameter CASE77 bound to: 7'b1001101 
+	Parameter din77_WIDTH bound to: 32 - type: integer 
+	Parameter CASE78 bound to: 7'b1001110 
+	Parameter din78_WIDTH bound to: 32 - type: integer 
+	Parameter CASE79 bound to: 7'b1001111 
+	Parameter din79_WIDTH bound to: 32 - type: integer 
+	Parameter CASE80 bound to: 7'b1010000 
+	Parameter din80_WIDTH bound to: 32 - type: integer 
+	Parameter CASE81 bound to: 7'b1010001 
+	Parameter din81_WIDTH bound to: 32 - type: integer 
+	Parameter CASE82 bound to: 7'b1010010 
+	Parameter din82_WIDTH bound to: 32 - type: integer 
+	Parameter CASE83 bound to: 7'b1010011 
+	Parameter din83_WIDTH bound to: 32 - type: integer 
+	Parameter CASE84 bound to: 7'b1010100 
+	Parameter din84_WIDTH bound to: 32 - type: integer 
+	Parameter CASE85 bound to: 7'b1010101 
+	Parameter din85_WIDTH bound to: 32 - type: integer 
+	Parameter CASE86 bound to: 7'b1010110 
+	Parameter din86_WIDTH bound to: 32 - type: integer 
+	Parameter CASE87 bound to: 7'b1010111 
+	Parameter din87_WIDTH bound to: 32 - type: integer 
+	Parameter CASE88 bound to: 7'b1011000 
+	Parameter din88_WIDTH bound to: 32 - type: integer 
+	Parameter CASE89 bound to: 7'b1011001 
+	Parameter din89_WIDTH bound to: 32 - type: integer 
+	Parameter CASE90 bound to: 7'b1011010 
+	Parameter din90_WIDTH bound to: 32 - type: integer 
+	Parameter CASE91 bound to: 7'b1011011 
+	Parameter din91_WIDTH bound to: 32 - type: integer 
+	Parameter CASE92 bound to: 7'b1011100 
+	Parameter din92_WIDTH bound to: 32 - type: integer 
+	Parameter CASE93 bound to: 7'b1011101 
+	Parameter din93_WIDTH bound to: 32 - type: integer 
+	Parameter CASE94 bound to: 7'b1011110 
+	Parameter din94_WIDTH bound to: 32 - type: integer 
+	Parameter CASE95 bound to: 7'b1011111 
+	Parameter din95_WIDTH bound to: 32 - type: integer 
+	Parameter CASE96 bound to: 7'b1100000 
+	Parameter din96_WIDTH bound to: 32 - type: integer 
+	Parameter CASE97 bound to: 7'b1100001 
+	Parameter din97_WIDTH bound to: 32 - type: integer 
+	Parameter CASE98 bound to: 7'b1100010 
+	Parameter din98_WIDTH bound to: 32 - type: integer 
+	Parameter CASE99 bound to: 7'b1100011 
+	Parameter din99_WIDTH bound to: 32 - type: integer 
+	Parameter CASE100 bound to: 7'b1100100 
+	Parameter din100_WIDTH bound to: 32 - type: integer 
+	Parameter CASE101 bound to: 7'b1100101 
+	Parameter din101_WIDTH bound to: 32 - type: integer 
+	Parameter CASE102 bound to: 7'b1100110 
+	Parameter din102_WIDTH bound to: 32 - type: integer 
+	Parameter CASE103 bound to: 7'b1100111 
+	Parameter din103_WIDTH bound to: 32 - type: integer 
+	Parameter CASE104 bound to: 7'b1101000 
+	Parameter din104_WIDTH bound to: 32 - type: integer 
+	Parameter CASE105 bound to: 7'b1101001 
+	Parameter din105_WIDTH bound to: 32 - type: integer 
+	Parameter CASE106 bound to: 7'b1101010 
+	Parameter din106_WIDTH bound to: 32 - type: integer 
+	Parameter CASE107 bound to: 7'b1101011 
+	Parameter din107_WIDTH bound to: 32 - type: integer 
+	Parameter CASE108 bound to: 7'b1101100 
+	Parameter din108_WIDTH bound to: 32 - type: integer 
+	Parameter CASE109 bound to: 7'b1101101 
+	Parameter din109_WIDTH bound to: 32 - type: integer 
+	Parameter CASE110 bound to: 7'b1101110 
+	Parameter din110_WIDTH bound to: 32 - type: integer 
+	Parameter CASE111 bound to: 7'b1101111 
+	Parameter din111_WIDTH bound to: 32 - type: integer 
+	Parameter CASE112 bound to: 7'b1110000 
+	Parameter din112_WIDTH bound to: 32 - type: integer 
+	Parameter CASE113 bound to: 7'b1110001 
+	Parameter din113_WIDTH bound to: 32 - type: integer 
+	Parameter CASE114 bound to: 7'b1110010 
+	Parameter din114_WIDTH bound to: 32 - type: integer 
+	Parameter CASE115 bound to: 7'b1110011 
+	Parameter din115_WIDTH bound to: 32 - type: integer 
+	Parameter CASE116 bound to: 7'b1110100 
+	Parameter din116_WIDTH bound to: 32 - type: integer 
+	Parameter CASE117 bound to: 7'b1110101 
+	Parameter din117_WIDTH bound to: 32 - type: integer 
+	Parameter CASE118 bound to: 7'b1110110 
+	Parameter din118_WIDTH bound to: 32 - type: integer 
+	Parameter CASE119 bound to: 7'b1110111 
+	Parameter din119_WIDTH bound to: 32 - type: integer 
+	Parameter CASE120 bound to: 7'b1111000 
+	Parameter din120_WIDTH bound to: 32 - type: integer 
+	Parameter CASE121 bound to: 7'b1111001 
+	Parameter din121_WIDTH bound to: 32 - type: integer 
+	Parameter CASE122 bound to: 7'b1111010 
+	Parameter din122_WIDTH bound to: 32 - type: integer 
+	Parameter CASE123 bound to: 7'b1111011 
+	Parameter din123_WIDTH bound to: 32 - type: integer 
+	Parameter CASE124 bound to: 7'b1111100 
+	Parameter din124_WIDTH bound to: 32 - type: integer 
+	Parameter CASE125 bound to: 7'b1111101 
+	Parameter din125_WIDTH bound to: 32 - type: integer 
+	Parameter CASE126 bound to: 7'b1111110 
+	Parameter din126_WIDTH bound to: 32 - type: integer 
+	Parameter CASE127 bound to: 7'b1111111 
+	Parameter din127_WIDTH bound to: 32 - type: integer 
+	Parameter def_WIDTH bound to: 32 - type: integer 
+	Parameter sel_WIDTH bound to: 7 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_sparsemux_257_7_32_1_1' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_sparsemux_257_7_32_1_1.vhd:799]
+INFO: [Synth 8-226] default block is never used [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_sparsemux_257_7_32_1_1.vhd:806]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_sparsemux_257_7_32_1_1' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_sparsemux_257_7_32_1_1.vhd:799]
+	Parameter PipelineLatency bound to: 16 - type: integer 
+	Parameter PipelineII bound to: 1 - type: integer 
+	Parameter CeilLog2Stages bound to: 4 - type: integer 
+	Parameter ExitLatency bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_frp_pipeline_valid' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_frp_pipeline_valid.vhd:32]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_frp_pipeline_valid.vhd:62]
+WARNING: [Synth 8-614] signal 'valid_out_tmp' is read in the process but is not in the sensitivity list [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_frp_pipeline_valid.vhd:172]
+WARNING: [Synth 8-614] signal 'valid_disable' is read in the process but is not in the sensitivity list [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_frp_pipeline_valid.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_frp_pipeline_valid' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_frp_pipeline_valid.vhd:32]
+	Parameter BlockingType bound to: 1 - type: integer 
+	Parameter PipeLatency bound to: 16 - type: integer 
+	Parameter PipelineII bound to: 1 - type: integer 
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter NumWrites bound to: 1 - type: integer 
+	Parameter CeilLog2Stages bound to: 4 - type: integer 
+	Parameter CeilLog2FDepth bound to: 5 - type: integer 
+	Parameter PfAllDoneEnable bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_frp_fifoout' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_frp_fifoout.vhd:48]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_frp_fifoout.vhd:84]
+WARNING: [Synth 8-614] signal 'blocking_type' is read in the process but is not in the sensitivity list [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_frp_fifoout.vhd:375]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_frp_fifoout' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_frp_fifoout.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6.vhd:409]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detector_regslice_both' [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_regslice_both.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector_regslice_both' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_regslice_both.vhd:28]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detector' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'design_1_sobel_edge_detector_0_2' (0#1) [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ip/design_1_sobel_edge_detector_0_2/synth/design_1_sobel_edge_detector_0_2.vhd:73]
+WARNING: [Synth 8-7129] Port ap_start in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[15] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[14] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[13] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[12] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[11] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[10] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[9] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[8] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[7] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[6] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[5] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[4] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[3] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[2] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[1] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[0] in module sobel_edge_detector_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_done_int in module sobel_edge_detector_flow_control_loop_pipe_sequential_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[31] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[30] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[29] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[28] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[27] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[26] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[25] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[24] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[23] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[22] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[21] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[20] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[19] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[18] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[17] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[16] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[15] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[14] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[13] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[12] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[11] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[7] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[6] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[5] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[4] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[3] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[2] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[1] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[0] in module sobel_edge_detector_sparsemux_257_7_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_ne_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_16_viv__parameterized3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1692.488 ; gain = 718.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1692.488 ; gain = 718.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1692.488 ; gain = 718.094
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.429 . Memory (MB): peak = 1692.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 152 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ip/design_1_sobel_edge_detector_0_2/constraints/sobel_edge_detector_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ip/design_1_sobel_edge_detector_0_2/constraints/sobel_edge_detector_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_sobel_edge_detector_0_2_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_sobel_edge_detector_0_2_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1713.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  FDE => FDRE: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.273 . Memory (MB): peak = 1714.906 ; gain = 1.434
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_sobel_edge_detector_0_2_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln16_reg_5542_pp0_iter1_reg_reg' and it is trimmed from '8' to '7' bits. [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6.vhd:1975]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln16_reg_5542_reg' and it is trimmed from '8' to '7' bits. [c:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.gen/sources_1/bd/design_1/ipshared/f092/hdl/vhdl/sobel_edge_detector_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6.vhd:1974]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fadd_32ns_32ns_32_5_full_dsp_1_U128/sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fadd_32ns_32ns_32_5_full_dsp_1_U128/sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fadd_32ns_32ns_32_5_full_dsp_1_U128/sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fadd_32ns_32ns_32_5_full_dsp_1_U128/sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fadd_32ns_32ns_32_5_full_dsp_1_U128/sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fadd_32ns_32ns_32_5_full_dsp_1_U128/sobel_edge_detector_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fmul_32ns_32ns_32_4_max_dsp_1_U129/sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fmul_32ns_32ns_32_4_max_dsp_1_U129/sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fmul_32ns_32ns_32_4_max_dsp_1_U129/sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fmul_32ns_32ns_32_4_max_dsp_1_U129/sobel_edge_detector_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fcmp_32ns_32ns_1_2_no_dsp_1_U130/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fcmp_32ns_32ns_1_2_no_dsp_1_U130/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fcmp_32ns_32ns_1_2_no_dsp_1_U130/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fcmp_32ns_32ns_1_2_no_dsp_1_U130/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fcmp_32ns_32ns_1_2_no_dsp_1_U130/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fcmp_32ns_32ns_1_2_no_dsp_1_U130/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fcmp_32ns_32ns_1_2_no_dsp_1_U130/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676/fcmp_32ns_32ns_1_2_no_dsp_1_U130/sobel_edge_detector_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_16_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_16_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:18 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 126, Available = 120. Will try to implement using LUT-RAM. 
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:32 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:35 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:40 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:01:51 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:01:51 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:01:52 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:01:52 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:52 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:01:52 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1 | (A*B)'          | 24     | 0      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    15|
+|2     |DSP48E1  |     5|
+|7     |LUT1     |    20|
+|8     |LUT2     |   153|
+|9     |LUT3     |   158|
+|10    |LUT4     |    82|
+|11    |LUT5     |   177|
+|12    |LUT6     |  1333|
+|13    |MUXCY    |   105|
+|14    |MUXF7    |   480|
+|15    |MUXF8    |   224|
+|16    |RAMB18E1 |   120|
+|17    |SRL16E   |     2|
+|18    |SRLC32E  |    10|
+|19    |XORCY    |    25|
+|20    |FDE      |     3|
+|21    |FDRE     |   562|
+|22    |FDSE     |    21|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:01:52 . Memory (MB): peak = 1714.906 ; gain = 740.512
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 215 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 1714.906 ; gain = 718.094
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:53 . Memory (MB): peak = 1714.906 ; gain = 740.512
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 1714.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 977 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1714.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 29 instances
+  FDE => FDRE: 3 instances
+
+Synth Design complete | Checksum: 804c2f50
+INFO: [Common 17-83] Releasing license: Synthesis
+173 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:02:11 . Memory (MB): peak = 1714.906 ; gain = 1135.203
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1714.906 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_sobel_edge_detector_0_2_synth_1/design_1_sobel_edge_detector_0_2.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_sobel_edge_detector_0_2, cache-ID = 1f427cfec7b718e8
+INFO: [Coretcl 2-1174] Renamed 243 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1714.906 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_sobel_edge_detector_0_2_synth_1/design_1_sobel_edge_detector_0_2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_sobel_edge_detector_0_2_utilization_synth.rpt -pb design_1_sobel_edge_detector_0_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 23:54:50 2024...

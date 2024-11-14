@@ -1,0 +1,47 @@
+{
+    "0": {
+        "name": "sobel_edge_detector",
+        "file": "sobel_edge_detector.cpp",
+        "fileloc": "4",
+        "instructions": "139",
+        "total_instructions": "1259",
+        "calls": "1 2",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "sobel_edge_detector_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_26_2",
+        "file": "Sobel_Edge_Detector_PL\/src\/sobel_edge_detector.cpp",
+        "fileloc": "16",
+        "instructions": "416",
+        "total_instructions": "416",
+        "calls": "",
+        "basicblocks": "131",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "132"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6",
+        "file": "Sobel_Edge_Detector_PL\/src\/sobel_edge_detector.cpp",
+        "fileloc": "16",
+        "instructions": "704",
+        "total_instructions": "704",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "259"
+        },
+        "stores": {
+            "L": "134"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

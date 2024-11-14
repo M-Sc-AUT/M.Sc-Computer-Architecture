@@ -1,0 +1,245 @@
+
+
+================================================================
+== Synthesis Summary Report of 'sobel_edge_detector'
+================================================================
++ General Information: 
+    * Date:           Wed Nov 13 22:41:30 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        Sobel_Edge_Detector_PL
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z010-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+------------+--------+------------+------------+-----+
+    |                             Modules                             |  Issue |       | Latency |  Latency  | Iteration|         |  Trip |          |            |        |            |            |     |
+    |                             & Loops                             |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|    BRAM    |   DSP  |     FF     |     LUT    | URAM|
+    +-----------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+------------+--------+------------+------------+-----+
+    |+ sobel_edge_detector                                            |  Timing|  -0.95|   159292|  1.593e+06|         -|   159293|      -|        no|  128 (106%)|  5 (6%)|  4848 (13%)|  6959 (39%)|    -|
+    | + sobel_edge_detector_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_26_2  |       -|   1.18|   142886|  1.429e+06|         -|   142886|      -|        no|           -|       -|    74 (~0%)|    208 (1%)|    -|
+    |  o VITIS_LOOP_24_1_VITIS_LOOP_26_2                              |      II|   7.30|   142884|  1.429e+06|         9|        9|  15876|       yes|           -|       -|           -|           -|    -|
+    | + sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6  |  Timing|  -0.95|    16400|  1.640e+05|         -|    16400|      -|        no|           -|  5 (6%)|  4765 (13%)|  2036 (11%)|    -|
+    |  o VITIS_LOOP_55_5_VITIS_LOOP_58_6                              |       -|   7.30|    16398|  1.640e+05|        16|        1|  16384|       yes|           -|       -|           -|           -|    -|
+    +-----------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+------------+--------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-----------+-----------+---------------+-------+--------+--------+
+| Interface | Direction | Register Mode | TDATA | TREADY | TVALID |
++-----------+-----------+---------------+-------+--------+--------+
+| edge_out  | out       | both          | 8     | 1      | 1      |
+| x         | in        | both          | 8     | 1      | 1      |
++-----------+-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------------+
+| Argument | Direction | Datatype       |
++----------+-----------+----------------+
+| x        | in        | unsigned char* |
+| edge_out | out       | unsigned char* |
++----------+-----------+----------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| x        | x            | interface |
+| edge_out | edge_out     | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------------------+-----+--------+------------+------+---------+---------+
+| Name                                                            | DSP | Pragma | Variable   | Op   | Impl    | Latency |
++-----------------------------------------------------------------+-----+--------+------------+------+---------+---------+
+| + sobel_edge_detector                                           | 5   |        |            |      |         |         |
+|  + sobel_edge_detector_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_26_2 | 0   |        |            |      |         |         |
+|    add_ln24_fu_2348_p2                                          |     |        | add_ln24   | add  | fabric  | 0       |
+|    add_ln26_fu_2372_p2                                          |     |        | add_ln26   | add  | fabric  | 0       |
+|    add_ln36_fu_2523_p2                                          |     |        | add_ln36   | add  | fabric  | 0       |
+|  + sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6 | 5   |        |            |      |         |         |
+|    add_ln55_fu_2839_p2                                          |     |        | add_ln55   | add  | fabric  | 0       |
+|    add_ln55_1_fu_2871_p2                                        |     |        | add_ln55_1 | add  | fabric  | 0       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U129                           | 3   |        | normalized | fmul | maxdsp  | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U128                          | 2   |        | dc         | fadd | fulldsp | 4       |
+|    add_ln317_fu_4654_p2                                         |     |        | add_ln317  | add  | fabric  | 0       |
+|    sub_ln71_fu_4668_p2                                          |     |        | sub_ln71   | sub  | fabric  | 0       |
+|    add_ln58_fu_3017_p2                                          |     |        | add_ln58   | add  | fabric  | 0       |
++-----------------------------------------------------------------+-----+--------+------------+------+---------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------------+--------------+------+------+------+--------+---------------+------+---------+------------------+
+| Name                  | Usage        | Type | BRAM | URAM | Pragma | Variable      | Impl | Latency | Bitwidth, Depth, |
+|                       |              |      |      |      |        |               |      |         | Banks            |
++-----------------------+--------------+------+------+------+--------+---------------+------+---------+------------------+
+| + sobel_edge_detector |              |      | 128  | 0    |        |               |      |         |                  |
+|   temp_edge_U         | ram_1p array |      | 1    |      |        | temp_edge     | auto | 1       | 32, 128, 1       |
+|   temp_edge_1_U       | ram_1p array |      | 2    |      |        | temp_edge_1   | auto | 1       | 32, 128, 1       |
+|   temp_edge_2_U       | ram_1p array |      | 2    |      |        | temp_edge_2   | auto | 1       | 32, 128, 1       |
+|   temp_edge_3_U       | ram_1p array |      | 2    |      |        | temp_edge_3   | auto | 1       | 32, 128, 1       |
+|   temp_edge_4_U       | ram_1p array |      | 2    |      |        | temp_edge_4   | auto | 1       | 32, 128, 1       |
+|   temp_edge_5_U       | ram_1p array |      | 2    |      |        | temp_edge_5   | auto | 1       | 32, 128, 1       |
+|   temp_edge_6_U       | ram_1p array |      | 2    |      |        | temp_edge_6   | auto | 1       | 32, 128, 1       |
+|   temp_edge_7_U       | ram_1p array |      | 2    |      |        | temp_edge_7   | auto | 1       | 32, 128, 1       |
+|   temp_edge_8_U       | ram_1p array |      | 2    |      |        | temp_edge_8   | auto | 1       | 32, 128, 1       |
+|   temp_edge_9_U       | ram_1p array |      | 2    |      |        | temp_edge_9   | auto | 1       | 32, 128, 1       |
+|   temp_edge_10_U      | ram_1p array |      | 2    |      |        | temp_edge_10  | auto | 1       | 32, 128, 1       |
+|   temp_edge_11_U      | ram_1p array |      | 2    |      |        | temp_edge_11  | auto | 1       | 32, 128, 1       |
+|   temp_edge_12_U      | ram_1p array |      | 2    |      |        | temp_edge_12  | auto | 1       | 32, 128, 1       |
+|   temp_edge_13_U      | ram_1p array |      | 2    |      |        | temp_edge_13  | auto | 1       | 32, 128, 1       |
+|   temp_edge_14_U      | ram_1p array |      | 2    |      |        | temp_edge_14  | auto | 1       | 32, 128, 1       |
+|   temp_edge_15_U      | ram_1p array |      | 2    |      |        | temp_edge_15  | auto | 1       | 32, 128, 1       |
+|   temp_edge_16_U      | ram_1p array |      | 2    |      |        | temp_edge_16  | auto | 1       | 32, 128, 1       |
+|   temp_edge_17_U      | ram_1p array |      | 2    |      |        | temp_edge_17  | auto | 1       | 32, 128, 1       |
+|   temp_edge_18_U      | ram_1p array |      | 2    |      |        | temp_edge_18  | auto | 1       | 32, 128, 1       |
+|   temp_edge_19_U      | ram_1p array |      | 2    |      |        | temp_edge_19  | auto | 1       | 32, 128, 1       |
+|   temp_edge_20_U      | ram_1p array |      | 2    |      |        | temp_edge_20  | auto | 1       | 32, 128, 1       |
+|   temp_edge_21_U      | ram_1p array |      | 2    |      |        | temp_edge_21  | auto | 1       | 32, 128, 1       |
+|   temp_edge_22_U      | ram_1p array |      | 2    |      |        | temp_edge_22  | auto | 1       | 32, 128, 1       |
+|   temp_edge_23_U      | ram_1p array |      | 2    |      |        | temp_edge_23  | auto | 1       | 32, 128, 1       |
+|   temp_edge_24_U      | ram_1p array |      | 2    |      |        | temp_edge_24  | auto | 1       | 32, 128, 1       |
+|   temp_edge_25_U      | ram_1p array |      | 2    |      |        | temp_edge_25  | auto | 1       | 32, 128, 1       |
+|   temp_edge_26_U      | ram_1p array |      | 2    |      |        | temp_edge_26  | auto | 1       | 32, 128, 1       |
+|   temp_edge_27_U      | ram_1p array |      | 2    |      |        | temp_edge_27  | auto | 1       | 32, 128, 1       |
+|   temp_edge_28_U      | ram_1p array |      | 2    |      |        | temp_edge_28  | auto | 1       | 32, 128, 1       |
+|   temp_edge_29_U      | ram_1p array |      | 2    |      |        | temp_edge_29  | auto | 1       | 32, 128, 1       |
+|   temp_edge_30_U      | ram_1p array |      | 2    |      |        | temp_edge_30  | auto | 1       | 32, 128, 1       |
+|   temp_edge_31_U      | ram_1p array |      | 2    |      |        | temp_edge_31  | auto | 1       | 32, 128, 1       |
+|   temp_edge_32_U      | ram_1p array |      | 2    |      |        | temp_edge_32  | auto | 1       | 32, 128, 1       |
+|   temp_edge_33_U      | ram_1p array |      | 2    |      |        | temp_edge_33  | auto | 1       | 32, 128, 1       |
+|   temp_edge_34_U      | ram_1p array |      | 2    |      |        | temp_edge_34  | auto | 1       | 32, 128, 1       |
+|   temp_edge_35_U      | ram_1p array |      | 2    |      |        | temp_edge_35  | auto | 1       | 32, 128, 1       |
+|   temp_edge_36_U      | ram_1p array |      | 2    |      |        | temp_edge_36  | auto | 1       | 32, 128, 1       |
+|   temp_edge_37_U      | ram_1p array |      | 2    |      |        | temp_edge_37  | auto | 1       | 32, 128, 1       |
+|   temp_edge_38_U      | ram_1p array |      | 2    |      |        | temp_edge_38  | auto | 1       | 32, 128, 1       |
+|   temp_edge_39_U      | ram_1p array |      | 2    |      |        | temp_edge_39  | auto | 1       | 32, 128, 1       |
+|   temp_edge_40_U      | ram_1p array |      | 2    |      |        | temp_edge_40  | auto | 1       | 32, 128, 1       |
+|   temp_edge_41_U      | ram_1p array |      | 2    |      |        | temp_edge_41  | auto | 1       | 32, 128, 1       |
+|   temp_edge_42_U      | ram_1p array |      | 2    |      |        | temp_edge_42  | auto | 1       | 32, 128, 1       |
+|   temp_edge_43_U      | ram_1p array |      | 2    |      |        | temp_edge_43  | auto | 1       | 32, 128, 1       |
+|   temp_edge_44_U      | ram_1p array |      | 2    |      |        | temp_edge_44  | auto | 1       | 32, 128, 1       |
+|   temp_edge_45_U      | ram_1p array |      | 2    |      |        | temp_edge_45  | auto | 1       | 32, 128, 1       |
+|   temp_edge_46_U      | ram_1p array |      | 2    |      |        | temp_edge_46  | auto | 1       | 32, 128, 1       |
+|   temp_edge_47_U      | ram_1p array |      | 2    |      |        | temp_edge_47  | auto | 1       | 32, 128, 1       |
+|   temp_edge_48_U      | ram_1p array |      | 2    |      |        | temp_edge_48  | auto | 1       | 32, 128, 1       |
+|   temp_edge_49_U      | ram_1p array |      | 2    |      |        | temp_edge_49  | auto | 1       | 32, 128, 1       |
+|   temp_edge_50_U      | ram_1p array |      | 2    |      |        | temp_edge_50  | auto | 1       | 32, 128, 1       |
+|   temp_edge_51_U      | ram_1p array |      | 2    |      |        | temp_edge_51  | auto | 1       | 32, 128, 1       |
+|   temp_edge_52_U      | ram_1p array |      | 2    |      |        | temp_edge_52  | auto | 1       | 32, 128, 1       |
+|   temp_edge_53_U      | ram_1p array |      | 2    |      |        | temp_edge_53  | auto | 1       | 32, 128, 1       |
+|   temp_edge_54_U      | ram_1p array |      | 2    |      |        | temp_edge_54  | auto | 1       | 32, 128, 1       |
+|   temp_edge_55_U      | ram_1p array |      | 2    |      |        | temp_edge_55  | auto | 1       | 32, 128, 1       |
+|   temp_edge_56_U      | ram_1p array |      | 2    |      |        | temp_edge_56  | auto | 1       | 32, 128, 1       |
+|   temp_edge_57_U      | ram_1p array |      | 2    |      |        | temp_edge_57  | auto | 1       | 32, 128, 1       |
+|   temp_edge_58_U      | ram_1p array |      | 2    |      |        | temp_edge_58  | auto | 1       | 32, 128, 1       |
+|   temp_edge_59_U      | ram_1p array |      | 2    |      |        | temp_edge_59  | auto | 1       | 32, 128, 1       |
+|   temp_edge_60_U      | ram_1p array |      | 2    |      |        | temp_edge_60  | auto | 1       | 32, 128, 1       |
+|   temp_edge_61_U      | ram_1p array |      | 2    |      |        | temp_edge_61  | auto | 1       | 32, 128, 1       |
+|   temp_edge_62_U      | ram_1p array |      | 2    |      |        | temp_edge_62  | auto | 1       | 32, 128, 1       |
+|   temp_edge_63_U      | ram_1p array |      | 2    |      |        | temp_edge_63  | auto | 1       | 32, 128, 1       |
+|   temp_edge_64_U      | ram_1p array |      | 2    |      |        | temp_edge_64  | auto | 1       | 32, 128, 1       |
+|   temp_edge_65_U      | ram_1p array |      | 2    |      |        | temp_edge_65  | auto | 1       | 32, 128, 1       |
+|   temp_edge_66_U      | ram_1p array |      | 2    |      |        | temp_edge_66  | auto | 1       | 32, 128, 1       |
+|   temp_edge_67_U      | ram_1p array |      | 2    |      |        | temp_edge_67  | auto | 1       | 32, 128, 1       |
+|   temp_edge_68_U      | ram_1p array |      | 2    |      |        | temp_edge_68  | auto | 1       | 32, 128, 1       |
+|   temp_edge_69_U      | ram_1p array |      | 2    |      |        | temp_edge_69  | auto | 1       | 32, 128, 1       |
+|   temp_edge_70_U      | ram_1p array |      | 2    |      |        | temp_edge_70  | auto | 1       | 32, 128, 1       |
+|   temp_edge_71_U      | ram_1p array |      | 2    |      |        | temp_edge_71  | auto | 1       | 32, 128, 1       |
+|   temp_edge_72_U      | ram_1p array |      | 2    |      |        | temp_edge_72  | auto | 1       | 32, 128, 1       |
+|   temp_edge_73_U      | ram_1p array |      | 2    |      |        | temp_edge_73  | auto | 1       | 32, 128, 1       |
+|   temp_edge_74_U      | ram_1p array |      | 2    |      |        | temp_edge_74  | auto | 1       | 32, 128, 1       |
+|   temp_edge_75_U      | ram_1p array |      | 2    |      |        | temp_edge_75  | auto | 1       | 32, 128, 1       |
+|   temp_edge_76_U      | ram_1p array |      | 2    |      |        | temp_edge_76  | auto | 1       | 32, 128, 1       |
+|   temp_edge_77_U      | ram_1p array |      | 2    |      |        | temp_edge_77  | auto | 1       | 32, 128, 1       |
+|   temp_edge_78_U      | ram_1p array |      | 2    |      |        | temp_edge_78  | auto | 1       | 32, 128, 1       |
+|   temp_edge_79_U      | ram_1p array |      | 2    |      |        | temp_edge_79  | auto | 1       | 32, 128, 1       |
+|   temp_edge_80_U      | ram_1p array |      | 2    |      |        | temp_edge_80  | auto | 1       | 32, 128, 1       |
+|   temp_edge_81_U      | ram_1p array |      | 2    |      |        | temp_edge_81  | auto | 1       | 32, 128, 1       |
+|   temp_edge_82_U      | ram_1p array |      | 2    |      |        | temp_edge_82  | auto | 1       | 32, 128, 1       |
+|   temp_edge_83_U      | ram_1p array |      | 2    |      |        | temp_edge_83  | auto | 1       | 32, 128, 1       |
+|   temp_edge_84_U      | ram_1p array |      | 2    |      |        | temp_edge_84  | auto | 1       | 32, 128, 1       |
+|   temp_edge_85_U      | ram_1p array |      | 2    |      |        | temp_edge_85  | auto | 1       | 32, 128, 1       |
+|   temp_edge_86_U      | ram_1p array |      | 2    |      |        | temp_edge_86  | auto | 1       | 32, 128, 1       |
+|   temp_edge_87_U      | ram_1p array |      | 2    |      |        | temp_edge_87  | auto | 1       | 32, 128, 1       |
+|   temp_edge_88_U      | ram_1p array |      | 2    |      |        | temp_edge_88  | auto | 1       | 32, 128, 1       |
+|   temp_edge_89_U      | ram_1p array |      | 2    |      |        | temp_edge_89  | auto | 1       | 32, 128, 1       |
+|   temp_edge_90_U      | ram_1p array |      | 2    |      |        | temp_edge_90  | auto | 1       | 32, 128, 1       |
+|   temp_edge_91_U      | ram_1p array |      | 2    |      |        | temp_edge_91  | auto | 1       | 32, 128, 1       |
+|   temp_edge_92_U      | ram_1p array |      | 2    |      |        | temp_edge_92  | auto | 1       | 32, 128, 1       |
+|   temp_edge_93_U      | ram_1p array |      | 2    |      |        | temp_edge_93  | auto | 1       | 32, 128, 1       |
+|   temp_edge_94_U      | ram_1p array |      | 2    |      |        | temp_edge_94  | auto | 1       | 32, 128, 1       |
+|   temp_edge_95_U      | ram_1p array |      | 2    |      |        | temp_edge_95  | auto | 1       | 32, 128, 1       |
+|   temp_edge_96_U      | ram_1p array |      | 2    |      |        | temp_edge_96  | auto | 1       | 32, 128, 1       |
+|   temp_edge_97_U      | ram_1p array |      | 2    |      |        | temp_edge_97  | auto | 1       | 32, 128, 1       |
+|   temp_edge_98_U      | ram_1p array |      | 2    |      |        | temp_edge_98  | auto | 1       | 32, 128, 1       |
+|   temp_edge_99_U      | ram_1p array |      | 2    |      |        | temp_edge_99  | auto | 1       | 32, 128, 1       |
+|   temp_edge_100_U     | ram_1p array |      | 2    |      |        | temp_edge_100 | auto | 1       | 32, 128, 1       |
+|   temp_edge_101_U     | ram_1p array |      | 2    |      |        | temp_edge_101 | auto | 1       | 32, 128, 1       |
+|   temp_edge_102_U     | ram_1p array |      | 2    |      |        | temp_edge_102 | auto | 1       | 32, 128, 1       |
+|   temp_edge_103_U     | ram_1p array |      | 2    |      |        | temp_edge_103 | auto | 1       | 32, 128, 1       |
+|   temp_edge_104_U     | ram_1p array |      | 2    |      |        | temp_edge_104 | auto | 1       | 32, 128, 1       |
+|   temp_edge_105_U     | ram_1p array |      | 2    |      |        | temp_edge_105 | auto | 1       | 32, 128, 1       |
+|   temp_edge_106_U     | ram_1p array |      | 2    |      |        | temp_edge_106 | auto | 1       | 32, 128, 1       |
+|   temp_edge_107_U     | ram_1p array |      | 2    |      |        | temp_edge_107 | auto | 1       | 32, 128, 1       |
+|   temp_edge_108_U     | ram_1p array |      | 2    |      |        | temp_edge_108 | auto | 1       | 32, 128, 1       |
+|   temp_edge_109_U     | ram_1p array |      | 2    |      |        | temp_edge_109 | auto | 1       | 32, 128, 1       |
+|   temp_edge_110_U     | ram_1p array |      | 2    |      |        | temp_edge_110 | auto | 1       | 32, 128, 1       |
+|   temp_edge_111_U     | ram_1p array |      | 2    |      |        | temp_edge_111 | auto | 1       | 32, 128, 1       |
+|   temp_edge_112_U     | ram_1p array |      | 2    |      |        | temp_edge_112 | auto | 1       | 32, 128, 1       |
+|   temp_edge_113_U     | ram_1p array |      | 2    |      |        | temp_edge_113 | auto | 1       | 32, 128, 1       |
+|   temp_edge_114_U     | ram_1p array |      | 2    |      |        | temp_edge_114 | auto | 1       | 32, 128, 1       |
+|   temp_edge_115_U     | ram_1p array |      | 2    |      |        | temp_edge_115 | auto | 1       | 32, 128, 1       |
+|   temp_edge_116_U     | ram_1p array |      | 2    |      |        | temp_edge_116 | auto | 1       | 32, 128, 1       |
+|   temp_edge_117_U     | ram_1p array |      | 2    |      |        | temp_edge_117 | auto | 1       | 32, 128, 1       |
+|   temp_edge_118_U     | ram_1p array |      | 2    |      |        | temp_edge_118 | auto | 1       | 32, 128, 1       |
+|   temp_edge_119_U     | ram_1p array |      | 2    |      |        | temp_edge_119 | auto | 1       | 32, 128, 1       |
+|   temp_edge_120_U     | ram_1p array |      | 2    |      |        | temp_edge_120 | auto | 1       | 32, 128, 1       |
+|   temp_edge_121_U     | ram_1p array |      | 2    |      |        | temp_edge_121 | auto | 1       | 32, 128, 1       |
+|   temp_edge_122_U     | ram_1p array |      | 2    |      |        | temp_edge_122 | auto | 1       | 32, 128, 1       |
+|   temp_edge_123_U     | ram_1p array |      | 2    |      |        | temp_edge_123 | auto | 1       | 32, 128, 1       |
+|   temp_edge_124_U     | ram_1p array |      | 2    |      |        | temp_edge_124 | auto | 1       | 32, 128, 1       |
+|   temp_edge_125_U     | ram_1p array |      | 2    |      |        | temp_edge_125 | auto | 1       | 32, 128, 1       |
+|   temp_edge_126_U     | ram_1p array |      | 2    |      |        | temp_edge_126 | auto | 1       | 32, 128, 1       |
+|   temp_edge_127_U     | ram_1p array |      | 1    |      |        | temp_edge_127 | auto | 1       | 32, 128, 1       |
++-----------------------+--------------+------+------+------+--------+---------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------------------+-----------------------------------------------------------------------------------------+
+| Type            | Options                           | Location                                                                                |
++-----------------+-----------------------------------+-----------------------------------------------------------------------------------------+
+| interface       | mode=axis port=x                  | Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:7 in sobel_edge_detector, x          |
+| interface       | mode=axis port=edge_out           | Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:8 in sobel_edge_detector, edge_out   |
+| array_partition | variable=temp_edge complete dim=2 | Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:21 in sobel_edge_detector, temp_edge |
+| unroll          |                                   | Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:35 in sobel_edge_detector            |
++-----------------+-----------------------------------+-----------------------------------------------------------------------------------------+
+
+

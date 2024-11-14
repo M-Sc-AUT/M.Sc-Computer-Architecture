@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Nov 13 23:51:51 2024
+# Process ID: 5756
+# Current directory: C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_processing_system7_0_3_synth_1
+# Command line: vivado.exe -log design_1_processing_system7_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_processing_system7_0_3.tcl
+# Log file: C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_processing_system7_0_3_synth_1/design_1_processing_system7_0_3.vds
+# Journal file: C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.runs/design_1_processing_system7_0_3_synth_1\vivado.jou
+# Running On: DESKTOP-A2LG1N2, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 4, Host memory: 8449 MB
+#-----------------------------------------------------------
+source design_1_processing_system7_0_3.tcl -notrace

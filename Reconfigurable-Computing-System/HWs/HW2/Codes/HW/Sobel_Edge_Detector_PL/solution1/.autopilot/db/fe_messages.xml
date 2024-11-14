@@ -1,0 +1,57 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PL/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sobel_edge_detector" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sobel_edge_detector" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PL/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sobel_edge_detector" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sobel_edge_detector" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_edge_detector" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=x" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_edge_detector" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=edge_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_edge_detector" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=temp_edge complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_edge_detector" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_33_4' (Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:33:34) in function 'sobel_edge_detector' completely with a factor of 3">
+        <args Factor="3" LoopLoc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:33:34" LoopName="VITIS_LOOP_33_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:65:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'unsigned char generic_cast_IEEE754&lt;unsigned char, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;!(std::numeric_limits&lt;unsigned char&gt;::is_signed), bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 283 Column 0" Caller="unsigned char generic_cast_IEEE754&lt;unsigned char, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;!(std::numeric_limits&lt;unsigned char&gt;::is_signed), bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 65 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:65:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::mantissa() const' into 'unsigned char generic_cast_IEEE754&lt;unsigned char, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;!(std::numeric_limits&lt;unsigned char&gt;::is_signed), bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::mantissa() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 340 Column 0" Caller="unsigned char generic_cast_IEEE754&lt;unsigned char, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;!(std::numeric_limits&lt;unsigned char&gt;::is_signed), bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 65 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:65:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::expv() const' into 'unsigned char generic_cast_IEEE754&lt;unsigned char, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;!(std::numeric_limits&lt;unsigned char&gt;::is_signed), bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::expv() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 316 Column 0" Caller="unsigned char generic_cast_IEEE754&lt;unsigned char, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;!(std::numeric_limits&lt;unsigned char&gt;::is_signed), bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 65 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116:0" msg_body="Inlining function 'unsigned char generic_cast_IEEE754&lt;unsigned char, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;!(std::numeric_limits&lt;unsigned char&gt;::is_signed), bool&gt;::type)' into 'unsigned char generic_cast_IEEE754&lt;unsigned char, float&gt;(float, bool)'">
+        <args Callee="unsigned char generic_cast_IEEE754&lt;unsigned char, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;!(std::numeric_limits&lt;unsigned char&gt;::is_signed), bool&gt;::type)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 65 Column 0" Caller="unsigned char generic_cast_IEEE754&lt;unsigned char, float&gt;(float, bool)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp:63:0" msg_body="Inlining function 'unsigned char generic_cast_IEEE754&lt;unsigned char, float&gt;(float, bool)' into '__hls_fptoui_float_i8'">
+        <args Callee="unsigned char generic_cast_IEEE754&lt;unsigned char, float&gt;(float, bool)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 116 Column 0" Caller="__hls_fptoui_float_i8" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp} Line 63 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:6:0" msg_body="Inlining function '__hls_fptoui_float_i8' into 'sobel_edge_detector(unsigned char (*) [128], unsigned char (*) [128])'">
+        <args Callee="__hls_fptoui_float_i8" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp} Line 63 Column 0" Caller="sobel_edge_detector(unsigned char (*) [128], unsigned char (*) [128])" Caller-DebugLoc="File Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18:11" msg_body="Applying array_partition to 'temp_edge': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="temp_edge"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:30:30" msg_body="Loop 'VITIS_LOOP_30_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_30_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_30_3' (Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:30:30) in function 'sobel_edge_detector' completely with a factor of 3">
+        <args Factor="3" LoopLoc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:30:30" LoopName="VITIS_LOOP_30_3"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-142" msg_severity="WARNING" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:6:0" msg_body="Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'x'">
+        <args Name="x"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-142" msg_severity="WARNING" msg_loc="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:6:0" msg_body="Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'edge_out'">
+        <args Name="edge_out"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

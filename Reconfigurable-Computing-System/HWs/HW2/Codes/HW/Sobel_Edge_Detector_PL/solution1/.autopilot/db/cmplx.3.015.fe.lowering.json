@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 139,
+    "calls": "",
+    "file": "sobel_edge_detector.cpp",
+    "fileloc": 4,
+    "instructions": 1225,
+    "loads": {
+      "L": 128
+    },
+    "name": "sobel_edge_detector",
+    "stores": {
+      "L": 126
+    },
+    "total_instructions": 1225
+  }
+}

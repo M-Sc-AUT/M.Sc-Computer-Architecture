@@ -1,0 +1,58 @@
+---
+MainSourceFile:  'C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PL/solution1/.autopilot/db/sobel_edge_detector.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_24_1:  '
+    FileOffset:      24
+    FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\src\sobel_edge_detector.cpp'
+    Replacements:    
+      - FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\solution1\.autopilot\db\sobel_edge_detector.pp.0.cpp'
+        Offset:          146062
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_24_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_2:  '
+    FileOffset:      26
+    FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\src\sobel_edge_detector.cpp'
+    Replacements:    
+      - FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\solution1\.autopilot\db\sobel_edge_detector.pp.0.cpp'
+        Offset:          146106
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_30_3:  '
+    FileOffset:      30
+    FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\src\sobel_edge_detector.cpp'
+    Replacements:    
+      - FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\solution1\.autopilot\db\sobel_edge_detector.pp.0.cpp'
+        Offset:          146198
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_30_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_4:  '
+    FileOffset:      33
+    FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\src\sobel_edge_detector.cpp'
+    Replacements:    
+      - FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\solution1\.autopilot\db\sobel_edge_detector.pp.0.cpp'
+        Offset:          146255
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_55_5:  '
+    FileOffset:      55
+    FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\src\sobel_edge_detector.cpp'
+    Replacements:    
+      - FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\solution1\.autopilot\db\sobel_edge_detector.pp.0.cpp'
+        Offset:          146703
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_55_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_58_6:  '
+    FileOffset:      58
+    FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\src\sobel_edge_detector.cpp'
+    Replacements:    
+      - FilePath:        'C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\solution1\.autopilot\db\sobel_edge_detector.pp.0.cpp'
+        Offset:          146744
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_58_6: '
+...

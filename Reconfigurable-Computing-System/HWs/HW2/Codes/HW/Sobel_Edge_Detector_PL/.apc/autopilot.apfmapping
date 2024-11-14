@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sobel_edge_detector.cpp" path="C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\src\sobel_edge_detector.cpp"/>
+    <originFiles name="sobel_edge_detector.h" path="C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\src\sobel_edge_detector.h"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_sobel_edge_detector.cpp" path="C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\src\tb_sobel_edge_detector.cpp"/>
+    <originFiles name="tb_sobel_edge_detector.h" path="C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PL\src\tb_sobel_edge_detector.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

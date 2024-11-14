@@ -1,0 +1,98 @@
+{
+  "0": {
+    "basicblocks": 18,
+    "calls": "6",
+    "file": "sobel_edge_detector.cpp",
+    "fileloc": 4,
+    "instructions": 116,
+    "loads": {
+      "L": 7
+    },
+    "name": "sobel_edge_detector",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 272
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 283,
+    "instructions": 15,
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 15
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 349,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "__signbit",
+    "total_instructions": 3
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<unsigned char, float>",
+    "total_instructions": 154
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 316,
+    "instructions": 6,
+    "loads": {
+      "L": 1
+    },
+    "name": "expv",
+    "total_instructions": 6
+  },
+  "5": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 340,
+    "instructions": 12,
+    "loads": {
+      "L": 1
+    },
+    "name": "mantissa",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 12
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 63,
+    "instructions": 2,
+    "name": "__hls_fptoui_float_i8",
+    "total_instructions": 156
+  },
+  "7": {
+    "basicblocks": 49,
+    "calls": "1 5 4 4 2",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 65,
+    "instructions": 110,
+    "loads": {
+      "L": 3
+    },
+    "name": "generic_cast_IEEE754<unsigned char, AP_TRN_ZERO, float>",
+    "total_instructions": 152
+  }
+}

@@ -1,0 +1,660 @@
+<profile>
+    <ReportVersion>
+        <Version>2023.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z010-clg400-1</Part>
+        <TopModelName>sobel_edge_detector</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>8.254</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>159292</Best-caseLatency>
+            <Average-caseLatency>159292</Average-caseLatency>
+            <Worst-caseLatency>159292</Worst-caseLatency>
+            <Best-caseRealTimeLatency>1.593 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>1.593 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>1.593 ms</Worst-caseRealTimeLatency>
+            <Interval-min>159293</Interval-min>
+            <Interval-max>159293</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:4</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>128</BRAM_18K>
+            <DSP>5</DSP>
+            <FF>4848</FF>
+            <LUT>6959</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>120</BRAM_18K>
+            <DSP>80</DSP>
+            <FF>35200</FF>
+            <LUT>17600</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>sobel_edge_detector</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>sobel_edge_detector</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>sobel_edge_detector</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>sobel_edge_detector</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>sobel_edge_detector</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>sobel_edge_detector</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_TDATA</name>
+            <Object>x</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_TVALID</name>
+            <Object>x</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_TREADY</name>
+            <Object>x</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>edge_out_TDATA</name>
+            <Object>edge_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>edge_out_TVALID</name>
+            <Object>edge_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>edge_out_TREADY</name>
+            <Object>edge_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>sobel_edge_detector</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_sobel_edge_detector_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_26_2_fu_544</InstName>
+                    <ModuleName>sobel_edge_detector_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_26_2</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>544</ID>
+                    <BindInstances>add_ln24_fu_2348_p2 add_ln26_fu_2372_p2 add_ln36_fu_2523_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6_fu_676</InstName>
+                    <ModuleName>sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>676</ID>
+                    <BindInstances>add_ln55_fu_2839_p2 add_ln55_1_fu_2871_p2 fmul_32ns_32ns_32_4_max_dsp_1_U129 fadd_32ns_32ns_32_5_full_dsp_1_U128 add_ln317_fu_4654_p2 sub_ln71_fu_4668_p2 add_ln58_fu_3017_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>temp_edge_U temp_edge_1_U temp_edge_2_U temp_edge_3_U temp_edge_4_U temp_edge_5_U temp_edge_6_U temp_edge_7_U temp_edge_8_U temp_edge_9_U temp_edge_10_U temp_edge_11_U temp_edge_12_U temp_edge_13_U temp_edge_14_U temp_edge_15_U temp_edge_16_U temp_edge_17_U temp_edge_18_U temp_edge_19_U temp_edge_20_U temp_edge_21_U temp_edge_22_U temp_edge_23_U temp_edge_24_U temp_edge_25_U temp_edge_26_U temp_edge_27_U temp_edge_28_U temp_edge_29_U temp_edge_30_U temp_edge_31_U temp_edge_32_U temp_edge_33_U temp_edge_34_U temp_edge_35_U temp_edge_36_U temp_edge_37_U temp_edge_38_U temp_edge_39_U temp_edge_40_U temp_edge_41_U temp_edge_42_U temp_edge_43_U temp_edge_44_U temp_edge_45_U temp_edge_46_U temp_edge_47_U temp_edge_48_U temp_edge_49_U temp_edge_50_U temp_edge_51_U temp_edge_52_U temp_edge_53_U temp_edge_54_U temp_edge_55_U temp_edge_56_U temp_edge_57_U temp_edge_58_U temp_edge_59_U temp_edge_60_U temp_edge_61_U temp_edge_62_U temp_edge_63_U temp_edge_64_U temp_edge_65_U temp_edge_66_U temp_edge_67_U temp_edge_68_U temp_edge_69_U temp_edge_70_U temp_edge_71_U temp_edge_72_U temp_edge_73_U temp_edge_74_U temp_edge_75_U temp_edge_76_U temp_edge_77_U temp_edge_78_U temp_edge_79_U temp_edge_80_U temp_edge_81_U temp_edge_82_U temp_edge_83_U temp_edge_84_U temp_edge_85_U temp_edge_86_U temp_edge_87_U temp_edge_88_U temp_edge_89_U temp_edge_90_U temp_edge_91_U temp_edge_92_U temp_edge_93_U temp_edge_94_U temp_edge_95_U temp_edge_96_U temp_edge_97_U temp_edge_98_U temp_edge_99_U temp_edge_100_U temp_edge_101_U temp_edge_102_U temp_edge_103_U temp_edge_104_U temp_edge_105_U temp_edge_106_U temp_edge_107_U temp_edge_108_U temp_edge_109_U temp_edge_110_U temp_edge_111_U temp_edge_112_U temp_edge_113_U temp_edge_114_U temp_edge_115_U temp_edge_116_U temp_edge_117_U temp_edge_118_U temp_edge_119_U temp_edge_120_U temp_edge_121_U temp_edge_122_U temp_edge_123_U temp_edge_124_U temp_edge_125_U temp_edge_126_U temp_edge_127_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>sobel_edge_detector_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_26_2</Name>
+            <Loops>
+                <VITIS_LOOP_24_1_VITIS_LOOP_26_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.117</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>142886</Best-caseLatency>
+                    <Average-caseLatency>142886</Average-caseLatency>
+                    <Worst-caseLatency>142886</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>1.429 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>1.429 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.429 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>142886</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_24_1_VITIS_LOOP_26_2>
+                        <Name>VITIS_LOOP_24_1_VITIS_LOOP_26_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>15876</TripCount>
+                        <Latency>142884</Latency>
+                        <AbsoluteTimeLatency>1.429 ms</AbsoluteTimeLatency>
+                        <PipelineII>9</PipelineII>
+                        <PipelineDepth>9</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_24_1_VITIS_LOOP_26_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:16</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_24_1_VITIS_LOOP_26_2>
+                            <Name>VITIS_LOOP_24_1_VITIS_LOOP_26_2</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:24</SourceLocation>
+                        </VITIS_LOOP_24_1_VITIS_LOOP_26_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>74</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>208</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_24_1_VITIS_LOOP_26_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln24_fu_2348_p2" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:24" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_24_1_VITIS_LOOP_26_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln26_fu_2372_p2" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:26" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln26"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_24_1_VITIS_LOOP_26_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln36_fu_2523_p2" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:36" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln36"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>sobel_edge_detector_Pipeline_VITIS_LOOP_55_5_VITIS_LOOP_58_6</Name>
+            <Loops>
+                <VITIS_LOOP_55_5_VITIS_LOOP_58_6/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>8.254</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>16400</Best-caseLatency>
+                    <Average-caseLatency>16400</Average-caseLatency>
+                    <Worst-caseLatency>16400</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.164 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.164 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.164 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>16400</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_55_5_VITIS_LOOP_58_6>
+                        <Name>VITIS_LOOP_55_5_VITIS_LOOP_58_6</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>16384</TripCount>
+                        <Latency>16398</Latency>
+                        <AbsoluteTimeLatency>0.164 ms</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>16</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_55_5_VITIS_LOOP_58_6>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:16</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_55_5_VITIS_LOOP_58_6>
+                            <Name>VITIS_LOOP_55_5_VITIS_LOOP_58_6</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:55</SourceLocation>
+                        </VITIS_LOOP_55_5_VITIS_LOOP_58_6>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>6</UTIL_DSP>
+                    <FF>4765</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>13</UTIL_FF>
+                    <LUT>2036</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>11</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_55_5_VITIS_LOOP_58_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln55_fu_2839_p2" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln55"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_55_5_VITIS_LOOP_58_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln55_1_fu_2871_p2" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln55_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="3" LOOP="VITIS_LOOP_55_5_VITIS_LOOP_58_6" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U129" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="normalized"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="4" LOOP="VITIS_LOOP_55_5_VITIS_LOOP_58_6" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_5_full_dsp_1_U128" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="dc"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_55_5_VITIS_LOOP_58_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln317_fu_4654_p2" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:317" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln317"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_55_5_VITIS_LOOP_58_6" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln71_fu_4668_p2" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln71"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_55_5_VITIS_LOOP_58_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_fu_3017_p2" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>sobel_edge_detector</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>8.254</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>159292</Best-caseLatency>
+                    <Average-caseLatency>159292</Average-caseLatency>
+                    <Worst-caseLatency>159292</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>1.593 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>1.593 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.593 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>159293</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:4</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>128</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>106</UTIL_BRAM>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>6</UTIL_DSP>
+                    <FF>4848</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>13</UTIL_FF>
+                    <LUT>6959</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>39</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_1_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_1"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_2_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_2"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_3_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_3"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_4_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_4"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_5_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_5"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_6_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_6"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_7_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_7"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_8_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_8"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_9_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_9"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_10_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_10"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_11_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_11"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_12_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_12"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_13_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_13"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_14_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_14"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_15_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_15"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_16_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_16"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_17_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_17"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_18_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_18"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_19_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_19"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_20_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_20"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_21_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_21"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_22_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_22"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_23_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_23"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_24_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_24"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_25_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_25"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_26_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_26"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_27_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_27"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_28_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_28"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_29_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_29"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_30_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_30"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_31_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_31"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_32_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_32"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_33_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_33"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_34_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_34"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_35_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_35"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_36_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_36"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_37_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_37"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_38_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_38"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_39_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_39"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_40_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_40"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_41_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_41"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_42_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_42"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_43_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_43"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_44_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_44"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_45_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_45"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_46_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_46"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_47_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_47"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_48_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_48"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_49_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_49"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_50_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_50"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_51_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_51"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_52_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_52"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_53_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_53"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_54_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_54"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_55_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_55"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_56_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_56"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_57_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_57"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_58_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_58"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_59_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_59"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_60_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_60"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_61_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_61"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_62_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_62"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_63_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_63"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_64_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_64"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_65_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_65"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_66_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_66"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_67_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_67"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_68_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_68"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_69_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_69"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_70_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_70"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_71_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_71"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_72_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_72"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_73_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_73"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_74_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_74"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_75_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_75"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_76_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_76"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_77_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_77"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_78_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_78"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_79_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_79"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_80_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_80"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_81_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_81"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_82_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_82"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_83_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_83"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_84_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_84"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_85_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_85"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_86_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_86"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_87_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_87"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_88_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_88"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_89_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_89"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_90_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_90"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_91_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_91"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_92_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_92"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_93_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_93"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_94_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_94"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_95_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_95"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_96_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_96"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_97_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_97"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_98_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_98"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_99_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_99"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_100_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_100"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_101_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_101"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_102_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_102"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_103_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_103"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_104_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_104"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_105_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_105"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_106_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_106"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_107_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_107"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_108_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_108"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_109_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_109"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_110_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_110"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_111_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_111"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_112_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_112"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_113_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_113"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_114_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_114"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_115_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_115"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_116_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_116"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_117_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_117"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_118_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_118"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_119_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_119"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_120_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_120"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_121_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_121"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_122_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_122"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_123_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_123"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_124_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_124"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_125_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_125"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_126_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_126"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_edge_127_U" SOURCE="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:18" STORAGESIZE="32 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp_edge_127"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="x" index="0" direction="in" srcType="unsigned char*" srcSize="8">
+            <hwRefs>
+                <hwRef type="interface" interface="x" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="edge_out" index="1" direction="out" srcType="unsigned char*" srcSize="8">
+            <hwRefs>
+                <hwRef type="interface" interface="edge_out" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">x:edge_out</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="x" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="8" portPrefix="x_">
+            <ports>
+                <port>x_TDATA</port>
+                <port>x_TREADY</port>
+                <port>x_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="x"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="edge_out" type="axi4stream" busTypeName="axis" mode="master" dataWidth="8" portPrefix="edge_out_">
+            <ports>
+                <port>edge_out_TDATA</port>
+                <port>edge_out_TREADY</port>
+                <port>edge_out_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="edge_out"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="6">Interface, Direction, Register Mode, TDATA, TREADY, TVALID</keys>
+                    <column name="edge_out">out, both, 8, 1, 1</column>
+                    <column name="x">in, both, 8, 1, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="x">in, unsigned char*</column>
+                    <column name="edge_out">out, unsigned char*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="x">x, interface</column>
+                    <column name="edge_out">edge_out, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:7" status="valid" parentFunction="sobel_edge_detector" variable="x" isDirective="0" options="mode=axis port=x"/>
+        <Pragma type="interface" location="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:8" status="valid" parentFunction="sobel_edge_detector" variable="edge_out" isDirective="0" options="mode=axis port=edge_out"/>
+        <Pragma type="array_partition" location="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:21" status="valid" parentFunction="sobel_edge_detector" variable="temp_edge" isDirective="0" options="variable=temp_edge complete dim=2"/>
+        <Pragma type="unroll" location="Sobel_Edge_Detector_PL/src/sobel_edge_detector.cpp:35" status="valid" parentFunction="sobel_edge_detector" variable="" isDirective="0" options=""/>
+    </PragmaReport>
+</profile>
+

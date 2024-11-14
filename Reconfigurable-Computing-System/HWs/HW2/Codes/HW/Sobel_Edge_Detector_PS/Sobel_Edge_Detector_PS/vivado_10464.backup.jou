@@ -1,0 +1,320 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Nov 11 17:42:42 2024
+# Process ID: 10464
+# Current directory: C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11680 C:\AUT\RCS\HW2\HW\Sobel_Edge_Detector_PS\Sobel_Edge_Detector_PS\Sobel_Edge_Detector_PS.xpr
+# Log file: C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/vivado.log
+# Journal file: C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS\vivado.jou
+# Running On: DESKTOP-A2LG1N2, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 4, Host memory: 8449 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS/Sobel_Edge_Detector_PS.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M02_AXI] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_intf_nets axi_interconnect_0_M00_AXI] [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_intf_nets axi_interconnect_0_M03_AXI] [get_bd_intf_nets processing_system7_0_DDR]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_nets proc_sys_reset_0_peripheral_aresetn] [get_bd_nets processing_system7_0_FCLK_CLK0]
+delete_bd_objs [get_bd_cells processing_system7_0] [get_bd_cells axi_dma_0] [get_bd_cells sobel_edge_detector_0] [get_bd_cells proc_sys_reset_0] [get_bd_cells axi_timer_0]
+delete_bd_objs [get_bd_cells axi_interconnect_0] [get_bd_cells axi_interconnect_1]
+delete_bd_objs [get_bd_intf_ports DDR] [get_bd_intf_ports FIXED_IO]
+endgroup
+save_bd_design
+undo
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M02_AXI] [get_bd_intf_nets axi_interconnect_0_M03_AXI] [get_bd_cells sobel_edge_detector_0]
+save_bd_design
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PL [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detector:1.0 sobel_edge_detector_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/sobel_edge_detector_0/m_axi_gmem0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_0/m_axi_gmem0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/sobel_edge_detector_0/s_axi_control} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_0/s_axi_control]
+endgroup
+save_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M02_AXI] [get_bd_intf_nets sobel_edge_detector_0_m_axi_gmem0] [get_bd_cells sobel_edge_detector_0]
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PL [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detector:1.0 sobel_edge_detector_0
+endgroup
+set_property location {1 228 215} [get_bd_cells sobel_edge_detector_0]
+set_property location {3 1130 203} [get_bd_cells sobel_edge_detector_0]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins sobel_edge_detector_0/ap_clk]
+undo
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+delete_bd_objs [get_bd_cells microblaze_0]
+delete_bd_objs [get_bd_cells sobel_edge_detector_0]
+delete_bd_objs [get_bd_nets proc_sys_reset_0_peripheral_aresetn]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M01_AXI]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_M_AXI_GP0]
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PL [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detector:1.0 sobel_edge_detector_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_dma_0/s_axi_lite_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_0/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_1/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_timer_0/S_AXI} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins axi_timer_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/sobel_edge_detector_0/m_axi_gmem} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_0/m_axi_gmem]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sobel_edge_detector_0/s_axi_control} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_0/s_axi_control]
+endgroup
+regenerate_bd_layout
+undo
+undo
+regenerate_bd_layout
+set_property location {0.5 -128 288} [get_bd_cells axi_interconnect_0]
+set_property location {1 -161 678} [get_bd_cells axi_timer_0]
+set_property location {2 245 421} [get_bd_cells sobel_edge_detector_0]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M00_AXI]
+set_property location {3.5 904 417} [get_bd_cells sobel_edge_detector_0]
+set_property location {0.5 -553 490} [get_bd_cells axi_dma_0]
+set_property location {3 316 393} [get_bd_cells processing_system7_0]
+set_property location {4 1043 758} [get_bd_cells sobel_edge_detector_0]
+set_property location {2.5 17 323} [get_bd_cells axi_interconnect_0]
+set_property location {3 -7 710} [get_bd_cells axi_timer_0]
+set_property location {4 889 654} [get_bd_cells sobel_edge_detector_0]
+set_property location {4 975 189} [get_bd_cells axi_dma_0]
+set_property -dict [list \
+  CONFIG.C_M_AXI_GMEM_DATA_WIDTH {1024} \
+  CONFIG.C_M_AXI_GMEM_ENABLE_ID_PORTS {true} \
+] [get_bd_cells sobel_edge_detector_0]
+set_property CONFIG.C_M_AXI_GMEM_DATA_WIDTH {256} [get_bd_cells sobel_edge_detector_0]
+set_property CONFIG.C_M_AXI_GMEM_ENABLE_USER_PORTS {true} [get_bd_cells sobel_edge_detector_0]
+set_property CONFIG.C_M_AXI_GMEM_DATA_WIDTH {32} [get_bd_cells sobel_edge_detector_0]
+undo
+undo
+undo
+set_property CONFIG.C_M_AXI_GMEM_DATA_WIDTH {32} [get_bd_cells sobel_edge_detector_0]
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detector:1.0 sobel_edge_detector_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_dma_0/s_axi_lite_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_0/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_1/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_timer_0/S_AXI} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins axi_timer_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/sobel_edge_detector_0/m_axi_gmem} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_0/m_axi_gmem]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sobel_edge_detector_0/s_axi_control} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_0/s_axi_control]
+endgroup
+set_property offset 0x41E00000 [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_dma_0_Reg}]
+set_property range 512K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_dma_0_Reg}]
+set_property range 512K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_timer_0_Reg}]
+save_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {1 219 1048} [get_bd_cells axi_interconnect_0]
+set_property location {1.5 667 692} [get_bd_cells processing_system7_0]
+set_property location {2 749 353} [get_bd_cells sobel_edge_detector_0]
+set_property location {2 664 918} [get_bd_cells axi_interconnect_1]
+set_property location {1 338 858} [get_bd_cells axi_interconnect_0]
+regenerate_bd_layout
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/sobel_edge_detector_0/s_axi_control_r} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_0/s_axi_control_r]
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+undo
+undo
+undo
+undo
+undo
+undo
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detector:1.0 sobel_edge_detector_0
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M00_AXI]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_1/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_timer_0/S_AXI} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins axi_timer_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sobel_edge_detector_0/s_axi_control} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_0/s_axi_control]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sobel_edge_detector_0/s_axi_control_r} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_0/s_axi_control_r]
+endgroup
+regenerate_bd_layout
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+undo
+undo
+undo
+undo
+delete_bd_objs [get_bd_intf_nets processing_system7_0_DDR]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_FIXED_IO]
+delete_bd_objs [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M00_AXI]
+delete_bd_objs [get_bd_intf_ports DDR]
+delete_bd_objs [get_bd_intf_ports FIXED_IO]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detector:1.0 sobel_edge_detector_0
+endgroup
+delete_bd_objs [get_bd_cells sobel_edge_detector_0]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_DDR] [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_cells processing_system7_0]
+startgroup
+delete_bd_objs [get_bd_cells axi_dma_0] [get_bd_cells axi_timer_0] [get_bd_cells proc_sys_reset_0]
+delete_bd_objs [get_bd_cells axi_interconnect_0] [get_bd_cells axi_interconnect_1]
+delete_bd_objs [get_bd_intf_ports FIXED_IO_0] [get_bd_intf_ports DDR_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detector:1.0 sobel_edge_detector_0
+endgroup
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_interconnect:2.1 axis_interconnect_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_interconnect:2.1 axis_interconnect_1
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+delete_bd_objs [get_bd_cells axis_interconnect_1]
+delete_bd_objs [get_bd_cells axis_interconnect_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_1
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detector:1.0 sobel_edge_detector_1
+endgroup
+delete_bd_objs [get_bd_cells sobel_edge_detector_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_1/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_timer_0/S_AXI} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins axi_timer_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sobel_edge_detector_1/s_axi_control} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_1/s_axi_control]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sobel_edge_detector_1/s_axi_control_r} ddr_seg {Auto} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_1/s_axi_control_r]
+endgroup
+regenerate_bd_layout
+save_bd_design
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/sobel_edge_detector_1/m_axi_gmem} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_1/m_axi_gmem]
+save_bd_design
+regenerate_bd_layout
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+write_bd_layout -format pdf -orientation portrait C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PL/design_1.pdf
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+delete_bd_objs [get_bd_nets proc_sys_reset_0_peripheral_aresetn]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_M_AXI_GP0]
+delete_bd_objs [get_bd_intf_nets sobel_edge_detector_1_m_axi_gmem]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_DDR]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_FIXED_IO]
+delete_bd_objs [get_bd_intf_ports FIXED_IO]
+delete_bd_objs [get_bd_intf_ports DDR]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M03_AXI]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M00_AXI]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M02_AXI]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M01_AXI]
+startgroup
+delete_bd_objs [get_bd_cells axi_dma_0] [get_bd_cells axi_timer_0] [get_bd_cells proc_sys_reset_0]
+delete_bd_objs [get_bd_cells axi_interconnect_0] [get_bd_cells axi_interconnect_1]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {2.5 702 428} [get_bd_cells axi_gpio_0]
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {8} \
+] [get_bd_cells axi_gpio_0]
+connect_bd_net [get_bd_pins sobel_edge_detector_1/edge_out_d0] [get_bd_pins axi_gpio_0/gpio_io_i]
+set_property CONFIG.PCW_USE_M_AXI_GP1 {1} [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_nets sobel_edge_detector_1_edge_out_d0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {leds_2bits ( LEDs ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sobel_edge_detector_1/s_axi_control} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_1/s_axi_control]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sobel_edge_detector_1/s_axi_control_r} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins sobel_edge_detector_1/s_axi_control_r]
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_USE_M_AXI_GP1 {0} \
+  CONFIG.PCW_USE_S_AXI_GP0 {1} \
+] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/sobel_edge_detector_1/m_axi_gmem} Slave {/processing_system7_0/S_AXI_GP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_GP0]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO]
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_intf_nets sobel_edge_detector_1_m_axi_gmem] [get_bd_cells sobel_edge_detector_1]
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  C:/AUT/RCS/HW2/HW/Sobel_Edge_Detector_PL [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detector:1.0 sobel_edge_detector_0
+endgroup
+set_property location {1.5 625 118} [get_bd_cells sobel_edge_detector_0]
+delete_bd_objs [get_bd_cells sobel_edge_detector_0]
+save_bd_design
