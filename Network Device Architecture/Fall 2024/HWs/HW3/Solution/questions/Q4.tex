@@ -1,0 +1,33 @@
+\section{سوال چهارم}
+
+جدول \lr{Classifier} زیر را در نظر بگیرید که در آن هر قانون با مجموعه‌ای از \lr{Fields} همراه است.
+
+\begin{latin}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\textbf{Rule} & \textbf{B1} & \textbf{B2} & \textbf{B3} & \textbf{B4} & \textbf{Action} \\
+			\hline\hline
+			R1 & \texttt{110*} & \texttt{01*} & \texttt{1*} & \texttt{101*} & Act1 \\
+			\hline\hline
+			R2 & \texttt{10*} & \texttt{0*} & \texttt{11*} & \texttt{10*} & Act2 \\
+			\hline
+			R3 & \texttt{1*} & \texttt{11*} & \texttt{10*} & \texttt{1*} & Act3 \\
+			\hline
+			R4 & \texttt{11*} & \texttt{01*} & \texttt{1*} & \texttt{10*} & Act4 \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{latin}
+
+
+\begin{enumerate}
+	\item 
+	روش \lr{Bitmap Intersection} را برای قوانین داده‌شده اجرا کنید تا \lr{Common Matching Fields} را در تمامی قوانین شناسایی کنید.
+	
+	\item 
+	به اختصار چگونگی \lr{Bitmap Intersection} در تطبیق قانون برای طبقه‌بندی بسته، به ویژه در شبکه‌های در مقیاس بزرگ را شرح دهید.
+	
+	\item 
+	مزایای استفاده از \lr{Bitmap} را برای این فرآیند شرح دهید.
+\end{enumerate}

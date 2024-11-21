@@ -1,0 +1,80 @@
+\section{سوال دوم}
+
+جدول \lr{Classifier} زیر را نظر بگیرید.
+
+\begin{latin}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			\textbf{Rule} & \textbf{F1} & \textbf{F2} & \textbf{Action} \\
+			\hline\hline
+			R1 & \texttt{000*} & \texttt{01*} & Act1 \\
+			\hline\hline
+			R2 & \texttt{00*} & \texttt{011*} & Act2 \\
+			\hline
+			R3 & \texttt{0*} & \texttt{01*} & Act3 \\
+			\hline
+			R4 & \texttt{111*} & \texttt{0*} & Act4 \\
+			\hline
+			R5 & \texttt{1*} & \texttt{1*} & Act5 \\
+			\hline
+			R6 & \texttt{11*} & \texttt{10*} & Act6 \\
+			\hline
+			R7 & \texttt{11*} & \texttt{1000*} & Act7 \\
+			\hline
+			R8 & \texttt{01*} & \texttt{0*} & Act8 \\
+			\hline
+			R9 & \texttt{0*} & \texttt{011*} & Act9 \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{latin}
+
+مطلوب است، رسم ساختار جست‌و‌جوی طبقه‌بندی بسته‌ها بر اساس:
+\begin{enumerate}
+	\item 
+	\lr{‫‪Hierarchical Trie‬‬‬‬}
+	\begin{qsolve}
+		\begin{center}
+			\includegraphics*[width=0.8\linewidth]{pics/Q2_a.pdf}
+			\captionof{figure}{\lr{Hierarchical Trie‬‬‬‬}}
+		\end{center}
+	\end{qsolve}
+\end{enumerate}
+\newpage
+
+\begin{enumerate}
+	\item [2. ]
+	\lr{Set-Pruning Trie}
+	\begin{qsolve}
+		\begin{center}
+			\includegraphics*[width=0.8\linewidth]{pics/Q2_b.pdf}
+			\captionof{figure}{\lr{Set-Pruning Trie‬‬‬‬}}
+		\end{center}
+	\end{qsolve}
+	
+	\item [3. ]
+	\lr{Grid of Tries}
+	\begin{qsolve}
+		\begin{center}
+			\includegraphics*[width=0.8\linewidth]{pics/Q2_c.pdf}
+			\captionof{figure}{\lr{Grid of Tries}}
+		\end{center}
+	\end{qsolve}
+\end{enumerate}
+\newpage
+
+
+\begin{enumerate}
+	\item [4. ]
+	\lr{Field-Level Trie (FLT)}
+	
+	\begin{qsolve}
+		\begin{center}
+			\includegraphics*[width=0.8\linewidth]{pics/Q2_d.pdf}
+			\captionof{figure}{\lr{FLT}}
+		\end{center}
+	\end{qsolve}
+\end{enumerate}
+
+
