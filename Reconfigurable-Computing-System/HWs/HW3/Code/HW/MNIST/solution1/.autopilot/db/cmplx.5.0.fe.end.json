@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "convolution",
+        "file": "convolution.cpp",
+        "fileloc": "4",
+        "instructions": "182",
+        "total_instructions": "182",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

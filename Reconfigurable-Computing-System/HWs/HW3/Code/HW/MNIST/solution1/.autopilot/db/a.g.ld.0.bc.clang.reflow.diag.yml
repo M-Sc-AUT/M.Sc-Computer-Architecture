@@ -1,0 +1,515 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 20, Column: 19 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_20_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_20_2
+  - String:          ''' ('
+  - LoopLoc:         'MNIST/src/convolution.cpp:20:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolution
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          kernel
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            output
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            kernel_2_2
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            kernel_2_1
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            kernel_2_0
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            kernel_1_2
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            kernel_1_1
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            kernel_1_0
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            kernel_0_2
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            kernel_0_1
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            kernel_0_0
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            input
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 25, Column: 40 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '15'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'MNIST/src/convolution.cpp:18:19'
+  - String:          ' '
+  - Function:        'convolution(ap_int<8> (*) [5], ap_int<8> (*) [3], ap_int<8> (*) [3])'
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 25, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.23
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 26, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.33
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 27, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.45
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 27, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.144
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 27, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.223
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 28, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.57
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 29, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.69
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 30, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.81
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 30, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.170
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 30, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.249
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 31, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.93
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 32, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.105
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 33, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.117
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 33, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.196
+  - OrigAccess:      load
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 33, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_20_2.load.275
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 18, Column: 19 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        output1seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'MNIST/src/convolution.cpp:18:19'
+  - String:          ' '
+  - Function:        'convolution(ap_int<8> (*) [5], ap_int<8> (*) [3], ap_int<8> (*) [3])'
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 36, Column: 26 }
+  - OrigDirection:   write
+  - OrigID:          VITIS_LOOP_20_2.store.133
+  - OrigAccess:      store
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 36, Column: 26 }
+  - OrigDirection:   write
+  - OrigID:          VITIS_LOOP_20_2.store.212
+  - OrigAccess:      store
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 36, Column: 26 }
+  - OrigDirection:   write
+  - OrigID:          VITIS_LOOP_20_2.store.291
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 25, Column: 40 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 25, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'MNIST/src/convolution.cpp:18:19'
+  - String:          ' '
+  - Function:        'convolution(ap_int<8> (*) [5], ap_int<8> (*) [3], ap_int<8> (*) [3])'
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 25, Column: 40 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 25, Column: 40 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'convolution(ap_int<8> (*) [5], ap_int<8> (*) [3], ap_int<8> (*) [3])'
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 18, Column: 19 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 18, Column: 19 }
+  - OrigDirection:   write
+  - OrigID:          output1seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'MNIST/src/convolution.cpp:18:19'
+  - String:          ' '
+  - Function:        'convolution(ap_int<8> (*) [5], ap_int<8> (*) [3], ap_int<8> (*) [3])'
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 18, Column: 19 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'MNIST/src/convolution.cpp:18:19'
+  - String:          ' '
+  - Function:        'convolution(ap_int<8> (*) [5], ap_int<8> (*) [3], ap_int<8> (*) [3])'
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 18, Column: 19 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          '''('
+  - LoopLoc:         'MNIST/src/convolution.cpp:18:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 25, Column: 40 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '15'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'convolution(ap_int<8> (*) [5], ap_int<8> (*) [3], ap_int<8> (*) [3])'
+    DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: MNIST/src/convolution.cpp, Line: 25, Column: 40 }
+Function:        _Z11convolutionPA5_6ap_intILi8EEPA3_S0_S4_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '15'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

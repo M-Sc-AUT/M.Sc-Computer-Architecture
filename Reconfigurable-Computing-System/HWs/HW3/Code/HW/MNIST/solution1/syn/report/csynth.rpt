@@ -1,0 +1,285 @@
+
+
+================================================================
+== Synthesis Summary Report of 'convolution'
+================================================================
++ General Information: 
+    * Date:           Sun Nov 24 19:51:44 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        MNIST
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+------+---------+---------+----------+---------+------+----------+----------+----------+-------------+-------------+-----+
+    |       Modules      | Issue|      | Latency | Latency | Iteration|         | Trip |          |          |          |             |             |     |
+    |       & Loops      | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|   BRAM   |    DSP   |      FF     |     LUT     | URAM|
+    +--------------------+------+------+---------+---------+----------+---------+------+----------+----------+----------+-------------+-------------+-----+
+    |+ convolution       |     -|  0.00|       75|  750.000|         -|       76|     -|        no|  22 (~0%)|  15 (~0%)|  11717 (~0%)|  11756 (~0%)|    -|
+    | o VITIS_LOOP_18_1  |    II|  7.30|       64|  640.000|        35|       15|     3|       yes|         -|         -|            -|            -|    -|
+    +--------------------+------+------+---------+---------+----------+---------+------+----------+----------+----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-----------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface       | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|                 | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-----------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem0     | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1_0_0 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1_0_1 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1_0_2 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1_1_0 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1_1_1 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1_1_2 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1_2_0 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1_2_1 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1_2_2 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem2     | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
++-----------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++-----------------+------------+---------------+--------+----------+
+| Interface       | Data Width | Address Width | Offset | Register |
++-----------------+------------+---------------+--------+----------+
+| s_axi_control   | 32         | 4             |        |          |
+| s_axi_control_r | 32         | 8             | 16     | 0        |
++-----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++-----------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface       | Register     | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-----------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control   | CTRL         | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control   | GIER         | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control   | IP_IER       | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control   | IP_ISR       | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control_r | input_r_1    | 0x10   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control_r | input_r_2    | 0x14   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control_r | kernel_0_0_1 | 0x1c   | 32    | W      | Data signal of kernel_0_0        |                                                                      |
+| s_axi_control_r | kernel_0_0_2 | 0x20   | 32    | W      | Data signal of kernel_0_0        |                                                                      |
+| s_axi_control_r | kernel_0_1_1 | 0x28   | 32    | W      | Data signal of kernel_0_1        |                                                                      |
+| s_axi_control_r | kernel_0_1_2 | 0x2c   | 32    | W      | Data signal of kernel_0_1        |                                                                      |
+| s_axi_control_r | kernel_0_2_1 | 0x34   | 32    | W      | Data signal of kernel_0_2        |                                                                      |
+| s_axi_control_r | kernel_0_2_2 | 0x38   | 32    | W      | Data signal of kernel_0_2        |                                                                      |
+| s_axi_control_r | kernel_1_0_1 | 0x40   | 32    | W      | Data signal of kernel_1_0        |                                                                      |
+| s_axi_control_r | kernel_1_0_2 | 0x44   | 32    | W      | Data signal of kernel_1_0        |                                                                      |
+| s_axi_control_r | kernel_1_1_1 | 0x4c   | 32    | W      | Data signal of kernel_1_1        |                                                                      |
+| s_axi_control_r | kernel_1_1_2 | 0x50   | 32    | W      | Data signal of kernel_1_1        |                                                                      |
+| s_axi_control_r | kernel_1_2_1 | 0x58   | 32    | W      | Data signal of kernel_1_2        |                                                                      |
+| s_axi_control_r | kernel_1_2_2 | 0x5c   | 32    | W      | Data signal of kernel_1_2        |                                                                      |
+| s_axi_control_r | kernel_2_0_1 | 0x64   | 32    | W      | Data signal of kernel_2_0        |                                                                      |
+| s_axi_control_r | kernel_2_0_2 | 0x68   | 32    | W      | Data signal of kernel_2_0        |                                                                      |
+| s_axi_control_r | kernel_2_1_1 | 0x70   | 32    | W      | Data signal of kernel_2_1        |                                                                      |
+| s_axi_control_r | kernel_2_1_2 | 0x74   | 32    | W      | Data signal of kernel_2_1        |                                                                      |
+| s_axi_control_r | kernel_2_2_1 | 0x7c   | 32    | W      | Data signal of kernel_2_2        |                                                                      |
+| s_axi_control_r | kernel_2_2_2 | 0x80   | 32    | W      | Data signal of kernel_2_2        |                                                                      |
+| s_axi_control_r | output_r_1   | 0x88   | 32    | W      | Data signal of output_r          |                                                                      |
+| s_axi_control_r | output_r_2   | 0x8c   | 32    | W      | Data signal of output_r          |                                                                      |
++-----------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+------------+
+| Argument | Direction | Datatype   |
++----------+-----------+------------+
+| input    | in        | ap_int<8>* |
+| kernel   | in        | ap_int<8>* |
+| output   | out       | ap_int<8>* |
++----------+-----------+------------+
+
+* SW-to-HW Mapping
++----------+-----------------+-----------+----------+
+| Argument | HW Interface    | HW Type   | HW Usage |
++----------+-----------------+-----------+----------+
+| input    | m_axi_gmem0     | interface |          |
+| input    | s_axi_control_r | interface | offset   |
+| kernel   | m_axi_gmem1_0_0 | interface |          |
+| kernel   | s_axi_control_r | interface | offset   |
+| kernel   | m_axi_gmem1_0_1 | interface |          |
+| kernel   | s_axi_control_r | interface | offset   |
+| kernel   | m_axi_gmem1_0_2 | interface |          |
+| kernel   | s_axi_control_r | interface | offset   |
+| kernel   | m_axi_gmem1_1_0 | interface |          |
+| kernel   | s_axi_control_r | interface | offset   |
+| kernel   | m_axi_gmem1_1_1 | interface |          |
+| kernel   | s_axi_control_r | interface | offset   |
+| kernel   | m_axi_gmem1_1_2 | interface |          |
+| kernel   | s_axi_control_r | interface | offset   |
+| kernel   | m_axi_gmem1_2_0 | interface |          |
+| kernel   | s_axi_control_r | interface | offset   |
+| kernel   | m_axi_gmem1_2_1 | interface |          |
+| kernel   | s_axi_control_r | interface | offset   |
+| kernel   | m_axi_gmem1_2_2 | interface |          |
+| kernel   | s_axi_control_r | interface | offset   |
+| output   | m_axi_gmem2     | interface |          |
+| output   | s_axi_control_r | interface | offset   |
++----------+-----------------+-----------+----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+--------+-------+-----------------+---------------------------------+
+| HW Interface | Direction | Length | Width | Loop            | Loop Location                   |
++--------------+-----------+--------+-------+-----------------+---------------------------------+
+| m_axi_gmem0  | read      | 15     | 8     |                 |                                 |
+| m_axi_gmem2  | write     | 9      | 8     | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |
++--------------+-----------+--------+-------+-----------------+---------------------------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+---------------------------------+-----------+--------------+--------+-----------------+---------------------------------+------------+------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location                 | Direction | Burst Status | Length | Loop            | Loop Location                   | Resolution | Problem                                                                                              |
++--------------+----------+---------------------------------+-----------+--------------+--------+-----------------+---------------------------------+------------+------------------------------------------------------------------------------------------------------+
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:25:40 | read      | Widen Fail   |        |                 |                                 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:25:40 | read      | Fail         |        | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:25:40 | read      | Inferred     | 15     | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |            |                                                                                                      |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:26:40 | read      | Widen Fail   |        |                 |                                 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:26:40 | read      | Fail         |        | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:26:40 | read      | Inferred     | 15     | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |            |                                                                                                      |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:27:40 | read      | Widen Fail   |        |                 |                                 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:27:40 | read      | Fail         |        | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:27:40 | read      | Inferred     | 15     | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |            |                                                                                                      |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:28:40 | read      | Widen Fail   |        |                 |                                 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:28:40 | read      | Fail         |        | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:28:40 | read      | Inferred     | 15     | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |            |                                                                                                      |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:29:40 | read      | Widen Fail   |        |                 |                                 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:29:40 | read      | Fail         |        | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:29:40 | read      | Inferred     | 15     | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |            |                                                                                                      |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:30:40 | read      | Widen Fail   |        |                 |                                 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:30:40 | read      | Fail         |        | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:30:40 | read      | Inferred     | 15     | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |            |                                                                                                      |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:31:40 | read      | Widen Fail   |        |                 |                                 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:31:40 | read      | Fail         |        | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:31:40 | read      | Inferred     | 15     | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |            |                                                                                                      |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:32:40 | read      | Widen Fail   |        |                 |                                 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:32:40 | read      | Fail         |        | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:32:40 | read      | Inferred     | 15     | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |            |                                                                                                      |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:33:40 | read      | Widen Fail   |        |                 |                                 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:33:40 | read      | Fail         |        | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem0  | input    | MNIST/src/convolution.cpp:33:40 | read      | Inferred     | 15     | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |            |                                                                                                      |
+| m_axi_gmem2  | output   | MNIST/src/convolution.cpp:36:26 | write     | Widen Fail   |        | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem2  | output   | MNIST/src/convolution.cpp:36:26 | write     | Inferred     | 9      | VITIS_LOOP_18_1 | MNIST/src/convolution.cpp:18:19 |            |                                                                                                      |
++--------------+----------+---------------------------------+-----------+--------------+--------+-----------------+---------------------------------+------------+------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------+-----+--------+-----------------+-----+-----------+---------+
+| Name                             | DSP | Pragma | Variable        | Op  | Impl      | Latency |
++----------------------------------+-----+--------+-----------------+-----+-----------+---------+
+| + convolution                    | 15  |        |                 |     |           |         |
+|   indvars_iv_next_fu_485_p2      |     |        | indvars_iv_next | add | fabric    | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U15 | 1   |        | sum             | mul | dsp_slice | 3       |
+|   mul_8s_8s_8_1_1_U1             |     |        | mul_ln26        | mul | auto      | 0       |
+|   mul_8s_8s_8_1_1_U2             |     |        | mul_ln27        | mul | auto      | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U18 | 1   |        | mul_ln28        | mul | dsp_slice | 3       |
+|   mul_8s_8s_8_1_1_U6             |     |        | mul_ln29        | mul | auto      | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U20 | 1   |        | mul_ln30        | mul | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U25 | 1   |        | mul_ln31        | mul | dsp_slice | 3       |
+|   mul_8s_8s_8_1_1_U10            |     |        | mul_ln32        | mul | auto      | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U24 | 1   |        | mul_ln33        | mul | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U15 | 1   |        | add_ln33        | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U18 | 1   |        | add_ln33_1      | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U20 | 1   |        | add_ln33_3      | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U24 | 1   |        | add_ln33_4      | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U25 | 1   |        | add_ln33_5      | add | dsp_slice | 3       |
+|   add_ln33_6_fu_544_p2           |     |        | add_ln33_6      | add | fabric    | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U16 | 1   |        | sum_2           | mul | dsp_slice | 3       |
+|   mul_8s_8s_8_1_1_U3             |     |        | mul_ln26_1      | mul | auto      | 0       |
+|   mul_8s_8s_8_1_1_U4             |     |        | mul_ln27_1      | mul | auto      | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U19 | 1   |        | mul_ln28_1      | mul | dsp_slice | 3       |
+|   mul_8s_8s_8_1_1_U7             |     |        | mul_ln29_1      | mul | auto      | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U22 | 1   |        | mul_ln30_1      | mul | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U13 | 1   |        | mul_ln31_1      | mul | dsp_slice | 3       |
+|   mul_8s_8s_8_1_1_U11            |     |        | mul_ln32_1      | mul | auto      | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U26 | 1   |        | mul_ln33_1      | mul | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U16 | 1   |        | add_ln33_8      | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U19 | 1   |        | add_ln33_9      | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U22 | 1   |        | add_ln33_11     | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U26 | 1   |        | add_ln33_12     | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U13 | 1   |        | add_ln33_13     | add | dsp_slice | 3       |
+|   add_ln33_14_fu_617_p2          |     |        | add_ln33_14     | add | fabric    | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U17 | 1   |        | sum_4           | mul | dsp_slice | 3       |
+|   mul_8s_8s_8_1_1_U5             |     |        | mul_ln26_2      | mul | auto      | 0       |
+|   mul_8s_8s_8_1_1_U8             |     |        | mul_ln27_2      | mul | auto      | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U21 | 1   |        | mul_ln28_2      | mul | dsp_slice | 3       |
+|   mul_8s_8s_8_1_1_U9             |     |        | mul_ln29_2      | mul | auto      | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U23 | 1   |        | mul_ln30_2      | mul | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U27 | 1   |        | mul_ln31_2      | mul | dsp_slice | 3       |
+|   mul_8s_8s_8_1_1_U12            |     |        | mul_ln32_2      | mul | auto      | 0       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U14 | 1   |        | mul_ln33_2      | mul | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U17 | 1   |        | add_ln33_16     | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U21 | 1   |        | add_ln33_17     | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U23 | 1   |        | add_ln33_19     | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U14 | 1   |        | add_ln33_20     | add | dsp_slice | 3       |
+|   mac_muladd_8s_8s_8ns_8_4_1_U27 | 1   |        | add_ln33_21     | add | dsp_slice | 3       |
+|   add_ln33_22_fu_631_p2          |     |        | add_ln33_22     | add | fabric    | 0       |
++----------------------------------+-----+--------+-----------------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++---------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                     |           |           |      |      |        |          |      |         | Banks            |
++---------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + convolution       |           |           | 22   | 0    |        |          |      |         |                  |
+|   control_s_axi_U   | interface | s_axilite |      |      |        |          |      |         |                  |
+|   control_r_s_axi_U | interface | s_axilite |      |      |        |          |      |         |                  |
+|   gmem0_m_axi_U     | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem1_0_0_m_axi_U | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem1_0_1_m_axi_U | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem1_0_2_m_axi_U | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem1_1_0_m_axi_U | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem1_1_1_m_axi_U | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem1_1_2_m_axi_U | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem1_2_0_m_axi_U | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem1_2_1_m_axi_U | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem1_2_2_m_axi_U | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem2_m_axi_U     | interface | m_axi     | 2    |      |        |          |      |         |                  |
++---------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-------------------------------------------------------+-----------------------------------------------------+
+| Type            | Options                                               | Location                                            |
++-----------------+-------------------------------------------------------+-----------------------------------------------------+
+| interface       | m_axi port=input offset=slave bundle=gmem0 depth=784  | MNIST/src/convolution.cpp:9 in convolution, input   |
+| interface       | m_axi port=kernel offset=slave bundle=gmem1 depth=9   | MNIST/src/convolution.cpp:10 in convolution, kernel |
+| interface       | m_axi port=output offset=slave bundle=gmem2 depth=676 | MNIST/src/convolution.cpp:11 in convolution, output |
+| interface       | s_axilite port=return bundle=control                  | MNIST/src/convolution.cpp:12 in convolution, return |
+| array_partition | variable=kernel complete dim=0                        | MNIST/src/convolution.cpp:15 in convolution, kernel |
+| pipeline        | II=1                                                  | MNIST/src/convolution.cpp:19 in convolution         |
++-----------------+-------------------------------------------------------+-----------------------------------------------------+
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="MNIST" solutionName="solution1" date="2024-11-24T19:51:43.855+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'convolution' (loop 'VITIS_LOOP_18_1'): Unable to enforce a carried dependence constraint (II = 14, distance = 1, offset = 1) between bus read operation ('gmem0_addr_read_14', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25) and bus read operation ('gmem0_addr_read', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="MNIST" solutionName="solution1" date="2024-11-24T19:51:43.662+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'convolution' (loop 'VITIS_LOOP_18_1'): Unable to enforce a carried dependence constraint (II = 13, distance = 1, offset = 1) between bus read operation ('gmem0_addr_read_14', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25) and bus read operation ('gmem0_addr_read', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="MNIST" solutionName="solution1" date="2024-11-24T19:51:43.625+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'convolution' (loop 'VITIS_LOOP_18_1'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between bus read operation ('gmem0_addr_read_14', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25) and bus read operation ('gmem0_addr_read', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="MNIST" solutionName="solution1" date="2024-11-24T19:51:43.616+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'convolution' (loop 'VITIS_LOOP_18_1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus read operation ('gmem0_addr_read_14', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25) and bus read operation ('gmem0_addr_read', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="MNIST" solutionName="solution1" date="2024-11-24T19:51:43.599+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'convolution' (loop 'VITIS_LOOP_18_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus read operation ('gmem0_addr_read_14', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25) and bus read operation ('gmem0_addr_read', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="MNIST" solutionName="solution1" date="2024-11-24T19:51:43.560+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'convolution' (loop 'VITIS_LOOP_18_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus read operation ('gmem0_addr_read_14', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25) and bus read operation ('gmem0_addr_read', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="MNIST" solutionName="solution1" date="2024-11-24T19:51:43.554+0330" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'convolution' (loop 'VITIS_LOOP_18_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read operation ('gmem0_addr_read_14', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25) and bus read operation ('gmem0_addr_read', MNIST/src/convolution.cpp:25) on port 'gmem0' (MNIST/src/convolution.cpp:25).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="MNIST" solutionName="solution1" date="2024-11-24T19:51:43.548+0330" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
