@@ -8,7 +8,7 @@
 \begin{center}
 	\begin{tabular}{||c|c|c|c|c||}
 		\hline 
-		& A & B & C & D\\
+		Process & A & B & C & D\\
 		\hline \hline
 		$P_0$ & 1 & 1 & 0 & 2 \\
 		$P_1$ & 2 & 1 & 1 & 0 \\
@@ -26,7 +26,7 @@
 \begin{center}
 	\begin{tabular}{||c|c|c|c|c||}
 		\hline 
-		& A & B & C & D\\
+		Process & A & B & C & D\\
 		\hline \hline
 		$P_0$ & 4 & 1 & 2 & 3 \\
 		$P_1$ & 6 & 3 & 5 & 7 \\
@@ -43,10 +43,45 @@
 	\item 
 	آیا سیستم در حالت امن است؟
 	
+	\begin{qsolve}
+		ابتدا ماتریس \lr{Need} را محاسبه می‌کنیم. می‌دانیم که:
+		
+		$$ Need = Max - Alloc $$
+		
+		پس ماتریس \lr{Need} به‌صورت زیر محاسبه می‌شود:
+		
+		\begin{center}
+			\begin{tabular}{||c|c|c|c|c||}
+				\hline 
+				Process & A & B & C & D\\
+				\hline \hline
+				$P_0$ & 3 & 0 & 2 & 1 \\
+				$P_1$ & 4 & 2 & 4 & 7 \\
+				$P_2$ & 2 & 4 & 1 & 6 \\
+				$P_3$ & 3 & 2 & 1 & 2 \\
+				$P_4$ & 3 & 1 & 2 & 4 \\
+				$P_5$ & 3 & 3 & 2 & 6 \\
+				\hline
+			\end{tabular}
+		\end{center}
+		
+		
+		با به‌دست آوردن ماتریس \lr{Need} و مقادیر \lr{Available} که در صورت سوال داده‌شده است (۱۲، ۹، ۱۰، ۱۴) می‌توان گفت که سیستم در‌حالت امن است و همه فرآیند ها می‌توانند بدون مشکل اجرا شوند.
+		
+	\end{qsolve}
+	
 	
 	
 	\item  
 	اگر فرآیند $P_1 $ درخواست $ [1, 1, 2, 2] $ از منابع را ارسال کند، آیا این درخواست قابل قبول است؟
 	
-	
+\end{enumerate}
+\newpage
+
+
+\begin{enumerate}
+	\item [ ]
+	\begin{qsolve}
+		بله قابل قبول است. پس از این درخواست مقدار \lr{Available} به‌صورت $(13,9,7,10)$ می‌شود.
+	\end{qsolve}
 \end{enumerate}

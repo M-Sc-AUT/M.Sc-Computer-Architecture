@@ -25,14 +25,57 @@
 	\item 
 	نمودار گانت مربوط به این فرآیند ها را رسم کنید
 	
+	\begin{qsolve}
+		با فرض \lr{Preemptive} بودن، نمودار گانت به‌صورت زیر به‌دست می‌آید:
+		
+		
+		\begin{center}
+			\includegraphics*[width=1\linewidth]{pics/Q2.pdf}
+			\captionof{figure}{گانت چارت}
+		\end{center}
+	\end{qsolve}
+	
 	
 	\item 
 	زمان تکمیل \lr{(‫‪Time‬‬‫‪Completion)‬‬} و زمان بازگشت \lr{(Turnaround Time)} و زمان انتظار \lr{(Waiting Time)} هر فرآیند را محاسبه کنید.
+	
+	\begin{qsolve}
+		می‌دانیم:
+		$$ TAT = CT - AT $$
+		
+		$$ WT = TAT - BT $$
+		
+		بنابراین محاسبه می‌شود:
+		
+		\begin{center}
+			\begin{tabular}{||c|c|c|c||}
+				\hline 
+				پردازه & زمان تکمیل \lr{(CT)} & زمان بازگشت \lr{(TAT)} & زمان انتظار \lr{(WT)} \\
+				\hline \hline
+				$P_1$ & 33 & 33 & 23 \\
+				$P_2$ & 20 & 19 & 14 \\
+				$P_3$ & 32 & 30 & 22 \\
+				$P_4$ & 26 & 23 & 17 \\
+				$P_5$ & 30 & 26 & 22 \\
+				\hline
+			\end{tabular}
+		\end{center}
+	\end{qsolve}
 
 
 	\item 
 	میانگین زمان انتظار \lr{(Average Waiting Time)} و میانگین زمان بازگشت \lr{Turnaround Average Time} را محاسبه کنید.
+\end{enumerate}
 
 
+\begin{enumerate}
+	\item [ ]
+	\begin{qsolve}
+		$$ \text{\lr{Average Waiting Time}} = \frac{(23+14+22+17+22)}{5} = \frac{98}{5}=19.6 
+		$$
+		
+		$$ \text{\lr{Average Turnaround Time}} = \frac{(33+19+30+23+26)}{5} = \frac{131}{5}=26.2
+		$$
+	\end{qsolve}
 \end{enumerate}
 
