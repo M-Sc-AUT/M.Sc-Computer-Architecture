@@ -5,65 +5,23 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=convolution" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MNIST/src/convolution.cpp:9:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input offset=slave bundle=gmem0 depth=784" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MNIST/src/convolution.cpp:10:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=kernel offset=slave bundle=gmem1 depth=9" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MNIST/src/convolution.cpp:11:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output offset=slave bundle=gmem2 depth=676" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MNIST/src/convolution.cpp:12:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MNIST/src/convolution.cpp:15:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=kernel complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="convolution" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MNIST/src/convolution.cpp:19:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MNIST/src/convolution.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolution" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:20:19" msg_body="Loop 'VITIS_LOOP_20_2' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_20_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:16:19" msg_body="Loop 'VITIS_LOOP_16_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_16_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_20_2' (MNIST/src/convolution.cpp:20:19) in function 'convolution' completely with a factor of 3">
-        <args Factor="3" LoopLoc="MNIST/src/convolution.cpp:20:19" LoopName="VITIS_LOOP_20_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:18:34" msg_body="Loop 'VITIS_LOOP_18_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_18_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Applying array_partition to 'kernel': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
-        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="kernel"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_16_3' (MNIST/src/convolution.cpp:16:19) in function 'convolution' completely with a factor of 3">
+        <args Factor="3" LoopLoc="MNIST/src/convolution.cpp:16:19" LoopName="VITIS_LOOP_16_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'output' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="output"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'kernel_2_2' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="kernel_2_2"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'kernel_2_1' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="kernel_2_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'kernel_2_0' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="kernel_2_0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'kernel_1_2' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="kernel_1_2"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'kernel_1_1' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="kernel_1_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'kernel_1_0' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="kernel_1_0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'kernel_0_2' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="kernel_0_2"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'kernel_0_1' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="kernel_0_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'kernel_0_0' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="kernel_0_0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:8:0" msg_body="Aggregating maxi variable 'input' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="input"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="MNIST/src/convolution.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_18_4' (MNIST/src/convolution.cpp:18:34) in function 'convolution' completely with a factor of 3">
+        <args Factor="3" LoopLoc="MNIST/src/convolution.cpp:18:34" LoopName="VITIS_LOOP_18_4"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

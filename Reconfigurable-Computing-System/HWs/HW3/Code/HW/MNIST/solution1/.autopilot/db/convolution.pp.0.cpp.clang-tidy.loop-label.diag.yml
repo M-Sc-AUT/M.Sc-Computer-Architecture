@@ -2,66 +2,39 @@
 MainSourceFile:  /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/.autopilot/db/convolution.pp.0.cpp
 Diagnostics:     
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_1207_1:  '
-    FileOffset:      1207
-    FilePath:        /media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Message:         'Added loop label VITIS_LOOP_9_1:  '
+    FileOffset:      9
+    FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/convolution.cpp
     Replacements:    
       - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/.autopilot/db/convolution.pp.0.cpp
-        Offset:          55699
+        Offset:          10589
         Length:          0
-        ReplacementText: 'VITIS_LOOP_1207_1: '
+        ReplacementText: 'VITIS_LOOP_9_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_676_1:  '
-    FileOffset:      676
-    FilePath:        /media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Message:         'Added loop label VITIS_LOOP_11_2:  '
+    FileOffset:      11
+    FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/convolution.cpp
     Replacements:    
       - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/.autopilot/db/convolution.pp.0.cpp
-        Offset:          283331
+        Offset:          10642
         Length:          0
-        ReplacementText: 'VITIS_LOOP_676_1: '
+        ReplacementText: 'VITIS_LOOP_11_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_690_1:  '
-    FileOffset:      690
-    FilePath:        /media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Message:         'Added loop label VITIS_LOOP_16_3:  '
+    FileOffset:      16
+    FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/convolution.cpp
     Replacements:    
       - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/.autopilot/db/convolution.pp.0.cpp
-        Offset:          283795
+        Offset:          10749
         Length:          0
-        ReplacementText: 'VITIS_LOOP_690_1: '
+        ReplacementText: 'VITIS_LOOP_16_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_704_1:  '
-    FileOffset:      704
-    FilePath:        /media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
-    Replacements:    
-      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/.autopilot/db/convolution.pp.0.cpp
-        Offset:          284260
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_704_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_1247_1:  '
-    FileOffset:      1247
-    FilePath:        /media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
-    Replacements:    
-      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/.autopilot/db/convolution.pp.0.cpp
-        Offset:          567927
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_1247_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_18_1:  '
+    Message:         'Added loop label VITIS_LOOP_18_4:  '
     FileOffset:      18
     FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/convolution.cpp
     Replacements:    
       - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/.autopilot/db/convolution.pp.0.cpp
-        Offset:          941109
+        Offset:          10807
         Length:          0
-        ReplacementText: 'VITIS_LOOP_18_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_20_2:  '
-    FileOffset:      20
-    FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/convolution.cpp
-    Replacements:    
-      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/.autopilot/db/convolution.pp.0.cpp
-        Offset:          941176
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_20_2: '
+        ReplacementText: 'VITIS_LOOP_18_4: '
 ...

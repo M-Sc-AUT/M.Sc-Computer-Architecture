@@ -1,15 +1,17 @@
 #ifndef __CONVOLUTION_H__
 #define __CONVOLUTION_H__
 
-#include <ap_int.h>
-#include <hls_stream.h>
 
-#define INPUT_SIZE 5
-#define KERNEL_SIZE 3
-#define OUTPUT_SIZE (INPUT_SIZE - KERNEL_SIZE + 1)
+#define IMAGE_HEIGHT 28
+#define IMAGE_WIDTH 28
+#define KERNEL_HEIGHT 3
+#define KERNEL_WIDTH 3
+#define OUTPUT_HEIGHT (IMAGE_HEIGHT - KERNEL_HEIGHT + 1)  // 26
+#define OUTPUT_WIDTH (IMAGE_WIDTH - KERNEL_WIDTH + 1)    // 26
 
-void convolution( ap_int<8> input[INPUT_SIZE][INPUT_SIZE],
-                  ap_int<8> kernel[KERNEL_SIZE][KERNEL_SIZE],
-                  ap_int<8> output[OUTPUT_SIZE][OUTPUT_SIZE] );
+
+void convolution( int img_in[IMAGE_HEIGHT][IMAGE_WIDTH],
+                  int kernel[KERNEL_HEIGHT][KERNEL_WIDTH],
+				  int img_out[OUTPUT_HEIGHT][OUTPUT_WIDTH] );
 
 #endif // __CONVOLUTION_H__

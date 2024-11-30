@@ -7,7 +7,7 @@
 // ==============================================================
 #ifndef __convolution_mac_muladd_8s_8s_8ns_8_4_1__HH__
 #define __convolution_mac_muladd_8s_8s_8ns_8_4_1__HH__
-#include "convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0.h"
+#include "convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1.h"
 
 template<
     int ID,
@@ -27,16 +27,16 @@ SC_MODULE(convolution_mac_muladd_8s_8s_8ns_8_4_1) {
 
 
 
-    convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0 convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U;
+    convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1 convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U;
 
-    SC_CTOR(convolution_mac_muladd_8s_8s_8ns_8_4_1):  convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U ("convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U") {
-        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U.clk(clk);
-        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U.rst(reset);
-        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U.ce(ce);
-        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U.in0(din0);
-        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U.in1(din1);
-        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U.in2(din2);
-        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U.dout(dout);
+    SC_CTOR(convolution_mac_muladd_8s_8s_8ns_8_4_1):  convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U ("convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U") {
+        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U.clk(clk);
+        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U.rst(reset);
+        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U.ce(ce);
+        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U.in0(din0);
+        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U.in1(din1);
+        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U.in2(din2);
+        convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U.dout(dout);
 
     }
 

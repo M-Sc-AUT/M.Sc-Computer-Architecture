@@ -9,7 +9,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0 is
+entity convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1 is
 port (
     clk: in  std_logic;
     rst: in  std_logic;
@@ -20,11 +20,11 @@ port (
     dout: out std_logic_vector(8 - 1 downto 0));
 
     attribute use_dsp : string;
-    attribute use_dsp of convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0 : entity is "yes";
+    attribute use_dsp of convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1 : entity is "yes";
 
 end entity;
 
-architecture behav of convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0 is
+architecture behav of convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1 is
     signal a       : signed(27-1 downto 0);
     signal b       : signed(18-1 downto 0);
     signal c       : signed(48-1 downto 0);
@@ -78,7 +78,7 @@ entity convolution_mac_muladd_8s_8s_8ns_8_4_1 is
 end entity;
 
 architecture arch of convolution_mac_muladd_8s_8s_8ns_8_4_1 is
-    component convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0 is
+    component convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1 is
         port (
             clk : IN STD_LOGIC;
             rst : IN STD_LOGIC;
@@ -92,7 +92,7 @@ architecture arch of convolution_mac_muladd_8s_8s_8ns_8_4_1 is
 
 
 begin
-    convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U :  component convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0
+    convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U :  component convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1
     port map (
         clk => clk,
         rst => reset,

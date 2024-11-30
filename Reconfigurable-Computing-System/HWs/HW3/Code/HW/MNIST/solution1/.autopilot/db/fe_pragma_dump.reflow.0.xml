@@ -1,18 +1,4 @@
 <pragmas>
-<pragma file="/media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<8, true>::ssdm_int(signed char)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<16>::ap_int<16, true>(ap_int_base<16, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<8>::ap_int(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>::RType<8, true>::mult operator*<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="/media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<16, true>::ssdm_int(short)" off="0" region="0" recursive="0"/>
-<pragma file="MNIST/src/convolution.cpp" line="19" pragmaType="pipeline" parentfunction="convolution" off="0" ii="1" rewind="0" style=""/>
-<pragma file="MNIST/src/convolution.cpp" line="9" pragmaType="interface" parentfunction="convolution" mode="m_axi" port="input" bundle="gmem0" offset="slave" name="" depth="784" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="MNIST/src/convolution.cpp" line="10" pragmaType="interface" parentfunction="convolution" mode="m_axi" port="kernel" bundle="gmem1" offset="slave" name="" depth="9" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="MNIST/src/convolution.cpp" line="11" pragmaType="interface" parentfunction="convolution" mode="m_axi" port="output" bundle="gmem2" offset="slave" name="" depth="676" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="MNIST/src/convolution.cpp" line="12" pragmaType="interface" parentfunction="convolution" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="MNIST/src/convolution.cpp" line="15" pragmaType="array_partition" parentfunction="convolution" dim="0" factor="0" mode="complete" dynamic="0" variable="kernel"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>& ap_int_base<8, true>::operator+=<16, true>(ap_int_base<16, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="MNIST/src/convolution.cpp" line="15" pragmaType="pipeline" parentfunction="convolution" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="MNIST/src/convolution.cpp" line="20" pragmaType="unroll" parentfunction="convolution" factor="-1" skip_exit_check="0"/>
 </pragmas>

@@ -7,7 +7,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-(* use_dsp = "yes" *) module convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0(
+(* use_dsp = "yes" *) module convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1(
     input clk,
     input rst,
     input ce,
@@ -71,7 +71,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0 convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0_U(
+convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1 convolution_mac_muladd_8s_8s_8ns_8_4_1_DSP48_1_U(
     .clk( clk ),
     .rst( reset ),
     .ce( ce ),

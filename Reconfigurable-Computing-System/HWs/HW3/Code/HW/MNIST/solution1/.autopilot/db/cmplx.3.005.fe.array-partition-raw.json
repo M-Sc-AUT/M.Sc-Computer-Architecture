@@ -1,17 +1,17 @@
 {
   "0": {
-    "basicblocks": 3,
+    "basicblocks": 5,
     "calls": "",
     "file": "convolution.cpp",
     "fileloc": 4,
-    "instructions": 362,
+    "instructions": 78,
     "loads": {
-      "T": 24
+      "T": 18
     },
     "name": "convolution",
     "stores": {
-      "T": 3
+      "T": 1
     },
-    "total_instructions": 362
+    "total_instructions": 78
   }
 }
