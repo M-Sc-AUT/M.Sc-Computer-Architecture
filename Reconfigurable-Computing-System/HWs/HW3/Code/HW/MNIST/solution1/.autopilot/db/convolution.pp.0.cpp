@@ -168,7 +168,7 @@ __attribute__((sdx_kernel("convolution", 0))) void convolution( int img_in[28][2
       int kernel[3][3],
       int img_out[(28 - 3 + 1)][(28 - 3 + 1)] )
 {
-#line 21 "/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/csynth.tcl"
+#line 22 "/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=convolution
 # 7 "MNIST/src/convolution.cpp"
 

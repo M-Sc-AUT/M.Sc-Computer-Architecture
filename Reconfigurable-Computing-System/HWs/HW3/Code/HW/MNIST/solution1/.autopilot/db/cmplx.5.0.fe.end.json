@@ -1,4 +1,16 @@
 {
+    "0": {
+        "name": "convolution",
+        "file": "MNIST\/src\/convolution.cpp",
+        "fileloc": "4",
+        "instructions": "36",
+        "total_instructions": "161",
+        "calls": "1",
+        "basicblocks": "1",
+        "loads": {
+            "T": "9"
+        }
+    },
     "1": {
         "name": "convolution_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_11_2",
         "file": "MNIST\/src\/convolution.cpp",
@@ -17,18 +29,6 @@
         },
         "loops": {
             "L": "1"
-        }
-    },
-    "0": {
-        "name": "convolution",
-        "file": "MNIST\/src\/convolution.cpp",
-        "fileloc": "4",
-        "instructions": "36",
-        "total_instructions": "161",
-        "calls": "1",
-        "basicblocks": "1",
-        "loads": {
-            "T": "9"
         }
     }
 }

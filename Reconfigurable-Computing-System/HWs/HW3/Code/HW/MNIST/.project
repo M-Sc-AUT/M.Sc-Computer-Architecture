@@ -52,16 +52,6 @@
 			<location>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/convolution.h</location>
 		</link>
 		<link>
-			<name>source/random_number_gen.cpp</name>
-			<type>1</type>
-			<location>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/random_number_gen.cpp</location>
-		</link>
-		<link>
-			<name>source/random_number_gen.h</name>
-			<type>1</type>
-			<location>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/random_number_gen.h</location>
-		</link>
-		<link>
 			<name>testbench/tb_convolution.cpp</name>
 			<type>1</type>
 			<location>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/tb_convolution.cpp</location>
@@ -70,16 +60,6 @@
 			<name>testbench/tb_convolution.h</name>
 			<type>1</type>
 			<location>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/tb_convolution.h</location>
-		</link>
-		<link>
-			<name>testbench/tb_random_number_gen.cpp</name>
-			<type>1</type>
-			<location>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/tb_random_number_gen.cpp</location>
-		</link>
-		<link>
-			<name>testbench/tb_random_number_gen.h</name>
-			<type>1</type>
-			<location>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW3/Code/HW/MNIST/src/tb_random_number_gen.h</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

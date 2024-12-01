@@ -19,7 +19,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../src/tb_convolution.cpp ../../../src/tb_random_number_gen.cpp ../../../src/convolution.cpp ../../../src/random_number_gen.cpp
+HLS_SOURCES = ../../../src/tb_convolution.cpp ../../../src/convolution.cpp
 
 override TARGET := csim.exe
 
@@ -80,20 +80,8 @@ $(ObjDir)/tb_convolution.o: ../../../src/tb_convolution.cpp $(ObjDir)/.dir
 
 -include $(ObjDir)/tb_convolution.d
 
-$(ObjDir)/tb_random_number_gen.o: ../../../src/tb_random_number_gen.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../src/tb_random_number_gen.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/tb_random_number_gen.d
-
 $(ObjDir)/convolution.o: ../../../src/convolution.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../src/convolution.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/convolution.d
-
-$(ObjDir)/random_number_gen.o: ../../../src/random_number_gen.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../src/random_number_gen.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/random_number_gen.d

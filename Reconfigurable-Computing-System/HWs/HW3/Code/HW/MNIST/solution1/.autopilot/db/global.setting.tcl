@@ -42,10 +42,10 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xcvu11p:-flga2577:-1-e
-set SourceFiles {sc {} c {../src/convolution.cpp ../src/random_number_gen.cpp}}
-set SourceFlags {sc {} c {{} {}}}
+set SourceFiles {sc {} c ../src/convolution.cpp}
+set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
-set TBFiles {verilog {../src/tb_convolution.cpp ../src/tb_convolution.h ../src/tb_random_number_gen.cpp ../src/tb_random_number_gen.h} bc {../src/tb_convolution.cpp ../src/tb_convolution.h ../src/tb_random_number_gen.cpp ../src/tb_random_number_gen.h} sc {../src/tb_convolution.cpp ../src/tb_convolution.h ../src/tb_random_number_gen.cpp ../src/tb_random_number_gen.h} vhdl {../src/tb_convolution.cpp ../src/tb_convolution.h ../src/tb_random_number_gen.cpp ../src/tb_random_number_gen.h} c {} cas {../src/tb_convolution.cpp ../src/tb_convolution.h ../src/tb_random_number_gen.cpp ../src/tb_random_number_gen.h}}
+set TBFiles {verilog {../src/tb_convolution.cpp ../src/tb_convolution.h} bc {../src/tb_convolution.cpp ../src/tb_convolution.h} sc {../src/tb_convolution.cpp ../src/tb_convolution.h} vhdl {../src/tb_convolution.cpp ../src/tb_convolution.h} c {} cas {../src/tb_convolution.cpp ../src/tb_convolution.h}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -53,7 +53,7 @@ set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
-set TBTVFileNotFound {}
+set TBTVFileNotFound {../../tb_random_number_gen.cpp ../../tb_random_number_gen.h}
 set AppFile ../hls.app
 set ApsFile solution1.aps
 set AvePath ../../.
