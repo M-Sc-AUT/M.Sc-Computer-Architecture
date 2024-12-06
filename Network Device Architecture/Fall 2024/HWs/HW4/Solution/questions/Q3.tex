@@ -1,54 +1,27 @@
 \section{سوال سوم}
 
-جدول \lr{Classifier} زیر را نظر بگیرید.
-
-\begin{latin}
-	\begin{center}
-		\begin{tabular}{|c|c|c|c|c|c|}
-			\hline
-			\textbf{Rule} & \textbf{F1} & \textbf{F2} & \textbf{F3} & \textbf{F4} & \textbf{Action} \\
-			\hline\hline
-			R1 & \texttt{01*} & \texttt{10*} & \texttt{5} & \texttt{(7,12)} & Act0 \\
-			\hline\hline
-			R2 & \texttt{00*} & \texttt{11*} & \texttt{8} & \texttt{(6,9)} & Act1 \\
-			\hline
-			R3 & \texttt{10*} & \texttt{1*} & \texttt{9} & \texttt{(4,6)} & Act2 \\
-			\hline
-			R4 & \texttt{0*} & \texttt{01*} & \texttt{3} & \texttt{(10,14)} & Act1 \\
-			\hline
-			R5 & \texttt{11*} & \texttt{10*} & \texttt{7} & \texttt{(6,8)} & Act0 \\
-			\hline
-			R6 & \texttt{0*} & \texttt{11*} & \texttt{6} & \texttt{(11,13)} & Act3 \\
-			\hline
-			R7 & \texttt{*} & \texttt{00*} & \texttt{7} & \texttt{(8,12)} & Act1 \\
-			\hline
-		\end{tabular}
-	\end{center}
-\end{latin}
-
-
-
+با توجه به مدیریت صف با استفاده از تشخیص زودهنگام تصادفی (\lr{RED - Random Early Detection}):
 
 \begin{enumerate}
 	\item 
-	بر اساس فیلدهای \lr{F1} و \lr{F2} فضای دو بعدی هندسی را رسم کنید و هر قانون (\lr{R1} تا \lr{R7}) را به ناحیه‌های مربوطه بر اساس مقادیر \lr{F1} و \lr{F2} نگاشت کنید و هر ناحیه را در نمودار با برچسب مربوط به قانون مشخص نمایید.
-	\begin{qsolve}
-		\begin{center}
-			\includegraphics*[width=0.7\linewidth]{pics/Q3_a.pdf}
-			\captionof{figure}{\lr{Boundary‬‬‬‬}}
-		\end{center}
-	\end{qsolve}
+	توضیح دهید که چرا \lr{RED} به جلوگیری از شناسایی ترافیک \lr{TCP} از طریق فرستنده‌ها و کاهش هم‌زمان نرخ انتقال آن‌ها کمک می‌کند.
 	
 	
 	\item 
-	با استفاده از الگوریتم \lr{Cross-Producing} ماتریس تصمیم‌گیری را ایجاد کنید.
-	\begin{qsolve}
-		
-	\end{qsolve}
+	تأثیر \lr{RED} بر روی توان شبکه (\lr{Throughput}) را بررسی کنید.
+	
 	
 	\item 
-	توضیح دهید که ستون‌های \lr{F3} و \lr{F4} چگونه بر روی \lr{Actions} در هر ناحیه تأثیر می‌گذارند.
-	\begin{qsolve}
-		
-	\end{qsolve}
+	پیچیدگی پیاده‌سازی الگوریتم \lr{RED} را بررسی کنید.
+	
+	
+	\item 
+	توضیح دهید که اگر به جای استفاده از طول متوسط صف (\lr{average queue length}) از طول لحظه‌ای صف (\lr{instantaneous queue length}) استفاده شود، چه پیامد‌هایی خواهد داشت.
+	
+	
+	\item 
+	راه‌هایی برای پیدا کردن مقادیر معقول برای پارامترهای \lr{RED} (یعنی $Min_{th}$ و $Max_{th}$ و احتمال افت بسته زمانی که طول متوسط صف به $Max_{th}$​ می‌رسد) را بررسی کنید.
 \end{enumerate}
+
+
+
