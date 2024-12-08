@@ -3,6 +3,9 @@ import tracemalloc
 from graphviz import Digraph
 from collections import OrderedDict
 import os
+import random
+import tracemalloc
+import matplotlib.pyplot as plt
 
 
 
@@ -11,11 +14,6 @@ class Node:
         self.children = {}
         self.next_hop = next_hop
         self.length = length
-
-
-
-
-
 
 def read_input(file_name):
     inputs = []
@@ -36,10 +34,7 @@ def read_input(file_name):
 
 
 
-
-
-
-# ##This function will sort inputs for more efficent creation of trie
+## This function will sort inputs for more efficent creation of trie
 def pre_process(inputs):
     # ipv4 is 32 bit. hence length is between 0 to 32
     length_dict = {length: [] for length in range(0, 33)}
@@ -53,20 +48,9 @@ def pre_process(inputs):
     return length_dict
 
 
-
-
-
-
 # Convert integer to a 32-bit binary string
 def int_to_binary_str(prefix, max_length=32):
-
     return bin(prefix)[2:].zfill(max_length)
-
-
-
-
-
-
 
 
 def insert(root, prefix, length, next_hop, stride, base):
@@ -112,11 +96,6 @@ def insert(root, prefix, length, next_hop, stride, base):
                 current_node.length = length
             
 
-
-
-
-
-
 def visualize_trie(node, graph=None, parent_name=None, edge_label=''):
     if graph is None:
         graph = Digraph(comment='Trie')
@@ -147,10 +126,6 @@ def visualize_trie(node, graph=None, parent_name=None, edge_label=''):
         visualize_trie(child_node, graph, node_name, bit_pattern)
 
     return graph 
-
-
-
-
 
 
 def print_trie(node, file, bit_pattern='', indent=0):
@@ -190,7 +165,87 @@ def lookup(root, ip_address, stride, base):
 
     return best_match
 
+def generate_prefix_list(stride_lengths, filename="prefix-list.txt"):
+    with open(filename, "w") as file:
+        for stride in stride_lengths:
+            for prefix in range(0, 2**stride):
+                prefix_hex = hex(prefix)[2:].zfill(8)  # Convert to hexadecimal
+                file.write(f"{prefix_hex} {stride} {random.randint(1, 100)}\n")  # Random next hop
+    print(f"Prefix list saved to {filename}")
 
+# Function to generate random destination addresses
+def generate_random_destinations(count, filename="result_file/destination_list.txt"):
+    with open(filename, "w") as file:
+        for _ in range(count):
+            random_address = hex(random.randint(0, 2**32 - 1))[2:].zfill(8)
+            file.write(f"{random_address}\n")
+    print(f"Destination addresses saved to {filename}")
+
+
+
+
+def evaluate_performance(
+    root, stride_lengths, dest_file="result_file/destination_list.txt", output_file="result_file/performance_comparison.png"
+):
+    with open(dest_file, "r") as file:
+        destinations = [line.strip() for line in file]
+
+    current_memory_usage = []
+    peak_memory_usage = []
+    lookup_times = []
+
+    for stride in stride_lengths:
+        print(f"\nEvaluating for stride length: {stride}")
+        tracemalloc.start()
+        start_time = time.time()
+
+        # Perform lookups
+        lookup_start_time = time.perf_counter_ns()
+        for dest in destinations:
+            lookup(root, dest, stride, base=16)
+        lookup_end_time = time.perf_counter_ns()
+
+        end_time = time.time()
+        current, peak = tracemalloc.get_traced_memory()
+        tracemalloc.stop()
+
+        # Calculate memory and lookup time
+        current_memory_usage.append(current / 1024)  # Convert to KB
+        peak_memory_usage.append(peak / 1024)  # Convert to KB
+        lookup_time_ns = lookup_end_time - lookup_start_time
+        lookup_times.append(lookup_time_ns / 1e6)  # Convert nanoseconds to milliseconds
+
+        print(f"Time taken for lookups: {end_time - start_time:.2f} s")
+        print(f"Memory usage: Current={current / 1024:.2f} KB, Peak={peak / 1024:.2f} KB")
+        print(f"Lookup time: {lookup_time_ns / 1e6:.2f} ms")
+
+    # Plot results dynamically
+    fig, axs = plt.subplots(2, 1, figsize=(10, 10))
+
+    # Plot memory usage
+    axs[0].plot(stride_lengths, current_memory_usage, marker="o", label="Current Memory Usage (KB)")
+    axs[0].plot(stride_lengths, peak_memory_usage, marker="o", label="Peak Memory Usage (KB)")
+    axs[0].set_title("Memory Usage vs Stride Length")
+    axs[0].set_xlabel("Stride Length")
+    axs[0].set_ylabel("Memory Usage (KB)")
+    axs[0].legend()
+    axs[0].grid(True)
+
+    # Plot lookup times
+    axs[1].plot(stride_lengths, lookup_times, marker="o", color="green", label="Lookup Time (ms)")
+    axs[1].set_title("Lookup Time vs Stride Length")
+    axs[1].set_xlabel("Stride Length")
+    axs[1].set_ylabel("Lookup Time (ms)")
+    axs[1].legend()
+    axs[1].grid(True)
+
+    # Adjust layout and save the plot
+    plt.tight_layout()
+    plt.savefig(output_file)
+    print(f"Subplots saved as {output_file}")
+
+    # Show the plot
+    plt.show()
 
 
 
@@ -205,19 +260,13 @@ def main():
 
     while True:
 
-
         # command = input("Enter command (Read File, Insert, Print, visualize, Lookup, Set Configuration, Finish): ").strip().lower()
-        print("\n\n1) Set Configuration\n2) Read File\n3) Insert\n4) Lookup\n5) Print\n6) Visualize\n7) EXIT ")
+        print("\n\n1) Set Configuration\n2) Read File\n3) Insert\n4) Lookup\n5) Print\n6) Visualize\n7) Memory Usage\n8) EXIT ")
         command = int(input("Please Enter Your Command: "))
 
 
-        if(command == 7): # Exit
+        if(command == 8): # Exit
             break
-
-        
-
-
-
 
         elif(command == 1): # set configuration
             try:
@@ -244,11 +293,6 @@ def main():
                     print("Invalid base. Please enter 'binary', 'decimal', or 'hexadecimal'.")
             except ValueError:
                 print("Invalid input. Please enter an integer for stride.")
-
-
-
-
-
 
 
         elif(command == 2): # Read File
@@ -335,7 +379,7 @@ def main():
                 lookup_time = end_time - start_time
 
                 print(f"Next hop for {ip_input}: {next_hop}")
-                print(f"Lookup time: {lookup_time} nanoseconds")
+                print(f"Lookup time: {lookup_time} ns")
             except ValueError:
                 print("Invalid IP address format. Please enter a valid IP address.")
 
@@ -350,3 +394,26 @@ def main():
         elif(command == 6): # Visualize
             g = visualize_trie(root)
             g.render(pwd + '/result_file/Visualization/trie_visualization', view=True, format='png')  # Saves and opens the visualization
+
+
+        elif(command == 7):
+            stride_lengths = [1, 2, 4, 8]  # Stride lengths to evaluate
+            generate_prefix_list(stride_lengths)
+            generate_random_destinations(100000)
+
+            # Load the generated prefix list into the trie
+            root = Node()
+            with open("input_files/prefix-list.txt", "r") as file:
+                inputs = read_input("input_files/prefix-list.txt")
+                organized_inputs = pre_process(inputs)
+                for length in range(0, 33):
+                    for prefix, length, next_hop in organized_inputs.get(length, []):
+                        if int(length) == 0:
+                            root.next_hop = next_hop
+                        else:
+                            insert(root, prefix, length, next_hop, stride=8, base=16)
+
+            # Evaluate performance
+            # evaluate_performance(root, [1, 2, 4, 8], dest_file="result_file/destination_list.txt", output_file="result_file/stride_memory_usage.png")
+            evaluate_performance(
+            root, [1, 2, 4, 8], dest_file="result_file/destination_list.txt", output_file="result_file/performance_comparison.png")
