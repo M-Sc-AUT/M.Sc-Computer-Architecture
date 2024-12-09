@@ -7,15 +7,93 @@
 	اگر صف به حداکثر ظرفیت خود برسد تعداد بسته‌های هر دسته که در صف باقی می‌مانند را محاسبه کنید. همچنین فرض کنید ورود بسته‌ها به مدت ۵ ثانیه ادامه داشته باشد. نشان دهید که در این سناریو استفاده از \lr{FIFO} ممکن است باعث افزایش زمان	 انتظار برای بسته‌های اولویت بالا شود.
 	
 	\begin{qsolve}
-		
+		\begin{itemize}
+			\item \textbf{ورود بسته‌ها به شبکه:}
+			\begin{itemize}
+				\item نرخ ورود بسته‌های \lr{High Priority}: ۶ بسته در ثانیه
+				\item نرخ ورود بسته‌های \lr{Low Priority}: ۴ بسته در ثانیه
+				\item کل نرخ ورود: \( 6 + 4 = 10 \) بسته در ثانیه
+			\end{itemize}
+			با توجه به نرخ ورود برابر با ظرفیت صف، صف به حداکثر ظرفیت خود می‌رسد.
+			
+			\item \textbf{وضعیت صف در پایان ۵ ثانیه:}
+			\begin{itemize}
+				\item تعداد بسته‌های \lr{High Priority}: \( 6 \times 5 = 30 \) بسته
+				\item تعداد بسته‌های \lr{Low Priority}: \( 4 \times 5 = 20 \) بسته
+				\item مجموع: \( 30 + 20 = 50 \) بسته
+			\end{itemize}
+			با توجه به ظرفیت صف که برابر ۱۰ بسته است، بسته‌های زیادی کنار گذاشته می‌شوند.
+			
+			\item \textbf{اثر روش \lr{FIFO}:}
+			\begin{itemize}
+				\item بسته‌های \lr{High Priority} که پس از پر شدن صف می‌رسند، حذف می‌شوند.
+				\item بسته‌های \lr{Low Priority} که زودتر وارد شده‌اند، ممکن است پردازش شوند.
+				\item این امر باعث افزایش زمان انتظار و احتمال حذف بسته‌های \lr{High Priority} می‌شود.
+			\end{itemize}
+		\end{itemize}
 	\end{qsolve}
 	
 	
 	\item 
-	روش \lr{HOL Priority Queueing} را به عنوان جایگزین پیشنهاد دهید و تحلیل کنید که چگونه استفاده از این روش می‌تواند زمان انتظار برای بسته‌های اولویت بالا را کاهش دهد و تأثیر آن بر بسته‌های اولویت پایین را ارزیابی کنید.
+	روش \lr{HOL Priority Queueing} را به عنوان جایگزین پیشنهاد دهید و تحلیل کنید که چگونه استفاده از این روش می‌تواند زمان انتظار برای بسته‌های اولویت بالا را کاهش دهد و تأثیر آن بر بسته‌های اولویت پایین را ارزیابی کنید.	
+\end{enumerate}
+\newpage
+
+
+\begin{enumerate}
+	\item [ ]
+	\begin{qsolve}
+		در روش \lr{HOL Priority Queueing}:
+		
+		\begin{itemize}
+			\item بسته‌های \lr{High Priority} همیشه اولویت پردازش دارند.
+			\item بسته‌های \lr{Low Priority} تنها زمانی پردازش می‌شوند که صف \lr{High Priority} خالی باشد.
+		\end{itemize}
+		
+		\textbf{مزایای بسته‌های \lr{High Priority}:}
+		\begin{itemize}
+			\item کاهش زمان انتظار: بسته‌های \lr{High Priority} به محض ورود پردازش می‌شوند.
+			\item کاهش احتمال حذف: این بسته‌ها کمتر احتمال دارد که به دلیل پر شدن صف حذف شوند.
+		\end{itemize}
+		
+		\textbf{تأثیر بر بسته‌های \lr{Low Priority}:}
+		\begin{itemize}
+			\item افزایش زمان انتظار: بسته‌های \lr{Low Priority} تنها زمانی پردازش می‌شوند که هیچ بسته \lr{High Priority} در صف نباشد.
+			\item احتمال حذف: به دلیل حجم بالای ترافیک \lr{High Priority}، احتمال حذف بسته‌های \lr{Low Priority} افزایش می‌یابد.
+		\end{itemize}
+		
+		
+		می‌توان جدولی به‌صورت زیر از مقایسه این دو روش ارائه نمود:
+		
+		
+	\end{qsolve}
+	
+	\begin{table}[h!]
+		\centering
+		\resizebox{\textwidth}{!}{%
+			\begin{tabular}{|l|l|l|}
+				\hline
+				\textbf{\textbf{ویژگی}} & \lr{\textbf{FIFO}} & \lr{\textbf{HOL Priority Queueing}} \\
+				\hline
+				\textbf{زمان انتظار بسته‌های \lr{High Priority}} & ممکن است افزایش یابد & به حداقل می‌رسد \\
+				\hline
+			\textbf{	زمان انتظار بسته‌های \lr{Low Priority}} & معمولاً کمتر است & افزایش می‌یابد \\
+				\hline
+				\textbf{احتمال حذف بسته‌ها} & هر دو نوع بسته ممکن است حذف شوند & بیشتر بسته‌های \lr{Low Priority} حذف می‌شوند \\
+				\hline
+				\textbf{پیچیدگی اجرایی} & ساده‌تر & پیچیده‌تر به دلیل مدیریت اولویت \\
+				\hline
+			\end{tabular}%
+		}
+	\end{table}
 	
 	\begin{qsolve}
+		بنابر این:
 		
+		\begin{itemize}
+			\item اگر هدف کاهش تأخیر برای بسته‌های \lr{High Priority} باشد، روش \lr{HOL Priority Queueing} پیشنهاد می‌شود.
+			\item اگر هدف پردازش عادلانه باشد، روش \lr{FIFO} مناسب‌تر است.
+		\end{itemize}
 	\end{qsolve}
 	
 	
