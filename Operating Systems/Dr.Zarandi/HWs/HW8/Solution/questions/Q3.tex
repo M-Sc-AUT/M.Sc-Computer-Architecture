@@ -30,13 +30,13 @@
 	
 	
 	
-	\item اگر آدرس منطقی \texttt{0X45F3A0} تولید شود شماره صفحه (\lr{Page Number}) و \lr{offset} داخل صفحه (\lr{Page Offset}) را محاسبه کنید.
+	\item اگر آدرس منطقی \texttt{0X45F3A} تولید شود شماره صفحه (\lr{Page Number}) و \lr{offset} داخل صفحه (\lr{Page Offset}) را محاسبه کنید.
 	\begin{qsolve}
 		
-		آدرس منطقی \(\texttt{0X45F3A0}\) به صورت عددی در مبنای ۱۰ برابر است با:
+		آدرس منطقی \(\texttt{0X45F3A}\) به صورت عددی در مبنای ۱۰ برابر است با:
 		
 		\[
-		\texttt{0X45F3A0} = 4,584,352
+		\texttt{0X45F3A} = 286522
 		\]
 		
 		برای محاسبه شماره صفحه (\(\text{\lr{Page Number}}\)) و \(\text{\lr{Page Offset}}\):
@@ -44,24 +44,24 @@
 			\item اندازه یک صفحه \( 8,192 \; \text{بایت} \) است.
 			\item شماره صفحه برابر با تقسیم آدرس منطقی بر سایز صفحه (بدون باقی‌مانده) است:
 			\[
-			\text{\lr{Page Number}} = \lfloor \frac{\text{آدرس منطقی}}{\text{سایز صفحه}} \rfloor = \lfloor \frac{4,584,352}{8,192} \rfloor = 560
+			\text{\lr{Page Number}} = \lfloor \frac{\text{آدرس منطقی}}{\text{سایز صفحه}} \rfloor = \lfloor \frac{286522}{8192} \rfloor = 35
 			\]
 			\item \(\text{\lr{Page Offset}}\) برابر با باقی‌مانده تقسیم آدرس منطقی بر سایز صفحه است:
 			\[
-			\text{\lr{Page Offset}} = \text{آدرس منطقی} \mod \text{سایز صفحه} = 4,584,352 \mod 8,192 = 5024
+			\text{\lr{Page Offset}} = \text{آدرس منطقی} \mod \text{سایز صفحه} = 286522 \mod 8192 = 7994
 			\]
 		\end{itemize}
 		
 		بنابراین:
 		\[
-		\text{\lr{Page Number}} = \mathbf{560}, \quad \text{\lr{Page Offset}} = \mathbf{5024}
+		\text{\lr{Page Number}} = \mathbf{35}, \quad \text{\lr{Page Offset}} = \mathbf{7994}
 		\]
 	\end{qsolve}
 	
 	
 	
 	
-	\item اگر جدول صفحات به صورت زیر باشد، آدرس فیزیکی متناظر با آدرس منطقی \texttt{0X45F3A0} را محاسبه کنید:
+	\item اگر جدول صفحات به صورت زیر باشد، آدرس فیزیکی متناظر با آدرس منطقی \texttt{0X45F3A} را محاسبه کنید:
 
 
 
@@ -76,7 +76,7 @@
 
 \begin{qsolve}
 	
-طبق جدول، صفحه منطقی 560 را پیدا می‌کنیم. از آنجا که در جدول صفحات داده شده \lr{Page 560} مشخص نشده است، نتیجه می‌گیریم که این آدرس منطقی به حافظه فیزیکی نگاشت نشده و دسترسی به آن باعث \lr{Page Fault} می‌شود.
+طبق جدول، صفحه منطقی ۳۵ را پیدا می‌کنیم. از آنجا که در جدول صفحات داده شده \lr{Page 35} مشخص نشده است، نتیجه می‌گیریم که این آدرس منطقی به حافظه فیزیکی نگاشت نشده و دسترسی به آن باعث \lr{Page Fault} می‌شود.
 	
 \end{qsolve}
 
