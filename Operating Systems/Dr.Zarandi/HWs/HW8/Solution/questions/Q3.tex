@@ -13,11 +13,50 @@
 
 \begin{enumerate}
 	\item تعداد صفحات منطقی موجود در فضای آدرس منطقی چقدر است؟
+	\begin{qsolve}
+		
+		آدرس منطقی ۲۰ بیت است، پس فضای آدرس منطقی کل به صورت زیر محاسبه می‌شود:
+		
+		\[
+		2^{20} = 1,048,576 \; \text{MByte} 
+		\]
+		
+		سایز صفحه $8$ کیلوبایت است. تعداد صفحات منطقی از تقسیم فضای آدرس منطقی بر سایز صفحه به دست می‌آید:
+		
+		\[
+		\text{تعداد صفحات منطقی} = \frac{\text{فضای آدرس منطقی}}{\text{سایز صفحه}} = \frac{1,048,576}{8,192} = 128
+		\]
+	\end{qsolve}
 	
 	
 	
-	
-	\item[ب)] اگر آدرس منطقی \texttt{0X45F3A0} تولید شود شماره صفحه (\lr{Page Number}) و \lr{offset} داخل صفحه (\lr{Page Offset}) را محاسبه کنید.
+	\item اگر آدرس منطقی \texttt{0X45F3A0} تولید شود شماره صفحه (\lr{Page Number}) و \lr{offset} داخل صفحه (\lr{Page Offset}) را محاسبه کنید.
+	\begin{qsolve}
+		
+		آدرس منطقی \(\texttt{0X45F3A0}\) به صورت عددی در مبنای ۱۰ برابر است با:
+		
+		\[
+		\texttt{0X45F3A0} = 4,584,352
+		\]
+		
+		برای محاسبه شماره صفحه (\(\text{\lr{Page Number}}\)) و \(\text{\lr{Page Offset}}\):
+		\begin{itemize}
+			\item اندازه یک صفحه \( 8,192 \; \text{بایت} \) است.
+			\item شماره صفحه برابر با تقسیم آدرس منطقی بر سایز صفحه (بدون باقی‌مانده) است:
+			\[
+			\text{\lr{Page Number}} = \lfloor \frac{\text{آدرس منطقی}}{\text{سایز صفحه}} \rfloor = \lfloor \frac{4,584,352}{8,192} \rfloor = 560
+			\]
+			\item \(\text{\lr{Page Offset}}\) برابر با باقی‌مانده تقسیم آدرس منطقی بر سایز صفحه است:
+			\[
+			\text{\lr{Page Offset}} = \text{آدرس منطقی} \mod \text{سایز صفحه} = 4,584,352 \mod 8,192 = 5024
+			\]
+		\end{itemize}
+		
+		بنابراین:
+		\[
+		\text{\lr{Page Number}} = \mathbf{560}, \quad \text{\lr{Page Offset}} = \mathbf{5024}
+		\]
+	\end{qsolve}
 	
 	
 	
@@ -34,5 +73,11 @@
 		\item \lr{Page 8 $\rightarrow$ Frame 6}
 	\end{itemize}
 \end{latin}
+
+\begin{qsolve}
+	
+طبق جدول، صفحه منطقی 560 را پیدا می‌کنیم. از آنجا که در جدول صفحات داده شده \lr{Page 560} مشخص نشده است، نتیجه می‌گیریم که این آدرس منطقی به حافظه فیزیکی نگاشت نشده و دسترسی به آن باعث \lr{Page Fault} می‌شود.
+	
+\end{qsolve}
 
 \end{enumerate}
