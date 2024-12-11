@@ -16,5 +16,57 @@
 	\item آدرس ۹۵۰۰
 	\item آدرس ۱۴۰۰۰
 	\item آدرس ۱۱۰۰۰
-	\item آدرس ۱۲۵۰۰
+		\item آدرس ۱۲۵۰۰
 \end{enumerate}
+
+
+\begin{qsolve}
+	
+	محدوده آدرس‌های قانونی هر فرآیند به صورت زیر است:
+	
+	\[
+	\begin{aligned}
+		\text{فرآیند ۱}: & \quad [5000, 5000 + 3000 - 1] = [5000, 7999] \\
+		\text{فرآیند ۲}: & \quad [9000, 9000 + 2000 - 1] = [9000, 10999] \\
+		\text{فرآیند ۳}: & \quad [12000, 12000 + 5000 - 1] = [12000, 16999] \\
+	\end{aligned}
+	\]
+	
+	حال آدرس‌های داده شده را بررسی می‌کنیم:
+	
+	\begin{enumerate}
+		\item \textbf{آدرس ۶۵۰۰}:
+		\begin{itemize}
+			\item در بازه [7999, 5000] قرار دارد که مربوط به \textbf{فرآیند ۱} است.
+			\item \textbf{نتیجه}: قانونی و متعلق به فرآیند ۱.
+		\end{itemize}
+		
+		\item \textbf{آدرس ۹۵۰۰}:
+		\begin{itemize}
+			\item در بازه [10999, 9000] قرار دارد که مربوط به \textbf{فرآیند ۲} است.
+			\item \textbf{نتیجه}: قانونی و متعلق به فرآیند ۲.
+		\end{itemize}
+				
+		\item \textbf{آدرس ۱۴۰۰۰}:
+		\begin{itemize}
+			\item در بازه [16999, 12000] قرار دارد که مربوط به \textbf{فرآیند ۳} است.
+			\item \textbf{نتیجه}: قانونی و متعلق به فرآیند ۳.
+		\end{itemize}
+	\end{enumerate}
+\end{qsolve}
+
+\begin{qsolve}
+	\begin{enumerate}
+		\item [4.] \textbf{آدرس ۱۱۰۰۰}:
+		\begin{itemize}
+			\item خارج از تمامی بازه‌های مشخص شده است.
+			\item \textbf{نتیجه}: غیرقانونی، زیرا به هیچ فرآیندی تعلق ندارد.
+		\end{itemize}
+		
+		\item \textbf{آدرس ۱۲۵۰۰}:
+		\begin{itemize}
+			\item [5.] در بازه [16999, 12000] قرار دارد که مربوط به \textbf{فرآیند ۳} است.
+			\item \textbf{نتیجه}: قانونی و متعلق به فرآیند ۳.
+		\end{itemize}
+	\end{enumerate}
+\end{qsolve}
