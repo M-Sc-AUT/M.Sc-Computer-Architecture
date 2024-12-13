@@ -7,20 +7,100 @@
 \begin{enumerate}
 	\item 
 	نمودار پیکربندی را ترسیم کنید.
+	\begin{qsolve}
+		نمودار پیکربندی به صورت زیر است:
+	\end{qsolve}
+	\begin{center}
+		\begin{tikzpicture}[node distance=1.5cm]
+			% Stage 1 crossbars
+			\node (stage1-1) [crossbar] {\lr{Crossbar 1}};
+			\node (stage1-2) [crossbar, below of=stage1-1] {\lr{Crossbar 2}};
+			\node (stage1-3) [crossbar, below of=stage1-2] {...};
+			\node (stage1-10) [crossbar, below of=stage1-3, yshift=-1cm] {\lr{Crossbar 10}};
+			
+			% Stage 2 crossbars
+			\node (stage2-1) [crossbar, right of=stage1-1, xshift=5cm] {\lr{Crossbar 1}};
+			\node (stage2-2) [crossbar, below of=stage2-1] {\lr{Crossbar 2}};
+			\node (stage2-3) [crossbar, below of=stage2-2] {...};
+			\node (stage2-4) [crossbar, below of=stage2-3, yshift=-1cm] {\lr{Crossbar 10}};
+			
+			% Stage 3 crossbars
+			\node (stage3-1) [crossbar, right of=stage2-1, xshift=5cm] {\lr{Crossbar 1}};
+			\node (stage3-2) [crossbar, below of=stage3-1] {\lr{Crossbar 2}};
+			\node (stage3-3) [crossbar, below of=stage3-2] {...};
+			\node (stage3-10) [crossbar, below of=stage3-3, yshift=-1cm] {\lr{Crossbar 10}};
+			
+			% Arrows Stage 1 -> Stage 2
+			\draw [arrow] (stage1-1.east) -- (stage2-1.west);
+			\draw [arrow] (stage1-2.east) -- (stage2-2.west);
+			\draw [arrow] (stage1-10.east) -- (stage2-4.west);
+			
+			% Arrows Stage 2 -> Stage 3
+			\draw [arrow] (stage2-1.east) -- (stage3-1.west);
+			\draw [arrow] (stage2-2.east) -- (stage3-2.west);
+			\draw [arrow] (stage2-4.east) -- (stage3-10.west);
+		\end{tikzpicture}
+	\end{center}
+	
+	
 	
 	
 	\item 
 	تعداد کل \lr{crosspoints} را محاسبه کنید.
-	
+	\begin{qsolve}
+		\[
+		\text{\lr{Crosspoints in Stage 1}} = 10 \times (10 \times 4) = 400
+		\]
+		\[
+		\text{\lr{Crosspoints in Stage 2}} = 4 \times (10 \times 10) = 400
+		\]
+		\[
+		\text{\lr{Crosspoints in Stage 3}} = 10 \times (4 \times 10) = 400
+		\]
+		تعداد کل \lr{crosspoints} برابر است با:
+		\[
+		\text{\lr{Total Crosspoints}} = 400 + 400 + 400 = 1200
+		\]
+		
+	\end{qsolve}
 	
 	\item 
 	تعداد اتصالات همزمان ممکن را بیابید.
 	
+	\begin{qsolve}
+		
+		تعداد اتصالات همزمان ممکن توسط محدودکننده‌ترین مرحله مشخص می‌شود:
+		$$\text{\lr{Maximum Simultaneous Connections}} =$$\\
+		$\text{\lr{Number of Crossbars in Stage 2}} \times \text{\lr{Columns in Each Crossbar in Stage 2}}$
+
+		\[
+		\text{\lr{Maximum Simultaneous Connections}} = 4 \times 10 = 40
+		\]
+	\end{qsolve}
+	
 	
 	\item 
 	تعداد اتصالات همزمان ممکن را در صورتی که از یک \lr{crossbar} واحد $100 \times 100 $ استفاده کنیم، بیابید.
+	\begin{qsolve}
+		
+		تعداد اتصالات همزمان ممکن در یک \lr{crossbar} واحد برابر با تعداد ورودی‌ها (یا خروجی‌ها) است:
+		\[
+		\text{\lr{Maximum Simultaneous Connections in Single Crossbar}} = \min(100, 100) = 100
+		\]
+	\end{qsolve}
 	
 	
 	\item 
 	ضریب \lr{blocking}، یعنی نسبت تعداد اتصالات در قسمت (۳) به قسمت (۴) را بیابید.
+	
+	\begin{qsolve}
+		    ضریب \lr{blocking} به صورت نسبت تعداد اتصالات ممکن در سوئیچ سه‌مرحله‌ای به تعداد اتصالات ممکن در یک \lr{crossbar} واحد محاسبه می‌شود:
+		\[
+		\text{\lr{Blocking Ratio}} = \frac{\text{\lr{Simultaneous Connections in Three-Stage Switch}}}{\text{\lr{Simultaneous Connections in Single Crossbar}}}
+		\]
+		\[
+		\text{\lr{Blocking Ratio}} = \frac{40}{100} = 0.4
+		\]
+		
+	\end{qsolve}
 \end{enumerate}
