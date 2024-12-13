@@ -6,6 +6,57 @@
 	\item 
 	سرعت خط مورد نیاز در هر صفحه را محاسبه کنید.
 	
+	\begin{qsolve}
+		
+		سرعت خط مورد نیاز در هر صفحه به صورت زیر محاسبه می‌شود:
+		\[
+		\text{\lr{Speed per plane}} = \frac{\text{\lr{Input Line Rate}}}{k}
+		\]
+		با توجه به اینکه:
+		\[
+		\text{\lr{Input Line Rate}} = 100 \, \text{\lr{Gbps}}, \quad k = 3
+		\]
+		داریم:
+		\[
+		\text{\lr{Speed per plane}} = \frac{100}{3} \, \text{\lr{Gbps}} = 33.33 \, \text{\lr{Gbps}}
+		\]
+		
+		بنابراین، سرعت خط مورد نیاز در هر صفحه برابر است با:
+		\[
+		\boxed{33.33 \, \text{\lr{Gbps}}}
+		\]
+	\end{qsolve}
+	
 	\item 
 	اگر بسته‌ها ۱۵۰۰ بایتی باشند، فاصله زمانی بین بسته‌های متوالی در هر صفحه چقدر است؟
+	\begin{qsolve}
+		
+		فاصله زمانی بین بسته‌های متوالی (\(\Delta T\)) از رابطه زیر محاسبه می‌شود:
+		\[
+		\Delta T = \frac{\text{\lr{Packet Size}}}{\text{\lr{Speed per plane}}}
+		\]
+		با توجه به اینکه:
+		\begin{itemize}
+			\item اندازه بسته‌ها: 
+			\[
+			\text{\lr{Packet Size}} = 1500 \, \text{\lr{Bytes}} = 1500 \times 8 = 12000 \, \text{\lr{bits}}
+			\]
+			\item سرعت خط در هر صفحه: 
+			\[
+			\text{\lr{Speed per plane}} = 33.33 \, \text{\lr{Gbps}} = 33.33 \times 10^9 \, \text{\lr{bits/sec}}
+			\]
+		\end{itemize}
+		محاسبه:
+		\[
+		\Delta T = \frac{12000}{33.33 \times 10^9} \, \text{\lr{seconds}}
+		\]
+		\[
+		\Delta T = 0.36 \, \mu\text{\lr{s}}
+		\]
+		
+		بنابراین، فاصله زمانی بین بسته‌های متوالی برابر است با:
+		\[
+		\boxed{0.36 \, \mu\text{\lr{s}}}
+		\]
+	\end{qsolve}
 \end{enumerate}
