@@ -6,6 +6,87 @@
 	\item 
 	اگر زمان دسترسی حافظه برابر باشد با ۳ نانوثانیه، برای پشتیبانی از ۲۴ پورت، حداکثر اندازه سلول مجاز چقدر است؟
 	
+	\begin{qsolve}
+		    برای محاسبه حداکثر اندازه سلول، از فرمول زیر استفاده می‌کنیم:
+		\[
+		\text{\lr{Cell Size}} \leq \frac{\text{\lr{Time Slot Duration}}}{\text{\lr{Number of Memory Accesses Per Slot}}}
+		\]
+		که در آن:
+		\[
+		\text{\lr{Time Slot Duration}} = \frac{1}{\text{\lr{Line Rate}}}
+		\]
+		
+		محاسبات:
+		\[
+		\text{\lr{Time Slot Duration}} = \frac{1}{30 \times 10^9} = 33.33 \, \text{\lr{ns}}
+		\]
+		تعداد دسترسی‌های حافظه در هر اسلات زمانی برابر با تعداد پورت‌ها است:
+		\[
+		\text{\lr{Number of Memory Accesses Per Slot}} = 24
+		\]
+		
+		زمان در دسترس برای هر دسترسی حافظه:
+		\[
+		\begin{aligned}
+			\text{\lr{Available Memory Access Time Per Port}} &= \frac{\text{\lr{Time Slot Duration}}}{\text{\lr{Number of Memory Accesses Per Slot}}} \\
+			&= \frac{33.33}{24} = 1.39 \, \text{\lr{ns}}
+		\end{aligned}
+		\]
+		
+		برای پشتیبانی از \(24\) پورت با زمان دسترسی حافظه \(3 \, \text{\lr{ns}}\)، حداکثر اندازه سلول به صورت زیر محاسبه می‌شود:
+		\[
+		\text{\lr{Cell Size}} = \frac{\text{\lr{Time Slot Duration}}}{\text{\lr{Number of Memory Accesses Per Slot}}} \times \text{\lr{Line Rate}}
+		\]
+		جایگذاری مقادیر:
+		\[
+		\text{\lr{Cell Size}} = \frac{33.33}{24} \times 30 \times 10^9 \, \text{\lr{bits}}
+		\]
+		محاسبه:
+		\[
+		\text{\lr{Cell Size}} = \frac{33.33 \times 30}{24} = 41.66 \, \text{\lr{bits}}
+		\]
+		
+		بنابراین، حداکثر اندازه سلول مجاز برابر است با:
+		\[
+		\boxed{41.66 \, \text{\lr{bits}}}
+		\]
+		
+	\end{qsolve}
+	
 	\item 
 	اگر بخواهیم اندازه سلول را ۵۰ درصد افزایش دهیم، چقدر باید زمان دسترسی حافظه را کاهش دهیم؟
+\end{enumerate}
+\newpage
+
+\begin{enumerate}
+	\item [ ]
+	\begin{qsolve}
+		
+		اگر اندازه سلول \(50\%\) افزایش یابد، اندازه جدید سلول به صورت زیر خواهد بود:
+		\[
+		\text{\lr{New Cell Size}} = 1.5 \times 41.66 = 62.49 \, \text{\lr{bits}}
+		\]
+		
+		زمان دسترسی حافظه باید به صورت زیر محاسبه شود:
+		\[
+		\begin{aligned}
+			\text{\lr{New Memory Access Time}} &= \frac{\text{\lr{Time Slot Duration}}}{\text{\lr{New Cell Size}} \times \text{\lr{Number of Memory Accesses Per Slot}}}
+		\end{aligned}
+		\]
+		
+		جایگذاری مقادیر:
+		\[
+		\text{\lr{New Memory Access Time}} = \frac{33.33}{62.49 \times 24} \, \text{\lr{ns}}
+		\]
+		محاسبه:
+		\[
+		\text{\lr{New Memory Access Time}} = \frac{33.33}{1499.76} \, \text{\lr{ns}} \approx 0.0222 \, \text{\lr{ns}}
+		\]
+		
+		بنابراین، برای افزایش اندازه سلول به \(50\%\)، زمان دسترسی حافظه باید به:
+		\[
+		\boxed{0.0222 \, \text{\lr{ns}}}
+		\]
+		کاهش یابد.
+	\end{qsolve}
 \end{enumerate}
