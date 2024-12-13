@@ -1,3 +1,91 @@
 \section{سوال پنجم}
 
 مسئله ۴ را در صورتی که از ۶ \lr{crossbar} در مرحله میانی استفاده شود، تکرار کنید.
+
+\begin{qsolve}
+	    نمودار پیکربندی به صورت زیر است:\\
+	    
+	\begin{tikzpicture}[node distance=1.5cm]
+		% Stage 1 crossbars
+		\node (stage1-1) [crossbar] {\lr{Crossbar 1}};
+		\node (stage1-2) [crossbar, below of=stage1-1] {\lr{Crossbar 2}};
+		\node (stage1-3) [crossbar, below of=stage1-2] {...};
+		\node (stage1-10) [crossbar, below of=stage1-3, yshift=-1cm] {\lr{Crossbar 10}};
+		
+		% Stage 2 crossbars
+		\node (stage2-1) [crossbar, right of=stage1-1, xshift=5cm] {\lr{Crossbar 1}};
+		\node (stage2-2) [crossbar, below of=stage2-1] {\lr{Crossbar 2}};
+		\node (stage2-3) [crossbar, below of=stage2-2] {...};
+		\node (stage2-6) [crossbar, below of=stage2-3, yshift=-1cm] {\lr{Crossbar 6}};
+		
+		% Stage 3 crossbars
+		\node (stage3-1) [crossbar, right of=stage2-1, xshift=5cm] {\lr{Crossbar 1}};
+		\node (stage3-2) [crossbar, below of=stage3-1] {\lr{Crossbar 2}};
+		\node (stage3-3) [crossbar, below of=stage3-2] {...};
+		\node (stage3-10) [crossbar, below of=stage3-3, yshift=-1cm] {\lr{Crossbar 10}};
+		
+		% Arrows Stage 1 -> Stage 2
+		\draw [arrow] (stage1-1.east) -- (stage2-1.west);
+		\draw [arrow] (stage1-2.east) -- (stage2-2.west);
+		\draw [arrow] (stage1-10.east) -- (stage2-6.west);
+		
+		% Arrows Stage 2 -> Stage 3
+		\draw [arrow] (stage2-1.east) -- (stage3-1.west);
+		\draw [arrow] (stage2-2.east) -- (stage3-2.west);
+		\draw [arrow] (stage2-6.east) -- (stage3-10.west);
+	\end{tikzpicture}
+	
+	
+	
+	
+	\begin{enumerate}[label=\arabic*.]
+		
+		\item \textbf{تعداد کل \lr{crosspoints}:}
+		
+		محاسبات تعداد \lr{crosspoints} در هر مرحله:
+		\[
+		\text{\lr{Crosspoints in Stage 1}} = 10 \times (10 \times 4) = 400
+		\]
+		\[
+		\text{\lr{Crosspoints in Stage 2}} = 6 \times (10 \times 10) = 600
+		\]
+		\[
+		\text{\lr{Crosspoints in Stage 3}} = 10 \times (4 \times 10) = 400
+		\]
+		تعداد کل \lr{crosspoints} برابر است با:
+		\[
+		\text{\lr{Total Crosspoints}} = 400 + 600 + 400 = 1400
+		\]
+		
+		\item \textbf{تعداد اتصالات همزمان ممکن:}
+		
+		تعداد اتصالات همزمان ممکن توسط مرحله میانی محدود می‌شود:
+		\[
+		\text{\lr{Maximum Simultaneous Connections}} = 6 \times 10 = 60
+		\]
+		
+		
+		\item \textbf{تعداد اتصالات همزمان ممکن در یک \lr{crossbar} واحد $100 \times 100$:}
+		
+		تعداد اتصالات همزمان ممکن در یک \lr{crossbar} واحد \(100 \times 100\) برابر با تعداد ورودی‌ها (یا خروجی‌ها، هرکدام که کمتر است) است:
+		\[
+		\text{\lr{Maximum Simultaneous Connections in Single Crossbar}} = \min(100, 100) = 100
+		\]
+	\end{enumerate}	
+\end{qsolve}
+\newpage
+
+\begin{qsolve}
+	\begin{enumerate}
+		\item [4.] \textbf{ضریب \lr{blocking}:}
+		
+		ضریب \lr{blocking} به صورت نسبت تعداد اتصالات ممکن در سوئیچ سه‌مرحله‌ای به تعداد اتصالات ممکن در یک \lr{crossbar} واحد محاسبه می‌شود:
+		\[
+		\text{\lr{Blocking Ratio}} = \frac{\text{\lr{Simultaneous Connections in Three-Stage Switch}}}{\text{\lr{Simultaneous Connections in Single Crossbar}}}
+		\]
+		\[
+		\text{\lr{Blocking Ratio}} = \frac{60}{100} = 0.6
+		\]
+		
+	\end{enumerate}
+\end{qsolve}
