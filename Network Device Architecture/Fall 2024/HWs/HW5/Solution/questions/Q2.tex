@@ -1,0 +1,67 @@
+\section{سوال دوم}
+
+در یک سوییچ با \lr{Speedup} برابر با ۳ و سرعت خط ورودی ۴۰ گیگابیت بر ثانیه:
+
+\begin{enumerate}
+	\item 
+	حداقل سرعت باس داخلی برای پشتیبانی از ۱۶ پورت چقدر باید باشد؟
+	
+	\begin{qsolve}
+			
+			برای محاسبه حداقل سرعت باس داخلی، از فرمول زیر استفاده می‌کنیم:
+			\[
+			\text{\lr{Internal Bus Speed}} = \text{\lr{Speedup}} \times \text{\lr{Aggregate Input Rate}}
+			\]
+			که در آن، \lr{\texttt{Aggregate Input Rate}} به صورت زیر محاسبه می‌شود:
+			\[
+			\text{\lr{Aggregate Input Rate}} = \text{\lr{Number of Ports}} \times \text{\lr{Line Rate}}
+			\]
+			
+			با جایگذاری مقادیر:
+			\[
+			\text{\lr{Aggregate Input Rate}} = 16 \times 40 \, \text{\lr{Gbps}} = 640 \, \text{\lr{Gbps}}
+			\]
+			\[
+			\text{\lr{Internal Bus Speed}} = 3 \times 640 \, \text{\lr{Gbps}} = 1920 \, \text{\lr{Gbps}}
+			\]
+			
+			بنابراین، حداقل سرعت باس داخلی باید برابر با:
+			\[
+			\boxed{1920 \, \text{\lr{Gbps}} \, (1.92 \, \text{\lr{Tbps}})}
+			\]
+			باشد.
+	\end{qsolve}
+	
+	
+	\item 
+	اگر هر پورت دارای ۱ مگابایت بافر باشد، حداکثر تأخیر بافرینگ چقدر خواهد بود؟
+	\begin{qsolve}
+		حداکثر تأخیر بافرینگ را می‌توان با استفاده از فرمول زیر محاسبه کرد:
+		\[
+		\text{\lr{Maximum Buffering Delay}} = \frac{\text{\lr{Buffer Size}}}{\text{\lr{Line Rate}}}
+		\]
+		
+		با توجه به اینکه:
+		\[
+		\text{\lr{Buffer Size}} = 1 \, \text{\lr{MB}} = 8 \times 10^6 \, \text{\lr{bits}}
+		\]
+		و
+		\[
+		\text{\lr{Line Rate}} = 40 \, \text{\lr{Gbps}} = 40 \times 10^9 \, \text{\lr{bits/second}}
+		\]
+		
+		تأخیر بافرینگ به صورت زیر محاسبه می‌شود:
+		\[
+		\text{\lr{Maximum Buffering Delay}} = \frac{8 \times 10^6}{40 \times 10^9}
+		\]
+		\[
+		\text{\lr{Maximum Buffering Delay}} = 0.2 \, \text{\lr{ms}}
+		\]
+		
+		بنابراین، حداکثر تأخیر بافرینگ برابر با:
+		\[
+		\boxed{0.2 \, \text{ms}}
+		\]
+		است.
+	\end{qsolve}
+\end{enumerate}
