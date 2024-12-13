@@ -3,6 +3,100 @@
 
 پیکربندی مسئله ۴ را با استفاده از معیارهای \lr{Clos} تکرار کنید.
 
+
+\begin{qsolve}
+	\begin{enumerate}[label=\arabic*.]
+		\item \textbf{طراحی پیکربندی:}
+		
+		با توجه به معیارهای \lr{Clos}:
+		\[
+		n \geq \max(m, \lceil \frac{N}{m} \rceil)
+		\]
+		که در اینجا:
+		\begin{itemize}
+			\item \(N = 100\): تعداد کل ورودی‌ها/خروجی‌ها.
+			\item \(m = 10\): تعداد خطوط ورودی به هر \lr{crossbar} در مرحله اول.
+			\item \(\lceil \frac{N}{m} \rceil = \lceil \frac{100}{10} \rceil = 10\).
+		\end{itemize}
+		بنابراین:
+		\[
+		n = 10
+		\]
+		
+		تعداد \lr{crossbar}‌ها در هر مرحله:
+		\begin{itemize}
+			\item مرحله اول: تعداد \(k_1 = \frac{N}{m} = \frac{100}{10} = 10\).
+			\item مرحله میانی: تعداد \(k_2 = n = 10\).
+			\item مرحله سوم: تعداد \(k_3 = \frac{N}{m} = \frac{100}{10} = 10\).
+		\end{itemize}
+		
+		\item \textbf{تعداد کل \lr{crosspoints}:}
+		
+		تعداد \lr{crosspoints} در هر مرحله به صورت زیر محاسبه می‌شود:
+		\[
+		\text{\lr{Crosspoints in Stage 1}} = k_1 \times (m \times n) = 10 \times (10 \times 10) = 1000
+		\]
+		\[
+		\text{\lr{Crosspoints in Stage 2}} = k_2 \times (n \times n) = 10 \times (10 \times 10) = 1000
+		\]
+		\[
+		\text{\lr{Crosspoints in Stage 3}} = k_3 \times (n \times m) = 10 \times (10 \times 10) = 1000
+		\]
+		تعداد کل \lr{crosspoints} برابر است با:
+		\[
+		\text{\lr{Total Crosspoints}} = 1000 + 1000 + 1000 = 3000
+		\]
+		
+		\item \textbf{تعداد اتصالات همزمان ممکن:}
+		
+		در پیکربندی \lr{Clos} بدون \lr{blocking}، تعداد اتصالات همزمان ممکن برابر با تعداد کل ورودی‌ها است:
+		\[
+		\text{\lr{Maximum Simultaneous Connections}} = N = 100
+		\]
+		
+		\item \textbf{نمودار پیکربندی:}
+		
+		نمودار سه‌مرحله‌ای مطابق معیار \lr{Clos} به صورت زیر است:
+		
+	\end{enumerate}
+\end{qsolve}
+\newpage
+
+
+\begin{qsolve}
+		\begin{center}
+		\begin{tikzpicture}[node distance=1.5cm]
+			% Stage 1 crossbars
+			\node (stage1-1) [crossbar] {\lr{Crossbar 1}};
+			\node (stage1-2) [crossbar, below of=stage1-1] {\lr{Crossbar 2}};
+			\node (stage1-3) [crossbar, below of=stage1-2] {...};
+			\node (stage1-10) [crossbar, below of=stage1-3, yshift=-1cm] {\lr{Crossbar 10}};
+			
+			% Stage 2 crossbars
+			\node (stage2-1) [crossbar, right of=stage1-1, xshift=5cm] {\lr{Crossbar 1}};
+			\node (stage2-2) [crossbar, below of=stage2-1] {\lr{Crossbar 2}};
+			\node (stage2-3) [crossbar, below of=stage2-2] {...};
+			\node (stage2-10) [crossbar, below of=stage2-3, yshift=-1cm] {\lr{Crossbar 10}};
+			
+			% Stage 3 crossbars
+			\node (stage3-1) [crossbar, right of=stage2-1, xshift=5cm] {\lr{Crossbar 1}};
+			\node (stage3-2) [crossbar, below of=stage3-1] {\lr{Crossbar 2}};
+			\node (stage3-3) [crossbar, below of=stage3-2] {...};
+			\node (stage3-10) [crossbar, below of=stage3-3, yshift=-1cm] {\lr{Crossbar 10}};
+			
+			% Arrows Stage 1 -> Stage 2
+			\draw [arrow] (stage1-1.east) -- (stage2-1.west);
+			\draw [arrow] (stage1-2.east) -- (stage2-2.west);
+			\draw [arrow] (stage1-10.east) -- (stage2-10.west);
+			
+			% Arrows Stage 2 -> Stage 3
+			\draw [arrow] (stage2-1.east) -- (stage3-1.west);
+			\draw [arrow] (stage2-2.east) -- (stage3-2.west);
+			\draw [arrow] (stage2-10.east) -- (stage3-10.west);
+		\end{tikzpicture}
+	\end{center}
+\end{qsolve}
+
 %\begin{center}
 %	\includegraphics*[width=0.5\linewidth]{pics/img1.png}
 %	\captionof{figure}{شبکه سوال ۶}
