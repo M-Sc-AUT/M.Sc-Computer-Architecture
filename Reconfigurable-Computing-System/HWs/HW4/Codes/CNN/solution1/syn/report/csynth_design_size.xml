@@ -1,0 +1,69 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,  1423, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,    863, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,    723, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,    662, user inline pragmas are applied</column>
+            <column name="">(4) simplification,    653, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,    703, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,    701, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,    701, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,    700, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,    718, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,    700, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  2054, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 18733, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  7737, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  7712, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  7942, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="cnn" col1="cnn.cpp:64" col2="1423" col3="653" col4="718" col5="7737" col6="7942">
+                    <row id="6" col0="normalization_and_padding" col1="utils.cpp:8" col2="34" col3="" col4="" col5="" col6=""/>
+                    <row id="12" col0="dataflow_section" col1="cnn.cpp:13" col2="1311" col3="597" col4="666" col5="7114" col6="7296">
+                        <row id="3" col0="convolutional_layer" col1="conv.cpp:62" col2="401" col3="" col4="" col5="" col6="">
+                            <row id="7" col0="convolution" col1="conv.cpp:14" col2="392" col2_disp=" 392 (4 calls)" col3="" col4="" col5="" col6="">
+                                <row id="11" col0="relu" col1="conv.cpp:5" col2="28" col2_disp="  28 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="10" col0="max_pooling_layer" col1="pool.cpp:31" col2="281" col3="" col4="" col5="" col6="">
+                            <row id="9" col0="max_pooling" col1="pool.cpp:4" col2="268" col2_disp=" 268 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="1" col0="flattening_layer" col1="flat.cpp:16" col2="185" col3="" col4="" col5="" col6="">
+                            <row id="4" col0="flattening" col1="flat.cpp:3" col2="172" col2_disp=" 172 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="2" col0="dense_layer" col1="dense.cpp:56" col2="285" col3="" col4="" col5="" col6="">
+                            <row id="5" col0="dense" col1="dense.cpp:33" col2="272" col2_disp=" 272 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="8" col0="dense_layer_soft_max" col1="dense.cpp:7" col2="61" col3="" col4="" col5="" col6=""/>
+                        <row id="7" col0="convolution" col1="conv.cpp:14" col2="" col3="204" col3_disp="204 (4 calls)" col4="212" col4_disp="212 (4 calls)" col5="6460" col5_disp="6,460 (4 calls)" col6="6423" col6_disp="6,423 (4 calls)"/>
+                        <row id="9" col0="max_pooling" col1="pool.cpp:4" col2="" col3="108" col3_disp="108 (4 calls)" col4="116" col4_disp="116 (4 calls)" col5="96" col5_disp="  96 (4 calls)" col6="184" col6_disp=" 184 (4 calls)"/>
+                        <row id="5" col0="dense" col1="dense.cpp:33" col2="" col3="152" col3_disp="152 (4 calls)" col4="152" col4_disp="152 (4 calls)" col5="384" col5_disp=" 384 (4 calls)" col6="452" col6_disp=" 452 (4 calls)"/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

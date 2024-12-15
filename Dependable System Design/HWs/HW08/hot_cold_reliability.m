@@ -2,7 +2,7 @@ clear; clc; close all;
 
 
 %%%%%%%%%%%%% constant values %%%%%%%%%%%%%
-landa = 0.4;
+landa = 0.2;
 t = 0:0.001:10;
 
 %%%%%%%%%%%%% reliability functions %%%%%%%%%%%%%

@@ -1,0 +1,12 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 10>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 10>::stream()" depth="10" type="fifo" variable="this"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 784>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 784>::stream()" depth="784" type="fifo" variable="this"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 196>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 196>::stream()" depth="196" type="fifo" variable="this"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 0>::stream()" off="0" region="0" recursive="0"/>
+</pragmas>
