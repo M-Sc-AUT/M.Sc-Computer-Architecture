@@ -37,19 +37,84 @@
 	کد نوشته شده برای پیاده سازی شبکه به‌صورت زیر است:
 \end{qsolve}
 
-\begin{qsolve}
-	
-\end{qsolve}
 	
 \begin{latin}
 \begin{lstlisting}[language=Python,caption={Model Definition}]
-edge_out = np.sqrt(np.power(pre_x, 2) + np.power(pre_y, 2))
-edge_out = (edge_out / np.Max(edge_out)) * 255
+	
+def define_model() -> Sequential:
+	# Define model.
+	model = Sequential()
+	model.add(ZeroPadding2D(padding=pad, input_shape=(input_size[0],
+			 input_size[1], 1), name="padding_layer"))
+	model.add(Conv2D(conv_filter_num, conv_kernel_size, activation="relu",
+			 padding="valid", kernel_initializer="he_uniform",
+			 input_shape=(30, 30, 1), name="convolution_layer"))
+	model.add(MaxPooling2D(pool_size, name="max_pooling_layer"))
+	model.add(Flatten(name="flatten_layer"))
+	model.add(Dense(10, activation="softmax", name="dense_layer"))
+	# Compile model.
+	model.Compile(optimizer=Adam(), loss="categorical_crossentropy",
+			 metrics=["accuracy"])
+	# Return model.
+	return model
+	
 \end{lstlisting}
 \end{latin}
 
 
+\begin{qsolve}
+	با کامپایل کردن مدل نوشته شده خروجی شبکه تعریف شده به‌صورت زیر می‌شود:
+	
+	\begin{center}
+		\includegraphics*[width=0.7\linewidth]{pics/img3.png}
+		\captionof{figure}{ساختار شبکه تعریف شده}
+		\label{ساختار شبکه تعریف شده}
+	\end{center}
+	
+	
+	پس از تعریف ساختار شبکه، شبکه را با استفاده از دیتاست \lr{MNIST} در ۵ \lr{Epoch} آموزش می‌دهیم. که نمودار \lr{Loss} و \lr{Accuracy} شبکه برای داده‌های \lr{Train} و \lr{Validation} به‌صورت زیر به‌دست می‌آید:
+	
+\end{qsolve}
 
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=0.7\linewidth]{pics/img4.png}
+		\captionof{figure}{نمودارهای \lr{Loss} و \lr{Accuracy}}
+		\label{نمودارهای Loss و Accuracy}
+	\end{center}
+	
+	دقت شبکه بر روی داده‌های آموزش و تست به ترتیب ۰٫۹۸۱۷ و ۰٫۹۸۰۱ به‌دست آمده است.
+	
+	همچنین زمان انجام فاز \lr{Inference} نرم‌افزاری برای ۱۰۰ داده از مجموعه داده \lr{MNIST}، ۴۶٫۸۰۷۲ میلی‌ثانیه به‌دست آمده است.
+	
+	در نهایت تمامی وزن‌ها و پارامتر‌های مورد نیاز شبکه برای فاز سخت‌افزاری را در ۳ فایل با نام‌های:
+	
+	\begin{latin}
+		\begin{itemize}
+			\item 
+			\texttt{conv\_weights.h}
+			
+			\item 
+			\texttt{dense\_weights.h}
+			
+			\item 
+			\texttt{definitions.h}
+		\end{itemize}
+	\end{latin}
+	
+	ذخیره می‌کنیم. فایل \texttt{conv\_weights.h} شامل وزن‌های به‌دست آمده از لایه‌های کانولوشن، فایل \texttt{dense\_weights.h} نیز شامل وزن‌های لایه \lr{Fully Connected} و فایل \texttt{definitions.h} شامل برخی از ضرایب ثابت مورد استفاده در فاز سخت‌افزاری است.
+	
+	در ادامه تمامی داده‌های تست \lr{MNIST} شامل تصاویر و \lr{Label} های مربوط به آن را در دو فایل \texttt{in.dat} و \texttt{out.dat} ذخیره می‌کنیم. مراحل انجام به طور کامل در فایل \texttt{gen\_data.ipynb} مشخص شده است.
+
+\end{qsolve}
+
+
+
+\begin{qsolve}
+	\paragraph{فاز نرم‌افزاری:}
+	
+	در این فاز
+\end{qsolve}
 
 
 

@@ -52,7 +52,7 @@ def prep_pixels(train, test) -> tuple:
 def define_model() -> Sequential:
 	# Define model.
 	model = Sequential()
-	model.add(ZeroPadding2D(padding=pad, input_shape=(input_size[0], input_size[1], 1), name='padding_layer'))
+	model.add(ZeroPadding2D(padding=pad, input_shape=(input_size[0], input_size[1], 1), name="padding_layer"))
 	model.add(Conv2D(conv_filter_num, conv_kernel_size, activation="relu", padding="valid", kernel_initializer="he_uniform", input_shape=(30, 30, 1), name="convolution_layer"))
 	model.add(MaxPooling2D(pool_size, name="max_pooling_layer"))
 	model.add(Flatten(name="flatten_layer"))
