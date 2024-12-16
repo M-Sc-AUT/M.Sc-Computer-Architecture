@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 13,
-    "calls": "3 9",
+    "calls": "8 11",
     "file": "cnn.cpp",
     "fileloc": 64,
     "instructions": 78,
@@ -15,33 +15,15 @@
     "total_instructions": 1423
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "12 12 12 12",
-    "file": "flat.cpp",
-    "fileloc": 16,
-    "instructions": 13,
-    "name": "flattening_layer",
-    "total_instructions": 185
+    "basicblocks": 4,
+    "calls": "",
+    "file": "conv.cpp",
+    "fileloc": 5,
+    "instructions": 7,
+    "name": "relu",
+    "total_instructions": 7
   },
   "10": {
-    "basicblocks": 1,
-    "calls": "2 2 2 2",
-    "file": "dense.cpp",
-    "fileloc": 56,
-    "instructions": 13,
-    "name": "dense_layer",
-    "total_instructions": 285
-  },
-  "11": {
-    "basicblocks": 1,
-    "calls": "4 4 4 4",
-    "file": "conv.cpp",
-    "fileloc": 62,
-    "instructions": 9,
-    "name": "convolutional_layer",
-    "total_instructions": 401
-  },
-  "12": {
     "basicblocks": 13,
     "calls": "",
     "file": "flat.cpp",
@@ -53,40 +35,45 @@
     },
     "total_instructions": 43
   },
+  "11": {
+    "basicblocks": 13,
+    "calls": "3 12 7 2 9",
+    "file": "cnn.cpp",
+    "fileloc": 13,
+    "instructions": 78,
+    "name": "dataflow_section",
+    "total_instructions": 1311
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "6 6 6 6",
+    "file": "pool.cpp",
+    "fileloc": 31,
+    "instructions": 13,
+    "name": "max_pooling_layer",
+    "total_instructions": 281
+  },
   "2": {
-    "basicblocks": 19,
-    "calls": "",
+    "basicblocks": 1,
+    "calls": "5 5 5 5",
     "file": "dense.cpp",
-    "fileloc": 33,
-    "instructions": 52,
-    "loads": {
-      "G": 1,
-      "L": 1
-    },
-    "name": "dense",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 68
+    "fileloc": 56,
+    "instructions": 13,
+    "name": "dense_layer",
+    "total_instructions": 285
   },
   "3": {
-    "basicblocks": 13,
-    "calls": "",
-    "file": "utils.cpp",
-    "fileloc": 8,
-    "instructions": 34,
-    "loads": {
-      "L": 1
-    },
-    "name": "normalization_and_padding",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 34
+    "basicblocks": 1,
+    "calls": "4 4 4 4",
+    "file": "conv.cpp",
+    "fileloc": 62,
+    "instructions": 9,
+    "name": "convolutional_layer",
+    "total_instructions": 401
   },
   "4": {
     "basicblocks": 37,
-    "calls": "8",
+    "calls": "1",
     "file": "conv.cpp",
     "fileloc": 14,
     "instructions": 87,
@@ -104,17 +91,17 @@
     "basicblocks": 19,
     "calls": "",
     "file": "dense.cpp",
-    "fileloc": 7,
-    "instructions": 49,
+    "fileloc": 33,
+    "instructions": 52,
     "loads": {
       "G": 1,
       "L": 1
     },
-    "name": "dense_layer_soft_max",
+    "name": "dense",
     "stores": {
-      "L": 2
+      "L": 1
     },
-    "total_instructions": 61
+    "total_instructions": 68
   },
   "6": {
     "basicblocks": 27,
@@ -133,29 +120,42 @@
   },
   "7": {
     "basicblocks": 1,
-    "calls": "6 6 6 6",
-    "file": "pool.cpp",
-    "fileloc": 31,
+    "calls": "10 10 10 10",
+    "file": "flat.cpp",
+    "fileloc": 16,
     "instructions": 13,
-    "name": "max_pooling_layer",
-    "total_instructions": 281
+    "name": "flattening_layer",
+    "total_instructions": 185
   },
   "8": {
-    "basicblocks": 4,
+    "basicblocks": 13,
     "calls": "",
-    "file": "conv.cpp",
-    "fileloc": 5,
-    "instructions": 7,
-    "name": "relu",
-    "total_instructions": 7
+    "file": "utils.cpp",
+    "fileloc": 8,
+    "instructions": 34,
+    "loads": {
+      "L": 1
+    },
+    "name": "normalization_and_padding",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 34
   },
   "9": {
-    "basicblocks": 13,
-    "calls": "11 7 1 10 5",
-    "file": "cnn.cpp",
-    "fileloc": 13,
-    "instructions": 78,
-    "name": "dataflow_section",
-    "total_instructions": 1311
+    "basicblocks": 19,
+    "calls": "",
+    "file": "dense.cpp",
+    "fileloc": 7,
+    "instructions": 49,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "dense_layer_soft_max",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 61
   }
 }

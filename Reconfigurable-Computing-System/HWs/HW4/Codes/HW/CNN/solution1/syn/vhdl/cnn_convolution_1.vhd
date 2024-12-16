@@ -200,56 +200,56 @@ architecture behav of cnn_convolution_1 is
     constant ap_const_lv5_0 : STD_LOGIC_VECTOR (4 downto 0) := "00000";
     constant ap_const_lv7_0 : STD_LOGIC_VECTOR (6 downto 0) := "0000000";
     constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
-    constant ap_const_lv32_BE686683 : STD_LOGIC_VECTOR (31 downto 0) := "10111110011010000110011010000011";
-    constant ap_const_lv32_3F0878BB : STD_LOGIC_VECTOR (31 downto 0) := "00111111000010000111100010111011";
-    constant ap_const_lv32_3F4D3E49 : STD_LOGIC_VECTOR (31 downto 0) := "00111111010011010011111001001001";
-    constant ap_const_lv32_3F343797 : STD_LOGIC_VECTOR (31 downto 0) := "00111111001101000011011110010111";
-    constant ap_const_lv32_3EEC2C0B : STD_LOGIC_VECTOR (31 downto 0) := "00111110111011000010110000001011";
-    constant ap_const_lv32_3E571E6C : STD_LOGIC_VECTOR (31 downto 0) := "00111110010101110001111001101100";
-    constant ap_const_lv32_BE0BC06C : STD_LOGIC_VECTOR (31 downto 0) := "10111110000010111100000001101100";
-    constant ap_const_lv32_BDF64F48 : STD_LOGIC_VECTOR (31 downto 0) := "10111101111101100100111101001000";
-    constant ap_const_lv32_BDF018C0 : STD_LOGIC_VECTOR (31 downto 0) := "10111101111100000001100011000000";
-    constant ap_const_lv32_BE161906 : STD_LOGIC_VECTOR (31 downto 0) := "10111110000101100001100100000110";
-    constant ap_const_lv32_BDE60799 : STD_LOGIC_VECTOR (31 downto 0) := "10111101111001100000011110011001";
-    constant ap_const_lv32_BEA59973 : STD_LOGIC_VECTOR (31 downto 0) := "10111110101001011001100101110011";
-    constant ap_const_lv32_BE83D2C3 : STD_LOGIC_VECTOR (31 downto 0) := "10111110100000111101001011000011";
-    constant ap_const_lv32_3E4FC451 : STD_LOGIC_VECTOR (31 downto 0) := "00111110010011111100010001010001";
-    constant ap_const_lv32_3E6D5E02 : STD_LOGIC_VECTOR (31 downto 0) := "00111110011011010101111000000010";
-    constant ap_const_lv32_BF7DDE13 : STD_LOGIC_VECTOR (31 downto 0) := "10111111011111011101111000010011";
-    constant ap_const_lv32_BF518D15 : STD_LOGIC_VECTOR (31 downto 0) := "10111111010100011000110100010101";
-    constant ap_const_lv32_BEB5E33F : STD_LOGIC_VECTOR (31 downto 0) := "10111110101101011110001100111111";
-    constant ap_const_lv32_BE3A7B74 : STD_LOGIC_VECTOR (31 downto 0) := "10111110001110100111101101110100";
-    constant ap_const_lv32_3E9F42C9 : STD_LOGIC_VECTOR (31 downto 0) := "00111110100111110100001011001001";
-    constant ap_const_lv32_3E66FCD6 : STD_LOGIC_VECTOR (31 downto 0) := "00111110011001101111110011010110";
-    constant ap_const_lv32_3E3076D1 : STD_LOGIC_VECTOR (31 downto 0) := "00111110001100000111011011010001";
-    constant ap_const_lv32_BF56B071 : STD_LOGIC_VECTOR (31 downto 0) := "10111111010101101011000001110001";
-    constant ap_const_lv32_BF3C19FB : STD_LOGIC_VECTOR (31 downto 0) := "10111111001111000001100111111011";
-    constant ap_const_lv32_BE056546 : STD_LOGIC_VECTOR (31 downto 0) := "10111110000001010110010101000110";
-    constant ap_const_lv32_3ED058B4 : STD_LOGIC_VECTOR (31 downto 0) := "00111110110100000101100010110100";
-    constant ap_const_lv32_BE5559B0 : STD_LOGIC_VECTOR (31 downto 0) := "10111110010101010101100110110000";
-    constant ap_const_lv32_3B5F6875 : STD_LOGIC_VECTOR (31 downto 0) := "00111011010111110110100001110101";
-    constant ap_const_lv32_3E4FE1BF : STD_LOGIC_VECTOR (31 downto 0) := "00111110010011111110000110111111";
-    constant ap_const_lv32_3EA9FC37 : STD_LOGIC_VECTOR (31 downto 0) := "00111110101010011111110000110111";
-    constant ap_const_lv32_3E938A8C : STD_LOGIC_VECTOR (31 downto 0) := "00111110100100111000101010001100";
-    constant ap_const_lv32_BCFD24A2 : STD_LOGIC_VECTOR (31 downto 0) := "10111100111111010010010010100010";
-    constant ap_const_lv32_BDC0F776 : STD_LOGIC_VECTOR (31 downto 0) := "10111101110000001111011101110110";
-    constant ap_const_lv32_3DC6283A : STD_LOGIC_VECTOR (31 downto 0) := "00111101110001100010100000111010";
-    constant ap_const_lv32_3E758C40 : STD_LOGIC_VECTOR (31 downto 0) := "00111110011101011000110001000000";
-    constant ap_const_lv32_3E4BD02C : STD_LOGIC_VECTOR (31 downto 0) := "00111110010010111101000000101100";
-    constant ap_const_lv32_3F2E3FF7 : STD_LOGIC_VECTOR (31 downto 0) := "00111111001011100011111111110111";
-    constant ap_const_lv32_3F084084 : STD_LOGIC_VECTOR (31 downto 0) := "00111111000010000100000010000100";
-    constant ap_const_lv32_BE4968B0 : STD_LOGIC_VECTOR (31 downto 0) := "10111110010010010110100010110000";
-    constant ap_const_lv32_BECE4A5A : STD_LOGIC_VECTOR (31 downto 0) := "10111110110011100100101001011010";
-    constant ap_const_lv32_BEBA9A57 : STD_LOGIC_VECTOR (31 downto 0) := "10111110101110101001101001010111";
-    constant ap_const_lv32_3E0944F2 : STD_LOGIC_VECTOR (31 downto 0) := "00111110000010010100010011110010";
-    constant ap_const_lv32_3E7240D0 : STD_LOGIC_VECTOR (31 downto 0) := "00111110011100100100000011010000";
-    constant ap_const_lv32_3EC10F83 : STD_LOGIC_VECTOR (31 downto 0) := "00111110110000010000111110000011";
-    constant ap_const_lv32_3E5F53D5 : STD_LOGIC_VECTOR (31 downto 0) := "00111110010111110101001111010101";
-    constant ap_const_lv32_3DF9ABEC : STD_LOGIC_VECTOR (31 downto 0) := "00111101111110011010101111101100";
-    constant ap_const_lv32_BED597EC : STD_LOGIC_VECTOR (31 downto 0) := "10111110110101011001011111101100";
-    constant ap_const_lv32_3C9C6802 : STD_LOGIC_VECTOR (31 downto 0) := "00111100100111000110100000000010";
-    constant ap_const_lv32_BE24A54D : STD_LOGIC_VECTOR (31 downto 0) := "10111110001001001010010101001101";
-    constant ap_const_lv32_3E2C33C0 : STD_LOGIC_VECTOR (31 downto 0) := "00111110001011000011001111000000";
+    constant ap_const_lv32_3B8FAD3D : STD_LOGIC_VECTOR (31 downto 0) := "00111011100011111010110100111101";
+    constant ap_const_lv32_3EDDCF10 : STD_LOGIC_VECTOR (31 downto 0) := "00111110110111011100111100010000";
+    constant ap_const_lv32_BC5690D3 : STD_LOGIC_VECTOR (31 downto 0) := "10111100010101101001000011010011";
+    constant ap_const_lv32_3DF8AA40 : STD_LOGIC_VECTOR (31 downto 0) := "00111101111110001010101001000000";
+    constant ap_const_lv32_3C9C68DC : STD_LOGIC_VECTOR (31 downto 0) := "00111100100111000110100011011100";
+    constant ap_const_lv32_3EA0EE07 : STD_LOGIC_VECTOR (31 downto 0) := "00111110101000001110111000000111";
+    constant ap_const_lv32_3EC8B5E9 : STD_LOGIC_VECTOR (31 downto 0) := "00111110110010001011010111101001";
+    constant ap_const_lv32_3D72975E : STD_LOGIC_VECTOR (31 downto 0) := "00111101011100101001011101011110";
+    constant ap_const_lv32_3EA9C98F : STD_LOGIC_VECTOR (31 downto 0) := "00111110101010011100100110001111";
+    constant ap_const_lv32_3EA68250 : STD_LOGIC_VECTOR (31 downto 0) := "00111110101001101000001001010000";
+    constant ap_const_lv32_3EFBE29C : STD_LOGIC_VECTOR (31 downto 0) := "00111110111110111110001010011100";
+    constant ap_const_lv32_3F37E43C : STD_LOGIC_VECTOR (31 downto 0) := "00111111001101111110010000111100";
+    constant ap_const_lv32_3EFDF3C1 : STD_LOGIC_VECTOR (31 downto 0) := "00111110111111011111001111000001";
+    constant ap_const_lv32_3DDF6A8B : STD_LOGIC_VECTOR (31 downto 0) := "00111101110111110110101010001011";
+    constant ap_const_lv32_3F0C9A8F : STD_LOGIC_VECTOR (31 downto 0) := "00111111000011001001101010001111";
+    constant ap_const_lv32_BD94B3AF : STD_LOGIC_VECTOR (31 downto 0) := "10111101100101001011001110101111";
+    constant ap_const_lv32_3F09BFD4 : STD_LOGIC_VECTOR (31 downto 0) := "00111111000010011011111111010100";
+    constant ap_const_lv32_3F2D81AB : STD_LOGIC_VECTOR (31 downto 0) := "00111111001011011000000110101011";
+    constant ap_const_lv32_3E8EE8D3 : STD_LOGIC_VECTOR (31 downto 0) := "00111110100011101110100011010011";
+    constant ap_const_lv32_3E2C1890 : STD_LOGIC_VECTOR (31 downto 0) := "00111110001011000001100010010000";
+    constant ap_const_lv32_3EF879B1 : STD_LOGIC_VECTOR (31 downto 0) := "00111110111110000111100110110001";
+    constant ap_const_lv32_3E50C17E : STD_LOGIC_VECTOR (31 downto 0) := "00111110010100001100000101111110";
+    constant ap_const_lv32_BF28DF4E : STD_LOGIC_VECTOR (31 downto 0) := "10111111001010001101111101001110";
+    constant ap_const_lv32_BEB70491 : STD_LOGIC_VECTOR (31 downto 0) := "10111110101101110000010010010001";
+    constant ap_const_lv32_BEB977A8 : STD_LOGIC_VECTOR (31 downto 0) := "10111110101110010111011110101000";
+    constant ap_const_lv32_BE8A9608 : STD_LOGIC_VECTOR (31 downto 0) := "10111110100010101001011000001000";
+    constant ap_const_lv32_3DEE2620 : STD_LOGIC_VECTOR (31 downto 0) := "00111101111011100010011000100000";
+    constant ap_const_lv32_BE719594 : STD_LOGIC_VECTOR (31 downto 0) := "10111110011100011001010110010100";
+    constant ap_const_lv32_BDF5827A : STD_LOGIC_VECTOR (31 downto 0) := "10111101111101011000001001111010";
+    constant ap_const_lv32_BF13ECE5 : STD_LOGIC_VECTOR (31 downto 0) := "10111111000100111110110011100101";
+    constant ap_const_lv32_BF47DE0A : STD_LOGIC_VECTOR (31 downto 0) := "10111111010001111101111000001010";
+    constant ap_const_lv32_BF73EBBD : STD_LOGIC_VECTOR (31 downto 0) := "10111111011100111110101110111101";
+    constant ap_const_lv32_BF38FDC0 : STD_LOGIC_VECTOR (31 downto 0) := "10111111001110001111110111000000";
+    constant ap_const_lv32_BF4858B7 : STD_LOGIC_VECTOR (31 downto 0) := "10111111010010000101100010110111";
+    constant ap_const_lv32_BF577D45 : STD_LOGIC_VECTOR (31 downto 0) := "10111111010101110111110101000101";
+    constant ap_const_lv32_BEDF2952 : STD_LOGIC_VECTOR (31 downto 0) := "10111110110111110010100101010010";
+    constant ap_const_lv32_BF1C8D94 : STD_LOGIC_VECTOR (31 downto 0) := "10111111000111001000110110010100";
+    constant ap_const_lv32_BECD9DCC : STD_LOGIC_VECTOR (31 downto 0) := "10111110110011011001110111001100";
+    constant ap_const_lv32_BEA5279F : STD_LOGIC_VECTOR (31 downto 0) := "10111110101001010010011110011111";
+    constant ap_const_lv32_BF260327 : STD_LOGIC_VECTOR (31 downto 0) := "10111111001001100000001100100111";
+    constant ap_const_lv32_BF054473 : STD_LOGIC_VECTOR (31 downto 0) := "10111111000001010100010001110011";
+    constant ap_const_lv32_BED40B3C : STD_LOGIC_VECTOR (31 downto 0) := "10111110110101000000101100111100";
+    constant ap_const_lv32_BD146E6E : STD_LOGIC_VECTOR (31 downto 0) := "10111101000101000110111001101110";
+    constant ap_const_lv32_3DEA60CA : STD_LOGIC_VECTOR (31 downto 0) := "00111101111010100110000011001010";
+    constant ap_const_lv32_BE208DAD : STD_LOGIC_VECTOR (31 downto 0) := "10111110001000001000110110101101";
+    constant ap_const_lv32_BE327562 : STD_LOGIC_VECTOR (31 downto 0) := "10111110001100100111010101100010";
+    constant ap_const_lv32_BD95D162 : STD_LOGIC_VECTOR (31 downto 0) := "10111101100101011101000101100010";
+    constant ap_const_lv32_3DA71161 : STD_LOGIC_VECTOR (31 downto 0) := "00111101101001110001000101100001";
+    constant ap_const_lv32_3E996622 : STD_LOGIC_VECTOR (31 downto 0) := "00111110100110010110011000100010";
+    constant ap_const_lv32_3EC742C1 : STD_LOGIC_VECTOR (31 downto 0) := "00111110110001110100001011000001";
     constant ap_const_lv10_310 : STD_LOGIC_VECTOR (9 downto 0) := "1100010000";
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     constant ap_const_lv7_38 : STD_LOGIC_VECTOR (6 downto 0) := "0111000";
@@ -8020,7 +8020,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => w_sum_48_reg_40363,
-        din1 => ap_const_lv32_BE686683,
+        din1 => ap_const_lv32_3B8FAD3D,
         ce => ap_const_logic_1,
         dout => grp_fu_20001_p2);
 
@@ -8035,7 +8035,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_reg_39633,
-        din1 => ap_const_lv32_3F0878BB,
+        din1 => ap_const_lv32_3EDDCF10,
         ce => ap_const_logic_1,
         dout => grp_fu_20006_p2);
 
@@ -8050,7 +8050,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_1_reg_39638_pp0_iter15_reg,
-        din1 => ap_const_lv32_3F4D3E49,
+        din1 => ap_const_lv32_BC5690D3,
         ce => ap_const_logic_1,
         dout => grp_fu_20011_p2);
 
@@ -8065,7 +8065,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_2_reg_39643_pp0_iter19_reg,
-        din1 => ap_const_lv32_3F343797,
+        din1 => ap_const_lv32_3DF8AA40,
         ce => ap_const_logic_1,
         dout => grp_fu_20016_p2);
 
@@ -8080,7 +8080,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_3_reg_39648_pp0_iter23_reg,
-        din1 => ap_const_lv32_3EEC2C0B,
+        din1 => ap_const_lv32_3C9C68DC,
         ce => ap_const_logic_1,
         dout => grp_fu_20021_p2);
 
@@ -8095,7 +8095,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_4_reg_39653_pp0_iter27_reg,
-        din1 => ap_const_lv32_3E571E6C,
+        din1 => ap_const_lv32_3EA0EE07,
         ce => ap_const_logic_1,
         dout => grp_fu_20026_p2);
 
@@ -8110,7 +8110,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_5_reg_39658_pp0_iter31_reg,
-        din1 => ap_const_lv32_BE0BC06C,
+        din1 => ap_const_lv32_3EC8B5E9,
         ce => ap_const_logic_1,
         dout => grp_fu_20031_p2);
 
@@ -8125,7 +8125,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_6_reg_39663_pp0_iter35_reg,
-        din1 => ap_const_lv32_BDF64F48,
+        din1 => ap_const_lv32_3D72975E,
         ce => ap_const_logic_1,
         dout => grp_fu_20036_p2);
 
@@ -8140,7 +8140,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_7_reg_39668_pp0_iter39_reg,
-        din1 => ap_const_lv32_BDF018C0,
+        din1 => ap_const_lv32_3EA9C98F,
         ce => ap_const_logic_1,
         dout => grp_fu_20041_p2);
 
@@ -8155,7 +8155,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_8_reg_39673_pp0_iter43_reg,
-        din1 => ap_const_lv32_BE161906,
+        din1 => ap_const_lv32_3EA68250,
         ce => ap_const_logic_1,
         dout => grp_fu_20046_p2);
 
@@ -8170,7 +8170,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_9_reg_39678_pp0_iter47_reg,
-        din1 => ap_const_lv32_BDE60799,
+        din1 => ap_const_lv32_3EFBE29C,
         ce => ap_const_logic_1,
         dout => grp_fu_20051_p2);
 
@@ -8185,7 +8185,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_10_reg_39683_pp0_iter51_reg,
-        din1 => ap_const_lv32_BEA59973,
+        din1 => ap_const_lv32_3F37E43C,
         ce => ap_const_logic_1,
         dout => grp_fu_20056_p2);
 
@@ -8200,7 +8200,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_11_reg_39688_pp0_iter55_reg,
-        din1 => ap_const_lv32_BE83D2C3,
+        din1 => ap_const_lv32_3EFDF3C1,
         ce => ap_const_logic_1,
         dout => grp_fu_20061_p2);
 
@@ -8215,7 +8215,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_12_reg_39693_pp0_iter59_reg,
-        din1 => ap_const_lv32_3E4FC451,
+        din1 => ap_const_lv32_3DDF6A8B,
         ce => ap_const_logic_1,
         dout => grp_fu_20066_p2);
 
@@ -8230,7 +8230,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_13_reg_39698_pp0_iter63_reg,
-        din1 => ap_const_lv32_3E6D5E02,
+        din1 => ap_const_lv32_3F0C9A8F,
         ce => ap_const_logic_1,
         dout => grp_fu_20071_p2);
 
@@ -8245,7 +8245,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_14_reg_39703_pp0_iter67_reg,
-        din1 => ap_const_lv32_BF7DDE13,
+        din1 => ap_const_lv32_BD94B3AF,
         ce => ap_const_logic_1,
         dout => grp_fu_20076_p2);
 
@@ -8260,7 +8260,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_15_reg_39708_pp0_iter71_reg,
-        din1 => ap_const_lv32_BF518D15,
+        din1 => ap_const_lv32_3F09BFD4,
         ce => ap_const_logic_1,
         dout => grp_fu_20081_p2);
 
@@ -8275,7 +8275,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_16_reg_39713_pp0_iter75_reg,
-        din1 => ap_const_lv32_BEB5E33F,
+        din1 => ap_const_lv32_3F2D81AB,
         ce => ap_const_logic_1,
         dout => grp_fu_20086_p2);
 
@@ -8290,7 +8290,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_17_reg_39718_pp0_iter79_reg,
-        din1 => ap_const_lv32_BE3A7B74,
+        din1 => ap_const_lv32_3E8EE8D3,
         ce => ap_const_logic_1,
         dout => grp_fu_20091_p2);
 
@@ -8305,7 +8305,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_18_reg_39723_pp0_iter83_reg,
-        din1 => ap_const_lv32_3E9F42C9,
+        din1 => ap_const_lv32_3E2C1890,
         ce => ap_const_logic_1,
         dout => grp_fu_20096_p2);
 
@@ -8320,7 +8320,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_19_reg_39728_pp0_iter87_reg,
-        din1 => ap_const_lv32_3E66FCD6,
+        din1 => ap_const_lv32_3EF879B1,
         ce => ap_const_logic_1,
         dout => grp_fu_20101_p2);
 
@@ -8335,7 +8335,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_20_reg_39733_pp0_iter91_reg,
-        din1 => ap_const_lv32_3E3076D1,
+        din1 => ap_const_lv32_3E50C17E,
         ce => ap_const_logic_1,
         dout => grp_fu_20106_p2);
 
@@ -8350,7 +8350,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_21_reg_39738_pp0_iter95_reg,
-        din1 => ap_const_lv32_BF56B071,
+        din1 => ap_const_lv32_BF28DF4E,
         ce => ap_const_logic_1,
         dout => grp_fu_20111_p2);
 
@@ -8365,7 +8365,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_22_reg_39743_pp0_iter99_reg,
-        din1 => ap_const_lv32_BF3C19FB,
+        din1 => ap_const_lv32_BEB70491,
         ce => ap_const_logic_1,
         dout => grp_fu_20116_p2);
 
@@ -8380,7 +8380,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_23_reg_39748_pp0_iter103_reg,
-        din1 => ap_const_lv32_BE056546,
+        din1 => ap_const_lv32_BEB977A8,
         ce => ap_const_logic_1,
         dout => grp_fu_20121_p2);
 
@@ -8395,7 +8395,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_24_reg_39753_pp0_iter107_reg,
-        din1 => ap_const_lv32_3ED058B4,
+        din1 => ap_const_lv32_BE8A9608,
         ce => ap_const_logic_1,
         dout => grp_fu_20126_p2);
 
@@ -8410,7 +8410,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_25_reg_39758_pp0_iter111_reg,
-        din1 => ap_const_lv32_BE5559B0,
+        din1 => ap_const_lv32_3DEE2620,
         ce => ap_const_logic_1,
         dout => grp_fu_20131_p2);
 
@@ -8425,7 +8425,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_26_reg_39763_pp0_iter115_reg,
-        din1 => ap_const_lv32_3B5F6875,
+        din1 => ap_const_lv32_BE719594,
         ce => ap_const_logic_1,
         dout => grp_fu_20136_p2);
 
@@ -8440,7 +8440,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_27_reg_39768_pp0_iter119_reg,
-        din1 => ap_const_lv32_3E4FE1BF,
+        din1 => ap_const_lv32_BDF5827A,
         ce => ap_const_logic_1,
         dout => grp_fu_20141_p2);
 
@@ -8455,7 +8455,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_28_reg_39773_pp0_iter123_reg,
-        din1 => ap_const_lv32_3EA9FC37,
+        din1 => ap_const_lv32_BF13ECE5,
         ce => ap_const_logic_1,
         dout => grp_fu_20146_p2);
 
@@ -8470,7 +8470,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_29_reg_39778_pp0_iter127_reg,
-        din1 => ap_const_lv32_3E938A8C,
+        din1 => ap_const_lv32_BF47DE0A,
         ce => ap_const_logic_1,
         dout => grp_fu_20151_p2);
 
@@ -8485,7 +8485,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_30_reg_39783_pp0_iter131_reg,
-        din1 => ap_const_lv32_BCFD24A2,
+        din1 => ap_const_lv32_BF73EBBD,
         ce => ap_const_logic_1,
         dout => grp_fu_20156_p2);
 
@@ -8500,7 +8500,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_31_reg_39788_pp0_iter135_reg,
-        din1 => ap_const_lv32_BDC0F776,
+        din1 => ap_const_lv32_BF38FDC0,
         ce => ap_const_logic_1,
         dout => grp_fu_20161_p2);
 
@@ -8515,7 +8515,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_32_reg_39793_pp0_iter139_reg,
-        din1 => ap_const_lv32_3DC6283A,
+        din1 => ap_const_lv32_BF4858B7,
         ce => ap_const_logic_1,
         dout => grp_fu_20166_p2);
 
@@ -8530,7 +8530,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_33_reg_39798_pp0_iter143_reg,
-        din1 => ap_const_lv32_3E758C40,
+        din1 => ap_const_lv32_BF577D45,
         ce => ap_const_logic_1,
         dout => grp_fu_20171_p2);
 
@@ -8545,7 +8545,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_34_reg_39803_pp0_iter147_reg,
-        din1 => ap_const_lv32_3E4BD02C,
+        din1 => ap_const_lv32_BEDF2952,
         ce => ap_const_logic_1,
         dout => grp_fu_20176_p2);
 
@@ -8560,7 +8560,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_35_reg_39808_pp0_iter151_reg,
-        din1 => ap_const_lv32_3F2E3FF7,
+        din1 => ap_const_lv32_BF1C8D94,
         ce => ap_const_logic_1,
         dout => grp_fu_20181_p2);
 
@@ -8575,7 +8575,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_36_reg_39813_pp0_iter155_reg,
-        din1 => ap_const_lv32_3F084084,
+        din1 => ap_const_lv32_BECD9DCC,
         ce => ap_const_logic_1,
         dout => grp_fu_20186_p2);
 
@@ -8590,7 +8590,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_37_reg_39818_pp0_iter159_reg,
-        din1 => ap_const_lv32_BE4968B0,
+        din1 => ap_const_lv32_BEA5279F,
         ce => ap_const_logic_1,
         dout => grp_fu_20191_p2);
 
@@ -8605,7 +8605,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_38_reg_39823_pp0_iter163_reg,
-        din1 => ap_const_lv32_BECE4A5A,
+        din1 => ap_const_lv32_BF260327,
         ce => ap_const_logic_1,
         dout => grp_fu_20196_p2);
 
@@ -8620,7 +8620,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_39_reg_39828_pp0_iter167_reg,
-        din1 => ap_const_lv32_BEBA9A57,
+        din1 => ap_const_lv32_BF054473,
         ce => ap_const_logic_1,
         dout => grp_fu_20201_p2);
 
@@ -8635,7 +8635,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_40_reg_39833_pp0_iter171_reg,
-        din1 => ap_const_lv32_3E0944F2,
+        din1 => ap_const_lv32_BED40B3C,
         ce => ap_const_logic_1,
         dout => grp_fu_20206_p2);
 
@@ -8650,7 +8650,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_41_reg_39838_pp0_iter175_reg,
-        din1 => ap_const_lv32_3E7240D0,
+        din1 => ap_const_lv32_BD146E6E,
         ce => ap_const_logic_1,
         dout => grp_fu_20211_p2);
 
@@ -8665,7 +8665,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_42_reg_39843_pp0_iter179_reg,
-        din1 => ap_const_lv32_3EC10F83,
+        din1 => ap_const_lv32_3DEA60CA,
         ce => ap_const_logic_1,
         dout => grp_fu_20216_p2);
 
@@ -8680,7 +8680,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_43_reg_39848_pp0_iter183_reg,
-        din1 => ap_const_lv32_3E5F53D5,
+        din1 => ap_const_lv32_BE208DAD,
         ce => ap_const_logic_1,
         dout => grp_fu_20221_p2);
 
@@ -8695,7 +8695,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_44_reg_39853_pp0_iter187_reg,
-        din1 => ap_const_lv32_3DF9ABEC,
+        din1 => ap_const_lv32_BE327562,
         ce => ap_const_logic_1,
         dout => grp_fu_20226_p2);
 
@@ -8710,7 +8710,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_45_reg_39858_pp0_iter191_reg,
-        din1 => ap_const_lv32_BED597EC,
+        din1 => ap_const_lv32_BD95D162,
         ce => ap_const_logic_1,
         dout => grp_fu_20231_p2);
 
@@ -8725,7 +8725,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_46_reg_39863_pp0_iter195_reg,
-        din1 => ap_const_lv32_3C9C6802,
+        din1 => ap_const_lv32_3DA71161,
         ce => ap_const_logic_1,
         dout => grp_fu_20236_p2);
 
@@ -8740,7 +8740,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_47_reg_39868_pp0_iter199_reg,
-        din1 => ap_const_lv32_BE24A54D,
+        din1 => ap_const_lv32_3E996622,
         ce => ap_const_logic_1,
         dout => grp_fu_20241_p2);
 
@@ -8755,7 +8755,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => pixel_48_reg_39873_pp0_iter203_reg,
-        din1 => ap_const_lv32_3E2C33C0,
+        din1 => ap_const_lv32_3EC742C1,
         ce => ap_const_logic_1,
         dout => grp_fu_20246_p2);
 

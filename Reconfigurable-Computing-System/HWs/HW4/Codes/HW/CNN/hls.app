@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" name="CNN" top="cnn" projectType="C/C++">
+<project xmlns="com.autoesl.autopilot.project" top="cnn" name="CNN" projectType="C/C++">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

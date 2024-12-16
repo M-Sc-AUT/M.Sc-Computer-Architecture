@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 11,
-    "calls": "1",
+    "calls": "4",
     "file": "cnn.cpp",
     "fileloc": 64,
     "instructions": 52,
@@ -16,20 +16,17 @@
     "total_instructions": 718
   },
   "1": {
-    "basicblocks": 28,
-    "calls": "3 3 3 3 4 4 4 4 2 2 2 2",
-    "file": "cnn.cpp",
-    "fileloc": 13,
-    "instructions": 186,
+    "basicblocks": 13,
+    "calls": "",
+    "file": "conv.cpp",
+    "fileloc": 14,
+    "instructions": 53,
     "loads": {
-      "G": 1,
+      "G": 2,
       "L": 1
     },
-    "name": "dataflow_section",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 666
+    "name": "convolution",
+    "total_instructions": 53
   },
   "2": {
     "basicblocks": 9,
@@ -48,19 +45,6 @@
     "total_instructions": 38
   },
   "3": {
-    "basicblocks": 13,
-    "calls": "",
-    "file": "conv.cpp",
-    "fileloc": 14,
-    "instructions": 53,
-    "loads": {
-      "G": 2,
-      "L": 1
-    },
-    "name": "convolution",
-    "total_instructions": 53
-  },
-  "4": {
     "basicblocks": 9,
     "calls": "",
     "file": "pool.cpp",
@@ -68,5 +52,21 @@
     "instructions": 29,
     "name": "max_pooling",
     "total_instructions": 29
+  },
+  "4": {
+    "basicblocks": 28,
+    "calls": "1 1 1 1 3 3 3 3 2 2 2 2",
+    "file": "cnn.cpp",
+    "fileloc": 13,
+    "instructions": 186,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "dataflow_section",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 666
   }
 }

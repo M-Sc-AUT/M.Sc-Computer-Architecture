@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2301664925</coreId>
+						<coreId>3663410189</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -110,7 +110,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1699946542</coreId>
+						<coreId>1915711097</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -152,7 +152,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1952984624</coreId>
+						<coreId>544239471</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -195,7 +195,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936683105</coreId>
+						<coreId>1699560457</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -221,7 +221,7 @@
 						<id>9</id>
 						<name>indvar_flatten6_load</name>
 						<fileName>CNN/src/flat.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>flattening</contextFuncName>
 						<contextNormFuncName>flattening</contextNormFuncName>
@@ -229,7 +229,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>3</count>
 									<item_version>0</item_version>
@@ -265,7 +265,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>909523295</coreId>
+						<coreId>1668444975</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -292,7 +292,7 @@
 						<id>10</id>
 						<name>icmp_ln6</name>
 						<fileName>CNN/src/flat.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>flattening</contextFuncName>
 						<contextNormFuncName>flattening</contextNormFuncName>
@@ -300,7 +300,78 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
+								<second>
+									<count>3</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>CNN/src/cnn.cpp</first>
+											<second>dataflow_section</second>
+										</first>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>CNN/src/flat.cpp</first>
+											<second>flattening</second>
+										</first>
+										<second>6</second>
+									</item>
+									<item>
+										<first>
+											<first>CNN/src/flat.cpp</first>
+											<second>flattening_layer</second>
+										</first>
+										<second>19</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>909523295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>31</item>
+					<item>33</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.62</m_delay>
+				<m_topoIndex>5</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_8">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>11</id>
+						<name>add_ln6</name>
+						<fileName>CNN/src/flat.cpp</fileName>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
+						<lineNumber>6</lineNumber>
+						<contextFuncName>flattening</contextFuncName>
+						<contextNormFuncName>flattening</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
@@ -339,31 +410,31 @@
 						<coreId>1936028192</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>31</item>
-					<item>33</item>
+					<item>34</item>
+					<item>36</item>
 				</oprand_edges>
-				<opcode>icmp</opcode>
+				<opcode>add</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.62</m_delay>
-				<m_topoIndex>5</m_topoIndex>
+				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_8">
+			<item class_id_reference="9" object_id="_9">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>11</id>
-						<name>add_ln6</name>
+						<id>12</id>
+						<name>br_ln6</name>
 						<fileName>CNN/src/flat.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>flattening</contextFuncName>
 						<contextNormFuncName>flattening</contextNormFuncName>
@@ -371,7 +442,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
@@ -410,77 +481,6 @@
 						<coreId>1868767266</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>34</item>
-					<item>36</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.62</m_delay>
-				<m_topoIndex>6</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_9">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>12</id>
-						<name>br_ln6</name>
-						<fileName>CNN/src/flat.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
-						<lineNumber>6</lineNumber>
-						<contextFuncName>flattening</contextFuncName>
-						<contextNormFuncName>flattening</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
-								<second>
-									<count>3</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>CNN/src/cnn.cpp</first>
-											<second>dataflow_section</second>
-										</first>
-										<second>54</second>
-									</item>
-									<item>
-										<first>
-											<first>CNN/src/flat.cpp</first>
-											<second>flattening</second>
-										</first>
-										<second>6</second>
-									</item>
-									<item>
-										<first>
-											<first>CNN/src/flat.cpp</first>
-											<second>flattening_layer</second>
-										</first>
-										<second>19</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1919252069</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
@@ -506,7 +506,7 @@
 						<id>17</id>
 						<name>pool_to_flat_streams_1_read</name>
 						<fileName>CNN/src/flat.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>11</lineNumber>
 						<contextFuncName>flattening</contextFuncName>
 						<contextNormFuncName>flattening</contextNormFuncName>
@@ -514,7 +514,78 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
+								<second>
+									<count>3</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>CNN/src/cnn.cpp</first>
+											<second>dataflow_section</second>
+										</first>
+										<second>54</second>
+									</item>
+									<item>
+										<first>
+											<first>CNN/src/flat.cpp</first>
+											<second>flattening</second>
+										</first>
+										<second>11</second>
+									</item>
+									<item>
+										<first>
+											<first>CNN/src/flat.cpp</first>
+											<second>flattening_layer</second>
+										</first>
+										<second>19</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1919252069</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>41</item>
+					<item>42</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>3.04</m_delay>
+				<m_topoIndex>10</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_11">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>18</id>
+						<name>flat_to_dense_streams_1_write_ln11</name>
+						<fileName>CNN/src/flat.cpp</fileName>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
+						<lineNumber>11</lineNumber>
+						<contextFuncName>flattening</contextFuncName>
+						<contextNormFuncName>flattening</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
@@ -553,77 +624,6 @@
 						<coreId>1948262966</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>41</item>
-					<item>42</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.04</m_delay>
-				<m_topoIndex>10</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_11">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>18</id>
-						<name>flat_to_dense_streams_1_write_ln11</name>
-						<fileName>CNN/src/flat.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
-						<lineNumber>11</lineNumber>
-						<contextFuncName>flattening</contextFuncName>
-						<contextNormFuncName>flattening</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
-								<second>
-									<count>3</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>CNN/src/cnn.cpp</first>
-											<second>dataflow_section</second>
-										</first>
-										<second>54</second>
-									</item>
-									<item>
-										<first>
-											<first>CNN/src/flat.cpp</first>
-											<second>flattening</second>
-										</first>
-										<second>11</second>
-									</item>
-									<item>
-										<first>
-											<first>CNN/src/flat.cpp</first>
-											<second>flattening_layer</second>
-										</first>
-										<second>19</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1869182069</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
@@ -649,7 +649,7 @@
 						<id>19</id>
 						<name>indvar_flatten6_write_ln6</name>
 						<fileName>CNN/src/flat.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>6</lineNumber>
 						<contextFuncName>flattening</contextFuncName>
 						<contextNormFuncName>flattening</contextNormFuncName>
@@ -657,7 +657,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
@@ -693,7 +693,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539114355</coreId>
+						<coreId>1869182069</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -722,7 +722,7 @@
 						<id>20</id>
 						<name>br_ln9</name>
 						<fileName>CNN/src/flat.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>flattening</contextFuncName>
 						<contextNormFuncName>flattening</contextNormFuncName>
@@ -730,7 +730,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
@@ -766,7 +766,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869182069</coreId>
+						<coreId>959799123</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -808,7 +808,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539111732</coreId>
+						<coreId>757935405</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -853,7 +853,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1600941935</coreId>
+						<coreId>573650015</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -884,7 +884,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>541673768</coreId>
+						<coreId>673201011</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -915,7 +915,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1031301478</coreId>
+						<coreId>1868783474</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -946,7 +946,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1601597039</coreId>
+						<coreId>1835083365</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>

@@ -1,22 +1,22 @@
 ---
-MainSourceFile:  /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/CNN/solution1/.autopilot/db/dense.pp.0.cpp
+MainSourceFile:  /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/.autopilot/db/dense.pp.0.cpp
 Diagnostics:     
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_43_1:  '
     FileOffset:      43
-    FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/CNN/src/dense.cpp
+    FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/src/dense.cpp
     Replacements:    
-      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/CNN/solution1/.autopilot/db/dense.pp.0.cpp
-        Offset:          381879
+      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/.autopilot/db/dense.pp.0.cpp
+        Offset:          381910
         Length:          0
         ReplacementText: 'VITIS_LOOP_43_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_50_2:  '
     FileOffset:      50
-    FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/CNN/src/dense.cpp
+    FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/src/dense.cpp
     Replacements:    
-      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/CNN/solution1/.autopilot/db/dense.pp.0.cpp
-        Offset:          382055
+      - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/.autopilot/db/dense.pp.0.cpp
+        Offset:          382086
         Length:          0
         ReplacementText: 'VITIS_LOOP_50_2: '
 ...

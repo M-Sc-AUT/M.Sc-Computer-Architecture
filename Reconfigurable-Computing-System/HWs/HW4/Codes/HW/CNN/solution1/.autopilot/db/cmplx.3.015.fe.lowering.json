@@ -17,7 +17,7 @@
   },
   "1": {
     "basicblocks": 21,
-    "calls": "4 4 4 5 2 2 2 2 3 3 3 3",
+    "calls": "3 3 3 4 5 5 5 5 2 2 2 2",
     "file": "cnn.cpp",
     "fileloc": 13,
     "instructions": 213,
@@ -32,15 +32,6 @@
     "total_instructions": 7084
   },
   "2": {
-    "basicblocks": 5,
-    "calls": "",
-    "file": "pool.cpp",
-    "fileloc": 4,
-    "instructions": 29,
-    "name": "max_pooling",
-    "total_instructions": 29
-  },
-  "3": {
     "basicblocks": 7,
     "calls": "",
     "file": "dense.cpp",
@@ -56,7 +47,7 @@
     },
     "total_instructions": 98
   },
-  "4": {
+  "3": {
     "basicblocks": 9,
     "calls": "",
     "file": "conv.cpp",
@@ -69,7 +60,7 @@
     "name": "convolution",
     "total_instructions": 338
   },
-  "5": {
+  "4": {
     "basicblocks": 9,
     "calls": "",
     "file": "conv.cpp",
@@ -80,5 +71,14 @@
     },
     "name": "convolution",
     "total_instructions": 5349
+  },
+  "5": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "pool.cpp",
+    "fileloc": 4,
+    "instructions": 29,
+    "name": "max_pooling",
+    "total_instructions": 29
   }
 }

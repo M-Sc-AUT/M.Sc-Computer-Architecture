@@ -33,26 +33,26 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="cnn" col1="cnn.cpp:64" col2="1423" col3="653" col4="718" col5="7737" col6="7942">
-                    <row id="6" col0="normalization_and_padding" col1="utils.cpp:8" col2="34" col3="" col4="" col5="" col6=""/>
-                    <row id="12" col0="dataflow_section" col1="cnn.cpp:13" col2="1311" col3="597" col4="666" col5="7114" col6="7296">
-                        <row id="3" col0="convolutional_layer" col1="conv.cpp:62" col2="401" col3="" col4="" col5="" col6="">
+                    <row id="11" col0="normalization_and_padding" col1="utils.cpp:8" col2="34" col3="" col4="" col5="" col6=""/>
+                    <row id="3" col0="dataflow_section" col1="cnn.cpp:13" col2="1311" col3="597" col4="666" col5="7114" col6="7296">
+                        <row id="6" col0="convolutional_layer" col1="conv.cpp:62" col2="401" col3="" col4="" col5="" col6="">
                             <row id="7" col0="convolution" col1="conv.cpp:14" col2="392" col2_disp=" 392 (4 calls)" col3="" col4="" col5="" col6="">
-                                <row id="11" col0="relu" col1="conv.cpp:5" col2="28" col2_disp="  28 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="1" col0="relu" col1="conv.cpp:5" col2="28" col2_disp="  28 (4 calls)" col3="" col4="" col5="" col6=""/>
                             </row>
                         </row>
-                        <row id="10" col0="max_pooling_layer" col1="pool.cpp:31" col2="281" col3="" col4="" col5="" col6="">
+                        <row id="4" col0="max_pooling_layer" col1="pool.cpp:31" col2="281" col3="" col4="" col5="" col6="">
                             <row id="9" col0="max_pooling" col1="pool.cpp:4" col2="268" col2_disp=" 268 (4 calls)" col3="" col4="" col5="" col6=""/>
                         </row>
-                        <row id="1" col0="flattening_layer" col1="flat.cpp:16" col2="185" col3="" col4="" col5="" col6="">
-                            <row id="4" col0="flattening" col1="flat.cpp:3" col2="172" col2_disp=" 172 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="10" col0="flattening_layer" col1="flat.cpp:16" col2="185" col3="" col4="" col5="" col6="">
+                            <row id="2" col0="flattening" col1="flat.cpp:3" col2="172" col2_disp=" 172 (4 calls)" col3="" col4="" col5="" col6=""/>
                         </row>
-                        <row id="2" col0="dense_layer" col1="dense.cpp:56" col2="285" col3="" col4="" col5="" col6="">
-                            <row id="5" col0="dense" col1="dense.cpp:33" col2="272" col2_disp=" 272 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="5" col0="dense_layer" col1="dense.cpp:56" col2="285" col3="" col4="" col5="" col6="">
+                            <row id="8" col0="dense" col1="dense.cpp:33" col2="272" col2_disp=" 272 (4 calls)" col3="" col4="" col5="" col6=""/>
                         </row>
-                        <row id="8" col0="dense_layer_soft_max" col1="dense.cpp:7" col2="61" col3="" col4="" col5="" col6=""/>
+                        <row id="12" col0="dense_layer_soft_max" col1="dense.cpp:7" col2="61" col3="" col4="" col5="" col6=""/>
                         <row id="7" col0="convolution" col1="conv.cpp:14" col2="" col3="204" col3_disp="204 (4 calls)" col4="212" col4_disp="212 (4 calls)" col5="6460" col5_disp="6,460 (4 calls)" col6="6423" col6_disp="6,423 (4 calls)"/>
                         <row id="9" col0="max_pooling" col1="pool.cpp:4" col2="" col3="108" col3_disp="108 (4 calls)" col4="116" col4_disp="116 (4 calls)" col5="96" col5_disp="  96 (4 calls)" col6="184" col6_disp=" 184 (4 calls)"/>
-                        <row id="5" col0="dense" col1="dense.cpp:33" col2="" col3="152" col3_disp="152 (4 calls)" col4="152" col4_disp="152 (4 calls)" col5="384" col5_disp=" 384 (4 calls)" col6="452" col6_disp=" 452 (4 calls)"/>
+                        <row id="8" col0="dense" col1="dense.cpp:33" col2="" col3="152" col3_disp="152 (4 calls)" col4="152" col4_disp="152 (4 calls)" col5="384" col5_disp=" 384 (4 calls)" col6="452" col6_disp=" 452 (4 calls)"/>
                     </row>
                 </row>
             </rows>

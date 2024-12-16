@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Dec 16 12:59:24 2024
+# Process ID: 671979
+# Current directory: /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/.autopilot/db/ip_tmp
+# Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file: /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file: /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/.autopilot/db/ip_tmp/vivado.jou
+# Running On: r3z4, OS: Linux, CPU Frequency: 1600.012 MHz, CPU Physical cores: 6, Host memory: 12383 MB
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace

@@ -16,6 +16,19 @@
     "total_instructions": 18733
   },
   "1": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "conv.cpp",
+    "fileloc": 14,
+    "instructions": 2689,
+    "loads": {
+      "G": 50,
+      "L": 49
+    },
+    "name": "convolution",
+    "total_instructions": 2689
+  },
+  "2": {
     "basicblocks": 7,
     "calls": "",
     "file": "dense.cpp",
@@ -31,22 +44,9 @@
     },
     "total_instructions": 96
   },
-  "2": {
-    "basicblocks": 9,
-    "calls": "",
-    "file": "conv.cpp",
-    "fileloc": 14,
-    "instructions": 2689,
-    "loads": {
-      "G": 50,
-      "L": 49
-    },
-    "name": "convolution",
-    "total_instructions": 2689
-  },
   "3": {
     "basicblocks": 21,
-    "calls": "2 2 2 5 4 4 4 4 1 1 1 1",
+    "calls": "1 1 1 5 4 4 4 4 2 2 2 2",
     "file": "cnn.cpp",
     "fileloc": 13,
     "instructions": 174,

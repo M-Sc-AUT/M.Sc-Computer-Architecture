@@ -18,13 +18,13 @@ import time
 import math
 
 
-model_path = 'Model/model.h5'
+model_path = "Model/model.h5"
 input_size = (28, 28)
 conv_kernel_size = (7, 7)
 conv_filter_num = 4
 pool_size = (2, 2)
 dense_size = 10
-training_epochs = 6
+training_epochs = 5
 pad = int(math.floor(conv_kernel_size[0] / 2))
 
 

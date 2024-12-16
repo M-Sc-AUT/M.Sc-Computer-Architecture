@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dataflow_section_Pipeline_dense_soft_max_for_dense_size'
 ================================================================
-* Date:           Sun Dec 15 21:44:55 2024
+* Date:           Mon Dec 16 12:55:05 2024
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN
@@ -258,7 +258,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln13', CNN/src/dense.cpp:13->CNN/src/cnn.cpp:61) of constant 0 on local variable 'd', CNN/src/dense.cpp:13->CNN/src/cnn.cpp:61 [15]  (1.146 ns)
 	'load' operation 4 bit ('d', CNN/src/dense.cpp:13->CNN/src/cnn.cpp:61) on local variable 'd', CNN/src/dense.cpp:13->CNN/src/cnn.cpp:61 [19]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln13', CNN/src/dense.cpp:13->CNN/src/cnn.cpp:61) [20]  (1.406 ns)
+	'add' operation 4 bit ('add_ln13', CNN/src/dense.cpp:13->CNN/src/cnn.cpp:61) [21]  (1.406 ns)
 	'store' operation 0 bit ('store_ln13', CNN/src/dense.cpp:13->CNN/src/cnn.cpp:61) of variable 'add_ln13', CNN/src/dense.cpp:13->CNN/src/cnn.cpp:61 on local variable 'd', CNN/src/dense.cpp:13->CNN/src/cnn.cpp:61 [48]  (1.146 ns)
 
  <State 2>: 2.908ns

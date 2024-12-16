@@ -70,7 +70,7 @@
 						<coreName>FIFO_SRL</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>842676280</coreId>
+						<coreId>3629844975</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName>FIFO_SRL</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1699946542</coreId>
+						<coreId>842676280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName>FIFO_SRL</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2020173413</coreId>
+						<coreId>1915711097</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852142702</coreId>
+						<coreId>828330828</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>762278499</coreId>
+						<coreId>774778400</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -238,7 +238,7 @@
 						<id>8</id>
 						<name>exp_sum</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -246,7 +246,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>2</count>
 									<item_version>0</item_version>
@@ -275,7 +275,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1885414944</coreId>
+						<coreId>774774894</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -301,7 +301,7 @@
 						<id>9</id>
 						<name>d</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -309,7 +309,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -338,7 +338,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1230260566</coreId>
+						<coreId>1635131494</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -364,7 +364,7 @@
 						<id>15</id>
 						<name>d_write_ln13</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -372,7 +372,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -401,7 +401,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1629906017</coreId>
+						<coreId>1230260566</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -428,7 +428,7 @@
 						<id>16</id>
 						<name>exp_sum_write_ln10</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -436,7 +436,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -465,7 +465,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1634890867</coreId>
+						<coreId>1629906017</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -508,7 +508,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701067635</coreId>
+						<coreId>1634890867</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -534,7 +534,7 @@
 						<id>19</id>
 						<name>d_1</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -542,7 +542,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -571,7 +571,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>573386029</coreId>
+						<coreId>775107120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -598,7 +598,7 @@
 						<id>20</id>
 						<name>icmp_ln13</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -606,7 +606,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -662,7 +662,7 @@
 						<id>21</id>
 						<name>add_ln13</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -670,7 +670,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -726,7 +726,7 @@
 						<id>22</id>
 						<name>br_ln13</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -734,7 +734,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -763,7 +763,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852392994</coreId>
+						<coreId>1634623776</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -791,7 +791,7 @@
 						<id>24</id>
 						<name>exp_sum_load</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -799,7 +799,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -828,7 +828,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2020173413</coreId>
+						<coreId>539119430</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -855,7 +855,7 @@
 						<id>25</id>
 						<name>zext_ln13</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -863,7 +863,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -892,7 +892,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2318254688</coreId>
+						<coreId>539122992</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -918,7 +918,7 @@
 						<id>29</id>
 						<name>dense_biases_addr</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -926,7 +926,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -955,7 +955,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2322667168</coreId>
+						<coreId>774976310</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -983,7 +983,7 @@
 						<id>30</id>
 						<name>sum</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -991,7 +991,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1046,7 +1046,7 @@
 						<id>31</id>
 						<name>dense_to_softmax_streams_read</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1054,7 +1054,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1110,7 +1110,7 @@
 						<id>32</id>
 						<name>bitcast_ln20</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1118,7 +1118,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1147,7 +1147,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2322668144</coreId>
+						<coreId>784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1173,7 +1173,7 @@
 						<id>33</id>
 						<name>sum_1</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1181,7 +1181,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1237,7 +1237,7 @@
 						<id>34</id>
 						<name>dense_to_softmax_streams_1_read</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1245,7 +1245,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1301,7 +1301,7 @@
 						<id>35</id>
 						<name>bitcast_ln20_1</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1309,7 +1309,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1338,7 +1338,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2322668848</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1364,7 +1364,7 @@
 						<id>36</id>
 						<name>sum_2</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1372,7 +1372,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1428,7 +1428,7 @@
 						<id>37</id>
 						<name>dense_to_softmax_streams_2_read</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1436,7 +1436,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1492,7 +1492,7 @@
 						<id>38</id>
 						<name>bitcast_ln20_2</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1500,7 +1500,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1529,7 +1529,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2322673296</coreId>
+						<coreId>3796050064</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1555,7 +1555,7 @@
 						<id>39</id>
 						<name>sum_3</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1563,7 +1563,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1619,7 +1619,7 @@
 						<id>40</id>
 						<name>dense_to_softmax_streams_3_read</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1627,7 +1627,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1683,7 +1683,7 @@
 						<id>41</id>
 						<name>bitcast_ln20_3</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1691,7 +1691,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1720,7 +1720,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3796053136</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1746,7 +1746,7 @@
 						<id>42</id>
 						<name>sum_4</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1754,7 +1754,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1810,7 +1810,7 @@
 						<id>43</id>
 						<name>tmp</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1818,7 +1818,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1874,7 +1874,7 @@
 						<id>44</id>
 						<name>bitcast_ln23</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1882,7 +1882,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1911,7 +1911,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3189368260</coreId>
+						<coreId>3796055976</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1937,7 +1937,7 @@
 						<id>45</id>
 						<name>prediction_addr</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -1945,7 +1945,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1974,7 +1974,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2322676544</coreId>
+						<coreId>3796056528</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -2002,7 +2002,7 @@
 						<id>46</id>
 						<name>prediction_addr_write_ln23</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -2010,7 +2010,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2066,7 +2066,7 @@
 						<id>47</id>
 						<name>exp_sum_1</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -2074,7 +2074,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2130,7 +2130,7 @@
 						<id>48</id>
 						<name>d_write_ln13</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -2138,7 +2138,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2167,7 +2167,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936942413</coreId>
+						<coreId>48</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2196,7 +2196,7 @@
 						<id>49</id>
 						<name>exp_sum_write_ln10</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -2204,7 +2204,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2233,7 +2233,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3798904160</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2263,7 +2263,7 @@
 						<id>50</id>
 						<name>br_ln13</name>
 						<fileName>CNN/src/dense.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>dense_layer_soft_max</contextFuncName>
 						<contextNormFuncName>dense_layer_soft_max</contextNormFuncName>
@@ -2271,7 +2271,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2300,7 +2300,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2313209712</coreId>
+						<coreId>3796059680</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2342,7 +2342,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3796062592</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2385,7 +2385,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2323112224</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2429,7 +2429,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2322684160</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2474,7 +2474,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2505,7 +2505,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>928</coreId>
+						<coreId>3796065136</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -2536,7 +2536,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2295059664</coreId>
+						<coreId>752</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2567,7 +2567,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2322688968</coreId>
+						<coreId>3796059024</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -2598,7 +2598,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2322686992</coreId>
+						<coreId>3796067088</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -2629,7 +2629,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3796067840</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>

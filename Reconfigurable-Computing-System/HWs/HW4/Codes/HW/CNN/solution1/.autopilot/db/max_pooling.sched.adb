@@ -110,7 +110,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2741972880</coreId>
+						<coreId>4084394352</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -152,7 +152,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1</coreId>
+						<coreId>1699946542</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -179,7 +179,7 @@
 						<id>7</id>
 						<name>br_ln9</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -187,7 +187,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -209,7 +209,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1699946542</coreId>
+						<coreId>1868767266</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -235,7 +235,7 @@
 						<id>9</id>
 						<name>indvar_flatten_load</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -243,7 +243,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -265,7 +265,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852121199</coreId>
+						<coreId>1752394092</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -292,7 +292,7 @@
 						<id>10</id>
 						<name>icmp_ln9</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -300,7 +300,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -322,7 +322,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1210203513</coreId>
+						<coreId>795046515</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -349,7 +349,7 @@
 						<id>11</id>
 						<name>add_ln9</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -357,7 +357,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -379,7 +379,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1667457327</coreId>
+						<coreId>1226980729</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -406,7 +406,7 @@
 						<id>12</id>
 						<name>br_ln9</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -414,7 +414,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -436,7 +436,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1226980729</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -464,7 +464,7 @@
 						<id>17</id>
 						<name>conv_to_pool_streams_0_read</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -472,7 +472,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -494,7 +494,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1031040613</coreId>
+						<coreId>1702130553</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -521,7 +521,7 @@
 						<id>18</id>
 						<name>value</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -529,7 +529,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -551,7 +551,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1970040691</coreId>
+						<coreId>1702258035</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -577,7 +577,7 @@
 						<id>19</id>
 						<name>tmp</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -585,7 +585,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -607,7 +607,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701081711</coreId>
+						<coreId>543649385</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -636,7 +636,7 @@
 						<id>20</id>
 						<name>trunc_ln22</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -644,7 +644,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -666,7 +666,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1279810338</coreId>
+						<coreId>573455219</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -692,7 +692,7 @@
 						<id>21</id>
 						<name>icmp_ln22</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -700,7 +700,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -722,7 +722,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>543450472</coreId>
+						<coreId>2020173413</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -749,7 +749,7 @@
 						<id>22</id>
 						<name>icmp_ln22_1</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -757,7 +757,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -779,7 +779,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953067621</coreId>
+						<coreId>757935405</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -806,7 +806,7 @@
 						<id>23</id>
 						<name>or_ln22</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -814,7 +814,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -836,7 +836,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1295780106</coreId>
+						<coreId>1936683105</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -863,7 +863,7 @@
 						<id>24</id>
 						<name>tmp_1</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -871,7 +871,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -893,7 +893,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953718124</coreId>
+						<coreId>1819112552</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -920,7 +920,7 @@
 						<id>25</id>
 						<name>and_ln22</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -928,7 +928,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -950,7 +950,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936548197</coreId>
+						<coreId>1212371756</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -977,7 +977,7 @@
 						<id>26</id>
 						<name>pool_1</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -985,7 +985,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1007,7 +1007,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1668444975</coreId>
+						<coreId>3631106256</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1035,7 +1035,7 @@
 						<id>27</id>
 						<name>conv_to_pool_streams_0_read_1</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1043,7 +1043,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1065,7 +1065,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472031104</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1093,7 +1093,7 @@
 						<id>28</id>
 						<name>value_1</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1101,7 +1101,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1123,7 +1123,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472033968</coreId>
+						<coreId>3631107648</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1149,7 +1149,7 @@
 						<id>29</id>
 						<name>tmp_2</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1157,7 +1157,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1179,7 +1179,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2805036308</coreId>
+						<coreId>3631108816</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1208,7 +1208,7 @@
 						<id>30</id>
 						<name>trunc_ln22_1</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1216,7 +1216,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1238,7 +1238,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472035808</coreId>
+						<coreId>3631109776</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -1264,7 +1264,7 @@
 						<id>31</id>
 						<name>bitcast_ln22</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1272,7 +1272,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1294,7 +1294,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1819113532</coreId>
+						<coreId>3631110232</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1320,7 +1320,7 @@
 						<id>32</id>
 						<name>tmp_3</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1328,7 +1328,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1350,7 +1350,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472037224</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1379,7 +1379,7 @@
 						<id>33</id>
 						<name>trunc_ln22_2</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1387,7 +1387,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1409,7 +1409,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3631107016</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -1435,7 +1435,7 @@
 						<id>34</id>
 						<name>icmp_ln22_2</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1443,7 +1443,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1492,7 +1492,7 @@
 						<id>35</id>
 						<name>icmp_ln22_3</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1500,7 +1500,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1522,7 +1522,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4</coreId>
+						<coreId>3631113624</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1549,7 +1549,7 @@
 						<id>36</id>
 						<name>or_ln22_1</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1557,7 +1557,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1579,7 +1579,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472040368</coreId>
+						<coreId>3815146632</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1606,7 +1606,7 @@
 						<id>37</id>
 						<name>icmp_ln22_4</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1614,7 +1614,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1636,7 +1636,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472023360</coreId>
+						<coreId>3815147288</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1663,7 +1663,7 @@
 						<id>38</id>
 						<name>icmp_ln22_5</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1671,7 +1671,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1693,7 +1693,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472042128</coreId>
+						<coreId>6</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1720,7 +1720,7 @@
 						<id>39</id>
 						<name>or_ln22_2</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1728,7 +1728,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1750,7 +1750,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472041072</coreId>
+						<coreId>3650377425</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1777,7 +1777,7 @@
 						<id>40</id>
 						<name>and_ln22_1</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1785,7 +1785,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1807,7 +1807,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2307287381</coreId>
+						<coreId>3</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1834,7 +1834,7 @@
 						<id>41</id>
 						<name>tmp_4</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1842,7 +1842,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1864,7 +1864,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2805027798</coreId>
+						<coreId>3815150744</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1891,7 +1891,7 @@
 						<id>42</id>
 						<name>and_ln22_2</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1899,7 +1899,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1921,7 +1921,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472045520</coreId>
+						<coreId>3650378763</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1948,7 +1948,7 @@
 						<id>43</id>
 						<name>pool_3</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -1956,7 +1956,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1978,7 +1978,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>26</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2006,7 +2006,7 @@
 						<id>44</id>
 						<name>conv_to_pool_streams_0_read_2</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2014,7 +2014,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2036,7 +2036,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>3815154032</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2064,7 +2064,7 @@
 						<id>45</id>
 						<name>value_2</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2072,7 +2072,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2094,7 +2094,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>542329928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2120,7 +2120,7 @@
 						<id>46</id>
 						<name>tmp_5</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2128,7 +2128,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2150,7 +2150,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784</coreId>
+						<coreId>3815155928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -2179,7 +2179,7 @@
 						<id>47</id>
 						<name>trunc_ln22_3</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2187,7 +2187,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2209,7 +2209,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>10</coreId>
+						<coreId>3815157112</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -2235,7 +2235,7 @@
 						<id>48</id>
 						<name>bitcast_ln22_1</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2243,7 +2243,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2265,7 +2265,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2303680000</coreId>
+						<coreId>3648185280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2291,7 +2291,7 @@
 						<id>49</id>
 						<name>tmp_6</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2299,7 +2299,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2321,7 +2321,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2303680000</coreId>
+						<coreId>4294967040</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -2350,7 +2350,7 @@
 						<id>50</id>
 						<name>trunc_ln22_4</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2358,7 +2358,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2380,7 +2380,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886413614</coreId>
+						<coreId>3648185280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -2406,7 +2406,7 @@
 						<id>51</id>
 						<name>icmp_ln22_6</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2414,7 +2414,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2436,7 +2436,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472967336</coreId>
+						<coreId>3815157648</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2463,7 +2463,7 @@
 						<id>52</id>
 						<name>icmp_ln22_7</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2471,7 +2471,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2493,7 +2493,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2473020672</coreId>
+						<coreId>3645868064</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2520,7 +2520,7 @@
 						<id>53</id>
 						<name>or_ln22_3</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2528,7 +2528,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2550,7 +2550,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2463906752</coreId>
+						<coreId>319</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2577,7 +2577,7 @@
 						<id>54</id>
 						<name>icmp_ln22_8</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2585,7 +2585,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2607,7 +2607,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2817645934</coreId>
+						<coreId>3628504768</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2634,7 +2634,7 @@
 						<id>55</id>
 						<name>icmp_ln22_9</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2642,7 +2642,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2664,7 +2664,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2303680000</coreId>
+						<coreId>3631089344</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2691,7 +2691,7 @@
 						<id>56</id>
 						<name>or_ln22_4</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2699,7 +2699,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2721,7 +2721,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2303680000</coreId>
+						<coreId>1397508187</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2748,7 +2748,7 @@
 						<id>57</id>
 						<name>and_ln22_3</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2756,7 +2756,64 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>CNN/src/pool.cpp</first>
+											<second>max_pooling</second>
+										</first>
+										<second>22</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>322</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>190</item>
+					<item>191</item>
+				</oprand_edges>
+				<opcode>and</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>56</m_topoIndex>
+				<m_clusterGroupNumber>4</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_51">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>58</id>
+						<name>tmp_7</name>
+						<fileName>CNN/src/pool.cpp</fileName>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
+						<lineNumber>22</lineNumber>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2786,63 +2843,6 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>190</item>
-					<item>191</item>
-				</oprand_edges>
-				<opcode>and</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>56</m_topoIndex>
-				<m_clusterGroupNumber>4</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_51">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>58</id>
-						<name>tmp_7</name>
-						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
-						<lineNumber>22</lineNumber>
-						<contextFuncName>max_pooling</contextFuncName>
-						<contextNormFuncName>max_pooling</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>CNN/src/pool.cpp</first>
-											<second>max_pooling</second>
-										</first>
-										<second>22</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>2472015824</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
 					<item>192</item>
 					<item>193</item>
 				</oprand_edges>
@@ -2862,7 +2862,7 @@
 						<id>59</id>
 						<name>and_ln22_4</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2870,7 +2870,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2892,7 +2892,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2289461456</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2919,7 +2919,7 @@
 						<id>60</id>
 						<name>pool_5</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2927,7 +2927,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2949,7 +2949,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1397508187</coreId>
+						<coreId>3648185280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2977,7 +2977,7 @@
 						<id>61</id>
 						<name>conv_to_pool_streams_0_read_3</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -2985,7 +2985,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3007,7 +3007,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2458053008</coreId>
+						<coreId>3643480320</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3036,7 +3036,7 @@
 						<id>62</id>
 						<name>value_3</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3044,7 +3044,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3066,7 +3066,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2307360016</coreId>
+						<coreId>3649459760</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3092,7 +3092,7 @@
 						<id>63</id>
 						<name>tmp_8</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3100,7 +3100,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3122,7 +3122,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2339111712</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3151,7 +3151,7 @@
 						<id>64</id>
 						<name>trunc_ln22_5</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3159,7 +3159,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3181,7 +3181,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2302011424</coreId>
+						<coreId>3793509888</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -3207,7 +3207,7 @@
 						<id>65</id>
 						<name>bitcast_ln22_2</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3215,7 +3215,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3237,7 +3237,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2302030480</coreId>
+						<coreId>1397508187</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3263,7 +3263,7 @@
 						<id>66</id>
 						<name>tmp_9</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3271,7 +3271,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3293,7 +3293,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3186495353</coreId>
+						<coreId>3641191882</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3322,7 +3322,7 @@
 						<id>67</id>
 						<name>trunc_ln22_6</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3330,7 +3330,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3352,7 +3352,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3186495481</coreId>
+						<coreId>3641210187</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -3378,7 +3378,7 @@
 						<id>68</id>
 						<name>icmp_ln22_10</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3386,7 +3386,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3408,7 +3408,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2805923468</coreId>
+						<coreId>3655946416</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3435,7 +3435,7 @@
 						<id>69</id>
 						<name>icmp_ln22_11</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3443,7 +3443,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3492,7 +3492,7 @@
 						<id>70</id>
 						<name>or_ln22_5</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3500,7 +3500,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3522,7 +3522,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2472097792</coreId>
+						<coreId>3814238496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3549,7 +3549,7 @@
 						<id>71</id>
 						<name>icmp_ln22_12</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3557,7 +3557,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3579,7 +3579,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2804980746</coreId>
+						<coreId>3814235904</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3606,7 +3606,7 @@
 						<id>72</id>
 						<name>icmp_ln22_13</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3614,7 +3614,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3636,7 +3636,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2460712992</coreId>
+						<coreId>3641205758</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3663,7 +3663,7 @@
 						<id>73</id>
 						<name>or_ln22_6</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3671,7 +3671,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3693,7 +3693,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2460745744</coreId>
+						<coreId>3630557904</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3720,7 +3720,7 @@
 						<id>74</id>
 						<name>and_ln22_5</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3728,7 +3728,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3750,7 +3750,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2460712992</coreId>
+						<coreId>3812989152</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3777,7 +3777,7 @@
 						<id>75</id>
 						<name>tmp_s</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3785,7 +3785,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3807,7 +3807,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2460712992</coreId>
+						<coreId>3812989152</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3834,7 +3834,7 @@
 						<id>76</id>
 						<name>and_ln22_6</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3842,7 +3842,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3864,7 +3864,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3813006624</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3891,7 +3891,7 @@
 						<id>77</id>
 						<name>pool_7</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>22</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3899,7 +3899,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3921,7 +3921,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2460712992</coreId>
+						<coreId>3812989152</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3949,7 +3949,7 @@
 						<id>78</id>
 						<name>bitcast_ln26</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -3957,7 +3957,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3979,7 +3979,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3813016056</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4005,7 +4005,7 @@
 						<id>79</id>
 						<name>pool_to_flat_streams_0_write_ln26</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -4013,7 +4013,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4035,7 +4035,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2460712992</coreId>
+						<coreId>3812989152</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4063,7 +4063,7 @@
 						<id>80</id>
 						<name>indvar_flatten_write_ln9</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -4071,7 +4071,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4093,7 +4093,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2460734832</coreId>
+						<coreId>3813013552</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4122,7 +4122,7 @@
 						<id>81</id>
 						<name>br_ln12</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>12</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -4130,7 +4130,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4152,7 +4152,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2302004032</coreId>
+						<coreId>3812989152</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4178,7 +4178,7 @@
 						<id>83</id>
 						<name>_ln29</name>
 						<fileName>CNN/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</fileDirectory>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</fileDirectory>
 						<lineNumber>29</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -4186,7 +4186,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes</first>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4208,7 +4208,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2302022984</coreId>
+						<coreId>3638951728</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4284,7 +4284,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2303710792</coreId>
+						<coreId>3811841328</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4315,7 +4315,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2701804096</coreId>
+						<coreId>4084141856</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4346,7 +4346,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2876085376</coreId>
+						<coreId>4084142672</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4377,7 +4377,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2302004032</coreId>
+						<coreId>1886413614</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4408,7 +4408,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2302019176</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4439,7 +4439,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4470,7 +4470,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3177091072</coreId>
+						<coreId>3655896592</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -4501,7 +4501,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2282965616</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4602,7 +4602,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>3790682256</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -4697,7 +4697,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>3177094704</coreId>
+					<coreId>3813019360</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

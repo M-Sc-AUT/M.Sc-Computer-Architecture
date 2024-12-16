@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dataflow_section_Pipeline_flat_for_rows_flat_for_cols5'
 ================================================================
-* Date:           Sun Dec 15 21:44:54 2024
+* Date:           Mon Dec 16 12:55:04 2024
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN
@@ -115,7 +115,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten13' [6]  (1.146 ns)
 	'load' operation 8 bit ('indvar_flatten13_load', CNN/src/flat.cpp:6->CNN/src/flat.cpp:20->CNN/src/cnn.cpp:54) on local variable 'indvar_flatten13' [9]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln6', CNN/src/flat.cpp:6->CNN/src/flat.cpp:20->CNN/src/cnn.cpp:54) [10]  (1.627 ns)
+	'add' operation 8 bit ('add_ln6', CNN/src/flat.cpp:6->CNN/src/flat.cpp:20->CNN/src/cnn.cpp:54) [11]  (1.627 ns)
 	'store' operation 0 bit ('store_ln6', CNN/src/flat.cpp:6->CNN/src/flat.cpp:20->CNN/src/cnn.cpp:54) of variable 'add_ln6', CNN/src/flat.cpp:6->CNN/src/flat.cpp:20->CNN/src/cnn.cpp:54 on local variable 'indvar_flatten13' [19]  (1.146 ns)
 
  <State 2>: 6.084ns

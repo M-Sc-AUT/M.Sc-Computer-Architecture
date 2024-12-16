@@ -134300,7 +134300,7 @@ for.inc48:5509 %pixel_48 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.7float.floa
 
 <Node id="243" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:170 %mul = fmul i32 %pixel, i32 0.533092
+for.inc48:170 %mul = fmul i32 %pixel, i32 0.43322
 
 ]]></Node>
 <StgValue><ssdm name="mul"/></StgValue>
@@ -134318,7 +134318,7 @@ for.inc48:170 %mul = fmul i32 %pixel, i32 0.533092
 
 <Node id="243" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:170 %mul = fmul i32 %pixel, i32 0.533092
+for.inc48:170 %mul = fmul i32 %pixel, i32 0.43322
 
 ]]></Node>
 <StgValue><ssdm name="mul"/></StgValue>
@@ -134336,7 +134336,7 @@ for.inc48:170 %mul = fmul i32 %pixel, i32 0.533092
 
 <Node id="243" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:170 %mul = fmul i32 %pixel, i32 0.533092
+for.inc48:170 %mul = fmul i32 %pixel, i32 0.43322
 
 ]]></Node>
 <StgValue><ssdm name="mul"/></StgValue>
@@ -134354,7 +134354,7 @@ for.inc48:170 %mul = fmul i32 %pixel, i32 0.533092
 
 <Node id="243" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:170 %mul = fmul i32 %pixel, i32 0.533092
+for.inc48:170 %mul = fmul i32 %pixel, i32 0.43322
 
 ]]></Node>
 <StgValue><ssdm name="mul"/></StgValue>
@@ -134387,7 +134387,7 @@ for.inc48:171 %w_sum = fadd i32 %mul, i32 0
 
 <Node id="357" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:284 %mul_s = fmul i32 %pixel_1, i32 0.801732
+for.inc48:284 %mul_s = fmul i32 %pixel_1, i32 -0.0130961
 
 ]]></Node>
 <StgValue><ssdm name="mul_s"/></StgValue>
@@ -134420,7 +134420,7 @@ for.inc48:171 %w_sum = fadd i32 %mul, i32 0
 
 <Node id="357" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:284 %mul_s = fmul i32 %pixel_1, i32 0.801732
+for.inc48:284 %mul_s = fmul i32 %pixel_1, i32 -0.0130961
 
 ]]></Node>
 <StgValue><ssdm name="mul_s"/></StgValue>
@@ -134453,7 +134453,7 @@ for.inc48:171 %w_sum = fadd i32 %mul, i32 0
 
 <Node id="357" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:284 %mul_s = fmul i32 %pixel_1, i32 0.801732
+for.inc48:284 %mul_s = fmul i32 %pixel_1, i32 -0.0130961
 
 ]]></Node>
 <StgValue><ssdm name="mul_s"/></StgValue>
@@ -134486,7 +134486,7 @@ for.inc48:171 %w_sum = fadd i32 %mul, i32 0
 
 <Node id="357" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:284 %mul_s = fmul i32 %pixel_1, i32 0.801732
+for.inc48:284 %mul_s = fmul i32 %pixel_1, i32 -0.0130961
 
 ]]></Node>
 <StgValue><ssdm name="mul_s"/></StgValue>
@@ -134519,7 +134519,7 @@ for.inc48:285 %w_sum_1 = fadd i32 %w_sum, i32 %mul_s
 
 <Node id="471" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:398 %mul_7 = fmul i32 %pixel_2, i32 0.703973
+for.inc48:398 %mul_7 = fmul i32 %pixel_2, i32 0.121418
 
 ]]></Node>
 <StgValue><ssdm name="mul_7"/></StgValue>
@@ -134552,7 +134552,7 @@ for.inc48:285 %w_sum_1 = fadd i32 %w_sum, i32 %mul_s
 
 <Node id="471" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:398 %mul_7 = fmul i32 %pixel_2, i32 0.703973
+for.inc48:398 %mul_7 = fmul i32 %pixel_2, i32 0.121418
 
 ]]></Node>
 <StgValue><ssdm name="mul_7"/></StgValue>
@@ -134585,7 +134585,7 @@ for.inc48:285 %w_sum_1 = fadd i32 %w_sum, i32 %mul_s
 
 <Node id="471" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:398 %mul_7 = fmul i32 %pixel_2, i32 0.703973
+for.inc48:398 %mul_7 = fmul i32 %pixel_2, i32 0.121418
 
 ]]></Node>
 <StgValue><ssdm name="mul_7"/></StgValue>
@@ -134618,7 +134618,7 @@ for.inc48:285 %w_sum_1 = fadd i32 %w_sum, i32 %mul_s
 
 <Node id="471" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:398 %mul_7 = fmul i32 %pixel_2, i32 0.703973
+for.inc48:398 %mul_7 = fmul i32 %pixel_2, i32 0.121418
 
 ]]></Node>
 <StgValue><ssdm name="mul_7"/></StgValue>
@@ -134651,7 +134651,7 @@ for.inc48:399 %w_sum_2 = fadd i32 %w_sum_1, i32 %mul_7
 
 <Node id="585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:512 %mul_8 = fmul i32 %pixel_3, i32 0.461274
+for.inc48:512 %mul_8 = fmul i32 %pixel_3, i32 0.019093
 
 ]]></Node>
 <StgValue><ssdm name="mul_8"/></StgValue>
@@ -134684,7 +134684,7 @@ for.inc48:399 %w_sum_2 = fadd i32 %w_sum_1, i32 %mul_7
 
 <Node id="585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:512 %mul_8 = fmul i32 %pixel_3, i32 0.461274
+for.inc48:512 %mul_8 = fmul i32 %pixel_3, i32 0.019093
 
 ]]></Node>
 <StgValue><ssdm name="mul_8"/></StgValue>
@@ -134717,7 +134717,7 @@ for.inc48:399 %w_sum_2 = fadd i32 %w_sum_1, i32 %mul_7
 
 <Node id="585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:512 %mul_8 = fmul i32 %pixel_3, i32 0.461274
+for.inc48:512 %mul_8 = fmul i32 %pixel_3, i32 0.019093
 
 ]]></Node>
 <StgValue><ssdm name="mul_8"/></StgValue>
@@ -134750,7 +134750,7 @@ for.inc48:399 %w_sum_2 = fadd i32 %w_sum_1, i32 %mul_7
 
 <Node id="585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:512 %mul_8 = fmul i32 %pixel_3, i32 0.461274
+for.inc48:512 %mul_8 = fmul i32 %pixel_3, i32 0.019093
 
 ]]></Node>
 <StgValue><ssdm name="mul_8"/></StgValue>
@@ -134783,7 +134783,7 @@ for.inc48:513 %w_sum_3 = fadd i32 %w_sum_2, i32 %mul_8
 
 <Node id="699" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:626 %mul_9 = fmul i32 %pixel_4, i32 0.210077
+for.inc48:626 %mul_9 = fmul i32 %pixel_4, i32 0.314316
 
 ]]></Node>
 <StgValue><ssdm name="mul_9"/></StgValue>
@@ -134816,7 +134816,7 @@ for.inc48:513 %w_sum_3 = fadd i32 %w_sum_2, i32 %mul_8
 
 <Node id="699" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:626 %mul_9 = fmul i32 %pixel_4, i32 0.210077
+for.inc48:626 %mul_9 = fmul i32 %pixel_4, i32 0.314316
 
 ]]></Node>
 <StgValue><ssdm name="mul_9"/></StgValue>
@@ -134849,7 +134849,7 @@ for.inc48:513 %w_sum_3 = fadd i32 %w_sum_2, i32 %mul_8
 
 <Node id="699" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:626 %mul_9 = fmul i32 %pixel_4, i32 0.210077
+for.inc48:626 %mul_9 = fmul i32 %pixel_4, i32 0.314316
 
 ]]></Node>
 <StgValue><ssdm name="mul_9"/></StgValue>
@@ -134882,7 +134882,7 @@ for.inc48:513 %w_sum_3 = fadd i32 %w_sum_2, i32 %mul_8
 
 <Node id="699" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:626 %mul_9 = fmul i32 %pixel_4, i32 0.210077
+for.inc48:626 %mul_9 = fmul i32 %pixel_4, i32 0.314316
 
 ]]></Node>
 <StgValue><ssdm name="mul_9"/></StgValue>
@@ -134915,7 +134915,7 @@ for.inc48:627 %w_sum_4 = fadd i32 %w_sum_3, i32 %mul_9
 
 <Node id="813" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:740 %mul_10 = fmul i32 %pixel_5, i32 -0.136476
+for.inc48:740 %mul_10 = fmul i32 %pixel_5, i32 0.392013
 
 ]]></Node>
 <StgValue><ssdm name="mul_10"/></StgValue>
@@ -134948,7 +134948,7 @@ for.inc48:627 %w_sum_4 = fadd i32 %w_sum_3, i32 %mul_9
 
 <Node id="813" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:740 %mul_10 = fmul i32 %pixel_5, i32 -0.136476
+for.inc48:740 %mul_10 = fmul i32 %pixel_5, i32 0.392013
 
 ]]></Node>
 <StgValue><ssdm name="mul_10"/></StgValue>
@@ -134981,7 +134981,7 @@ for.inc48:627 %w_sum_4 = fadd i32 %w_sum_3, i32 %mul_9
 
 <Node id="813" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:740 %mul_10 = fmul i32 %pixel_5, i32 -0.136476
+for.inc48:740 %mul_10 = fmul i32 %pixel_5, i32 0.392013
 
 ]]></Node>
 <StgValue><ssdm name="mul_10"/></StgValue>
@@ -135014,7 +135014,7 @@ for.inc48:627 %w_sum_4 = fadd i32 %w_sum_3, i32 %mul_9
 
 <Node id="813" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:740 %mul_10 = fmul i32 %pixel_5, i32 -0.136476
+for.inc48:740 %mul_10 = fmul i32 %pixel_5, i32 0.392013
 
 ]]></Node>
 <StgValue><ssdm name="mul_10"/></StgValue>
@@ -135047,7 +135047,7 @@ for.inc48:741 %w_sum_5 = fadd i32 %w_sum_4, i32 %mul_10
 
 <Node id="927" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:854 %mul_11 = fmul i32 %pixel_6, i32 -0.120268
+for.inc48:854 %mul_11 = fmul i32 %pixel_6, i32 0.0592264
 
 ]]></Node>
 <StgValue><ssdm name="mul_11"/></StgValue>
@@ -135080,7 +135080,7 @@ for.inc48:741 %w_sum_5 = fadd i32 %w_sum_4, i32 %mul_10
 
 <Node id="927" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:854 %mul_11 = fmul i32 %pixel_6, i32 -0.120268
+for.inc48:854 %mul_11 = fmul i32 %pixel_6, i32 0.0592264
 
 ]]></Node>
 <StgValue><ssdm name="mul_11"/></StgValue>
@@ -135113,7 +135113,7 @@ for.inc48:741 %w_sum_5 = fadd i32 %w_sum_4, i32 %mul_10
 
 <Node id="927" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:854 %mul_11 = fmul i32 %pixel_6, i32 -0.120268
+for.inc48:854 %mul_11 = fmul i32 %pixel_6, i32 0.0592264
 
 ]]></Node>
 <StgValue><ssdm name="mul_11"/></StgValue>
@@ -135146,7 +135146,7 @@ for.inc48:741 %w_sum_5 = fadd i32 %w_sum_4, i32 %mul_10
 
 <Node id="927" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:854 %mul_11 = fmul i32 %pixel_6, i32 -0.120268
+for.inc48:854 %mul_11 = fmul i32 %pixel_6, i32 0.0592264
 
 ]]></Node>
 <StgValue><ssdm name="mul_11"/></StgValue>
@@ -135179,7 +135179,7 @@ for.inc48:855 %w_sum_6 = fadd i32 %w_sum_5, i32 %mul_11
 
 <Node id="1349" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1276 %mul_1 = fmul i32 %pixel_7, i32 -0.117235
+for.inc48:1276 %mul_1 = fmul i32 %pixel_7, i32 0.331616
 
 ]]></Node>
 <StgValue><ssdm name="mul_1"/></StgValue>
@@ -135212,7 +135212,7 @@ for.inc48:855 %w_sum_6 = fadd i32 %w_sum_5, i32 %mul_11
 
 <Node id="1349" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1276 %mul_1 = fmul i32 %pixel_7, i32 -0.117235
+for.inc48:1276 %mul_1 = fmul i32 %pixel_7, i32 0.331616
 
 ]]></Node>
 <StgValue><ssdm name="mul_1"/></StgValue>
@@ -135245,7 +135245,7 @@ for.inc48:855 %w_sum_6 = fadd i32 %w_sum_5, i32 %mul_11
 
 <Node id="1349" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1276 %mul_1 = fmul i32 %pixel_7, i32 -0.117235
+for.inc48:1276 %mul_1 = fmul i32 %pixel_7, i32 0.331616
 
 ]]></Node>
 <StgValue><ssdm name="mul_1"/></StgValue>
@@ -135278,7 +135278,7 @@ for.inc48:855 %w_sum_6 = fadd i32 %w_sum_5, i32 %mul_11
 
 <Node id="1349" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1276 %mul_1 = fmul i32 %pixel_7, i32 -0.117235
+for.inc48:1276 %mul_1 = fmul i32 %pixel_7, i32 0.331616
 
 ]]></Node>
 <StgValue><ssdm name="mul_1"/></StgValue>
@@ -135311,7 +135311,7 @@ for.inc48:1277 %w_sum_7 = fadd i32 %w_sum_6, i32 %mul_1
 
 <Node id="1408" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1335 %mul_1_1 = fmul i32 %pixel_8, i32 -0.14658
+for.inc48:1335 %mul_1_1 = fmul i32 %pixel_8, i32 0.325213
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_1"/></StgValue>
@@ -135344,7 +135344,7 @@ for.inc48:1277 %w_sum_7 = fadd i32 %w_sum_6, i32 %mul_1
 
 <Node id="1408" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1335 %mul_1_1 = fmul i32 %pixel_8, i32 -0.14658
+for.inc48:1335 %mul_1_1 = fmul i32 %pixel_8, i32 0.325213
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_1"/></StgValue>
@@ -135377,7 +135377,7 @@ for.inc48:1277 %w_sum_7 = fadd i32 %w_sum_6, i32 %mul_1
 
 <Node id="1408" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1335 %mul_1_1 = fmul i32 %pixel_8, i32 -0.14658
+for.inc48:1335 %mul_1_1 = fmul i32 %pixel_8, i32 0.325213
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_1"/></StgValue>
@@ -135410,7 +135410,7 @@ for.inc48:1277 %w_sum_7 = fadd i32 %w_sum_6, i32 %mul_1
 
 <Node id="1408" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1335 %mul_1_1 = fmul i32 %pixel_8, i32 -0.14658
+for.inc48:1335 %mul_1_1 = fmul i32 %pixel_8, i32 0.325213
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_1"/></StgValue>
@@ -135443,7 +135443,7 @@ for.inc48:1336 %w_sum_8 = fadd i32 %w_sum_7, i32 %mul_1_1
 
 <Node id="1467" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1394 %mul_1_2 = fmul i32 %pixel_9, i32 -0.112319
+for.inc48:1394 %mul_1_2 = fmul i32 %pixel_9, i32 0.491963
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_2"/></StgValue>
@@ -135476,7 +135476,7 @@ for.inc48:1336 %w_sum_8 = fadd i32 %w_sum_7, i32 %mul_1_1
 
 <Node id="1467" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1394 %mul_1_2 = fmul i32 %pixel_9, i32 -0.112319
+for.inc48:1394 %mul_1_2 = fmul i32 %pixel_9, i32 0.491963
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_2"/></StgValue>
@@ -135509,7 +135509,7 @@ for.inc48:1336 %w_sum_8 = fadd i32 %w_sum_7, i32 %mul_1_1
 
 <Node id="1467" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1394 %mul_1_2 = fmul i32 %pixel_9, i32 -0.112319
+for.inc48:1394 %mul_1_2 = fmul i32 %pixel_9, i32 0.491963
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_2"/></StgValue>
@@ -135542,7 +135542,7 @@ for.inc48:1336 %w_sum_8 = fadd i32 %w_sum_7, i32 %mul_1_1
 
 <Node id="1467" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1394 %mul_1_2 = fmul i32 %pixel_9, i32 -0.112319
+for.inc48:1394 %mul_1_2 = fmul i32 %pixel_9, i32 0.491963
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_2"/></StgValue>
@@ -135575,7 +135575,7 @@ for.inc48:1395 %w_sum_9 = fadd i32 %w_sum_8, i32 %mul_1_2
 
 <Node id="1526" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1453 %mul_1_3 = fmul i32 %pixel_10, i32 -0.323436
+for.inc48:1453 %mul_1_3 = fmul i32 %pixel_10, i32 0.718326
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_3"/></StgValue>
@@ -135608,7 +135608,7 @@ for.inc48:1395 %w_sum_9 = fadd i32 %w_sum_8, i32 %mul_1_2
 
 <Node id="1526" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1453 %mul_1_3 = fmul i32 %pixel_10, i32 -0.323436
+for.inc48:1453 %mul_1_3 = fmul i32 %pixel_10, i32 0.718326
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_3"/></StgValue>
@@ -135641,7 +135641,7 @@ for.inc48:1395 %w_sum_9 = fadd i32 %w_sum_8, i32 %mul_1_2
 
 <Node id="1526" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1453 %mul_1_3 = fmul i32 %pixel_10, i32 -0.323436
+for.inc48:1453 %mul_1_3 = fmul i32 %pixel_10, i32 0.718326
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_3"/></StgValue>
@@ -135674,7 +135674,7 @@ for.inc48:1395 %w_sum_9 = fadd i32 %w_sum_8, i32 %mul_1_2
 
 <Node id="1526" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1453 %mul_1_3 = fmul i32 %pixel_10, i32 -0.323436
+for.inc48:1453 %mul_1_3 = fmul i32 %pixel_10, i32 0.718326
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_3"/></StgValue>
@@ -135707,7 +135707,7 @@ for.inc48:1454 %w_sum_10 = fadd i32 %w_sum_9, i32 %mul_1_3
 
 <Node id="1585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1512 %mul_1_4 = fmul i32 %pixel_11, i32 -0.257467
+for.inc48:1512 %mul_1_4 = fmul i32 %pixel_11, i32 0.496
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_4"/></StgValue>
@@ -135740,7 +135740,7 @@ for.inc48:1454 %w_sum_10 = fadd i32 %w_sum_9, i32 %mul_1_3
 
 <Node id="1585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1512 %mul_1_4 = fmul i32 %pixel_11, i32 -0.257467
+for.inc48:1512 %mul_1_4 = fmul i32 %pixel_11, i32 0.496
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_4"/></StgValue>
@@ -135773,7 +135773,7 @@ for.inc48:1454 %w_sum_10 = fadd i32 %w_sum_9, i32 %mul_1_3
 
 <Node id="1585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1512 %mul_1_4 = fmul i32 %pixel_11, i32 -0.257467
+for.inc48:1512 %mul_1_4 = fmul i32 %pixel_11, i32 0.496
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_4"/></StgValue>
@@ -135806,7 +135806,7 @@ for.inc48:1454 %w_sum_10 = fadd i32 %w_sum_9, i32 %mul_1_3
 
 <Node id="1585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1512 %mul_1_4 = fmul i32 %pixel_11, i32 -0.257467
+for.inc48:1512 %mul_1_4 = fmul i32 %pixel_11, i32 0.496
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_4"/></StgValue>
@@ -135839,7 +135839,7 @@ for.inc48:1513 %w_sum_11 = fadd i32 %w_sum_10, i32 %mul_1_4
 
 <Node id="1644" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1571 %mul_1_5 = fmul i32 %pixel_12, i32 0.202897
+for.inc48:1571 %mul_1_5 = fmul i32 %pixel_12, i32 0.10909
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_5"/></StgValue>
@@ -135872,7 +135872,7 @@ for.inc48:1513 %w_sum_11 = fadd i32 %w_sum_10, i32 %mul_1_4
 
 <Node id="1644" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1571 %mul_1_5 = fmul i32 %pixel_12, i32 0.202897
+for.inc48:1571 %mul_1_5 = fmul i32 %pixel_12, i32 0.10909
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_5"/></StgValue>
@@ -135905,7 +135905,7 @@ for.inc48:1513 %w_sum_11 = fadd i32 %w_sum_10, i32 %mul_1_4
 
 <Node id="1644" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1571 %mul_1_5 = fmul i32 %pixel_12, i32 0.202897
+for.inc48:1571 %mul_1_5 = fmul i32 %pixel_12, i32 0.10909
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_5"/></StgValue>
@@ -135938,7 +135938,7 @@ for.inc48:1513 %w_sum_11 = fadd i32 %w_sum_10, i32 %mul_1_4
 
 <Node id="1644" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1571 %mul_1_5 = fmul i32 %pixel_12, i32 0.202897
+for.inc48:1571 %mul_1_5 = fmul i32 %pixel_12, i32 0.10909
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_5"/></StgValue>
@@ -135971,7 +135971,7 @@ for.inc48:1572 %w_sum_12 = fadd i32 %w_sum_11, i32 %mul_1_5
 
 <Node id="1703" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1630 %mul_1_6 = fmul i32 %pixel_13, i32 0.231804
+for.inc48:1630 %mul_1_6 = fmul i32 %pixel_13, i32 0.549233
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_6"/></StgValue>
@@ -136004,7 +136004,7 @@ for.inc48:1572 %w_sum_12 = fadd i32 %w_sum_11, i32 %mul_1_5
 
 <Node id="1703" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1630 %mul_1_6 = fmul i32 %pixel_13, i32 0.231804
+for.inc48:1630 %mul_1_6 = fmul i32 %pixel_13, i32 0.549233
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_6"/></StgValue>
@@ -136037,7 +136037,7 @@ for.inc48:1572 %w_sum_12 = fadd i32 %w_sum_11, i32 %mul_1_5
 
 <Node id="1703" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1630 %mul_1_6 = fmul i32 %pixel_13, i32 0.231804
+for.inc48:1630 %mul_1_6 = fmul i32 %pixel_13, i32 0.549233
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_6"/></StgValue>
@@ -136070,7 +136070,7 @@ for.inc48:1572 %w_sum_12 = fadd i32 %w_sum_11, i32 %mul_1_5
 
 <Node id="1703" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:1630 %mul_1_6 = fmul i32 %pixel_13, i32 0.231804
+for.inc48:1630 %mul_1_6 = fmul i32 %pixel_13, i32 0.549233
 
 ]]></Node>
 <StgValue><ssdm name="mul_1_6"/></StgValue>
@@ -136103,7 +136103,7 @@ for.inc48:1631 %w_sum_13 = fadd i32 %w_sum_12, i32 %mul_1_6
 
 <Node id="2125" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2052 %mul_2 = fmul i32 %pixel_14, i32 -0.99167
+for.inc48:2052 %mul_2 = fmul i32 %pixel_14, i32 -0.0726083
 
 ]]></Node>
 <StgValue><ssdm name="mul_2"/></StgValue>
@@ -136136,7 +136136,7 @@ for.inc48:1631 %w_sum_13 = fadd i32 %w_sum_12, i32 %mul_1_6
 
 <Node id="2125" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2052 %mul_2 = fmul i32 %pixel_14, i32 -0.99167
+for.inc48:2052 %mul_2 = fmul i32 %pixel_14, i32 -0.0726083
 
 ]]></Node>
 <StgValue><ssdm name="mul_2"/></StgValue>
@@ -136169,7 +136169,7 @@ for.inc48:1631 %w_sum_13 = fadd i32 %w_sum_12, i32 %mul_1_6
 
 <Node id="2125" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2052 %mul_2 = fmul i32 %pixel_14, i32 -0.99167
+for.inc48:2052 %mul_2 = fmul i32 %pixel_14, i32 -0.0726083
 
 ]]></Node>
 <StgValue><ssdm name="mul_2"/></StgValue>
@@ -136202,7 +136202,7 @@ for.inc48:1631 %w_sum_13 = fadd i32 %w_sum_12, i32 %mul_1_6
 
 <Node id="2125" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2052 %mul_2 = fmul i32 %pixel_14, i32 -0.99167
+for.inc48:2052 %mul_2 = fmul i32 %pixel_14, i32 -0.0726083
 
 ]]></Node>
 <StgValue><ssdm name="mul_2"/></StgValue>
@@ -136235,7 +136235,7 @@ for.inc48:2053 %w_sum_14 = fadd i32 %w_sum_13, i32 %mul_2
 
 <Node id="2184" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2111 %mul_2_1 = fmul i32 %pixel_15, i32 -0.818559
+for.inc48:2111 %mul_2_1 = fmul i32 %pixel_15, i32 0.538083
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_1"/></StgValue>
@@ -136268,7 +136268,7 @@ for.inc48:2053 %w_sum_14 = fadd i32 %w_sum_13, i32 %mul_2
 
 <Node id="2184" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2111 %mul_2_1 = fmul i32 %pixel_15, i32 -0.818559
+for.inc48:2111 %mul_2_1 = fmul i32 %pixel_15, i32 0.538083
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_1"/></StgValue>
@@ -136301,7 +136301,7 @@ for.inc48:2053 %w_sum_14 = fadd i32 %w_sum_13, i32 %mul_2
 
 <Node id="2184" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2111 %mul_2_1 = fmul i32 %pixel_15, i32 -0.818559
+for.inc48:2111 %mul_2_1 = fmul i32 %pixel_15, i32 0.538083
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_1"/></StgValue>
@@ -136334,7 +136334,7 @@ for.inc48:2053 %w_sum_14 = fadd i32 %w_sum_13, i32 %mul_2
 
 <Node id="2184" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2111 %mul_2_1 = fmul i32 %pixel_15, i32 -0.818559
+for.inc48:2111 %mul_2_1 = fmul i32 %pixel_15, i32 0.538083
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_1"/></StgValue>
@@ -136367,7 +136367,7 @@ for.inc48:2112 %w_sum_15 = fadd i32 %w_sum_14, i32 %mul_2_1
 
 <Node id="2243" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2170 %mul_2_2 = fmul i32 %pixel_16, i32 -0.355249
+for.inc48:2170 %mul_2_2 = fmul i32 %pixel_16, i32 0.67776
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_2"/></StgValue>
@@ -136400,7 +136400,7 @@ for.inc48:2112 %w_sum_15 = fadd i32 %w_sum_14, i32 %mul_2_1
 
 <Node id="2243" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2170 %mul_2_2 = fmul i32 %pixel_16, i32 -0.355249
+for.inc48:2170 %mul_2_2 = fmul i32 %pixel_16, i32 0.67776
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_2"/></StgValue>
@@ -136433,7 +136433,7 @@ for.inc48:2112 %w_sum_15 = fadd i32 %w_sum_14, i32 %mul_2_1
 
 <Node id="2243" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2170 %mul_2_2 = fmul i32 %pixel_16, i32 -0.355249
+for.inc48:2170 %mul_2_2 = fmul i32 %pixel_16, i32 0.67776
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_2"/></StgValue>
@@ -136466,7 +136466,7 @@ for.inc48:2112 %w_sum_15 = fadd i32 %w_sum_14, i32 %mul_2_1
 
 <Node id="2243" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2170 %mul_2_2 = fmul i32 %pixel_16, i32 -0.355249
+for.inc48:2170 %mul_2_2 = fmul i32 %pixel_16, i32 0.67776
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_2"/></StgValue>
@@ -136499,7 +136499,7 @@ for.inc48:2171 %w_sum_16 = fadd i32 %w_sum_15, i32 %mul_2_2
 
 <Node id="2302" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2229 %mul_2_3 = fmul i32 %pixel_17, i32 -0.182112
+for.inc48:2229 %mul_2_3 = fmul i32 %pixel_17, i32 0.27912
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_3"/></StgValue>
@@ -136532,7 +136532,7 @@ for.inc48:2171 %w_sum_16 = fadd i32 %w_sum_15, i32 %mul_2_2
 
 <Node id="2302" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2229 %mul_2_3 = fmul i32 %pixel_17, i32 -0.182112
+for.inc48:2229 %mul_2_3 = fmul i32 %pixel_17, i32 0.27912
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_3"/></StgValue>
@@ -136565,7 +136565,7 @@ for.inc48:2171 %w_sum_16 = fadd i32 %w_sum_15, i32 %mul_2_2
 
 <Node id="2302" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2229 %mul_2_3 = fmul i32 %pixel_17, i32 -0.182112
+for.inc48:2229 %mul_2_3 = fmul i32 %pixel_17, i32 0.27912
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_3"/></StgValue>
@@ -136598,7 +136598,7 @@ for.inc48:2171 %w_sum_16 = fadd i32 %w_sum_15, i32 %mul_2_2
 
 <Node id="2302" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2229 %mul_2_3 = fmul i32 %pixel_17, i32 -0.182112
+for.inc48:2229 %mul_2_3 = fmul i32 %pixel_17, i32 0.27912
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_3"/></StgValue>
@@ -136631,7 +136631,7 @@ for.inc48:2230 %w_sum_17 = fadd i32 %w_sum_16, i32 %mul_2_3
 
 <Node id="2361" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2288 %mul_2_4 = fmul i32 %pixel_18, i32 0.311056
+for.inc48:2288 %mul_2_4 = fmul i32 %pixel_18, i32 0.168062
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_4"/></StgValue>
@@ -136664,7 +136664,7 @@ for.inc48:2230 %w_sum_17 = fadd i32 %w_sum_16, i32 %mul_2_3
 
 <Node id="2361" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2288 %mul_2_4 = fmul i32 %pixel_18, i32 0.311056
+for.inc48:2288 %mul_2_4 = fmul i32 %pixel_18, i32 0.168062
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_4"/></StgValue>
@@ -136697,7 +136697,7 @@ for.inc48:2230 %w_sum_17 = fadd i32 %w_sum_16, i32 %mul_2_3
 
 <Node id="2361" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2288 %mul_2_4 = fmul i32 %pixel_18, i32 0.311056
+for.inc48:2288 %mul_2_4 = fmul i32 %pixel_18, i32 0.168062
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_4"/></StgValue>
@@ -136730,7 +136730,7 @@ for.inc48:2230 %w_sum_17 = fadd i32 %w_sum_16, i32 %mul_2_3
 
 <Node id="2361" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2288 %mul_2_4 = fmul i32 %pixel_18, i32 0.311056
+for.inc48:2288 %mul_2_4 = fmul i32 %pixel_18, i32 0.168062
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_4"/></StgValue>
@@ -136763,7 +136763,7 @@ for.inc48:2289 %w_sum_18 = fadd i32 %w_sum_17, i32 %mul_2_4
 
 <Node id="2420" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2347 %mul_2_5 = fmul i32 %pixel_19, i32 0.225574
+for.inc48:2347 %mul_2_5 = fmul i32 %pixel_19, i32 0.485303
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_5"/></StgValue>
@@ -136796,7 +136796,7 @@ for.inc48:2289 %w_sum_18 = fadd i32 %w_sum_17, i32 %mul_2_4
 
 <Node id="2420" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2347 %mul_2_5 = fmul i32 %pixel_19, i32 0.225574
+for.inc48:2347 %mul_2_5 = fmul i32 %pixel_19, i32 0.485303
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_5"/></StgValue>
@@ -136829,7 +136829,7 @@ for.inc48:2289 %w_sum_18 = fadd i32 %w_sum_17, i32 %mul_2_4
 
 <Node id="2420" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2347 %mul_2_5 = fmul i32 %pixel_19, i32 0.225574
+for.inc48:2347 %mul_2_5 = fmul i32 %pixel_19, i32 0.485303
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_5"/></StgValue>
@@ -136862,7 +136862,7 @@ for.inc48:2289 %w_sum_18 = fadd i32 %w_sum_17, i32 %mul_2_4
 
 <Node id="2420" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2347 %mul_2_5 = fmul i32 %pixel_19, i32 0.225574
+for.inc48:2347 %mul_2_5 = fmul i32 %pixel_19, i32 0.485303
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_5"/></StgValue>
@@ -136895,7 +136895,7 @@ for.inc48:2348 %w_sum_19 = fadd i32 %w_sum_18, i32 %mul_2_5
 
 <Node id="2479" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2406 %mul_2_6 = fmul i32 %pixel_20, i32 0.172328
+for.inc48:2406 %mul_2_6 = fmul i32 %pixel_20, i32 0.203863
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_6"/></StgValue>
@@ -136928,7 +136928,7 @@ for.inc48:2348 %w_sum_19 = fadd i32 %w_sum_18, i32 %mul_2_5
 
 <Node id="2479" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2406 %mul_2_6 = fmul i32 %pixel_20, i32 0.172328
+for.inc48:2406 %mul_2_6 = fmul i32 %pixel_20, i32 0.203863
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_6"/></StgValue>
@@ -136961,7 +136961,7 @@ for.inc48:2348 %w_sum_19 = fadd i32 %w_sum_18, i32 %mul_2_5
 
 <Node id="2479" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2406 %mul_2_6 = fmul i32 %pixel_20, i32 0.172328
+for.inc48:2406 %mul_2_6 = fmul i32 %pixel_20, i32 0.203863
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_6"/></StgValue>
@@ -136994,7 +136994,7 @@ for.inc48:2348 %w_sum_19 = fadd i32 %w_sum_18, i32 %mul_2_5
 
 <Node id="2479" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2406 %mul_2_6 = fmul i32 %pixel_20, i32 0.172328
+for.inc48:2406 %mul_2_6 = fmul i32 %pixel_20, i32 0.203863
 
 ]]></Node>
 <StgValue><ssdm name="mul_2_6"/></StgValue>
@@ -137027,7 +137027,7 @@ for.inc48:2407 %w_sum_20 = fadd i32 %w_sum_19, i32 %mul_2_6
 
 <Node id="2901" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2828 %mul_3 = fmul i32 %pixel_21, i32 -0.83863
+for.inc48:2828 %mul_3 = fmul i32 %pixel_21, i32 -0.659657
 
 ]]></Node>
 <StgValue><ssdm name="mul_3"/></StgValue>
@@ -137060,7 +137060,7 @@ for.inc48:2407 %w_sum_20 = fadd i32 %w_sum_19, i32 %mul_2_6
 
 <Node id="2901" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2828 %mul_3 = fmul i32 %pixel_21, i32 -0.83863
+for.inc48:2828 %mul_3 = fmul i32 %pixel_21, i32 -0.659657
 
 ]]></Node>
 <StgValue><ssdm name="mul_3"/></StgValue>
@@ -137093,7 +137093,7 @@ for.inc48:2407 %w_sum_20 = fadd i32 %w_sum_19, i32 %mul_2_6
 
 <Node id="2901" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2828 %mul_3 = fmul i32 %pixel_21, i32 -0.83863
+for.inc48:2828 %mul_3 = fmul i32 %pixel_21, i32 -0.659657
 
 ]]></Node>
 <StgValue><ssdm name="mul_3"/></StgValue>
@@ -137126,7 +137126,7 @@ for.inc48:2407 %w_sum_20 = fadd i32 %w_sum_19, i32 %mul_2_6
 
 <Node id="2901" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2828 %mul_3 = fmul i32 %pixel_21, i32 -0.83863
+for.inc48:2828 %mul_3 = fmul i32 %pixel_21, i32 -0.659657
 
 ]]></Node>
 <StgValue><ssdm name="mul_3"/></StgValue>
@@ -137159,7 +137159,7 @@ for.inc48:2829 %w_sum_21 = fadd i32 %w_sum_20, i32 %mul_3
 
 <Node id="2960" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2887 %mul_3_1 = fmul i32 %pixel_22, i32 -0.734771
+for.inc48:2887 %mul_3_1 = fmul i32 %pixel_22, i32 -0.357457
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_1"/></StgValue>
@@ -137192,7 +137192,7 @@ for.inc48:2829 %w_sum_21 = fadd i32 %w_sum_20, i32 %mul_3
 
 <Node id="2960" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2887 %mul_3_1 = fmul i32 %pixel_22, i32 -0.734771
+for.inc48:2887 %mul_3_1 = fmul i32 %pixel_22, i32 -0.357457
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_1"/></StgValue>
@@ -137225,7 +137225,7 @@ for.inc48:2829 %w_sum_21 = fadd i32 %w_sum_20, i32 %mul_3
 
 <Node id="2960" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2887 %mul_3_1 = fmul i32 %pixel_22, i32 -0.734771
+for.inc48:2887 %mul_3_1 = fmul i32 %pixel_22, i32 -0.357457
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_1"/></StgValue>
@@ -137258,7 +137258,7 @@ for.inc48:2829 %w_sum_21 = fadd i32 %w_sum_20, i32 %mul_3
 
 <Node id="2960" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2887 %mul_3_1 = fmul i32 %pixel_22, i32 -0.734771
+for.inc48:2887 %mul_3_1 = fmul i32 %pixel_22, i32 -0.357457
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_1"/></StgValue>
@@ -137291,7 +137291,7 @@ for.inc48:2888 %w_sum_22 = fadd i32 %w_sum_21, i32 %mul_3_1
 
 <Node id="3019" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2946 %mul_3_2 = fmul i32 %pixel_23, i32 -0.130269
+for.inc48:2946 %mul_3_2 = fmul i32 %pixel_23, i32 -0.362241
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_2"/></StgValue>
@@ -137324,7 +137324,7 @@ for.inc48:2888 %w_sum_22 = fadd i32 %w_sum_21, i32 %mul_3_1
 
 <Node id="3019" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2946 %mul_3_2 = fmul i32 %pixel_23, i32 -0.130269
+for.inc48:2946 %mul_3_2 = fmul i32 %pixel_23, i32 -0.362241
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_2"/></StgValue>
@@ -137357,7 +137357,7 @@ for.inc48:2888 %w_sum_22 = fadd i32 %w_sum_21, i32 %mul_3_1
 
 <Node id="3019" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2946 %mul_3_2 = fmul i32 %pixel_23, i32 -0.130269
+for.inc48:2946 %mul_3_2 = fmul i32 %pixel_23, i32 -0.362241
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_2"/></StgValue>
@@ -137390,7 +137390,7 @@ for.inc48:2888 %w_sum_22 = fadd i32 %w_sum_21, i32 %mul_3_1
 
 <Node id="3019" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:2946 %mul_3_2 = fmul i32 %pixel_23, i32 -0.130269
+for.inc48:2946 %mul_3_2 = fmul i32 %pixel_23, i32 -0.362241
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_2"/></StgValue>
@@ -137423,7 +137423,7 @@ for.inc48:2947 %w_sum_23 = fadd i32 %w_sum_22, i32 %mul_3_2
 
 <Node id="3078" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3005 %mul_3_3 = fmul i32 %pixel_24, i32 0.406927
+for.inc48:3005 %mul_3_3 = fmul i32 %pixel_24, i32 -0.270676
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_3"/></StgValue>
@@ -137456,7 +137456,7 @@ for.inc48:2947 %w_sum_23 = fadd i32 %w_sum_22, i32 %mul_3_2
 
 <Node id="3078" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3005 %mul_3_3 = fmul i32 %pixel_24, i32 0.406927
+for.inc48:3005 %mul_3_3 = fmul i32 %pixel_24, i32 -0.270676
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_3"/></StgValue>
@@ -137489,7 +137489,7 @@ for.inc48:2947 %w_sum_23 = fadd i32 %w_sum_22, i32 %mul_3_2
 
 <Node id="3078" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3005 %mul_3_3 = fmul i32 %pixel_24, i32 0.406927
+for.inc48:3005 %mul_3_3 = fmul i32 %pixel_24, i32 -0.270676
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_3"/></StgValue>
@@ -137522,7 +137522,7 @@ for.inc48:2947 %w_sum_23 = fadd i32 %w_sum_22, i32 %mul_3_2
 
 <Node id="3078" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3005 %mul_3_3 = fmul i32 %pixel_24, i32 0.406927
+for.inc48:3005 %mul_3_3 = fmul i32 %pixel_24, i32 -0.270676
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_3"/></StgValue>
@@ -137555,7 +137555,7 @@ for.inc48:3006 %w_sum_24 = fadd i32 %w_sum_23, i32 %mul_3_3
 
 <Node id="3137" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3064 %mul_3_4 = fmul i32 %pixel_25, i32 -0.20835
+for.inc48:3064 %mul_3_4 = fmul i32 %pixel_25, i32 0.116284
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_4"/></StgValue>
@@ -137588,7 +137588,7 @@ for.inc48:3006 %w_sum_24 = fadd i32 %w_sum_23, i32 %mul_3_3
 
 <Node id="3137" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3064 %mul_3_4 = fmul i32 %pixel_25, i32 -0.20835
+for.inc48:3064 %mul_3_4 = fmul i32 %pixel_25, i32 0.116284
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_4"/></StgValue>
@@ -137621,7 +137621,7 @@ for.inc48:3006 %w_sum_24 = fadd i32 %w_sum_23, i32 %mul_3_3
 
 <Node id="3137" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3064 %mul_3_4 = fmul i32 %pixel_25, i32 -0.20835
+for.inc48:3064 %mul_3_4 = fmul i32 %pixel_25, i32 0.116284
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_4"/></StgValue>
@@ -137654,7 +137654,7 @@ for.inc48:3006 %w_sum_24 = fadd i32 %w_sum_23, i32 %mul_3_3
 
 <Node id="3137" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3064 %mul_3_4 = fmul i32 %pixel_25, i32 -0.20835
+for.inc48:3064 %mul_3_4 = fmul i32 %pixel_25, i32 0.116284
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_4"/></StgValue>
@@ -137687,7 +137687,7 @@ for.inc48:3065 %w_sum_25 = fadd i32 %w_sum_24, i32 %mul_3_4
 
 <Node id="3196" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3123 %mul_3_5 = fmul i32 %pixel_26, i32 0.00340894
+for.inc48:3123 %mul_3_5 = fmul i32 %pixel_26, i32 -0.235922
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_5"/></StgValue>
@@ -137720,7 +137720,7 @@ for.inc48:3065 %w_sum_25 = fadd i32 %w_sum_24, i32 %mul_3_4
 
 <Node id="3196" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3123 %mul_3_5 = fmul i32 %pixel_26, i32 0.00340894
+for.inc48:3123 %mul_3_5 = fmul i32 %pixel_26, i32 -0.235922
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_5"/></StgValue>
@@ -137753,7 +137753,7 @@ for.inc48:3065 %w_sum_25 = fadd i32 %w_sum_24, i32 %mul_3_4
 
 <Node id="3196" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3123 %mul_3_5 = fmul i32 %pixel_26, i32 0.00340894
+for.inc48:3123 %mul_3_5 = fmul i32 %pixel_26, i32 -0.235922
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_5"/></StgValue>
@@ -137786,7 +137786,7 @@ for.inc48:3065 %w_sum_25 = fadd i32 %w_sum_24, i32 %mul_3_4
 
 <Node id="3196" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3123 %mul_3_5 = fmul i32 %pixel_26, i32 0.00340894
+for.inc48:3123 %mul_3_5 = fmul i32 %pixel_26, i32 -0.235922
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_5"/></StgValue>
@@ -137819,7 +137819,7 @@ for.inc48:3124 %w_sum_26 = fadd i32 %w_sum_25, i32 %mul_3_5
 
 <Node id="3255" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3182 %mul_3_6 = fmul i32 %pixel_27, i32 0.20301
+for.inc48:3182 %mul_3_6 = fmul i32 %pixel_27, i32 -0.119878
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_6"/></StgValue>
@@ -137852,7 +137852,7 @@ for.inc48:3124 %w_sum_26 = fadd i32 %w_sum_25, i32 %mul_3_5
 
 <Node id="3255" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3182 %mul_3_6 = fmul i32 %pixel_27, i32 0.20301
+for.inc48:3182 %mul_3_6 = fmul i32 %pixel_27, i32 -0.119878
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_6"/></StgValue>
@@ -137885,7 +137885,7 @@ for.inc48:3124 %w_sum_26 = fadd i32 %w_sum_25, i32 %mul_3_5
 
 <Node id="3255" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3182 %mul_3_6 = fmul i32 %pixel_27, i32 0.20301
+for.inc48:3182 %mul_3_6 = fmul i32 %pixel_27, i32 -0.119878
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_6"/></StgValue>
@@ -137918,7 +137918,7 @@ for.inc48:3124 %w_sum_26 = fadd i32 %w_sum_25, i32 %mul_3_5
 
 <Node id="3255" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3182 %mul_3_6 = fmul i32 %pixel_27, i32 0.20301
+for.inc48:3182 %mul_3_6 = fmul i32 %pixel_27, i32 -0.119878
 
 ]]></Node>
 <StgValue><ssdm name="mul_3_6"/></StgValue>
@@ -137951,7 +137951,7 @@ for.inc48:3183 %w_sum_27 = fadd i32 %w_sum_26, i32 %mul_3_6
 
 <Node id="3677" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3604 %mul_4 = fmul i32 %pixel_28, i32 0.332002
+for.inc48:3604 %mul_4 = fmul i32 %pixel_28, i32 -0.577833
 
 ]]></Node>
 <StgValue><ssdm name="mul_4"/></StgValue>
@@ -137984,7 +137984,7 @@ for.inc48:3183 %w_sum_27 = fadd i32 %w_sum_26, i32 %mul_3_6
 
 <Node id="3677" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3604 %mul_4 = fmul i32 %pixel_28, i32 0.332002
+for.inc48:3604 %mul_4 = fmul i32 %pixel_28, i32 -0.577833
 
 ]]></Node>
 <StgValue><ssdm name="mul_4"/></StgValue>
@@ -138017,7 +138017,7 @@ for.inc48:3183 %w_sum_27 = fadd i32 %w_sum_26, i32 %mul_3_6
 
 <Node id="3677" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3604 %mul_4 = fmul i32 %pixel_28, i32 0.332002
+for.inc48:3604 %mul_4 = fmul i32 %pixel_28, i32 -0.577833
 
 ]]></Node>
 <StgValue><ssdm name="mul_4"/></StgValue>
@@ -138050,7 +138050,7 @@ for.inc48:3183 %w_sum_27 = fadd i32 %w_sum_26, i32 %mul_3_6
 
 <Node id="3677" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3604 %mul_4 = fmul i32 %pixel_28, i32 0.332002
+for.inc48:3604 %mul_4 = fmul i32 %pixel_28, i32 -0.577833
 
 ]]></Node>
 <StgValue><ssdm name="mul_4"/></StgValue>
@@ -138083,7 +138083,7 @@ for.inc48:3605 %w_sum_28 = fadd i32 %w_sum_27, i32 %mul_4
 
 <Node id="3736" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3663 %mul_4_1 = fmul i32 %pixel_29, i32 0.288166
+for.inc48:3663 %mul_4_1 = fmul i32 %pixel_29, i32 -0.780732
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_1"/></StgValue>
@@ -138116,7 +138116,7 @@ for.inc48:3605 %w_sum_28 = fadd i32 %w_sum_27, i32 %mul_4
 
 <Node id="3736" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3663 %mul_4_1 = fmul i32 %pixel_29, i32 0.288166
+for.inc48:3663 %mul_4_1 = fmul i32 %pixel_29, i32 -0.780732
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_1"/></StgValue>
@@ -138149,7 +138149,7 @@ for.inc48:3605 %w_sum_28 = fadd i32 %w_sum_27, i32 %mul_4
 
 <Node id="3736" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3663 %mul_4_1 = fmul i32 %pixel_29, i32 0.288166
+for.inc48:3663 %mul_4_1 = fmul i32 %pixel_29, i32 -0.780732
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_1"/></StgValue>
@@ -138182,7 +138182,7 @@ for.inc48:3605 %w_sum_28 = fadd i32 %w_sum_27, i32 %mul_4
 
 <Node id="3736" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3663 %mul_4_1 = fmul i32 %pixel_29, i32 0.288166
+for.inc48:3663 %mul_4_1 = fmul i32 %pixel_29, i32 -0.780732
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_1"/></StgValue>
@@ -138215,7 +138215,7 @@ for.inc48:3664 %w_sum_29 = fadd i32 %w_sum_28, i32 %mul_4_1
 
 <Node id="3795" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3722 %mul_4_2 = fmul i32 %pixel_30, i32 -0.0309013
+for.inc48:3722 %mul_4_2 = fmul i32 %pixel_30, i32 -0.952816
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_2"/></StgValue>
@@ -138248,7 +138248,7 @@ for.inc48:3664 %w_sum_29 = fadd i32 %w_sum_28, i32 %mul_4_1
 
 <Node id="3795" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3722 %mul_4_2 = fmul i32 %pixel_30, i32 -0.0309013
+for.inc48:3722 %mul_4_2 = fmul i32 %pixel_30, i32 -0.952816
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_2"/></StgValue>
@@ -138281,7 +138281,7 @@ for.inc48:3664 %w_sum_29 = fadd i32 %w_sum_28, i32 %mul_4_1
 
 <Node id="3795" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3722 %mul_4_2 = fmul i32 %pixel_30, i32 -0.0309013
+for.inc48:3722 %mul_4_2 = fmul i32 %pixel_30, i32 -0.952816
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_2"/></StgValue>
@@ -138314,7 +138314,7 @@ for.inc48:3664 %w_sum_29 = fadd i32 %w_sum_28, i32 %mul_4_1
 
 <Node id="3795" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3722 %mul_4_2 = fmul i32 %pixel_30, i32 -0.0309013
+for.inc48:3722 %mul_4_2 = fmul i32 %pixel_30, i32 -0.952816
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_2"/></StgValue>
@@ -138347,7 +138347,7 @@ for.inc48:3723 %w_sum_30 = fadd i32 %w_sum_29, i32 %mul_4_2
 
 <Node id="3854" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3781 %mul_4_3 = fmul i32 %pixel_31, i32 -0.094222
+for.inc48:3781 %mul_4_3 = fmul i32 %pixel_31, i32 -0.722622
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_3"/></StgValue>
@@ -138380,7 +138380,7 @@ for.inc48:3723 %w_sum_30 = fadd i32 %w_sum_29, i32 %mul_4_2
 
 <Node id="3854" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3781 %mul_4_3 = fmul i32 %pixel_31, i32 -0.094222
+for.inc48:3781 %mul_4_3 = fmul i32 %pixel_31, i32 -0.722622
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_3"/></StgValue>
@@ -138413,7 +138413,7 @@ for.inc48:3723 %w_sum_30 = fadd i32 %w_sum_29, i32 %mul_4_2
 
 <Node id="3854" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3781 %mul_4_3 = fmul i32 %pixel_31, i32 -0.094222
+for.inc48:3781 %mul_4_3 = fmul i32 %pixel_31, i32 -0.722622
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_3"/></StgValue>
@@ -138446,7 +138446,7 @@ for.inc48:3723 %w_sum_30 = fadd i32 %w_sum_29, i32 %mul_4_2
 
 <Node id="3854" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3781 %mul_4_3 = fmul i32 %pixel_31, i32 -0.094222
+for.inc48:3781 %mul_4_3 = fmul i32 %pixel_31, i32 -0.722622
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_3"/></StgValue>
@@ -138479,7 +138479,7 @@ for.inc48:3782 %w_sum_31 = fadd i32 %w_sum_30, i32 %mul_4_3
 
 <Node id="3913" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3840 %mul_4_4 = fmul i32 %pixel_32, i32 0.0967564
+for.inc48:3840 %mul_4_4 = fmul i32 %pixel_32, i32 -0.782604
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_4"/></StgValue>
@@ -138512,7 +138512,7 @@ for.inc48:3782 %w_sum_31 = fadd i32 %w_sum_30, i32 %mul_4_3
 
 <Node id="3913" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3840 %mul_4_4 = fmul i32 %pixel_32, i32 0.0967564
+for.inc48:3840 %mul_4_4 = fmul i32 %pixel_32, i32 -0.782604
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_4"/></StgValue>
@@ -138545,7 +138545,7 @@ for.inc48:3782 %w_sum_31 = fadd i32 %w_sum_30, i32 %mul_4_3
 
 <Node id="3913" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3840 %mul_4_4 = fmul i32 %pixel_32, i32 0.0967564
+for.inc48:3840 %mul_4_4 = fmul i32 %pixel_32, i32 -0.782604
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_4"/></StgValue>
@@ -138578,7 +138578,7 @@ for.inc48:3782 %w_sum_31 = fadd i32 %w_sum_30, i32 %mul_4_3
 
 <Node id="3913" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3840 %mul_4_4 = fmul i32 %pixel_32, i32 0.0967564
+for.inc48:3840 %mul_4_4 = fmul i32 %pixel_32, i32 -0.782604
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_4"/></StgValue>
@@ -138611,7 +138611,7 @@ for.inc48:3841 %w_sum_32 = fadd i32 %w_sum_31, i32 %mul_4_4
 
 <Node id="3972" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3899 %mul_4_5 = fmul i32 %pixel_33, i32 0.239793
+for.inc48:3899 %mul_4_5 = fmul i32 %pixel_33, i32 -0.841755
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_5"/></StgValue>
@@ -138644,7 +138644,7 @@ for.inc48:3841 %w_sum_32 = fadd i32 %w_sum_31, i32 %mul_4_4
 
 <Node id="3972" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3899 %mul_4_5 = fmul i32 %pixel_33, i32 0.239793
+for.inc48:3899 %mul_4_5 = fmul i32 %pixel_33, i32 -0.841755
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_5"/></StgValue>
@@ -138677,7 +138677,7 @@ for.inc48:3841 %w_sum_32 = fadd i32 %w_sum_31, i32 %mul_4_4
 
 <Node id="3972" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3899 %mul_4_5 = fmul i32 %pixel_33, i32 0.239793
+for.inc48:3899 %mul_4_5 = fmul i32 %pixel_33, i32 -0.841755
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_5"/></StgValue>
@@ -138710,7 +138710,7 @@ for.inc48:3841 %w_sum_32 = fadd i32 %w_sum_31, i32 %mul_4_4
 
 <Node id="3972" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3899 %mul_4_5 = fmul i32 %pixel_33, i32 0.239793
+for.inc48:3899 %mul_4_5 = fmul i32 %pixel_33, i32 -0.841755
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_5"/></StgValue>
@@ -138743,7 +138743,7 @@ for.inc48:3900 %w_sum_33 = fadd i32 %w_sum_32, i32 %mul_4_5
 
 <Node id="4031" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3958 %mul_4_6 = fmul i32 %pixel_34, i32 0.199036
+for.inc48:3958 %mul_4_6 = fmul i32 %pixel_34, i32 -0.435862
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_6"/></StgValue>
@@ -138776,7 +138776,7 @@ for.inc48:3900 %w_sum_33 = fadd i32 %w_sum_32, i32 %mul_4_5
 
 <Node id="4031" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3958 %mul_4_6 = fmul i32 %pixel_34, i32 0.199036
+for.inc48:3958 %mul_4_6 = fmul i32 %pixel_34, i32 -0.435862
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_6"/></StgValue>
@@ -138809,7 +138809,7 @@ for.inc48:3900 %w_sum_33 = fadd i32 %w_sum_32, i32 %mul_4_5
 
 <Node id="4031" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3958 %mul_4_6 = fmul i32 %pixel_34, i32 0.199036
+for.inc48:3958 %mul_4_6 = fmul i32 %pixel_34, i32 -0.435862
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_6"/></StgValue>
@@ -138842,7 +138842,7 @@ for.inc48:3900 %w_sum_33 = fadd i32 %w_sum_32, i32 %mul_4_5
 
 <Node id="4031" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:3958 %mul_4_6 = fmul i32 %pixel_34, i32 0.199036
+for.inc48:3958 %mul_4_6 = fmul i32 %pixel_34, i32 -0.435862
 
 ]]></Node>
 <StgValue><ssdm name="mul_4_6"/></StgValue>
@@ -138875,7 +138875,7 @@ for.inc48:3959 %w_sum_34 = fadd i32 %w_sum_33, i32 %mul_4_6
 
 <Node id="4453" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4380 %mul_5 = fmul i32 %pixel_35, i32 0.680664
+for.inc48:4380 %mul_5 = fmul i32 %pixel_35, i32 -0.611535
 
 ]]></Node>
 <StgValue><ssdm name="mul_5"/></StgValue>
@@ -138908,7 +138908,7 @@ for.inc48:3959 %w_sum_34 = fadd i32 %w_sum_33, i32 %mul_4_6
 
 <Node id="4453" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4380 %mul_5 = fmul i32 %pixel_35, i32 0.680664
+for.inc48:4380 %mul_5 = fmul i32 %pixel_35, i32 -0.611535
 
 ]]></Node>
 <StgValue><ssdm name="mul_5"/></StgValue>
@@ -138941,7 +138941,7 @@ for.inc48:3959 %w_sum_34 = fadd i32 %w_sum_33, i32 %mul_4_6
 
 <Node id="4453" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4380 %mul_5 = fmul i32 %pixel_35, i32 0.680664
+for.inc48:4380 %mul_5 = fmul i32 %pixel_35, i32 -0.611535
 
 ]]></Node>
 <StgValue><ssdm name="mul_5"/></StgValue>
@@ -138974,7 +138974,7 @@ for.inc48:3959 %w_sum_34 = fadd i32 %w_sum_33, i32 %mul_4_6
 
 <Node id="4453" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4380 %mul_5 = fmul i32 %pixel_35, i32 0.680664
+for.inc48:4380 %mul_5 = fmul i32 %pixel_35, i32 -0.611535
 
 ]]></Node>
 <StgValue><ssdm name="mul_5"/></StgValue>
@@ -139007,7 +139007,7 @@ for.inc48:4381 %w_sum_35 = fadd i32 %w_sum_34, i32 %mul_5
 
 <Node id="4512" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4439 %mul_5_1 = fmul i32 %pixel_36, i32 0.532234
+for.inc48:4439 %mul_5_1 = fmul i32 %pixel_36, i32 -0.401595
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_1"/></StgValue>
@@ -139040,7 +139040,7 @@ for.inc48:4381 %w_sum_35 = fadd i32 %w_sum_34, i32 %mul_5
 
 <Node id="4512" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4439 %mul_5_1 = fmul i32 %pixel_36, i32 0.532234
+for.inc48:4439 %mul_5_1 = fmul i32 %pixel_36, i32 -0.401595
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_1"/></StgValue>
@@ -139073,7 +139073,7 @@ for.inc48:4381 %w_sum_35 = fadd i32 %w_sum_34, i32 %mul_5
 
 <Node id="4512" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4439 %mul_5_1 = fmul i32 %pixel_36, i32 0.532234
+for.inc48:4439 %mul_5_1 = fmul i32 %pixel_36, i32 -0.401595
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_1"/></StgValue>
@@ -139106,7 +139106,7 @@ for.inc48:4381 %w_sum_35 = fadd i32 %w_sum_34, i32 %mul_5
 
 <Node id="4512" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4439 %mul_5_1 = fmul i32 %pixel_36, i32 0.532234
+for.inc48:4439 %mul_5_1 = fmul i32 %pixel_36, i32 -0.401595
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_1"/></StgValue>
@@ -139139,7 +139139,7 @@ for.inc48:4440 %w_sum_36 = fadd i32 %w_sum_35, i32 %mul_5_1
 
 <Node id="4571" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4498 %mul_5_2 = fmul i32 %pixel_37, i32 -0.196688
+for.inc48:4498 %mul_5_2 = fmul i32 %pixel_37, i32 -0.322568
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_2"/></StgValue>
@@ -139172,7 +139172,7 @@ for.inc48:4440 %w_sum_36 = fadd i32 %w_sum_35, i32 %mul_5_1
 
 <Node id="4571" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4498 %mul_5_2 = fmul i32 %pixel_37, i32 -0.196688
+for.inc48:4498 %mul_5_2 = fmul i32 %pixel_37, i32 -0.322568
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_2"/></StgValue>
@@ -139205,7 +139205,7 @@ for.inc48:4440 %w_sum_36 = fadd i32 %w_sum_35, i32 %mul_5_1
 
 <Node id="4571" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4498 %mul_5_2 = fmul i32 %pixel_37, i32 -0.196688
+for.inc48:4498 %mul_5_2 = fmul i32 %pixel_37, i32 -0.322568
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_2"/></StgValue>
@@ -139238,7 +139238,7 @@ for.inc48:4440 %w_sum_36 = fadd i32 %w_sum_35, i32 %mul_5_1
 
 <Node id="4571" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4498 %mul_5_2 = fmul i32 %pixel_37, i32 -0.196688
+for.inc48:4498 %mul_5_2 = fmul i32 %pixel_37, i32 -0.322568
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_2"/></StgValue>
@@ -139271,7 +139271,7 @@ for.inc48:4499 %w_sum_37 = fadd i32 %w_sum_36, i32 %mul_5_2
 
 <Node id="4630" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4557 %mul_5_3 = fmul i32 %pixel_38, i32 -0.402911
+for.inc48:4557 %mul_5_3 = fmul i32 %pixel_38, i32 -0.648486
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_3"/></StgValue>
@@ -139304,7 +139304,7 @@ for.inc48:4499 %w_sum_37 = fadd i32 %w_sum_36, i32 %mul_5_2
 
 <Node id="4630" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4557 %mul_5_3 = fmul i32 %pixel_38, i32 -0.402911
+for.inc48:4557 %mul_5_3 = fmul i32 %pixel_38, i32 -0.648486
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_3"/></StgValue>
@@ -139337,7 +139337,7 @@ for.inc48:4499 %w_sum_37 = fadd i32 %w_sum_36, i32 %mul_5_2
 
 <Node id="4630" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4557 %mul_5_3 = fmul i32 %pixel_38, i32 -0.402911
+for.inc48:4557 %mul_5_3 = fmul i32 %pixel_38, i32 -0.648486
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_3"/></StgValue>
@@ -139370,7 +139370,7 @@ for.inc48:4499 %w_sum_37 = fadd i32 %w_sum_36, i32 %mul_5_2
 
 <Node id="4630" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4557 %mul_5_3 = fmul i32 %pixel_38, i32 -0.402911
+for.inc48:4557 %mul_5_3 = fmul i32 %pixel_38, i32 -0.648486
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_3"/></StgValue>
@@ -139403,7 +139403,7 @@ for.inc48:4558 %w_sum_38 = fadd i32 %w_sum_37, i32 %mul_5_3
 
 <Node id="4689" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4616 %mul_5_4 = fmul i32 %pixel_39, i32 -0.364459
+for.inc48:4616 %mul_5_4 = fmul i32 %pixel_39, i32 -0.520576
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_4"/></StgValue>
@@ -139436,7 +139436,7 @@ for.inc48:4558 %w_sum_38 = fadd i32 %w_sum_37, i32 %mul_5_3
 
 <Node id="4689" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4616 %mul_5_4 = fmul i32 %pixel_39, i32 -0.364459
+for.inc48:4616 %mul_5_4 = fmul i32 %pixel_39, i32 -0.520576
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_4"/></StgValue>
@@ -139469,7 +139469,7 @@ for.inc48:4558 %w_sum_38 = fadd i32 %w_sum_37, i32 %mul_5_3
 
 <Node id="4689" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4616 %mul_5_4 = fmul i32 %pixel_39, i32 -0.364459
+for.inc48:4616 %mul_5_4 = fmul i32 %pixel_39, i32 -0.520576
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_4"/></StgValue>
@@ -139502,7 +139502,7 @@ for.inc48:4558 %w_sum_38 = fadd i32 %w_sum_37, i32 %mul_5_3
 
 <Node id="4689" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4616 %mul_5_4 = fmul i32 %pixel_39, i32 -0.364459
+for.inc48:4616 %mul_5_4 = fmul i32 %pixel_39, i32 -0.520576
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_4"/></StgValue>
@@ -139535,7 +139535,7 @@ for.inc48:4617 %w_sum_39 = fadd i32 %w_sum_38, i32 %mul_5_4
 
 <Node id="4748" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4675 %mul_5_5 = fmul i32 %pixel_40, i32 0.134052
+for.inc48:4675 %mul_5_5 = fmul i32 %pixel_40, i32 -0.414148
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_5"/></StgValue>
@@ -139568,7 +139568,7 @@ for.inc48:4617 %w_sum_39 = fadd i32 %w_sum_38, i32 %mul_5_4
 
 <Node id="4748" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4675 %mul_5_5 = fmul i32 %pixel_40, i32 0.134052
+for.inc48:4675 %mul_5_5 = fmul i32 %pixel_40, i32 -0.414148
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_5"/></StgValue>
@@ -139601,7 +139601,7 @@ for.inc48:4617 %w_sum_39 = fadd i32 %w_sum_38, i32 %mul_5_4
 
 <Node id="4748" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4675 %mul_5_5 = fmul i32 %pixel_40, i32 0.134052
+for.inc48:4675 %mul_5_5 = fmul i32 %pixel_40, i32 -0.414148
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_5"/></StgValue>
@@ -139634,7 +139634,7 @@ for.inc48:4617 %w_sum_39 = fadd i32 %w_sum_38, i32 %mul_5_4
 
 <Node id="4748" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4675 %mul_5_5 = fmul i32 %pixel_40, i32 0.134052
+for.inc48:4675 %mul_5_5 = fmul i32 %pixel_40, i32 -0.414148
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_5"/></StgValue>
@@ -139667,7 +139667,7 @@ for.inc48:4676 %w_sum_40 = fadd i32 %w_sum_39, i32 %mul_5_5
 
 <Node id="4807" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4734 %mul_5_6 = fmul i32 %pixel_41, i32 0.236575
+for.inc48:4734 %mul_5_6 = fmul i32 %pixel_41, i32 -0.0362381
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_6"/></StgValue>
@@ -139700,7 +139700,7 @@ for.inc48:4676 %w_sum_40 = fadd i32 %w_sum_39, i32 %mul_5_5
 
 <Node id="4807" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4734 %mul_5_6 = fmul i32 %pixel_41, i32 0.236575
+for.inc48:4734 %mul_5_6 = fmul i32 %pixel_41, i32 -0.0362381
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_6"/></StgValue>
@@ -139733,7 +139733,7 @@ for.inc48:4676 %w_sum_40 = fadd i32 %w_sum_39, i32 %mul_5_5
 
 <Node id="4807" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4734 %mul_5_6 = fmul i32 %pixel_41, i32 0.236575
+for.inc48:4734 %mul_5_6 = fmul i32 %pixel_41, i32 -0.0362381
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_6"/></StgValue>
@@ -139766,7 +139766,7 @@ for.inc48:4676 %w_sum_40 = fadd i32 %w_sum_39, i32 %mul_5_5
 
 <Node id="4807" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:4734 %mul_5_6 = fmul i32 %pixel_41, i32 0.236575
+for.inc48:4734 %mul_5_6 = fmul i32 %pixel_41, i32 -0.0362381
 
 ]]></Node>
 <StgValue><ssdm name="mul_5_6"/></StgValue>
@@ -139799,7 +139799,7 @@ for.inc48:4735 %w_sum_41 = fadd i32 %w_sum_40, i32 %mul_5_6
 
 <Node id="5229" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5156 %mul_6 = fmul i32 %pixel_42, i32 0.377071
+for.inc48:5156 %mul_6 = fmul i32 %pixel_42, i32 0.114442
 
 ]]></Node>
 <StgValue><ssdm name="mul_6"/></StgValue>
@@ -139832,7 +139832,7 @@ for.inc48:4735 %w_sum_41 = fadd i32 %w_sum_40, i32 %mul_5_6
 
 <Node id="5229" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5156 %mul_6 = fmul i32 %pixel_42, i32 0.377071
+for.inc48:5156 %mul_6 = fmul i32 %pixel_42, i32 0.114442
 
 ]]></Node>
 <StgValue><ssdm name="mul_6"/></StgValue>
@@ -139865,7 +139865,7 @@ for.inc48:4735 %w_sum_41 = fadd i32 %w_sum_40, i32 %mul_5_6
 
 <Node id="5229" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5156 %mul_6 = fmul i32 %pixel_42, i32 0.377071
+for.inc48:5156 %mul_6 = fmul i32 %pixel_42, i32 0.114442
 
 ]]></Node>
 <StgValue><ssdm name="mul_6"/></StgValue>
@@ -139898,7 +139898,7 @@ for.inc48:4735 %w_sum_41 = fadd i32 %w_sum_40, i32 %mul_5_6
 
 <Node id="5229" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5156 %mul_6 = fmul i32 %pixel_42, i32 0.377071
+for.inc48:5156 %mul_6 = fmul i32 %pixel_42, i32 0.114442
 
 ]]></Node>
 <StgValue><ssdm name="mul_6"/></StgValue>
@@ -139931,7 +139931,7 @@ for.inc48:5157 %w_sum_42 = fadd i32 %w_sum_41, i32 %mul_6
 
 <Node id="5288" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5215 %mul_6_1 = fmul i32 %pixel_43, i32 0.218093
+for.inc48:5215 %mul_6_1 = fmul i32 %pixel_43, i32 -0.15679
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_1"/></StgValue>
@@ -139964,7 +139964,7 @@ for.inc48:5157 %w_sum_42 = fadd i32 %w_sum_41, i32 %mul_6
 
 <Node id="5288" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5215 %mul_6_1 = fmul i32 %pixel_43, i32 0.218093
+for.inc48:5215 %mul_6_1 = fmul i32 %pixel_43, i32 -0.15679
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_1"/></StgValue>
@@ -139997,7 +139997,7 @@ for.inc48:5157 %w_sum_42 = fadd i32 %w_sum_41, i32 %mul_6
 
 <Node id="5288" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5215 %mul_6_1 = fmul i32 %pixel_43, i32 0.218093
+for.inc48:5215 %mul_6_1 = fmul i32 %pixel_43, i32 -0.15679
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_1"/></StgValue>
@@ -140030,7 +140030,7 @@ for.inc48:5157 %w_sum_42 = fadd i32 %w_sum_41, i32 %mul_6
 
 <Node id="5288" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5215 %mul_6_1 = fmul i32 %pixel_43, i32 0.218093
+for.inc48:5215 %mul_6_1 = fmul i32 %pixel_43, i32 -0.15679
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_1"/></StgValue>
@@ -140063,7 +140063,7 @@ for.inc48:5216 %w_sum_43 = fadd i32 %w_sum_42, i32 %mul_6_1
 
 <Node id="5347" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5274 %mul_6_2 = fmul i32 %pixel_44, i32 0.12191
+for.inc48:5274 %mul_6_2 = fmul i32 %pixel_44, i32 -0.174276
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_2"/></StgValue>
@@ -140096,7 +140096,7 @@ for.inc48:5216 %w_sum_43 = fadd i32 %w_sum_42, i32 %mul_6_1
 
 <Node id="5347" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5274 %mul_6_2 = fmul i32 %pixel_44, i32 0.12191
+for.inc48:5274 %mul_6_2 = fmul i32 %pixel_44, i32 -0.174276
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_2"/></StgValue>
@@ -140129,7 +140129,7 @@ for.inc48:5216 %w_sum_43 = fadd i32 %w_sum_42, i32 %mul_6_1
 
 <Node id="5347" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5274 %mul_6_2 = fmul i32 %pixel_44, i32 0.12191
+for.inc48:5274 %mul_6_2 = fmul i32 %pixel_44, i32 -0.174276
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_2"/></StgValue>
@@ -140162,7 +140162,7 @@ for.inc48:5216 %w_sum_43 = fadd i32 %w_sum_42, i32 %mul_6_1
 
 <Node id="5347" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5274 %mul_6_2 = fmul i32 %pixel_44, i32 0.12191
+for.inc48:5274 %mul_6_2 = fmul i32 %pixel_44, i32 -0.174276
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_2"/></StgValue>
@@ -140195,7 +140195,7 @@ for.inc48:5275 %w_sum_44 = fadd i32 %w_sum_43, i32 %mul_6_2
 
 <Node id="5406" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5333 %mul_6_3 = fmul i32 %pixel_45, i32 -0.417175
+for.inc48:5333 %mul_6_3 = fmul i32 %pixel_45, i32 -0.0731533
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_3"/></StgValue>
@@ -140228,7 +140228,7 @@ for.inc48:5275 %w_sum_44 = fadd i32 %w_sum_43, i32 %mul_6_2
 
 <Node id="5406" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5333 %mul_6_3 = fmul i32 %pixel_45, i32 -0.417175
+for.inc48:5333 %mul_6_3 = fmul i32 %pixel_45, i32 -0.0731533
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_3"/></StgValue>
@@ -140261,7 +140261,7 @@ for.inc48:5275 %w_sum_44 = fadd i32 %w_sum_43, i32 %mul_6_2
 
 <Node id="5406" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5333 %mul_6_3 = fmul i32 %pixel_45, i32 -0.417175
+for.inc48:5333 %mul_6_3 = fmul i32 %pixel_45, i32 -0.0731533
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_3"/></StgValue>
@@ -140294,7 +140294,7 @@ for.inc48:5275 %w_sum_44 = fadd i32 %w_sum_43, i32 %mul_6_2
 
 <Node id="5406" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5333 %mul_6_3 = fmul i32 %pixel_45, i32 -0.417175
+for.inc48:5333 %mul_6_3 = fmul i32 %pixel_45, i32 -0.0731533
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_3"/></StgValue>
@@ -140327,7 +140327,7 @@ for.inc48:5334 %w_sum_45 = fadd i32 %w_sum_44, i32 %mul_6_3
 
 <Node id="5465" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5392 %mul_6_4 = fmul i32 %pixel_46, i32 0.0190926
+for.inc48:5392 %mul_6_4 = fmul i32 %pixel_46, i32 0.0815761
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_4"/></StgValue>
@@ -140360,7 +140360,7 @@ for.inc48:5334 %w_sum_45 = fadd i32 %w_sum_44, i32 %mul_6_3
 
 <Node id="5465" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5392 %mul_6_4 = fmul i32 %pixel_46, i32 0.0190926
+for.inc48:5392 %mul_6_4 = fmul i32 %pixel_46, i32 0.0815761
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_4"/></StgValue>
@@ -140393,7 +140393,7 @@ for.inc48:5334 %w_sum_45 = fadd i32 %w_sum_44, i32 %mul_6_3
 
 <Node id="5465" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5392 %mul_6_4 = fmul i32 %pixel_46, i32 0.0190926
+for.inc48:5392 %mul_6_4 = fmul i32 %pixel_46, i32 0.0815761
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_4"/></StgValue>
@@ -140426,7 +140426,7 @@ for.inc48:5334 %w_sum_45 = fadd i32 %w_sum_44, i32 %mul_6_3
 
 <Node id="5465" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5392 %mul_6_4 = fmul i32 %pixel_46, i32 0.0190926
+for.inc48:5392 %mul_6_4 = fmul i32 %pixel_46, i32 0.0815761
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_4"/></StgValue>
@@ -140459,7 +140459,7 @@ for.inc48:5393 %w_sum_46 = fadd i32 %w_sum_45, i32 %mul_6_4
 
 <Node id="5524" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5451 %mul_6_5 = fmul i32 %pixel_47, i32 -0.160787
+for.inc48:5451 %mul_6_5 = fmul i32 %pixel_47, i32 0.299607
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_5"/></StgValue>
@@ -140492,7 +140492,7 @@ for.inc48:5393 %w_sum_46 = fadd i32 %w_sum_45, i32 %mul_6_4
 
 <Node id="5524" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5451 %mul_6_5 = fmul i32 %pixel_47, i32 -0.160787
+for.inc48:5451 %mul_6_5 = fmul i32 %pixel_47, i32 0.299607
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_5"/></StgValue>
@@ -140525,7 +140525,7 @@ for.inc48:5393 %w_sum_46 = fadd i32 %w_sum_45, i32 %mul_6_4
 
 <Node id="5524" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5451 %mul_6_5 = fmul i32 %pixel_47, i32 -0.160787
+for.inc48:5451 %mul_6_5 = fmul i32 %pixel_47, i32 0.299607
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_5"/></StgValue>
@@ -140558,7 +140558,7 @@ for.inc48:5393 %w_sum_46 = fadd i32 %w_sum_45, i32 %mul_6_4
 
 <Node id="5524" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5451 %mul_6_5 = fmul i32 %pixel_47, i32 -0.160787
+for.inc48:5451 %mul_6_5 = fmul i32 %pixel_47, i32 0.299607
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_5"/></StgValue>
@@ -140591,7 +140591,7 @@ for.inc48:5452 %w_sum_47 = fadd i32 %w_sum_46, i32 %mul_6_5
 
 <Node id="5583" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5510 %mul_6_6 = fmul i32 %pixel_48, i32 0.168166
+for.inc48:5510 %mul_6_6 = fmul i32 %pixel_48, i32 0.389181
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_6"/></StgValue>
@@ -140624,7 +140624,7 @@ for.inc48:5452 %w_sum_47 = fadd i32 %w_sum_46, i32 %mul_6_5
 
 <Node id="5583" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5510 %mul_6_6 = fmul i32 %pixel_48, i32 0.168166
+for.inc48:5510 %mul_6_6 = fmul i32 %pixel_48, i32 0.389181
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_6"/></StgValue>
@@ -140657,7 +140657,7 @@ for.inc48:5452 %w_sum_47 = fadd i32 %w_sum_46, i32 %mul_6_5
 
 <Node id="5583" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5510 %mul_6_6 = fmul i32 %pixel_48, i32 0.168166
+for.inc48:5510 %mul_6_6 = fmul i32 %pixel_48, i32 0.389181
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_6"/></StgValue>
@@ -140690,7 +140690,7 @@ for.inc48:5452 %w_sum_47 = fadd i32 %w_sum_46, i32 %mul_6_5
 
 <Node id="5583" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5510 %mul_6_6 = fmul i32 %pixel_48, i32 0.168166
+for.inc48:5510 %mul_6_6 = fmul i32 %pixel_48, i32 0.389181
 
 ]]></Node>
 <StgValue><ssdm name="mul_6_6"/></StgValue>
@@ -140780,7 +140780,7 @@ for.inc48:5511 %w_sum_48 = fadd i32 %w_sum_47, i32 %mul_6_6
 
 <Node id="5585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 -0.226954
+for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 0.00438467
 
 ]]></Node>
 <StgValue><ssdm name="x_assign"/></StgValue>
@@ -140798,7 +140798,7 @@ for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 -0.226954
 
 <Node id="5585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 -0.226954
+for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 0.00438467
 
 ]]></Node>
 <StgValue><ssdm name="x_assign"/></StgValue>
@@ -140816,7 +140816,7 @@ for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 -0.226954
 
 <Node id="5585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 -0.226954
+for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 0.00438467
 
 ]]></Node>
 <StgValue><ssdm name="x_assign"/></StgValue>
@@ -140834,7 +140834,7 @@ for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 -0.226954
 
 <Node id="5585" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 -0.226954
+for.inc48:5512 %x_assign = fadd i32 %w_sum_48, i32 0.00438467
 
 ]]></Node>
 <StgValue><ssdm name="x_assign"/></StgValue>

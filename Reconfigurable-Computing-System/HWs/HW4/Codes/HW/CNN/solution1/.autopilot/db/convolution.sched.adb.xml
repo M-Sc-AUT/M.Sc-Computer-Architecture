@@ -1408,7 +1408,7 @@ entry:8 %filter_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %filter
 
 <Node id="13" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:9 %tmp = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.00711548, i32 0.0023813, i32 0.0820738, i32 <undef>, i2 %filter_read
+entry:9 %tmp = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.00268368, i32 -0.399058, i32 -0.0609518, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -1423,7 +1423,7 @@ entry:9 %tmp = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.00711548, i32 0.00
 
 <Node id="14" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:10 %w = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.369465, i32 -0.0652928, i32 -0.683408, i32 <undef>, i2 %filter_read
+entry:10 %w = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -1.26999, i32 0.193368, i32 -0.206653, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w"/></StgValue>
@@ -1438,7 +1438,7 @@ entry:10 %w = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.369465, i32 -0.065
 
 <Node id="15" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:11 %w_1 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.315878, i32 -0.355687, i32 -0.622519, i32 <undef>, i2 %filter_read
+entry:11 %w_1 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.691857, i32 0.288519, i32 0.0141646, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_1"/></StgValue>
@@ -1453,7 +1453,7 @@ entry:11 %w_1 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.315878, i32 -0.3
 
 <Node id="16" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:12 %w_2 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.0279522, i32 -0.135759, i32 0.0163114, i32 <undef>, i2 %filter_read
+entry:12 %w_2 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0740354, i32 0.0635062, i32 -0.104469, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_2"/></StgValue>
@@ -1468,7 +1468,7 @@ entry:12 %w_2 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.0279522, i32 -0.1
 
 <Node id="17" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:13 %w_3 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.180339, i32 0.150171, i32 -0.066694, i32 <undef>, i2 %filter_read
+entry:13 %w_3 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.241774, i32 0.0313657, i32 -0.0844777, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_3"/></StgValue>
@@ -1483,7 +1483,7 @@ entry:13 %w_3 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.180339, i32 0.150
 
 <Node id="18" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:14 %w_4 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.209319, i32 0.239181, i32 0.125832, i32 <undef>, i2 %filter_read
+entry:14 %w_4 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.37197, i32 0.238533, i32 0.153952, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_4"/></StgValue>
@@ -1498,7 +1498,7 @@ entry:14 %w_4 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.209319, i32 0.239
 
 <Node id="19" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:15 %w_5 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.318266, i32 -0.0870934, i32 0.692489, i32 <undef>, i2 %filter_read
+entry:15 %w_5 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.21626, i32 0.0535538, i32 -0.0238171, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_5"/></StgValue>
@@ -1513,7 +1513,7 @@ entry:15 %w_5 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.318266, i32 -0.08
 
 <Node id="20" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:16 %w_6 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0330583, i32 0.148082, i32 0.608712, i32 <undef>, i2 %filter_read
+entry:16 %w_6 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.294205, i32 0.127288, i32 -0.0217493, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_6"/></StgValue>
@@ -1528,7 +1528,7 @@ entry:16 %w_6 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0330583, i32 0.1
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:17 %w_7 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.376626, i32 -3.3749e-05, i32 -0.242871, i32 <undef>, i2 %filter_read
+entry:17 %w_7 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -1.27929, i32 -0.267516, i32 -0.179555, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_7"/></StgValue>
@@ -1543,7 +1543,7 @@ entry:17 %w_7 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.376626, i32 -3.37
 
 <Node id="22" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:18 %w_8 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0681463, i32 -0.0262942, i32 -0.323695, i32 <undef>, i2 %filter_read
+entry:18 %w_8 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.529261, i32 -0.219505, i32 0.330987, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_8"/></StgValue>
@@ -1558,7 +1558,7 @@ entry:18 %w_8 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0681463, i32 -0.
 
 <Node id="23" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:19 %w_9 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.17074, i32 -0.36931, i32 -0.0799976, i32 <undef>, i2 %filter_read
+entry:19 %w_9 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.266459, i32 0.0439164, i32 -0.274936, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_9"/></StgValue>
@@ -1573,7 +1573,7 @@ entry:19 %w_9 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.17074, i32 -0.369
 
 <Node id="24" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:20 %w_48 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.00519895, i32 -0.163164, i32 -0.670814, i32 <undef>, i2 %filter_read
+entry:20 %w_48 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0178442, i32 -0.316916, i32 -0.116392, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_48"/></StgValue>
@@ -1588,7 +1588,7 @@ entry:20 %w_48 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.00519895, i32 -0
 
 <Node id="25" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:21 %w_10 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.268227, i32 0.201667, i32 -0.768202, i32 <undef>, i2 %filter_read
+entry:21 %w_10 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.148359, i32 -0.18919, i32 -0.125884, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_10"/></StgValue>
@@ -1603,7 +1603,7 @@ entry:21 %w_10 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.268227, i32 0.20
 
 <Node id="26" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:22 %w_11 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0706121, i32 0.43245, i32 -0.131181, i32 <undef>, i2 %filter_read
+entry:22 %w_11 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.223949, i32 0.360752, i32 0.319091, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_11"/></StgValue>
@@ -1618,7 +1618,7 @@ entry:22 %w_11 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0706121, i32 0.
 
 <Node id="27" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:23 %w_12 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.349173, i32 0.380933, i32 0.675689, i32 <undef>, i2 %filter_read
+entry:23 %w_12 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.25477, i32 0.057875, i32 -0.380585, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_12"/></StgValue>
@@ -1633,7 +1633,7 @@ entry:23 %w_12 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.349173, i32 0.38
 
 <Node id="28" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:24 %w_13 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.50561, i32 -0.0167338, i32 -0.484977, i32 <undef>, i2 %filter_read
+entry:24 %w_13 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -1.46257, i32 -0.404857, i32 -0.198375, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_13"/></StgValue>
@@ -1648,7 +1648,7 @@ entry:24 %w_13 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.50561, i32 -0.01
 
 <Node id="29" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:25 %w_14 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.225695, i32 -0.418777, i32 -0.204038, i32 <undef>, i2 %filter_read
+entry:25 %w_14 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.196627, i32 -0.621822, i32 0.301104, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_14"/></StgValue>
@@ -1663,7 +1663,7 @@ entry:25 %w_14 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.225695, i32 -0.4
 
 <Node id="30" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:26 %w_15 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.340319, i32 -0.706621, i32 -0.335461, i32 <undef>, i2 %filter_read
+entry:26 %w_15 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.123953, i32 -0.000221908, i32 0.220584, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_15"/></StgValue>
@@ -1678,7 +1678,7 @@ entry:26 %w_15 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.340319, i32 -0.7
 
 <Node id="31" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:27 %w_16 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.428678, i32 -0.655676, i32 -0.510361, i32 <undef>, i2 %filter_read
+entry:27 %w_16 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.0615315, i32 0.45494, i32 -0.15927, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_16"/></StgValue>
@@ -1693,7 +1693,7 @@ entry:27 %w_16 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.428678, i32 -0.6
 
 <Node id="32" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:28 %w_17 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.454618, i32 -0.248312, i32 -1.06699, i32 <undef>, i2 %filter_read
+entry:28 %w_17 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.250326, i32 0.265859, i32 -0.0123035, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_17"/></StgValue>
@@ -1708,7 +1708,7 @@ entry:28 %w_17 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.454618, i32 -0.2
 
 <Node id="33" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:29 %w_18 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.350113, i32 0.239075, i32 -0.747001, i32 <undef>, i2 %filter_read
+entry:29 %w_18 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.154783, i32 0.186526, i32 -0.212087, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_18"/></StgValue>
@@ -1723,7 +1723,7 @@ entry:29 %w_18 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.350113, i32 0.23
 
 <Node id="34" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:30 %w_19 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0130406, i32 0.260184, i32 0.196123, i32 <undef>, i2 %filter_read
+entry:30 %w_19 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.264766, i32 -0.0182933, i32 -0.117016, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_19"/></StgValue>
@@ -1738,7 +1738,7 @@ entry:30 %w_19 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0130406, i32 0.
 
 <Node id="35" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:31 %w_20 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.530474, i32 0.848871, i32 -0.170207, i32 <undef>, i2 %filter_read
+entry:31 %w_20 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -1.21394, i32 -0.730759, i32 0.332083, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_20"/></StgValue>
@@ -1753,7 +1753,7 @@ entry:31 %w_20 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.530474, i32 0.84
 
 <Node id="36" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:32 %w_21 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.498908, i32 -0.182349, i32 0.160588, i32 <undef>, i2 %filter_read
+entry:32 %w_21 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.035038, i32 -0.274465, i32 0.50457, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_21"/></StgValue>
@@ -1768,7 +1768,7 @@ entry:32 %w_21 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.498908, i32 -0.1
 
 <Node id="37" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:33 %w_22 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.32292, i32 -0.680559, i32 0.187922, i32 <undef>, i2 %filter_read
+entry:33 %w_22 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.379831, i32 0.535009, i32 -0.0441199, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_22"/></StgValue>
@@ -1783,7 +1783,7 @@ entry:33 %w_22 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.32292, i32 -0.68
 
 <Node id="38" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:34 %w_23 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.34234, i32 -0.766299, i32 -0.501209, i32 <undef>, i2 %filter_read
+entry:34 %w_23 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.161643, i32 0.5288, i32 -0.370458, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_23"/></StgValue>
@@ -1798,7 +1798,7 @@ entry:34 %w_23 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.34234, i32 -0.76
 
 <Node id="39" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:35 %w_24 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.141424, i32 -0.112118, i32 -0.557134, i32 <undef>, i2 %filter_read
+entry:35 %w_24 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.185435, i32 0.576498, i32 -0.599237, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_24"/></StgValue>
@@ -1813,7 +1813,7 @@ entry:35 %w_24 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.141424, i32 -0.
 
 <Node id="40" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:36 %w_25 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.192951, i32 0.299025, i32 -0.532941, i32 <undef>, i2 %filter_read
+entry:36 %w_25 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.225402, i32 -0.0219727, i32 -0.6378, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_25"/></StgValue>
@@ -1828,7 +1828,7 @@ entry:36 %w_25 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.192951, i32 0.29
 
 <Node id="41" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:37 %w_26 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.44751, i32 0.569389, i32 -0.517533, i32 <undef>, i2 %filter_read
+entry:37 %w_26 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.358042, i32 -0.0352225, i32 -0.726981, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_26"/></StgValue>
@@ -1843,7 +1843,7 @@ entry:37 %w_26 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.44751, i32 0.569
 
 <Node id="42" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:38 %w_27 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0468639, i32 0.515166, i32 0.54985, i32 <undef>, i2 %filter_read
+entry:38 %w_27 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.714895, i32 -0.587148, i32 0.441354, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_27"/></StgValue>
@@ -1858,7 +1858,7 @@ entry:38 %w_27 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0468639, i32 0.
 
 <Node id="43" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:39 %w_28 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.0613528, i32 -0.334002, i32 0.492958, i32 <undef>, i2 %filter_read
+entry:39 %w_28 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.181094, i32 0.342996, i32 0.307534, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_28"/></StgValue>
@@ -1873,7 +1873,7 @@ entry:39 %w_28 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.0613528, i32 -0.
 
 <Node id="44" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:40 %w_29 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.206926, i32 -0.261453, i32 0.0104843, i32 <undef>, i2 %filter_read
+entry:40 %w_29 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.379085, i32 0.774321, i32 0.0302052, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_29"/></StgValue>
@@ -1888,7 +1888,7 @@ entry:40 %w_29 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.206926, i32 -0.
 
 <Node id="45" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:41 %w_30 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.329988, i32 -0.726336, i32 -0.171847, i32 <undef>, i2 %filter_read
+entry:41 %w_30 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.017198, i32 0.708592, i32 -0.0145105, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_30"/></StgValue>
@@ -1903,7 +1903,7 @@ entry:41 %w_30 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.329988, i32 -0.
 
 <Node id="46" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:42 %w_31 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.124204, i32 -0.443818, i32 -0.240651, i32 <undef>, i2 %filter_read
+entry:42 %w_31 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.130095, i32 -0.213781, i32 -0.540707, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_31"/></StgValue>
@@ -1918,7 +1918,7 @@ entry:42 %w_31 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.124204, i32 -0.
 
 <Node id="47" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:43 %w_32 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.229138, i32 0.382891, i32 -0.231, i32 <undef>, i2 %filter_read
+entry:43 %w_32 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.10147, i32 -0.390729, i32 -0.617915, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_32"/></StgValue>
@@ -1933,7 +1933,7 @@ entry:43 %w_32 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.229138, i32 0.3
 
 <Node id="48" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:44 %w_33 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.159034, i32 0.477933, i32 -0.590035, i32 <undef>, i2 %filter_read
+entry:44 %w_33 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.188016, i32 -0.347359, i32 -0.213013, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_33"/></StgValue>
@@ -1948,7 +1948,7 @@ entry:44 %w_33 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.159034, i32 0.4
 
 <Node id="49" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:45 %w_34 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -1.03971, i32 0.832957, i32 0.156188, i32 <undef>, i2 %filter_read
+entry:45 %w_34 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.469542, i32 -0.157284, i32 -0.183443, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_34"/></StgValue>
@@ -1963,7 +1963,7 @@ entry:45 %w_34 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -1.03971, i32 0.83
 
 <Node id="50" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:46 %w_35 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.868609, i32 -0.440546, i32 0.247458, i32 <undef>, i2 %filter_read
+entry:46 %w_35 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.360458, i32 0.729663, i32 0.100802, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_35"/></StgValue>
@@ -1978,7 +1978,7 @@ entry:46 %w_35 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.868609, i32 -0.
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:47 %w_36 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.774369, i32 -0.545615, i32 0.605935, i32 <undef>, i2 %filter_read
+entry:47 %w_36 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.371795, i32 0.712318, i32 0.293794, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_36"/></StgValue>
@@ -1993,7 +1993,7 @@ entry:47 %w_36 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.774369, i32 -0.
 
 <Node id="52" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:48 %w_37 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.469448, i32 -0.578013, i32 0.150692, i32 <undef>, i2 %filter_read
+entry:48 %w_37 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.334692, i32 -0.162093, i32 0.466172, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_37"/></StgValue>
@@ -2008,7 +2008,7 @@ entry:48 %w_37 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.469448, i32 -0.
 
 <Node id="53" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:49 %w_38 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.691998, i32 -0.0548336, i32 0.242584, i32 <undef>, i2 %filter_read
+entry:49 %w_38 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.184284, i32 -0.247357, i32 0.470834, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_38"/></StgValue>
@@ -2023,7 +2023,7 @@ entry:49 %w_38 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.691998, i32 -0.
 
 <Node id="54" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:50 %w_39 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0709571, i32 0.417543, i32 0.237246, i32 <undef>, i2 %filter_read
+entry:50 %w_39 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.0178364, i32 -0.467355, i32 0.424169, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_39"/></StgValue>
@@ -2038,7 +2038,7 @@ entry:50 %w_39 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0709571, i32 0.
 
 <Node id="55" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:51 %w_40 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.0907233, i32 0.558541, i32 -0.030029, i32 <undef>, i2 %filter_read
+entry:51 %w_40 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.481982, i32 -0.521371, i32 -0.0758303, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_40"/></StgValue>
@@ -2053,7 +2053,7 @@ entry:51 %w_40 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.0907233, i32 0.5
 
 <Node id="56" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:52 %w_41 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -1.00939, i32 0.148136, i32 0.347489, i32 <undef>, i2 %filter_read
+entry:52 %w_41 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.167256, i32 0.370243, i32 0.0986463, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_41"/></StgValue>
@@ -2068,7 +2068,7 @@ entry:52 %w_41 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -1.00939, i32 0.14
 
 <Node id="57" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:53 %w_42 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.505232, i32 -0.859222, i32 0.377069, i32 <undef>, i2 %filter_read
+entry:53 %w_42 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.500121, i32 0.233953, i32 -0.0839163, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_42"/></StgValue>
@@ -2083,7 +2083,7 @@ entry:53 %w_42 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.505232, i32 -0.
 
 <Node id="58" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:54 %w_43 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.558439, i32 -0.607999, i32 0.258395, i32 <undef>, i2 %filter_read
+entry:54 %w_43 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.177868, i32 -0.161443, i32 0.0543719, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_43"/></StgValue>
@@ -2098,7 +2098,7 @@ entry:54 %w_43 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.558439, i32 -0.
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:55 %w_44 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.28424, i32 -0.615854, i32 0.25085, i32 <undef>, i2 %filter_read
+entry:55 %w_44 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.171074, i32 -0.602093, i32 0.327183, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_44"/></StgValue>
@@ -2113,7 +2113,7 @@ entry:55 %w_44 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.28424, i32 -0.6
 
 <Node id="60" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:56 %w_45 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.12878, i32 0.447026, i32 0.250405, i32 <undef>, i2 %filter_read
+entry:56 %w_45 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.353924, i32 -0.374556, i32 0.651052, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_45"/></StgValue>
@@ -2128,7 +2128,7 @@ entry:56 %w_45 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.12878, i32 0.44
 
 <Node id="61" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:57 %w_46 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0194673, i32 0.398585, i32 0.268055, i32 <undef>, i2 %filter_read
+entry:57 %w_46 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 0.0633631, i32 -0.612049, i32 0.458912, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_46"/></StgValue>
@@ -2143,7 +2143,7 @@ entry:57 %w_46 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.0194673, i32 0.
 
 <Node id="62" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-entry:58 %w_47 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.365663, i32 0.239688, i32 0.21705, i32 <undef>, i2 %filter_read
+entry:58 %w_47 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 -0.107199, i32 -0.188354, i32 0.466692, i32 <undef>, i2 %filter_read
 
 ]]></Node>
 <StgValue><ssdm name="w_47"/></StgValue>
