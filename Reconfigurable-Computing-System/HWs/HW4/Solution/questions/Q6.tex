@@ -13,3 +13,45 @@
 
 	
 	در صورت انجام «۲» یا «۳» نیازی به انجام بخش «۱» نمی‌باشد.
+	
+
+\begin{qsolve}
+	در این پروژه قصد داریم تا پروژه‌های قبلی را با اضافه نمودن یک لایه \lr{Fully Connected} به آن تکمیل کرده و یک شبکه عصبی \lr{CNN} را پیاده‌سازی کنیم. بدین منظور پروژه را به دو فاز تقسیم می‌کنیم:
+	\begin{enumerate}
+		\item فاز نرم‌افزاری
+		\item فاز سخت‌افزاری
+	\end{enumerate}
+	
+	\paragraph{فاز نرم‌افزاری:}
+	
+	در مرحله اول ابتدا به‌صورت نرم افزاری شبکه مورد نظر را تعریف کرده و آن را با داده‌های مجموعه داده \lr{MNIST} آموزش می‌دهیم تا از وزن‌های آن در فاز سخت افزاری استفاده کنیم.
+	
+	بدین منظور شبکه ای با معماری زیر را تعریف می‌کنیم:
+	
+	\begin{center}
+		\includegraphics*[width=0.6\linewidth]{pics/img2.pdf}
+		\captionof{figure}{معماری شبکه مورد نظر}
+		\label{معماری شبکه مورد نظر}
+	\end{center}
+
+	کد نوشته شده برای پیاده سازی شبکه به‌صورت زیر است:
+\end{qsolve}
+
+\begin{qsolve}
+	
+\end{qsolve}
+	
+\begin{latin}
+\begin{lstlisting}[language=Python,caption={Model Definition}]
+edge_out = np.sqrt(np.power(pre_x, 2) + np.power(pre_y, 2))
+edge_out = (edge_out / np.Max(edge_out)) * 255
+\end{lstlisting}
+\end{latin}
+
+
+
+
+
+
+
+
