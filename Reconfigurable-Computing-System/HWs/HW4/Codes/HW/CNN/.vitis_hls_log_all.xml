@@ -3,6 +3,13 @@
   <errorLogs>
     <logs>
       <simLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CNN" solutionName="solution1" date="2024-12-16T16:14:59.435+0330"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CNN" solutionName="solution1" date="2024-12-16T16:13:14.679+0330"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CNN" solutionName="solution1" date="2024-12-16T16:12:56.225+0330"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CNN" solutionName="solution1" date="2024-12-16T16:12:38.395+0330"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CNN" solutionName="solution1" date="2024-12-16T16:12:17.195+0330"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
@@ -47,6 +54,7 @@
         <logs message="Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xA;Time: 4602155 ns  Iteration: 14  Process: /apatb_cnn_top/AESL_inst_cnn/grp_dataflow_section_fu_329/grp_convolution_fu_295/fadd_32ns_32ns_32_4_full_dsp_1_U64/cnn_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/vhdl/src/unisims/primitive/DSP48E1.vhd" projectName="CNN" solutionName="solution1" date="2024-12-16T13:32:23.621+0330" type="Warning"/>
         <logs message="Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xA;Time: 4602145 ns  Iteration: 14  Process: /apatb_cnn_top/AESL_inst_cnn/grp_dataflow_section_fu_329/grp_convolution_fu_284/fadd_32ns_32ns_32_4_full_dsp_1_U64/cnn_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/vhdl/src/unisims/primitive/DSP48E1.vhd" projectName="CNN" solutionName="solution1" date="2024-12-16T13:32:23.601+0330" type="Warning"/>
       </simLog>
+      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>
