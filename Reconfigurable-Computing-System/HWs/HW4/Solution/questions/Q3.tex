@@ -1,3 +1,73 @@
 \section{سوال سوم}
 
 سه نمونه مختلف از الگوریتم‌های مورد استفاده در نگاشت تکنولوژی \lr{FPGA} (غیر از الگوریتم‌های تدریس‌شده) را به طور خلاصه توضیح دهید (برای هر کدام یک پاراگراف) و سپس بررسی کنید که چگونه می‌توان آنها را بر اساس توابع هدف و انواع شبکه‌های ورودی طبقه‌بندی کرد.
+
+\begin{qsolve}
+	الگوریتم های مورد بررسی به‌صورت زیر است:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{\lr{Performance driven technology mapping for lookup-table based FPGAs using the general delay model} \cite{ref1}}
+		
+		در این مقاله، الگوریتمی کارآمد برای نگاشت فناوری مبتنی بر عملکرد برای معماری‌های \lr{FPGA} مبتنی بر \lr{lookup-table} با استفاده از مدل تأخیر عمومی ارائه داده شده است. از آنجا که این الگوریتم هیچ محدودیتی بر مقادیر مجاز تأخیر لبه‌ها اعمال نمی‌کند، می‌تواند از اطلاعات تأخیری که در مرحله جایابی تولید می‌شود استفاده کرده و فرآیند نگاشت فناوری را در یک حلقه تکراری به صورت هوشمند هدایت کند.
+	
+	این الگوریتم از مجموعه‌ای از وزن‌های گره برای اندازه‌گیری میزان بحرانی بودن گره‌ها در یک شبکه بولین استفاده می‌کند. سپس یک جستجوی عمق اول هدایت‌شده به کار می‌رود تا یک ترتیب توپولوژیکی از گره‌ها تولید شود و این ترتیب برای هدایت مرحله خوشه‌بندی استفاده می‌شود. یکی از ویژگی‌های مهم این الگوریتم این است که به‌طور خودکار از مسیرهای همگرا در شبکه استفاده می‌کند.
+%		\textbf{\lr{Parallelizing FPGA Technology Mapping through Partitioning} \cite{ref1}}
+%		
+%		الگوریتم‌های سنتی نگاشت فناوری \lr{FPGA} به دلیل افزایش اندازه طراحی‌های مدرن \lr{FPGA} بسیار زمان‌بر است. برای تسریع این فرآیند، این مقاله رویکرد جدیدی را مبتنی بر تقسیم‌بندی مدار برای موازی‌سازی ارائه می‌دهد. ایده این است که مدار اصلی به چند زیرمدار تقسیم شود و هر کدام به یک هسته از یک پردازنده چند هسته‌ای اختصاص یابد تا نگاشت فناوری به‌طور هم‌زمان انجام شود.
+%		
+%		در مقایسه با سایر روش‌های موازی‌سازی موجود، روش پیشنهادی در این مقاله، از این مزیت برخوردار است که مستقل از الگوریتم نگاشت جزئی عمل می‌کند. این روش، می‌تواند افت کیفیت ناشی از تقسیم‌بندی را به حداقل برساند.
+		
+		
+		\item 
+		\textbf{\lr{Placement-Driven Technology Mapping for LUT-Based FPGAs} \cite{ref2}}
+		
+		این مقاله به مطالعه مسئله نگاشت فناوری مبتنی بر جایابی برای معماری‌های \lr{FPGA} مبتنی بر \lr{Table-Lookup} به منظور بهینه‌سازی عملکرد مدار پرداخته شده است. کارهای اولیه در حوزه نگاشت فناوری برای \lr{FPGA}ها مانند \lr{Chortle-d} و \lr{Flowmap} بر بهینه‌سازی عمق راه‌حل نگاشت‌شده تمرکز داشتند، بدون اینکه تأخیر اتصالات بین‌گِره‌ای را در نظر بگیرند. کارهای بعدی مانند \lr{Flowmap-d}، \lr{Bias-Clus} و \lr{EdgeMap} تأخیر اتصالات را حین نگاشت مد نظر قرار دادند، اما اثرات راه‌حل نگاشت آن‌ها بر جایابی نهایی را لحاظ نکردند. این مقاله به تعامل بین مراحل نگاشت و جایابی تمرکز دارد. ابتدا، اطلاعات مربوط به تأخیر اتصالات از جایابی تخمین زده می‌شود و در فرآیند برچسب‌گذاری استفاده می‌گردد. سپس یک راه‌حل نگاشت مبتنی بر جایابی که هم تراکم سلول‌های \lr{Global} و هم تراکم سلول‌های \lr{Local} را در نظر می‌گیرد، توسعه داده می‌شود. در نهایت، یک مرحله \lr{Legalization} و جایابی دقیق برای پیاده‌سازی طراحی انجام می‌شود.
+		
+		
+		\item 
+		\textbf{\lr{LUT-based FPGA technology mapping under arbitrary net-delay models} \cite{ref3}}
+		
+		در این مقاله، مسئله نگاشت فناوری مبتنی بر \lr{LUT} در \lr{FPGA} تحت مدل تأخیر شبکه دلخواه بررسی شده است. ایده موجود در \lr{FlowMap} را تعمیم داده شده و الگوریتمی کارآمد توسعه داده شده است که تضمین می‌کند راه‌حل نگاشت بهینه از نظر تأخیر برای شبکه‌های عمومی ارائه شود، به شرط آنکه تأخیر هر شبکه قبل از فرآیند نگاشت مشخص باشد. با محاسبه کارآمد \lr{$k-$Feasible Cut} با حداقل ارتفاع برای هر گره در شبکه، می‌توان نگاشت بهینه برای هر گره را محاسبه کرد و در نتیجه، راه‌حل نگاشت بهینه برای کل شبکه را با استفاده از برنامه‌ریزی پویا به دست آورد.
+	\end{enumerate}
+\end{qsolve}
+
+
+
+
+\begin{latin}
+	\begin{thebibliography}{9}
+		\bibitem{ref1} 
+		Anmol Mathur and C. L. Liu, "Performance driven technology mapping for lookup-table based FPGAs using the general delay model," \textit{ACM/SIGDA Workshop on Field Programmable Gate Arrays}, 1994.
+		\href{https://websrv.cecs.uci.edu/~papers/compendium94-03/papers/1994/fpga94/pdffiles/fpga94_3_1.pdf}{[Link]}
+		
+		
+		
+		\bibitem{ref2} 
+		Joey Y. Lin, Ashok Jagannathan, and Jason Cong, "Placement-driven technology mapping for LUT-based FPGAs," \textit{Proceedings of the 2003 ACM/SIGDA Eleventh International Symposium on Field-Programmable Gate Arrays}, pp. 121--126, 2003.
+		\href{http://courses.ece.ubc.ca/583/papers/44.pdf}{[Link]}
+		
+		
+		\bibitem{ref3} 
+		Jason Cong, Yuzheng Ding, Tong Gao, and Kuang-Chien Chen, "LUT-based FPGA technology mapping under arbitrary net-delay models," \textit{Computers \& Graphics}, vol. 18, no. 4, pp. 507--516, 1994. Published by Elsevier.
+		\href{https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=9c76e1834bf43160d6a090ead16fede3c3214ee7}{[Link]}
+		
+		
+%		\bibitem{ref1} 
+%		Chuyu Shen, Zili Lin, Ping Fan, Xianglong Meng, and Weikang Qian, "Parallelizing FPGA technology mapping through partitioning," \textit{2016 IEEE 24th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)}, pp. 164--167, 2016.
+%		\href{https://umji.sjtu.edu.cn/~wkqian/papers/Shen_Lin_Fan_Meng_Qian_Parallelizing_FPGA_Technology_Mapping_through_Partitioning.pdf}{[Link]}
+		
+		
+		
+		
+
+		
+%		\bibitem{ref3} 
+%		Gus Henry Smith, Benjamin Kushigian, Vishal Canumalla, Andrew Cheung, Steven Lyubomirsky, Sorawee Porncharoenwase, René Just, Gilbert Louis Bernstein, and Zachary Tatlock, "FPGA Technology Mapping Using Sketch-Guided Program Synthesis," \textit{Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2}, pp. 416--432, 2024.
+%		\href{https://arxiv.org/pdf/2401.16526}{[Link]}
+		
+		
+		
+
+	\end{thebibliography} 
+\end{latin}
