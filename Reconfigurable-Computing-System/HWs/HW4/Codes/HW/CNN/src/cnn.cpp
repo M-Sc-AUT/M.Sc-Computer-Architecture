@@ -61,7 +61,7 @@ void dataflow_section(
   dense_layer_soft_max(dense_to_softmax_streams, prediction);
 }
 
-void cnn(float img_in[IMG_ROWS][IMG_COLS], float prediction [DIGITS])
+void cnn(float img_in[IMG_ROWS][IMG_COLS], float prediction[DIGITS])
 {
   /******** Pre-processing data. ********/
 
@@ -83,9 +83,9 @@ void cnn(float img_in[IMG_ROWS][IMG_COLS], float prediction [DIGITS])
   float value;
 
   clone_for_rows:
-  for (int i = 0; i < PAD_IMG_ROWS; ++i)
+  for(int i = 0; i < PAD_IMG_ROWS; ++i)
     clone_for_cols:
-	for (int j = 0; j < PAD_IMG_COLS; ++j)
+	for(int j = 0; j < PAD_IMG_COLS; ++j)
     {
       pad_img1[i][j] = pad_img0[i][j];
       pad_img2[i][j] = pad_img0[i][j];

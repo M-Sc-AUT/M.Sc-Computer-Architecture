@@ -39,8 +39,8 @@
 | + cnn                        | cnn.cpp:64   | 1,423          | 653           | 718           | 7,737           | 7,942           |
 |    normalization_and_padding | utils.cpp:8  |   34           |               |               |                 |                 |
 |  + dataflow_section          | cnn.cpp:13   | 1,311          | 597           | 666           | 7,114           | 7,296           |
-|   + convolutional_layer      | conv.cpp:62  |  401           |               |               |                 |                 |
-|    + convolution             | conv.cpp:14  |  392 (4 calls) |               |               |                 |                 |
+|   + convolutional_layer      | conv.cpp:55  |  401           |               |               |                 |                 |
+|    + convolution             | conv.cpp:13  |  392 (4 calls) |               |               |                 |                 |
 |       relu                   | conv.cpp:5   |   28 (4 calls) |               |               |                 |                 |
 |   + max_pooling_layer        | pool.cpp:31  |  281           |               |               |                 |                 |
 |      max_pooling             | pool.cpp:4   |  268 (4 calls) |               |               |                 |                 |
@@ -49,7 +49,7 @@
 |   + dense_layer              | dense.cpp:56 |  285           |               |               |                 |                 |
 |      dense                   | dense.cpp:33 |  272 (4 calls) |               |               |                 |                 |
 |     dense_layer_soft_max     | dense.cpp:7  |   61           |               |               |                 |                 |
-|     convolution              | conv.cpp:14  |                | 204 (4 calls) | 212 (4 calls) | 6,460 (4 calls) | 6,423 (4 calls) |
+|     convolution              | conv.cpp:13  |                | 204 (4 calls) | 212 (4 calls) | 6,460 (4 calls) | 6,423 (4 calls) |
 |     max_pooling              | pool.cpp:4   |                | 108 (4 calls) | 116 (4 calls) |   96 (4 calls)  |  184 (4 calls)  |
 |     dense                    | dense.cpp:33 |                | 152 (4 calls) | 152 (4 calls) |  384 (4 calls)  |  452 (4 calls)  |
 +------------------------------+--------------+----------------+---------------+---------------+-----------------+-----------------+

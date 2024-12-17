@@ -3,7 +3,7 @@
 #include <cstdio>
 #include <ctime>
 
-#define N 100
+#define N 500
 
 
 int read_images(const char* file, float images [N][IMG_ROWS][IMG_COLS])

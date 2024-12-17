@@ -7,7 +7,7 @@ Diagnostics:
     FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/src/dense.cpp
     Replacements:    
       - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/.autopilot/db/dense.pp.0.cpp
-        Offset:          381910
+        Offset:          381868
         Length:          0
         ReplacementText: 'VITIS_LOOP_43_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -16,7 +16,7 @@ Diagnostics:
     FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/src/dense.cpp
     Replacements:    
       - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/.autopilot/db/dense.pp.0.cpp
-        Offset:          382086
+        Offset:          382044
         Length:          0
         ReplacementText: 'VITIS_LOOP_50_2: '
 ...

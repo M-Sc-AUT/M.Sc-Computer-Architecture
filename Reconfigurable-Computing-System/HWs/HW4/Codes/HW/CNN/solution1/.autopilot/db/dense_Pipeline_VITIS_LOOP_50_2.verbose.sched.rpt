@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dense_Pipeline_VITIS_LOOP_50_2'
 ================================================================
-* Date:           Mon Dec 16 12:55:05 2024
+* Date:           Tue Dec 17 23:49:06 2024
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN
@@ -118,7 +118,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln50', CNN/src/dense.cpp:50) of constant 0 on local variable 'j', CNN/src/dense.cpp:50 [5]  (1.146 ns)
 	'load' operation 4 bit ('j', CNN/src/dense.cpp:50) on local variable 'j', CNN/src/dense.cpp:50 [8]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln50', CNN/src/dense.cpp:50) [9]  (1.406 ns)
+	'add' operation 4 bit ('add_ln50', CNN/src/dense.cpp:50) [10]  (1.406 ns)
 	'store' operation 0 bit ('store_ln50', CNN/src/dense.cpp:50) of variable 'add_ln50', CNN/src/dense.cpp:50 on local variable 'j', CNN/src/dense.cpp:50 [21]  (1.146 ns)
 
  <State 2>: 4.474ns

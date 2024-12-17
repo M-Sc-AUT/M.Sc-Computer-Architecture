@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dataflow_section'
 ================================================================
-* Date:           Mon Dec 16 12:55:16 2024
+* Date:           Tue Dec 17 23:49:28 2024
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN
@@ -509,22 +509,22 @@ ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams = alloca 
 ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams_1 = alloca i64 1" [CNN/src/cnn.cpp:57]   --->   Operation 38 'alloca' 'dense_to_softmax_streams_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 10> <FIFO>
 ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams_2 = alloca i64 1" [CNN/src/cnn.cpp:57]   --->   Operation 39 'alloca' 'dense_to_softmax_streams_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 10> <FIFO>
 ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams_3 = alloca i64 1" [CNN/src/cnn.cpp:57]   --->   Operation 40 'alloca' 'dense_to_softmax_streams_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 10> <FIFO>
-ST_1 : Operation 41 [2/2] (1.19ns)   --->   "%call_ln71 = call void @convolution, i32 %pad_img0, i2 0, i32 %conv_to_pool_streams" [CNN/src/conv.cpp:71->CNN/src/cnn.cpp:30]   --->   Operation 41 'call' 'call_ln71' <Predicate = true> <Delay = 1.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 42 [2/2] (0.00ns)   --->   "%call_ln74 = call void @convolution.1, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams_3" [CNN/src/conv.cpp:74->CNN/src/cnn.cpp:30]   --->   Operation 42 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 41 [2/2] (1.19ns)   --->   "%call_ln62 = call void @convolution, i32 %pad_img0, i2 0, i32 %conv_to_pool_streams" [CNN/src/conv.cpp:62->CNN/src/cnn.cpp:30]   --->   Operation 41 'call' 'call_ln62' <Predicate = true> <Delay = 1.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 42 [2/2] (0.00ns)   --->   "%call_ln65 = call void @convolution.1, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams_3" [CNN/src/conv.cpp:65->CNN/src/cnn.cpp:30]   --->   Operation 42 'call' 'call_ln65' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 43 [1/2] (0.00ns)   --->   "%call_ln71 = call void @convolution, i32 %pad_img0, i2 0, i32 %conv_to_pool_streams" [CNN/src/conv.cpp:71->CNN/src/cnn.cpp:30]   --->   Operation 43 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 44 [1/2] (0.00ns)   --->   "%call_ln74 = call void @convolution.1, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams_3" [CNN/src/conv.cpp:74->CNN/src/cnn.cpp:30]   --->   Operation 44 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 43 [1/2] (0.00ns)   --->   "%call_ln62 = call void @convolution, i32 %pad_img0, i2 0, i32 %conv_to_pool_streams" [CNN/src/conv.cpp:62->CNN/src/cnn.cpp:30]   --->   Operation 43 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 44 [1/2] (0.00ns)   --->   "%call_ln65 = call void @convolution.1, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams_3" [CNN/src/conv.cpp:65->CNN/src/cnn.cpp:30]   --->   Operation 44 'call' 'call_ln65' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 1.19>
-ST_3 : Operation 45 [2/2] (1.19ns)   --->   "%call_ln72 = call void @convolution, i32 %pad_img1, i2 1, i32 %conv_to_pool_streams_1" [CNN/src/conv.cpp:72->CNN/src/cnn.cpp:30]   --->   Operation 45 'call' 'call_ln72' <Predicate = true> <Delay = 1.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_3 : Operation 46 [2/2] (1.19ns)   --->   "%call_ln73 = call void @convolution, i32 %pad_img2, i2 2, i32 %conv_to_pool_streams_2" [CNN/src/conv.cpp:73->CNN/src/cnn.cpp:30]   --->   Operation 46 'call' 'call_ln73' <Predicate = true> <Delay = 1.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 45 [2/2] (1.19ns)   --->   "%call_ln63 = call void @convolution, i32 %pad_img1, i2 1, i32 %conv_to_pool_streams_1" [CNN/src/conv.cpp:63->CNN/src/cnn.cpp:30]   --->   Operation 45 'call' 'call_ln63' <Predicate = true> <Delay = 1.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 46 [2/2] (1.19ns)   --->   "%call_ln64 = call void @convolution, i32 %pad_img2, i2 2, i32 %conv_to_pool_streams_2" [CNN/src/conv.cpp:64->CNN/src/cnn.cpp:30]   --->   Operation 46 'call' 'call_ln64' <Predicate = true> <Delay = 1.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_3 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln33 = call void @max_pooling, i32 %conv_to_pool_streams, i32 %pool_to_flat_streams" [CNN/src/pool.cpp:33->CNN/src/cnn.cpp:44]   --->   Operation 47 'call' 'call_ln33' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_3 : Operation 48 [2/2] (0.00ns)   --->   "%call_ln36 = call void @max_pooling, i32 %conv_to_pool_streams_3, i32 %pool_to_flat_streams_3" [CNN/src/pool.cpp:36->CNN/src/cnn.cpp:44]   --->   Operation 48 'call' 'call_ln36' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 49 [1/2] (0.00ns)   --->   "%call_ln72 = call void @convolution, i32 %pad_img1, i2 1, i32 %conv_to_pool_streams_1" [CNN/src/conv.cpp:72->CNN/src/cnn.cpp:30]   --->   Operation 49 'call' 'call_ln72' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_4 : Operation 50 [1/2] (0.00ns)   --->   "%call_ln73 = call void @convolution, i32 %pad_img2, i2 2, i32 %conv_to_pool_streams_2" [CNN/src/conv.cpp:73->CNN/src/cnn.cpp:30]   --->   Operation 50 'call' 'call_ln73' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 49 [1/2] (0.00ns)   --->   "%call_ln63 = call void @convolution, i32 %pad_img1, i2 1, i32 %conv_to_pool_streams_1" [CNN/src/conv.cpp:63->CNN/src/cnn.cpp:30]   --->   Operation 49 'call' 'call_ln63' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 50 [1/2] (0.00ns)   --->   "%call_ln64 = call void @convolution, i32 %pad_img2, i2 2, i32 %conv_to_pool_streams_2" [CNN/src/conv.cpp:64->CNN/src/cnn.cpp:30]   --->   Operation 50 'call' 'call_ln64' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_4 : Operation 51 [1/2] (0.00ns)   --->   "%call_ln33 = call void @max_pooling, i32 %conv_to_pool_streams, i32 %pool_to_flat_streams" [CNN/src/pool.cpp:33->CNN/src/cnn.cpp:44]   --->   Operation 51 'call' 'call_ln33' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_4 : Operation 52 [1/2] (0.00ns)   --->   "%call_ln36 = call void @max_pooling, i32 %conv_to_pool_streams_3, i32 %pool_to_flat_streams_3" [CNN/src/pool.cpp:36->CNN/src/cnn.cpp:44]   --->   Operation 52 'call' 'call_ln36' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
@@ -733,10 +733,10 @@ dense_to_softmax_streams   (alloca       ) [ 001111111111111111111111]
 dense_to_softmax_streams_1 (alloca       ) [ 001111111111111111111111]
 dense_to_softmax_streams_2 (alloca       ) [ 001111111111111111111111]
 dense_to_softmax_streams_3 (alloca       ) [ 001111111111111111111111]
-call_ln71                  (call         ) [ 000000000000000000000000]
-call_ln74                  (call         ) [ 000000000000000000000000]
-call_ln72                  (call         ) [ 000000000000000000000000]
-call_ln73                  (call         ) [ 000000000000000000000000]
+call_ln62                  (call         ) [ 000000000000000000000000]
+call_ln65                  (call         ) [ 000000000000000000000000]
+call_ln63                  (call         ) [ 000000000000000000000000]
+call_ln64                  (call         ) [ 000000000000000000000000]
 call_ln33                  (call         ) [ 000000000000000000000000]
 call_ln36                  (call         ) [ 000000000000000000000000]
 call_ln34                  (call         ) [ 000000000000000000000000]
@@ -2033,7 +2033,7 @@ ret_ln62                   (ret          ) [ 000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln71/1 call_ln72/3 "/>
+<opset="call_ln62/1 call_ln63/3 "/>
 </bind>
 </comp>
 
@@ -2047,7 +2047,7 @@ ret_ln62                   (ret          ) [ 000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln73/3 "/>
+<opset="call_ln64/3 "/>
 </bind>
 </comp>
 
@@ -2108,7 +2108,7 @@ ret_ln62                   (ret          ) [ 000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln74/1 "/>
+<opset="call_ln65/1 "/>
 </bind>
 </comp>
 
@@ -2995,8 +2995,8 @@ ret_ln62                   (ret          ) [ 000000000000000000000000]
 	Port: dataflow_section : dense_biases | {20 21 }
   - Chain level:
 	State 1
-		call_ln71 : 1
-		call_ln74 : 1
+		call_ln62 : 1
+		call_ln65 : 1
 	State 2
 	State 3
 	State 4

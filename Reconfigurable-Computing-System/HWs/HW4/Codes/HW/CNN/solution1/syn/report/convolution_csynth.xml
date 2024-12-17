@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN/src/conv.cpp:36</SourceLocation>
+<SourceLocation>CNN/src/conv.cpp:30</SourceLocation>
 <SummaryOfLoopViolations>
 <conv_for_rows_conv_for_cols_pool_for_rows_pool_for_cols>
 <Name>conv_for_rows_conv_for_cols_pool_for_rows_pool_for_cols</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Resource Limitation</ViolationType>
-<SourceLocation>CNN/src/conv.cpp:25</SourceLocation>
+<SourceLocation>CNN/src/conv.cpp:19</SourceLocation>
 </conv_for_rows_conv_for_cols_pool_for_rows_pool_for_cols>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

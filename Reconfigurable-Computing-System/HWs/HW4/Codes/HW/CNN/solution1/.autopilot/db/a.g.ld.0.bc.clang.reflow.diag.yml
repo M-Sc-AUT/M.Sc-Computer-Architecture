@@ -1,7 +1,7 @@
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 14, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Inlining function '''
@@ -9,7 +9,7 @@ Args:
     DebugLoc:        { File: CNN/src/conv.cpp, Line: 6, Column: 0 }
   - String:          ''' into '''
   - Caller:          'convolution(float (*) [34], int, hls::stream<float, 0>&)'
-    DebugLoc:        { File: CNN/src/conv.cpp, Line: 20, Column: 0 }
+    DebugLoc:        { File: CNN/src/conv.cpp, Line: 14, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -34,7 +34,7 @@ Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
 Args:            
   - String:          'Inlining function '''
   - Callee:          'convolutional_layer(float (*) [34], float (*) [34], float (*) [34], float (*) [34], hls::stream<float, 0>*)'
-    DebugLoc:        { File: CNN/src/conv.cpp, Line: 70, Column: 0 }
+    DebugLoc:        { File: CNN/src/conv.cpp, Line: 61, Column: 0 }
   - String:          ''' into '''
   - Caller:          'dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)'
     DebugLoc:        { File: CNN/src/cnn.cpp, Line: 19, Column: 0 }
@@ -229,7 +229,7 @@ Args:
   - String:          'automatically set the pipeline for Loop< '
   - LoopName:        pool_for_cols
   - String:          '> at '
-  - LoopLoc:         'CNN/src/conv.cpp:36:9'
+  - LoopLoc:         'CNN/src/conv.cpp:30:9'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -365,7 +365,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 43, Column: 11 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 37, Column: 11 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Loop '''
@@ -375,7 +375,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 46, Column: 13 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 40, Column: 13 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Loop '''
@@ -465,13 +465,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 14, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_rows
   - String:          ''' ('
-  - LoopLoc:         'CNN/src/conv.cpp:43:11'
+  - LoopLoc:         'CNN/src/conv.cpp:37:11'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -481,13 +481,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 14, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN/src/conv.cpp:46:13'
+  - LoopLoc:         'CNN/src/conv.cpp:40:13'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -497,13 +497,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 14, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN/src/conv.cpp:46:13'
+  - LoopLoc:         'CNN/src/conv.cpp:40:13'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -513,13 +513,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 14, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN/src/conv.cpp:46:13'
+  - LoopLoc:         'CNN/src/conv.cpp:40:13'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -529,13 +529,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 14, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN/src/conv.cpp:46:13'
+  - LoopLoc:         'CNN/src/conv.cpp:40:13'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -545,13 +545,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 14, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN/src/conv.cpp:46:13'
+  - LoopLoc:         'CNN/src/conv.cpp:40:13'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -561,13 +561,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 14, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN/src/conv.cpp:46:13'
+  - LoopLoc:         'CNN/src/conv.cpp:40:13'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -577,13 +577,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN/src/conv.cpp, Line: 20, Column: 0 }
+DebugLoc:        { File: CNN/src/conv.cpp, Line: 14, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN/src/conv.cpp:46:13'
+  - LoopLoc:         'CNN/src/conv.cpp:40:13'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution

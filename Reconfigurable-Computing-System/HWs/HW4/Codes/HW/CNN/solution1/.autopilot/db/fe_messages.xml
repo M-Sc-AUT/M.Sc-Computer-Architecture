@@ -1,15 +1,18 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/csynth.tcl:26:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/csynth.tcl:27:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN/src/conv.cpp:20:0" msg_body="Inlining function 'relu(float)' into 'convolution(float (*) [34], int, hls::stream&lt;float, 0&gt;&amp;)'">
-        <args Callee="relu(float)" Callee-DebugLoc="File CNN/src/conv.cpp Line 6 Column 0" Caller="convolution(float (*) [34], int, hls::stream&lt;float, 0&gt;&amp;)" Caller-DebugLoc="File CNN/src/conv.cpp Line 20 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN/src/conv.cpp:14:0" msg_body="Inlining function 'relu(float)' into 'convolution(float (*) [34], int, hls::stream&lt;float, 0&gt;&amp;)'">
+        <args Callee="relu(float)" Callee-DebugLoc="File CNN/src/conv.cpp Line 6 Column 0" Caller="convolution(float (*) [34], int, hls::stream&lt;float, 0&gt;&amp;)" Caller-DebugLoc="File CNN/src/conv.cpp Line 14 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN/src/flat.cpp:17:0" msg_body="Inlining function 'flattening(hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)' into 'flattening_layer(hls::stream&lt;float, 0&gt;*, hls::stream&lt;float, 0&gt;*)'">
         <args Callee="flattening(hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)" Callee-DebugLoc="File CNN/src/flat.cpp Line 4 Column 0" Caller="flattening_layer(hls::stream&lt;float, 0&gt;*, hls::stream&lt;float, 0&gt;*)" Caller-DebugLoc="File CNN/src/flat.cpp Line 17 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN/src/cnn.cpp:19:0" msg_body="Inlining function 'convolutional_layer(float (*) [34], float (*) [34], float (*) [34], float (*) [34], hls::stream&lt;float, 0&gt;*)' into 'dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)'">
-        <args Callee="convolutional_layer(float (*) [34], float (*) [34], float (*) [34], float (*) [34], hls::stream&lt;float, 0&gt;*)" Callee-DebugLoc="File CNN/src/conv.cpp Line 70 Column 0" Caller="dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)" Caller-DebugLoc="File CNN/src/cnn.cpp Line 19 Column 0"/>
+        <args Callee="convolutional_layer(float (*) [34], float (*) [34], float (*) [34], float (*) [34], hls::stream&lt;float, 0&gt;*)" Callee-DebugLoc="File CNN/src/conv.cpp Line 61 Column 0" Caller="dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)" Caller-DebugLoc="File CNN/src/cnn.cpp Line 19 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN/src/cnn.cpp:19:0" msg_body="Inlining function 'max_pooling_layer(hls::stream&lt;float, 0&gt;*, hls::stream&lt;float, 0&gt;*)' into 'dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)'">
         <args Callee="max_pooling_layer(hls::stream&lt;float, 0&gt;*, hls::stream&lt;float, 0&gt;*)" Callee-DebugLoc="File CNN/src/pool.cpp Line 32 Column 0" Caller="dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)" Caller-DebugLoc="File CNN/src/cnn.cpp Line 19 Column 0"/>
@@ -50,10 +53,10 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN/src/pool.cpp:19:9" msg_body="Loop 'pool_for_pc' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="pool_for_pc"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN/src/conv.cpp:43:11" msg_body="Loop 'krn_for_rows' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN/src/conv.cpp:37:11" msg_body="Loop 'krn_for_rows' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="krn_for_rows"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN/src/conv.cpp:46:13" msg_body="Loop 'krn_for_cols' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN/src/conv.cpp:40:13" msg_body="Loop 'krn_for_cols' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="krn_for_cols"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN/src/cnn.cpp:19:0" msg_body="Unrolling loop 'dense_soft_max_for_filters' (CNN/src/dense.cpp:18:5) in function 'dataflow_section' completely with a factor of 4">
@@ -68,11 +71,11 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN/src/pool.cpp:5:0" msg_body="Unrolling loop 'pool_for_pc' (CNN/src/pool.cpp:19:9) in function 'max_pooling' completely with a factor of 2">
         <args Factor="2" LoopLoc="CNN/src/pool.cpp:19:9" LoopName="pool_for_pc"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN/src/conv.cpp:20:0" msg_body="Unrolling loop 'krn_for_rows' (CNN/src/conv.cpp:43:11) in function 'convolution' completely with a factor of 7">
-        <args Factor="7" LoopLoc="CNN/src/conv.cpp:43:11" LoopName="krn_for_rows"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN/src/conv.cpp:14:0" msg_body="Unrolling loop 'krn_for_rows' (CNN/src/conv.cpp:37:11) in function 'convolution' completely with a factor of 7">
+        <args Factor="7" LoopLoc="CNN/src/conv.cpp:37:11" LoopName="krn_for_rows"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN/src/conv.cpp:20:0" msg_body="Unrolling loop 'krn_for_cols' (CNN/src/conv.cpp:46:13) in function 'convolution' completely with a factor of 7">
-        <args Factor="7" LoopLoc="CNN/src/conv.cpp:46:13" LoopName="krn_for_cols"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN/src/conv.cpp:14:0" msg_body="Unrolling loop 'krn_for_cols' (CNN/src/conv.cpp:40:13) in function 'convolution' completely with a factor of 7">
+        <args Factor="7" LoopLoc="CNN/src/conv.cpp:40:13" LoopName="krn_for_cols"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="CNN/src/Headers/conv_weights.h:11:0" msg_body="array_partition dim=3 type=complete  variable=conv_weights 1 cnn CNN/src/Headers/conv_weights.h:11:0 conv_weights">
         <args PragmaFunction="cnn" PragmaIsAuto="1" PragmaOptions="dim=3 type=complete  variable=conv_weights" PragmaType="array_partition" VarName="conv_weights" varLoc="CNN/src/Headers/conv_weights.h:11:0"/>

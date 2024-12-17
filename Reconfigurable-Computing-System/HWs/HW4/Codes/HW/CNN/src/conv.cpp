@@ -10,13 +10,7 @@ float relu (float x)
     return 0.0;
 }
 
-void
-convolution
-(
-  float                pad_img [PAD_IMG_ROWS][PAD_IMG_COLS],
-  int                  filter,
-  hls::stream<float> & conv_to_pool_stream
-)
+void convolution(float pad_img [PAD_IMG_ROWS][PAD_IMG_COLS], int filter, hls::stream<float> & conv_to_pool_stream)
 {
   float w_sum = 0.0; // Weighted sum.
 
@@ -58,15 +52,12 @@ convolution
   }
 }
 
-void
-convolutional_layer
-(
-  float pad_img0 [PAD_IMG_ROWS][PAD_IMG_COLS],
-  float pad_img1 [PAD_IMG_ROWS][PAD_IMG_COLS],
-  float pad_img2 [PAD_IMG_ROWS][PAD_IMG_COLS],
-  float pad_img3 [PAD_IMG_ROWS][PAD_IMG_COLS],
-  hls::stream<float> conv_to_pool_streams [FILTERS]
-)
+void convolutional_layer(
+	  float pad_img0 [PAD_IMG_ROWS][PAD_IMG_COLS],
+	  float pad_img1 [PAD_IMG_ROWS][PAD_IMG_COLS],
+	  float pad_img2 [PAD_IMG_ROWS][PAD_IMG_COLS],
+	  float pad_img3 [PAD_IMG_ROWS][PAD_IMG_COLS],
+	  hls::stream<float> conv_to_pool_streams [FILTERS] )
 {
   convolution(pad_img0, 0, conv_to_pool_streams[0]);
   convolution(pad_img1, 1, conv_to_pool_streams[1]);

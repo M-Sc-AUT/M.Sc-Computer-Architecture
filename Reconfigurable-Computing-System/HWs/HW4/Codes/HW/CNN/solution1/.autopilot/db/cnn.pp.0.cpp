@@ -392,9 +392,13 @@ void dataflow_section(
   dense_layer_soft_max(dense_to_softmax_streams, prediction);
 }
 
-__attribute__((sdx_kernel("cnn", 0))) void cnn(float img_in[28][28], float prediction [10])
+__attribute__((sdx_kernel("cnn", 0))) void cnn(float img_in[28][28], float prediction[10])
 {
-#line 26 "/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/csynth.tcl"
+#line 27 "/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/csynth.tcl"
+#pragma HLSDIRECTIVE TOP name=cnn
+# 65 "CNN/src/cnn.cpp"
+
+#line 7 "/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/HWs/HW4/Codes/HW/CNN/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=cnn
 # 65 "CNN/src/cnn.cpp"
 
@@ -410,9 +414,9 @@ __attribute__((sdx_kernel("cnn", 0))) void cnn(float img_in[28][28], float predi
   float value;
 
   clone_for_rows:
-  for (int i = 0; i < (28 + (7 - 1)); ++i)
+  for(int i = 0; i < (28 + (7 - 1)); ++i)
     clone_for_cols:
- for (int j = 0; j < (28 + (7 - 1)); ++j)
+ for(int j = 0; j < (28 + (7 - 1)); ++j)
     {
       pad_img1[i][j] = pad_img0[i][j];
       pad_img2[i][j] = pad_img0[i][j];
