@@ -10,36 +10,11 @@
 	\begin{qsolve}
 		نمودار پیکربندی به صورت زیر است:
 	\end{qsolve}
+	
 	\begin{center}
-		\begin{tikzpicture}[node distance=1.5cm]
-			% Stage 1 crossbars
-			\node (stage1-1) [crossbar] {\lr{Crossbar 1}};
-			\node (stage1-2) [crossbar, below of=stage1-1] {\lr{Crossbar 2}};
-			\node (stage1-3) [crossbar, below of=stage1-2] {...};
-			\node (stage1-10) [crossbar, below of=stage1-3, yshift=-1cm] {\lr{Crossbar 10}};
-			
-			% Stage 2 crossbars
-			\node (stage2-1) [crossbar, right of=stage1-1, xshift=5cm] {\lr{Crossbar 1}};
-			\node (stage2-2) [crossbar, below of=stage2-1] {\lr{Crossbar 2}};
-			\node (stage2-3) [crossbar, below of=stage2-2] {...};
-			\node (stage2-4) [crossbar, below of=stage2-3, yshift=-1cm] {\lr{Crossbar 4}};
-			
-			% Stage 3 crossbars
-			\node (stage3-1) [crossbar, right of=stage2-1, xshift=5cm] {\lr{Crossbar 1}};
-			\node (stage3-2) [crossbar, below of=stage3-1] {\lr{Crossbar 2}};
-			\node (stage3-3) [crossbar, below of=stage3-2] {...};
-			\node (stage3-10) [crossbar, below of=stage3-3, yshift=-1cm] {\lr{Crossbar 10}};
-			
-			% Arrows Stage 1 -> Stage 2
-			\draw [arrow] (stage1-1.east) -- (stage2-1.west);
-			\draw [arrow] (stage1-2.east) -- (stage2-2.west);
-			\draw [arrow] (stage1-10.east) -- (stage2-4.west);
-			
-			% Arrows Stage 2 -> Stage 3
-			\draw [arrow] (stage2-1.east) -- (stage3-1.west);
-			\draw [arrow] (stage2-2.east) -- (stage3-2.west);
-			\draw [arrow] (stage2-4.east) -- (stage3-10.west);
-		\end{tikzpicture}
+		\includegraphics*[width=1\linewidth]{pics/img7.pdf}
+		\captionof{figure}{پیکربندی سوال ۴}
+		\label{پیکربندی سوال ۴}
 	\end{center}
 	
 	
