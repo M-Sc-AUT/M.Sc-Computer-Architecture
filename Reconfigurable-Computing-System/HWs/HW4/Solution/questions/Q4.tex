@@ -2,3 +2,47 @@
 
 
 یک مثال از مداری را بزنید که برای مرحله اول \lr{Chortle-crf}، روش \lr{first-fit} جواب بهتری نسبت به \lr{best-fit} می‌دهد.
+
+
+\begin{qsolve}
+	برای مثال تابع زیر درنظر گرفته شده است:
+	
+	$$ f(A,B,C,D)=AB'C+A'BC+A'C'+AD' $$
+	
+	شکل کلی تابع به‌صورت زیر رسم می‌شود:
+	
+	\begin{center}
+		\includegraphics*[width=0.6\linewidth]{pics/Q4_a.pdf}
+		\captionof{figure}{شکل کلی مدار}
+		\label{شکل کلی مدار}
+	\end{center}
+	
+	
+	
+	در الگوریتم \lr{First Fit} تنها می‌توان \lr{b} و \lr{c} را باهم ترکیب کرد:
+	
+	\begin{center}
+		\includegraphics*[width=0.6\linewidth]{pics/Q4_b.pdf}
+		\captionof{figure}{\lr{First Fit}}
+		\label{فرست فیت}
+	\end{center}
+	
+	تعداد \lr{LUT} ها در \lr{First Fit}، ۴ عدد به‌دست می‌آید. همچنین تعداد \lr{Pack}ها نیز ۲-۵-۳ به‌دست آمده است.
+	
+	
+	در ادامه مسئله را برای حالت \lr{Best Fit} بررسی می‌کنیم. در این جالت می‌توان گیت‌های \lr{a} و \lr{c} را باهم و \lr{b} و \lr{d} را نیز باهم ترکیب نمود:
+	
+	
+\end{qsolve}
+\newpage
+
+
+\begin{qsolve}
+	\begin{center}
+		\includegraphics*[width=0.6\linewidth]{pics/Q4_c.pdf}
+		\captionof{figure}{\lr{Best Fit}}
+		\label{بست فیت}
+	\end{center}
+	
+	در این حالت تعداد \lr{LUT} ها به ۳ عدد کاهش پیدا می‌کنند. همچنین مقدار \lr{Pack} ها نیز به‌صورت ۵-۵ می‌شود.
+\end{qsolve}

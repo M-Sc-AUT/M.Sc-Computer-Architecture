@@ -31,6 +31,57 @@
 		در این مقاله، مسئله نگاشت فناوری مبتنی بر \lr{LUT} در \lr{FPGA} تحت مدل تأخیر شبکه دلخواه بررسی شده است. ایده موجود در \lr{FlowMap} را تعمیم داده شده و الگوریتمی کارآمد توسعه داده شده است که تضمین می‌کند راه‌حل نگاشت بهینه از نظر تأخیر برای شبکه‌های عمومی ارائه شود، به شرط آنکه تأخیر هر شبکه قبل از فرآیند نگاشت مشخص باشد. با محاسبه کارآمد \lr{$k-$Feasible Cut} با حداقل ارتفاع برای هر گره در شبکه، می‌توان نگاشت بهینه برای هر گره را محاسبه کرد و در نتیجه، راه‌حل نگاشت بهینه برای کل شبکه را با استفاده از برنامه‌ریزی پویا به دست آورد.
 	\end{enumerate}
 \end{qsolve}
+\newpage
+
+
+\begin{qsolve}
+	\begin{enumerate}
+		\item \textbf{طبقه‌بندی بر اساس توابع هدف:}
+		\begin{enumerate}
+			\item \textbf{کاهش تأخیر (\lr{Delay Minimization}):}
+			\begin{itemize}
+				\item \textbf{الگوریتم 1: \lr{Performance Driven Technology Mapping for Lookup-Table Based FPGAs}}
+				\newline
+				این الگوریتم به طور خاص برای بهبود عملکرد شبکه و کاهش تأخیر طراحی شده است. از اطلاعات تأخیری استفاده می‌کند و تأخیر مسیرهای بحرانی را در فرآیند نگاشت به حداقل می‌رساند.
+				
+				\item \textbf{الگوریتم 3: \lr{LUT-Based FPGA Technology Mapping under Arbitrary Net-Delay Models}}
+				\newline
+				تمرکز اصلی این الگوریتم نیز بر کاهش تأخیر کلی است و تضمین می‌کند که تأخیر مسیرهای بحرانی حداقل شود.
+			\end{itemize}
+			
+			\item \textbf{بهینه‌سازی جایابی و نگاشت همزمان (\lr{Placement-Aware Mapping}):}
+			\begin{itemize}
+				\item \textbf{الگوریتم 2: \lr{Placement-Driven Technology Mapping for LUT-Based FPGAs}}
+				\newline
+				این الگوریتم علاوه بر کاهش تأخیر، بهینه‌سازی جایابی را در نظر می‌گیرد. تعامل میان جایابی و نگاشت، از ویژگی‌های کلیدی آن است.
+			\end{itemize}
+		\end{enumerate}
+		
+		\item \textbf{طبقه‌بندی بر اساس انواع شبکه‌های ورودی:}
+		\begin{enumerate}
+			\item \textbf{شبکه‌های بولین (\lr{Boolean Networks}):}
+			\begin{itemize}
+				\item \textbf{الگوریتم 1:}
+				\newline
+				این الگوریتم با استفاده از یک گراف بولین (\lr{Boolean Network}) برای محاسبه وزن گره‌ها و مسیرهای بحرانی استفاده می‌کند.
+			\end{itemize}
+			
+			\item \textbf{شبکه‌های عمومی (\lr{General Networks}):}
+			\begin{itemize}
+				\item \textbf{الگوریتم 3:}
+				\newline
+				این الگوریتم برای شبکه‌های عمومی طراحی شده است و مدل‌های تأخیر دلخواه را پشتیبانی می‌کند.
+			\end{itemize}
+			
+			\item \textbf{شبکه‌های مبتنی بر جدول جستجو (\lr{LUT Networks}):}
+			\begin{itemize}
+				\item \textbf{الگوریتم 2:}
+				\newline
+				به طور خاص برای شبکه‌هایی طراحی شده که مبتنی بر \lr{LUT} هستند و تعامل میان جایابی و نگاشت در آنها اهمیت دارد.
+			\end{itemize}
+		\end{enumerate}
+	\end{enumerate}
+\end{qsolve}
 
 
 
