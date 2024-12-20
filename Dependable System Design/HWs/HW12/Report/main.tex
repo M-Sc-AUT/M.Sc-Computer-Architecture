@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+	
+	% Header Information
+	\begin{center}
+		\Large\textbf{Dependable System Design - Fall 2024} \\
+		\large\textbf{Homework 12} \\
+		\normalsize\textbf{Reza Adinepour}
+	\end{center}
+	
+	\vspace{1cm}
+	
+	% Title
+	\begin{center}
+		\large\textbf{Conditional Reliability Analysis}\\
+	\end{center}
+	
+	\section*{Problem Statement}
+	Evaluate the conditional probability of the system being operational during the time interval between \([a, t]\), given that the system was functional at time 0, considering repairs. Repairs before time \(a\) are acceptable, but the system must remain operational during the interval \([a, t]\) with no repairs allowed.
+	
+	
+	\section*{Definitions}
+	\begin{itemize}
+		\item \textbf{Reliability Function:} The reliability function, \(R(t)\), is the probability that the random time to failure \(T\) exceeds \(t\):
+		\begin{equation}
+			R(t) = P(T > t) = 1 - F(t),
+		\end{equation}
+		where \(F(t)\) is the cumulative distribution function (CDF).
+		
+		\item \textbf{Conditional Reliability Function:} The conditional reliability function, \(m(x)\), is the probability that the system survives an additional time \(x\), given it has already survived up to time \(t\):
+		\begin{equation}
+			m(x) = P(T > t + x \mid T > t) = \frac{R(t + x)}{R(t)}.
+		\end{equation}
+		
+		\item \textbf{Final Conditional Probability:} The conditional probability of the system being operational during \([a, t]\), given it was functional at time 0:
+		\begin{equation}
+			P(T > t \text{ in } [a, t] \mid T > 0) = \frac{R(t)}{R(0)}.
+		\end{equation}
+	\end{itemize}
+	
+	\section*{Solution}
+	\subsection*{1. Define the Required Probability}
+	We need:
+	\begin{equation}
+		P(T > t \text{ in } [a, t] \mid T > 0) = P(T > t \mid T > a) \cdot P(T > a \mid T > 0).
+	\end{equation}
+	
+	\subsection*{2. Use the Conditional Reliability Function}
+	From the definition of the conditional reliability function:
+	\begin{equation}
+		P(T > t \mid T > a) = \frac{R(t)}{R(a)}.
+	\end{equation}
+	
+	The probability of surviving up to \(a\), given survival at time 0, is:
+	\begin{equation}
+		P(T > a \mid T > 0) = \frac{R(a)}{R(0)}.
+	\end{equation}
+	
+	\subsection*{3. Combine Results}
+	Multiplying these probabilities:
+	\begin{align}
+		P(T > t \text{ in } [a, t] \mid T > 0) &= P(T > t \mid T > a) \cdot P(T > a \mid T > 0) \\
+		&= \frac{R(t)}{R(a)} \cdot \frac{R(a)}{R(0)} \\
+		&= \frac{R(t)}{R(0)}.
+	\end{align}
+	\newpage
+	
+	
+	
+	
+	\section*{Numerical Example}
+	Suppose the reliability function of a system is given by:
+	\begin{equation}
+		R(t) = e^{-\lambda t},
+	\end{equation}
+	where \(\lambda = 0.1\) is the failure rate. Let \(a = 5\) and \(t = 10\), and we want to calculate the conditional probability that the system is operational during \([5, 10]\) given it was operational at \(t = 0\).
+	
+	\subsection*{1. Compute \(R(t)\) and \(R(0)\)}
+	\begin{align}
+		R(0) &= e^{-0.1 \cdot 0} = 1, \\
+		R(10) &= e^{-0.1 \cdot 10} = e^{-1} \approx 0.3679.
+	\end{align}
+	
+	\subsection*{2. Compute the Conditional Probability}
+	Using the formula:
+	\begin{equation}
+		P(T > t \text{ in } [a, t] \mid T > 0) = \frac{R(t)}{R(0)}.
+	\end{equation}
+	Substitute the values:
+	\begin{align}
+		P(T > 10 \text{ in } [5, 10] \mid T > 0) &= \frac{R(10)}{R(0)} \\
+		&= \frac{0.3679}{1} \\
+		&= 0.3679.
+	\end{align}
+	
+	Thus, the conditional probability that the system remains operational during \([5, 10]\), given it was operational at \(t = 0\), is approximately \(36.79\%\).
+	
+	
+\end{document}
