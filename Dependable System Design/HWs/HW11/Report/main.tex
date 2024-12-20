@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+	
+	% Header Information
+	\begin{center}
+		\Large\textbf{Dependable System Design - Fall 2024} \\
+		\large\textbf{Homework 11} \\
+		\normalsize\textbf{Reza Adinepour}
+	\end{center}
+	
+	\vspace{1cm}
+	
+	% Title
+	\begin{center}
+		\large\textbf{Conditional Probability of System Reliability}\\
+	\end{center}
+	
+	\section*{Problem Statement}
+	Calculate the conditional probability of the system being operational within the time interval $[a, t]$, given that the system was operational at time $t = 0$.
+	
+	\section*{Solution}
+	
+	We aim to calculate:
+	\begin{equation}
+		P(a \leq T \leq t \mid T > 0),
+	\end{equation}
+	where:
+	\begin{itemize}
+		\item $T$: Time-to-failure random variable,
+		\item $[a, t]$: Time interval under consideration,
+		\item $T > 0$: The system was operational at $t = 0$.
+	\end{itemize}
+	
+	\subsection*{1. Conditional Probability Formula}
+	The conditional probability formula is given by:
+	\begin{equation}
+		P(A \mid B) = \frac{P(A \cap B)}{P(B)}.
+	\end{equation}
+	Here, $A$ corresponds to the event $a \leq T \leq t$, and $B$ corresponds to the event $T > 0$. Substituting:
+	\begin{equation}
+		P(a \leq T \leq t \mid T > 0) = \frac{P(a \leq T \leq t \cap T > 0)}{P(T > 0)}.
+	\end{equation}
+	Since $T > 0$ is already guaranteed, this simplifies to:
+	\begin{equation}
+		P(a \leq T \leq t \mid T > 0) = \frac{P(a \leq T \leq t)}{P(T > 0)}.
+	\end{equation}
+	
+	\subsection*{2. Reliability Function}
+	The reliability function $R(t)$ is defined as:
+	\begin{equation}
+		R(t) = P(T > t).
+	\end{equation}
+	Its complement is the cumulative distribution function (CDF), $F(t)$, which gives the probability of failure by time $t$:
+	\begin{equation}
+		F(t) = P(T \leq t) = 1 - R(t).
+	\end{equation}
+	For the interval probability $P(a \leq T \leq t)$, we have:
+	\begin{equation}
+		P(a \leq T \leq t) = P(T > a) - P(T > t).
+	\end{equation}
+	Substituting the reliability function:
+	\begin{equation}
+		P(a \leq T \leq t) = R(a) - R(t).
+	\end{equation}
+	
+	\subsection*{3. Substituting into Conditional Probability Formula}
+	Using the relationships above, the conditional probability becomes:
+	\begin{equation}
+		P(a \leq T \leq t \mid T > 0) = \frac{P(a \leq T \leq t)}{P(T > 0)}.
+	\end{equation}
+	From the reliability assumption, at $t = 0$, $R(0) = P(T > 0) = 1$ because the system starts operational. Thus:
+	\begin{equation}
+		P(a \leq T \leq t \mid T > 0) = P(a \leq T \leq t).
+	\end{equation}
+	Substituting $P(a \leq T \leq t) = R(a) - R(t)$:
+	\begin{equation}
+		P(a \leq T \leq t \mid T > 0) = R(a) - R(t).
+	\end{equation}
+	
+	\section*{Final Expression}
+	The conditional probability of the system being operational within the interval $[a, t]$, given that it was functional at $t = 0$, is:
+	\begin{equation}
+		\fbox{$P(a \leq T \leq t \mid T > 0) = R(a) - R(t).$}
+	\end{equation}
+	\newpage
+	
+	\section*{Numerical Example}
+	Let us assume the reliability function $R(t)$ is given by an exponential distribution:
+	\begin{equation}
+		R(t) = e^{-\lambda t},
+	\end{equation}
+	where $\lambda > 0$ is the failure rate. Suppose $\lambda = 0.1$, $a = 2$, and $t = 5$.
+	
+	\subsection*{1. Calculate $R(a)$ and $R(t)$}
+	\begin{align}
+		R(a) &= e^{-\lambda a} = e^{-0.1 \cdot 2} = e^{-0.2} \approx 0.8187, \\
+		R(t) &= e^{-\lambda t} = e^{-0.1 \cdot 5} = e^{-0.5} \approx 0.6065.
+	\end{align}
+	
+	\subsection*{2. Compute the Conditional Probability}
+	Using the formula:
+	\begin{equation}
+		P(a \leq T \leq t \mid T > 0) = R(a) - R(t),
+	\end{equation}
+	we substitute the values of $R(a)$ and $R(t)$:
+	\begin{align}
+		P(a \leq T \leq t \mid T > 0) &= 0.8187 - 0.6065 \\
+		&= 0.2122.
+	\end{align}
+	
+	\subsection*{Final Answer}
+	The conditional probability that the system is operational within the interval $[2, 5]$, given it was operational at $t = 0$, is approximately:
+	\begin{equation}
+		P(2 \leq T \leq 5 \mid T > 0) \approx 0.2122.
+	\end{equation}
+	
+\end{document}
