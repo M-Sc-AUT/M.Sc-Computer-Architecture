@@ -2,5 +2,59 @@
 
 \begin{itemize}
 	\item (الف) مزایا و معایب سوئیچ‌های \lr{Banyan} را شرح دهید.
+	\begin{qsolve}
+		\begin{enumerate}
+			\item 
+			\textbf{مزایا:}
+			
+			\begin{itemize}
+				\item \textbf{کارایی بالا:}
+				\lr{Banyan}
+				به دلیل طراحی چندمرحله‌ای، تأخیر کمتری نسبت به سوئیچ‌های تک‌مرحله‌ای دارد.
+				\item \textbf{پیاده‌سازی ساده:}
+				معماری ساده‌ای داشته و نیاز به اجزای پیچیده ندارد.
+				\item \textbf{قابلیت مقیاس‌پذیری:}
+				امکان گسترش اندازه سوئیچ با اضافه کردن مراحل یا گره‌ها وجود دارد.
+				\item \textbf{حداقل مسیریابی:}
+				ساختار مرتب‌شده‌ای دارد که مسیریابی را آسان و با حداقل تأخیر ممکن می‌سازد.
+			\end{itemize}
+			
+			
+			\item 
+			\textbf{معایب:}
+			
+			\begin{itemize}
+				\item \textbf{بلاک شدن داخلی (\lr{Internal Blocking}):}
+				اگر چند بسته بخواهند از یک لینک مشترک استفاده کنند، ممکن است بلاک شدن رخ دهد.
+				\item \textbf{عدم تحمل خطا:}
+				خرابی یک گره یا لینک می‌تواند کل سیستم را مختل کند.
+				\item \textbf{الگوهای ترافیکی محدود:}
+				الگوهای خاص ترافیک ممکن است بهره‌وری و عملکرد را کاهش دهند.
+				\item \textbf{پیچیدگی در کنترل ترافیک:}
+				برای جلوگیری از بلاک شدن داخلی، به کنترل‌کننده‌های پیچیده نیاز است.
+			\end{itemize}
+		\end{enumerate}
+	\end{qsolve}
+	
+	
 	\item (ب) یک سوئیچ \lr{16×16 Banyan} رسم کنید که شامل \lr{Shuffle} و \lr{Unshuffled} باشد.
+	\begin{qsolve}
+		سوئیچ \lr{Banyan} با اندازه \lr{16×16} شامل چهار مرحله است زیرا $4^2 = 16$ و هر مرحله از سوئیچ‌های \lr{2×2} تشکیل شده است.
+		
+		\begin{enumerate}
+			\item تعداد مراحل برابر با \(\log_2(16) = 4\) است.
+			\item در هر مرحله، \(8\) سوئیچ \lr{2×2} مورد نیاز است.
+			\item اتصالات \lr{Shuffle} و \lr{Unshuffle} به این صورت انجام می‌شود:
+			\begin{itemize}
+				\item \lr{Shuffle:} خروجی \(i\) به ورودی \((i \times 2) \mod 16\) وصل می‌شود.
+				\item \lr{Unshuffle:} خروجی \(i\) به ورودی \((i / 2)\) یا \(i / 2 + 8\) (برای اندیس‌های فرد) متصل می‌شود.
+			\end{itemize}
+		\end{enumerate}
+	\end{qsolve}
 \end{itemize}
+\newpage
+
+
+\begin{center}
+	\includegraphics*[width=1\linewidth]{pics/img24.pdf}
+\end{center}

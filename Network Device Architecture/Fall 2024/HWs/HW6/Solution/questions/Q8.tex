@@ -1,3 +1,49 @@
 \section{سوال هشتم}
 
 اجزای یک سوئیچ \lr{OpenFlow} نسخه \lr{5.1} را نشان دهید و هر کدام را شرح دهید.
+
+
+\begin{qsolve}
+	 \begin{enumerate}
+	 	\item \textbf{\lr{Flow Table} (جدول جریان):} 
+	 	این جدول، قوانین مربوط به جریان‌ها را ذخیره کرده و تصمیم‌گیری‌های لازم برای بسته‌های ورودی را انجام می‌دهد.
+	 	\begin{itemize}
+	 		\item \lr{Match Fields:} فیلدهای تطبیق مانند آدرس \lr{IP} و شماره پورت.
+	 		\item \lr{Actions:} اقداماتی مانند ارسال به پورت مشخص یا حذف بسته.
+	 		\item \lr{Counters:} شمارنده‌هایی برای ثبت تعداد و حجم بسته‌های پردازش‌شده.
+	 	\end{itemize}
+	 	
+	 	\item \textbf{\lr{Group Table} (جدول گروه):} 
+	 	برای انجام عملیات پیشرفته‌تر مانند \lr{Multicast} یا \lr{Load Balancing}.
+	 	\begin{itemize}
+	 		\item تعریف گروه‌هایی از اقدامات.
+	 		\item ارسال بسته به چندین مقصد به صورت همزمان.
+	 	\end{itemize}
+	 	
+	 	\item \textbf{\lr{Meter Table} (جدول اندازه‌گیری):} 
+	 	مدیریت پهنای باند و اعمال سیاست‌های \lr{QoS}.
+	 	\begin{itemize}
+	 		\item اندازه‌گیری نرخ جریان داده.
+	 		\item اولویت‌بندی جریان‌ها.
+	 	\end{itemize}
+	 	
+	 	\item \textbf{\lr{Packet Buffer} (بافر بسته):} 
+	 	ذخیره موقت بسته‌هایی که در انتظار پردازش یا ارسال به کنترل‌کننده هستند.
+	 	
+	 	\item \textbf{\lr{OpenFlow Channel} (کانال ارتباطی):} 
+	 	ارتباط بین سوئیچ و کنترل‌کننده \lr{SDN}.
+	 	\begin{itemize}
+	 		\item ارسال و دریافت پیام‌های کنترل.
+	 		\item تضمین ارتباط امن.
+	 	\end{itemize}
+	 	
+	 	\item \textbf{\lr{Pipeline} (پایپ‌لاین):} 
+	 	مجموعه‌ای از جدول‌های جریان که به صورت متوالی پردازش می‌شوند.
+	 	
+	 	\item \textbf{\lr{Statistics Collection} (جمع‌آوری آمار):} 
+	 	جمع‌آوری آمار مربوط به جریان‌ها، پورت‌ها و پهنای باند.
+	 	
+	 	\item \textbf{\lr{Secure Channel} (کانال امن):} 
+	 	ارتباط امن بین کنترل‌کننده و سوئیچ با استفاده از رمزنگاری.
+	 \end{enumerate}
+\end{qsolve}

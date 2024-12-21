@@ -15,18 +15,67 @@
 	
 	الگوی ترافیکی را مثال بزنید که تمام پورت‌های ورودی و خروجی اشغال باشند اما سوئیچ دچار \lr{Blocking} نمی‌شود
 	(فرض کنید الگویی که هر پورت ورودی به پورت خروجی هم‌نام خودش \lr{p(in)} به \lr{p(out)} وصل شده باشد امکان‌پذیر نباشد).
+	\begin{qsolve}
+		\begin{latin}
+			\begin{enumerate}
+				\item 
+				$P_1(out) \ and \ P_0(in)$
+				
+				\item 
+				$P_3(out) \ and \ P_2(in)$
+				
+				\item 
+				$P_5(out) \ and \ P_4(in)$
+				
+				\item 
+				$P_7(out) \ and \ P_6(in)$
+			\end{enumerate}
+		\end{latin}
+	\end{qsolve}
 	
 	
 	\item 
 	الگوی ترافیکی را مثال بزنید که نشان دهد در شکل \lr{a} سوئیچ دچار \lr{Internal Blocking} می‌شود.
 	
+	\begin{qsolve}
+		برای مثال اگر $P_0$ پورت ورودی و $P_4$ پورت خروجی باشد، با وجود اینکه پورت ورودی $P_1$ آزاد است و به غیر از $P_4$ تمام پورت‌های خروجی نیز آزاد هستند، به علت \lr{internal blocking} از $P_1$ به هیچ‌یک از پورت‌های $P_2$، $P_3$، $P_5$، $P_6$ و $P_7$ نمی‌توان بسته فرستاد.
+	\end{qsolve}
+	
+	
 	
 	\item 
 	اگر در شکل \lr{b} فرض کنیم خطوط پررنگ‌تر ظرفیت ارسال ۲ بسته در یک برش زمانی را دارند. آیا این تغییر سوئیچ شکل \lr{b} دچار \lr{Internal Blocking} نمی‌شود؟ 
 	
+		
+\end{enumerate}
+\newpage
+
+
+\begin{enumerate}
+	\item [ ]
+	\begin{qsolve}
+		
+		بله، برای مثال دو انتقال زیر را درنظر بگیرید.
+		\begin{itemize}
+			\item $P_0$ ورودی و $P_4$ خروجی
+			\item $P_1$ ورودی و $P_5$ خروجی
+		\end{itemize}
+		
+		در این صورت، به دلیل \lr{internal blocking} با وجود آزاد بودن پورت ورودی $P_2$ و پورت خروجی $P_6$ امکان انتقال بسته از $P_2$ به $P_6$ وجود ندارد، زیرا نیاز دارد از بالاترین خط هم‌زمان ۳ بسته در یک برش زمانی ارسال شود که بیش از ظرفیت لینک (دو بسته) است.
+		
+	\end{qsolve}
 	
-	\item 
+	
+	\item [4.]
 	کمترین ظرفیتی که می‌توان به سوئیچ قسمت \lr{a} اضافه کرد که سوئیچ دچار \lr{Internal Blocking} نشود چیست؟
+	\begin{qsolve}
+		اگر ظرفیت لینک‌های قرمز ۲ بسته در یک برش زمانی و ظرفیت لینک‌های بنفش ۴ بسته در یک برش زمانی باشد، \lr{internal blocking} رخ نخواهد داد.
+		
+		\begin{center}
+			\includegraphics*[width=0.5\linewidth]{pics/img5.png}
+		\end{center}
+	\end{qsolve}
+	
 	
 	
 \end{enumerate}

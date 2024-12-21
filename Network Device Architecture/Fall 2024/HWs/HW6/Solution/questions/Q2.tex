@@ -8,3 +8,36 @@
 		\item Shared Medium Switch
 	\end{itemize}
 \end{latin}
+
+
+\begin{qsolve}
+	\begin{latin}
+		\[
+		t_{\text{mem}} = 5 \, \text{ns}
+		\]
+		\[
+		L = 200 \times 8 = 1600 \, \text{bit}
+		\]
+		\[
+		r = 5 \times 10^9 \, \text{bps}
+		\]
+		
+		\textbf{Shared Medium:}
+		\[
+		(N + 1)t_{\text{mem}} \leq \frac{L}{r} \quad \Rightarrow \quad N + 1 < \frac{1600}{5 \times 10^9 \times 5 \times 10^{-9}}
+		\]
+		
+		\[
+		N + 1 \leq 64 \quad \Rightarrow \quad N \leq 63
+		\]
+		
+		\textbf{Shared Memory:}
+		\[
+		(2N)t_{\text{mem}} \leq \frac{L}{r} \quad \Rightarrow \quad N \leq \frac{1600}{2 \times 5 \times 10^9 \times 5 \times 10^{-9}}
+		\]
+		
+		\[
+		N \leq 32
+		\]
+	\end{latin}
+\end{qsolve}
