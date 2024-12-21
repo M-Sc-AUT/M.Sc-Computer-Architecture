@@ -1,3 +1,30 @@
 \section{سوال اول}
 
 یک سوئیچ \lr{Shared Memory} که قرار است به لینک‌های \lr{ATM} با ظرفیت \lr{125 Mbps} متصل شود و از حافظه‌های با زمان دسترسی \lr{16 ns} استفاده نماید، حداکثر چند پورت می‌تواند داشته باشد؟
+
+
+\begin{qsolve}
+	
+	$$
+	t_{\text{\lr{mem}}} = 16 \, \text{\lr{ns}}, \quad L = 53 \, \text{\lr{byte}} = 424 \, \text{\lr{bit}}
+	$$
+	
+	$$
+	r = 125 \, \text{\lr{Mbps}}
+	$$
+	
+	در حافظه‌های \text{\lr{shared memory}}،
+	\lr{N} نوشتن در حافظه و \lr{N} خواندن از حافظه در یک \lr{Cell Slot} انجام می‌شود. بنابراین داریم:
+	
+	
+	$$
+	(2N) \cdot t_{\text{\lr{mem}}} \leq \frac{L}{r} \rightarrow N \leq \frac{L}{2r \cdot t_{\text{\lr{mem}}}}
+	$$
+	
+	بنابراین:
+	
+	$$
+		N \leq \frac{424}{2 \times 125 \times 10^6 \times 16 \times 10^{-9}} \rightarrow N \leq 106
+	$$
+	
+\end{qsolve}
