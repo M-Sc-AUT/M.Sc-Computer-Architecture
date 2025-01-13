@@ -143,9 +143,10 @@
 %	PRESENTATION INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title[A Fast Low-Level Error Detection Technique]{A Fast Low-Level Error Detection Technique} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
+\title[PagPassGPT]{PagPassGPT} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
 
-\subtitle{Zhengyang He, Hui Xu, Guanpeng Li} % Presentation subtitle, remove this command if a subtitle isn't required
+\subtitle{Pattern Guided Password Guessing
+	via Generative Pretrained Transformer} % Presentation subtitle, remove this command if a subtitle isn't required
 
 \author[Reza Adinepour]{Reza Adinepour} % Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
 
@@ -163,7 +164,7 @@
 
 \begin{frame}
 	\titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
-	\centering\includegraphics[scale=0.15]{Images/Logo/logo2.png}
+	\centering\includegraphics[scale=0.12]{Images/Logo/logo2.png}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
@@ -213,315 +214,447 @@
 \begin{frame}
 	\frametitle{Problem \& Solutions Overview}
 	
-	\begin{itemize}
+	\begin{enumerate}
 		\item \textbf{Problem:}
-		Transient hardware faults (soft errors) due to shrinking transistor sizes and operating voltages.
+		Deep learning-based password guessing models face challenges in:
+		\begin{itemize}
+			\item Generating high-quality passwords.
+			\item Reducing the rate of duplicate passwords.
+		\end{itemize}
 		
 		\item \textbf{Impact:}
-		Soft errors can cause Silent Data Corruptions (SDCs), compromising system dependability.
-		
-		\item \textbf{Solutions:}
-		\begin{enumerate}
-			\item Traditional: Hardware-based methods such as:
-			\begin{itemize}
-				\item voltage guard bands
-				\item redundancy
-			\end{itemize}
-			\textcolor{red}{have high overhead in performance and energy consumption.}
-			
-			\item Software-Based: Error Detection by Duplicating Instructions (EDDI)\\
-			\textcolor{Green}{has been proposed as a flexible, resource-efficient alternative.}
-		\end{enumerate}
-	\end{itemize}
-\end{frame}
-
-%------------------------------------------------
-
-\subsection{EDDI Methods}
-\begin{frame}
-	\frametitle{EDDI Methods}
-	
-	\begin{itemize}
-		\item \textbf{EDDI:} 
-		Duplicates instructions at compile time and checks for mismatches at runtime.
-		
-		
-		\begin{figure}
-			\includegraphics[width=0.9\linewidth]{img1.png}
-			\caption{High-level idea of EDDI}
-			\label{High-level idea of EDDI}
-		\end{figure}
-	\end{itemize}
-	
-	
-	
-	
-	
-	
-%	\begin{block}{Block Title}
-%		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue.
-%	\end{block}
-%	
-%	\begin{exampleblock}{Example Block Title}
-%		Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan.
-%	\end{exampleblock}
-%	
-%	\begin{alertblock}{Alert Block Title}
-%		Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-%	\end{alertblock}
-%	
-%	\begin{block}{} % Block without title
-%		Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci.
-%	\end{block}
-\end{frame}
-
-
-
-
-
-\subsection{EDDI Methods (Cont.)}
-\begin{frame}
-	\frametitle{EDDI Methods (Cont.)}
-	\begin{itemize}
-		\item \textbf{Existing EDDI Methods:}
-		\begin{enumerate}
-			\item Mostly at IR level
-		\end{enumerate}
-		\textcolor{red}{reduced fault coverage when tested at the assembly level.}
-		
-		\item \textbf{Problem with IR-Level EDDI:}
+		Reduced efficiency in password guessing models due to:
 		\begin{itemize}
-			\item Fault coverage gaps at IR level.
-			\item Reduced effectiveness when evaluated at assembly level.
-			\item Underestimated error detection at lower levels.
-			\item Need for assembly-level implementation for better fault protection.
+			\item Lower hit rates.
+			\item High redundancy in generated passwords, limiting practical effectiveness.
 		\end{itemize}
-	\end{itemize}
+	\end{enumerate}
 \end{frame}
 
 
 
-\subsection{Example Code}
+
+
 \begin{frame}
-	\frametitle{IR Code Example Using EDDI}
+	\frametitle{Solutions}
 	
-	
-	\begin{columns}[c]
-		\begin{column}{0.5\textwidth} % Left column width
-			\begin{figure}
-				\includegraphics[width=1\linewidth]{img2.png}
-				\caption{(a)}
-				\label{IR code examples of using EDDI(a)}
-			\end{figure}
-		\end{column}
-		\begin{column}{0.5\textwidth} % Right column width
-			\begin{figure}
-				\includegraphics[width=1\linewidth]{img2.png}
-				\caption{(b)}
-				\label{IR code examples of using EDDs(b)}
-			\end{figure}
-		\end{column}
-		\end{columns}
+
+	\begin{enumerate}
+		\item PagPassGPT:
+		\begin{itemize}
+			\item Built on a Generative Pretrained Transformer (GPT).
+			\item Incorporates pattern structure information as background knowledge to improve guessing accuracy.
+		\end{itemize}
+		
+		\item D\&C-GEN (Divide-and-Conquer Generation):
+		\begin{itemize}
+			\item Divides password guessing tasks into non-overlapping subtasks.
+			\item Subtasks inherit parent task knowledge for efficient prediction.
+			\item Effectively reduces duplicate passwords.
+		\end{itemize}
+		
+		\item Results:
+		\begin{itemize}
+			\item 12\% higher hit rate compared to state-of-the-art models.
+			\item 25\% fewer duplicate passwords.
+		\end{itemize}
+	\end{enumerate}
 \end{frame}
 
 
-%------------------------------------------------
 
 \section{Main Contribution}
-
 \begin{frame}
 	\frametitle{Main Contribution}
 	
 	\begin{enumerate}
-		\item \textbf{Proposed Solution:}
+		\item \textbf{PagPassGPT:} 
 		\begin{itemize}
-			\item FERRUM: Optimized assembly-level EDDI.
-			\item Enhancements: Utilizes SIMD and compiler optimizations.
-			\item Improves: Fault coverage and performance.
+			\item Combines password patterns with deep learning.
+			\item Improves guessing accuracy.
 		\end{itemize}
 		
-		
-		\item \textbf{Key Findings \& Results:}
+		\item \textbf{D\&C-GEN:}
 		\begin{itemize}
-			\item 28\% gap in fault coverage (IR-level vs. assembly-level).
-			\item 100\% fault coverage with FERRUM at assembly level.
-			\item Higher overhead in assembly-level EDDI; optimizations reduce it.
-			\item 52\% reduction in runtime overhead with FERRUM, no loss in fault coverage.
+			\item Uses divide-and-conquer for task splitting.
+			\item Reduces duplicate passwords.
+		\end{itemize}
+		
+		\item \textbf{Performance:}
+		\begin{itemize}
+			\item Validated on public datasets.
+			\item Outperforms state-of-the-art models in hit rate and duplicates.
 		\end{itemize}
 	\end{enumerate}
-	
-	
-	
-	
-	
-	
-	
-%	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-%		\begin{column}{0.45\textwidth} % Left column width
-%			\textbf{Heading}
-%			\begin{enumerate}
-%				\item Statement
-%				\item Explanation
-%				\item Example
-%			\end{enumerate}
-%		\end{column}
-%		\begin{column}{0.5\textwidth} % Right column width
-%			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-%		\end{column}
-%	\end{columns}
 \end{frame}
 
-%------------------------------------------------
 
-\section{Background}
+
+\section{Related works}
 \begin{frame}
-	\frametitle{Background}
+	\frametitle{Related works}
+	
 	\begin{enumerate}
-		\item \textbf{Fault Model:}
-		Single bit-flip faults; memory protected by ECC.
-		
-		\item \textbf{Fault Simulation:}
-		Assembly-level fault injection; beam testing infeasible.
-		
-		\item \textbf{EDDI:}
-		Instruction duplication, runtime comparison.
-		
-		\item \textbf{Compilation:}
+		\item \textbf{Password Guessing Types}
 		\begin{itemize}
-			\item IR-level: Common, uses LLVM tools.
-			\item Assembly-level: Rare, closer to hardware.
+			\item Trawling Attack:\\
+			\textcolor{red}{Problem:} Misses rate patterns; requires accurate modeling.
+			
+			\item Targeted Attack:\\
+			\textcolor{red}{Problem:} Depends on personally identifiable information (PII); less effective with unpredictable users.
 		\end{itemize}
 		
-		\item \textbf{Platform:} x86 ISA.
+		
+		\item \textbf{Password Guessing Models}
+		\begin{itemize}
+			\item Rule-based Models:\\
+			\textcolor{red}{Problem:} Background knowledge dependency; limited rules.
+			
+			\item Probability-based Models:\\
+			\textcolor{red}{Problem:} Fixed vocabulary; poor segmentation accuracy.
+		\end{itemize}
+		
+		
+		\item \textbf{Deep Learning-based Models:}\\
+		\textcolor{red}{Problem:} Accuracy loss; high computation.
+		
 	\end{enumerate}
 \end{frame}
 
 
-%\begin{frame}
-%	\frametitle{Table}
-%	\framesubtitle{Subtitle} % Optional subtitle
-%	
-%	\begin{table}
-%		\begin{tabular}{l l l}
-%			\toprule
-%			\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-%			\midrule
-%			Treatment 1 & 0.0003262 & 0.562 \\
-%			Treatment 2 & 0.0015681 & 0.910 \\
-%			Treatment 3 & 0.0009271 & 0.296 \\
-%			\bottomrule
-%		\end{tabular}
-%		\caption{Table caption}
-%	\end{table}
-%\end{frame}
+
 %------------------------------------------------
 
-
-
-
-
-\subsection{Figure}
-
+\section{PagPass Methods}
 \begin{frame}
-	\frametitle{Figure}
+	\frametitle{PagPass Methods}
 	
 	\begin{figure}
-		\includegraphics[width=1\linewidth]{img1.png}
-		\caption{Creodocs logo.}
+		\includegraphics[width=0.9\linewidth]{img1.png}
+		\caption{High-level idea of EDDI}
+		\label{High-level idea of EDDI}
 	\end{figure}
 \end{frame}
 
-%------------------------------------------------
 
-\section{Mathematics}
 
+
+
+\subsection{PagPass Methods}
 \begin{frame}
-	\frametitle{Definitions \& Examples}
-	
-	\begin{definition}
-		A \alert{prime number} is a number that has exactly two divisors.
-	\end{definition}
-	
-	\smallskip % Vertical whitespace
-	
-	\begin{example}
+	\frametitle{Training Process}
+	\begin{enumerate}
+		\item \textbf{Input:} Passwords from a training dataset.
+		\item \textbf{Training:}
 		\begin{itemize}
-			\item 2 is prime (two divisors: 1 and 2).
-			\item 3 is prime (two divisors: 1 and 3).
-			\item 4 is not prime (\alert{three} divisors: 1, 2, and 4).
+			\item Extract password patterns (e.g., "L4N3S1") using PCFG rules.
+			\item Combine patterns and passwords into a structured sequence:
+			\texttt{<BOS> || Pattern || <SEP> || Password || <EOS>}
+			\item Tokenize sequences and embed using GPT-2 architecture.
+			\item Optimize with cross-entropy loss for improved prediction accuracy.
 		\end{itemize}
-	\end{example}
-	
-	\smallskip % Vertical whitespace
-	
-	You can also use the \texttt{theorem}, \texttt{lemma}, \texttt{proof} and \texttt{corollary} environments.
+	\end{enumerate}
 \end{frame}
 
-%------------------------------------------------
+
+
 
 \begin{frame}
-	\frametitle{Theorem, Corollary \& Proof}
+	\frametitle{Training Process (Cont.)}
 	
-	\begin{theorem}[Mass--energy equivalence]
-		$E = mc^2$
-	\end{theorem}
-	
-	\begin{corollary}
-		$x + y = y + x$
-	\end{corollary}
-	
-	\begin{proof}
-		$\omega + \phi = \epsilon$
-	\end{proof}
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{Images/img4}
+		\caption{The preprocessing operation of tokenizer of PagPassGPT}
+		\label{fig:The preprocessing operation of tokenizer of PagPassGPT}
+	\end{figure}
 \end{frame}
 
-%------------------------------------------------
+
+
 
 \begin{frame}
-	\frametitle{Equation}
-
-	\begin{equation}
-		\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
-	\end{equation}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-	\frametitle{Verbatim}
+	\frametitle{Training Process (Cont.)}
 	
-	\begin{example}[Theorem Slide Code]
-		\begin{verbatim}
-			\begin{frame}
-				\frametitle{Theorem}
-				\begin{theorem}[Mass--energy equivalence]
-					$E = mc^2$
-				\end{theorem}
-		\end{frame}\end{verbatim} % Must be on the same line
-	\end{example}
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{Images/img5}
+		\caption{The tokenization process of the tokenizer of PagPassGPT}
+		\label{fig:The tokenization process of the tokenizer of PagPassGPT}
+	\end{figure}
 \end{frame}
 
-%------------------------------------------------
+
 
 \begin{frame}
-	Slide without title.
+	\frametitle{Training Process (Cont.)}
+	
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{Images/img2}
+		\caption{Training process architecture}
+		\label{fig:Training process architecture}
+	\end{figure}
 \end{frame}
 
-%------------------------------------------------
 
-\section{Referencing}
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{frame}
-	\frametitle{Citing References}
-	
-	An example of the \texttt{\textbackslash cite} command to cite within the presentation:
-	
-	\bigskip % Vertical whitespace
-	
-	This statement requires citation \cite{p1,p2}.
+	\frametitle{Training Process (Cont.)}
+	\begin{enumerate}
+	\item \textbf{Generation:}
+	\begin{itemize}
+		\item Predict tokens sequentially using an auto-regressive mechanism based on:
+		\begin{itemize}
+			\item Historical tokens.
+			\item Password patterns.
+		\end{itemize}
+		\item Achieves 27.5\% higher hit rate compared to PassGPT.
+	\end{itemize}
+\end{enumerate}
 \end{frame}
 
+
+
+
+
+\begin{frame}
+	\frametitle{D\&C-GEN}
+	
+	\begin{enumerate}
+		\item \textbf{Objective:} Reduce duplicate passwords using divide-and-conquer.
+		
+		\item \textbf{Workflow:}
+		\begin{itemize}
+			\item Split tasks into non-overlapping subtasks by patterns and prefixes.
+			\item Apply a threshold $T$ to stop division and execute generation.
+			\item Generate passwords efficiently under task constraints.
+		\end{itemize}
+		
+		\item \textbf{Performance:}
+		\begin{itemize}
+			\item Reduces duplicate rate to 9.28\% for $10^9$ guesses.
+			\item Supports parallel execution and optimized GPU utility.
+		\end{itemize}
+	\end{enumerate}
+\end{frame}
+
+
+%\subsection{Example Code}
+\begin{frame}
+	\frametitle{D\&C-GEN (Cont.)}
+	
+	
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{Images/img6}
+		\caption{The workflow of D\&C-GEN}
+		\label{fig:The workflow of D&C-GEN}
+	\end{figure}
+	
+\end{frame}
+
+
 %------------------------------------------------
+
+
+
+%------------------------------------------------
+
+
+
+
+
+
+
+
+
+\section{Evaluation}
+\begin{frame}
+	\frametitle{Evaluation}
+	
+	\begin{enumerate}
+		\item \textbf{Datasets}
+		\begin{itemize}
+			\item Ethical Considerations:
+			\begin{itemize}
+				\item Public data, minimal usage, and strictly for research purposes.
+			\end{itemize}
+			
+			\item Applied Datasets:
+			\begin{itemize}
+				\item RockYou, LinkedIn, phpBB, MySpace, Yahoo!
+				\item Total entries: 75,349,874.
+			\end{itemize}
+			
+			\item Data Cleaning:
+			\begin{itemize}
+				\item Password length: 4–12 characters.
+				\item Removed duplicates and non-ASCII characters.
+			\end{itemize}
+			
+			\item Data Utilization:
+			\begin{itemize}
+				\item RockYou \& LinkedIn: Split into training (70\%), validation (10\%), and testing (20\%).
+				\item Cross-site evaluation: Used all remaining datasets.
+			\end{itemize}
+		\end{itemize}
+	\end{enumerate}
+\end{frame}
+
+
+
+
+\begin{frame}
+	\frametitle{Evaluation (Cont.)}
+	
+	\begin{enumerate}
+		\item \textbf{Models}
+		\begin{itemize}
+			\item PagPassGPT:
+			\begin{itemize}
+				\item Trained with batch size 512 for 30 epochs using AdamW optimizer.
+				\item Max tokens: 32, Embedding size: 256.
+				\item Hidden layers: 12, Attention heads: 8.
+				\item Training duration: 25+ hours on 4 RTX 3080 GPUs.
+			\end{itemize}
+		\end{itemize}
+		
+		\item \textbf{Drawling Attack Test}
+		\begin{itemize}
+			\item Setup:
+			\begin{itemize}
+				\item Compared PagPassGPT and PagPassGPT-D\&C (with threshold $T=4000$) against models like PassGAN, VAEPass, PassFlow, and PassGPT.
+			\end{itemize}
+			
+		\end{itemize}
+	\end{enumerate}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{Evaluation (Cont.)}
+	
+	\begin{enumerate}
+		\item \textbf{Metrics}
+		\begin{itemize}
+			\item Hit Rate:
+			\begin{itemize}
+				\item Ratio of correctly guessed passwords to total test set passwords.
+				\item PagPassGPT-D\&C achieved a 53.63\% hit rate for $10^9$ guesses, 12\% higher than PassGPT.
+			\end{itemize}
+			
+			\item Repeat Rate:
+			\begin{itemize}
+				\item Reflects duplicate passwords among generated ones.
+				\item PagPassGPT-D\&C achieved a 9.28\% repeat rate, significantly lower than PassGPT’s 34.5\%.
+			\end{itemize}
+%			
+%			
+%			\item Length and Pattern Distribution:
+%			\begin{itemize}
+%				\item Length Distance: 4.78\% (half of PassGPT's 9.16\%).
+%				\item Pattern Distance: 2.79\% (lower than PassGPT's 4.16\%).
+%			\end{itemize}
+		\end{itemize}
+	\end{enumerate}
+\end{frame}
+
+
+
+
+
+
+
+
+
+\section{Results}
+\subsection{Hit Rate}
+\begin{frame}
+	\frametitle{Hit Rate}
+	
+
+	\begin{table}[h]
+		\centering
+		\caption{Hit rates of different models in trawling attack test.}
+		\begin{tabular}{c c c c c}
+			\hline
+			\textbf{Guess Num} & \textbf{$10^6$} & \textbf{$10^7$} & \textbf{$10^8$} & \textbf{$10^9$} \\ \hline \hline
+			PassGAN & 0.80\% & 3.11\% & 8.24\% & 16.32\% \\ 
+			VAEPass & 0.49\% & 2.24\% & 6.24\% & 12.23\% \\ 
+			PassFlow & 0.26\% & 1.62\% & 7.03\% & 14.10\% \\ 
+			PassGPT & 0.73\% & 5.60\% & 21.43\% & 41.93\% \\ 
+			PagPassGPT & 1.00\% & 7.68\% & 27.23\% & 48.75\% \\ 
+			PagPassGPT-D\&C & \textbf{1.05\%} & \textbf{8.48\%} & \textbf{31.38\%} & \textbf{53.63\%} \\ \hline
+		\end{tabular}
+		\label{table:hit_rates}
+	\end{table}
+\end{frame}
+
+
+
+
+\subsection{Repeat Rtates}
+\begin{frame}
+	\frametitle{Repeat Rates}
+	
+	
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{Images/img7}
+		\caption{Repeat rates of passwords generated by different models}
+		\label{fig:Repeat rates of passwords generated by different models}
+	\end{figure}
+\end{frame}
+
+
+
+
+
+%\subsection{Length distances}
+%\begin{frame}
+%	\frametitle{Length distances}
+%	
+%	
+%	\begin{table}[h]
+%		\centering
+%		\caption{Length distances and pattern distances between passwords generated by different models and the test set.}
+%		\begin{tabular}{c c c}
+%			\hline
+%			\textbf{Model} & \textbf{Length Distance} & \textbf{Pattern Distance} \\ \hline \hline
+%			PassGAN & 9.20\% & 6.00\% \\ 
+%			VAEPass & 5.84\% & 5.75\% \\ 
+%			PassFlow & 50.61\% & 13.62\% \\ 
+%			PassGPT & 8.49\% & 4.16\% \\ 
+%			PagPassGPT & \textbf{4.78\%} & \textbf{2.79\%} \\ \hline
+%		\end{tabular}
+%		\label{table:length_pattern_distance}
+%	\end{table}
+%	
+%	
+%\end{frame}
+
+
 
 \begin{frame} % Use [allowframebreaks] to allow automatic splitting across slides if the content is too long
 	\frametitle{References}
@@ -529,15 +662,15 @@
 	\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below, you may need to use multiple columns and/or reduce the font size further if you have many references
 		\footnotesize % Reduce the font size in the bibliography
 		
-		\bibitem[Smith, 2022]{p1}
-			John Smith (2022)
-			\newblock Publication title
-			\newblock \emph{Journal Name} 12(3), 45 -- 678.
-			
-		\bibitem[Kennedy, 2023]{p2}
-			Annabelle Kennedy (2023)
-			\newblock Publication title
-			\newblock \emph{Journal Name} 12(3), 45 -- 678.
+		\bibitem[Su et al., 2024]{p2}
+		Xingyu Su, Xiaojie Zhu, Yang Li, Yong Li, Chi Chen, Paulo Esteves-Verı́ssimo (2024)
+		\newblock PagPassGPT: Pattern Guided Password Guessing via Generative Pretrained Transformer
+		\newblock \emph{arXiv:2404.04886v2 [cs.CR]}, School of Cyber Security, University of Chinese Academy of Sciences, Beijing, China; Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China; King Abdullah University of Science and Technology, Thuwal, Kingdom of Saudi Arabia.
+		\newblock Emails: \{suxingyu, liyang8119, liyong, chenchi\}@iie.ac.cn, \{xiaojie.zhu, paulo.verissimo\}@kaust.edu.sa.
+		
+		
+		
+		
 	\end{thebibliography}
 \end{frame}
 
@@ -545,32 +678,32 @@
 %	ACKNOWLEDGMENTS SLIDE
 %----------------------------------------------------------------------------------------
 
-\begin{frame}
-	\frametitle{Acknowledgements}
-	
-	\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-		\begin{column}{0.45\textwidth} % Left column width
-			\textbf{Smith Lab}
-			\begin{itemize}
-				\item Alice Smith
-				\item Devon Brown
-			\end{itemize}
-			\textbf{Cook Lab}
-			\begin{itemize}
-				\item Margaret
-				\item Jennifer
-				\item Yuan
-			\end{itemize}
-		\end{column}		
-		\begin{column}{0.5\textwidth} % Right column width
-			\textbf{Funding}
-			\begin{itemize}
-				\item British Royal Navy
-				\item Norwegian Government
-			\end{itemize}
-		\end{column}
-	\end{columns}
-\end{frame}
+%\begin{frame}
+%	\frametitle{Acknowledgements}
+%	
+%	\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+%		\begin{column}{0.45\textwidth} % Left column width
+%			\textbf{Smith Lab}
+%			\begin{itemize}
+%				\item Alice Smith
+%				\item Devon Brown
+%			\end{itemize}
+%			\textbf{Cook Lab}
+%			\begin{itemize}
+%				\item Margaret
+%				\item Jennifer
+%				\item Yuan
+%			\end{itemize}
+%		\end{column}		
+%		\begin{column}{0.5\textwidth} % Right column width
+%			\textbf{Funding}
+%			\begin{itemize}
+%				\item British Royal Navy
+%				\item Norwegian Government
+%			\end{itemize}
+%		\end{column}
+%	\end{columns}
+%\end{frame}
 
 %----------------------------------------------------------------------------------------
 %	CLOSING SLIDE
@@ -582,7 +715,8 @@
 		
 		\bigskip\bigskip % Vertical whitespace
 		
-		{\LARGE Questions? Comments?}
+		{\LARGE Questions? Comments?}\vfil
+		\texttt{\href{mailto:adinepour@aut.ac.ir}{\textcolor{red}{adinepour@aut.ac.ir}}}
 	\end{center}
 \end{frame}
 
