@@ -420,7 +420,7 @@
 		\begin{itemize}
 			\item Scan registers (general-purpose, SIMD); identify spare registers.
 			\item Annotate instructions for SIMD compatibility.
-			\item Duplicate instructions; use SIMD or general-purpose registers; fallback to stack if needed.
+			\item Duplicate instructions; use SIMD or general-purpose registers.
 		\end{itemize}
 \end{frame}
 
@@ -450,11 +450,11 @@
 		\end{itemize}
 		
 		
-		\item \textbf{Stack-Level Data Redundancy}
-		\begin{itemize}
-			\item Buffer unused registers onto stack when spare registers are insufficient.
-			\item Restore registers after duplication and checking.
-		\end{itemize}
+%		\item \textbf{Stack-Level Data Redundancy}
+%		\begin{itemize}
+%			\item Buffer unused registers onto stack when spare registers are insufficient.
+%			\item Restore registers after duplication and checking.
+%		\end{itemize}
 		
 		
 		
@@ -554,10 +554,10 @@
 		
 		\begin{itemize}
 			\item SDC Coverage: Measures reduction in Silent Data Corruptions. 
-			$$ Coverage = \frac{SDC_{raw} - SDC_{prot} }{SDC_{raw}} $$
+			% $$ Coverage = \frac{SDC_{raw} - SDC_{prot} }{SDC_{raw}} $$
 			
 			\item Runtime Overhead: Measures performance impact. 
-			$$ Overhead = \frac{Runtime_{prot} - Runtime_{raw} }{Runtime_{raw}} $$
+			% $$ Overhead = \frac{Runtime_{prot} - Runtime_{raw} }{Runtime_{raw}} $$
 			
 			\item FERRUM Execution Time: Compile-time overhead.
 
