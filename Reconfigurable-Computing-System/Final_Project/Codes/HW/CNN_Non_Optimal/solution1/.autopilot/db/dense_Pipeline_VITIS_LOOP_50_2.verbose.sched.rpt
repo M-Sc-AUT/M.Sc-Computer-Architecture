@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vitis HLS Report for 'dense_Pipeline_VITIS_LOOP_50_2'
+================================================================
+* Date:           Thu Jan 16 18:30:00 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        CNN_Non_Optimal
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010-clg400-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.474 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       12|       12|  0.120 us|  0.120 us|   12|   12|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_50_2  |       10|       10|         2|          1|          1|    10|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.69>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 5 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.14ns)   --->   "%store_ln50 = store i4 0, i4 %j" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 7 'store' 'store_ln50' <Predicate = true> <Delay = 1.14>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc20"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%j_1 = load i4 %j" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 9 'load' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.40ns)   --->   "%icmp_ln50 = icmp_eq  i4 %j_1, i4 10" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 10 'icmp' 'icmp_ln50' <Predicate = true> <Delay = 1.40> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.40> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (1.40ns)   --->   "%add_ln50 = add i4 %j_1, i4 1" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 11 'add' 'add_ln50' <Predicate = true> <Delay = 1.40> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.40> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln50 = br i1 %icmp_ln50, void %for.inc20.split, void %for.end22.exitStub" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 12 'br' 'br_ln50' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln50 = zext i4 %j_1" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 13 'zext' 'zext_ln50' <Predicate = (!icmp_ln50)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%dense_array_addr = getelementptr i32 %dense_array, i64 0, i64 %zext_ln50" [CNN_Non_Optimal/src/dense.cpp:52]   --->   Operation 14 'getelementptr' 'dense_array_addr' <Predicate = (!icmp_ln50)> <Delay = 0.00>
+ST_1 : Operation 15 [2/2] (1.56ns)   --->   "%dense_array_load = load i4 %dense_array_addr" [CNN_Non_Optimal/src/dense.cpp:52]   --->   Operation 15 'load' 'dense_array_load' <Predicate = (!icmp_ln50)> <Delay = 1.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_1 : Operation 16 [1/1] (1.14ns)   --->   "%store_ln50 = store i4 %add_ln50, i4 %j" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 16 'store' 'store_ln50' <Predicate = (!icmp_ln50)> <Delay = 1.14>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 24 'ret' 'ret_ln0' <Predicate = (icmp_ln50)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 4.47>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln50 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 17 'specpipeline' 'specpipeline_ln50' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%speclooptripcount_ln50 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 18 'speclooptripcount' 'speclooptripcount_ln50' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln50 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 19 'specloopname' 'specloopname_ln50' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/2] (1.56ns)   --->   "%dense_array_load = load i4 %dense_array_addr" [CNN_Non_Optimal/src/dense.cpp:52]   --->   Operation 20 'load' 'dense_array_load' <Predicate = true> <Delay = 1.56> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.56> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%bitcast_ln52 = bitcast i32 %dense_array_load" [CNN_Non_Optimal/src/dense.cpp:52]   --->   Operation 21 'bitcast' 'bitcast_ln52' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (2.90ns)   --->   "%write_ln52 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %dense_to_softmax_streams_0, i32 %bitcast_ln52" [CNN_Non_Optimal/src/dense.cpp:52]   --->   Operation 22 'write' 'write_ln52' <Predicate = true> <Delay = 2.90> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 10> <FIFO>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln50 = br void %for.inc20" [CNN_Non_Optimal/src/dense.cpp:50]   --->   Operation 23 'br' 'br_ln50' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.698ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln50', CNN_Non_Optimal/src/dense.cpp:50) of constant 0 on local variable 'j', CNN_Non_Optimal/src/dense.cpp:50 [5]  (1.146 ns)
+	'load' operation 4 bit ('j', CNN_Non_Optimal/src/dense.cpp:50) on local variable 'j', CNN_Non_Optimal/src/dense.cpp:50 [8]  (0.000 ns)
+	'add' operation 4 bit ('add_ln50', CNN_Non_Optimal/src/dense.cpp:50) [10]  (1.406 ns)
+	'store' operation 0 bit ('store_ln50', CNN_Non_Optimal/src/dense.cpp:50) of variable 'add_ln50', CNN_Non_Optimal/src/dense.cpp:50 on local variable 'j', CNN_Non_Optimal/src/dense.cpp:50 [21]  (1.146 ns)
+
+ <State 2>: 4.474ns
+The critical path consists of the following:
+	'load' operation 32 bit ('dense_array_load', CNN_Non_Optimal/src/dense.cpp:52) on array 'dense_array' [18]  (1.566 ns)
+	fifo write operation ('write_ln52', CNN_Non_Optimal/src/dense.cpp:52) on port 'dense_to_softmax_streams_0' (CNN_Non_Optimal/src/dense.cpp:52) [20]  (2.908 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

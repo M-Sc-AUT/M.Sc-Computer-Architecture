@@ -1,0 +1,231 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_section_Pipeline_dense_soft_max_for_dense_size'
+================================================================
+* Date:           Thu Jan 16 18:30:10 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        CNN_Non_Optimal
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010-clg400-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.280 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       70|       70|  0.700 us|  0.700 us|   70|   70|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                 |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |            Loop Name            |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- dense_soft_max_for_dense_size  |       68|       68|        33|          4|          1|    10|       yes|
+        +---------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|     32|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   7|    324|    906|    -|
+|Memory           |        0|   -|     32|      5|    -|
+|Multiplexer      |        -|   -|      -|    252|    -|
+|Register         |        -|   -|    702|    128|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   7|   1058|   1323|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      120|  80|  35200|  17600|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   8|      3|      7|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |               Instance              |             Module             | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |fexp_32ns_32ns_32_8_full_dsp_1_U437  |fexp_32ns_32ns_32_8_full_dsp_1  |        0|   7|  324|  906|    0|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |Total                                |                                |        0|   7|  324|  906|    0|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +----------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |     Memory     |                                      Module                                      | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |dense_biases_U  |dataflow_section_Pipeline_dense_soft_max_for_dense_size_dense_biases_ROM_AUTObkb  |        0|  32|   5|    0|    10|   32|     1|          320|
+    +----------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total           |                                                                                  |        0|  32|   5|    0|    10|   32|     1|          320|
+    +----------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln13_fu_151_p2                |         +|   0|  0|  13|           4|           1|
+    |ap_block_pp0_stage1_11001         |       and|   0|  0|   2|           1|           1|
+    |icmp_ln13_fu_145_p2               |      icmp|   0|  0|  13|           4|           4|
+    |ap_block_state2_pp0_stage1_iter0  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  32|          11|           9|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                         |  21|          5|    1|          5|
+    |ap_done_int                       |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter8           |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter3_reg  |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter4_reg  |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter5_reg  |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter6_reg  |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter7_reg  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_d_1              |   9|          2|    4|          8|
+    |ap_sig_allocacmp_exp_sum_load     |   9|          2|   32|         64|
+    |d_fu_58                           |   9|          2|    4|          8|
+    |dense_to_softmax_streams_1_blk_n  |   9|          2|    1|          2|
+    |dense_to_softmax_streams_2_blk_n  |   9|          2|    1|          2|
+    |dense_to_softmax_streams_3_blk_n  |   9|          2|    1|          2|
+    |dense_to_softmax_streams_blk_n    |   9|          2|    1|          2|
+    |exp_sum_fu_54                     |   9|          2|   32|         64|
+    |grp_fu_119_p0                     |  17|          4|   32|        128|
+    |grp_fu_119_p1                     |  17|          4|   32|        128|
+    |grp_fu_123_p0                     |  13|          3|   32|         96|
+    |grp_fu_123_p1                     |  13|          3|   32|         96|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             | 252|         57|  216|        627|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------+----+----+-----+-----------+
+    |                          Name                         | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                              |   4|   0|    4|          0|
+    |ap_done_reg                                            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg                            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3                                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4                                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5                                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6                                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7                                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8                                |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg                       |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg                       |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg                       |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg                       |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg                       |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg                       |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter7_reg                       |   1|   0|    1|          0|
+    |d_fu_58                                                |   4|   0|    4|          0|
+    |dense_to_softmax_streams_1_read_reg_238                |  32|   0|   32|          0|
+    |dense_to_softmax_streams_1_read_reg_238_pp0_iter1_reg  |  32|   0|   32|          0|
+    |dense_to_softmax_streams_2_read_reg_243                |  32|   0|   32|          0|
+    |dense_to_softmax_streams_3_read_reg_248                |  32|   0|   32|          0|
+    |dense_to_softmax_streams_read_reg_233                  |  32|   0|   32|          0|
+    |exp_sum_1_reg_304                                      |  32|   0|   32|          0|
+    |exp_sum_fu_54                                          |  32|   0|   32|          0|
+    |icmp_ln13_reg_214                                      |   1|   0|    1|          0|
+    |sum_1_reg_258                                          |  32|   0|   32|          0|
+    |sum_2_reg_268                                          |  32|   0|   32|          0|
+    |sum_3_reg_278                                          |  32|   0|   32|          0|
+    |sum_4_reg_288                                          |  32|   0|   32|          0|
+    |sum_reg_228                                            |  32|   0|   32|          0|
+    |tmp_reg_293                                            |  32|   0|   32|          0|
+    |zext_ln13_reg_218                                      |   4|   0|   64|         60|
+    |dense_to_softmax_streams_2_read_reg_243                |  64|  32|   32|          0|
+    |dense_to_softmax_streams_3_read_reg_248                |  64|  32|   32|          0|
+    |icmp_ln13_reg_214                                      |  64|  32|    1|          0|
+    |zext_ln13_reg_218                                      |  64|  32|   64|         60|
+    +-------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                  | 702| 128|  635|        120|
+    +-------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------+-----+-----+------------+---------------------------------------------------------+--------------+
+|              RTL Ports             | Dir | Bits|  Protocol  |                      Source Object                      |    C Type    |
++------------------------------------+-----+-----+------------+---------------------------------------------------------+--------------+
+|ap_clk                              |   in|    1|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|ap_rst                              |   in|    1|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|ap_start                            |   in|    1|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|ap_done                             |  out|    1|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|ap_idle                             |  out|    1|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|ap_ready                            |  out|    1|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|grp_fu_684_p_din0                   |  out|   32|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|grp_fu_684_p_din1                   |  out|   32|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|grp_fu_684_p_opcode                 |  out|    2|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|grp_fu_684_p_dout0                  |   in|   32|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|grp_fu_684_p_ce                     |  out|    1|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|grp_fu_688_p_din0                   |  out|   32|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|grp_fu_688_p_din1                   |  out|   32|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|grp_fu_688_p_opcode                 |  out|    2|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|grp_fu_688_p_dout0                  |   in|   32|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|grp_fu_688_p_ce                     |  out|    1|  ap_ctrl_hs|  dataflow_section_Pipeline_dense_soft_max_for_dense_size|  return value|
+|dense_to_softmax_streams_dout       |   in|   32|     ap_fifo|                                 dense_to_softmax_streams|       pointer|
+|dense_to_softmax_streams_empty_n    |   in|    1|     ap_fifo|                                 dense_to_softmax_streams|       pointer|
+|dense_to_softmax_streams_read       |  out|    1|     ap_fifo|                                 dense_to_softmax_streams|       pointer|
+|dense_to_softmax_streams_1_dout     |   in|   32|     ap_fifo|                               dense_to_softmax_streams_1|       pointer|
+|dense_to_softmax_streams_1_empty_n  |   in|    1|     ap_fifo|                               dense_to_softmax_streams_1|       pointer|
+|dense_to_softmax_streams_1_read     |  out|    1|     ap_fifo|                               dense_to_softmax_streams_1|       pointer|
+|dense_to_softmax_streams_2_dout     |   in|   32|     ap_fifo|                               dense_to_softmax_streams_2|       pointer|
+|dense_to_softmax_streams_2_empty_n  |   in|    1|     ap_fifo|                               dense_to_softmax_streams_2|       pointer|
+|dense_to_softmax_streams_2_read     |  out|    1|     ap_fifo|                               dense_to_softmax_streams_2|       pointer|
+|dense_to_softmax_streams_3_dout     |   in|   32|     ap_fifo|                               dense_to_softmax_streams_3|       pointer|
+|dense_to_softmax_streams_3_empty_n  |   in|    1|     ap_fifo|                               dense_to_softmax_streams_3|       pointer|
+|dense_to_softmax_streams_3_read     |  out|    1|     ap_fifo|                               dense_to_softmax_streams_3|       pointer|
+|prediction_address0                 |  out|    4|   ap_memory|                                               prediction|         array|
+|prediction_ce0                      |  out|    1|   ap_memory|                                               prediction|         array|
+|prediction_we0                      |  out|    1|   ap_memory|                                               prediction|         array|
+|prediction_d0                       |  out|   32|   ap_memory|                                               prediction|         array|
+|exp_sum_out                         |  out|   32|      ap_vld|                                              exp_sum_out|       pointer|
+|exp_sum_out_ap_vld                  |  out|    1|      ap_vld|                                              exp_sum_out|       pointer|
++------------------------------------+-----+-----+------------+---------------------------------------------------------+--------------+
+
