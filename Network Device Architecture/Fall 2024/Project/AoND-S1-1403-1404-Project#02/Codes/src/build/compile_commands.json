@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/reza/Downloads/APSARA/src/build",
+  "command": "/usr/bin/cc    -Wall -O0 -g -std=gnu11   -Wall -O0 -g -std=gnu11  -DDEBUG -o CMakeFiles/APSARA.out.dir/matching.c.o -c /home/reza/Downloads/APSARA/src/matching.c",
+  "file": "/home/reza/Downloads/APSARA/src/matching.c",
+  "output": "CMakeFiles/APSARA.out.dir/matching.c.o"
+},
+{
+  "directory": "/home/reza/Downloads/APSARA/src/build",
+  "command": "/usr/bin/cc    -Wall -O0 -g -std=gnu11   -Wall -O0 -g -std=gnu11  -DDEBUG -o CMakeFiles/APSARA.out.dir/switch.c.o -c /home/reza/Downloads/APSARA/src/switch.c",
+  "file": "/home/reza/Downloads/APSARA/src/switch.c",
+  "output": "CMakeFiles/APSARA.out.dir/switch.c.o"
+},
+{
+  "directory": "/home/reza/Downloads/APSARA/src/build",
+  "command": "/usr/bin/cc    -Wall -O0 -g -std=gnu11   -Wall -O0 -g -std=gnu11  -DDEBUG -o CMakeFiles/APSARA.out.dir/switch-apsara.c.o -c /home/reza/Downloads/APSARA/src/switch-apsara.c",
+  "file": "/home/reza/Downloads/APSARA/src/switch-apsara.c",
+  "output": "CMakeFiles/APSARA.out.dir/switch-apsara.c.o"
+},
+{
+  "directory": "/home/reza/Downloads/APSARA/src/build",
+  "command": "/usr/bin/cc    -Wall -O0 -g -std=gnu11   -Wall -O0 -g -std=gnu11  -DDEBUG -o CMakeFiles/APSARA.out.dir/permutation.c.o -c /home/reza/Downloads/APSARA/src/permutation.c",
+  "file": "/home/reza/Downloads/APSARA/src/permutation.c",
+  "output": "CMakeFiles/APSARA.out.dir/permutation.c.o"
+},
+{
+  "directory": "/home/reza/Downloads/APSARA/src/build",
+  "command": "/usr/bin/cc    -Wall -O0 -g -std=gnu11   -Wall -O0 -g -std=gnu11  -DDEBUG -o CMakeFiles/APSARA.out.dir/main.c.o -c /home/reza/Downloads/APSARA/src/main.c",
+  "file": "/home/reza/Downloads/APSARA/src/main.c",
+  "output": "CMakeFiles/APSARA.out.dir/main.c.o"
+}
+]

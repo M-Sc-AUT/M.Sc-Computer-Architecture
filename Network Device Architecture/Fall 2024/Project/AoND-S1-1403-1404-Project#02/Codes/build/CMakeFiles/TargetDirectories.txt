@@ -1,0 +1,5 @@
+/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Network Device Architecture/Fall 2024/Project/AoND-S1-1403-1404-Project#02/Codes/build/CMakeFiles/edit_cache.dir
+/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Network Device Architecture/Fall 2024/Project/AoND-S1-1403-1404-Project#02/Codes/build/CMakeFiles/rebuild_cache.dir
+/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Network Device Architecture/Fall 2024/Project/AoND-S1-1403-1404-Project#02/Codes/build/src/CMakeFiles/APSARA.out.dir
+/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Network Device Architecture/Fall 2024/Project/AoND-S1-1403-1404-Project#02/Codes/build/src/CMakeFiles/edit_cache.dir
+/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Network Device Architecture/Fall 2024/Project/AoND-S1-1403-1404-Project#02/Codes/build/src/CMakeFiles/rebuild_cache.dir

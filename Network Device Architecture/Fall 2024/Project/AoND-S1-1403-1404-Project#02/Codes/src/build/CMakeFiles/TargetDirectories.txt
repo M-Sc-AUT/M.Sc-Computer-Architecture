@@ -1,0 +1,3 @@
+/home/reza/Downloads/APSARA/src/build/CMakeFiles/APSARA.out.dir
+/home/reza/Downloads/APSARA/src/build/CMakeFiles/edit_cache.dir
+/home/reza/Downloads/APSARA/src/build/CMakeFiles/rebuild_cache.dir
