@@ -42,31 +42,6 @@ def prep_pixels(train, test) -> tuple:
 	return train_norm, test_norm
 
 
-
-# def define_model() -> Sequential:
-    # model = Sequential()
-
-    # # Convolutional Layer
-    # model.add(Conv2D(filters=8, kernel_size=(3, 3), strides=1, padding='same', activation='relu', input_shape=(28, 28, 1)))
-
-    # # Flatten layer to prepare for fully connected layers
-    # model.add(Flatten())
-
-    # # Fully Connected Lawyers
-    # model.add(Dense(128, activation='relu'))
-    # model.add(Dense(64, activation='relu'))
-
-    # # Output Layer
-    # model.add(Dense(10, activation='softmax'))
-
-    # # Compile the model
-    # model.compile(optimizer='adam', 
-    #               loss='categorical_crossentropy', 
-    #               metrics=['accuracy'])
-    # # model.summary()
-    # return model
-
-
 def define_model() -> Sequential:
 	# Define model.
 	model = Sequential()
