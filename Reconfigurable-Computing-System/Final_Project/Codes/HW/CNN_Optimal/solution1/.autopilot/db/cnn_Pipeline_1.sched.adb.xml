@@ -94,10 +94,10 @@ memset.loop:1 %exitcond125 = icmp_eq  i11 %p_load, i11 1156
 
 <Node id="8" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
-memset.loop:2 %empty_52 = add i11 %p_load, i11 1
+memset.loop:2 %empty_49 = add i11 %p_load, i11 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_52"/></StgValue>
+<StgValue><ssdm name="empty_49"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -125,7 +125,7 @@ memset.loop:3 %br_ln0 = br i1 %exitcond125, void %memset.loop.split, void %for.i
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-memset.loop.split:0 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1
+memset.loop.split:0 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_2
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -205,7 +205,7 @@ memset.loop.split:4 %store_ln0 = store i32 0, i11 %pad_img0_addr
 
 <Node id="16" bw="0" op_0_bw="11" op_1_bw="11" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-memset.loop.split:5 %store_ln0 = store i11 %empty_52, i11 %empty
+memset.loop.split:5 %store_ln0 = store i11 %empty_49, i11 %empty
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>

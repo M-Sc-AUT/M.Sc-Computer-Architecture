@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn'" level="0">
-<item name = "Date">Thu Jan 23 14:50:59 2025
+<item name = "Date">Thu Jan 23 17:45:43 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">46544, 46544, 0.465 ms, 0.465 ms, 46545, 46545, no</column>
+<column name="">22980, 22980, 0.230 ms, 0.230 ms, 22981, 22981, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_cnn_Pipeline_1_fu_260">cnn_Pipeline_1, 1158, 1158, 11.580 us, 11.580 us, 1158, 1158, no</column>
-<column name="grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_266">cnn_Pipeline_pad_for_rows_pad_for_cols, 804, 804, 8.040 us, 8.040 us, 804, 804, no</column>
-<column name="grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_273">cnn_Pipeline_clone_for_rows_clone_for_cols, 1167, 1167, 11.670 us, 11.670 us, 1167, 1167, no</column>
-<column name="grp_dataflow_section_fu_329">dataflow_section, 43408, 43408, 0.434 ms, 0.434 ms, 43408, 43408, no</column>
+<column name="grp_cnn_Pipeline_1_fu_342">cnn_Pipeline_1, 1158, 1158, 11.580 us, 11.580 us, 1158, 1158, no</column>
+<column name="grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_348">cnn_Pipeline_pad_for_rows_pad_for_cols, 804, 804, 8.040 us, 8.040 us, 804, 804, no</column>
+<column name="grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_355">cnn_Pipeline_clone_for_rows_clone_for_cols, 1167, 1167, 11.670 us, 11.670 us, 1167, 1167, no</column>
+<column name="grp_dataflow_section_fu_411">dataflow_section, 19844, 19844, 0.198 ms, 0.198 ms, 19845, 19845, dataflow</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -51,25 +51,24 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 4, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">104, 300, 51662, 76578, 0</column>
+<column name="Instance">88, 312, 63227, 81490, 0</column>
 <column name="Memory">12, -, 1568, 637, 0</column>
-<column name="Multiplexer">-, -, -, 2082, -</column>
-<column name="Register">-, -, 12, -, -</column>
+<column name="Multiplexer">-, -, -, 2040, -</column>
+<column name="Register">-, -, 14, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
-<specialColumn name="Utilization (%)">96, 375, 151, 450, 0</specialColumn>
+<specialColumn name="Utilization (%)">83, 390, 184, 478, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_cnn_Pipeline_1_fu_260">cnn_Pipeline_1, 0, 0, 13, 51, 0</column>
-<column name="grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_273">cnn_Pipeline_clone_for_rows_clone_for_cols, 0, 0, 509, 492, 0</column>
-<column name="grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_266">cnn_Pipeline_pad_for_rows_pad_for_cols, 0, 0, 208, 249, 0</column>
-<column name="grp_dataflow_section_fu_329">dataflow_section, 104, 300, 50932, 75786, 0</column>
-<column name="fdiv_32ns_32ns_32_16_no_dsp_1_U519">fdiv_32ns_32ns_32_16_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="grp_cnn_Pipeline_1_fu_342">cnn_Pipeline_1, 0, 0, 13, 51, 0</column>
+<column name="grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_355">cnn_Pipeline_clone_for_rows_clone_for_cols, 0, 0, 509, 492, 0</column>
+<column name="grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_348">cnn_Pipeline_pad_for_rows_pad_for_cols, 0, 0, 271, 281, 0</column>
+<column name="grp_dataflow_section_fu_411">dataflow_section, 88, 312, 62434, 80666, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -138,14 +137,13 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_sync_grp_dataflow_section_fu_411_ap_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_grp_dataflow_section_fu_411_ap_ready">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">48, 9, 1, 9</column>
-<column name="grp_fu_409_ce">14, 3, 1, 3</column>
-<column name="grp_fu_409_p0">14, 3, 32, 96</column>
-<column name="grp_fu_409_p1">14, 3, 32, 96</column>
 <column name="pad_img0_address0">25, 5, 11, 55</column>
 <column name="pad_img0_ce0">25, 5, 1, 5</column>
 <column name="pad_img0_ce1">9, 2, 1, 2</column>
@@ -311,10 +309,12 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">8, 0, 8, 0</column>
-<column name="grp_cnn_Pipeline_1_fu_260_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_273_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_266_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_dataflow_section_fu_329_ap_start_reg">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_dataflow_section_fu_411_ap_done">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_dataflow_section_fu_411_ap_ready">1, 0, 1, 0</column>
+<column name="grp_cnn_Pipeline_1_fu_342_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_355_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_348_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_dataflow_section_fu_411_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense'" level="0">
-<item name = "Date">Thu Jan 23 14:50:48 2025
+<item name = "Date">Thu Jan 23 17:45:27 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.209 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.670 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2002, 2002, 20.020 us, 20.020 us, 2002, 2002, no</column>
+<column name="">2003, 2003, 20.030 us, 20.030 us, 2003, 2003, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_Pipeline_1_fu_60">dense_Pipeline_1, 12, 12, 0.120 us, 0.120 us, 12, 12, no</column>
-<column name="grp_dense_Pipeline_dense_for_flat_fu_66">dense_Pipeline_dense_for_flat, 1972, 1972, 19.720 us, 19.720 us, 1972, 1972, no</column>
-<column name="grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94">dense_Pipeline_VITIS_LOOP_50_2, 12, 12, 0.120 us, 0.120 us, 12, 12, no</column>
+<column name="grp_dense_Pipeline_1_fu_42">dense_Pipeline_1, 12, 12, 0.120 us, 0.120 us, 12, 12, no</column>
+<column name="grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48">dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1, 1973, 1973, 19.730 us, 19.730 us, 1973, 1973, no</column>
+<column name="grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58">dense_Pipeline_VITIS_LOOP_49_2, 12, 12, 0.120 us, 0.120 us, 12, 12, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

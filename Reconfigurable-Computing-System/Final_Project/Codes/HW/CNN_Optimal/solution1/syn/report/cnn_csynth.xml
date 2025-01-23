@@ -22,28 +22,28 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>46544</Best-caseLatency>
-<Average-caseLatency>46544</Average-caseLatency>
-<Worst-caseLatency>46544</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.465 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.465 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.465 ms</Worst-caseRealTimeLatency>
-<Interval-min>46545</Interval-min>
-<Interval-max>46545</Interval-max>
+<Best-caseLatency>22980</Best-caseLatency>
+<Average-caseLatency>22980</Average-caseLatency>
+<Worst-caseLatency>22980</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.230 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.230 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.230 ms</Worst-caseRealTimeLatency>
+<Interval-min>22981</Interval-min>
+<Interval-max>22981</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN_Optimal/src/cnn.cpp:64</SourceLocation>
+<SourceLocation>CNN_Optimal/src/cnn.cpp:63</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>116</BRAM_18K>
-<DSP>300</DSP>
-<FF>53242</FF>
-<LUT>79297</LUT>
+<BRAM_18K>100</BRAM_18K>
+<DSP>312</DSP>
+<FF>64809</FF>
+<LUT>84171</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

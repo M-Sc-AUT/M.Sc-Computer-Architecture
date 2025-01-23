@@ -1,9 +1,9 @@
 {
   "0": {
     "basicblocks": 11,
-    "calls": "2",
+    "calls": "5",
     "file": "cnn.cpp",
-    "fileloc": 64,
+    "fileloc": 63,
     "instructions": 52,
     "loads": {
       "L": 1,
@@ -13,50 +13,25 @@
     "stores": {
       "L": 5
     },
-    "total_instructions": 703
+    "total_instructions": 785
   },
   "1": {
-    "basicblocks": 9,
+    "basicblocks": 12,
     "calls": "",
     "file": "dense.cpp",
-    "fileloc": 33,
-    "instructions": 38,
-    "loads": {
-      "G": 1,
-      "L": 2
-    },
-    "name": "dense",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 38
-  },
-  "2": {
-    "basicblocks": 28,
-    "calls": "4 4 4 4 3 3 3 3 1 1 1 1",
-    "file": "cnn.cpp",
-    "fileloc": 13,
-    "instructions": 187,
+    "fileloc": 7,
+    "instructions": 42,
     "loads": {
       "G": 1,
       "L": 1
     },
-    "name": "dataflow_section",
+    "name": "dense_layer_soft_max",
     "stores": {
       "L": 2
     },
-    "total_instructions": 651
+    "total_instructions": 42
   },
-  "3": {
-    "basicblocks": 9,
-    "calls": "",
-    "file": "pool.cpp",
-    "fileloc": 4,
-    "instructions": 27,
-    "name": "max_pooling",
-    "total_instructions": 27
-  },
-  "4": {
+  "2": {
     "basicblocks": 13,
     "calls": "",
     "file": "conv.cpp",
@@ -68,5 +43,75 @@
     },
     "name": "convolution",
     "total_instructions": 51
+  },
+  "3": {
+    "basicblocks": 25,
+    "calls": "",
+    "file": "pool.cpp",
+    "fileloc": 31,
+    "instructions": 93,
+    "name": "max_pooling_layer",
+    "total_instructions": 93
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "flat.cpp",
+    "fileloc": 3,
+    "instructions": 34,
+    "name": "flattening",
+    "total_instructions": 34
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "9 3 6 7 1",
+    "file": "cnn.cpp",
+    "fileloc": 13,
+    "instructions": 91,
+    "name": "dataflow_section",
+    "total_instructions": 733
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "4 4 4 4",
+    "file": "flat.cpp",
+    "fileloc": 17,
+    "instructions": 5,
+    "name": "flattening_layer",
+    "total_instructions": 141
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "8 8 8 8",
+    "file": "dense.cpp",
+    "fileloc": 56,
+    "instructions": 5,
+    "name": "dense_layer",
+    "total_instructions": 157
+  },
+  "8": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "dense.cpp",
+    "fileloc": 31,
+    "instructions": 38,
+    "loads": {
+      "G": 1,
+      "L": 2
+    },
+    "name": "dense",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 38
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "2 2 2 2",
+    "file": "conv.cpp",
+    "fileloc": 52,
+    "instructions": 5,
+    "name": "convolutional_layer",
+    "total_instructions": 209
   }
 }

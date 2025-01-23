@@ -310,7 +310,8 @@ void normalization_and_padding(float img_in[28][28], float img_out[(28 + (7 - 1)
 
 
 
-void convolution(float pad_img [(28 + (7 - 1))][(28 + (7 - 1))], int filter, hls::stream<float> & conv_to_pool_stream);
+void convolution( float pad_img [(28 + (7 - 1))][(28 + (7 - 1))],
+      int filter, hls::stream<float> & conv_to_pool_stream );
 
 void convolutional_layer( float pad_img0 [(28 + (7 - 1))][(28 + (7 - 1))],
         float pad_img1 [(28 + (7 - 1))][(28 + (7 - 1))],
@@ -324,7 +325,8 @@ void convolutional_layer( float pad_img0 [(28 + (7 - 1))][(28 + (7 - 1))],
 
 
 
-void max_pooling_layer(hls::stream<float> conv_to_pool_streams[4], hls::stream<float> pool_to_flat_streams[4]);
+void max_pooling_layer( hls::stream<float> conv_to_pool_streams[4],
+                  hls::stream<float> pool_to_flat_streams[4] );
 # 5 "CNN_Optimal/src/cnn.cpp" 2
 # 1 "CNN_Optimal/src/flat.h" 1
 
@@ -332,7 +334,8 @@ void max_pooling_layer(hls::stream<float> conv_to_pool_streams[4], hls::stream<f
 
 
 
-void flattening_layer(hls::stream<float> pool_to_flat_streams[4], hls::stream<float> flat_to_dense_stream[4]);
+void flattening_layer( hls::stream<float> pool_to_flat_streams[4],
+           hls::stream<float> flat_to_dense_stream[4] );
 # 6 "CNN_Optimal/src/cnn.cpp" 2
 # 1 "CNN_Optimal/src/dense.h" 1
 
@@ -340,9 +343,12 @@ void flattening_layer(hls::stream<float> pool_to_flat_streams[4], hls::stream<fl
 
 
 
-void dense_layer_soft_max(hls::stream<float> dense_to_softmax_streams[4], float prediction[10]);
 
-void dense_layer(hls::stream<float> flat_to_dense_streams[4], hls::stream<float> dense_to_softmax_stream[4]);
+void dense_layer_soft_max( hls::stream<float> dense_to_softmax_streams[4],
+         float prediction[10] );
+
+void dense_layer( hls::stream<float> flat_to_dense_streams[4],
+      hls::stream<float> dense_to_softmax_stream[4] );
 # 7 "CNN_Optimal/src/cnn.cpp" 2
 
 
@@ -350,68 +356,69 @@ void dense_layer(hls::stream<float> flat_to_dense_streams[4], hls::stream<float>
 
 
 
-void dataflow_section(
-      float pad_img0 [(28 + (7 - 1))][(28 + (7 - 1))],
-      float pad_img1 [(28 + (7 - 1))][(28 + (7 - 1))],
-      float pad_img2 [(28 + (7 - 1))][(28 + (7 - 1))],
-      float pad_img3 [(28 + (7 - 1))][(28 + (7 - 1))],
-      float prediction [10] )
+void dataflow_section( float pad_img0 [(28 + (7 - 1))][(28 + (7 - 1))],
+        float pad_img1 [(28 + (7 - 1))][(28 + (7 - 1))],
+        float pad_img2 [(28 + (7 - 1))][(28 + (7 - 1))],
+        float pad_img3 [(28 + (7 - 1))][(28 + (7 - 1))],
+        float prediction [10] )
 {
+#pragma HLS DATAFLOW
 
 
 
 
 
 
-  hls::stream<float, 28 * 28>
-  conv_to_pool_streams [4];
+ hls::stream<float, 28 * 28>
+ conv_to_pool_streams[4];
 
 
-  convolutional_layer(pad_img0, pad_img1, pad_img2, pad_img3, conv_to_pool_streams);
-# 41 "CNN_Optimal/src/cnn.cpp"
-  hls::stream<float, (28 / 2) * (28 / 2)>
-  pool_to_flat_streams[4];
+ convolutional_layer(pad_img0, pad_img1, pad_img2, pad_img3, conv_to_pool_streams);
+# 40 "CNN_Optimal/src/cnn.cpp"
+ hls::stream<float, (28 / 2) * (28 / 2)>
+ pool_to_flat_streams[4];
 
-  max_pooling_layer(conv_to_pool_streams, pool_to_flat_streams);
-# 53 "CNN_Optimal/src/cnn.cpp"
-  hls::stream<float, (4 * (28 / 2) * (28 / 2)) / 4> flat_to_dense_streams [4];
-  flattening_layer(pool_to_flat_streams, flat_to_dense_streams);
-
-
-  hls::stream<float, 10> dense_to_softmax_streams [4];
-  dense_layer(flat_to_dense_streams, dense_to_softmax_streams);
+ max_pooling_layer(conv_to_pool_streams, pool_to_flat_streams);
+# 52 "CNN_Optimal/src/cnn.cpp"
+ hls::stream<float, (4 * (28 / 2) * (28 / 2)) / 4> flat_to_dense_streams[4];
+ flattening_layer(pool_to_flat_streams, flat_to_dense_streams);
 
 
-  dense_layer_soft_max(dense_to_softmax_streams, prediction);
+ hls::stream<float, 10> dense_to_softmax_streams [4];
+ dense_layer(flat_to_dense_streams, dense_to_softmax_streams);
+
+
+ dense_layer_soft_max(dense_to_softmax_streams, prediction);
 }
 
 __attribute__((sdx_kernel("cnn", 0))) void cnn(float img_in[28][28], float prediction[10])
 {
 #line 26 "/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW/CNN_Optimal/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=cnn
-# 65 "CNN_Optimal/src/cnn.cpp"
+# 64 "CNN_Optimal/src/cnn.cpp"
 
 
 
-  float pad_img0 [(28 + (7 - 1))][(28 + (7 - 1))] = { 0 };
-  normalization_and_padding(img_in, pad_img0);
-# 79 "CNN_Optimal/src/cnn.cpp"
-  float pad_img1 [(28 + (7 - 1))][(28 + (7 - 1))];
-  float pad_img2 [(28 + (7 - 1))][(28 + (7 - 1))];
-  float pad_img3 [(28 + (7 - 1))][(28 + (7 - 1))];
+ float pad_img0[(28 + (7 - 1))][(28 + (7 - 1))] = { 0 };
+ normalization_and_padding(img_in, pad_img0);
+# 78 "CNN_Optimal/src/cnn.cpp"
+ float pad_img1[(28 + (7 - 1))][(28 + (7 - 1))];
+ float pad_img2[(28 + (7 - 1))][(28 + (7 - 1))];
+ float pad_img3[(28 + (7 - 1))][(28 + (7 - 1))];
 
-  float value;
+ float value;
 
-  clone_for_rows:
-  for(int i = 0; i < (28 + (7 - 1)); ++i)
-    clone_for_cols:
- for(int j = 0; j < (28 + (7 - 1)); ++j)
-    {
-      pad_img1[i][j] = pad_img0[i][j];
-      pad_img2[i][j] = pad_img0[i][j];
-      pad_img3[i][j] = pad_img0[i][j];
-    }
+ clone_for_rows: for(int i = 0; i < (28 + (7 - 1)); ++i)
+ {
+  clone_for_cols: for(int j = 0; j < (28 + (7 - 1)); ++j)
+  {
+   pad_img1[i][j] = pad_img0[i][j];
+   pad_img2[i][j] = pad_img0[i][j];
+   pad_img3[i][j] = pad_img0[i][j];
+  }
+ }
 
 
-  dataflow_section(pad_img0, pad_img1, pad_img2, pad_img3, prediction);
+
+ dataflow_section(pad_img0, pad_img1, pad_img2, pad_img3, prediction);
 }

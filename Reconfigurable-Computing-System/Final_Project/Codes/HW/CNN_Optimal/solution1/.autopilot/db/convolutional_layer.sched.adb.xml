@@ -1,0 +1,228 @@
+<stg><name>convolutional_layer</name>
+
+
+<trans_list>
+
+<trans id="16" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="111" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="2" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32">
+<![CDATA[
+entry:4 %call_ln58 = call void @convolution, i32 %pad_img0, i2 0, i32 %conv_to_pool_streams_0, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6
+
+]]></Node>
+<StgValue><ssdm name="call_ln58"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="112" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="2" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32">
+<![CDATA[
+entry:5 %call_ln59 = call void @convolution, i32 %pad_img1, i2 1, i32 %conv_to_pool_streams_1, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6
+
+]]></Node>
+<StgValue><ssdm name="call_ln59"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="113" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="2" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32">
+<![CDATA[
+entry:6 %call_ln60 = call void @convolution, i32 %pad_img2, i2 2, i32 %conv_to_pool_streams_2, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6
+
+]]></Node>
+<StgValue><ssdm name="call_ln60"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="114" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32">
+<![CDATA[
+entry:7 %call_ln61 = call void @convolution.1, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams_3
+
+]]></Node>
+<StgValue><ssdm name="call_ln61"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="107" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_3, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="8" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="108" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_2, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="9" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="109" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_1, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="10" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="110" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_0, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="11" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="111" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="2" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32">
+<![CDATA[
+entry:4 %call_ln58 = call void @convolution, i32 %pad_img0, i2 0, i32 %conv_to_pool_streams_0, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6
+
+]]></Node>
+<StgValue><ssdm name="call_ln58"/></StgValue>
+</operation>
+
+<operation id="12" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="112" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="2" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32">
+<![CDATA[
+entry:5 %call_ln59 = call void @convolution, i32 %pad_img1, i2 1, i32 %conv_to_pool_streams_1, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6
+
+]]></Node>
+<StgValue><ssdm name="call_ln59"/></StgValue>
+</operation>
+
+<operation id="13" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="113" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="2" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32">
+<![CDATA[
+entry:6 %call_ln60 = call void @convolution, i32 %pad_img2, i2 2, i32 %conv_to_pool_streams_2, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6
+
+]]></Node>
+<StgValue><ssdm name="call_ln60"/></StgValue>
+</operation>
+
+<operation id="14" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="114" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32">
+<![CDATA[
+entry:7 %call_ln61 = call void @convolution.1, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams_3
+
+]]></Node>
+<StgValue><ssdm name="call_ln61"/></StgValue>
+</operation>
+
+<operation id="15" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="115" bw="0">
+<![CDATA[
+entry:8 %ret_ln62 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln62"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

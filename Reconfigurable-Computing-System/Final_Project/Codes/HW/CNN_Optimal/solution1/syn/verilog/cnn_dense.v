@@ -14,10 +14,14 @@ module cnn_dense (
         ap_idle,
         ap_ready,
         flat_to_dense_streams_0_dout,
+        flat_to_dense_streams_0_num_data_valid,
+        flat_to_dense_streams_0_fifo_cap,
         flat_to_dense_streams_0_empty_n,
         flat_to_dense_streams_0_read,
         filter,
         dense_to_softmax_streams_0_din,
+        dense_to_softmax_streams_0_num_data_valid,
+        dense_to_softmax_streams_0_fifo_cap,
         dense_to_softmax_streams_0_full_n,
         dense_to_softmax_streams_0_write
 );
@@ -37,10 +41,14 @@ output   ap_done;
 output   ap_idle;
 output   ap_ready;
 input  [31:0] flat_to_dense_streams_0_dout;
+input  [8:0] flat_to_dense_streams_0_num_data_valid;
+input  [8:0] flat_to_dense_streams_0_fifo_cap;
 input   flat_to_dense_streams_0_empty_n;
 output   flat_to_dense_streams_0_read;
 input  [1:0] filter;
 output  [31:0] dense_to_softmax_streams_0_din;
+input  [4:0] dense_to_softmax_streams_0_num_data_valid;
+input  [4:0] dense_to_softmax_streams_0_fifo_cap;
 input   dense_to_softmax_streams_0_full_n;
 output   dense_to_softmax_streams_0_write;
 
@@ -52,9 +60,10 @@ reg dense_to_softmax_streams_0_write;
 
 (* fsm_encoding = "none" *) reg   [6:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [9:0] mul_fu_105_p2;
-reg   [9:0] mul_reg_111;
 wire    ap_CS_fsm_state2;
+wire   [9:0] mul_ln36_fu_68_p2;
+reg   [9:0] mul_ln36_reg_80;
+wire    ap_CS_fsm_state3;
 reg   [3:0] dense_array_address0;
 reg    dense_array_ce0;
 reg    dense_array_we0;
@@ -62,42 +71,41 @@ reg   [31:0] dense_array_d0;
 wire   [31:0] dense_array_q0;
 reg    dense_array_ce1;
 wire   [31:0] dense_array_q1;
-wire    grp_dense_Pipeline_1_fu_60_ap_start;
-wire    grp_dense_Pipeline_1_fu_60_ap_done;
-wire    grp_dense_Pipeline_1_fu_60_ap_idle;
-wire    grp_dense_Pipeline_1_fu_60_ap_ready;
-wire   [3:0] grp_dense_Pipeline_1_fu_60_dense_array_address0;
-wire    grp_dense_Pipeline_1_fu_60_dense_array_ce0;
-wire    grp_dense_Pipeline_1_fu_60_dense_array_we0;
-wire   [31:0] grp_dense_Pipeline_1_fu_60_dense_array_d0;
-wire    grp_dense_Pipeline_dense_for_flat_fu_66_ap_start;
-wire    grp_dense_Pipeline_dense_for_flat_fu_66_ap_done;
-wire    grp_dense_Pipeline_dense_for_flat_fu_66_ap_idle;
-wire    grp_dense_Pipeline_dense_for_flat_fu_66_ap_ready;
-wire   [3:0] grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_address0;
-wire    grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_ce0;
-wire    grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_we0;
-wire   [31:0] grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_d0;
-wire   [3:0] grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_address1;
-wire    grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_ce1;
-wire    grp_dense_Pipeline_dense_for_flat_fu_66_flat_to_dense_streams_0_read;
-wire    grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_start;
-wire    grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_done;
-wire    grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_idle;
-wire    grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_ready;
-wire   [31:0] grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_to_softmax_streams_0_din;
-wire    grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_to_softmax_streams_0_write;
-wire   [3:0] grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_array_address0;
-wire    grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_array_ce0;
-reg    grp_dense_Pipeline_1_fu_60_ap_start_reg;
-reg    grp_dense_Pipeline_dense_for_flat_fu_66_ap_start_reg;
-wire    ap_CS_fsm_state3;
+wire    grp_dense_Pipeline_1_fu_42_ap_start;
+wire    grp_dense_Pipeline_1_fu_42_ap_done;
+wire    grp_dense_Pipeline_1_fu_42_ap_idle;
+wire    grp_dense_Pipeline_1_fu_42_ap_ready;
+wire   [3:0] grp_dense_Pipeline_1_fu_42_dense_array_address0;
+wire    grp_dense_Pipeline_1_fu_42_dense_array_ce0;
+wire    grp_dense_Pipeline_1_fu_42_dense_array_we0;
+wire   [31:0] grp_dense_Pipeline_1_fu_42_dense_array_d0;
+wire    grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_start;
+wire    grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_done;
+wire    grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_idle;
+wire    grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_ready;
+wire    grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_flat_to_dense_streams_0_read;
+wire   [3:0] grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_address0;
+wire    grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_ce0;
+wire    grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_we0;
+wire   [31:0] grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_d0;
+wire   [3:0] grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_address1;
+wire    grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_ce1;
+wire    grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_start;
+wire    grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_done;
+wire    grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_idle;
+wire    grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_ready;
+wire   [31:0] grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_to_softmax_streams_0_din;
+wire    grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_to_softmax_streams_0_write;
+wire   [3:0] grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_array_address0;
+wire    grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_array_ce0;
+reg    grp_dense_Pipeline_1_fu_42_ap_start_reg;
+reg    grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_start_reg;
 wire    ap_CS_fsm_state4;
-reg    grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_start_reg;
+reg    grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_start_reg;
 wire    ap_CS_fsm_state6;
 wire    ap_CS_fsm_state7;
-wire   [1:0] mul_fu_105_p0;
-wire   [8:0] mul_fu_105_p1;
+wire   [1:0] mul_ln36_fu_68_p0;
+wire   [8:0] mul_ln36_fu_68_p1;
 reg   [6:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 reg    ap_ST_fsm_state2_blk;
@@ -106,15 +114,15 @@ reg    ap_ST_fsm_state4_blk;
 wire    ap_ST_fsm_state5_blk;
 wire    ap_ST_fsm_state6_blk;
 reg    ap_ST_fsm_state7_blk;
-wire   [9:0] mul_fu_105_p00;
+wire   [9:0] mul_ln36_fu_68_p00;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 7'd1;
-#0 grp_dense_Pipeline_1_fu_60_ap_start_reg = 1'b0;
-#0 grp_dense_Pipeline_dense_for_flat_fu_66_ap_start_reg = 1'b0;
-#0 grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_start_reg = 1'b0;
+#0 grp_dense_Pipeline_1_fu_42_ap_start_reg = 1'b0;
+#0 grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_start_reg = 1'b0;
+#0 grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_start_reg = 1'b0;
 end
 
 cnn_dense_dense_array_RAM_AUTO_1R1W #(
@@ -129,56 +137,60 @@ dense_array_U(
     .we0(dense_array_we0),
     .d0(dense_array_d0),
     .q0(dense_array_q0),
-    .address1(grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_address1),
+    .address1(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_address1),
     .ce1(dense_array_ce1),
     .q1(dense_array_q1)
 );
 
-cnn_dense_Pipeline_1 grp_dense_Pipeline_1_fu_60(
+cnn_dense_Pipeline_1 grp_dense_Pipeline_1_fu_42(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_dense_Pipeline_1_fu_60_ap_start),
-    .ap_done(grp_dense_Pipeline_1_fu_60_ap_done),
-    .ap_idle(grp_dense_Pipeline_1_fu_60_ap_idle),
-    .ap_ready(grp_dense_Pipeline_1_fu_60_ap_ready),
-    .dense_array_address0(grp_dense_Pipeline_1_fu_60_dense_array_address0),
-    .dense_array_ce0(grp_dense_Pipeline_1_fu_60_dense_array_ce0),
-    .dense_array_we0(grp_dense_Pipeline_1_fu_60_dense_array_we0),
-    .dense_array_d0(grp_dense_Pipeline_1_fu_60_dense_array_d0)
+    .ap_start(grp_dense_Pipeline_1_fu_42_ap_start),
+    .ap_done(grp_dense_Pipeline_1_fu_42_ap_done),
+    .ap_idle(grp_dense_Pipeline_1_fu_42_ap_idle),
+    .ap_ready(grp_dense_Pipeline_1_fu_42_ap_ready),
+    .dense_array_address0(grp_dense_Pipeline_1_fu_42_dense_array_address0),
+    .dense_array_ce0(grp_dense_Pipeline_1_fu_42_dense_array_ce0),
+    .dense_array_we0(grp_dense_Pipeline_1_fu_42_dense_array_we0),
+    .dense_array_d0(grp_dense_Pipeline_1_fu_42_dense_array_d0)
 );
 
-cnn_dense_Pipeline_dense_for_flat grp_dense_Pipeline_dense_for_flat_fu_66(
+cnn_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1 grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_dense_Pipeline_dense_for_flat_fu_66_ap_start),
-    .ap_done(grp_dense_Pipeline_dense_for_flat_fu_66_ap_done),
-    .ap_idle(grp_dense_Pipeline_dense_for_flat_fu_66_ap_idle),
-    .ap_ready(grp_dense_Pipeline_dense_for_flat_fu_66_ap_ready),
-    .dense_array_address0(grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_address0),
-    .dense_array_ce0(grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_ce0),
-    .dense_array_we0(grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_we0),
-    .dense_array_d0(grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_d0),
-    .dense_array_address1(grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_address1),
-    .dense_array_ce1(grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_ce1),
-    .dense_array_q1(dense_array_q1),
+    .ap_start(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_start),
+    .ap_done(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_done),
+    .ap_idle(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_idle),
+    .ap_ready(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_ready),
     .flat_to_dense_streams_0_dout(flat_to_dense_streams_0_dout),
+    .flat_to_dense_streams_0_num_data_valid(9'd0),
+    .flat_to_dense_streams_0_fifo_cap(9'd0),
     .flat_to_dense_streams_0_empty_n(flat_to_dense_streams_0_empty_n),
-    .flat_to_dense_streams_0_read(grp_dense_Pipeline_dense_for_flat_fu_66_flat_to_dense_streams_0_read),
-    .mul(mul_reg_111)
+    .flat_to_dense_streams_0_read(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_flat_to_dense_streams_0_read),
+    .mul_ln36(mul_ln36_reg_80),
+    .dense_array_address0(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_address0),
+    .dense_array_ce0(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_ce0),
+    .dense_array_we0(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_we0),
+    .dense_array_d0(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_d0),
+    .dense_array_address1(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_address1),
+    .dense_array_ce1(grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_ce1),
+    .dense_array_q1(dense_array_q1)
 );
 
-cnn_dense_Pipeline_VITIS_LOOP_50_2 grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94(
+cnn_dense_Pipeline_VITIS_LOOP_49_2 grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_start),
-    .ap_done(grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_done),
-    .ap_idle(grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_idle),
-    .ap_ready(grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_ready),
-    .dense_to_softmax_streams_0_din(grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_to_softmax_streams_0_din),
+    .ap_start(grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_start),
+    .ap_done(grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_done),
+    .ap_idle(grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_idle),
+    .ap_ready(grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_ready),
+    .dense_to_softmax_streams_0_din(grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_to_softmax_streams_0_din),
+    .dense_to_softmax_streams_0_num_data_valid(5'd0),
+    .dense_to_softmax_streams_0_fifo_cap(5'd0),
     .dense_to_softmax_streams_0_full_n(dense_to_softmax_streams_0_full_n),
-    .dense_to_softmax_streams_0_write(grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_to_softmax_streams_0_write),
-    .dense_array_address0(grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_array_address0),
-    .dense_array_ce0(grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_array_ce0),
+    .dense_to_softmax_streams_0_write(grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_to_softmax_streams_0_write),
+    .dense_array_address0(grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_array_address0),
+    .dense_array_ce0(grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_array_ce0),
     .dense_array_q0(dense_array_q0)
 );
 
@@ -188,10 +200,10 @@ cnn_mul_2ns_9ns_10_1_1 #(
     .din0_WIDTH( 2 ),
     .din1_WIDTH( 9 ),
     .dout_WIDTH( 10 ))
-mul_2ns_9ns_10_1_1_U429(
-    .din0(mul_fu_105_p0),
-    .din1(mul_fu_105_p1),
-    .dout(mul_fu_105_p2)
+mul_2ns_9ns_10_1_1_U548(
+    .din0(mul_ln36_fu_68_p0),
+    .din1(mul_ln36_fu_68_p1),
+    .dout(mul_ln36_fu_68_p2)
 );
 
 always @ (posedge ap_clk) begin
@@ -204,43 +216,43 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_dense_Pipeline_1_fu_60_ap_start_reg <= 1'b0;
+        grp_dense_Pipeline_1_fu_42_ap_start_reg <= 1'b0;
     end else begin
         if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-            grp_dense_Pipeline_1_fu_60_ap_start_reg <= 1'b1;
-        end else if ((grp_dense_Pipeline_1_fu_60_ap_ready == 1'b1)) begin
-            grp_dense_Pipeline_1_fu_60_ap_start_reg <= 1'b0;
+            grp_dense_Pipeline_1_fu_42_ap_start_reg <= 1'b1;
+        end else if ((grp_dense_Pipeline_1_fu_42_ap_ready == 1'b1)) begin
+            grp_dense_Pipeline_1_fu_42_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_start_reg <= 1'b0;
+        grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state6)) begin
-            grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_start_reg <= 1'b1;
-        end else if ((grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_ready == 1'b1)) begin
-            grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_start_reg <= 1'b0;
+            grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_start_reg <= 1'b1;
+        end else if ((grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_ready == 1'b1)) begin
+            grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_dense_Pipeline_dense_for_flat_fu_66_ap_start_reg <= 1'b0;
+        grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state3)) begin
-            grp_dense_Pipeline_dense_for_flat_fu_66_ap_start_reg <= 1'b1;
-        end else if ((grp_dense_Pipeline_dense_for_flat_fu_66_ap_ready == 1'b1)) begin
-            grp_dense_Pipeline_dense_for_flat_fu_66_ap_start_reg <= 1'b0;
+            grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_start_reg <= 1'b1;
+        end else if ((grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_ready == 1'b1)) begin
+            grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        mul_reg_111 <= mul_fu_105_p2;
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        mul_ln36_reg_80 <= mul_ln36_fu_68_p2;
     end
 end
 
@@ -253,7 +265,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((grp_dense_Pipeline_1_fu_60_ap_done == 1'b0)) begin
+    if ((grp_dense_Pipeline_1_fu_42_ap_done == 1'b0)) begin
         ap_ST_fsm_state2_blk = 1'b1;
     end else begin
         ap_ST_fsm_state2_blk = 1'b0;
@@ -263,7 +275,7 @@ end
 assign ap_ST_fsm_state3_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_dense_Pipeline_dense_for_flat_fu_66_ap_done == 1'b0)) begin
+    if ((grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_done == 1'b0)) begin
         ap_ST_fsm_state4_blk = 1'b1;
     end else begin
         ap_ST_fsm_state4_blk = 1'b0;
@@ -275,7 +287,7 @@ assign ap_ST_fsm_state5_blk = 1'b0;
 assign ap_ST_fsm_state6_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_done == 1'b0)) begin
+    if ((grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_done == 1'b0)) begin
         ap_ST_fsm_state7_blk = 1'b1;
     end else begin
         ap_ST_fsm_state7_blk = 1'b0;
@@ -283,7 +295,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) | ((grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7)))) begin
+    if ((((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) | ((grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -299,7 +311,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
+    if (((grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -308,11 +320,11 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state7)) begin
-        dense_array_address0 = grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_array_address0;
+        dense_array_address0 = grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_array_address0;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        dense_array_address0 = grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_address0;
+        dense_array_address0 = grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        dense_array_address0 = grp_dense_Pipeline_1_fu_60_dense_array_address0;
+        dense_array_address0 = grp_dense_Pipeline_1_fu_42_dense_array_address0;
     end else begin
         dense_array_address0 = 'bx;
     end
@@ -320,11 +332,11 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state7)) begin
-        dense_array_ce0 = grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_array_ce0;
+        dense_array_ce0 = grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_array_ce0;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        dense_array_ce0 = grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_ce0;
+        dense_array_ce0 = grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        dense_array_ce0 = grp_dense_Pipeline_1_fu_60_dense_array_ce0;
+        dense_array_ce0 = grp_dense_Pipeline_1_fu_42_dense_array_ce0;
     end else begin
         dense_array_ce0 = 1'b0;
     end
@@ -332,7 +344,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        dense_array_ce1 = grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_ce1;
+        dense_array_ce1 = grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_ce1;
     end else begin
         dense_array_ce1 = 1'b0;
     end
@@ -340,9 +352,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        dense_array_d0 = grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_d0;
+        dense_array_d0 = grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        dense_array_d0 = grp_dense_Pipeline_1_fu_60_dense_array_d0;
+        dense_array_d0 = grp_dense_Pipeline_1_fu_42_dense_array_d0;
     end else begin
         dense_array_d0 = 'bx;
     end
@@ -350,9 +362,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        dense_array_we0 = grp_dense_Pipeline_dense_for_flat_fu_66_dense_array_we0;
+        dense_array_we0 = grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_dense_array_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        dense_array_we0 = grp_dense_Pipeline_1_fu_60_dense_array_we0;
+        dense_array_we0 = grp_dense_Pipeline_1_fu_42_dense_array_we0;
     end else begin
         dense_array_we0 = 1'b0;
     end
@@ -360,7 +372,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state7)) begin
-        dense_to_softmax_streams_0_write = grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_to_softmax_streams_0_write;
+        dense_to_softmax_streams_0_write = grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_to_softmax_streams_0_write;
     end else begin
         dense_to_softmax_streams_0_write = 1'b0;
     end
@@ -368,7 +380,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        flat_to_dense_streams_0_read = grp_dense_Pipeline_dense_for_flat_fu_66_flat_to_dense_streams_0_read;
+        flat_to_dense_streams_0_read = grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_flat_to_dense_streams_0_read;
     end else begin
         flat_to_dense_streams_0_read = 1'b0;
     end
@@ -384,7 +396,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((grp_dense_Pipeline_1_fu_60_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((grp_dense_Pipeline_1_fu_42_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
@@ -394,7 +406,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state4;
         end
         ap_ST_fsm_state4 : begin
-            if (((grp_dense_Pipeline_dense_for_flat_fu_66_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+            if (((grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
                 ap_NS_fsm = ap_ST_fsm_state5;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -407,7 +419,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state7;
         end
         ap_ST_fsm_state7 : begin
-            if (((grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
+            if (((grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state7;
@@ -431,18 +443,18 @@ assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
 assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
 
-assign dense_to_softmax_streams_0_din = grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_dense_to_softmax_streams_0_din;
+assign dense_to_softmax_streams_0_din = grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_dense_to_softmax_streams_0_din;
 
-assign grp_dense_Pipeline_1_fu_60_ap_start = grp_dense_Pipeline_1_fu_60_ap_start_reg;
+assign grp_dense_Pipeline_1_fu_42_ap_start = grp_dense_Pipeline_1_fu_42_ap_start_reg;
 
-assign grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_start = grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_start_reg;
+assign grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_start = grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_start_reg;
 
-assign grp_dense_Pipeline_dense_for_flat_fu_66_ap_start = grp_dense_Pipeline_dense_for_flat_fu_66_ap_start_reg;
+assign grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_start = grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_start_reg;
 
-assign mul_fu_105_p0 = mul_fu_105_p00;
+assign mul_ln36_fu_68_p0 = mul_ln36_fu_68_p00;
 
-assign mul_fu_105_p00 = filter;
+assign mul_ln36_fu_68_p00 = filter;
 
-assign mul_fu_105_p1 = 10'd196;
+assign mul_ln36_fu_68_p1 = 10'd196;
 
 endmodule //cnn_dense

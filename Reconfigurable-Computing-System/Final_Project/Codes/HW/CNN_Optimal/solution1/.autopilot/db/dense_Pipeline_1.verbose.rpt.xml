@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_Pipeline_1'" level="0">
-<item name = "Date">Thu Jan 23 14:50:57 2025
+<item name = "Date">Thu Jan 23 17:45:41 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -78,8 +78,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="empty_17_fu_58_p2">+, 0, 0, 13, 4, 1</column>
-<column name="exitcond113_fu_52_p2">icmp, 0, 0, 13, 4, 4</column>
+<column name="empty_23_fu_58_p2">+, 0, 0, 13, 4, 1</column>
+<column name="exitcond114_fu_52_p2">icmp, 0, 0, 13, 4, 4</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">

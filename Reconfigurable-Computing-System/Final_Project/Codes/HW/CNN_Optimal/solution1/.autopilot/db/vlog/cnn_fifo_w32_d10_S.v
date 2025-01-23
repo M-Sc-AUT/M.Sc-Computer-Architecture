@@ -26,6 +26,8 @@ module cnn_fifo_w32_d10_S
     input  wire [DATA_WIDTH-1:0] if_din,
     
     // read 
+    output wire [ADDR_WIDTH:0]   if_num_data_valid, // for FRP
+    output wire [ADDR_WIDTH:0]   if_fifo_cap,       // for FRP
 
     output wire                  if_empty_n,
     input  wire                  if_read_ce,
@@ -41,7 +43,8 @@ module cnn_fifo_w32_d10_S
     reg signed [ADDR_WIDTH:0] mOutPtr;
     reg                   empty_n = 1'b0;
     reg                   full_n = 1'b1; 
-    // has num_data_valid?  no 
+    // has num_data_valid? 
+    reg  [ADDR_WIDTH:0]   num_data_valid; //yes 
 //------------------------Instantiation------------------
     cnn_fifo_w32_d10_S_ShiftReg 
     #(  .DATA_WIDTH (DATA_WIDTH),
@@ -58,6 +61,8 @@ module cnn_fifo_w32_d10_S
 
 //------------------------Body---------------------------
     // num_data_valid 
+    assign if_num_data_valid = num_data_valid;
+    assign if_fifo_cap       = DEPTH;
 
     // almost full/empty 
 
@@ -110,6 +115,14 @@ module cnn_fifo_w32_d10_S
     // prog_empty_n 
 
     // num_data_valid 
+    always @(posedge clk) begin
+        if (reset)
+            num_data_valid <= {ADDR_WIDTH+1{1'b0}};
+        else if ( push & ~pop)
+            num_data_valid <= num_data_valid + 1;
+        else if (~push & pop)
+            num_data_valid <= num_data_valid - 1;
+    end // 
 
 endmodule  
 

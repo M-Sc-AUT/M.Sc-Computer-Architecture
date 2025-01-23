@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense'" level="0">
-<item name = "Date">Thu Jan 23 14:50:58 2025
+<item name = "Date">Thu Jan 23 17:45:41 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.209 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.670 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2002, 2002, 20.020 us, 20.020 us, 2002, 2002, no</column>
+<column name="">2003, 2003, 20.030 us, 20.030 us, 2003, 2003, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_Pipeline_1_fu_60">dense_Pipeline_1, 12, 12, 0.120 us, 0.120 us, 12, 12, no</column>
-<column name="grp_dense_Pipeline_dense_for_flat_fu_66">dense_Pipeline_dense_for_flat, 1972, 1972, 19.720 us, 19.720 us, 1972, 1972, no</column>
-<column name="grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94">dense_Pipeline_VITIS_LOOP_50_2, 12, 12, 0.120 us, 0.120 us, 12, 12, no</column>
+<column name="grp_dense_Pipeline_1_fu_42">dense_Pipeline_1, 12, 12, 0.120 us, 0.120 us, 12, 12, no</column>
+<column name="grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48">dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1, 1973, 1973, 19.730 us, 19.730 us, 1973, 1973, no</column>
+<column name="grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58">dense_Pipeline_VITIS_LOOP_49_2, 12, 12, 0.120 us, 0.120 us, 12, 12, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,22 +52,22 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">20, 5, 1281, 1351, -</column>
+<column name="Instance">16, 5, 782, 1193, -</column>
 <column name="Memory">0, -, 64, 5, 0</column>
 <column name="Multiplexer">-, -, -, 137, -</column>
 <column name="Register">-, -, 20, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
-<specialColumn name="Utilization (%)">16, 6, 3, 8, 0</specialColumn>
+<specialColumn name="Utilization (%)">13, 6, 2, 7, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_dense_Pipeline_1_fu_60">dense_Pipeline_1, 0, 0, 6, 53, 0</column>
-<column name="grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94">dense_Pipeline_VITIS_LOOP_50_2, 0, 0, 7, 75, 0</column>
-<column name="grp_dense_Pipeline_dense_for_flat_fu_66">dense_Pipeline_dense_for_flat, 20, 5, 1268, 1172, 0</column>
-<column name="mul_2ns_9ns_10_1_1_U429">mul_2ns_9ns_10_1_1, 0, 0, 0, 51, 0</column>
+<column name="grp_dense_Pipeline_1_fu_42">dense_Pipeline_1, 0, 0, 6, 53, 0</column>
+<column name="grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58">dense_Pipeline_VITIS_LOOP_49_2, 0, 0, 7, 75, 0</column>
+<column name="grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48">dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1, 16, 5, 769, 1014, 0</column>
+<column name="mul_2ns_9ns_10_1_1_U548">mul_2ns_9ns_10_1_1, 0, 0, 0, 51, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -102,10 +102,10 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">7, 0, 7, 0</column>
-<column name="grp_dense_Pipeline_1_fu_60_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_dense_Pipeline_VITIS_LOOP_50_2_fu_94_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_dense_Pipeline_dense_for_flat_fu_66_ap_start_reg">1, 0, 1, 0</column>
-<column name="mul_reg_111">10, 0, 10, 0</column>
+<column name="grp_dense_Pipeline_1_fu_42_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_dense_Pipeline_VITIS_LOOP_49_2_fu_58_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_fu_48_ap_start_reg">1, 0, 1, 0</column>
+<column name="mul_ln36_reg_80">10, 0, 10, 0</column>
 </table>
 </item>
 </section>
@@ -122,10 +122,14 @@
 <column name="ap_idle">out, 1, ap_ctrl_hs, dense, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, dense, return value</column>
 <column name="flat_to_dense_streams_0_dout">in, 32, ap_fifo, flat_to_dense_streams_0, pointer</column>
+<column name="flat_to_dense_streams_0_num_data_valid">in, 9, ap_fifo, flat_to_dense_streams_0, pointer</column>
+<column name="flat_to_dense_streams_0_fifo_cap">in, 9, ap_fifo, flat_to_dense_streams_0, pointer</column>
 <column name="flat_to_dense_streams_0_empty_n">in, 1, ap_fifo, flat_to_dense_streams_0, pointer</column>
 <column name="flat_to_dense_streams_0_read">out, 1, ap_fifo, flat_to_dense_streams_0, pointer</column>
 <column name="filter">in, 2, ap_none, filter, scalar</column>
 <column name="dense_to_softmax_streams_0_din">out, 32, ap_fifo, dense_to_softmax_streams_0, pointer</column>
+<column name="dense_to_softmax_streams_0_num_data_valid">in, 5, ap_fifo, dense_to_softmax_streams_0, pointer</column>
+<column name="dense_to_softmax_streams_0_fifo_cap">in, 5, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 <column name="dense_to_softmax_streams_0_full_n">in, 1, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 <column name="dense_to_softmax_streams_0_write">out, 1, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 </table>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_Pipeline_pad_for_rows_pad_for_cols'" level="0">
-<item name = "Date">Thu Jan 23 14:50:49 2025
+<item name = "Date">Thu Jan 23 17:45:29 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -53,7 +53,7 @@
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 72, -</column>
-<column name="Register">-, -, 208, 32, -</column>
+<column name="Register">-, -, 271, 64, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
 </table>
@@ -62,6 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="fdiv_32ns_32ns_32_16_no_dsp_1_U2">fdiv_32ns_32ns_32_16_no_dsp_1, 0, 0, 0, 0, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -78,19 +79,19 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln11_1_fu_121_p2">+, 0, 0, 13, 10, 1</column>
-<column name="add_ln11_fu_133_p2">+, 0, 0, 13, 5, 1</column>
-<column name="add_ln13_fu_161_p2">+, 0, 0, 13, 5, 1</column>
-<column name="add_ln17_1_fu_235_p2">+, 0, 0, 11, 11, 11</column>
-<column name="add_ln17_2_fu_244_p2">+, 0, 0, 10, 10, 10</column>
-<column name="add_ln17_3_fu_264_p2">+, 0, 0, 11, 11, 11</column>
-<column name="add_ln17_fu_255_p2">+, 0, 0, 13, 5, 2</column>
-<column name="empty_fu_206_p2">+, 0, 0, 13, 5, 2</column>
-<column name="sub_ln17_fu_200_p2">-, 0, 0, 10, 10, 10</column>
-<column name="icmp_ln11_fu_115_p2">icmp, 0, 0, 13, 10, 9</column>
-<column name="icmp_ln13_fu_139_p2">icmp, 0, 0, 13, 5, 4</column>
-<column name="select_ln11_1_fu_153_p3">select, 0, 0, 5, 1, 5</column>
-<column name="select_ln11_fu_145_p3">select, 0, 0, 5, 1, 1</column>
+<column name="add_ln10_1_fu_121_p2">+, 0, 0, 13, 10, 1</column>
+<column name="add_ln10_fu_133_p2">+, 0, 0, 13, 5, 1</column>
+<column name="add_ln12_fu_161_p2">+, 0, 0, 13, 5, 1</column>
+<column name="add_ln16_1_fu_256_p2">+, 0, 0, 11, 11, 11</column>
+<column name="add_ln16_2_fu_209_p2">+, 0, 0, 10, 10, 10</column>
+<column name="add_ln16_3_fu_265_p2">+, 0, 0, 11, 11, 11</column>
+<column name="add_ln16_fu_229_p2">+, 0, 0, 13, 5, 2</column>
+<column name="empty_fu_224_p2">+, 0, 0, 13, 5, 2</column>
+<column name="sub_ln16_fu_200_p2">-, 0, 0, 10, 10, 10</column>
+<column name="icmp_ln10_fu_115_p2">icmp, 0, 0, 13, 10, 9</column>
+<column name="icmp_ln12_fu_139_p2">icmp, 0, 0, 13, 5, 4</column>
+<column name="select_ln10_1_fu_153_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln10_fu_145_p3">select, 0, 0, 5, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -108,7 +109,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln17_3_reg_321">11, 0, 11, 0</column>
+<column name="add_ln16_reg_340">5, 0, 5, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -149,13 +150,15 @@
 <column name="ap_loop_exit_ready_pp0_iter8_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter9_reg">1, 0, 1, 0</column>
 <column name="c_fu_54">5, 0, 5, 0</column>
-<column name="conv7_i_reg_336">32, 0, 32, 0</column>
-<column name="img_in_load_reg_326">32, 0, 32, 0</column>
+<column name="conv7_i_reg_335">32, 0, 32, 0</column>
+<column name="empty_reg_329">5, 0, 5, 0</column>
+<column name="img_in_load_reg_319">32, 0, 32, 0</column>
 <column name="indvar_flatten_fu_62">10, 0, 10, 0</column>
 <column name="r_fu_58">5, 0, 5, 0</column>
-<column name="select_ln11_1_reg_309">5, 0, 5, 0</column>
-<column name="select_ln11_reg_303">5, 0, 5, 0</column>
-<column name="add_ln17_3_reg_321">64, 32, 11, 0</column>
+<column name="select_ln10_1_reg_307">5, 0, 5, 0</column>
+<column name="select_ln10_reg_301">5, 0, 5, 0</column>
+<column name="select_ln10_1_reg_307">64, 32, 5, 0</column>
+<column name="select_ln10_reg_301">64, 32, 5, 0</column>
 </table>
 </item>
 </section>
@@ -171,10 +174,6 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, cnn_Pipeline_pad_for_rows_pad_for_cols, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, cnn_Pipeline_pad_for_rows_pad_for_cols, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, cnn_Pipeline_pad_for_rows_pad_for_cols, return value</column>
-<column name="grp_fu_409_p_din0">out, 32, ap_ctrl_hs, cnn_Pipeline_pad_for_rows_pad_for_cols, return value</column>
-<column name="grp_fu_409_p_din1">out, 32, ap_ctrl_hs, cnn_Pipeline_pad_for_rows_pad_for_cols, return value</column>
-<column name="grp_fu_409_p_dout0">in, 32, ap_ctrl_hs, cnn_Pipeline_pad_for_rows_pad_for_cols, return value</column>
-<column name="grp_fu_409_p_ce">out, 1, ap_ctrl_hs, cnn_Pipeline_pad_for_rows_pad_for_cols, return value</column>
 <column name="img_in_address0">out, 10, ap_memory, img_in, array</column>
 <column name="img_in_ce0">out, 1, ap_memory, img_in, array</column>
 <column name="img_in_q0">in, 32, ap_memory, img_in, array</column>

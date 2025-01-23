@@ -1,7 +1,39 @@
 --- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/flat.cpp, Line: 5, Column: 0 }
+Function:        _Z10flatteningRN3hls6streamIfLi0EEES2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        flat_for_cols
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/flat.cpp:8:18'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          flattening
+  - String:          ''' completely with a factor of '
+  - Factor:          '14'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 5, Column: 0 }
+Function:        _Z11max_poolingRN3hls6streamIfLi0EEES2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        pool_for_pc
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:17:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          max_pooling
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 14, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Inlining function '''
@@ -9,97 +41,27 @@ Args:
     DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 6, Column: 0 }
   - String:          ''' into '''
   - Caller:          'convolution(float (*) [34], int, hls::stream<float, 0>&)'
-    DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 14, Column: 0 }
+    DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: CNN_Optimal/src/flat.cpp, Line: 17, Column: 0 }
-Function:        _Z16flattening_layerPN3hls6streamIfLi0EEES2_
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'flattening(hls::stream<float, 0>&, hls::stream<float, 0>&)'
-    DebugLoc:        { File: CNN_Optimal/src/flat.cpp, Line: 4, Column: 0 }
+  - Callee:          'max_pooling(hls::stream<float, 0>&, hls::stream<float, 0>&)'
+    DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 5, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'flattening_layer(hls::stream<float, 0>*, hls::stream<float, 0>*)'
-    DebugLoc:        { File: CNN_Optimal/src/flat.cpp, Line: 17, Column: 0 }
+  - Caller:          'max_pooling_layer(hls::stream<float, 0>*, hls::stream<float, 0>*)'
+    DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'convolutional_layer(float (*) [34], float (*) [34], float (*) [34], float (*) [34], hls::stream<float, 0>*)'
-    DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 61, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)'
-    DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'max_pooling_layer(hls::stream<float, 0>*, hls::stream<float, 0>*)'
-    DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 32, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)'
-    DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'flattening_layer(hls::stream<float, 0>*, hls::stream<float, 0>*)'
-    DebugLoc:        { File: CNN_Optimal/src/flat.cpp, Line: 17, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)'
-    DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'dense_layer(hls::stream<float, 0>*, hls::stream<float, 0>*)'
-    DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 57, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)'
-    DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'dense_layer_soft_max(hls::stream<float, 0>*, float*)'
-    DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 8, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'dataflow_section(float (*) [34], float (*) [34], float (*) [34], float (*) [34], float*)'
-    DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 65, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 64, Column: 0 }
 Function:        _Z3cnnPA28_fPf
 Args:            
   - String:          'Inlining function '''
@@ -107,13 +69,13 @@ Args:
     DebugLoc:        { File: CNN_Optimal/src/utils.cpp, Line: 9, Column: 0 }
   - String:          ''' into '''
   - Caller:          'cnn(float (*) [28], float*)'
-    DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 65, Column: 0 }
+    DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 64, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 27, Column: 3 }
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 27, Column: 2 }
 Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
 Args:            
   - String:          'Applying '
@@ -131,7 +93,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 42, Column: 3 }
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 41, Column: 2 }
 Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
 Args:            
   - String:          'Applying '
@@ -149,7 +111,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 53 }
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 52, Column: 52 }
 Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
 Args:            
   - String:          'Applying '
@@ -167,7 +129,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 57, Column: 26 }
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 56, Column: 25 }
 Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
 Args:            
   - String:          'Applying '
@@ -187,99 +149,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        unknown
-  - String:          '> at '
-  - LoopLoc:         ''
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        dense_for_flat
-  - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/dense.cpp:39:3'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_50_2
-  - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/dense.cpp:50:20'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        pool_for_cols
-  - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:12:5'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        pool_for_cols
-  - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/conv.cpp:30:9'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        flat_for_cols
-  - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/flat.cpp:9:5'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        flat_for_cols
-  - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/flat.cpp:9:5'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        flat_for_cols
-  - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/flat.cpp:9:5'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        flat_for_cols
-  - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/flat.cpp:9:5'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
   - LoopName:        dense_soft_max_for_dense_size
   - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/dense.cpp:13:3'
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:13:33'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -289,7 +161,7 @@ Args:
   - String:          'automatically set the pipeline for Loop< '
   - LoopName:        dense_soft_max_for_digits
   - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/dense.cpp:27:3'
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:25:29'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -307,9 +179,79 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        pad_for_cols
+  - LoopName:        VITIS_LOOP_49_2
   - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/utils.cpp:13:5'
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:49:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        flat_for_rows
+  - String:          '> at '
+  - LoopLoc:         'CNN_Optimal/src/flat.cpp:6:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        pool_for_cols
+  - String:          '> at '
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:12:3'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        pool_for_cols
+  - String:          '> at '
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:12:3'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        pool_for_cols
+  - String:          '> at '
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:12:3'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        pool_for_cols
+  - String:          '> at '
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:12:3'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        pool_for_cols
+  - String:          '> at '
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:28:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         ''
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -319,14 +261,14 @@ Args:
   - String:          'automatically set the pipeline for Loop< '
   - LoopName:        clone_for_cols
   - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/cnn.cpp:88:2'
+  - LoopLoc:         'CNN_Optimal/src/cnn.cpp:86:19'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 18, Column: 5 }
-Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 17, Column: 31 }
+Function:        _Z20dense_layer_soft_maxPN3hls6streamIfLi0EEEPf
 Args:            
   - String:          'Loop '''
   - LoopName:        dense_soft_max_for_filters
@@ -335,18 +277,8 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 43, Column: 22 }
-Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
-Args:            
-  - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_43_1
-  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
-...
---- !Passed
-Pass:            reflow-infer-unroll
-Name:            ImplicitUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 17, Column: 7 }
-Function:        _Z11max_poolingRN3hls6streamIfLi0EEES2_
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 16, Column: 16 }
+Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Loop '''
   - LoopName:        pool_for_pr
@@ -355,17 +287,37 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 19, Column: 9 }
-Function:        _Z11max_poolingRN3hls6streamIfLi0EEES2_
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 16, Column: 16 }
+Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Loop '''
-  - LoopName:        pool_for_pc
+  - LoopName:        pool_for_pr
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 37, Column: 11 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 16, Column: 16 }
+Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        pool_for_pr
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 16, Column: 16 }
+Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        pool_for_pr
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 34, Column: 20 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Loop '''
@@ -375,7 +327,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 40, Column: 13 }
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 36, Column: 21 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Loop '''
@@ -385,93 +337,93 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 19, Column: 0 }
-Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 9, Column: 0 }
+Function:        _Z20dense_layer_soft_maxPN3hls6streamIfLi0EEEPf
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        dense_soft_max_for_filters
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/dense.cpp:18:5'
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:17:31'
   - String:          ') '
   - String:          'in function '''
-  - String:          dataflow_section
+  - String:          dense_layer_soft_max
   - String:          ''' completely with a factor of '
   - Factor:          '4'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
-Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_43_1
-  - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/dense.cpp:43:22'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          dense
-  - String:          ''' completely with a factor of '
-  - Factor:          '10'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 5, Column: 0 }
-Function:        _Z11max_poolingRN3hls6streamIfLi0EEES2_
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        pool_for_pr
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:17:7'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:16'
   - String:          ') '
   - String:          'in function '''
-  - String:          max_pooling
+  - String:          max_pooling_layer
   - String:          ''' completely with a factor of '
   - Factor:          '2'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 5, Column: 0 }
-Function:        _Z11max_poolingRN3hls6streamIfLi0EEES2_
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        pool_for_pc
+  - LoopName:        pool_for_pr
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:19:9'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:16'
   - String:          ') '
   - String:          'in function '''
-  - String:          max_pooling
+  - String:          max_pooling_layer
   - String:          ''' completely with a factor of '
   - Factor:          '2'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 5, Column: 0 }
-Function:        _Z11max_poolingRN3hls6streamIfLi0EEES2_
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        pool_for_pc
+  - LoopName:        pool_for_pr
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:19:9'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:16'
   - String:          ') '
   - String:          'in function '''
-  - String:          max_pooling
+  - String:          max_pooling_layer
   - String:          ''' completely with a factor of '
   - Factor:          '2'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 14, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        pool_for_pr
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          max_pooling_layer
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_rows
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/conv.cpp:37:11'
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:34:20'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -481,13 +433,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 14, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/conv.cpp:40:13'
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -497,13 +449,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 14, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/conv.cpp:40:13'
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -513,13 +465,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 14, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/conv.cpp:40:13'
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -529,13 +481,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 14, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/conv.cpp:40:13'
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -545,13 +497,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 14, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/conv.cpp:40:13'
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -561,13 +513,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 14, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/conv.cpp:40:13'
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -577,13 +529,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 14, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
 Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/conv.cpp:40:13'
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
   - String:          ') '
   - String:          'in function '''
   - String:          convolution
@@ -673,7 +625,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 81, Column: 9 }
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 80, Column: 8 }
 Function:        _Z3cnnPA28_fPf
 Args:            
   - PragmaType:      array_partition
@@ -684,7 +636,7 @@ Args:
   - String:          ' '
   - PragmaFunction:  cnn
   - String:          ' '
-  - varLoc:          'CNN_Optimal/src/cnn.cpp:81:9'
+  - varLoc:          'CNN_Optimal/src/cnn.cpp:80:8'
   - String:          ' '
   - VarName:         pad_img3
   - String:          ' '
@@ -692,7 +644,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 81, Column: 9 }
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 80, Column: 8 }
 Function:        _Z3cnnPA28_fPf
 Args:            
   - String:          'Inferring pragma '''
@@ -713,7 +665,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 81, Column: 9 }
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 80, Column: 8 }
 Function:        _Z3cnnPA28_fPf
 Args:            
   - PragmaType:      array_partition
@@ -724,7 +676,7 @@ Args:
   - String:          ' '
   - PragmaFunction:  cnn
   - String:          ' '
-  - varLoc:          'CNN_Optimal/src/cnn.cpp:81:9'
+  - varLoc:          'CNN_Optimal/src/cnn.cpp:80:8'
   - String:          ' '
   - VarName:         pad_img3
   - String:          ' '
@@ -732,7 +684,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 81, Column: 9 }
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 80, Column: 8 }
 Function:        _Z3cnnPA28_fPf
 Args:            
   - String:          'Inferring pragma '''
@@ -778,7 +730,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 81, Column: 9 }
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 80, Column: 8 }
 Function:        _Z3cnnPA28_fPf
 Args:            
   - String:          'Applying '

@@ -7,2675 +7,2962 @@
 `timescale 1 ns / 1 ps 
 
 module cnn_dataflow_section (
+        pad_img0_address0,
+        pad_img0_ce0,
+        pad_img0_d0,
+        pad_img0_q0,
+        pad_img0_we0,
+        pad_img0_address1,
+        pad_img0_ce1,
+        pad_img0_d1,
+        pad_img0_q1,
+        pad_img0_we1,
+        pad_img1_address0,
+        pad_img1_ce0,
+        pad_img1_d0,
+        pad_img1_q0,
+        pad_img1_we0,
+        pad_img1_address1,
+        pad_img1_ce1,
+        pad_img1_d1,
+        pad_img1_q1,
+        pad_img1_we1,
+        pad_img2_address0,
+        pad_img2_ce0,
+        pad_img2_d0,
+        pad_img2_q0,
+        pad_img2_we0,
+        pad_img2_address1,
+        pad_img2_ce1,
+        pad_img2_d1,
+        pad_img2_q1,
+        pad_img2_we1,
+        pad_img3_0_0_address0,
+        pad_img3_0_0_ce0,
+        pad_img3_0_0_d0,
+        pad_img3_0_0_q0,
+        pad_img3_0_0_we0,
+        pad_img3_0_0_address1,
+        pad_img3_0_0_ce1,
+        pad_img3_0_0_d1,
+        pad_img3_0_0_q1,
+        pad_img3_0_0_we1,
+        pad_img3_0_1_address0,
+        pad_img3_0_1_ce0,
+        pad_img3_0_1_d0,
+        pad_img3_0_1_q0,
+        pad_img3_0_1_we0,
+        pad_img3_0_1_address1,
+        pad_img3_0_1_ce1,
+        pad_img3_0_1_d1,
+        pad_img3_0_1_q1,
+        pad_img3_0_1_we1,
+        pad_img3_0_2_address0,
+        pad_img3_0_2_ce0,
+        pad_img3_0_2_d0,
+        pad_img3_0_2_q0,
+        pad_img3_0_2_we0,
+        pad_img3_0_2_address1,
+        pad_img3_0_2_ce1,
+        pad_img3_0_2_d1,
+        pad_img3_0_2_q1,
+        pad_img3_0_2_we1,
+        pad_img3_0_3_address0,
+        pad_img3_0_3_ce0,
+        pad_img3_0_3_d0,
+        pad_img3_0_3_q0,
+        pad_img3_0_3_we0,
+        pad_img3_0_3_address1,
+        pad_img3_0_3_ce1,
+        pad_img3_0_3_d1,
+        pad_img3_0_3_q1,
+        pad_img3_0_3_we1,
+        pad_img3_0_4_address0,
+        pad_img3_0_4_ce0,
+        pad_img3_0_4_d0,
+        pad_img3_0_4_q0,
+        pad_img3_0_4_we0,
+        pad_img3_0_4_address1,
+        pad_img3_0_4_ce1,
+        pad_img3_0_4_d1,
+        pad_img3_0_4_q1,
+        pad_img3_0_4_we1,
+        pad_img3_0_5_address0,
+        pad_img3_0_5_ce0,
+        pad_img3_0_5_d0,
+        pad_img3_0_5_q0,
+        pad_img3_0_5_we0,
+        pad_img3_0_5_address1,
+        pad_img3_0_5_ce1,
+        pad_img3_0_5_d1,
+        pad_img3_0_5_q1,
+        pad_img3_0_5_we1,
+        pad_img3_0_6_address0,
+        pad_img3_0_6_ce0,
+        pad_img3_0_6_d0,
+        pad_img3_0_6_q0,
+        pad_img3_0_6_we0,
+        pad_img3_0_6_address1,
+        pad_img3_0_6_ce1,
+        pad_img3_0_6_d1,
+        pad_img3_0_6_q1,
+        pad_img3_0_6_we1,
+        pad_img3_1_0_address0,
+        pad_img3_1_0_ce0,
+        pad_img3_1_0_d0,
+        pad_img3_1_0_q0,
+        pad_img3_1_0_we0,
+        pad_img3_1_0_address1,
+        pad_img3_1_0_ce1,
+        pad_img3_1_0_d1,
+        pad_img3_1_0_q1,
+        pad_img3_1_0_we1,
+        pad_img3_1_1_address0,
+        pad_img3_1_1_ce0,
+        pad_img3_1_1_d0,
+        pad_img3_1_1_q0,
+        pad_img3_1_1_we0,
+        pad_img3_1_1_address1,
+        pad_img3_1_1_ce1,
+        pad_img3_1_1_d1,
+        pad_img3_1_1_q1,
+        pad_img3_1_1_we1,
+        pad_img3_1_2_address0,
+        pad_img3_1_2_ce0,
+        pad_img3_1_2_d0,
+        pad_img3_1_2_q0,
+        pad_img3_1_2_we0,
+        pad_img3_1_2_address1,
+        pad_img3_1_2_ce1,
+        pad_img3_1_2_d1,
+        pad_img3_1_2_q1,
+        pad_img3_1_2_we1,
+        pad_img3_1_3_address0,
+        pad_img3_1_3_ce0,
+        pad_img3_1_3_d0,
+        pad_img3_1_3_q0,
+        pad_img3_1_3_we0,
+        pad_img3_1_3_address1,
+        pad_img3_1_3_ce1,
+        pad_img3_1_3_d1,
+        pad_img3_1_3_q1,
+        pad_img3_1_3_we1,
+        pad_img3_1_4_address0,
+        pad_img3_1_4_ce0,
+        pad_img3_1_4_d0,
+        pad_img3_1_4_q0,
+        pad_img3_1_4_we0,
+        pad_img3_1_4_address1,
+        pad_img3_1_4_ce1,
+        pad_img3_1_4_d1,
+        pad_img3_1_4_q1,
+        pad_img3_1_4_we1,
+        pad_img3_1_5_address0,
+        pad_img3_1_5_ce0,
+        pad_img3_1_5_d0,
+        pad_img3_1_5_q0,
+        pad_img3_1_5_we0,
+        pad_img3_1_5_address1,
+        pad_img3_1_5_ce1,
+        pad_img3_1_5_d1,
+        pad_img3_1_5_q1,
+        pad_img3_1_5_we1,
+        pad_img3_1_6_address0,
+        pad_img3_1_6_ce0,
+        pad_img3_1_6_d0,
+        pad_img3_1_6_q0,
+        pad_img3_1_6_we0,
+        pad_img3_1_6_address1,
+        pad_img3_1_6_ce1,
+        pad_img3_1_6_d1,
+        pad_img3_1_6_q1,
+        pad_img3_1_6_we1,
+        pad_img3_2_0_address0,
+        pad_img3_2_0_ce0,
+        pad_img3_2_0_d0,
+        pad_img3_2_0_q0,
+        pad_img3_2_0_we0,
+        pad_img3_2_0_address1,
+        pad_img3_2_0_ce1,
+        pad_img3_2_0_d1,
+        pad_img3_2_0_q1,
+        pad_img3_2_0_we1,
+        pad_img3_2_1_address0,
+        pad_img3_2_1_ce0,
+        pad_img3_2_1_d0,
+        pad_img3_2_1_q0,
+        pad_img3_2_1_we0,
+        pad_img3_2_1_address1,
+        pad_img3_2_1_ce1,
+        pad_img3_2_1_d1,
+        pad_img3_2_1_q1,
+        pad_img3_2_1_we1,
+        pad_img3_2_2_address0,
+        pad_img3_2_2_ce0,
+        pad_img3_2_2_d0,
+        pad_img3_2_2_q0,
+        pad_img3_2_2_we0,
+        pad_img3_2_2_address1,
+        pad_img3_2_2_ce1,
+        pad_img3_2_2_d1,
+        pad_img3_2_2_q1,
+        pad_img3_2_2_we1,
+        pad_img3_2_3_address0,
+        pad_img3_2_3_ce0,
+        pad_img3_2_3_d0,
+        pad_img3_2_3_q0,
+        pad_img3_2_3_we0,
+        pad_img3_2_3_address1,
+        pad_img3_2_3_ce1,
+        pad_img3_2_3_d1,
+        pad_img3_2_3_q1,
+        pad_img3_2_3_we1,
+        pad_img3_2_4_address0,
+        pad_img3_2_4_ce0,
+        pad_img3_2_4_d0,
+        pad_img3_2_4_q0,
+        pad_img3_2_4_we0,
+        pad_img3_2_4_address1,
+        pad_img3_2_4_ce1,
+        pad_img3_2_4_d1,
+        pad_img3_2_4_q1,
+        pad_img3_2_4_we1,
+        pad_img3_2_5_address0,
+        pad_img3_2_5_ce0,
+        pad_img3_2_5_d0,
+        pad_img3_2_5_q0,
+        pad_img3_2_5_we0,
+        pad_img3_2_5_address1,
+        pad_img3_2_5_ce1,
+        pad_img3_2_5_d1,
+        pad_img3_2_5_q1,
+        pad_img3_2_5_we1,
+        pad_img3_2_6_address0,
+        pad_img3_2_6_ce0,
+        pad_img3_2_6_d0,
+        pad_img3_2_6_q0,
+        pad_img3_2_6_we0,
+        pad_img3_2_6_address1,
+        pad_img3_2_6_ce1,
+        pad_img3_2_6_d1,
+        pad_img3_2_6_q1,
+        pad_img3_2_6_we1,
+        pad_img3_3_0_address0,
+        pad_img3_3_0_ce0,
+        pad_img3_3_0_d0,
+        pad_img3_3_0_q0,
+        pad_img3_3_0_we0,
+        pad_img3_3_0_address1,
+        pad_img3_3_0_ce1,
+        pad_img3_3_0_d1,
+        pad_img3_3_0_q1,
+        pad_img3_3_0_we1,
+        pad_img3_3_1_address0,
+        pad_img3_3_1_ce0,
+        pad_img3_3_1_d0,
+        pad_img3_3_1_q0,
+        pad_img3_3_1_we0,
+        pad_img3_3_1_address1,
+        pad_img3_3_1_ce1,
+        pad_img3_3_1_d1,
+        pad_img3_3_1_q1,
+        pad_img3_3_1_we1,
+        pad_img3_3_2_address0,
+        pad_img3_3_2_ce0,
+        pad_img3_3_2_d0,
+        pad_img3_3_2_q0,
+        pad_img3_3_2_we0,
+        pad_img3_3_2_address1,
+        pad_img3_3_2_ce1,
+        pad_img3_3_2_d1,
+        pad_img3_3_2_q1,
+        pad_img3_3_2_we1,
+        pad_img3_3_3_address0,
+        pad_img3_3_3_ce0,
+        pad_img3_3_3_d0,
+        pad_img3_3_3_q0,
+        pad_img3_3_3_we0,
+        pad_img3_3_3_address1,
+        pad_img3_3_3_ce1,
+        pad_img3_3_3_d1,
+        pad_img3_3_3_q1,
+        pad_img3_3_3_we1,
+        pad_img3_3_4_address0,
+        pad_img3_3_4_ce0,
+        pad_img3_3_4_d0,
+        pad_img3_3_4_q0,
+        pad_img3_3_4_we0,
+        pad_img3_3_4_address1,
+        pad_img3_3_4_ce1,
+        pad_img3_3_4_d1,
+        pad_img3_3_4_q1,
+        pad_img3_3_4_we1,
+        pad_img3_3_5_address0,
+        pad_img3_3_5_ce0,
+        pad_img3_3_5_d0,
+        pad_img3_3_5_q0,
+        pad_img3_3_5_we0,
+        pad_img3_3_5_address1,
+        pad_img3_3_5_ce1,
+        pad_img3_3_5_d1,
+        pad_img3_3_5_q1,
+        pad_img3_3_5_we1,
+        pad_img3_3_6_address0,
+        pad_img3_3_6_ce0,
+        pad_img3_3_6_d0,
+        pad_img3_3_6_q0,
+        pad_img3_3_6_we0,
+        pad_img3_3_6_address1,
+        pad_img3_3_6_ce1,
+        pad_img3_3_6_d1,
+        pad_img3_3_6_q1,
+        pad_img3_3_6_we1,
+        pad_img3_4_0_address0,
+        pad_img3_4_0_ce0,
+        pad_img3_4_0_d0,
+        pad_img3_4_0_q0,
+        pad_img3_4_0_we0,
+        pad_img3_4_0_address1,
+        pad_img3_4_0_ce1,
+        pad_img3_4_0_d1,
+        pad_img3_4_0_q1,
+        pad_img3_4_0_we1,
+        pad_img3_4_1_address0,
+        pad_img3_4_1_ce0,
+        pad_img3_4_1_d0,
+        pad_img3_4_1_q0,
+        pad_img3_4_1_we0,
+        pad_img3_4_1_address1,
+        pad_img3_4_1_ce1,
+        pad_img3_4_1_d1,
+        pad_img3_4_1_q1,
+        pad_img3_4_1_we1,
+        pad_img3_4_2_address0,
+        pad_img3_4_2_ce0,
+        pad_img3_4_2_d0,
+        pad_img3_4_2_q0,
+        pad_img3_4_2_we0,
+        pad_img3_4_2_address1,
+        pad_img3_4_2_ce1,
+        pad_img3_4_2_d1,
+        pad_img3_4_2_q1,
+        pad_img3_4_2_we1,
+        pad_img3_4_3_address0,
+        pad_img3_4_3_ce0,
+        pad_img3_4_3_d0,
+        pad_img3_4_3_q0,
+        pad_img3_4_3_we0,
+        pad_img3_4_3_address1,
+        pad_img3_4_3_ce1,
+        pad_img3_4_3_d1,
+        pad_img3_4_3_q1,
+        pad_img3_4_3_we1,
+        pad_img3_4_4_address0,
+        pad_img3_4_4_ce0,
+        pad_img3_4_4_d0,
+        pad_img3_4_4_q0,
+        pad_img3_4_4_we0,
+        pad_img3_4_4_address1,
+        pad_img3_4_4_ce1,
+        pad_img3_4_4_d1,
+        pad_img3_4_4_q1,
+        pad_img3_4_4_we1,
+        pad_img3_4_5_address0,
+        pad_img3_4_5_ce0,
+        pad_img3_4_5_d0,
+        pad_img3_4_5_q0,
+        pad_img3_4_5_we0,
+        pad_img3_4_5_address1,
+        pad_img3_4_5_ce1,
+        pad_img3_4_5_d1,
+        pad_img3_4_5_q1,
+        pad_img3_4_5_we1,
+        pad_img3_4_6_address0,
+        pad_img3_4_6_ce0,
+        pad_img3_4_6_d0,
+        pad_img3_4_6_q0,
+        pad_img3_4_6_we0,
+        pad_img3_4_6_address1,
+        pad_img3_4_6_ce1,
+        pad_img3_4_6_d1,
+        pad_img3_4_6_q1,
+        pad_img3_4_6_we1,
+        pad_img3_5_0_address0,
+        pad_img3_5_0_ce0,
+        pad_img3_5_0_d0,
+        pad_img3_5_0_q0,
+        pad_img3_5_0_we0,
+        pad_img3_5_0_address1,
+        pad_img3_5_0_ce1,
+        pad_img3_5_0_d1,
+        pad_img3_5_0_q1,
+        pad_img3_5_0_we1,
+        pad_img3_5_1_address0,
+        pad_img3_5_1_ce0,
+        pad_img3_5_1_d0,
+        pad_img3_5_1_q0,
+        pad_img3_5_1_we0,
+        pad_img3_5_1_address1,
+        pad_img3_5_1_ce1,
+        pad_img3_5_1_d1,
+        pad_img3_5_1_q1,
+        pad_img3_5_1_we1,
+        pad_img3_5_2_address0,
+        pad_img3_5_2_ce0,
+        pad_img3_5_2_d0,
+        pad_img3_5_2_q0,
+        pad_img3_5_2_we0,
+        pad_img3_5_2_address1,
+        pad_img3_5_2_ce1,
+        pad_img3_5_2_d1,
+        pad_img3_5_2_q1,
+        pad_img3_5_2_we1,
+        pad_img3_5_3_address0,
+        pad_img3_5_3_ce0,
+        pad_img3_5_3_d0,
+        pad_img3_5_3_q0,
+        pad_img3_5_3_we0,
+        pad_img3_5_3_address1,
+        pad_img3_5_3_ce1,
+        pad_img3_5_3_d1,
+        pad_img3_5_3_q1,
+        pad_img3_5_3_we1,
+        pad_img3_5_4_address0,
+        pad_img3_5_4_ce0,
+        pad_img3_5_4_d0,
+        pad_img3_5_4_q0,
+        pad_img3_5_4_we0,
+        pad_img3_5_4_address1,
+        pad_img3_5_4_ce1,
+        pad_img3_5_4_d1,
+        pad_img3_5_4_q1,
+        pad_img3_5_4_we1,
+        pad_img3_5_5_address0,
+        pad_img3_5_5_ce0,
+        pad_img3_5_5_d0,
+        pad_img3_5_5_q0,
+        pad_img3_5_5_we0,
+        pad_img3_5_5_address1,
+        pad_img3_5_5_ce1,
+        pad_img3_5_5_d1,
+        pad_img3_5_5_q1,
+        pad_img3_5_5_we1,
+        pad_img3_5_6_address0,
+        pad_img3_5_6_ce0,
+        pad_img3_5_6_d0,
+        pad_img3_5_6_q0,
+        pad_img3_5_6_we0,
+        pad_img3_5_6_address1,
+        pad_img3_5_6_ce1,
+        pad_img3_5_6_d1,
+        pad_img3_5_6_q1,
+        pad_img3_5_6_we1,
+        pad_img3_6_0_address0,
+        pad_img3_6_0_ce0,
+        pad_img3_6_0_d0,
+        pad_img3_6_0_q0,
+        pad_img3_6_0_we0,
+        pad_img3_6_0_address1,
+        pad_img3_6_0_ce1,
+        pad_img3_6_0_d1,
+        pad_img3_6_0_q1,
+        pad_img3_6_0_we1,
+        pad_img3_6_1_address0,
+        pad_img3_6_1_ce0,
+        pad_img3_6_1_d0,
+        pad_img3_6_1_q0,
+        pad_img3_6_1_we0,
+        pad_img3_6_1_address1,
+        pad_img3_6_1_ce1,
+        pad_img3_6_1_d1,
+        pad_img3_6_1_q1,
+        pad_img3_6_1_we1,
+        pad_img3_6_2_address0,
+        pad_img3_6_2_ce0,
+        pad_img3_6_2_d0,
+        pad_img3_6_2_q0,
+        pad_img3_6_2_we0,
+        pad_img3_6_2_address1,
+        pad_img3_6_2_ce1,
+        pad_img3_6_2_d1,
+        pad_img3_6_2_q1,
+        pad_img3_6_2_we1,
+        pad_img3_6_3_address0,
+        pad_img3_6_3_ce0,
+        pad_img3_6_3_d0,
+        pad_img3_6_3_q0,
+        pad_img3_6_3_we0,
+        pad_img3_6_3_address1,
+        pad_img3_6_3_ce1,
+        pad_img3_6_3_d1,
+        pad_img3_6_3_q1,
+        pad_img3_6_3_we1,
+        pad_img3_6_4_address0,
+        pad_img3_6_4_ce0,
+        pad_img3_6_4_d0,
+        pad_img3_6_4_q0,
+        pad_img3_6_4_we0,
+        pad_img3_6_4_address1,
+        pad_img3_6_4_ce1,
+        pad_img3_6_4_d1,
+        pad_img3_6_4_q1,
+        pad_img3_6_4_we1,
+        pad_img3_6_5_address0,
+        pad_img3_6_5_ce0,
+        pad_img3_6_5_d0,
+        pad_img3_6_5_q0,
+        pad_img3_6_5_we0,
+        pad_img3_6_5_address1,
+        pad_img3_6_5_ce1,
+        pad_img3_6_5_d1,
+        pad_img3_6_5_q1,
+        pad_img3_6_5_we1,
+        pad_img3_6_6_address0,
+        pad_img3_6_6_ce0,
+        pad_img3_6_6_d0,
+        pad_img3_6_6_q0,
+        pad_img3_6_6_we0,
+        pad_img3_6_6_address1,
+        pad_img3_6_6_ce1,
+        pad_img3_6_6_d1,
+        pad_img3_6_6_q1,
+        pad_img3_6_6_we1,
+        prediction_address0,
+        prediction_ce0,
+        prediction_d0,
+        prediction_q0,
+        prediction_we0,
+        prediction_address1,
+        prediction_ce1,
+        prediction_d1,
+        prediction_q1,
+        prediction_we1,
         ap_clk,
         ap_rst,
         ap_start,
         ap_done,
-        ap_idle,
         ap_ready,
-        pad_img0_address0,
-        pad_img0_ce0,
-        pad_img0_q0,
-        pad_img0_address1,
-        pad_img0_ce1,
-        pad_img0_q1,
-        pad_img1_address0,
-        pad_img1_ce0,
-        pad_img1_q0,
-        pad_img1_address1,
-        pad_img1_ce1,
-        pad_img1_q1,
-        pad_img2_address0,
-        pad_img2_ce0,
-        pad_img2_q0,
-        pad_img2_address1,
-        pad_img2_ce1,
-        pad_img2_q1,
-        pad_img3_0_0_address0,
-        pad_img3_0_0_ce0,
-        pad_img3_0_0_q0,
-        pad_img3_0_1_address0,
-        pad_img3_0_1_ce0,
-        pad_img3_0_1_q0,
-        pad_img3_0_2_address0,
-        pad_img3_0_2_ce0,
-        pad_img3_0_2_q0,
-        pad_img3_0_3_address0,
-        pad_img3_0_3_ce0,
-        pad_img3_0_3_q0,
-        pad_img3_0_4_address0,
-        pad_img3_0_4_ce0,
-        pad_img3_0_4_q0,
-        pad_img3_0_5_address0,
-        pad_img3_0_5_ce0,
-        pad_img3_0_5_q0,
-        pad_img3_0_6_address0,
-        pad_img3_0_6_ce0,
-        pad_img3_0_6_q0,
-        pad_img3_1_0_address0,
-        pad_img3_1_0_ce0,
-        pad_img3_1_0_q0,
-        pad_img3_1_1_address0,
-        pad_img3_1_1_ce0,
-        pad_img3_1_1_q0,
-        pad_img3_1_2_address0,
-        pad_img3_1_2_ce0,
-        pad_img3_1_2_q0,
-        pad_img3_1_3_address0,
-        pad_img3_1_3_ce0,
-        pad_img3_1_3_q0,
-        pad_img3_1_4_address0,
-        pad_img3_1_4_ce0,
-        pad_img3_1_4_q0,
-        pad_img3_1_5_address0,
-        pad_img3_1_5_ce0,
-        pad_img3_1_5_q0,
-        pad_img3_1_6_address0,
-        pad_img3_1_6_ce0,
-        pad_img3_1_6_q0,
-        pad_img3_2_0_address0,
-        pad_img3_2_0_ce0,
-        pad_img3_2_0_q0,
-        pad_img3_2_1_address0,
-        pad_img3_2_1_ce0,
-        pad_img3_2_1_q0,
-        pad_img3_2_2_address0,
-        pad_img3_2_2_ce0,
-        pad_img3_2_2_q0,
-        pad_img3_2_3_address0,
-        pad_img3_2_3_ce0,
-        pad_img3_2_3_q0,
-        pad_img3_2_4_address0,
-        pad_img3_2_4_ce0,
-        pad_img3_2_4_q0,
-        pad_img3_2_5_address0,
-        pad_img3_2_5_ce0,
-        pad_img3_2_5_q0,
-        pad_img3_2_6_address0,
-        pad_img3_2_6_ce0,
-        pad_img3_2_6_q0,
-        pad_img3_3_0_address0,
-        pad_img3_3_0_ce0,
-        pad_img3_3_0_q0,
-        pad_img3_3_1_address0,
-        pad_img3_3_1_ce0,
-        pad_img3_3_1_q0,
-        pad_img3_3_2_address0,
-        pad_img3_3_2_ce0,
-        pad_img3_3_2_q0,
-        pad_img3_3_3_address0,
-        pad_img3_3_3_ce0,
-        pad_img3_3_3_q0,
-        pad_img3_3_4_address0,
-        pad_img3_3_4_ce0,
-        pad_img3_3_4_q0,
-        pad_img3_3_5_address0,
-        pad_img3_3_5_ce0,
-        pad_img3_3_5_q0,
-        pad_img3_3_6_address0,
-        pad_img3_3_6_ce0,
-        pad_img3_3_6_q0,
-        pad_img3_4_0_address0,
-        pad_img3_4_0_ce0,
-        pad_img3_4_0_q0,
-        pad_img3_4_1_address0,
-        pad_img3_4_1_ce0,
-        pad_img3_4_1_q0,
-        pad_img3_4_2_address0,
-        pad_img3_4_2_ce0,
-        pad_img3_4_2_q0,
-        pad_img3_4_3_address0,
-        pad_img3_4_3_ce0,
-        pad_img3_4_3_q0,
-        pad_img3_4_4_address0,
-        pad_img3_4_4_ce0,
-        pad_img3_4_4_q0,
-        pad_img3_4_5_address0,
-        pad_img3_4_5_ce0,
-        pad_img3_4_5_q0,
-        pad_img3_4_6_address0,
-        pad_img3_4_6_ce0,
-        pad_img3_4_6_q0,
-        pad_img3_5_0_address0,
-        pad_img3_5_0_ce0,
-        pad_img3_5_0_q0,
-        pad_img3_5_1_address0,
-        pad_img3_5_1_ce0,
-        pad_img3_5_1_q0,
-        pad_img3_5_2_address0,
-        pad_img3_5_2_ce0,
-        pad_img3_5_2_q0,
-        pad_img3_5_3_address0,
-        pad_img3_5_3_ce0,
-        pad_img3_5_3_q0,
-        pad_img3_5_4_address0,
-        pad_img3_5_4_ce0,
-        pad_img3_5_4_q0,
-        pad_img3_5_5_address0,
-        pad_img3_5_5_ce0,
-        pad_img3_5_5_q0,
-        pad_img3_5_6_address0,
-        pad_img3_5_6_ce0,
-        pad_img3_5_6_q0,
-        pad_img3_6_0_address0,
-        pad_img3_6_0_ce0,
-        pad_img3_6_0_q0,
-        pad_img3_6_1_address0,
-        pad_img3_6_1_ce0,
-        pad_img3_6_1_q0,
-        pad_img3_6_2_address0,
-        pad_img3_6_2_ce0,
-        pad_img3_6_2_q0,
-        pad_img3_6_3_address0,
-        pad_img3_6_3_ce0,
-        pad_img3_6_3_q0,
-        pad_img3_6_4_address0,
-        pad_img3_6_4_ce0,
-        pad_img3_6_4_q0,
-        pad_img3_6_5_address0,
-        pad_img3_6_5_ce0,
-        pad_img3_6_5_q0,
-        pad_img3_6_6_address0,
-        pad_img3_6_6_ce0,
-        pad_img3_6_6_q0,
-        prediction_address0,
-        prediction_ce0,
-        prediction_we0,
-        prediction_d0,
-        prediction_address1,
-        prediction_ce1,
-        prediction_q1,
-        grp_fu_409_p_din0,
-        grp_fu_409_p_din1,
-        grp_fu_409_p_dout0,
-        grp_fu_409_p_ce
+        ap_idle,
+        ap_continue
 );
 
-parameter    ap_ST_fsm_state1 = 23'd1;
-parameter    ap_ST_fsm_state2 = 23'd2;
-parameter    ap_ST_fsm_state3 = 23'd4;
-parameter    ap_ST_fsm_state4 = 23'd8;
-parameter    ap_ST_fsm_state5 = 23'd16;
-parameter    ap_ST_fsm_state6 = 23'd32;
-parameter    ap_ST_fsm_state7 = 23'd64;
-parameter    ap_ST_fsm_state8 = 23'd128;
-parameter    ap_ST_fsm_state9 = 23'd256;
-parameter    ap_ST_fsm_state10 = 23'd512;
-parameter    ap_ST_fsm_state11 = 23'd1024;
-parameter    ap_ST_fsm_state12 = 23'd2048;
-parameter    ap_ST_fsm_state13 = 23'd4096;
-parameter    ap_ST_fsm_state14 = 23'd8192;
-parameter    ap_ST_fsm_state15 = 23'd16384;
-parameter    ap_ST_fsm_state16 = 23'd32768;
-parameter    ap_ST_fsm_state17 = 23'd65536;
-parameter    ap_ST_fsm_state18 = 23'd131072;
-parameter    ap_ST_fsm_state19 = 23'd262144;
-parameter    ap_ST_fsm_state20 = 23'd524288;
-parameter    ap_ST_fsm_state21 = 23'd1048576;
-parameter    ap_ST_fsm_state22 = 23'd2097152;
-parameter    ap_ST_fsm_state23 = 23'd4194304;
 
+output  [10:0] pad_img0_address0;
+output   pad_img0_ce0;
+output  [31:0] pad_img0_d0;
+input  [31:0] pad_img0_q0;
+output   pad_img0_we0;
+output  [10:0] pad_img0_address1;
+output   pad_img0_ce1;
+output  [31:0] pad_img0_d1;
+input  [31:0] pad_img0_q1;
+output   pad_img0_we1;
+output  [10:0] pad_img1_address0;
+output   pad_img1_ce0;
+output  [31:0] pad_img1_d0;
+input  [31:0] pad_img1_q0;
+output   pad_img1_we0;
+output  [10:0] pad_img1_address1;
+output   pad_img1_ce1;
+output  [31:0] pad_img1_d1;
+input  [31:0] pad_img1_q1;
+output   pad_img1_we1;
+output  [10:0] pad_img2_address0;
+output   pad_img2_ce0;
+output  [31:0] pad_img2_d0;
+input  [31:0] pad_img2_q0;
+output   pad_img2_we0;
+output  [10:0] pad_img2_address1;
+output   pad_img2_ce1;
+output  [31:0] pad_img2_d1;
+input  [31:0] pad_img2_q1;
+output   pad_img2_we1;
+output  [4:0] pad_img3_0_0_address0;
+output   pad_img3_0_0_ce0;
+output  [31:0] pad_img3_0_0_d0;
+input  [31:0] pad_img3_0_0_q0;
+output   pad_img3_0_0_we0;
+output  [4:0] pad_img3_0_0_address1;
+output   pad_img3_0_0_ce1;
+output  [31:0] pad_img3_0_0_d1;
+input  [31:0] pad_img3_0_0_q1;
+output   pad_img3_0_0_we1;
+output  [4:0] pad_img3_0_1_address0;
+output   pad_img3_0_1_ce0;
+output  [31:0] pad_img3_0_1_d0;
+input  [31:0] pad_img3_0_1_q0;
+output   pad_img3_0_1_we0;
+output  [4:0] pad_img3_0_1_address1;
+output   pad_img3_0_1_ce1;
+output  [31:0] pad_img3_0_1_d1;
+input  [31:0] pad_img3_0_1_q1;
+output   pad_img3_0_1_we1;
+output  [4:0] pad_img3_0_2_address0;
+output   pad_img3_0_2_ce0;
+output  [31:0] pad_img3_0_2_d0;
+input  [31:0] pad_img3_0_2_q0;
+output   pad_img3_0_2_we0;
+output  [4:0] pad_img3_0_2_address1;
+output   pad_img3_0_2_ce1;
+output  [31:0] pad_img3_0_2_d1;
+input  [31:0] pad_img3_0_2_q1;
+output   pad_img3_0_2_we1;
+output  [4:0] pad_img3_0_3_address0;
+output   pad_img3_0_3_ce0;
+output  [31:0] pad_img3_0_3_d0;
+input  [31:0] pad_img3_0_3_q0;
+output   pad_img3_0_3_we0;
+output  [4:0] pad_img3_0_3_address1;
+output   pad_img3_0_3_ce1;
+output  [31:0] pad_img3_0_3_d1;
+input  [31:0] pad_img3_0_3_q1;
+output   pad_img3_0_3_we1;
+output  [4:0] pad_img3_0_4_address0;
+output   pad_img3_0_4_ce0;
+output  [31:0] pad_img3_0_4_d0;
+input  [31:0] pad_img3_0_4_q0;
+output   pad_img3_0_4_we0;
+output  [4:0] pad_img3_0_4_address1;
+output   pad_img3_0_4_ce1;
+output  [31:0] pad_img3_0_4_d1;
+input  [31:0] pad_img3_0_4_q1;
+output   pad_img3_0_4_we1;
+output  [4:0] pad_img3_0_5_address0;
+output   pad_img3_0_5_ce0;
+output  [31:0] pad_img3_0_5_d0;
+input  [31:0] pad_img3_0_5_q0;
+output   pad_img3_0_5_we0;
+output  [4:0] pad_img3_0_5_address1;
+output   pad_img3_0_5_ce1;
+output  [31:0] pad_img3_0_5_d1;
+input  [31:0] pad_img3_0_5_q1;
+output   pad_img3_0_5_we1;
+output  [4:0] pad_img3_0_6_address0;
+output   pad_img3_0_6_ce0;
+output  [31:0] pad_img3_0_6_d0;
+input  [31:0] pad_img3_0_6_q0;
+output   pad_img3_0_6_we0;
+output  [4:0] pad_img3_0_6_address1;
+output   pad_img3_0_6_ce1;
+output  [31:0] pad_img3_0_6_d1;
+input  [31:0] pad_img3_0_6_q1;
+output   pad_img3_0_6_we1;
+output  [4:0] pad_img3_1_0_address0;
+output   pad_img3_1_0_ce0;
+output  [31:0] pad_img3_1_0_d0;
+input  [31:0] pad_img3_1_0_q0;
+output   pad_img3_1_0_we0;
+output  [4:0] pad_img3_1_0_address1;
+output   pad_img3_1_0_ce1;
+output  [31:0] pad_img3_1_0_d1;
+input  [31:0] pad_img3_1_0_q1;
+output   pad_img3_1_0_we1;
+output  [4:0] pad_img3_1_1_address0;
+output   pad_img3_1_1_ce0;
+output  [31:0] pad_img3_1_1_d0;
+input  [31:0] pad_img3_1_1_q0;
+output   pad_img3_1_1_we0;
+output  [4:0] pad_img3_1_1_address1;
+output   pad_img3_1_1_ce1;
+output  [31:0] pad_img3_1_1_d1;
+input  [31:0] pad_img3_1_1_q1;
+output   pad_img3_1_1_we1;
+output  [4:0] pad_img3_1_2_address0;
+output   pad_img3_1_2_ce0;
+output  [31:0] pad_img3_1_2_d0;
+input  [31:0] pad_img3_1_2_q0;
+output   pad_img3_1_2_we0;
+output  [4:0] pad_img3_1_2_address1;
+output   pad_img3_1_2_ce1;
+output  [31:0] pad_img3_1_2_d1;
+input  [31:0] pad_img3_1_2_q1;
+output   pad_img3_1_2_we1;
+output  [4:0] pad_img3_1_3_address0;
+output   pad_img3_1_3_ce0;
+output  [31:0] pad_img3_1_3_d0;
+input  [31:0] pad_img3_1_3_q0;
+output   pad_img3_1_3_we0;
+output  [4:0] pad_img3_1_3_address1;
+output   pad_img3_1_3_ce1;
+output  [31:0] pad_img3_1_3_d1;
+input  [31:0] pad_img3_1_3_q1;
+output   pad_img3_1_3_we1;
+output  [4:0] pad_img3_1_4_address0;
+output   pad_img3_1_4_ce0;
+output  [31:0] pad_img3_1_4_d0;
+input  [31:0] pad_img3_1_4_q0;
+output   pad_img3_1_4_we0;
+output  [4:0] pad_img3_1_4_address1;
+output   pad_img3_1_4_ce1;
+output  [31:0] pad_img3_1_4_d1;
+input  [31:0] pad_img3_1_4_q1;
+output   pad_img3_1_4_we1;
+output  [4:0] pad_img3_1_5_address0;
+output   pad_img3_1_5_ce0;
+output  [31:0] pad_img3_1_5_d0;
+input  [31:0] pad_img3_1_5_q0;
+output   pad_img3_1_5_we0;
+output  [4:0] pad_img3_1_5_address1;
+output   pad_img3_1_5_ce1;
+output  [31:0] pad_img3_1_5_d1;
+input  [31:0] pad_img3_1_5_q1;
+output   pad_img3_1_5_we1;
+output  [4:0] pad_img3_1_6_address0;
+output   pad_img3_1_6_ce0;
+output  [31:0] pad_img3_1_6_d0;
+input  [31:0] pad_img3_1_6_q0;
+output   pad_img3_1_6_we0;
+output  [4:0] pad_img3_1_6_address1;
+output   pad_img3_1_6_ce1;
+output  [31:0] pad_img3_1_6_d1;
+input  [31:0] pad_img3_1_6_q1;
+output   pad_img3_1_6_we1;
+output  [4:0] pad_img3_2_0_address0;
+output   pad_img3_2_0_ce0;
+output  [31:0] pad_img3_2_0_d0;
+input  [31:0] pad_img3_2_0_q0;
+output   pad_img3_2_0_we0;
+output  [4:0] pad_img3_2_0_address1;
+output   pad_img3_2_0_ce1;
+output  [31:0] pad_img3_2_0_d1;
+input  [31:0] pad_img3_2_0_q1;
+output   pad_img3_2_0_we1;
+output  [4:0] pad_img3_2_1_address0;
+output   pad_img3_2_1_ce0;
+output  [31:0] pad_img3_2_1_d0;
+input  [31:0] pad_img3_2_1_q0;
+output   pad_img3_2_1_we0;
+output  [4:0] pad_img3_2_1_address1;
+output   pad_img3_2_1_ce1;
+output  [31:0] pad_img3_2_1_d1;
+input  [31:0] pad_img3_2_1_q1;
+output   pad_img3_2_1_we1;
+output  [4:0] pad_img3_2_2_address0;
+output   pad_img3_2_2_ce0;
+output  [31:0] pad_img3_2_2_d0;
+input  [31:0] pad_img3_2_2_q0;
+output   pad_img3_2_2_we0;
+output  [4:0] pad_img3_2_2_address1;
+output   pad_img3_2_2_ce1;
+output  [31:0] pad_img3_2_2_d1;
+input  [31:0] pad_img3_2_2_q1;
+output   pad_img3_2_2_we1;
+output  [4:0] pad_img3_2_3_address0;
+output   pad_img3_2_3_ce0;
+output  [31:0] pad_img3_2_3_d0;
+input  [31:0] pad_img3_2_3_q0;
+output   pad_img3_2_3_we0;
+output  [4:0] pad_img3_2_3_address1;
+output   pad_img3_2_3_ce1;
+output  [31:0] pad_img3_2_3_d1;
+input  [31:0] pad_img3_2_3_q1;
+output   pad_img3_2_3_we1;
+output  [4:0] pad_img3_2_4_address0;
+output   pad_img3_2_4_ce0;
+output  [31:0] pad_img3_2_4_d0;
+input  [31:0] pad_img3_2_4_q0;
+output   pad_img3_2_4_we0;
+output  [4:0] pad_img3_2_4_address1;
+output   pad_img3_2_4_ce1;
+output  [31:0] pad_img3_2_4_d1;
+input  [31:0] pad_img3_2_4_q1;
+output   pad_img3_2_4_we1;
+output  [4:0] pad_img3_2_5_address0;
+output   pad_img3_2_5_ce0;
+output  [31:0] pad_img3_2_5_d0;
+input  [31:0] pad_img3_2_5_q0;
+output   pad_img3_2_5_we0;
+output  [4:0] pad_img3_2_5_address1;
+output   pad_img3_2_5_ce1;
+output  [31:0] pad_img3_2_5_d1;
+input  [31:0] pad_img3_2_5_q1;
+output   pad_img3_2_5_we1;
+output  [4:0] pad_img3_2_6_address0;
+output   pad_img3_2_6_ce0;
+output  [31:0] pad_img3_2_6_d0;
+input  [31:0] pad_img3_2_6_q0;
+output   pad_img3_2_6_we0;
+output  [4:0] pad_img3_2_6_address1;
+output   pad_img3_2_6_ce1;
+output  [31:0] pad_img3_2_6_d1;
+input  [31:0] pad_img3_2_6_q1;
+output   pad_img3_2_6_we1;
+output  [4:0] pad_img3_3_0_address0;
+output   pad_img3_3_0_ce0;
+output  [31:0] pad_img3_3_0_d0;
+input  [31:0] pad_img3_3_0_q0;
+output   pad_img3_3_0_we0;
+output  [4:0] pad_img3_3_0_address1;
+output   pad_img3_3_0_ce1;
+output  [31:0] pad_img3_3_0_d1;
+input  [31:0] pad_img3_3_0_q1;
+output   pad_img3_3_0_we1;
+output  [4:0] pad_img3_3_1_address0;
+output   pad_img3_3_1_ce0;
+output  [31:0] pad_img3_3_1_d0;
+input  [31:0] pad_img3_3_1_q0;
+output   pad_img3_3_1_we0;
+output  [4:0] pad_img3_3_1_address1;
+output   pad_img3_3_1_ce1;
+output  [31:0] pad_img3_3_1_d1;
+input  [31:0] pad_img3_3_1_q1;
+output   pad_img3_3_1_we1;
+output  [4:0] pad_img3_3_2_address0;
+output   pad_img3_3_2_ce0;
+output  [31:0] pad_img3_3_2_d0;
+input  [31:0] pad_img3_3_2_q0;
+output   pad_img3_3_2_we0;
+output  [4:0] pad_img3_3_2_address1;
+output   pad_img3_3_2_ce1;
+output  [31:0] pad_img3_3_2_d1;
+input  [31:0] pad_img3_3_2_q1;
+output   pad_img3_3_2_we1;
+output  [4:0] pad_img3_3_3_address0;
+output   pad_img3_3_3_ce0;
+output  [31:0] pad_img3_3_3_d0;
+input  [31:0] pad_img3_3_3_q0;
+output   pad_img3_3_3_we0;
+output  [4:0] pad_img3_3_3_address1;
+output   pad_img3_3_3_ce1;
+output  [31:0] pad_img3_3_3_d1;
+input  [31:0] pad_img3_3_3_q1;
+output   pad_img3_3_3_we1;
+output  [4:0] pad_img3_3_4_address0;
+output   pad_img3_3_4_ce0;
+output  [31:0] pad_img3_3_4_d0;
+input  [31:0] pad_img3_3_4_q0;
+output   pad_img3_3_4_we0;
+output  [4:0] pad_img3_3_4_address1;
+output   pad_img3_3_4_ce1;
+output  [31:0] pad_img3_3_4_d1;
+input  [31:0] pad_img3_3_4_q1;
+output   pad_img3_3_4_we1;
+output  [4:0] pad_img3_3_5_address0;
+output   pad_img3_3_5_ce0;
+output  [31:0] pad_img3_3_5_d0;
+input  [31:0] pad_img3_3_5_q0;
+output   pad_img3_3_5_we0;
+output  [4:0] pad_img3_3_5_address1;
+output   pad_img3_3_5_ce1;
+output  [31:0] pad_img3_3_5_d1;
+input  [31:0] pad_img3_3_5_q1;
+output   pad_img3_3_5_we1;
+output  [4:0] pad_img3_3_6_address0;
+output   pad_img3_3_6_ce0;
+output  [31:0] pad_img3_3_6_d0;
+input  [31:0] pad_img3_3_6_q0;
+output   pad_img3_3_6_we0;
+output  [4:0] pad_img3_3_6_address1;
+output   pad_img3_3_6_ce1;
+output  [31:0] pad_img3_3_6_d1;
+input  [31:0] pad_img3_3_6_q1;
+output   pad_img3_3_6_we1;
+output  [4:0] pad_img3_4_0_address0;
+output   pad_img3_4_0_ce0;
+output  [31:0] pad_img3_4_0_d0;
+input  [31:0] pad_img3_4_0_q0;
+output   pad_img3_4_0_we0;
+output  [4:0] pad_img3_4_0_address1;
+output   pad_img3_4_0_ce1;
+output  [31:0] pad_img3_4_0_d1;
+input  [31:0] pad_img3_4_0_q1;
+output   pad_img3_4_0_we1;
+output  [4:0] pad_img3_4_1_address0;
+output   pad_img3_4_1_ce0;
+output  [31:0] pad_img3_4_1_d0;
+input  [31:0] pad_img3_4_1_q0;
+output   pad_img3_4_1_we0;
+output  [4:0] pad_img3_4_1_address1;
+output   pad_img3_4_1_ce1;
+output  [31:0] pad_img3_4_1_d1;
+input  [31:0] pad_img3_4_1_q1;
+output   pad_img3_4_1_we1;
+output  [4:0] pad_img3_4_2_address0;
+output   pad_img3_4_2_ce0;
+output  [31:0] pad_img3_4_2_d0;
+input  [31:0] pad_img3_4_2_q0;
+output   pad_img3_4_2_we0;
+output  [4:0] pad_img3_4_2_address1;
+output   pad_img3_4_2_ce1;
+output  [31:0] pad_img3_4_2_d1;
+input  [31:0] pad_img3_4_2_q1;
+output   pad_img3_4_2_we1;
+output  [4:0] pad_img3_4_3_address0;
+output   pad_img3_4_3_ce0;
+output  [31:0] pad_img3_4_3_d0;
+input  [31:0] pad_img3_4_3_q0;
+output   pad_img3_4_3_we0;
+output  [4:0] pad_img3_4_3_address1;
+output   pad_img3_4_3_ce1;
+output  [31:0] pad_img3_4_3_d1;
+input  [31:0] pad_img3_4_3_q1;
+output   pad_img3_4_3_we1;
+output  [4:0] pad_img3_4_4_address0;
+output   pad_img3_4_4_ce0;
+output  [31:0] pad_img3_4_4_d0;
+input  [31:0] pad_img3_4_4_q0;
+output   pad_img3_4_4_we0;
+output  [4:0] pad_img3_4_4_address1;
+output   pad_img3_4_4_ce1;
+output  [31:0] pad_img3_4_4_d1;
+input  [31:0] pad_img3_4_4_q1;
+output   pad_img3_4_4_we1;
+output  [4:0] pad_img3_4_5_address0;
+output   pad_img3_4_5_ce0;
+output  [31:0] pad_img3_4_5_d0;
+input  [31:0] pad_img3_4_5_q0;
+output   pad_img3_4_5_we0;
+output  [4:0] pad_img3_4_5_address1;
+output   pad_img3_4_5_ce1;
+output  [31:0] pad_img3_4_5_d1;
+input  [31:0] pad_img3_4_5_q1;
+output   pad_img3_4_5_we1;
+output  [4:0] pad_img3_4_6_address0;
+output   pad_img3_4_6_ce0;
+output  [31:0] pad_img3_4_6_d0;
+input  [31:0] pad_img3_4_6_q0;
+output   pad_img3_4_6_we0;
+output  [4:0] pad_img3_4_6_address1;
+output   pad_img3_4_6_ce1;
+output  [31:0] pad_img3_4_6_d1;
+input  [31:0] pad_img3_4_6_q1;
+output   pad_img3_4_6_we1;
+output  [4:0] pad_img3_5_0_address0;
+output   pad_img3_5_0_ce0;
+output  [31:0] pad_img3_5_0_d0;
+input  [31:0] pad_img3_5_0_q0;
+output   pad_img3_5_0_we0;
+output  [4:0] pad_img3_5_0_address1;
+output   pad_img3_5_0_ce1;
+output  [31:0] pad_img3_5_0_d1;
+input  [31:0] pad_img3_5_0_q1;
+output   pad_img3_5_0_we1;
+output  [4:0] pad_img3_5_1_address0;
+output   pad_img3_5_1_ce0;
+output  [31:0] pad_img3_5_1_d0;
+input  [31:0] pad_img3_5_1_q0;
+output   pad_img3_5_1_we0;
+output  [4:0] pad_img3_5_1_address1;
+output   pad_img3_5_1_ce1;
+output  [31:0] pad_img3_5_1_d1;
+input  [31:0] pad_img3_5_1_q1;
+output   pad_img3_5_1_we1;
+output  [4:0] pad_img3_5_2_address0;
+output   pad_img3_5_2_ce0;
+output  [31:0] pad_img3_5_2_d0;
+input  [31:0] pad_img3_5_2_q0;
+output   pad_img3_5_2_we0;
+output  [4:0] pad_img3_5_2_address1;
+output   pad_img3_5_2_ce1;
+output  [31:0] pad_img3_5_2_d1;
+input  [31:0] pad_img3_5_2_q1;
+output   pad_img3_5_2_we1;
+output  [4:0] pad_img3_5_3_address0;
+output   pad_img3_5_3_ce0;
+output  [31:0] pad_img3_5_3_d0;
+input  [31:0] pad_img3_5_3_q0;
+output   pad_img3_5_3_we0;
+output  [4:0] pad_img3_5_3_address1;
+output   pad_img3_5_3_ce1;
+output  [31:0] pad_img3_5_3_d1;
+input  [31:0] pad_img3_5_3_q1;
+output   pad_img3_5_3_we1;
+output  [4:0] pad_img3_5_4_address0;
+output   pad_img3_5_4_ce0;
+output  [31:0] pad_img3_5_4_d0;
+input  [31:0] pad_img3_5_4_q0;
+output   pad_img3_5_4_we0;
+output  [4:0] pad_img3_5_4_address1;
+output   pad_img3_5_4_ce1;
+output  [31:0] pad_img3_5_4_d1;
+input  [31:0] pad_img3_5_4_q1;
+output   pad_img3_5_4_we1;
+output  [4:0] pad_img3_5_5_address0;
+output   pad_img3_5_5_ce0;
+output  [31:0] pad_img3_5_5_d0;
+input  [31:0] pad_img3_5_5_q0;
+output   pad_img3_5_5_we0;
+output  [4:0] pad_img3_5_5_address1;
+output   pad_img3_5_5_ce1;
+output  [31:0] pad_img3_5_5_d1;
+input  [31:0] pad_img3_5_5_q1;
+output   pad_img3_5_5_we1;
+output  [4:0] pad_img3_5_6_address0;
+output   pad_img3_5_6_ce0;
+output  [31:0] pad_img3_5_6_d0;
+input  [31:0] pad_img3_5_6_q0;
+output   pad_img3_5_6_we0;
+output  [4:0] pad_img3_5_6_address1;
+output   pad_img3_5_6_ce1;
+output  [31:0] pad_img3_5_6_d1;
+input  [31:0] pad_img3_5_6_q1;
+output   pad_img3_5_6_we1;
+output  [4:0] pad_img3_6_0_address0;
+output   pad_img3_6_0_ce0;
+output  [31:0] pad_img3_6_0_d0;
+input  [31:0] pad_img3_6_0_q0;
+output   pad_img3_6_0_we0;
+output  [4:0] pad_img3_6_0_address1;
+output   pad_img3_6_0_ce1;
+output  [31:0] pad_img3_6_0_d1;
+input  [31:0] pad_img3_6_0_q1;
+output   pad_img3_6_0_we1;
+output  [4:0] pad_img3_6_1_address0;
+output   pad_img3_6_1_ce0;
+output  [31:0] pad_img3_6_1_d0;
+input  [31:0] pad_img3_6_1_q0;
+output   pad_img3_6_1_we0;
+output  [4:0] pad_img3_6_1_address1;
+output   pad_img3_6_1_ce1;
+output  [31:0] pad_img3_6_1_d1;
+input  [31:0] pad_img3_6_1_q1;
+output   pad_img3_6_1_we1;
+output  [4:0] pad_img3_6_2_address0;
+output   pad_img3_6_2_ce0;
+output  [31:0] pad_img3_6_2_d0;
+input  [31:0] pad_img3_6_2_q0;
+output   pad_img3_6_2_we0;
+output  [4:0] pad_img3_6_2_address1;
+output   pad_img3_6_2_ce1;
+output  [31:0] pad_img3_6_2_d1;
+input  [31:0] pad_img3_6_2_q1;
+output   pad_img3_6_2_we1;
+output  [4:0] pad_img3_6_3_address0;
+output   pad_img3_6_3_ce0;
+output  [31:0] pad_img3_6_3_d0;
+input  [31:0] pad_img3_6_3_q0;
+output   pad_img3_6_3_we0;
+output  [4:0] pad_img3_6_3_address1;
+output   pad_img3_6_3_ce1;
+output  [31:0] pad_img3_6_3_d1;
+input  [31:0] pad_img3_6_3_q1;
+output   pad_img3_6_3_we1;
+output  [4:0] pad_img3_6_4_address0;
+output   pad_img3_6_4_ce0;
+output  [31:0] pad_img3_6_4_d0;
+input  [31:0] pad_img3_6_4_q0;
+output   pad_img3_6_4_we0;
+output  [4:0] pad_img3_6_4_address1;
+output   pad_img3_6_4_ce1;
+output  [31:0] pad_img3_6_4_d1;
+input  [31:0] pad_img3_6_4_q1;
+output   pad_img3_6_4_we1;
+output  [4:0] pad_img3_6_5_address0;
+output   pad_img3_6_5_ce0;
+output  [31:0] pad_img3_6_5_d0;
+input  [31:0] pad_img3_6_5_q0;
+output   pad_img3_6_5_we0;
+output  [4:0] pad_img3_6_5_address1;
+output   pad_img3_6_5_ce1;
+output  [31:0] pad_img3_6_5_d1;
+input  [31:0] pad_img3_6_5_q1;
+output   pad_img3_6_5_we1;
+output  [4:0] pad_img3_6_6_address0;
+output   pad_img3_6_6_ce0;
+output  [31:0] pad_img3_6_6_d0;
+input  [31:0] pad_img3_6_6_q0;
+output   pad_img3_6_6_we0;
+output  [4:0] pad_img3_6_6_address1;
+output   pad_img3_6_6_ce1;
+output  [31:0] pad_img3_6_6_d1;
+input  [31:0] pad_img3_6_6_q1;
+output   pad_img3_6_6_we1;
+output  [3:0] prediction_address0;
+output   prediction_ce0;
+output  [31:0] prediction_d0;
+input  [31:0] prediction_q0;
+output   prediction_we0;
+output  [3:0] prediction_address1;
+output   prediction_ce1;
+output  [31:0] prediction_d1;
+input  [31:0] prediction_q1;
+output   prediction_we1;
 input   ap_clk;
 input   ap_rst;
 input   ap_start;
 output   ap_done;
-output   ap_idle;
 output   ap_ready;
-output  [10:0] pad_img0_address0;
-output   pad_img0_ce0;
-input  [31:0] pad_img0_q0;
-output  [10:0] pad_img0_address1;
-output   pad_img0_ce1;
-input  [31:0] pad_img0_q1;
-output  [10:0] pad_img1_address0;
-output   pad_img1_ce0;
-input  [31:0] pad_img1_q0;
-output  [10:0] pad_img1_address1;
-output   pad_img1_ce1;
-input  [31:0] pad_img1_q1;
-output  [10:0] pad_img2_address0;
-output   pad_img2_ce0;
-input  [31:0] pad_img2_q0;
-output  [10:0] pad_img2_address1;
-output   pad_img2_ce1;
-input  [31:0] pad_img2_q1;
-output  [4:0] pad_img3_0_0_address0;
-output   pad_img3_0_0_ce0;
-input  [31:0] pad_img3_0_0_q0;
-output  [4:0] pad_img3_0_1_address0;
-output   pad_img3_0_1_ce0;
-input  [31:0] pad_img3_0_1_q0;
-output  [4:0] pad_img3_0_2_address0;
-output   pad_img3_0_2_ce0;
-input  [31:0] pad_img3_0_2_q0;
-output  [4:0] pad_img3_0_3_address0;
-output   pad_img3_0_3_ce0;
-input  [31:0] pad_img3_0_3_q0;
-output  [4:0] pad_img3_0_4_address0;
-output   pad_img3_0_4_ce0;
-input  [31:0] pad_img3_0_4_q0;
-output  [4:0] pad_img3_0_5_address0;
-output   pad_img3_0_5_ce0;
-input  [31:0] pad_img3_0_5_q0;
-output  [4:0] pad_img3_0_6_address0;
-output   pad_img3_0_6_ce0;
-input  [31:0] pad_img3_0_6_q0;
-output  [4:0] pad_img3_1_0_address0;
-output   pad_img3_1_0_ce0;
-input  [31:0] pad_img3_1_0_q0;
-output  [4:0] pad_img3_1_1_address0;
-output   pad_img3_1_1_ce0;
-input  [31:0] pad_img3_1_1_q0;
-output  [4:0] pad_img3_1_2_address0;
-output   pad_img3_1_2_ce0;
-input  [31:0] pad_img3_1_2_q0;
-output  [4:0] pad_img3_1_3_address0;
-output   pad_img3_1_3_ce0;
-input  [31:0] pad_img3_1_3_q0;
-output  [4:0] pad_img3_1_4_address0;
-output   pad_img3_1_4_ce0;
-input  [31:0] pad_img3_1_4_q0;
-output  [4:0] pad_img3_1_5_address0;
-output   pad_img3_1_5_ce0;
-input  [31:0] pad_img3_1_5_q0;
-output  [4:0] pad_img3_1_6_address0;
-output   pad_img3_1_6_ce0;
-input  [31:0] pad_img3_1_6_q0;
-output  [4:0] pad_img3_2_0_address0;
-output   pad_img3_2_0_ce0;
-input  [31:0] pad_img3_2_0_q0;
-output  [4:0] pad_img3_2_1_address0;
-output   pad_img3_2_1_ce0;
-input  [31:0] pad_img3_2_1_q0;
-output  [4:0] pad_img3_2_2_address0;
-output   pad_img3_2_2_ce0;
-input  [31:0] pad_img3_2_2_q0;
-output  [4:0] pad_img3_2_3_address0;
-output   pad_img3_2_3_ce0;
-input  [31:0] pad_img3_2_3_q0;
-output  [4:0] pad_img3_2_4_address0;
-output   pad_img3_2_4_ce0;
-input  [31:0] pad_img3_2_4_q0;
-output  [4:0] pad_img3_2_5_address0;
-output   pad_img3_2_5_ce0;
-input  [31:0] pad_img3_2_5_q0;
-output  [4:0] pad_img3_2_6_address0;
-output   pad_img3_2_6_ce0;
-input  [31:0] pad_img3_2_6_q0;
-output  [4:0] pad_img3_3_0_address0;
-output   pad_img3_3_0_ce0;
-input  [31:0] pad_img3_3_0_q0;
-output  [4:0] pad_img3_3_1_address0;
-output   pad_img3_3_1_ce0;
-input  [31:0] pad_img3_3_1_q0;
-output  [4:0] pad_img3_3_2_address0;
-output   pad_img3_3_2_ce0;
-input  [31:0] pad_img3_3_2_q0;
-output  [4:0] pad_img3_3_3_address0;
-output   pad_img3_3_3_ce0;
-input  [31:0] pad_img3_3_3_q0;
-output  [4:0] pad_img3_3_4_address0;
-output   pad_img3_3_4_ce0;
-input  [31:0] pad_img3_3_4_q0;
-output  [4:0] pad_img3_3_5_address0;
-output   pad_img3_3_5_ce0;
-input  [31:0] pad_img3_3_5_q0;
-output  [4:0] pad_img3_3_6_address0;
-output   pad_img3_3_6_ce0;
-input  [31:0] pad_img3_3_6_q0;
-output  [4:0] pad_img3_4_0_address0;
-output   pad_img3_4_0_ce0;
-input  [31:0] pad_img3_4_0_q0;
-output  [4:0] pad_img3_4_1_address0;
-output   pad_img3_4_1_ce0;
-input  [31:0] pad_img3_4_1_q0;
-output  [4:0] pad_img3_4_2_address0;
-output   pad_img3_4_2_ce0;
-input  [31:0] pad_img3_4_2_q0;
-output  [4:0] pad_img3_4_3_address0;
-output   pad_img3_4_3_ce0;
-input  [31:0] pad_img3_4_3_q0;
-output  [4:0] pad_img3_4_4_address0;
-output   pad_img3_4_4_ce0;
-input  [31:0] pad_img3_4_4_q0;
-output  [4:0] pad_img3_4_5_address0;
-output   pad_img3_4_5_ce0;
-input  [31:0] pad_img3_4_5_q0;
-output  [4:0] pad_img3_4_6_address0;
-output   pad_img3_4_6_ce0;
-input  [31:0] pad_img3_4_6_q0;
-output  [4:0] pad_img3_5_0_address0;
-output   pad_img3_5_0_ce0;
-input  [31:0] pad_img3_5_0_q0;
-output  [4:0] pad_img3_5_1_address0;
-output   pad_img3_5_1_ce0;
-input  [31:0] pad_img3_5_1_q0;
-output  [4:0] pad_img3_5_2_address0;
-output   pad_img3_5_2_ce0;
-input  [31:0] pad_img3_5_2_q0;
-output  [4:0] pad_img3_5_3_address0;
-output   pad_img3_5_3_ce0;
-input  [31:0] pad_img3_5_3_q0;
-output  [4:0] pad_img3_5_4_address0;
-output   pad_img3_5_4_ce0;
-input  [31:0] pad_img3_5_4_q0;
-output  [4:0] pad_img3_5_5_address0;
-output   pad_img3_5_5_ce0;
-input  [31:0] pad_img3_5_5_q0;
-output  [4:0] pad_img3_5_6_address0;
-output   pad_img3_5_6_ce0;
-input  [31:0] pad_img3_5_6_q0;
-output  [4:0] pad_img3_6_0_address0;
-output   pad_img3_6_0_ce0;
-input  [31:0] pad_img3_6_0_q0;
-output  [4:0] pad_img3_6_1_address0;
-output   pad_img3_6_1_ce0;
-input  [31:0] pad_img3_6_1_q0;
-output  [4:0] pad_img3_6_2_address0;
-output   pad_img3_6_2_ce0;
-input  [31:0] pad_img3_6_2_q0;
-output  [4:0] pad_img3_6_3_address0;
-output   pad_img3_6_3_ce0;
-input  [31:0] pad_img3_6_3_q0;
-output  [4:0] pad_img3_6_4_address0;
-output   pad_img3_6_4_ce0;
-input  [31:0] pad_img3_6_4_q0;
-output  [4:0] pad_img3_6_5_address0;
-output   pad_img3_6_5_ce0;
-input  [31:0] pad_img3_6_5_q0;
-output  [4:0] pad_img3_6_6_address0;
-output   pad_img3_6_6_ce0;
-input  [31:0] pad_img3_6_6_q0;
-output  [3:0] prediction_address0;
-output   prediction_ce0;
-output   prediction_we0;
-output  [31:0] prediction_d0;
-output  [3:0] prediction_address1;
-output   prediction_ce1;
-input  [31:0] prediction_q1;
-output  [31:0] grp_fu_409_p_din0;
-output  [31:0] grp_fu_409_p_din1;
-input  [31:0] grp_fu_409_p_dout0;
-output   grp_fu_409_p_ce;
+output   ap_idle;
+input   ap_continue;
 
-reg ap_done;
-reg ap_idle;
-reg ap_ready;
-reg pad_img0_ce0;
-reg pad_img0_ce1;
-reg pad_img1_ce0;
-reg pad_img1_ce1;
-reg[3:0] prediction_address0;
-reg prediction_ce0;
-reg prediction_we0;
-reg[31:0] prediction_d0;
-reg prediction_ce1;
-
-(* fsm_encoding = "none" *) reg   [22:0] ap_CS_fsm;
-wire    ap_CS_fsm_state1;
-wire    grp_convolution_fu_284_ap_start;
-wire    grp_convolution_fu_284_ap_done;
-wire    grp_convolution_fu_284_ap_idle;
-wire    grp_convolution_fu_284_ap_ready;
-wire   [10:0] grp_convolution_fu_284_pad_img_address0;
-wire    grp_convolution_fu_284_pad_img_ce0;
-reg   [31:0] grp_convolution_fu_284_pad_img_q0;
-wire   [10:0] grp_convolution_fu_284_pad_img_address1;
-wire    grp_convolution_fu_284_pad_img_ce1;
-reg   [31:0] grp_convolution_fu_284_pad_img_q1;
-reg   [1:0] grp_convolution_fu_284_filter;
-wire   [31:0] grp_convolution_fu_284_conv_to_pool_streams_0_din;
-reg    grp_convolution_fu_284_conv_to_pool_streams_0_full_n;
-wire    grp_convolution_fu_284_conv_to_pool_streams_0_write;
-wire    grp_convolution_fu_295_ap_start;
-wire    grp_convolution_fu_295_ap_done;
-wire    grp_convolution_fu_295_ap_idle;
-wire    grp_convolution_fu_295_ap_ready;
-wire   [10:0] grp_convolution_fu_295_pad_img_address0;
-wire    grp_convolution_fu_295_pad_img_ce0;
-wire   [10:0] grp_convolution_fu_295_pad_img_address1;
-wire    grp_convolution_fu_295_pad_img_ce1;
-wire   [31:0] grp_convolution_fu_295_conv_to_pool_streams_0_din;
-wire    grp_convolution_fu_295_conv_to_pool_streams_0_write;
-wire    grp_convolution_1_fu_304_ap_start;
-wire    grp_convolution_1_fu_304_ap_done;
-wire    grp_convolution_1_fu_304_ap_idle;
-wire    grp_convolution_1_fu_304_ap_ready;
-wire   [31:0] grp_convolution_1_fu_304_conv_to_pool_streams_3_din;
-wire    grp_convolution_1_fu_304_conv_to_pool_streams_3_write;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_0_0_address0;
-wire    grp_convolution_1_fu_304_pad_img_0_0_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_0_1_address0;
-wire    grp_convolution_1_fu_304_pad_img_0_1_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_0_2_address0;
-wire    grp_convolution_1_fu_304_pad_img_0_2_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_0_3_address0;
-wire    grp_convolution_1_fu_304_pad_img_0_3_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_0_4_address0;
-wire    grp_convolution_1_fu_304_pad_img_0_4_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_0_5_address0;
-wire    grp_convolution_1_fu_304_pad_img_0_5_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_0_6_address0;
-wire    grp_convolution_1_fu_304_pad_img_0_6_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_1_0_address0;
-wire    grp_convolution_1_fu_304_pad_img_1_0_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_1_1_address0;
-wire    grp_convolution_1_fu_304_pad_img_1_1_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_1_2_address0;
-wire    grp_convolution_1_fu_304_pad_img_1_2_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_1_3_address0;
-wire    grp_convolution_1_fu_304_pad_img_1_3_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_1_4_address0;
-wire    grp_convolution_1_fu_304_pad_img_1_4_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_1_5_address0;
-wire    grp_convolution_1_fu_304_pad_img_1_5_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_1_6_address0;
-wire    grp_convolution_1_fu_304_pad_img_1_6_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_2_0_address0;
-wire    grp_convolution_1_fu_304_pad_img_2_0_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_2_1_address0;
-wire    grp_convolution_1_fu_304_pad_img_2_1_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_2_2_address0;
-wire    grp_convolution_1_fu_304_pad_img_2_2_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_2_3_address0;
-wire    grp_convolution_1_fu_304_pad_img_2_3_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_2_4_address0;
-wire    grp_convolution_1_fu_304_pad_img_2_4_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_2_5_address0;
-wire    grp_convolution_1_fu_304_pad_img_2_5_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_2_6_address0;
-wire    grp_convolution_1_fu_304_pad_img_2_6_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_3_0_address0;
-wire    grp_convolution_1_fu_304_pad_img_3_0_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_3_1_address0;
-wire    grp_convolution_1_fu_304_pad_img_3_1_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_3_2_address0;
-wire    grp_convolution_1_fu_304_pad_img_3_2_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_3_3_address0;
-wire    grp_convolution_1_fu_304_pad_img_3_3_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_3_4_address0;
-wire    grp_convolution_1_fu_304_pad_img_3_4_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_3_5_address0;
-wire    grp_convolution_1_fu_304_pad_img_3_5_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_3_6_address0;
-wire    grp_convolution_1_fu_304_pad_img_3_6_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_4_0_address0;
-wire    grp_convolution_1_fu_304_pad_img_4_0_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_4_1_address0;
-wire    grp_convolution_1_fu_304_pad_img_4_1_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_4_2_address0;
-wire    grp_convolution_1_fu_304_pad_img_4_2_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_4_3_address0;
-wire    grp_convolution_1_fu_304_pad_img_4_3_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_4_4_address0;
-wire    grp_convolution_1_fu_304_pad_img_4_4_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_4_5_address0;
-wire    grp_convolution_1_fu_304_pad_img_4_5_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_4_6_address0;
-wire    grp_convolution_1_fu_304_pad_img_4_6_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_5_0_address0;
-wire    grp_convolution_1_fu_304_pad_img_5_0_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_5_1_address0;
-wire    grp_convolution_1_fu_304_pad_img_5_1_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_5_2_address0;
-wire    grp_convolution_1_fu_304_pad_img_5_2_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_5_3_address0;
-wire    grp_convolution_1_fu_304_pad_img_5_3_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_5_4_address0;
-wire    grp_convolution_1_fu_304_pad_img_5_4_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_5_5_address0;
-wire    grp_convolution_1_fu_304_pad_img_5_5_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_5_6_address0;
-wire    grp_convolution_1_fu_304_pad_img_5_6_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_6_0_address0;
-wire    grp_convolution_1_fu_304_pad_img_6_0_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_6_1_address0;
-wire    grp_convolution_1_fu_304_pad_img_6_1_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_6_2_address0;
-wire    grp_convolution_1_fu_304_pad_img_6_2_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_6_3_address0;
-wire    grp_convolution_1_fu_304_pad_img_6_3_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_6_4_address0;
-wire    grp_convolution_1_fu_304_pad_img_6_4_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_6_5_address0;
-wire    grp_convolution_1_fu_304_pad_img_6_5_ce0;
-wire   [4:0] grp_convolution_1_fu_304_pad_img_6_6_address0;
-wire    grp_convolution_1_fu_304_pad_img_6_6_ce0;
-wire   [31:0] grp_convolution_1_fu_304_grp_fu_684_p_din0;
-wire   [31:0] grp_convolution_1_fu_304_grp_fu_684_p_din1;
-wire   [1:0] grp_convolution_1_fu_304_grp_fu_684_p_opcode;
-wire    grp_convolution_1_fu_304_grp_fu_684_p_ce;
-wire    grp_max_pooling_fu_407_ap_start;
-wire    grp_max_pooling_fu_407_ap_done;
-wire    grp_max_pooling_fu_407_ap_idle;
-wire    grp_max_pooling_fu_407_ap_ready;
-reg   [31:0] grp_max_pooling_fu_407_conv_to_pool_streams_0_dout;
-reg    grp_max_pooling_fu_407_conv_to_pool_streams_0_empty_n;
-wire    grp_max_pooling_fu_407_conv_to_pool_streams_0_read;
-wire   [31:0] grp_max_pooling_fu_407_pool_to_flat_streams_0_din;
-reg    grp_max_pooling_fu_407_pool_to_flat_streams_0_full_n;
-wire    grp_max_pooling_fu_407_pool_to_flat_streams_0_write;
-wire    grp_max_pooling_fu_413_ap_start;
-wire    grp_max_pooling_fu_413_ap_done;
-wire    grp_max_pooling_fu_413_ap_idle;
-wire    grp_max_pooling_fu_413_ap_ready;
-reg   [31:0] grp_max_pooling_fu_413_conv_to_pool_streams_0_dout;
-reg    grp_max_pooling_fu_413_conv_to_pool_streams_0_empty_n;
-wire    grp_max_pooling_fu_413_conv_to_pool_streams_0_read;
-wire   [31:0] grp_max_pooling_fu_413_pool_to_flat_streams_0_din;
-reg    grp_max_pooling_fu_413_pool_to_flat_streams_0_full_n;
-wire    grp_max_pooling_fu_413_pool_to_flat_streams_0_write;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_start;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_done;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_idle;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_ready;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_pool_to_flat_streams_read;
-wire   [31:0] grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_flat_to_dense_streams_din;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_flat_to_dense_streams_write;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_start;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_done;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_idle;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_ready;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_pool_to_flat_streams_1_read;
-wire   [31:0] grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_flat_to_dense_streams_1_din;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_flat_to_dense_streams_1_write;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_start;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_done;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_idle;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_ready;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_pool_to_flat_streams_2_read;
-wire   [31:0] grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_flat_to_dense_streams_2_din;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_flat_to_dense_streams_2_write;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_start;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_done;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_idle;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_ready;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_pool_to_flat_streams_3_read;
-wire   [31:0] grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_flat_to_dense_streams_3_din;
-wire    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_flat_to_dense_streams_3_write;
-wire    grp_dense_fu_443_ap_start;
-wire    grp_dense_fu_443_ap_done;
-wire    grp_dense_fu_443_ap_idle;
-wire    grp_dense_fu_443_ap_ready;
-wire    grp_dense_fu_443_flat_to_dense_streams_0_read;
-wire   [31:0] grp_dense_fu_443_dense_to_softmax_streams_0_din;
-wire    grp_dense_fu_443_dense_to_softmax_streams_0_write;
-wire    grp_dense_fu_471_ap_start;
-wire    grp_dense_fu_471_ap_done;
-wire    grp_dense_fu_471_ap_idle;
-wire    grp_dense_fu_471_ap_ready;
-wire    grp_dense_fu_471_flat_to_dense_streams_0_read;
-wire   [31:0] grp_dense_fu_471_dense_to_softmax_streams_0_din;
-wire    grp_dense_fu_471_dense_to_softmax_streams_0_write;
-wire    grp_dense_fu_499_ap_start;
-wire    grp_dense_fu_499_ap_done;
-wire    grp_dense_fu_499_ap_idle;
-wire    grp_dense_fu_499_ap_ready;
-wire    grp_dense_fu_499_flat_to_dense_streams_0_read;
-wire   [31:0] grp_dense_fu_499_dense_to_softmax_streams_0_din;
-wire    grp_dense_fu_499_dense_to_softmax_streams_0_write;
-wire    grp_dense_fu_527_ap_start;
-wire    grp_dense_fu_527_ap_done;
-wire    grp_dense_fu_527_ap_idle;
-wire    grp_dense_fu_527_ap_ready;
-wire    grp_dense_fu_527_flat_to_dense_streams_0_read;
-wire   [31:0] grp_dense_fu_527_dense_to_softmax_streams_0_din;
-wire    grp_dense_fu_527_dense_to_softmax_streams_0_write;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_start;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_done;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_idle;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_ready;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_read;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_1_read;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_2_read;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_3_read;
-wire   [3:0] grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_address0;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_ce0;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_we0;
-wire   [31:0] grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_d0;
-wire   [31:0] grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_exp_sum_out;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_exp_sum_out_ap_vld;
-wire   [31:0] grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_din0;
-wire   [31:0] grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_din1;
-wire   [1:0] grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_opcode;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_ce;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_start;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_done;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_idle;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_ready;
-wire   [3:0] grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_address0;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_ce0;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_we0;
-wire   [31:0] grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_d0;
-wire   [3:0] grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_address1;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_ce1;
-wire   [31:0] grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_grp_fu_688_p_din0;
-wire   [31:0] grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_grp_fu_688_p_din1;
-wire    grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_grp_fu_688_p_ce;
-reg    grp_convolution_fu_284_ap_start_reg;
-wire    ap_CS_fsm_state3;
-wire    ap_CS_fsm_state2;
-wire    ap_CS_fsm_state4;
+wire    convolutional_layer_U0_ap_start;
+wire    convolutional_layer_U0_ap_done;
+wire    convolutional_layer_U0_ap_continue;
+wire    convolutional_layer_U0_ap_idle;
+wire    convolutional_layer_U0_ap_ready;
+wire    convolutional_layer_U0_start_out;
+wire    convolutional_layer_U0_start_write;
+wire   [10:0] convolutional_layer_U0_pad_img0_address0;
+wire    convolutional_layer_U0_pad_img0_ce0;
+wire   [10:0] convolutional_layer_U0_pad_img0_address1;
+wire    convolutional_layer_U0_pad_img0_ce1;
+wire   [10:0] convolutional_layer_U0_pad_img1_address0;
+wire    convolutional_layer_U0_pad_img1_ce0;
+wire   [10:0] convolutional_layer_U0_pad_img1_address1;
+wire    convolutional_layer_U0_pad_img1_ce1;
+wire   [10:0] convolutional_layer_U0_pad_img2_address0;
+wire    convolutional_layer_U0_pad_img2_ce0;
+wire   [10:0] convolutional_layer_U0_pad_img2_address1;
+wire    convolutional_layer_U0_pad_img2_ce1;
+wire   [4:0] convolutional_layer_U0_pad_img3_0_0_address0;
+wire    convolutional_layer_U0_pad_img3_0_0_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_0_1_address0;
+wire    convolutional_layer_U0_pad_img3_0_1_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_0_2_address0;
+wire    convolutional_layer_U0_pad_img3_0_2_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_0_3_address0;
+wire    convolutional_layer_U0_pad_img3_0_3_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_0_4_address0;
+wire    convolutional_layer_U0_pad_img3_0_4_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_0_5_address0;
+wire    convolutional_layer_U0_pad_img3_0_5_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_0_6_address0;
+wire    convolutional_layer_U0_pad_img3_0_6_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_1_0_address0;
+wire    convolutional_layer_U0_pad_img3_1_0_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_1_1_address0;
+wire    convolutional_layer_U0_pad_img3_1_1_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_1_2_address0;
+wire    convolutional_layer_U0_pad_img3_1_2_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_1_3_address0;
+wire    convolutional_layer_U0_pad_img3_1_3_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_1_4_address0;
+wire    convolutional_layer_U0_pad_img3_1_4_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_1_5_address0;
+wire    convolutional_layer_U0_pad_img3_1_5_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_1_6_address0;
+wire    convolutional_layer_U0_pad_img3_1_6_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_2_0_address0;
+wire    convolutional_layer_U0_pad_img3_2_0_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_2_1_address0;
+wire    convolutional_layer_U0_pad_img3_2_1_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_2_2_address0;
+wire    convolutional_layer_U0_pad_img3_2_2_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_2_3_address0;
+wire    convolutional_layer_U0_pad_img3_2_3_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_2_4_address0;
+wire    convolutional_layer_U0_pad_img3_2_4_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_2_5_address0;
+wire    convolutional_layer_U0_pad_img3_2_5_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_2_6_address0;
+wire    convolutional_layer_U0_pad_img3_2_6_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_3_0_address0;
+wire    convolutional_layer_U0_pad_img3_3_0_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_3_1_address0;
+wire    convolutional_layer_U0_pad_img3_3_1_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_3_2_address0;
+wire    convolutional_layer_U0_pad_img3_3_2_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_3_3_address0;
+wire    convolutional_layer_U0_pad_img3_3_3_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_3_4_address0;
+wire    convolutional_layer_U0_pad_img3_3_4_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_3_5_address0;
+wire    convolutional_layer_U0_pad_img3_3_5_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_3_6_address0;
+wire    convolutional_layer_U0_pad_img3_3_6_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_4_0_address0;
+wire    convolutional_layer_U0_pad_img3_4_0_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_4_1_address0;
+wire    convolutional_layer_U0_pad_img3_4_1_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_4_2_address0;
+wire    convolutional_layer_U0_pad_img3_4_2_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_4_3_address0;
+wire    convolutional_layer_U0_pad_img3_4_3_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_4_4_address0;
+wire    convolutional_layer_U0_pad_img3_4_4_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_4_5_address0;
+wire    convolutional_layer_U0_pad_img3_4_5_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_4_6_address0;
+wire    convolutional_layer_U0_pad_img3_4_6_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_5_0_address0;
+wire    convolutional_layer_U0_pad_img3_5_0_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_5_1_address0;
+wire    convolutional_layer_U0_pad_img3_5_1_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_5_2_address0;
+wire    convolutional_layer_U0_pad_img3_5_2_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_5_3_address0;
+wire    convolutional_layer_U0_pad_img3_5_3_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_5_4_address0;
+wire    convolutional_layer_U0_pad_img3_5_4_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_5_5_address0;
+wire    convolutional_layer_U0_pad_img3_5_5_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_5_6_address0;
+wire    convolutional_layer_U0_pad_img3_5_6_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_6_0_address0;
+wire    convolutional_layer_U0_pad_img3_6_0_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_6_1_address0;
+wire    convolutional_layer_U0_pad_img3_6_1_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_6_2_address0;
+wire    convolutional_layer_U0_pad_img3_6_2_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_6_3_address0;
+wire    convolutional_layer_U0_pad_img3_6_3_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_6_4_address0;
+wire    convolutional_layer_U0_pad_img3_6_4_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_6_5_address0;
+wire    convolutional_layer_U0_pad_img3_6_5_ce0;
+wire   [4:0] convolutional_layer_U0_pad_img3_6_6_address0;
+wire    convolutional_layer_U0_pad_img3_6_6_ce0;
+wire   [31:0] convolutional_layer_U0_conv_to_pool_streams_0_din;
+wire    convolutional_layer_U0_conv_to_pool_streams_0_write;
+wire   [31:0] convolutional_layer_U0_conv_to_pool_streams_1_din;
+wire    convolutional_layer_U0_conv_to_pool_streams_1_write;
+wire   [31:0] convolutional_layer_U0_conv_to_pool_streams_2_din;
+wire    convolutional_layer_U0_conv_to_pool_streams_2_write;
+wire   [31:0] convolutional_layer_U0_conv_to_pool_streams_3_din;
+wire    convolutional_layer_U0_conv_to_pool_streams_3_write;
+wire    max_pooling_layer_U0_ap_start;
+wire    max_pooling_layer_U0_ap_done;
+wire    max_pooling_layer_U0_ap_continue;
+wire    max_pooling_layer_U0_ap_idle;
+wire    max_pooling_layer_U0_ap_ready;
+wire    max_pooling_layer_U0_start_out;
+wire    max_pooling_layer_U0_start_write;
+wire    max_pooling_layer_U0_conv_to_pool_streams_0_read;
+wire    max_pooling_layer_U0_conv_to_pool_streams_1_read;
+wire    max_pooling_layer_U0_conv_to_pool_streams_2_read;
+wire    max_pooling_layer_U0_conv_to_pool_streams_3_read;
+wire   [31:0] max_pooling_layer_U0_pool_to_flat_streams_0_din;
+wire    max_pooling_layer_U0_pool_to_flat_streams_0_write;
+wire   [31:0] max_pooling_layer_U0_pool_to_flat_streams_1_din;
+wire    max_pooling_layer_U0_pool_to_flat_streams_1_write;
+wire   [31:0] max_pooling_layer_U0_pool_to_flat_streams_2_din;
+wire    max_pooling_layer_U0_pool_to_flat_streams_2_write;
+wire   [31:0] max_pooling_layer_U0_pool_to_flat_streams_3_din;
+wire    max_pooling_layer_U0_pool_to_flat_streams_3_write;
+wire    flattening_layer_U0_ap_start;
+wire    flattening_layer_U0_ap_done;
+wire    flattening_layer_U0_ap_continue;
+wire    flattening_layer_U0_ap_idle;
+wire    flattening_layer_U0_ap_ready;
+wire    flattening_layer_U0_start_out;
+wire    flattening_layer_U0_start_write;
+wire    flattening_layer_U0_pool_to_flat_streams_0_read;
+wire    flattening_layer_U0_pool_to_flat_streams_1_read;
+wire    flattening_layer_U0_pool_to_flat_streams_2_read;
+wire    flattening_layer_U0_pool_to_flat_streams_3_read;
+wire   [31:0] flattening_layer_U0_flat_to_dense_streams_0_din;
+wire    flattening_layer_U0_flat_to_dense_streams_0_write;
+wire   [31:0] flattening_layer_U0_flat_to_dense_streams_1_din;
+wire    flattening_layer_U0_flat_to_dense_streams_1_write;
+wire   [31:0] flattening_layer_U0_flat_to_dense_streams_2_din;
+wire    flattening_layer_U0_flat_to_dense_streams_2_write;
+wire   [31:0] flattening_layer_U0_flat_to_dense_streams_3_din;
+wire    flattening_layer_U0_flat_to_dense_streams_3_write;
+wire    dense_layer_U0_ap_start;
+wire    dense_layer_U0_ap_done;
+wire    dense_layer_U0_ap_continue;
+wire    dense_layer_U0_ap_idle;
+wire    dense_layer_U0_ap_ready;
+wire    dense_layer_U0_flat_to_dense_streams_0_read;
+wire    dense_layer_U0_flat_to_dense_streams_1_read;
+wire    dense_layer_U0_flat_to_dense_streams_2_read;
+wire    dense_layer_U0_flat_to_dense_streams_3_read;
+wire   [31:0] dense_layer_U0_dense_to_softmax_streams_0_din;
+wire    dense_layer_U0_dense_to_softmax_streams_0_write;
+wire   [31:0] dense_layer_U0_dense_to_softmax_streams_1_din;
+wire    dense_layer_U0_dense_to_softmax_streams_1_write;
+wire   [31:0] dense_layer_U0_dense_to_softmax_streams_2_din;
+wire    dense_layer_U0_dense_to_softmax_streams_2_write;
+wire   [31:0] dense_layer_U0_dense_to_softmax_streams_3_din;
+wire    dense_layer_U0_dense_to_softmax_streams_3_write;
+wire    dense_layer_soft_max_U0_ap_start;
+wire    dense_layer_soft_max_U0_ap_done;
+wire    dense_layer_soft_max_U0_ap_continue;
+wire    dense_layer_soft_max_U0_ap_idle;
+wire    dense_layer_soft_max_U0_ap_ready;
+wire    dense_layer_soft_max_U0_dense_to_softmax_streams_0_read;
+wire    dense_layer_soft_max_U0_dense_to_softmax_streams_1_read;
+wire    dense_layer_soft_max_U0_dense_to_softmax_streams_2_read;
+wire    dense_layer_soft_max_U0_dense_to_softmax_streams_3_read;
+wire   [3:0] dense_layer_soft_max_U0_prediction_address0;
+wire    dense_layer_soft_max_U0_prediction_ce0;
+wire    dense_layer_soft_max_U0_prediction_we0;
+wire   [31:0] dense_layer_soft_max_U0_prediction_d0;
+wire   [3:0] dense_layer_soft_max_U0_prediction_address1;
+wire    dense_layer_soft_max_U0_prediction_ce1;
 wire    conv_to_pool_streams_full_n;
-reg    conv_to_pool_streams_write;
-wire    conv_to_pool_streams_1_full_n;
-reg    conv_to_pool_streams_1_write;
-reg    grp_convolution_fu_295_ap_start_reg;
-wire    conv_to_pool_streams_2_full_n;
-reg    conv_to_pool_streams_2_write;
-reg    grp_convolution_1_fu_304_ap_start_reg;
-wire    conv_to_pool_streams_3_full_n;
-reg    conv_to_pool_streams_3_write;
-reg    grp_max_pooling_fu_407_ap_start_reg;
-wire    ap_CS_fsm_state5;
 wire   [31:0] conv_to_pool_streams_dout;
+wire   [10:0] conv_to_pool_streams_num_data_valid;
+wire   [10:0] conv_to_pool_streams_fifo_cap;
 wire    conv_to_pool_streams_empty_n;
-reg    conv_to_pool_streams_read;
+wire    conv_to_pool_streams_1_full_n;
 wire   [31:0] conv_to_pool_streams_1_dout;
+wire   [10:0] conv_to_pool_streams_1_num_data_valid;
+wire   [10:0] conv_to_pool_streams_1_fifo_cap;
 wire    conv_to_pool_streams_1_empty_n;
-reg    conv_to_pool_streams_1_read;
-wire    ap_CS_fsm_state6;
-wire    pool_to_flat_streams_full_n;
-reg    pool_to_flat_streams_write;
-wire    pool_to_flat_streams_1_full_n;
-reg    pool_to_flat_streams_1_write;
-reg    grp_max_pooling_fu_413_ap_start_reg;
-wire   [31:0] conv_to_pool_streams_3_dout;
-wire    conv_to_pool_streams_3_empty_n;
-reg    conv_to_pool_streams_3_read;
+wire    conv_to_pool_streams_2_full_n;
 wire   [31:0] conv_to_pool_streams_2_dout;
+wire   [10:0] conv_to_pool_streams_2_num_data_valid;
+wire   [10:0] conv_to_pool_streams_2_fifo_cap;
 wire    conv_to_pool_streams_2_empty_n;
-reg    conv_to_pool_streams_2_read;
-wire    pool_to_flat_streams_3_full_n;
-reg    pool_to_flat_streams_3_write;
-wire    pool_to_flat_streams_2_full_n;
-reg    pool_to_flat_streams_2_write;
-reg    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_start_reg;
-wire    ap_CS_fsm_state7;
+wire    conv_to_pool_streams_3_full_n;
+wire   [31:0] conv_to_pool_streams_3_dout;
+wire   [10:0] conv_to_pool_streams_3_num_data_valid;
+wire   [10:0] conv_to_pool_streams_3_fifo_cap;
+wire    conv_to_pool_streams_3_empty_n;
+wire    pool_to_flat_streams_full_n;
 wire   [31:0] pool_to_flat_streams_dout;
+wire   [8:0] pool_to_flat_streams_num_data_valid;
+wire   [8:0] pool_to_flat_streams_fifo_cap;
 wire    pool_to_flat_streams_empty_n;
-reg    pool_to_flat_streams_read;
-wire    ap_CS_fsm_state8;
-wire    flat_to_dense_streams_full_n;
-reg    flat_to_dense_streams_write;
-reg    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_start_reg;
-wire    ap_CS_fsm_state10;
+wire    pool_to_flat_streams_1_full_n;
 wire   [31:0] pool_to_flat_streams_1_dout;
+wire   [8:0] pool_to_flat_streams_1_num_data_valid;
+wire   [8:0] pool_to_flat_streams_1_fifo_cap;
 wire    pool_to_flat_streams_1_empty_n;
-reg    pool_to_flat_streams_1_read;
-wire    ap_CS_fsm_state11;
-wire    flat_to_dense_streams_1_full_n;
-reg    flat_to_dense_streams_1_write;
-reg    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_start_reg;
-wire    ap_CS_fsm_state13;
+wire    pool_to_flat_streams_2_full_n;
 wire   [31:0] pool_to_flat_streams_2_dout;
+wire   [8:0] pool_to_flat_streams_2_num_data_valid;
+wire   [8:0] pool_to_flat_streams_2_fifo_cap;
 wire    pool_to_flat_streams_2_empty_n;
-reg    pool_to_flat_streams_2_read;
-wire    ap_CS_fsm_state14;
-wire    flat_to_dense_streams_2_full_n;
-reg    flat_to_dense_streams_2_write;
-reg    grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_start_reg;
-wire    ap_CS_fsm_state16;
+wire    pool_to_flat_streams_3_full_n;
 wire   [31:0] pool_to_flat_streams_3_dout;
+wire   [8:0] pool_to_flat_streams_3_num_data_valid;
+wire   [8:0] pool_to_flat_streams_3_fifo_cap;
 wire    pool_to_flat_streams_3_empty_n;
-reg    pool_to_flat_streams_3_read;
-wire    ap_CS_fsm_state17;
-wire    flat_to_dense_streams_3_full_n;
-reg    flat_to_dense_streams_3_write;
-reg    grp_dense_fu_443_ap_start_reg;
-wire    ap_CS_fsm_state18;
+wire    flat_to_dense_streams_full_n;
 wire   [31:0] flat_to_dense_streams_dout;
+wire   [8:0] flat_to_dense_streams_num_data_valid;
+wire   [8:0] flat_to_dense_streams_fifo_cap;
 wire    flat_to_dense_streams_empty_n;
-reg    flat_to_dense_streams_read;
-wire    ap_CS_fsm_state19;
-wire    dense_to_softmax_streams_full_n;
-reg    dense_to_softmax_streams_write;
-reg    grp_dense_fu_471_ap_start_reg;
+wire    flat_to_dense_streams_1_full_n;
 wire   [31:0] flat_to_dense_streams_1_dout;
+wire   [8:0] flat_to_dense_streams_1_num_data_valid;
+wire   [8:0] flat_to_dense_streams_1_fifo_cap;
 wire    flat_to_dense_streams_1_empty_n;
-reg    flat_to_dense_streams_1_read;
-wire    dense_to_softmax_streams_1_full_n;
-reg    dense_to_softmax_streams_1_write;
-reg    grp_dense_fu_499_ap_start_reg;
+wire    flat_to_dense_streams_2_full_n;
 wire   [31:0] flat_to_dense_streams_2_dout;
+wire   [8:0] flat_to_dense_streams_2_num_data_valid;
+wire   [8:0] flat_to_dense_streams_2_fifo_cap;
 wire    flat_to_dense_streams_2_empty_n;
-reg    flat_to_dense_streams_2_read;
-wire    dense_to_softmax_streams_2_full_n;
-reg    dense_to_softmax_streams_2_write;
-reg    grp_dense_fu_527_ap_start_reg;
+wire    flat_to_dense_streams_3_full_n;
 wire   [31:0] flat_to_dense_streams_3_dout;
+wire   [8:0] flat_to_dense_streams_3_num_data_valid;
+wire   [8:0] flat_to_dense_streams_3_fifo_cap;
 wire    flat_to_dense_streams_3_empty_n;
-reg    flat_to_dense_streams_3_read;
-wire    dense_to_softmax_streams_3_full_n;
-reg    dense_to_softmax_streams_3_write;
-reg    grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_start_reg;
-wire    ap_CS_fsm_state20;
+wire    dense_to_softmax_streams_full_n;
 wire   [31:0] dense_to_softmax_streams_dout;
+wire   [4:0] dense_to_softmax_streams_num_data_valid;
+wire   [4:0] dense_to_softmax_streams_fifo_cap;
 wire    dense_to_softmax_streams_empty_n;
-reg    dense_to_softmax_streams_read;
-wire    ap_CS_fsm_state21;
+wire    dense_to_softmax_streams_1_full_n;
 wire   [31:0] dense_to_softmax_streams_1_dout;
+wire   [4:0] dense_to_softmax_streams_1_num_data_valid;
+wire   [4:0] dense_to_softmax_streams_1_fifo_cap;
 wire    dense_to_softmax_streams_1_empty_n;
-reg    dense_to_softmax_streams_1_read;
+wire    dense_to_softmax_streams_2_full_n;
 wire   [31:0] dense_to_softmax_streams_2_dout;
+wire   [4:0] dense_to_softmax_streams_2_num_data_valid;
+wire   [4:0] dense_to_softmax_streams_2_fifo_cap;
 wire    dense_to_softmax_streams_2_empty_n;
-reg    dense_to_softmax_streams_2_read;
+wire    dense_to_softmax_streams_3_full_n;
 wire   [31:0] dense_to_softmax_streams_3_dout;
+wire   [4:0] dense_to_softmax_streams_3_num_data_valid;
+wire   [4:0] dense_to_softmax_streams_3_fifo_cap;
 wire    dense_to_softmax_streams_3_empty_n;
-reg    dense_to_softmax_streams_3_read;
-reg    grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_start_reg;
-wire    ap_CS_fsm_state22;
-wire    ap_CS_fsm_state23;
-wire   [31:0] grp_fu_684_p2;
-reg   [31:0] grp_fu_684_p0;
-reg   [31:0] grp_fu_684_p1;
-reg    grp_fu_684_ce;
-reg    grp_fu_688_ce;
-reg   [22:0] ap_NS_fsm;
-reg    ap_ST_fsm_state1_blk;
-reg    ap_block_state2_on_subcall_done;
-reg    ap_ST_fsm_state2_blk;
-wire    ap_ST_fsm_state3_blk;
-reg    ap_block_state4_on_subcall_done;
-reg    ap_ST_fsm_state4_blk;
-wire    ap_ST_fsm_state5_blk;
-reg    ap_block_state6_on_subcall_done;
-reg    ap_ST_fsm_state6_blk;
-wire    ap_ST_fsm_state7_blk;
-reg    ap_ST_fsm_state8_blk;
-wire    ap_ST_fsm_state9_blk;
-wire    ap_ST_fsm_state10_blk;
-reg    ap_ST_fsm_state11_blk;
-wire    ap_ST_fsm_state12_blk;
-wire    ap_ST_fsm_state13_blk;
-reg    ap_ST_fsm_state14_blk;
-wire    ap_ST_fsm_state15_blk;
-wire    ap_ST_fsm_state16_blk;
-reg    ap_ST_fsm_state17_blk;
-wire    ap_ST_fsm_state18_blk;
-reg    ap_block_state19_on_subcall_done;
-reg    ap_ST_fsm_state19_blk;
-wire    ap_ST_fsm_state20_blk;
-reg    ap_ST_fsm_state21_blk;
-wire    ap_ST_fsm_state22_blk;
-reg    ap_ST_fsm_state23_blk;
+wire    ap_sync_ready;
+reg    ap_sync_reg_convolutional_layer_U0_ap_ready;
+wire    ap_sync_convolutional_layer_U0_ap_ready;
+reg    ap_sync_reg_dense_layer_soft_max_U0_ap_ready;
+wire    ap_sync_dense_layer_soft_max_U0_ap_ready;
+wire   [0:0] start_for_max_pooling_layer_U0_din;
+wire    start_for_max_pooling_layer_U0_full_n;
+wire   [0:0] start_for_max_pooling_layer_U0_dout;
+wire    start_for_max_pooling_layer_U0_empty_n;
+wire   [0:0] start_for_flattening_layer_U0_din;
+wire    start_for_flattening_layer_U0_full_n;
+wire   [0:0] start_for_flattening_layer_U0_dout;
+wire    start_for_flattening_layer_U0_empty_n;
+wire   [0:0] start_for_dense_layer_U0_din;
+wire    start_for_dense_layer_U0_full_n;
+wire   [0:0] start_for_dense_layer_U0_dout;
+wire    start_for_dense_layer_U0_empty_n;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 23'd1;
-#0 grp_convolution_fu_284_ap_start_reg = 1'b0;
-#0 grp_convolution_fu_295_ap_start_reg = 1'b0;
-#0 grp_convolution_1_fu_304_ap_start_reg = 1'b0;
-#0 grp_max_pooling_fu_407_ap_start_reg = 1'b0;
-#0 grp_max_pooling_fu_413_ap_start_reg = 1'b0;
-#0 grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_start_reg = 1'b0;
-#0 grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_start_reg = 1'b0;
-#0 grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_start_reg = 1'b0;
-#0 grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_start_reg = 1'b0;
-#0 grp_dense_fu_443_ap_start_reg = 1'b0;
-#0 grp_dense_fu_471_ap_start_reg = 1'b0;
-#0 grp_dense_fu_499_ap_start_reg = 1'b0;
-#0 grp_dense_fu_527_ap_start_reg = 1'b0;
-#0 grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_start_reg = 1'b0;
-#0 grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_start_reg = 1'b0;
+#0 ap_sync_reg_convolutional_layer_U0_ap_ready = 1'b0;
+#0 ap_sync_reg_dense_layer_soft_max_U0_ap_ready = 1'b0;
 end
 
-cnn_convolution grp_convolution_fu_284(
+cnn_convolutional_layer convolutional_layer_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_convolution_fu_284_ap_start),
-    .ap_done(grp_convolution_fu_284_ap_done),
-    .ap_idle(grp_convolution_fu_284_ap_idle),
-    .ap_ready(grp_convolution_fu_284_ap_ready),
-    .pad_img_address0(grp_convolution_fu_284_pad_img_address0),
-    .pad_img_ce0(grp_convolution_fu_284_pad_img_ce0),
-    .pad_img_q0(grp_convolution_fu_284_pad_img_q0),
-    .pad_img_address1(grp_convolution_fu_284_pad_img_address1),
-    .pad_img_ce1(grp_convolution_fu_284_pad_img_ce1),
-    .pad_img_q1(grp_convolution_fu_284_pad_img_q1),
-    .filter(grp_convolution_fu_284_filter),
-    .conv_to_pool_streams_0_din(grp_convolution_fu_284_conv_to_pool_streams_0_din),
-    .conv_to_pool_streams_0_full_n(grp_convolution_fu_284_conv_to_pool_streams_0_full_n),
-    .conv_to_pool_streams_0_write(grp_convolution_fu_284_conv_to_pool_streams_0_write)
-);
-
-cnn_convolution grp_convolution_fu_295(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_convolution_fu_295_ap_start),
-    .ap_done(grp_convolution_fu_295_ap_done),
-    .ap_idle(grp_convolution_fu_295_ap_idle),
-    .ap_ready(grp_convolution_fu_295_ap_ready),
-    .pad_img_address0(grp_convolution_fu_295_pad_img_address0),
-    .pad_img_ce0(grp_convolution_fu_295_pad_img_ce0),
-    .pad_img_q0(pad_img2_q0),
-    .pad_img_address1(grp_convolution_fu_295_pad_img_address1),
-    .pad_img_ce1(grp_convolution_fu_295_pad_img_ce1),
-    .pad_img_q1(pad_img2_q1),
-    .filter(2'd2),
-    .conv_to_pool_streams_0_din(grp_convolution_fu_295_conv_to_pool_streams_0_din),
-    .conv_to_pool_streams_0_full_n(conv_to_pool_streams_2_full_n),
-    .conv_to_pool_streams_0_write(grp_convolution_fu_295_conv_to_pool_streams_0_write)
-);
-
-cnn_convolution_1 grp_convolution_1_fu_304(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_convolution_1_fu_304_ap_start),
-    .ap_done(grp_convolution_1_fu_304_ap_done),
-    .ap_idle(grp_convolution_1_fu_304_ap_idle),
-    .ap_ready(grp_convolution_1_fu_304_ap_ready),
-    .conv_to_pool_streams_3_din(grp_convolution_1_fu_304_conv_to_pool_streams_3_din),
+    .ap_start(convolutional_layer_U0_ap_start),
+    .start_full_n(start_for_max_pooling_layer_U0_full_n),
+    .ap_done(convolutional_layer_U0_ap_done),
+    .ap_continue(convolutional_layer_U0_ap_continue),
+    .ap_idle(convolutional_layer_U0_ap_idle),
+    .ap_ready(convolutional_layer_U0_ap_ready),
+    .start_out(convolutional_layer_U0_start_out),
+    .start_write(convolutional_layer_U0_start_write),
+    .pad_img0_address0(convolutional_layer_U0_pad_img0_address0),
+    .pad_img0_ce0(convolutional_layer_U0_pad_img0_ce0),
+    .pad_img0_q0(pad_img0_q0),
+    .pad_img0_address1(convolutional_layer_U0_pad_img0_address1),
+    .pad_img0_ce1(convolutional_layer_U0_pad_img0_ce1),
+    .pad_img0_q1(pad_img0_q1),
+    .pad_img1_address0(convolutional_layer_U0_pad_img1_address0),
+    .pad_img1_ce0(convolutional_layer_U0_pad_img1_ce0),
+    .pad_img1_q0(pad_img1_q0),
+    .pad_img1_address1(convolutional_layer_U0_pad_img1_address1),
+    .pad_img1_ce1(convolutional_layer_U0_pad_img1_ce1),
+    .pad_img1_q1(pad_img1_q1),
+    .pad_img2_address0(convolutional_layer_U0_pad_img2_address0),
+    .pad_img2_ce0(convolutional_layer_U0_pad_img2_ce0),
+    .pad_img2_q0(pad_img2_q0),
+    .pad_img2_address1(convolutional_layer_U0_pad_img2_address1),
+    .pad_img2_ce1(convolutional_layer_U0_pad_img2_ce1),
+    .pad_img2_q1(pad_img2_q1),
+    .pad_img3_0_0_address0(convolutional_layer_U0_pad_img3_0_0_address0),
+    .pad_img3_0_0_ce0(convolutional_layer_U0_pad_img3_0_0_ce0),
+    .pad_img3_0_0_q0(pad_img3_0_0_q0),
+    .pad_img3_0_1_address0(convolutional_layer_U0_pad_img3_0_1_address0),
+    .pad_img3_0_1_ce0(convolutional_layer_U0_pad_img3_0_1_ce0),
+    .pad_img3_0_1_q0(pad_img3_0_1_q0),
+    .pad_img3_0_2_address0(convolutional_layer_U0_pad_img3_0_2_address0),
+    .pad_img3_0_2_ce0(convolutional_layer_U0_pad_img3_0_2_ce0),
+    .pad_img3_0_2_q0(pad_img3_0_2_q0),
+    .pad_img3_0_3_address0(convolutional_layer_U0_pad_img3_0_3_address0),
+    .pad_img3_0_3_ce0(convolutional_layer_U0_pad_img3_0_3_ce0),
+    .pad_img3_0_3_q0(pad_img3_0_3_q0),
+    .pad_img3_0_4_address0(convolutional_layer_U0_pad_img3_0_4_address0),
+    .pad_img3_0_4_ce0(convolutional_layer_U0_pad_img3_0_4_ce0),
+    .pad_img3_0_4_q0(pad_img3_0_4_q0),
+    .pad_img3_0_5_address0(convolutional_layer_U0_pad_img3_0_5_address0),
+    .pad_img3_0_5_ce0(convolutional_layer_U0_pad_img3_0_5_ce0),
+    .pad_img3_0_5_q0(pad_img3_0_5_q0),
+    .pad_img3_0_6_address0(convolutional_layer_U0_pad_img3_0_6_address0),
+    .pad_img3_0_6_ce0(convolutional_layer_U0_pad_img3_0_6_ce0),
+    .pad_img3_0_6_q0(pad_img3_0_6_q0),
+    .pad_img3_1_0_address0(convolutional_layer_U0_pad_img3_1_0_address0),
+    .pad_img3_1_0_ce0(convolutional_layer_U0_pad_img3_1_0_ce0),
+    .pad_img3_1_0_q0(pad_img3_1_0_q0),
+    .pad_img3_1_1_address0(convolutional_layer_U0_pad_img3_1_1_address0),
+    .pad_img3_1_1_ce0(convolutional_layer_U0_pad_img3_1_1_ce0),
+    .pad_img3_1_1_q0(pad_img3_1_1_q0),
+    .pad_img3_1_2_address0(convolutional_layer_U0_pad_img3_1_2_address0),
+    .pad_img3_1_2_ce0(convolutional_layer_U0_pad_img3_1_2_ce0),
+    .pad_img3_1_2_q0(pad_img3_1_2_q0),
+    .pad_img3_1_3_address0(convolutional_layer_U0_pad_img3_1_3_address0),
+    .pad_img3_1_3_ce0(convolutional_layer_U0_pad_img3_1_3_ce0),
+    .pad_img3_1_3_q0(pad_img3_1_3_q0),
+    .pad_img3_1_4_address0(convolutional_layer_U0_pad_img3_1_4_address0),
+    .pad_img3_1_4_ce0(convolutional_layer_U0_pad_img3_1_4_ce0),
+    .pad_img3_1_4_q0(pad_img3_1_4_q0),
+    .pad_img3_1_5_address0(convolutional_layer_U0_pad_img3_1_5_address0),
+    .pad_img3_1_5_ce0(convolutional_layer_U0_pad_img3_1_5_ce0),
+    .pad_img3_1_5_q0(pad_img3_1_5_q0),
+    .pad_img3_1_6_address0(convolutional_layer_U0_pad_img3_1_6_address0),
+    .pad_img3_1_6_ce0(convolutional_layer_U0_pad_img3_1_6_ce0),
+    .pad_img3_1_6_q0(pad_img3_1_6_q0),
+    .pad_img3_2_0_address0(convolutional_layer_U0_pad_img3_2_0_address0),
+    .pad_img3_2_0_ce0(convolutional_layer_U0_pad_img3_2_0_ce0),
+    .pad_img3_2_0_q0(pad_img3_2_0_q0),
+    .pad_img3_2_1_address0(convolutional_layer_U0_pad_img3_2_1_address0),
+    .pad_img3_2_1_ce0(convolutional_layer_U0_pad_img3_2_1_ce0),
+    .pad_img3_2_1_q0(pad_img3_2_1_q0),
+    .pad_img3_2_2_address0(convolutional_layer_U0_pad_img3_2_2_address0),
+    .pad_img3_2_2_ce0(convolutional_layer_U0_pad_img3_2_2_ce0),
+    .pad_img3_2_2_q0(pad_img3_2_2_q0),
+    .pad_img3_2_3_address0(convolutional_layer_U0_pad_img3_2_3_address0),
+    .pad_img3_2_3_ce0(convolutional_layer_U0_pad_img3_2_3_ce0),
+    .pad_img3_2_3_q0(pad_img3_2_3_q0),
+    .pad_img3_2_4_address0(convolutional_layer_U0_pad_img3_2_4_address0),
+    .pad_img3_2_4_ce0(convolutional_layer_U0_pad_img3_2_4_ce0),
+    .pad_img3_2_4_q0(pad_img3_2_4_q0),
+    .pad_img3_2_5_address0(convolutional_layer_U0_pad_img3_2_5_address0),
+    .pad_img3_2_5_ce0(convolutional_layer_U0_pad_img3_2_5_ce0),
+    .pad_img3_2_5_q0(pad_img3_2_5_q0),
+    .pad_img3_2_6_address0(convolutional_layer_U0_pad_img3_2_6_address0),
+    .pad_img3_2_6_ce0(convolutional_layer_U0_pad_img3_2_6_ce0),
+    .pad_img3_2_6_q0(pad_img3_2_6_q0),
+    .pad_img3_3_0_address0(convolutional_layer_U0_pad_img3_3_0_address0),
+    .pad_img3_3_0_ce0(convolutional_layer_U0_pad_img3_3_0_ce0),
+    .pad_img3_3_0_q0(pad_img3_3_0_q0),
+    .pad_img3_3_1_address0(convolutional_layer_U0_pad_img3_3_1_address0),
+    .pad_img3_3_1_ce0(convolutional_layer_U0_pad_img3_3_1_ce0),
+    .pad_img3_3_1_q0(pad_img3_3_1_q0),
+    .pad_img3_3_2_address0(convolutional_layer_U0_pad_img3_3_2_address0),
+    .pad_img3_3_2_ce0(convolutional_layer_U0_pad_img3_3_2_ce0),
+    .pad_img3_3_2_q0(pad_img3_3_2_q0),
+    .pad_img3_3_3_address0(convolutional_layer_U0_pad_img3_3_3_address0),
+    .pad_img3_3_3_ce0(convolutional_layer_U0_pad_img3_3_3_ce0),
+    .pad_img3_3_3_q0(pad_img3_3_3_q0),
+    .pad_img3_3_4_address0(convolutional_layer_U0_pad_img3_3_4_address0),
+    .pad_img3_3_4_ce0(convolutional_layer_U0_pad_img3_3_4_ce0),
+    .pad_img3_3_4_q0(pad_img3_3_4_q0),
+    .pad_img3_3_5_address0(convolutional_layer_U0_pad_img3_3_5_address0),
+    .pad_img3_3_5_ce0(convolutional_layer_U0_pad_img3_3_5_ce0),
+    .pad_img3_3_5_q0(pad_img3_3_5_q0),
+    .pad_img3_3_6_address0(convolutional_layer_U0_pad_img3_3_6_address0),
+    .pad_img3_3_6_ce0(convolutional_layer_U0_pad_img3_3_6_ce0),
+    .pad_img3_3_6_q0(pad_img3_3_6_q0),
+    .pad_img3_4_0_address0(convolutional_layer_U0_pad_img3_4_0_address0),
+    .pad_img3_4_0_ce0(convolutional_layer_U0_pad_img3_4_0_ce0),
+    .pad_img3_4_0_q0(pad_img3_4_0_q0),
+    .pad_img3_4_1_address0(convolutional_layer_U0_pad_img3_4_1_address0),
+    .pad_img3_4_1_ce0(convolutional_layer_U0_pad_img3_4_1_ce0),
+    .pad_img3_4_1_q0(pad_img3_4_1_q0),
+    .pad_img3_4_2_address0(convolutional_layer_U0_pad_img3_4_2_address0),
+    .pad_img3_4_2_ce0(convolutional_layer_U0_pad_img3_4_2_ce0),
+    .pad_img3_4_2_q0(pad_img3_4_2_q0),
+    .pad_img3_4_3_address0(convolutional_layer_U0_pad_img3_4_3_address0),
+    .pad_img3_4_3_ce0(convolutional_layer_U0_pad_img3_4_3_ce0),
+    .pad_img3_4_3_q0(pad_img3_4_3_q0),
+    .pad_img3_4_4_address0(convolutional_layer_U0_pad_img3_4_4_address0),
+    .pad_img3_4_4_ce0(convolutional_layer_U0_pad_img3_4_4_ce0),
+    .pad_img3_4_4_q0(pad_img3_4_4_q0),
+    .pad_img3_4_5_address0(convolutional_layer_U0_pad_img3_4_5_address0),
+    .pad_img3_4_5_ce0(convolutional_layer_U0_pad_img3_4_5_ce0),
+    .pad_img3_4_5_q0(pad_img3_4_5_q0),
+    .pad_img3_4_6_address0(convolutional_layer_U0_pad_img3_4_6_address0),
+    .pad_img3_4_6_ce0(convolutional_layer_U0_pad_img3_4_6_ce0),
+    .pad_img3_4_6_q0(pad_img3_4_6_q0),
+    .pad_img3_5_0_address0(convolutional_layer_U0_pad_img3_5_0_address0),
+    .pad_img3_5_0_ce0(convolutional_layer_U0_pad_img3_5_0_ce0),
+    .pad_img3_5_0_q0(pad_img3_5_0_q0),
+    .pad_img3_5_1_address0(convolutional_layer_U0_pad_img3_5_1_address0),
+    .pad_img3_5_1_ce0(convolutional_layer_U0_pad_img3_5_1_ce0),
+    .pad_img3_5_1_q0(pad_img3_5_1_q0),
+    .pad_img3_5_2_address0(convolutional_layer_U0_pad_img3_5_2_address0),
+    .pad_img3_5_2_ce0(convolutional_layer_U0_pad_img3_5_2_ce0),
+    .pad_img3_5_2_q0(pad_img3_5_2_q0),
+    .pad_img3_5_3_address0(convolutional_layer_U0_pad_img3_5_3_address0),
+    .pad_img3_5_3_ce0(convolutional_layer_U0_pad_img3_5_3_ce0),
+    .pad_img3_5_3_q0(pad_img3_5_3_q0),
+    .pad_img3_5_4_address0(convolutional_layer_U0_pad_img3_5_4_address0),
+    .pad_img3_5_4_ce0(convolutional_layer_U0_pad_img3_5_4_ce0),
+    .pad_img3_5_4_q0(pad_img3_5_4_q0),
+    .pad_img3_5_5_address0(convolutional_layer_U0_pad_img3_5_5_address0),
+    .pad_img3_5_5_ce0(convolutional_layer_U0_pad_img3_5_5_ce0),
+    .pad_img3_5_5_q0(pad_img3_5_5_q0),
+    .pad_img3_5_6_address0(convolutional_layer_U0_pad_img3_5_6_address0),
+    .pad_img3_5_6_ce0(convolutional_layer_U0_pad_img3_5_6_ce0),
+    .pad_img3_5_6_q0(pad_img3_5_6_q0),
+    .pad_img3_6_0_address0(convolutional_layer_U0_pad_img3_6_0_address0),
+    .pad_img3_6_0_ce0(convolutional_layer_U0_pad_img3_6_0_ce0),
+    .pad_img3_6_0_q0(pad_img3_6_0_q0),
+    .pad_img3_6_1_address0(convolutional_layer_U0_pad_img3_6_1_address0),
+    .pad_img3_6_1_ce0(convolutional_layer_U0_pad_img3_6_1_ce0),
+    .pad_img3_6_1_q0(pad_img3_6_1_q0),
+    .pad_img3_6_2_address0(convolutional_layer_U0_pad_img3_6_2_address0),
+    .pad_img3_6_2_ce0(convolutional_layer_U0_pad_img3_6_2_ce0),
+    .pad_img3_6_2_q0(pad_img3_6_2_q0),
+    .pad_img3_6_3_address0(convolutional_layer_U0_pad_img3_6_3_address0),
+    .pad_img3_6_3_ce0(convolutional_layer_U0_pad_img3_6_3_ce0),
+    .pad_img3_6_3_q0(pad_img3_6_3_q0),
+    .pad_img3_6_4_address0(convolutional_layer_U0_pad_img3_6_4_address0),
+    .pad_img3_6_4_ce0(convolutional_layer_U0_pad_img3_6_4_ce0),
+    .pad_img3_6_4_q0(pad_img3_6_4_q0),
+    .pad_img3_6_5_address0(convolutional_layer_U0_pad_img3_6_5_address0),
+    .pad_img3_6_5_ce0(convolutional_layer_U0_pad_img3_6_5_ce0),
+    .pad_img3_6_5_q0(pad_img3_6_5_q0),
+    .pad_img3_6_6_address0(convolutional_layer_U0_pad_img3_6_6_address0),
+    .pad_img3_6_6_ce0(convolutional_layer_U0_pad_img3_6_6_ce0),
+    .pad_img3_6_6_q0(pad_img3_6_6_q0),
+    .conv_to_pool_streams_0_din(convolutional_layer_U0_conv_to_pool_streams_0_din),
+    .conv_to_pool_streams_0_num_data_valid(conv_to_pool_streams_num_data_valid),
+    .conv_to_pool_streams_0_fifo_cap(conv_to_pool_streams_fifo_cap),
+    .conv_to_pool_streams_0_full_n(conv_to_pool_streams_full_n),
+    .conv_to_pool_streams_0_write(convolutional_layer_U0_conv_to_pool_streams_0_write),
+    .conv_to_pool_streams_1_din(convolutional_layer_U0_conv_to_pool_streams_1_din),
+    .conv_to_pool_streams_1_num_data_valid(conv_to_pool_streams_1_num_data_valid),
+    .conv_to_pool_streams_1_fifo_cap(conv_to_pool_streams_1_fifo_cap),
+    .conv_to_pool_streams_1_full_n(conv_to_pool_streams_1_full_n),
+    .conv_to_pool_streams_1_write(convolutional_layer_U0_conv_to_pool_streams_1_write),
+    .conv_to_pool_streams_2_din(convolutional_layer_U0_conv_to_pool_streams_2_din),
+    .conv_to_pool_streams_2_num_data_valid(conv_to_pool_streams_2_num_data_valid),
+    .conv_to_pool_streams_2_fifo_cap(conv_to_pool_streams_2_fifo_cap),
+    .conv_to_pool_streams_2_full_n(conv_to_pool_streams_2_full_n),
+    .conv_to_pool_streams_2_write(convolutional_layer_U0_conv_to_pool_streams_2_write),
+    .conv_to_pool_streams_3_din(convolutional_layer_U0_conv_to_pool_streams_3_din),
+    .conv_to_pool_streams_3_num_data_valid(conv_to_pool_streams_3_num_data_valid),
+    .conv_to_pool_streams_3_fifo_cap(conv_to_pool_streams_3_fifo_cap),
     .conv_to_pool_streams_3_full_n(conv_to_pool_streams_3_full_n),
-    .conv_to_pool_streams_3_write(grp_convolution_1_fu_304_conv_to_pool_streams_3_write),
-    .pad_img_0_0_address0(grp_convolution_1_fu_304_pad_img_0_0_address0),
-    .pad_img_0_0_ce0(grp_convolution_1_fu_304_pad_img_0_0_ce0),
-    .pad_img_0_0_q0(pad_img3_0_0_q0),
-    .pad_img_0_1_address0(grp_convolution_1_fu_304_pad_img_0_1_address0),
-    .pad_img_0_1_ce0(grp_convolution_1_fu_304_pad_img_0_1_ce0),
-    .pad_img_0_1_q0(pad_img3_0_1_q0),
-    .pad_img_0_2_address0(grp_convolution_1_fu_304_pad_img_0_2_address0),
-    .pad_img_0_2_ce0(grp_convolution_1_fu_304_pad_img_0_2_ce0),
-    .pad_img_0_2_q0(pad_img3_0_2_q0),
-    .pad_img_0_3_address0(grp_convolution_1_fu_304_pad_img_0_3_address0),
-    .pad_img_0_3_ce0(grp_convolution_1_fu_304_pad_img_0_3_ce0),
-    .pad_img_0_3_q0(pad_img3_0_3_q0),
-    .pad_img_0_4_address0(grp_convolution_1_fu_304_pad_img_0_4_address0),
-    .pad_img_0_4_ce0(grp_convolution_1_fu_304_pad_img_0_4_ce0),
-    .pad_img_0_4_q0(pad_img3_0_4_q0),
-    .pad_img_0_5_address0(grp_convolution_1_fu_304_pad_img_0_5_address0),
-    .pad_img_0_5_ce0(grp_convolution_1_fu_304_pad_img_0_5_ce0),
-    .pad_img_0_5_q0(pad_img3_0_5_q0),
-    .pad_img_0_6_address0(grp_convolution_1_fu_304_pad_img_0_6_address0),
-    .pad_img_0_6_ce0(grp_convolution_1_fu_304_pad_img_0_6_ce0),
-    .pad_img_0_6_q0(pad_img3_0_6_q0),
-    .pad_img_1_0_address0(grp_convolution_1_fu_304_pad_img_1_0_address0),
-    .pad_img_1_0_ce0(grp_convolution_1_fu_304_pad_img_1_0_ce0),
-    .pad_img_1_0_q0(pad_img3_1_0_q0),
-    .pad_img_1_1_address0(grp_convolution_1_fu_304_pad_img_1_1_address0),
-    .pad_img_1_1_ce0(grp_convolution_1_fu_304_pad_img_1_1_ce0),
-    .pad_img_1_1_q0(pad_img3_1_1_q0),
-    .pad_img_1_2_address0(grp_convolution_1_fu_304_pad_img_1_2_address0),
-    .pad_img_1_2_ce0(grp_convolution_1_fu_304_pad_img_1_2_ce0),
-    .pad_img_1_2_q0(pad_img3_1_2_q0),
-    .pad_img_1_3_address0(grp_convolution_1_fu_304_pad_img_1_3_address0),
-    .pad_img_1_3_ce0(grp_convolution_1_fu_304_pad_img_1_3_ce0),
-    .pad_img_1_3_q0(pad_img3_1_3_q0),
-    .pad_img_1_4_address0(grp_convolution_1_fu_304_pad_img_1_4_address0),
-    .pad_img_1_4_ce0(grp_convolution_1_fu_304_pad_img_1_4_ce0),
-    .pad_img_1_4_q0(pad_img3_1_4_q0),
-    .pad_img_1_5_address0(grp_convolution_1_fu_304_pad_img_1_5_address0),
-    .pad_img_1_5_ce0(grp_convolution_1_fu_304_pad_img_1_5_ce0),
-    .pad_img_1_5_q0(pad_img3_1_5_q0),
-    .pad_img_1_6_address0(grp_convolution_1_fu_304_pad_img_1_6_address0),
-    .pad_img_1_6_ce0(grp_convolution_1_fu_304_pad_img_1_6_ce0),
-    .pad_img_1_6_q0(pad_img3_1_6_q0),
-    .pad_img_2_0_address0(grp_convolution_1_fu_304_pad_img_2_0_address0),
-    .pad_img_2_0_ce0(grp_convolution_1_fu_304_pad_img_2_0_ce0),
-    .pad_img_2_0_q0(pad_img3_2_0_q0),
-    .pad_img_2_1_address0(grp_convolution_1_fu_304_pad_img_2_1_address0),
-    .pad_img_2_1_ce0(grp_convolution_1_fu_304_pad_img_2_1_ce0),
-    .pad_img_2_1_q0(pad_img3_2_1_q0),
-    .pad_img_2_2_address0(grp_convolution_1_fu_304_pad_img_2_2_address0),
-    .pad_img_2_2_ce0(grp_convolution_1_fu_304_pad_img_2_2_ce0),
-    .pad_img_2_2_q0(pad_img3_2_2_q0),
-    .pad_img_2_3_address0(grp_convolution_1_fu_304_pad_img_2_3_address0),
-    .pad_img_2_3_ce0(grp_convolution_1_fu_304_pad_img_2_3_ce0),
-    .pad_img_2_3_q0(pad_img3_2_3_q0),
-    .pad_img_2_4_address0(grp_convolution_1_fu_304_pad_img_2_4_address0),
-    .pad_img_2_4_ce0(grp_convolution_1_fu_304_pad_img_2_4_ce0),
-    .pad_img_2_4_q0(pad_img3_2_4_q0),
-    .pad_img_2_5_address0(grp_convolution_1_fu_304_pad_img_2_5_address0),
-    .pad_img_2_5_ce0(grp_convolution_1_fu_304_pad_img_2_5_ce0),
-    .pad_img_2_5_q0(pad_img3_2_5_q0),
-    .pad_img_2_6_address0(grp_convolution_1_fu_304_pad_img_2_6_address0),
-    .pad_img_2_6_ce0(grp_convolution_1_fu_304_pad_img_2_6_ce0),
-    .pad_img_2_6_q0(pad_img3_2_6_q0),
-    .pad_img_3_0_address0(grp_convolution_1_fu_304_pad_img_3_0_address0),
-    .pad_img_3_0_ce0(grp_convolution_1_fu_304_pad_img_3_0_ce0),
-    .pad_img_3_0_q0(pad_img3_3_0_q0),
-    .pad_img_3_1_address0(grp_convolution_1_fu_304_pad_img_3_1_address0),
-    .pad_img_3_1_ce0(grp_convolution_1_fu_304_pad_img_3_1_ce0),
-    .pad_img_3_1_q0(pad_img3_3_1_q0),
-    .pad_img_3_2_address0(grp_convolution_1_fu_304_pad_img_3_2_address0),
-    .pad_img_3_2_ce0(grp_convolution_1_fu_304_pad_img_3_2_ce0),
-    .pad_img_3_2_q0(pad_img3_3_2_q0),
-    .pad_img_3_3_address0(grp_convolution_1_fu_304_pad_img_3_3_address0),
-    .pad_img_3_3_ce0(grp_convolution_1_fu_304_pad_img_3_3_ce0),
-    .pad_img_3_3_q0(pad_img3_3_3_q0),
-    .pad_img_3_4_address0(grp_convolution_1_fu_304_pad_img_3_4_address0),
-    .pad_img_3_4_ce0(grp_convolution_1_fu_304_pad_img_3_4_ce0),
-    .pad_img_3_4_q0(pad_img3_3_4_q0),
-    .pad_img_3_5_address0(grp_convolution_1_fu_304_pad_img_3_5_address0),
-    .pad_img_3_5_ce0(grp_convolution_1_fu_304_pad_img_3_5_ce0),
-    .pad_img_3_5_q0(pad_img3_3_5_q0),
-    .pad_img_3_6_address0(grp_convolution_1_fu_304_pad_img_3_6_address0),
-    .pad_img_3_6_ce0(grp_convolution_1_fu_304_pad_img_3_6_ce0),
-    .pad_img_3_6_q0(pad_img3_3_6_q0),
-    .pad_img_4_0_address0(grp_convolution_1_fu_304_pad_img_4_0_address0),
-    .pad_img_4_0_ce0(grp_convolution_1_fu_304_pad_img_4_0_ce0),
-    .pad_img_4_0_q0(pad_img3_4_0_q0),
-    .pad_img_4_1_address0(grp_convolution_1_fu_304_pad_img_4_1_address0),
-    .pad_img_4_1_ce0(grp_convolution_1_fu_304_pad_img_4_1_ce0),
-    .pad_img_4_1_q0(pad_img3_4_1_q0),
-    .pad_img_4_2_address0(grp_convolution_1_fu_304_pad_img_4_2_address0),
-    .pad_img_4_2_ce0(grp_convolution_1_fu_304_pad_img_4_2_ce0),
-    .pad_img_4_2_q0(pad_img3_4_2_q0),
-    .pad_img_4_3_address0(grp_convolution_1_fu_304_pad_img_4_3_address0),
-    .pad_img_4_3_ce0(grp_convolution_1_fu_304_pad_img_4_3_ce0),
-    .pad_img_4_3_q0(pad_img3_4_3_q0),
-    .pad_img_4_4_address0(grp_convolution_1_fu_304_pad_img_4_4_address0),
-    .pad_img_4_4_ce0(grp_convolution_1_fu_304_pad_img_4_4_ce0),
-    .pad_img_4_4_q0(pad_img3_4_4_q0),
-    .pad_img_4_5_address0(grp_convolution_1_fu_304_pad_img_4_5_address0),
-    .pad_img_4_5_ce0(grp_convolution_1_fu_304_pad_img_4_5_ce0),
-    .pad_img_4_5_q0(pad_img3_4_5_q0),
-    .pad_img_4_6_address0(grp_convolution_1_fu_304_pad_img_4_6_address0),
-    .pad_img_4_6_ce0(grp_convolution_1_fu_304_pad_img_4_6_ce0),
-    .pad_img_4_6_q0(pad_img3_4_6_q0),
-    .pad_img_5_0_address0(grp_convolution_1_fu_304_pad_img_5_0_address0),
-    .pad_img_5_0_ce0(grp_convolution_1_fu_304_pad_img_5_0_ce0),
-    .pad_img_5_0_q0(pad_img3_5_0_q0),
-    .pad_img_5_1_address0(grp_convolution_1_fu_304_pad_img_5_1_address0),
-    .pad_img_5_1_ce0(grp_convolution_1_fu_304_pad_img_5_1_ce0),
-    .pad_img_5_1_q0(pad_img3_5_1_q0),
-    .pad_img_5_2_address0(grp_convolution_1_fu_304_pad_img_5_2_address0),
-    .pad_img_5_2_ce0(grp_convolution_1_fu_304_pad_img_5_2_ce0),
-    .pad_img_5_2_q0(pad_img3_5_2_q0),
-    .pad_img_5_3_address0(grp_convolution_1_fu_304_pad_img_5_3_address0),
-    .pad_img_5_3_ce0(grp_convolution_1_fu_304_pad_img_5_3_ce0),
-    .pad_img_5_3_q0(pad_img3_5_3_q0),
-    .pad_img_5_4_address0(grp_convolution_1_fu_304_pad_img_5_4_address0),
-    .pad_img_5_4_ce0(grp_convolution_1_fu_304_pad_img_5_4_ce0),
-    .pad_img_5_4_q0(pad_img3_5_4_q0),
-    .pad_img_5_5_address0(grp_convolution_1_fu_304_pad_img_5_5_address0),
-    .pad_img_5_5_ce0(grp_convolution_1_fu_304_pad_img_5_5_ce0),
-    .pad_img_5_5_q0(pad_img3_5_5_q0),
-    .pad_img_5_6_address0(grp_convolution_1_fu_304_pad_img_5_6_address0),
-    .pad_img_5_6_ce0(grp_convolution_1_fu_304_pad_img_5_6_ce0),
-    .pad_img_5_6_q0(pad_img3_5_6_q0),
-    .pad_img_6_0_address0(grp_convolution_1_fu_304_pad_img_6_0_address0),
-    .pad_img_6_0_ce0(grp_convolution_1_fu_304_pad_img_6_0_ce0),
-    .pad_img_6_0_q0(pad_img3_6_0_q0),
-    .pad_img_6_1_address0(grp_convolution_1_fu_304_pad_img_6_1_address0),
-    .pad_img_6_1_ce0(grp_convolution_1_fu_304_pad_img_6_1_ce0),
-    .pad_img_6_1_q0(pad_img3_6_1_q0),
-    .pad_img_6_2_address0(grp_convolution_1_fu_304_pad_img_6_2_address0),
-    .pad_img_6_2_ce0(grp_convolution_1_fu_304_pad_img_6_2_ce0),
-    .pad_img_6_2_q0(pad_img3_6_2_q0),
-    .pad_img_6_3_address0(grp_convolution_1_fu_304_pad_img_6_3_address0),
-    .pad_img_6_3_ce0(grp_convolution_1_fu_304_pad_img_6_3_ce0),
-    .pad_img_6_3_q0(pad_img3_6_3_q0),
-    .pad_img_6_4_address0(grp_convolution_1_fu_304_pad_img_6_4_address0),
-    .pad_img_6_4_ce0(grp_convolution_1_fu_304_pad_img_6_4_ce0),
-    .pad_img_6_4_q0(pad_img3_6_4_q0),
-    .pad_img_6_5_address0(grp_convolution_1_fu_304_pad_img_6_5_address0),
-    .pad_img_6_5_ce0(grp_convolution_1_fu_304_pad_img_6_5_ce0),
-    .pad_img_6_5_q0(pad_img3_6_5_q0),
-    .pad_img_6_6_address0(grp_convolution_1_fu_304_pad_img_6_6_address0),
-    .pad_img_6_6_ce0(grp_convolution_1_fu_304_pad_img_6_6_ce0),
-    .pad_img_6_6_q0(pad_img3_6_6_q0),
-    .grp_fu_684_p_din0(grp_convolution_1_fu_304_grp_fu_684_p_din0),
-    .grp_fu_684_p_din1(grp_convolution_1_fu_304_grp_fu_684_p_din1),
-    .grp_fu_684_p_opcode(grp_convolution_1_fu_304_grp_fu_684_p_opcode),
-    .grp_fu_684_p_dout0(grp_fu_684_p2),
-    .grp_fu_684_p_ce(grp_convolution_1_fu_304_grp_fu_684_p_ce)
+    .conv_to_pool_streams_3_write(convolutional_layer_U0_conv_to_pool_streams_3_write)
 );
 
-cnn_max_pooling grp_max_pooling_fu_407(
+cnn_max_pooling_layer max_pooling_layer_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_max_pooling_fu_407_ap_start),
-    .ap_done(grp_max_pooling_fu_407_ap_done),
-    .ap_idle(grp_max_pooling_fu_407_ap_idle),
-    .ap_ready(grp_max_pooling_fu_407_ap_ready),
-    .conv_to_pool_streams_0_dout(grp_max_pooling_fu_407_conv_to_pool_streams_0_dout),
-    .conv_to_pool_streams_0_empty_n(grp_max_pooling_fu_407_conv_to_pool_streams_0_empty_n),
-    .conv_to_pool_streams_0_read(grp_max_pooling_fu_407_conv_to_pool_streams_0_read),
-    .pool_to_flat_streams_0_din(grp_max_pooling_fu_407_pool_to_flat_streams_0_din),
-    .pool_to_flat_streams_0_full_n(grp_max_pooling_fu_407_pool_to_flat_streams_0_full_n),
-    .pool_to_flat_streams_0_write(grp_max_pooling_fu_407_pool_to_flat_streams_0_write)
+    .ap_start(max_pooling_layer_U0_ap_start),
+    .start_full_n(start_for_flattening_layer_U0_full_n),
+    .ap_done(max_pooling_layer_U0_ap_done),
+    .ap_continue(max_pooling_layer_U0_ap_continue),
+    .ap_idle(max_pooling_layer_U0_ap_idle),
+    .ap_ready(max_pooling_layer_U0_ap_ready),
+    .start_out(max_pooling_layer_U0_start_out),
+    .start_write(max_pooling_layer_U0_start_write),
+    .conv_to_pool_streams_0_dout(conv_to_pool_streams_dout),
+    .conv_to_pool_streams_0_num_data_valid(conv_to_pool_streams_num_data_valid),
+    .conv_to_pool_streams_0_fifo_cap(conv_to_pool_streams_fifo_cap),
+    .conv_to_pool_streams_0_empty_n(conv_to_pool_streams_empty_n),
+    .conv_to_pool_streams_0_read(max_pooling_layer_U0_conv_to_pool_streams_0_read),
+    .conv_to_pool_streams_1_dout(conv_to_pool_streams_1_dout),
+    .conv_to_pool_streams_1_num_data_valid(conv_to_pool_streams_1_num_data_valid),
+    .conv_to_pool_streams_1_fifo_cap(conv_to_pool_streams_1_fifo_cap),
+    .conv_to_pool_streams_1_empty_n(conv_to_pool_streams_1_empty_n),
+    .conv_to_pool_streams_1_read(max_pooling_layer_U0_conv_to_pool_streams_1_read),
+    .conv_to_pool_streams_2_dout(conv_to_pool_streams_2_dout),
+    .conv_to_pool_streams_2_num_data_valid(conv_to_pool_streams_2_num_data_valid),
+    .conv_to_pool_streams_2_fifo_cap(conv_to_pool_streams_2_fifo_cap),
+    .conv_to_pool_streams_2_empty_n(conv_to_pool_streams_2_empty_n),
+    .conv_to_pool_streams_2_read(max_pooling_layer_U0_conv_to_pool_streams_2_read),
+    .conv_to_pool_streams_3_dout(conv_to_pool_streams_3_dout),
+    .conv_to_pool_streams_3_num_data_valid(conv_to_pool_streams_3_num_data_valid),
+    .conv_to_pool_streams_3_fifo_cap(conv_to_pool_streams_3_fifo_cap),
+    .conv_to_pool_streams_3_empty_n(conv_to_pool_streams_3_empty_n),
+    .conv_to_pool_streams_3_read(max_pooling_layer_U0_conv_to_pool_streams_3_read),
+    .pool_to_flat_streams_0_din(max_pooling_layer_U0_pool_to_flat_streams_0_din),
+    .pool_to_flat_streams_0_num_data_valid(pool_to_flat_streams_num_data_valid),
+    .pool_to_flat_streams_0_fifo_cap(pool_to_flat_streams_fifo_cap),
+    .pool_to_flat_streams_0_full_n(pool_to_flat_streams_full_n),
+    .pool_to_flat_streams_0_write(max_pooling_layer_U0_pool_to_flat_streams_0_write),
+    .pool_to_flat_streams_1_din(max_pooling_layer_U0_pool_to_flat_streams_1_din),
+    .pool_to_flat_streams_1_num_data_valid(pool_to_flat_streams_1_num_data_valid),
+    .pool_to_flat_streams_1_fifo_cap(pool_to_flat_streams_1_fifo_cap),
+    .pool_to_flat_streams_1_full_n(pool_to_flat_streams_1_full_n),
+    .pool_to_flat_streams_1_write(max_pooling_layer_U0_pool_to_flat_streams_1_write),
+    .pool_to_flat_streams_2_din(max_pooling_layer_U0_pool_to_flat_streams_2_din),
+    .pool_to_flat_streams_2_num_data_valid(pool_to_flat_streams_2_num_data_valid),
+    .pool_to_flat_streams_2_fifo_cap(pool_to_flat_streams_2_fifo_cap),
+    .pool_to_flat_streams_2_full_n(pool_to_flat_streams_2_full_n),
+    .pool_to_flat_streams_2_write(max_pooling_layer_U0_pool_to_flat_streams_2_write),
+    .pool_to_flat_streams_3_din(max_pooling_layer_U0_pool_to_flat_streams_3_din),
+    .pool_to_flat_streams_3_num_data_valid(pool_to_flat_streams_3_num_data_valid),
+    .pool_to_flat_streams_3_fifo_cap(pool_to_flat_streams_3_fifo_cap),
+    .pool_to_flat_streams_3_full_n(pool_to_flat_streams_3_full_n),
+    .pool_to_flat_streams_3_write(max_pooling_layer_U0_pool_to_flat_streams_3_write)
 );
 
-cnn_max_pooling grp_max_pooling_fu_413(
+cnn_flattening_layer flattening_layer_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_max_pooling_fu_413_ap_start),
-    .ap_done(grp_max_pooling_fu_413_ap_done),
-    .ap_idle(grp_max_pooling_fu_413_ap_idle),
-    .ap_ready(grp_max_pooling_fu_413_ap_ready),
-    .conv_to_pool_streams_0_dout(grp_max_pooling_fu_413_conv_to_pool_streams_0_dout),
-    .conv_to_pool_streams_0_empty_n(grp_max_pooling_fu_413_conv_to_pool_streams_0_empty_n),
-    .conv_to_pool_streams_0_read(grp_max_pooling_fu_413_conv_to_pool_streams_0_read),
-    .pool_to_flat_streams_0_din(grp_max_pooling_fu_413_pool_to_flat_streams_0_din),
-    .pool_to_flat_streams_0_full_n(grp_max_pooling_fu_413_pool_to_flat_streams_0_full_n),
-    .pool_to_flat_streams_0_write(grp_max_pooling_fu_413_pool_to_flat_streams_0_write)
-);
-
-cnn_dataflow_section_Pipeline_flat_for_rows_flat_for_cols grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_start),
-    .ap_done(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_done),
-    .ap_idle(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_idle),
-    .ap_ready(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_ready),
-    .pool_to_flat_streams_dout(pool_to_flat_streams_dout),
-    .pool_to_flat_streams_empty_n(pool_to_flat_streams_empty_n),
-    .pool_to_flat_streams_read(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_pool_to_flat_streams_read),
-    .flat_to_dense_streams_din(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_flat_to_dense_streams_din),
-    .flat_to_dense_streams_full_n(flat_to_dense_streams_full_n),
-    .flat_to_dense_streams_write(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_flat_to_dense_streams_write)
-);
-
-cnn_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4 grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_start),
-    .ap_done(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_done),
-    .ap_idle(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_idle),
-    .ap_ready(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_ready),
+    .ap_start(flattening_layer_U0_ap_start),
+    .start_full_n(start_for_dense_layer_U0_full_n),
+    .ap_done(flattening_layer_U0_ap_done),
+    .ap_continue(flattening_layer_U0_ap_continue),
+    .ap_idle(flattening_layer_U0_ap_idle),
+    .ap_ready(flattening_layer_U0_ap_ready),
+    .start_out(flattening_layer_U0_start_out),
+    .start_write(flattening_layer_U0_start_write),
+    .pool_to_flat_streams_0_dout(pool_to_flat_streams_dout),
+    .pool_to_flat_streams_0_num_data_valid(pool_to_flat_streams_num_data_valid),
+    .pool_to_flat_streams_0_fifo_cap(pool_to_flat_streams_fifo_cap),
+    .pool_to_flat_streams_0_empty_n(pool_to_flat_streams_empty_n),
+    .pool_to_flat_streams_0_read(flattening_layer_U0_pool_to_flat_streams_0_read),
     .pool_to_flat_streams_1_dout(pool_to_flat_streams_1_dout),
+    .pool_to_flat_streams_1_num_data_valid(pool_to_flat_streams_1_num_data_valid),
+    .pool_to_flat_streams_1_fifo_cap(pool_to_flat_streams_1_fifo_cap),
     .pool_to_flat_streams_1_empty_n(pool_to_flat_streams_1_empty_n),
-    .pool_to_flat_streams_1_read(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_pool_to_flat_streams_1_read),
-    .flat_to_dense_streams_1_din(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_flat_to_dense_streams_1_din),
-    .flat_to_dense_streams_1_full_n(flat_to_dense_streams_1_full_n),
-    .flat_to_dense_streams_1_write(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_flat_to_dense_streams_1_write)
-);
-
-cnn_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5 grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_start),
-    .ap_done(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_done),
-    .ap_idle(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_idle),
-    .ap_ready(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_ready),
+    .pool_to_flat_streams_1_read(flattening_layer_U0_pool_to_flat_streams_1_read),
     .pool_to_flat_streams_2_dout(pool_to_flat_streams_2_dout),
+    .pool_to_flat_streams_2_num_data_valid(pool_to_flat_streams_2_num_data_valid),
+    .pool_to_flat_streams_2_fifo_cap(pool_to_flat_streams_2_fifo_cap),
     .pool_to_flat_streams_2_empty_n(pool_to_flat_streams_2_empty_n),
-    .pool_to_flat_streams_2_read(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_pool_to_flat_streams_2_read),
-    .flat_to_dense_streams_2_din(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_flat_to_dense_streams_2_din),
-    .flat_to_dense_streams_2_full_n(flat_to_dense_streams_2_full_n),
-    .flat_to_dense_streams_2_write(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_flat_to_dense_streams_2_write)
-);
-
-cnn_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6 grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_start),
-    .ap_done(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_done),
-    .ap_idle(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_idle),
-    .ap_ready(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_ready),
+    .pool_to_flat_streams_2_read(flattening_layer_U0_pool_to_flat_streams_2_read),
     .pool_to_flat_streams_3_dout(pool_to_flat_streams_3_dout),
+    .pool_to_flat_streams_3_num_data_valid(pool_to_flat_streams_3_num_data_valid),
+    .pool_to_flat_streams_3_fifo_cap(pool_to_flat_streams_3_fifo_cap),
     .pool_to_flat_streams_3_empty_n(pool_to_flat_streams_3_empty_n),
-    .pool_to_flat_streams_3_read(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_pool_to_flat_streams_3_read),
-    .flat_to_dense_streams_3_din(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_flat_to_dense_streams_3_din),
+    .pool_to_flat_streams_3_read(flattening_layer_U0_pool_to_flat_streams_3_read),
+    .flat_to_dense_streams_0_din(flattening_layer_U0_flat_to_dense_streams_0_din),
+    .flat_to_dense_streams_0_num_data_valid(flat_to_dense_streams_num_data_valid),
+    .flat_to_dense_streams_0_fifo_cap(flat_to_dense_streams_fifo_cap),
+    .flat_to_dense_streams_0_full_n(flat_to_dense_streams_full_n),
+    .flat_to_dense_streams_0_write(flattening_layer_U0_flat_to_dense_streams_0_write),
+    .flat_to_dense_streams_1_din(flattening_layer_U0_flat_to_dense_streams_1_din),
+    .flat_to_dense_streams_1_num_data_valid(flat_to_dense_streams_1_num_data_valid),
+    .flat_to_dense_streams_1_fifo_cap(flat_to_dense_streams_1_fifo_cap),
+    .flat_to_dense_streams_1_full_n(flat_to_dense_streams_1_full_n),
+    .flat_to_dense_streams_1_write(flattening_layer_U0_flat_to_dense_streams_1_write),
+    .flat_to_dense_streams_2_din(flattening_layer_U0_flat_to_dense_streams_2_din),
+    .flat_to_dense_streams_2_num_data_valid(flat_to_dense_streams_2_num_data_valid),
+    .flat_to_dense_streams_2_fifo_cap(flat_to_dense_streams_2_fifo_cap),
+    .flat_to_dense_streams_2_full_n(flat_to_dense_streams_2_full_n),
+    .flat_to_dense_streams_2_write(flattening_layer_U0_flat_to_dense_streams_2_write),
+    .flat_to_dense_streams_3_din(flattening_layer_U0_flat_to_dense_streams_3_din),
+    .flat_to_dense_streams_3_num_data_valid(flat_to_dense_streams_3_num_data_valid),
+    .flat_to_dense_streams_3_fifo_cap(flat_to_dense_streams_3_fifo_cap),
     .flat_to_dense_streams_3_full_n(flat_to_dense_streams_3_full_n),
-    .flat_to_dense_streams_3_write(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_flat_to_dense_streams_3_write)
+    .flat_to_dense_streams_3_write(flattening_layer_U0_flat_to_dense_streams_3_write)
 );
 
-cnn_dense grp_dense_fu_443(
+cnn_dense_layer dense_layer_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_dense_fu_443_ap_start),
-    .ap_done(grp_dense_fu_443_ap_done),
-    .ap_idle(grp_dense_fu_443_ap_idle),
-    .ap_ready(grp_dense_fu_443_ap_ready),
+    .ap_start(dense_layer_U0_ap_start),
+    .ap_done(dense_layer_U0_ap_done),
+    .ap_continue(dense_layer_U0_ap_continue),
+    .ap_idle(dense_layer_U0_ap_idle),
+    .ap_ready(dense_layer_U0_ap_ready),
     .flat_to_dense_streams_0_dout(flat_to_dense_streams_dout),
+    .flat_to_dense_streams_0_num_data_valid(flat_to_dense_streams_num_data_valid),
+    .flat_to_dense_streams_0_fifo_cap(flat_to_dense_streams_fifo_cap),
     .flat_to_dense_streams_0_empty_n(flat_to_dense_streams_empty_n),
-    .flat_to_dense_streams_0_read(grp_dense_fu_443_flat_to_dense_streams_0_read),
-    .filter(2'd0),
-    .dense_to_softmax_streams_0_din(grp_dense_fu_443_dense_to_softmax_streams_0_din),
+    .flat_to_dense_streams_0_read(dense_layer_U0_flat_to_dense_streams_0_read),
+    .flat_to_dense_streams_1_dout(flat_to_dense_streams_1_dout),
+    .flat_to_dense_streams_1_num_data_valid(flat_to_dense_streams_1_num_data_valid),
+    .flat_to_dense_streams_1_fifo_cap(flat_to_dense_streams_1_fifo_cap),
+    .flat_to_dense_streams_1_empty_n(flat_to_dense_streams_1_empty_n),
+    .flat_to_dense_streams_1_read(dense_layer_U0_flat_to_dense_streams_1_read),
+    .flat_to_dense_streams_2_dout(flat_to_dense_streams_2_dout),
+    .flat_to_dense_streams_2_num_data_valid(flat_to_dense_streams_2_num_data_valid),
+    .flat_to_dense_streams_2_fifo_cap(flat_to_dense_streams_2_fifo_cap),
+    .flat_to_dense_streams_2_empty_n(flat_to_dense_streams_2_empty_n),
+    .flat_to_dense_streams_2_read(dense_layer_U0_flat_to_dense_streams_2_read),
+    .flat_to_dense_streams_3_dout(flat_to_dense_streams_3_dout),
+    .flat_to_dense_streams_3_num_data_valid(flat_to_dense_streams_3_num_data_valid),
+    .flat_to_dense_streams_3_fifo_cap(flat_to_dense_streams_3_fifo_cap),
+    .flat_to_dense_streams_3_empty_n(flat_to_dense_streams_3_empty_n),
+    .flat_to_dense_streams_3_read(dense_layer_U0_flat_to_dense_streams_3_read),
+    .dense_to_softmax_streams_0_din(dense_layer_U0_dense_to_softmax_streams_0_din),
+    .dense_to_softmax_streams_0_num_data_valid(dense_to_softmax_streams_num_data_valid),
+    .dense_to_softmax_streams_0_fifo_cap(dense_to_softmax_streams_fifo_cap),
     .dense_to_softmax_streams_0_full_n(dense_to_softmax_streams_full_n),
-    .dense_to_softmax_streams_0_write(grp_dense_fu_443_dense_to_softmax_streams_0_write)
+    .dense_to_softmax_streams_0_write(dense_layer_U0_dense_to_softmax_streams_0_write),
+    .dense_to_softmax_streams_1_din(dense_layer_U0_dense_to_softmax_streams_1_din),
+    .dense_to_softmax_streams_1_num_data_valid(dense_to_softmax_streams_1_num_data_valid),
+    .dense_to_softmax_streams_1_fifo_cap(dense_to_softmax_streams_1_fifo_cap),
+    .dense_to_softmax_streams_1_full_n(dense_to_softmax_streams_1_full_n),
+    .dense_to_softmax_streams_1_write(dense_layer_U0_dense_to_softmax_streams_1_write),
+    .dense_to_softmax_streams_2_din(dense_layer_U0_dense_to_softmax_streams_2_din),
+    .dense_to_softmax_streams_2_num_data_valid(dense_to_softmax_streams_2_num_data_valid),
+    .dense_to_softmax_streams_2_fifo_cap(dense_to_softmax_streams_2_fifo_cap),
+    .dense_to_softmax_streams_2_full_n(dense_to_softmax_streams_2_full_n),
+    .dense_to_softmax_streams_2_write(dense_layer_U0_dense_to_softmax_streams_2_write),
+    .dense_to_softmax_streams_3_din(dense_layer_U0_dense_to_softmax_streams_3_din),
+    .dense_to_softmax_streams_3_num_data_valid(dense_to_softmax_streams_3_num_data_valid),
+    .dense_to_softmax_streams_3_fifo_cap(dense_to_softmax_streams_3_fifo_cap),
+    .dense_to_softmax_streams_3_full_n(dense_to_softmax_streams_3_full_n),
+    .dense_to_softmax_streams_3_write(dense_layer_U0_dense_to_softmax_streams_3_write)
 );
 
-cnn_dense grp_dense_fu_471(
+cnn_dense_layer_soft_max dense_layer_soft_max_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_dense_fu_471_ap_start),
-    .ap_done(grp_dense_fu_471_ap_done),
-    .ap_idle(grp_dense_fu_471_ap_idle),
-    .ap_ready(grp_dense_fu_471_ap_ready),
-    .flat_to_dense_streams_0_dout(flat_to_dense_streams_1_dout),
-    .flat_to_dense_streams_0_empty_n(flat_to_dense_streams_1_empty_n),
-    .flat_to_dense_streams_0_read(grp_dense_fu_471_flat_to_dense_streams_0_read),
-    .filter(2'd1),
-    .dense_to_softmax_streams_0_din(grp_dense_fu_471_dense_to_softmax_streams_0_din),
-    .dense_to_softmax_streams_0_full_n(dense_to_softmax_streams_1_full_n),
-    .dense_to_softmax_streams_0_write(grp_dense_fu_471_dense_to_softmax_streams_0_write)
-);
-
-cnn_dense grp_dense_fu_499(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_dense_fu_499_ap_start),
-    .ap_done(grp_dense_fu_499_ap_done),
-    .ap_idle(grp_dense_fu_499_ap_idle),
-    .ap_ready(grp_dense_fu_499_ap_ready),
-    .flat_to_dense_streams_0_dout(flat_to_dense_streams_2_dout),
-    .flat_to_dense_streams_0_empty_n(flat_to_dense_streams_2_empty_n),
-    .flat_to_dense_streams_0_read(grp_dense_fu_499_flat_to_dense_streams_0_read),
-    .filter(2'd2),
-    .dense_to_softmax_streams_0_din(grp_dense_fu_499_dense_to_softmax_streams_0_din),
-    .dense_to_softmax_streams_0_full_n(dense_to_softmax_streams_2_full_n),
-    .dense_to_softmax_streams_0_write(grp_dense_fu_499_dense_to_softmax_streams_0_write)
-);
-
-cnn_dense grp_dense_fu_527(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_dense_fu_527_ap_start),
-    .ap_done(grp_dense_fu_527_ap_done),
-    .ap_idle(grp_dense_fu_527_ap_idle),
-    .ap_ready(grp_dense_fu_527_ap_ready),
-    .flat_to_dense_streams_0_dout(flat_to_dense_streams_3_dout),
-    .flat_to_dense_streams_0_empty_n(flat_to_dense_streams_3_empty_n),
-    .flat_to_dense_streams_0_read(grp_dense_fu_527_flat_to_dense_streams_0_read),
-    .filter(2'd3),
-    .dense_to_softmax_streams_0_din(grp_dense_fu_527_dense_to_softmax_streams_0_din),
-    .dense_to_softmax_streams_0_full_n(dense_to_softmax_streams_3_full_n),
-    .dense_to_softmax_streams_0_write(grp_dense_fu_527_dense_to_softmax_streams_0_write)
-);
-
-cnn_dataflow_section_Pipeline_dense_soft_max_for_dense_size grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_start),
-    .ap_done(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_done),
-    .ap_idle(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_idle),
-    .ap_ready(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_ready),
-    .dense_to_softmax_streams_dout(dense_to_softmax_streams_dout),
-    .dense_to_softmax_streams_empty_n(dense_to_softmax_streams_empty_n),
-    .dense_to_softmax_streams_read(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_read),
+    .ap_start(dense_layer_soft_max_U0_ap_start),
+    .ap_done(dense_layer_soft_max_U0_ap_done),
+    .ap_continue(dense_layer_soft_max_U0_ap_continue),
+    .ap_idle(dense_layer_soft_max_U0_ap_idle),
+    .ap_ready(dense_layer_soft_max_U0_ap_ready),
+    .dense_to_softmax_streams_0_dout(dense_to_softmax_streams_dout),
+    .dense_to_softmax_streams_0_num_data_valid(dense_to_softmax_streams_num_data_valid),
+    .dense_to_softmax_streams_0_fifo_cap(dense_to_softmax_streams_fifo_cap),
+    .dense_to_softmax_streams_0_empty_n(dense_to_softmax_streams_empty_n),
+    .dense_to_softmax_streams_0_read(dense_layer_soft_max_U0_dense_to_softmax_streams_0_read),
     .dense_to_softmax_streams_1_dout(dense_to_softmax_streams_1_dout),
+    .dense_to_softmax_streams_1_num_data_valid(dense_to_softmax_streams_1_num_data_valid),
+    .dense_to_softmax_streams_1_fifo_cap(dense_to_softmax_streams_1_fifo_cap),
     .dense_to_softmax_streams_1_empty_n(dense_to_softmax_streams_1_empty_n),
-    .dense_to_softmax_streams_1_read(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_1_read),
+    .dense_to_softmax_streams_1_read(dense_layer_soft_max_U0_dense_to_softmax_streams_1_read),
     .dense_to_softmax_streams_2_dout(dense_to_softmax_streams_2_dout),
+    .dense_to_softmax_streams_2_num_data_valid(dense_to_softmax_streams_2_num_data_valid),
+    .dense_to_softmax_streams_2_fifo_cap(dense_to_softmax_streams_2_fifo_cap),
     .dense_to_softmax_streams_2_empty_n(dense_to_softmax_streams_2_empty_n),
-    .dense_to_softmax_streams_2_read(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_2_read),
+    .dense_to_softmax_streams_2_read(dense_layer_soft_max_U0_dense_to_softmax_streams_2_read),
     .dense_to_softmax_streams_3_dout(dense_to_softmax_streams_3_dout),
+    .dense_to_softmax_streams_3_num_data_valid(dense_to_softmax_streams_3_num_data_valid),
+    .dense_to_softmax_streams_3_fifo_cap(dense_to_softmax_streams_3_fifo_cap),
     .dense_to_softmax_streams_3_empty_n(dense_to_softmax_streams_3_empty_n),
-    .dense_to_softmax_streams_3_read(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_3_read),
-    .prediction_address0(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_address0),
-    .prediction_ce0(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_ce0),
-    .prediction_we0(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_we0),
-    .prediction_d0(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_d0),
-    .exp_sum_out(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_exp_sum_out),
-    .exp_sum_out_ap_vld(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_exp_sum_out_ap_vld),
-    .grp_fu_684_p_din0(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_din0),
-    .grp_fu_684_p_din1(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_din1),
-    .grp_fu_684_p_opcode(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_opcode),
-    .grp_fu_684_p_dout0(grp_fu_684_p2),
-    .grp_fu_684_p_ce(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_ce)
+    .dense_to_softmax_streams_3_read(dense_layer_soft_max_U0_dense_to_softmax_streams_3_read),
+    .prediction_address0(dense_layer_soft_max_U0_prediction_address0),
+    .prediction_ce0(dense_layer_soft_max_U0_prediction_ce0),
+    .prediction_we0(dense_layer_soft_max_U0_prediction_we0),
+    .prediction_d0(dense_layer_soft_max_U0_prediction_d0),
+    .prediction_address1(dense_layer_soft_max_U0_prediction_address1),
+    .prediction_ce1(dense_layer_soft_max_U0_prediction_ce1),
+    .prediction_q1(prediction_q1)
 );
 
-cnn_dataflow_section_Pipeline_dense_soft_max_for_digits grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_start),
-    .ap_done(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_done),
-    .ap_idle(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_idle),
-    .ap_ready(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_ready),
-    .prediction_address0(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_address0),
-    .prediction_ce0(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_ce0),
-    .prediction_we0(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_we0),
-    .prediction_d0(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_d0),
-    .prediction_address1(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_address1),
-    .prediction_ce1(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_ce1),
-    .prediction_q1(prediction_q1),
-    .exp_sum_reload(grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_exp_sum_out),
-    .grp_fu_688_p_din0(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_grp_fu_688_p_din0),
-    .grp_fu_688_p_din1(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_grp_fu_688_p_din1),
-    .grp_fu_688_p_dout0(grp_fu_409_p_dout0),
-    .grp_fu_688_p_ce(grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_grp_fu_688_p_ce)
-);
-
-cnn_fadd_32ns_32ns_32_5_full_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 5 ),
-    .din0_WIDTH( 32 ),
-    .din1_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-fadd_32ns_32ns_32_5_full_dsp_1_U448(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(grp_fu_684_p0),
-    .din1(grp_fu_684_p1),
-    .ce(grp_fu_684_ce),
-    .dout(grp_fu_684_p2)
-);
-
-cnn_fifo_w32_d784_A conv_to_pool_streams_fifo_U(
+cnn_fifo_w32_d784_A conv_to_pool_streams_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_convolution_fu_284_conv_to_pool_streams_0_din),
+    .if_din(convolutional_layer_U0_conv_to_pool_streams_0_din),
     .if_full_n(conv_to_pool_streams_full_n),
-    .if_write(conv_to_pool_streams_write),
+    .if_write(convolutional_layer_U0_conv_to_pool_streams_0_write),
     .if_dout(conv_to_pool_streams_dout),
+    .if_num_data_valid(conv_to_pool_streams_num_data_valid),
+    .if_fifo_cap(conv_to_pool_streams_fifo_cap),
     .if_empty_n(conv_to_pool_streams_empty_n),
-    .if_read(conv_to_pool_streams_read)
+    .if_read(max_pooling_layer_U0_conv_to_pool_streams_0_read)
 );
 
-cnn_fifo_w32_d784_A conv_to_pool_streams_1_fifo_U(
+cnn_fifo_w32_d784_A conv_to_pool_streams_1_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_convolution_fu_284_conv_to_pool_streams_0_din),
+    .if_din(convolutional_layer_U0_conv_to_pool_streams_1_din),
     .if_full_n(conv_to_pool_streams_1_full_n),
-    .if_write(conv_to_pool_streams_1_write),
+    .if_write(convolutional_layer_U0_conv_to_pool_streams_1_write),
     .if_dout(conv_to_pool_streams_1_dout),
+    .if_num_data_valid(conv_to_pool_streams_1_num_data_valid),
+    .if_fifo_cap(conv_to_pool_streams_1_fifo_cap),
     .if_empty_n(conv_to_pool_streams_1_empty_n),
-    .if_read(conv_to_pool_streams_1_read)
+    .if_read(max_pooling_layer_U0_conv_to_pool_streams_1_read)
 );
 
-cnn_fifo_w32_d784_A conv_to_pool_streams_2_fifo_U(
+cnn_fifo_w32_d784_A conv_to_pool_streams_2_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_convolution_fu_295_conv_to_pool_streams_0_din),
+    .if_din(convolutional_layer_U0_conv_to_pool_streams_2_din),
     .if_full_n(conv_to_pool_streams_2_full_n),
-    .if_write(conv_to_pool_streams_2_write),
+    .if_write(convolutional_layer_U0_conv_to_pool_streams_2_write),
     .if_dout(conv_to_pool_streams_2_dout),
+    .if_num_data_valid(conv_to_pool_streams_2_num_data_valid),
+    .if_fifo_cap(conv_to_pool_streams_2_fifo_cap),
     .if_empty_n(conv_to_pool_streams_2_empty_n),
-    .if_read(conv_to_pool_streams_2_read)
+    .if_read(max_pooling_layer_U0_conv_to_pool_streams_2_read)
 );
 
-cnn_fifo_w32_d784_A conv_to_pool_streams_3_fifo_U(
+cnn_fifo_w32_d784_A conv_to_pool_streams_3_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_convolution_1_fu_304_conv_to_pool_streams_3_din),
+    .if_din(convolutional_layer_U0_conv_to_pool_streams_3_din),
     .if_full_n(conv_to_pool_streams_3_full_n),
-    .if_write(conv_to_pool_streams_3_write),
+    .if_write(convolutional_layer_U0_conv_to_pool_streams_3_write),
     .if_dout(conv_to_pool_streams_3_dout),
+    .if_num_data_valid(conv_to_pool_streams_3_num_data_valid),
+    .if_fifo_cap(conv_to_pool_streams_3_fifo_cap),
     .if_empty_n(conv_to_pool_streams_3_empty_n),
-    .if_read(conv_to_pool_streams_3_read)
+    .if_read(max_pooling_layer_U0_conv_to_pool_streams_3_read)
 );
 
-cnn_fifo_w32_d196_A pool_to_flat_streams_fifo_U(
+cnn_fifo_w32_d196_A pool_to_flat_streams_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_max_pooling_fu_407_pool_to_flat_streams_0_din),
+    .if_din(max_pooling_layer_U0_pool_to_flat_streams_0_din),
     .if_full_n(pool_to_flat_streams_full_n),
-    .if_write(pool_to_flat_streams_write),
+    .if_write(max_pooling_layer_U0_pool_to_flat_streams_0_write),
     .if_dout(pool_to_flat_streams_dout),
+    .if_num_data_valid(pool_to_flat_streams_num_data_valid),
+    .if_fifo_cap(pool_to_flat_streams_fifo_cap),
     .if_empty_n(pool_to_flat_streams_empty_n),
-    .if_read(pool_to_flat_streams_read)
+    .if_read(flattening_layer_U0_pool_to_flat_streams_0_read)
 );
 
-cnn_fifo_w32_d196_A pool_to_flat_streams_1_fifo_U(
+cnn_fifo_w32_d196_A pool_to_flat_streams_1_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_max_pooling_fu_407_pool_to_flat_streams_0_din),
+    .if_din(max_pooling_layer_U0_pool_to_flat_streams_1_din),
     .if_full_n(pool_to_flat_streams_1_full_n),
-    .if_write(pool_to_flat_streams_1_write),
+    .if_write(max_pooling_layer_U0_pool_to_flat_streams_1_write),
     .if_dout(pool_to_flat_streams_1_dout),
+    .if_num_data_valid(pool_to_flat_streams_1_num_data_valid),
+    .if_fifo_cap(pool_to_flat_streams_1_fifo_cap),
     .if_empty_n(pool_to_flat_streams_1_empty_n),
-    .if_read(pool_to_flat_streams_1_read)
+    .if_read(flattening_layer_U0_pool_to_flat_streams_1_read)
 );
 
-cnn_fifo_w32_d196_A pool_to_flat_streams_2_fifo_U(
+cnn_fifo_w32_d196_A pool_to_flat_streams_2_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_max_pooling_fu_413_pool_to_flat_streams_0_din),
+    .if_din(max_pooling_layer_U0_pool_to_flat_streams_2_din),
     .if_full_n(pool_to_flat_streams_2_full_n),
-    .if_write(pool_to_flat_streams_2_write),
+    .if_write(max_pooling_layer_U0_pool_to_flat_streams_2_write),
     .if_dout(pool_to_flat_streams_2_dout),
+    .if_num_data_valid(pool_to_flat_streams_2_num_data_valid),
+    .if_fifo_cap(pool_to_flat_streams_2_fifo_cap),
     .if_empty_n(pool_to_flat_streams_2_empty_n),
-    .if_read(pool_to_flat_streams_2_read)
+    .if_read(flattening_layer_U0_pool_to_flat_streams_2_read)
 );
 
-cnn_fifo_w32_d196_A pool_to_flat_streams_3_fifo_U(
+cnn_fifo_w32_d196_A pool_to_flat_streams_3_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_max_pooling_fu_413_pool_to_flat_streams_0_din),
+    .if_din(max_pooling_layer_U0_pool_to_flat_streams_3_din),
     .if_full_n(pool_to_flat_streams_3_full_n),
-    .if_write(pool_to_flat_streams_3_write),
+    .if_write(max_pooling_layer_U0_pool_to_flat_streams_3_write),
     .if_dout(pool_to_flat_streams_3_dout),
+    .if_num_data_valid(pool_to_flat_streams_3_num_data_valid),
+    .if_fifo_cap(pool_to_flat_streams_3_fifo_cap),
     .if_empty_n(pool_to_flat_streams_3_empty_n),
-    .if_read(pool_to_flat_streams_3_read)
+    .if_read(flattening_layer_U0_pool_to_flat_streams_3_read)
 );
 
-cnn_fifo_w32_d196_A flat_to_dense_streams_fifo_U(
+cnn_fifo_w32_d196_A flat_to_dense_streams_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_flat_to_dense_streams_din),
+    .if_din(flattening_layer_U0_flat_to_dense_streams_0_din),
     .if_full_n(flat_to_dense_streams_full_n),
-    .if_write(flat_to_dense_streams_write),
+    .if_write(flattening_layer_U0_flat_to_dense_streams_0_write),
     .if_dout(flat_to_dense_streams_dout),
+    .if_num_data_valid(flat_to_dense_streams_num_data_valid),
+    .if_fifo_cap(flat_to_dense_streams_fifo_cap),
     .if_empty_n(flat_to_dense_streams_empty_n),
-    .if_read(flat_to_dense_streams_read)
+    .if_read(dense_layer_U0_flat_to_dense_streams_0_read)
 );
 
-cnn_fifo_w32_d196_A flat_to_dense_streams_1_fifo_U(
+cnn_fifo_w32_d196_A flat_to_dense_streams_1_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_flat_to_dense_streams_1_din),
+    .if_din(flattening_layer_U0_flat_to_dense_streams_1_din),
     .if_full_n(flat_to_dense_streams_1_full_n),
-    .if_write(flat_to_dense_streams_1_write),
+    .if_write(flattening_layer_U0_flat_to_dense_streams_1_write),
     .if_dout(flat_to_dense_streams_1_dout),
+    .if_num_data_valid(flat_to_dense_streams_1_num_data_valid),
+    .if_fifo_cap(flat_to_dense_streams_1_fifo_cap),
     .if_empty_n(flat_to_dense_streams_1_empty_n),
-    .if_read(flat_to_dense_streams_1_read)
+    .if_read(dense_layer_U0_flat_to_dense_streams_1_read)
 );
 
-cnn_fifo_w32_d196_A flat_to_dense_streams_2_fifo_U(
+cnn_fifo_w32_d196_A flat_to_dense_streams_2_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_flat_to_dense_streams_2_din),
+    .if_din(flattening_layer_U0_flat_to_dense_streams_2_din),
     .if_full_n(flat_to_dense_streams_2_full_n),
-    .if_write(flat_to_dense_streams_2_write),
+    .if_write(flattening_layer_U0_flat_to_dense_streams_2_write),
     .if_dout(flat_to_dense_streams_2_dout),
+    .if_num_data_valid(flat_to_dense_streams_2_num_data_valid),
+    .if_fifo_cap(flat_to_dense_streams_2_fifo_cap),
     .if_empty_n(flat_to_dense_streams_2_empty_n),
-    .if_read(flat_to_dense_streams_2_read)
+    .if_read(dense_layer_U0_flat_to_dense_streams_2_read)
 );
 
-cnn_fifo_w32_d196_A flat_to_dense_streams_3_fifo_U(
+cnn_fifo_w32_d196_A flat_to_dense_streams_3_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_flat_to_dense_streams_3_din),
+    .if_din(flattening_layer_U0_flat_to_dense_streams_3_din),
     .if_full_n(flat_to_dense_streams_3_full_n),
-    .if_write(flat_to_dense_streams_3_write),
+    .if_write(flattening_layer_U0_flat_to_dense_streams_3_write),
     .if_dout(flat_to_dense_streams_3_dout),
+    .if_num_data_valid(flat_to_dense_streams_3_num_data_valid),
+    .if_fifo_cap(flat_to_dense_streams_3_fifo_cap),
     .if_empty_n(flat_to_dense_streams_3_empty_n),
-    .if_read(flat_to_dense_streams_3_read)
+    .if_read(dense_layer_U0_flat_to_dense_streams_3_read)
 );
 
-cnn_fifo_w32_d10_S dense_to_softmax_streams_fifo_U(
+cnn_fifo_w32_d10_S dense_to_softmax_streams_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_dense_fu_443_dense_to_softmax_streams_0_din),
+    .if_din(dense_layer_U0_dense_to_softmax_streams_0_din),
     .if_full_n(dense_to_softmax_streams_full_n),
-    .if_write(dense_to_softmax_streams_write),
+    .if_write(dense_layer_U0_dense_to_softmax_streams_0_write),
     .if_dout(dense_to_softmax_streams_dout),
+    .if_num_data_valid(dense_to_softmax_streams_num_data_valid),
+    .if_fifo_cap(dense_to_softmax_streams_fifo_cap),
     .if_empty_n(dense_to_softmax_streams_empty_n),
-    .if_read(dense_to_softmax_streams_read)
+    .if_read(dense_layer_soft_max_U0_dense_to_softmax_streams_0_read)
 );
 
-cnn_fifo_w32_d10_S dense_to_softmax_streams_1_fifo_U(
+cnn_fifo_w32_d10_S dense_to_softmax_streams_1_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_dense_fu_471_dense_to_softmax_streams_0_din),
+    .if_din(dense_layer_U0_dense_to_softmax_streams_1_din),
     .if_full_n(dense_to_softmax_streams_1_full_n),
-    .if_write(dense_to_softmax_streams_1_write),
+    .if_write(dense_layer_U0_dense_to_softmax_streams_1_write),
     .if_dout(dense_to_softmax_streams_1_dout),
+    .if_num_data_valid(dense_to_softmax_streams_1_num_data_valid),
+    .if_fifo_cap(dense_to_softmax_streams_1_fifo_cap),
     .if_empty_n(dense_to_softmax_streams_1_empty_n),
-    .if_read(dense_to_softmax_streams_1_read)
+    .if_read(dense_layer_soft_max_U0_dense_to_softmax_streams_1_read)
 );
 
-cnn_fifo_w32_d10_S dense_to_softmax_streams_2_fifo_U(
+cnn_fifo_w32_d10_S dense_to_softmax_streams_2_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_dense_fu_499_dense_to_softmax_streams_0_din),
+    .if_din(dense_layer_U0_dense_to_softmax_streams_2_din),
     .if_full_n(dense_to_softmax_streams_2_full_n),
-    .if_write(dense_to_softmax_streams_2_write),
+    .if_write(dense_layer_U0_dense_to_softmax_streams_2_write),
     .if_dout(dense_to_softmax_streams_2_dout),
+    .if_num_data_valid(dense_to_softmax_streams_2_num_data_valid),
+    .if_fifo_cap(dense_to_softmax_streams_2_fifo_cap),
     .if_empty_n(dense_to_softmax_streams_2_empty_n),
-    .if_read(dense_to_softmax_streams_2_read)
+    .if_read(dense_layer_soft_max_U0_dense_to_softmax_streams_2_read)
 );
 
-cnn_fifo_w32_d10_S dense_to_softmax_streams_3_fifo_U(
+cnn_fifo_w32_d10_S dense_to_softmax_streams_3_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_dense_fu_527_dense_to_softmax_streams_0_din),
+    .if_din(dense_layer_U0_dense_to_softmax_streams_3_din),
     .if_full_n(dense_to_softmax_streams_3_full_n),
-    .if_write(dense_to_softmax_streams_3_write),
+    .if_write(dense_layer_U0_dense_to_softmax_streams_3_write),
     .if_dout(dense_to_softmax_streams_3_dout),
+    .if_num_data_valid(dense_to_softmax_streams_3_num_data_valid),
+    .if_fifo_cap(dense_to_softmax_streams_3_fifo_cap),
     .if_empty_n(dense_to_softmax_streams_3_empty_n),
-    .if_read(dense_to_softmax_streams_3_read)
+    .if_read(dense_layer_soft_max_U0_dense_to_softmax_streams_3_read)
+);
+
+cnn_start_for_max_pooling_layer_U0 start_for_max_pooling_layer_U0_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(start_for_max_pooling_layer_U0_din),
+    .if_full_n(start_for_max_pooling_layer_U0_full_n),
+    .if_write(convolutional_layer_U0_start_write),
+    .if_dout(start_for_max_pooling_layer_U0_dout),
+    .if_empty_n(start_for_max_pooling_layer_U0_empty_n),
+    .if_read(max_pooling_layer_U0_ap_ready)
+);
+
+cnn_start_for_flattening_layer_U0 start_for_flattening_layer_U0_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(start_for_flattening_layer_U0_din),
+    .if_full_n(start_for_flattening_layer_U0_full_n),
+    .if_write(max_pooling_layer_U0_start_write),
+    .if_dout(start_for_flattening_layer_U0_dout),
+    .if_empty_n(start_for_flattening_layer_U0_empty_n),
+    .if_read(flattening_layer_U0_ap_ready)
+);
+
+cnn_start_for_dense_layer_U0 start_for_dense_layer_U0_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(start_for_dense_layer_U0_din),
+    .if_full_n(start_for_dense_layer_U0_full_n),
+    .if_write(flattening_layer_U0_start_write),
+    .if_dout(start_for_dense_layer_U0_dout),
+    .if_empty_n(start_for_dense_layer_U0_empty_n),
+    .if_read(dense_layer_U0_ap_ready)
 );
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        ap_CS_fsm <= ap_ST_fsm_state1;
+        ap_sync_reg_convolutional_layer_U0_ap_ready <= 1'b0;
     end else begin
-        ap_CS_fsm <= ap_NS_fsm;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_convolution_1_fu_304_ap_start_reg <= 1'b0;
-    end else begin
-        if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_convolution_1_fu_304_ap_start_reg <= 1'b1;
-        end else if ((grp_convolution_1_fu_304_ap_ready == 1'b1)) begin
-            grp_convolution_1_fu_304_ap_start_reg <= 1'b0;
+        if (((ap_sync_ready & ap_start) == 1'b1)) begin
+            ap_sync_reg_convolutional_layer_U0_ap_ready <= 1'b0;
+        end else begin
+            ap_sync_reg_convolutional_layer_U0_ap_ready <= ap_sync_convolutional_layer_U0_ap_ready;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_convolution_fu_284_ap_start_reg <= 1'b0;
+        ap_sync_reg_dense_layer_soft_max_U0_ap_ready <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state3) | ((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1)))) begin
-            grp_convolution_fu_284_ap_start_reg <= 1'b1;
-        end else if ((grp_convolution_fu_284_ap_ready == 1'b1)) begin
-            grp_convolution_fu_284_ap_start_reg <= 1'b0;
+        if (((ap_sync_ready & ap_start) == 1'b1)) begin
+            ap_sync_reg_dense_layer_soft_max_U0_ap_ready <= 1'b0;
+        end else begin
+            ap_sync_reg_dense_layer_soft_max_U0_ap_ready <= ap_sync_dense_layer_soft_max_U0_ap_ready;
         end
     end
 end
 
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_convolution_fu_295_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state3)) begin
-            grp_convolution_fu_295_ap_start_reg <= 1'b1;
-        end else if ((grp_convolution_fu_295_ap_ready == 1'b1)) begin
-            grp_convolution_fu_295_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state20)) begin
-            grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_start_reg <= 1'b1;
-        end else if ((grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_ready == 1'b1)) begin
-            grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state22)) begin
-            grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_start_reg <= 1'b1;
-        end else if ((grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_ready == 1'b1)) begin
-            grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state10)) begin
-            grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_start_reg <= 1'b1;
-        end else if ((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_ready == 1'b1)) begin
-            grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state13)) begin
-            grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_start_reg <= 1'b1;
-        end else if ((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_ready == 1'b1)) begin
-            grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state16)) begin
-            grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_start_reg <= 1'b1;
-        end else if ((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_ready == 1'b1)) begin
-            grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state7)) begin
-            grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_start_reg <= 1'b1;
-        end else if ((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_ready == 1'b1)) begin
-            grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_dense_fu_443_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state18)) begin
-            grp_dense_fu_443_ap_start_reg <= 1'b1;
-        end else if ((grp_dense_fu_443_ap_ready == 1'b1)) begin
-            grp_dense_fu_443_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_dense_fu_471_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state18)) begin
-            grp_dense_fu_471_ap_start_reg <= 1'b1;
-        end else if ((grp_dense_fu_471_ap_ready == 1'b1)) begin
-            grp_dense_fu_471_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_dense_fu_499_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state18)) begin
-            grp_dense_fu_499_ap_start_reg <= 1'b1;
-        end else if ((grp_dense_fu_499_ap_ready == 1'b1)) begin
-            grp_dense_fu_499_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_dense_fu_527_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state18)) begin
-            grp_dense_fu_527_ap_start_reg <= 1'b1;
-        end else if ((grp_dense_fu_527_ap_ready == 1'b1)) begin
-            grp_dense_fu_527_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_max_pooling_fu_407_ap_start_reg <= 1'b0;
-    end else begin
-        if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state3))) begin
-            grp_max_pooling_fu_407_ap_start_reg <= 1'b1;
-        end else if ((grp_max_pooling_fu_407_ap_ready == 1'b1)) begin
-            grp_max_pooling_fu_407_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_max_pooling_fu_413_ap_start_reg <= 1'b0;
-    end else begin
-        if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state3))) begin
-            grp_max_pooling_fu_413_ap_start_reg <= 1'b1;
-        end else if ((grp_max_pooling_fu_413_ap_ready == 1'b1)) begin
-            grp_max_pooling_fu_413_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-assign ap_ST_fsm_state10_blk = 1'b0;
-
-always @ (*) begin
-    if ((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_done == 1'b0)) begin
-        ap_ST_fsm_state11_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state11_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state12_blk = 1'b0;
-
-assign ap_ST_fsm_state13_blk = 1'b0;
-
-always @ (*) begin
-    if ((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_done == 1'b0)) begin
-        ap_ST_fsm_state14_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state14_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state15_blk = 1'b0;
-
-assign ap_ST_fsm_state16_blk = 1'b0;
-
-always @ (*) begin
-    if ((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_done == 1'b0)) begin
-        ap_ST_fsm_state17_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state17_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state18_blk = 1'b0;
-
-always @ (*) begin
-    if ((1'b1 == ap_block_state19_on_subcall_done)) begin
-        ap_ST_fsm_state19_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state19_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((ap_start == 1'b0)) begin
-        ap_ST_fsm_state1_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state1_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state20_blk = 1'b0;
-
-always @ (*) begin
-    if ((grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_done == 1'b0)) begin
-        ap_ST_fsm_state21_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state21_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state22_blk = 1'b0;
-
-always @ (*) begin
-    if ((grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_done == 1'b0)) begin
-        ap_ST_fsm_state23_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state23_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_block_state2_on_subcall_done)) begin
-        ap_ST_fsm_state2_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state2_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state3_blk = 1'b0;
-
-always @ (*) begin
-    if ((1'b1 == ap_block_state4_on_subcall_done)) begin
-        ap_ST_fsm_state4_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state4_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state5_blk = 1'b0;
-
-always @ (*) begin
-    if ((1'b1 == ap_block_state6_on_subcall_done)) begin
-        ap_ST_fsm_state6_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state6_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state7_blk = 1'b0;
-
-always @ (*) begin
-    if ((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_done == 1'b0)) begin
-        ap_ST_fsm_state8_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state8_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state9_blk = 1'b0;
-
-always @ (*) begin
-    if ((((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) | ((grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state23)))) begin
-        ap_done = 1'b1;
-    end else begin
-        ap_done = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_idle = 1'b1;
-    end else begin
-        ap_idle = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state23))) begin
-        ap_ready = 1'b1;
-    end else begin
-        ap_ready = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        conv_to_pool_streams_1_read = grp_max_pooling_fu_407_conv_to_pool_streams_0_read;
-    end else begin
-        conv_to_pool_streams_1_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        conv_to_pool_streams_1_write = grp_convolution_fu_284_conv_to_pool_streams_0_write;
-    end else begin
-        conv_to_pool_streams_1_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        conv_to_pool_streams_2_read = grp_max_pooling_fu_413_conv_to_pool_streams_0_read;
-    end else begin
-        conv_to_pool_streams_2_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        conv_to_pool_streams_2_write = grp_convolution_fu_295_conv_to_pool_streams_0_write;
-    end else begin
-        conv_to_pool_streams_2_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        conv_to_pool_streams_3_read = grp_max_pooling_fu_413_conv_to_pool_streams_0_read;
-    end else begin
-        conv_to_pool_streams_3_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        conv_to_pool_streams_3_write = grp_convolution_1_fu_304_conv_to_pool_streams_3_write;
-    end else begin
-        conv_to_pool_streams_3_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        conv_to_pool_streams_read = grp_max_pooling_fu_407_conv_to_pool_streams_0_read;
-    end else begin
-        conv_to_pool_streams_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        conv_to_pool_streams_write = grp_convolution_fu_284_conv_to_pool_streams_0_write;
-    end else begin
-        conv_to_pool_streams_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        dense_to_softmax_streams_1_read = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_1_read;
-    end else begin
-        dense_to_softmax_streams_1_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state19)) begin
-        dense_to_softmax_streams_1_write = grp_dense_fu_471_dense_to_softmax_streams_0_write;
-    end else begin
-        dense_to_softmax_streams_1_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        dense_to_softmax_streams_2_read = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_2_read;
-    end else begin
-        dense_to_softmax_streams_2_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state19)) begin
-        dense_to_softmax_streams_2_write = grp_dense_fu_499_dense_to_softmax_streams_0_write;
-    end else begin
-        dense_to_softmax_streams_2_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        dense_to_softmax_streams_3_read = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_3_read;
-    end else begin
-        dense_to_softmax_streams_3_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state19)) begin
-        dense_to_softmax_streams_3_write = grp_dense_fu_527_dense_to_softmax_streams_0_write;
-    end else begin
-        dense_to_softmax_streams_3_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        dense_to_softmax_streams_read = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_dense_to_softmax_streams_read;
-    end else begin
-        dense_to_softmax_streams_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state19)) begin
-        dense_to_softmax_streams_write = grp_dense_fu_443_dense_to_softmax_streams_0_write;
-    end else begin
-        dense_to_softmax_streams_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state19)) begin
-        flat_to_dense_streams_1_read = grp_dense_fu_471_flat_to_dense_streams_0_read;
-    end else begin
-        flat_to_dense_streams_1_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state11)) begin
-        flat_to_dense_streams_1_write = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_flat_to_dense_streams_1_write;
-    end else begin
-        flat_to_dense_streams_1_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state19)) begin
-        flat_to_dense_streams_2_read = grp_dense_fu_499_flat_to_dense_streams_0_read;
-    end else begin
-        flat_to_dense_streams_2_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state14)) begin
-        flat_to_dense_streams_2_write = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_flat_to_dense_streams_2_write;
-    end else begin
-        flat_to_dense_streams_2_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state19)) begin
-        flat_to_dense_streams_3_read = grp_dense_fu_527_flat_to_dense_streams_0_read;
-    end else begin
-        flat_to_dense_streams_3_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state17)) begin
-        flat_to_dense_streams_3_write = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_flat_to_dense_streams_3_write;
-    end else begin
-        flat_to_dense_streams_3_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state19)) begin
-        flat_to_dense_streams_read = grp_dense_fu_443_flat_to_dense_streams_0_read;
-    end else begin
-        flat_to_dense_streams_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
-        flat_to_dense_streams_write = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_flat_to_dense_streams_write;
-    end else begin
-        flat_to_dense_streams_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_convolution_fu_284_conv_to_pool_streams_0_full_n = conv_to_pool_streams_1_full_n;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        grp_convolution_fu_284_conv_to_pool_streams_0_full_n = conv_to_pool_streams_full_n;
-    end else begin
-        grp_convolution_fu_284_conv_to_pool_streams_0_full_n = conv_to_pool_streams_1_full_n;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_convolution_fu_284_filter = 2'd1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        grp_convolution_fu_284_filter = 2'd0;
-    end else begin
-        grp_convolution_fu_284_filter = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_convolution_fu_284_pad_img_q0 = pad_img1_q0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        grp_convolution_fu_284_pad_img_q0 = pad_img0_q0;
-    end else begin
-        grp_convolution_fu_284_pad_img_q0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_convolution_fu_284_pad_img_q1 = pad_img1_q1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        grp_convolution_fu_284_pad_img_q1 = pad_img0_q1;
-    end else begin
-        grp_convolution_fu_284_pad_img_q1 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        grp_fu_684_ce = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_ce;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        grp_fu_684_ce = grp_convolution_1_fu_304_grp_fu_684_p_ce;
-    end else begin
-        grp_fu_684_ce = 1'b1;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        grp_fu_684_p0 = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_din0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        grp_fu_684_p0 = grp_convolution_1_fu_304_grp_fu_684_p_din0;
-    end else begin
-        grp_fu_684_p0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state21)) begin
-        grp_fu_684_p1 = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_grp_fu_684_p_din1;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        grp_fu_684_p1 = grp_convolution_1_fu_304_grp_fu_684_p_din1;
-    end else begin
-        grp_fu_684_p1 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        grp_fu_688_ce = grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_grp_fu_688_p_ce;
-    end else begin
-        grp_fu_688_ce = 1'b1;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_max_pooling_fu_407_conv_to_pool_streams_0_dout = conv_to_pool_streams_1_dout;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_max_pooling_fu_407_conv_to_pool_streams_0_dout = conv_to_pool_streams_dout;
-    end else begin
-        grp_max_pooling_fu_407_conv_to_pool_streams_0_dout = conv_to_pool_streams_1_dout;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_max_pooling_fu_407_conv_to_pool_streams_0_empty_n = conv_to_pool_streams_1_empty_n;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_max_pooling_fu_407_conv_to_pool_streams_0_empty_n = conv_to_pool_streams_empty_n;
-    end else begin
-        grp_max_pooling_fu_407_conv_to_pool_streams_0_empty_n = conv_to_pool_streams_1_empty_n;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_max_pooling_fu_407_pool_to_flat_streams_0_full_n = pool_to_flat_streams_1_full_n;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_max_pooling_fu_407_pool_to_flat_streams_0_full_n = pool_to_flat_streams_full_n;
-    end else begin
-        grp_max_pooling_fu_407_pool_to_flat_streams_0_full_n = pool_to_flat_streams_1_full_n;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_max_pooling_fu_413_conv_to_pool_streams_0_dout = conv_to_pool_streams_2_dout;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_max_pooling_fu_413_conv_to_pool_streams_0_dout = conv_to_pool_streams_3_dout;
-    end else begin
-        grp_max_pooling_fu_413_conv_to_pool_streams_0_dout = conv_to_pool_streams_2_dout;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_max_pooling_fu_413_conv_to_pool_streams_0_empty_n = conv_to_pool_streams_2_empty_n;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_max_pooling_fu_413_conv_to_pool_streams_0_empty_n = conv_to_pool_streams_3_empty_n;
-    end else begin
-        grp_max_pooling_fu_413_conv_to_pool_streams_0_empty_n = conv_to_pool_streams_2_empty_n;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_max_pooling_fu_413_pool_to_flat_streams_0_full_n = pool_to_flat_streams_2_full_n;
-    end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_max_pooling_fu_413_pool_to_flat_streams_0_full_n = pool_to_flat_streams_3_full_n;
-    end else begin
-        grp_max_pooling_fu_413_pool_to_flat_streams_0_full_n = pool_to_flat_streams_2_full_n;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        pad_img0_ce0 = grp_convolution_fu_284_pad_img_ce0;
-    end else begin
-        pad_img0_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        pad_img0_ce1 = grp_convolution_fu_284_pad_img_ce1;
-    end else begin
-        pad_img0_ce1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        pad_img1_ce0 = grp_convolution_fu_284_pad_img_ce0;
-    end else begin
-        pad_img1_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        pad_img1_ce1 = grp_convolution_fu_284_pad_img_ce1;
-    end else begin
-        pad_img1_ce1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state11)) begin
-        pool_to_flat_streams_1_read = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_pool_to_flat_streams_1_read;
-    end else begin
-        pool_to_flat_streams_1_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        pool_to_flat_streams_1_write = grp_max_pooling_fu_407_pool_to_flat_streams_0_write;
-    end else begin
-        pool_to_flat_streams_1_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state14)) begin
-        pool_to_flat_streams_2_read = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_pool_to_flat_streams_2_read;
-    end else begin
-        pool_to_flat_streams_2_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state6)) begin
-        pool_to_flat_streams_2_write = grp_max_pooling_fu_413_pool_to_flat_streams_0_write;
-    end else begin
-        pool_to_flat_streams_2_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state17)) begin
-        pool_to_flat_streams_3_read = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_pool_to_flat_streams_3_read;
-    end else begin
-        pool_to_flat_streams_3_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        pool_to_flat_streams_3_write = grp_max_pooling_fu_413_pool_to_flat_streams_0_write;
-    end else begin
-        pool_to_flat_streams_3_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state8)) begin
-        pool_to_flat_streams_read = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_pool_to_flat_streams_read;
-    end else begin
-        pool_to_flat_streams_read = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        pool_to_flat_streams_write = grp_max_pooling_fu_407_pool_to_flat_streams_0_write;
-    end else begin
-        pool_to_flat_streams_write = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        prediction_address0 = grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_address0;
-    end else if ((1'b1 == ap_CS_fsm_state21)) begin
-        prediction_address0 = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_address0;
-    end else begin
-        prediction_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        prediction_ce0 = grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state21)) begin
-        prediction_ce0 = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_ce0;
-    end else begin
-        prediction_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        prediction_ce1 = grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_ce1;
-    end else begin
-        prediction_ce1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        prediction_d0 = grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_d0;
-    end else if ((1'b1 == ap_CS_fsm_state21)) begin
-        prediction_d0 = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_d0;
-    end else begin
-        prediction_d0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        prediction_we0 = grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_we0;
-    end else if ((1'b1 == ap_CS_fsm_state21)) begin
-        prediction_we0 = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_prediction_we0;
-    end else begin
-        prediction_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    case (ap_CS_fsm)
-        ap_ST_fsm_state1 : begin
-            if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state1;
-            end
-        end
-        ap_ST_fsm_state2 : begin
-            if (((1'b1 == ap_CS_fsm_state2) & (1'b0 == ap_block_state2_on_subcall_done))) begin
-                ap_NS_fsm = ap_ST_fsm_state3;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end
-        end
-        ap_ST_fsm_state3 : begin
-            ap_NS_fsm = ap_ST_fsm_state4;
-        end
-        ap_ST_fsm_state4 : begin
-            if (((1'b1 == ap_CS_fsm_state4) & (1'b0 == ap_block_state4_on_subcall_done))) begin
-                ap_NS_fsm = ap_ST_fsm_state5;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state4;
-            end
-        end
-        ap_ST_fsm_state5 : begin
-            ap_NS_fsm = ap_ST_fsm_state6;
-        end
-        ap_ST_fsm_state6 : begin
-            if (((1'b1 == ap_CS_fsm_state6) & (1'b0 == ap_block_state6_on_subcall_done))) begin
-                ap_NS_fsm = ap_ST_fsm_state7;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state6;
-            end
-        end
-        ap_ST_fsm_state7 : begin
-            ap_NS_fsm = ap_ST_fsm_state8;
-        end
-        ap_ST_fsm_state8 : begin
-            if (((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state8))) begin
-                ap_NS_fsm = ap_ST_fsm_state9;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state8;
-            end
-        end
-        ap_ST_fsm_state9 : begin
-            ap_NS_fsm = ap_ST_fsm_state10;
-        end
-        ap_ST_fsm_state10 : begin
-            ap_NS_fsm = ap_ST_fsm_state11;
-        end
-        ap_ST_fsm_state11 : begin
-            if (((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state11))) begin
-                ap_NS_fsm = ap_ST_fsm_state12;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state11;
-            end
-        end
-        ap_ST_fsm_state12 : begin
-            ap_NS_fsm = ap_ST_fsm_state13;
-        end
-        ap_ST_fsm_state13 : begin
-            ap_NS_fsm = ap_ST_fsm_state14;
-        end
-        ap_ST_fsm_state14 : begin
-            if (((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state14))) begin
-                ap_NS_fsm = ap_ST_fsm_state15;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state14;
-            end
-        end
-        ap_ST_fsm_state15 : begin
-            ap_NS_fsm = ap_ST_fsm_state16;
-        end
-        ap_ST_fsm_state16 : begin
-            ap_NS_fsm = ap_ST_fsm_state17;
-        end
-        ap_ST_fsm_state17 : begin
-            if (((grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-                ap_NS_fsm = ap_ST_fsm_state18;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state17;
-            end
-        end
-        ap_ST_fsm_state18 : begin
-            ap_NS_fsm = ap_ST_fsm_state19;
-        end
-        ap_ST_fsm_state19 : begin
-            if (((1'b1 == ap_CS_fsm_state19) & (1'b0 == ap_block_state19_on_subcall_done))) begin
-                ap_NS_fsm = ap_ST_fsm_state20;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state19;
-            end
-        end
-        ap_ST_fsm_state20 : begin
-            ap_NS_fsm = ap_ST_fsm_state21;
-        end
-        ap_ST_fsm_state21 : begin
-            if (((grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state21))) begin
-                ap_NS_fsm = ap_ST_fsm_state22;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state21;
-            end
-        end
-        ap_ST_fsm_state22 : begin
-            ap_NS_fsm = ap_ST_fsm_state23;
-        end
-        ap_ST_fsm_state23 : begin
-            if (((grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state23))) begin
-                ap_NS_fsm = ap_ST_fsm_state1;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state23;
-            end
-        end
-        default : begin
-            ap_NS_fsm = 'bx;
-        end
-    endcase
-end
-
-assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
-
-assign ap_CS_fsm_state10 = ap_CS_fsm[32'd9];
-
-assign ap_CS_fsm_state11 = ap_CS_fsm[32'd10];
-
-assign ap_CS_fsm_state13 = ap_CS_fsm[32'd12];
-
-assign ap_CS_fsm_state14 = ap_CS_fsm[32'd13];
-
-assign ap_CS_fsm_state16 = ap_CS_fsm[32'd15];
-
-assign ap_CS_fsm_state17 = ap_CS_fsm[32'd16];
-
-assign ap_CS_fsm_state18 = ap_CS_fsm[32'd17];
-
-assign ap_CS_fsm_state19 = ap_CS_fsm[32'd18];
-
-assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
-
-assign ap_CS_fsm_state20 = ap_CS_fsm[32'd19];
-
-assign ap_CS_fsm_state21 = ap_CS_fsm[32'd20];
-
-assign ap_CS_fsm_state22 = ap_CS_fsm[32'd21];
-
-assign ap_CS_fsm_state23 = ap_CS_fsm[32'd22];
-
-assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
-
-assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
-
-assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
-
-assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
-
-assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
-
-assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
-
-always @ (*) begin
-    ap_block_state19_on_subcall_done = ((grp_dense_fu_527_ap_done == 1'b0) | (grp_dense_fu_499_ap_done == 1'b0) | (grp_dense_fu_471_ap_done == 1'b0) | (grp_dense_fu_443_ap_done == 1'b0));
-end
-
-always @ (*) begin
-    ap_block_state2_on_subcall_done = ((grp_convolution_1_fu_304_ap_done == 1'b0) | (grp_convolution_fu_284_ap_done == 1'b0));
-end
-
-always @ (*) begin
-    ap_block_state4_on_subcall_done = ((grp_max_pooling_fu_413_ap_done == 1'b0) | (grp_max_pooling_fu_407_ap_done == 1'b0) | (grp_convolution_fu_295_ap_done == 1'b0) | (grp_convolution_fu_284_ap_done == 1'b0));
-end
-
-always @ (*) begin
-    ap_block_state6_on_subcall_done = ((grp_max_pooling_fu_413_ap_done == 1'b0) | (grp_max_pooling_fu_407_ap_done == 1'b0));
-end
-
-assign grp_convolution_1_fu_304_ap_start = grp_convolution_1_fu_304_ap_start_reg;
-
-assign grp_convolution_fu_284_ap_start = grp_convolution_fu_284_ap_start_reg;
-
-assign grp_convolution_fu_295_ap_start = grp_convolution_fu_295_ap_start_reg;
-
-assign grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_start = grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555_ap_start_reg;
-
-assign grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_start = grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_ap_start_reg;
-
-assign grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_start = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425_ap_start_reg;
-
-assign grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_start = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431_ap_start_reg;
-
-assign grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_start = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437_ap_start_reg;
-
-assign grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_start = grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419_ap_start_reg;
-
-assign grp_dense_fu_443_ap_start = grp_dense_fu_443_ap_start_reg;
-
-assign grp_dense_fu_471_ap_start = grp_dense_fu_471_ap_start_reg;
-
-assign grp_dense_fu_499_ap_start = grp_dense_fu_499_ap_start_reg;
-
-assign grp_dense_fu_527_ap_start = grp_dense_fu_527_ap_start_reg;
-
-assign grp_fu_409_p_ce = grp_fu_688_ce;
-
-assign grp_fu_409_p_din0 = grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_grp_fu_688_p_din0;
-
-assign grp_fu_409_p_din1 = grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_grp_fu_688_p_din1;
-
-assign grp_max_pooling_fu_407_ap_start = grp_max_pooling_fu_407_ap_start_reg;
-
-assign grp_max_pooling_fu_413_ap_start = grp_max_pooling_fu_413_ap_start_reg;
-
-assign pad_img0_address0 = grp_convolution_fu_284_pad_img_address0;
-
-assign pad_img0_address1 = grp_convolution_fu_284_pad_img_address1;
-
-assign pad_img1_address0 = grp_convolution_fu_284_pad_img_address0;
-
-assign pad_img1_address1 = grp_convolution_fu_284_pad_img_address1;
-
-assign pad_img2_address0 = grp_convolution_fu_295_pad_img_address0;
-
-assign pad_img2_address1 = grp_convolution_fu_295_pad_img_address1;
-
-assign pad_img2_ce0 = grp_convolution_fu_295_pad_img_ce0;
-
-assign pad_img2_ce1 = grp_convolution_fu_295_pad_img_ce1;
-
-assign pad_img3_0_0_address0 = grp_convolution_1_fu_304_pad_img_0_0_address0;
-
-assign pad_img3_0_0_ce0 = grp_convolution_1_fu_304_pad_img_0_0_ce0;
-
-assign pad_img3_0_1_address0 = grp_convolution_1_fu_304_pad_img_0_1_address0;
-
-assign pad_img3_0_1_ce0 = grp_convolution_1_fu_304_pad_img_0_1_ce0;
-
-assign pad_img3_0_2_address0 = grp_convolution_1_fu_304_pad_img_0_2_address0;
-
-assign pad_img3_0_2_ce0 = grp_convolution_1_fu_304_pad_img_0_2_ce0;
-
-assign pad_img3_0_3_address0 = grp_convolution_1_fu_304_pad_img_0_3_address0;
-
-assign pad_img3_0_3_ce0 = grp_convolution_1_fu_304_pad_img_0_3_ce0;
-
-assign pad_img3_0_4_address0 = grp_convolution_1_fu_304_pad_img_0_4_address0;
-
-assign pad_img3_0_4_ce0 = grp_convolution_1_fu_304_pad_img_0_4_ce0;
-
-assign pad_img3_0_5_address0 = grp_convolution_1_fu_304_pad_img_0_5_address0;
-
-assign pad_img3_0_5_ce0 = grp_convolution_1_fu_304_pad_img_0_5_ce0;
-
-assign pad_img3_0_6_address0 = grp_convolution_1_fu_304_pad_img_0_6_address0;
-
-assign pad_img3_0_6_ce0 = grp_convolution_1_fu_304_pad_img_0_6_ce0;
-
-assign pad_img3_1_0_address0 = grp_convolution_1_fu_304_pad_img_1_0_address0;
-
-assign pad_img3_1_0_ce0 = grp_convolution_1_fu_304_pad_img_1_0_ce0;
-
-assign pad_img3_1_1_address0 = grp_convolution_1_fu_304_pad_img_1_1_address0;
-
-assign pad_img3_1_1_ce0 = grp_convolution_1_fu_304_pad_img_1_1_ce0;
-
-assign pad_img3_1_2_address0 = grp_convolution_1_fu_304_pad_img_1_2_address0;
-
-assign pad_img3_1_2_ce0 = grp_convolution_1_fu_304_pad_img_1_2_ce0;
-
-assign pad_img3_1_3_address0 = grp_convolution_1_fu_304_pad_img_1_3_address0;
-
-assign pad_img3_1_3_ce0 = grp_convolution_1_fu_304_pad_img_1_3_ce0;
-
-assign pad_img3_1_4_address0 = grp_convolution_1_fu_304_pad_img_1_4_address0;
-
-assign pad_img3_1_4_ce0 = grp_convolution_1_fu_304_pad_img_1_4_ce0;
-
-assign pad_img3_1_5_address0 = grp_convolution_1_fu_304_pad_img_1_5_address0;
-
-assign pad_img3_1_5_ce0 = grp_convolution_1_fu_304_pad_img_1_5_ce0;
-
-assign pad_img3_1_6_address0 = grp_convolution_1_fu_304_pad_img_1_6_address0;
-
-assign pad_img3_1_6_ce0 = grp_convolution_1_fu_304_pad_img_1_6_ce0;
-
-assign pad_img3_2_0_address0 = grp_convolution_1_fu_304_pad_img_2_0_address0;
-
-assign pad_img3_2_0_ce0 = grp_convolution_1_fu_304_pad_img_2_0_ce0;
-
-assign pad_img3_2_1_address0 = grp_convolution_1_fu_304_pad_img_2_1_address0;
-
-assign pad_img3_2_1_ce0 = grp_convolution_1_fu_304_pad_img_2_1_ce0;
-
-assign pad_img3_2_2_address0 = grp_convolution_1_fu_304_pad_img_2_2_address0;
-
-assign pad_img3_2_2_ce0 = grp_convolution_1_fu_304_pad_img_2_2_ce0;
-
-assign pad_img3_2_3_address0 = grp_convolution_1_fu_304_pad_img_2_3_address0;
-
-assign pad_img3_2_3_ce0 = grp_convolution_1_fu_304_pad_img_2_3_ce0;
-
-assign pad_img3_2_4_address0 = grp_convolution_1_fu_304_pad_img_2_4_address0;
-
-assign pad_img3_2_4_ce0 = grp_convolution_1_fu_304_pad_img_2_4_ce0;
-
-assign pad_img3_2_5_address0 = grp_convolution_1_fu_304_pad_img_2_5_address0;
-
-assign pad_img3_2_5_ce0 = grp_convolution_1_fu_304_pad_img_2_5_ce0;
-
-assign pad_img3_2_6_address0 = grp_convolution_1_fu_304_pad_img_2_6_address0;
-
-assign pad_img3_2_6_ce0 = grp_convolution_1_fu_304_pad_img_2_6_ce0;
-
-assign pad_img3_3_0_address0 = grp_convolution_1_fu_304_pad_img_3_0_address0;
-
-assign pad_img3_3_0_ce0 = grp_convolution_1_fu_304_pad_img_3_0_ce0;
-
-assign pad_img3_3_1_address0 = grp_convolution_1_fu_304_pad_img_3_1_address0;
-
-assign pad_img3_3_1_ce0 = grp_convolution_1_fu_304_pad_img_3_1_ce0;
-
-assign pad_img3_3_2_address0 = grp_convolution_1_fu_304_pad_img_3_2_address0;
-
-assign pad_img3_3_2_ce0 = grp_convolution_1_fu_304_pad_img_3_2_ce0;
-
-assign pad_img3_3_3_address0 = grp_convolution_1_fu_304_pad_img_3_3_address0;
-
-assign pad_img3_3_3_ce0 = grp_convolution_1_fu_304_pad_img_3_3_ce0;
-
-assign pad_img3_3_4_address0 = grp_convolution_1_fu_304_pad_img_3_4_address0;
-
-assign pad_img3_3_4_ce0 = grp_convolution_1_fu_304_pad_img_3_4_ce0;
-
-assign pad_img3_3_5_address0 = grp_convolution_1_fu_304_pad_img_3_5_address0;
-
-assign pad_img3_3_5_ce0 = grp_convolution_1_fu_304_pad_img_3_5_ce0;
-
-assign pad_img3_3_6_address0 = grp_convolution_1_fu_304_pad_img_3_6_address0;
-
-assign pad_img3_3_6_ce0 = grp_convolution_1_fu_304_pad_img_3_6_ce0;
-
-assign pad_img3_4_0_address0 = grp_convolution_1_fu_304_pad_img_4_0_address0;
-
-assign pad_img3_4_0_ce0 = grp_convolution_1_fu_304_pad_img_4_0_ce0;
-
-assign pad_img3_4_1_address0 = grp_convolution_1_fu_304_pad_img_4_1_address0;
-
-assign pad_img3_4_1_ce0 = grp_convolution_1_fu_304_pad_img_4_1_ce0;
-
-assign pad_img3_4_2_address0 = grp_convolution_1_fu_304_pad_img_4_2_address0;
-
-assign pad_img3_4_2_ce0 = grp_convolution_1_fu_304_pad_img_4_2_ce0;
-
-assign pad_img3_4_3_address0 = grp_convolution_1_fu_304_pad_img_4_3_address0;
-
-assign pad_img3_4_3_ce0 = grp_convolution_1_fu_304_pad_img_4_3_ce0;
-
-assign pad_img3_4_4_address0 = grp_convolution_1_fu_304_pad_img_4_4_address0;
-
-assign pad_img3_4_4_ce0 = grp_convolution_1_fu_304_pad_img_4_4_ce0;
-
-assign pad_img3_4_5_address0 = grp_convolution_1_fu_304_pad_img_4_5_address0;
-
-assign pad_img3_4_5_ce0 = grp_convolution_1_fu_304_pad_img_4_5_ce0;
-
-assign pad_img3_4_6_address0 = grp_convolution_1_fu_304_pad_img_4_6_address0;
-
-assign pad_img3_4_6_ce0 = grp_convolution_1_fu_304_pad_img_4_6_ce0;
-
-assign pad_img3_5_0_address0 = grp_convolution_1_fu_304_pad_img_5_0_address0;
-
-assign pad_img3_5_0_ce0 = grp_convolution_1_fu_304_pad_img_5_0_ce0;
-
-assign pad_img3_5_1_address0 = grp_convolution_1_fu_304_pad_img_5_1_address0;
-
-assign pad_img3_5_1_ce0 = grp_convolution_1_fu_304_pad_img_5_1_ce0;
-
-assign pad_img3_5_2_address0 = grp_convolution_1_fu_304_pad_img_5_2_address0;
-
-assign pad_img3_5_2_ce0 = grp_convolution_1_fu_304_pad_img_5_2_ce0;
-
-assign pad_img3_5_3_address0 = grp_convolution_1_fu_304_pad_img_5_3_address0;
-
-assign pad_img3_5_3_ce0 = grp_convolution_1_fu_304_pad_img_5_3_ce0;
-
-assign pad_img3_5_4_address0 = grp_convolution_1_fu_304_pad_img_5_4_address0;
-
-assign pad_img3_5_4_ce0 = grp_convolution_1_fu_304_pad_img_5_4_ce0;
-
-assign pad_img3_5_5_address0 = grp_convolution_1_fu_304_pad_img_5_5_address0;
-
-assign pad_img3_5_5_ce0 = grp_convolution_1_fu_304_pad_img_5_5_ce0;
-
-assign pad_img3_5_6_address0 = grp_convolution_1_fu_304_pad_img_5_6_address0;
-
-assign pad_img3_5_6_ce0 = grp_convolution_1_fu_304_pad_img_5_6_ce0;
-
-assign pad_img3_6_0_address0 = grp_convolution_1_fu_304_pad_img_6_0_address0;
-
-assign pad_img3_6_0_ce0 = grp_convolution_1_fu_304_pad_img_6_0_ce0;
-
-assign pad_img3_6_1_address0 = grp_convolution_1_fu_304_pad_img_6_1_address0;
-
-assign pad_img3_6_1_ce0 = grp_convolution_1_fu_304_pad_img_6_1_ce0;
-
-assign pad_img3_6_2_address0 = grp_convolution_1_fu_304_pad_img_6_2_address0;
-
-assign pad_img3_6_2_ce0 = grp_convolution_1_fu_304_pad_img_6_2_ce0;
-
-assign pad_img3_6_3_address0 = grp_convolution_1_fu_304_pad_img_6_3_address0;
-
-assign pad_img3_6_3_ce0 = grp_convolution_1_fu_304_pad_img_6_3_ce0;
-
-assign pad_img3_6_4_address0 = grp_convolution_1_fu_304_pad_img_6_4_address0;
-
-assign pad_img3_6_4_ce0 = grp_convolution_1_fu_304_pad_img_6_4_ce0;
-
-assign pad_img3_6_5_address0 = grp_convolution_1_fu_304_pad_img_6_5_address0;
-
-assign pad_img3_6_5_ce0 = grp_convolution_1_fu_304_pad_img_6_5_ce0;
-
-assign pad_img3_6_6_address0 = grp_convolution_1_fu_304_pad_img_6_6_address0;
-
-assign pad_img3_6_6_ce0 = grp_convolution_1_fu_304_pad_img_6_6_ce0;
-
-assign prediction_address1 = grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568_prediction_address1;
+assign ap_done = dense_layer_soft_max_U0_ap_done;
+
+assign ap_idle = (max_pooling_layer_U0_ap_idle & flattening_layer_U0_ap_idle & dense_layer_soft_max_U0_ap_idle & dense_layer_U0_ap_idle & convolutional_layer_U0_ap_idle);
+
+assign ap_ready = ap_sync_ready;
+
+assign ap_sync_convolutional_layer_U0_ap_ready = (convolutional_layer_U0_ap_ready | ap_sync_reg_convolutional_layer_U0_ap_ready);
+
+assign ap_sync_dense_layer_soft_max_U0_ap_ready = (dense_layer_soft_max_U0_ap_ready | ap_sync_reg_dense_layer_soft_max_U0_ap_ready);
+
+assign ap_sync_ready = (ap_sync_dense_layer_soft_max_U0_ap_ready & ap_sync_convolutional_layer_U0_ap_ready);
+
+assign convolutional_layer_U0_ap_continue = 1'b1;
+
+assign convolutional_layer_U0_ap_start = ((ap_sync_reg_convolutional_layer_U0_ap_ready ^ 1'b1) & ap_start);
+
+assign dense_layer_U0_ap_continue = 1'b1;
+
+assign dense_layer_U0_ap_start = start_for_dense_layer_U0_empty_n;
+
+assign dense_layer_soft_max_U0_ap_continue = ap_continue;
+
+assign dense_layer_soft_max_U0_ap_start = ((ap_sync_reg_dense_layer_soft_max_U0_ap_ready ^ 1'b1) & ap_start);
+
+assign flattening_layer_U0_ap_continue = 1'b1;
+
+assign flattening_layer_U0_ap_start = start_for_flattening_layer_U0_empty_n;
+
+assign max_pooling_layer_U0_ap_continue = 1'b1;
+
+assign max_pooling_layer_U0_ap_start = start_for_max_pooling_layer_U0_empty_n;
+
+assign pad_img0_address0 = convolutional_layer_U0_pad_img0_address0;
+
+assign pad_img0_address1 = convolutional_layer_U0_pad_img0_address1;
+
+assign pad_img0_ce0 = convolutional_layer_U0_pad_img0_ce0;
+
+assign pad_img0_ce1 = convolutional_layer_U0_pad_img0_ce1;
+
+assign pad_img0_d0 = 32'd0;
+
+assign pad_img0_d1 = 32'd0;
+
+assign pad_img0_we0 = 1'b0;
+
+assign pad_img0_we1 = 1'b0;
+
+assign pad_img1_address0 = convolutional_layer_U0_pad_img1_address0;
+
+assign pad_img1_address1 = convolutional_layer_U0_pad_img1_address1;
+
+assign pad_img1_ce0 = convolutional_layer_U0_pad_img1_ce0;
+
+assign pad_img1_ce1 = convolutional_layer_U0_pad_img1_ce1;
+
+assign pad_img1_d0 = 32'd0;
+
+assign pad_img1_d1 = 32'd0;
+
+assign pad_img1_we0 = 1'b0;
+
+assign pad_img1_we1 = 1'b0;
+
+assign pad_img2_address0 = convolutional_layer_U0_pad_img2_address0;
+
+assign pad_img2_address1 = convolutional_layer_U0_pad_img2_address1;
+
+assign pad_img2_ce0 = convolutional_layer_U0_pad_img2_ce0;
+
+assign pad_img2_ce1 = convolutional_layer_U0_pad_img2_ce1;
+
+assign pad_img2_d0 = 32'd0;
+
+assign pad_img2_d1 = 32'd0;
+
+assign pad_img2_we0 = 1'b0;
+
+assign pad_img2_we1 = 1'b0;
+
+assign pad_img3_0_0_address0 = convolutional_layer_U0_pad_img3_0_0_address0;
+
+assign pad_img3_0_0_address1 = 5'd0;
+
+assign pad_img3_0_0_ce0 = convolutional_layer_U0_pad_img3_0_0_ce0;
+
+assign pad_img3_0_0_ce1 = 1'b0;
+
+assign pad_img3_0_0_d0 = 32'd0;
+
+assign pad_img3_0_0_d1 = 32'd0;
+
+assign pad_img3_0_0_we0 = 1'b0;
+
+assign pad_img3_0_0_we1 = 1'b0;
+
+assign pad_img3_0_1_address0 = convolutional_layer_U0_pad_img3_0_1_address0;
+
+assign pad_img3_0_1_address1 = 5'd0;
+
+assign pad_img3_0_1_ce0 = convolutional_layer_U0_pad_img3_0_1_ce0;
+
+assign pad_img3_0_1_ce1 = 1'b0;
+
+assign pad_img3_0_1_d0 = 32'd0;
+
+assign pad_img3_0_1_d1 = 32'd0;
+
+assign pad_img3_0_1_we0 = 1'b0;
+
+assign pad_img3_0_1_we1 = 1'b0;
+
+assign pad_img3_0_2_address0 = convolutional_layer_U0_pad_img3_0_2_address0;
+
+assign pad_img3_0_2_address1 = 5'd0;
+
+assign pad_img3_0_2_ce0 = convolutional_layer_U0_pad_img3_0_2_ce0;
+
+assign pad_img3_0_2_ce1 = 1'b0;
+
+assign pad_img3_0_2_d0 = 32'd0;
+
+assign pad_img3_0_2_d1 = 32'd0;
+
+assign pad_img3_0_2_we0 = 1'b0;
+
+assign pad_img3_0_2_we1 = 1'b0;
+
+assign pad_img3_0_3_address0 = convolutional_layer_U0_pad_img3_0_3_address0;
+
+assign pad_img3_0_3_address1 = 5'd0;
+
+assign pad_img3_0_3_ce0 = convolutional_layer_U0_pad_img3_0_3_ce0;
+
+assign pad_img3_0_3_ce1 = 1'b0;
+
+assign pad_img3_0_3_d0 = 32'd0;
+
+assign pad_img3_0_3_d1 = 32'd0;
+
+assign pad_img3_0_3_we0 = 1'b0;
+
+assign pad_img3_0_3_we1 = 1'b0;
+
+assign pad_img3_0_4_address0 = convolutional_layer_U0_pad_img3_0_4_address0;
+
+assign pad_img3_0_4_address1 = 5'd0;
+
+assign pad_img3_0_4_ce0 = convolutional_layer_U0_pad_img3_0_4_ce0;
+
+assign pad_img3_0_4_ce1 = 1'b0;
+
+assign pad_img3_0_4_d0 = 32'd0;
+
+assign pad_img3_0_4_d1 = 32'd0;
+
+assign pad_img3_0_4_we0 = 1'b0;
+
+assign pad_img3_0_4_we1 = 1'b0;
+
+assign pad_img3_0_5_address0 = convolutional_layer_U0_pad_img3_0_5_address0;
+
+assign pad_img3_0_5_address1 = 5'd0;
+
+assign pad_img3_0_5_ce0 = convolutional_layer_U0_pad_img3_0_5_ce0;
+
+assign pad_img3_0_5_ce1 = 1'b0;
+
+assign pad_img3_0_5_d0 = 32'd0;
+
+assign pad_img3_0_5_d1 = 32'd0;
+
+assign pad_img3_0_5_we0 = 1'b0;
+
+assign pad_img3_0_5_we1 = 1'b0;
+
+assign pad_img3_0_6_address0 = convolutional_layer_U0_pad_img3_0_6_address0;
+
+assign pad_img3_0_6_address1 = 5'd0;
+
+assign pad_img3_0_6_ce0 = convolutional_layer_U0_pad_img3_0_6_ce0;
+
+assign pad_img3_0_6_ce1 = 1'b0;
+
+assign pad_img3_0_6_d0 = 32'd0;
+
+assign pad_img3_0_6_d1 = 32'd0;
+
+assign pad_img3_0_6_we0 = 1'b0;
+
+assign pad_img3_0_6_we1 = 1'b0;
+
+assign pad_img3_1_0_address0 = convolutional_layer_U0_pad_img3_1_0_address0;
+
+assign pad_img3_1_0_address1 = 5'd0;
+
+assign pad_img3_1_0_ce0 = convolutional_layer_U0_pad_img3_1_0_ce0;
+
+assign pad_img3_1_0_ce1 = 1'b0;
+
+assign pad_img3_1_0_d0 = 32'd0;
+
+assign pad_img3_1_0_d1 = 32'd0;
+
+assign pad_img3_1_0_we0 = 1'b0;
+
+assign pad_img3_1_0_we1 = 1'b0;
+
+assign pad_img3_1_1_address0 = convolutional_layer_U0_pad_img3_1_1_address0;
+
+assign pad_img3_1_1_address1 = 5'd0;
+
+assign pad_img3_1_1_ce0 = convolutional_layer_U0_pad_img3_1_1_ce0;
+
+assign pad_img3_1_1_ce1 = 1'b0;
+
+assign pad_img3_1_1_d0 = 32'd0;
+
+assign pad_img3_1_1_d1 = 32'd0;
+
+assign pad_img3_1_1_we0 = 1'b0;
+
+assign pad_img3_1_1_we1 = 1'b0;
+
+assign pad_img3_1_2_address0 = convolutional_layer_U0_pad_img3_1_2_address0;
+
+assign pad_img3_1_2_address1 = 5'd0;
+
+assign pad_img3_1_2_ce0 = convolutional_layer_U0_pad_img3_1_2_ce0;
+
+assign pad_img3_1_2_ce1 = 1'b0;
+
+assign pad_img3_1_2_d0 = 32'd0;
+
+assign pad_img3_1_2_d1 = 32'd0;
+
+assign pad_img3_1_2_we0 = 1'b0;
+
+assign pad_img3_1_2_we1 = 1'b0;
+
+assign pad_img3_1_3_address0 = convolutional_layer_U0_pad_img3_1_3_address0;
+
+assign pad_img3_1_3_address1 = 5'd0;
+
+assign pad_img3_1_3_ce0 = convolutional_layer_U0_pad_img3_1_3_ce0;
+
+assign pad_img3_1_3_ce1 = 1'b0;
+
+assign pad_img3_1_3_d0 = 32'd0;
+
+assign pad_img3_1_3_d1 = 32'd0;
+
+assign pad_img3_1_3_we0 = 1'b0;
+
+assign pad_img3_1_3_we1 = 1'b0;
+
+assign pad_img3_1_4_address0 = convolutional_layer_U0_pad_img3_1_4_address0;
+
+assign pad_img3_1_4_address1 = 5'd0;
+
+assign pad_img3_1_4_ce0 = convolutional_layer_U0_pad_img3_1_4_ce0;
+
+assign pad_img3_1_4_ce1 = 1'b0;
+
+assign pad_img3_1_4_d0 = 32'd0;
+
+assign pad_img3_1_4_d1 = 32'd0;
+
+assign pad_img3_1_4_we0 = 1'b0;
+
+assign pad_img3_1_4_we1 = 1'b0;
+
+assign pad_img3_1_5_address0 = convolutional_layer_U0_pad_img3_1_5_address0;
+
+assign pad_img3_1_5_address1 = 5'd0;
+
+assign pad_img3_1_5_ce0 = convolutional_layer_U0_pad_img3_1_5_ce0;
+
+assign pad_img3_1_5_ce1 = 1'b0;
+
+assign pad_img3_1_5_d0 = 32'd0;
+
+assign pad_img3_1_5_d1 = 32'd0;
+
+assign pad_img3_1_5_we0 = 1'b0;
+
+assign pad_img3_1_5_we1 = 1'b0;
+
+assign pad_img3_1_6_address0 = convolutional_layer_U0_pad_img3_1_6_address0;
+
+assign pad_img3_1_6_address1 = 5'd0;
+
+assign pad_img3_1_6_ce0 = convolutional_layer_U0_pad_img3_1_6_ce0;
+
+assign pad_img3_1_6_ce1 = 1'b0;
+
+assign pad_img3_1_6_d0 = 32'd0;
+
+assign pad_img3_1_6_d1 = 32'd0;
+
+assign pad_img3_1_6_we0 = 1'b0;
+
+assign pad_img3_1_6_we1 = 1'b0;
+
+assign pad_img3_2_0_address0 = convolutional_layer_U0_pad_img3_2_0_address0;
+
+assign pad_img3_2_0_address1 = 5'd0;
+
+assign pad_img3_2_0_ce0 = convolutional_layer_U0_pad_img3_2_0_ce0;
+
+assign pad_img3_2_0_ce1 = 1'b0;
+
+assign pad_img3_2_0_d0 = 32'd0;
+
+assign pad_img3_2_0_d1 = 32'd0;
+
+assign pad_img3_2_0_we0 = 1'b0;
+
+assign pad_img3_2_0_we1 = 1'b0;
+
+assign pad_img3_2_1_address0 = convolutional_layer_U0_pad_img3_2_1_address0;
+
+assign pad_img3_2_1_address1 = 5'd0;
+
+assign pad_img3_2_1_ce0 = convolutional_layer_U0_pad_img3_2_1_ce0;
+
+assign pad_img3_2_1_ce1 = 1'b0;
+
+assign pad_img3_2_1_d0 = 32'd0;
+
+assign pad_img3_2_1_d1 = 32'd0;
+
+assign pad_img3_2_1_we0 = 1'b0;
+
+assign pad_img3_2_1_we1 = 1'b0;
+
+assign pad_img3_2_2_address0 = convolutional_layer_U0_pad_img3_2_2_address0;
+
+assign pad_img3_2_2_address1 = 5'd0;
+
+assign pad_img3_2_2_ce0 = convolutional_layer_U0_pad_img3_2_2_ce0;
+
+assign pad_img3_2_2_ce1 = 1'b0;
+
+assign pad_img3_2_2_d0 = 32'd0;
+
+assign pad_img3_2_2_d1 = 32'd0;
+
+assign pad_img3_2_2_we0 = 1'b0;
+
+assign pad_img3_2_2_we1 = 1'b0;
+
+assign pad_img3_2_3_address0 = convolutional_layer_U0_pad_img3_2_3_address0;
+
+assign pad_img3_2_3_address1 = 5'd0;
+
+assign pad_img3_2_3_ce0 = convolutional_layer_U0_pad_img3_2_3_ce0;
+
+assign pad_img3_2_3_ce1 = 1'b0;
+
+assign pad_img3_2_3_d0 = 32'd0;
+
+assign pad_img3_2_3_d1 = 32'd0;
+
+assign pad_img3_2_3_we0 = 1'b0;
+
+assign pad_img3_2_3_we1 = 1'b0;
+
+assign pad_img3_2_4_address0 = convolutional_layer_U0_pad_img3_2_4_address0;
+
+assign pad_img3_2_4_address1 = 5'd0;
+
+assign pad_img3_2_4_ce0 = convolutional_layer_U0_pad_img3_2_4_ce0;
+
+assign pad_img3_2_4_ce1 = 1'b0;
+
+assign pad_img3_2_4_d0 = 32'd0;
+
+assign pad_img3_2_4_d1 = 32'd0;
+
+assign pad_img3_2_4_we0 = 1'b0;
+
+assign pad_img3_2_4_we1 = 1'b0;
+
+assign pad_img3_2_5_address0 = convolutional_layer_U0_pad_img3_2_5_address0;
+
+assign pad_img3_2_5_address1 = 5'd0;
+
+assign pad_img3_2_5_ce0 = convolutional_layer_U0_pad_img3_2_5_ce0;
+
+assign pad_img3_2_5_ce1 = 1'b0;
+
+assign pad_img3_2_5_d0 = 32'd0;
+
+assign pad_img3_2_5_d1 = 32'd0;
+
+assign pad_img3_2_5_we0 = 1'b0;
+
+assign pad_img3_2_5_we1 = 1'b0;
+
+assign pad_img3_2_6_address0 = convolutional_layer_U0_pad_img3_2_6_address0;
+
+assign pad_img3_2_6_address1 = 5'd0;
+
+assign pad_img3_2_6_ce0 = convolutional_layer_U0_pad_img3_2_6_ce0;
+
+assign pad_img3_2_6_ce1 = 1'b0;
+
+assign pad_img3_2_6_d0 = 32'd0;
+
+assign pad_img3_2_6_d1 = 32'd0;
+
+assign pad_img3_2_6_we0 = 1'b0;
+
+assign pad_img3_2_6_we1 = 1'b0;
+
+assign pad_img3_3_0_address0 = convolutional_layer_U0_pad_img3_3_0_address0;
+
+assign pad_img3_3_0_address1 = 5'd0;
+
+assign pad_img3_3_0_ce0 = convolutional_layer_U0_pad_img3_3_0_ce0;
+
+assign pad_img3_3_0_ce1 = 1'b0;
+
+assign pad_img3_3_0_d0 = 32'd0;
+
+assign pad_img3_3_0_d1 = 32'd0;
+
+assign pad_img3_3_0_we0 = 1'b0;
+
+assign pad_img3_3_0_we1 = 1'b0;
+
+assign pad_img3_3_1_address0 = convolutional_layer_U0_pad_img3_3_1_address0;
+
+assign pad_img3_3_1_address1 = 5'd0;
+
+assign pad_img3_3_1_ce0 = convolutional_layer_U0_pad_img3_3_1_ce0;
+
+assign pad_img3_3_1_ce1 = 1'b0;
+
+assign pad_img3_3_1_d0 = 32'd0;
+
+assign pad_img3_3_1_d1 = 32'd0;
+
+assign pad_img3_3_1_we0 = 1'b0;
+
+assign pad_img3_3_1_we1 = 1'b0;
+
+assign pad_img3_3_2_address0 = convolutional_layer_U0_pad_img3_3_2_address0;
+
+assign pad_img3_3_2_address1 = 5'd0;
+
+assign pad_img3_3_2_ce0 = convolutional_layer_U0_pad_img3_3_2_ce0;
+
+assign pad_img3_3_2_ce1 = 1'b0;
+
+assign pad_img3_3_2_d0 = 32'd0;
+
+assign pad_img3_3_2_d1 = 32'd0;
+
+assign pad_img3_3_2_we0 = 1'b0;
+
+assign pad_img3_3_2_we1 = 1'b0;
+
+assign pad_img3_3_3_address0 = convolutional_layer_U0_pad_img3_3_3_address0;
+
+assign pad_img3_3_3_address1 = 5'd0;
+
+assign pad_img3_3_3_ce0 = convolutional_layer_U0_pad_img3_3_3_ce0;
+
+assign pad_img3_3_3_ce1 = 1'b0;
+
+assign pad_img3_3_3_d0 = 32'd0;
+
+assign pad_img3_3_3_d1 = 32'd0;
+
+assign pad_img3_3_3_we0 = 1'b0;
+
+assign pad_img3_3_3_we1 = 1'b0;
+
+assign pad_img3_3_4_address0 = convolutional_layer_U0_pad_img3_3_4_address0;
+
+assign pad_img3_3_4_address1 = 5'd0;
+
+assign pad_img3_3_4_ce0 = convolutional_layer_U0_pad_img3_3_4_ce0;
+
+assign pad_img3_3_4_ce1 = 1'b0;
+
+assign pad_img3_3_4_d0 = 32'd0;
+
+assign pad_img3_3_4_d1 = 32'd0;
+
+assign pad_img3_3_4_we0 = 1'b0;
+
+assign pad_img3_3_4_we1 = 1'b0;
+
+assign pad_img3_3_5_address0 = convolutional_layer_U0_pad_img3_3_5_address0;
+
+assign pad_img3_3_5_address1 = 5'd0;
+
+assign pad_img3_3_5_ce0 = convolutional_layer_U0_pad_img3_3_5_ce0;
+
+assign pad_img3_3_5_ce1 = 1'b0;
+
+assign pad_img3_3_5_d0 = 32'd0;
+
+assign pad_img3_3_5_d1 = 32'd0;
+
+assign pad_img3_3_5_we0 = 1'b0;
+
+assign pad_img3_3_5_we1 = 1'b0;
+
+assign pad_img3_3_6_address0 = convolutional_layer_U0_pad_img3_3_6_address0;
+
+assign pad_img3_3_6_address1 = 5'd0;
+
+assign pad_img3_3_6_ce0 = convolutional_layer_U0_pad_img3_3_6_ce0;
+
+assign pad_img3_3_6_ce1 = 1'b0;
+
+assign pad_img3_3_6_d0 = 32'd0;
+
+assign pad_img3_3_6_d1 = 32'd0;
+
+assign pad_img3_3_6_we0 = 1'b0;
+
+assign pad_img3_3_6_we1 = 1'b0;
+
+assign pad_img3_4_0_address0 = convolutional_layer_U0_pad_img3_4_0_address0;
+
+assign pad_img3_4_0_address1 = 5'd0;
+
+assign pad_img3_4_0_ce0 = convolutional_layer_U0_pad_img3_4_0_ce0;
+
+assign pad_img3_4_0_ce1 = 1'b0;
+
+assign pad_img3_4_0_d0 = 32'd0;
+
+assign pad_img3_4_0_d1 = 32'd0;
+
+assign pad_img3_4_0_we0 = 1'b0;
+
+assign pad_img3_4_0_we1 = 1'b0;
+
+assign pad_img3_4_1_address0 = convolutional_layer_U0_pad_img3_4_1_address0;
+
+assign pad_img3_4_1_address1 = 5'd0;
+
+assign pad_img3_4_1_ce0 = convolutional_layer_U0_pad_img3_4_1_ce0;
+
+assign pad_img3_4_1_ce1 = 1'b0;
+
+assign pad_img3_4_1_d0 = 32'd0;
+
+assign pad_img3_4_1_d1 = 32'd0;
+
+assign pad_img3_4_1_we0 = 1'b0;
+
+assign pad_img3_4_1_we1 = 1'b0;
+
+assign pad_img3_4_2_address0 = convolutional_layer_U0_pad_img3_4_2_address0;
+
+assign pad_img3_4_2_address1 = 5'd0;
+
+assign pad_img3_4_2_ce0 = convolutional_layer_U0_pad_img3_4_2_ce0;
+
+assign pad_img3_4_2_ce1 = 1'b0;
+
+assign pad_img3_4_2_d0 = 32'd0;
+
+assign pad_img3_4_2_d1 = 32'd0;
+
+assign pad_img3_4_2_we0 = 1'b0;
+
+assign pad_img3_4_2_we1 = 1'b0;
+
+assign pad_img3_4_3_address0 = convolutional_layer_U0_pad_img3_4_3_address0;
+
+assign pad_img3_4_3_address1 = 5'd0;
+
+assign pad_img3_4_3_ce0 = convolutional_layer_U0_pad_img3_4_3_ce0;
+
+assign pad_img3_4_3_ce1 = 1'b0;
+
+assign pad_img3_4_3_d0 = 32'd0;
+
+assign pad_img3_4_3_d1 = 32'd0;
+
+assign pad_img3_4_3_we0 = 1'b0;
+
+assign pad_img3_4_3_we1 = 1'b0;
+
+assign pad_img3_4_4_address0 = convolutional_layer_U0_pad_img3_4_4_address0;
+
+assign pad_img3_4_4_address1 = 5'd0;
+
+assign pad_img3_4_4_ce0 = convolutional_layer_U0_pad_img3_4_4_ce0;
+
+assign pad_img3_4_4_ce1 = 1'b0;
+
+assign pad_img3_4_4_d0 = 32'd0;
+
+assign pad_img3_4_4_d1 = 32'd0;
+
+assign pad_img3_4_4_we0 = 1'b0;
+
+assign pad_img3_4_4_we1 = 1'b0;
+
+assign pad_img3_4_5_address0 = convolutional_layer_U0_pad_img3_4_5_address0;
+
+assign pad_img3_4_5_address1 = 5'd0;
+
+assign pad_img3_4_5_ce0 = convolutional_layer_U0_pad_img3_4_5_ce0;
+
+assign pad_img3_4_5_ce1 = 1'b0;
+
+assign pad_img3_4_5_d0 = 32'd0;
+
+assign pad_img3_4_5_d1 = 32'd0;
+
+assign pad_img3_4_5_we0 = 1'b0;
+
+assign pad_img3_4_5_we1 = 1'b0;
+
+assign pad_img3_4_6_address0 = convolutional_layer_U0_pad_img3_4_6_address0;
+
+assign pad_img3_4_6_address1 = 5'd0;
+
+assign pad_img3_4_6_ce0 = convolutional_layer_U0_pad_img3_4_6_ce0;
+
+assign pad_img3_4_6_ce1 = 1'b0;
+
+assign pad_img3_4_6_d0 = 32'd0;
+
+assign pad_img3_4_6_d1 = 32'd0;
+
+assign pad_img3_4_6_we0 = 1'b0;
+
+assign pad_img3_4_6_we1 = 1'b0;
+
+assign pad_img3_5_0_address0 = convolutional_layer_U0_pad_img3_5_0_address0;
+
+assign pad_img3_5_0_address1 = 5'd0;
+
+assign pad_img3_5_0_ce0 = convolutional_layer_U0_pad_img3_5_0_ce0;
+
+assign pad_img3_5_0_ce1 = 1'b0;
+
+assign pad_img3_5_0_d0 = 32'd0;
+
+assign pad_img3_5_0_d1 = 32'd0;
+
+assign pad_img3_5_0_we0 = 1'b0;
+
+assign pad_img3_5_0_we1 = 1'b0;
+
+assign pad_img3_5_1_address0 = convolutional_layer_U0_pad_img3_5_1_address0;
+
+assign pad_img3_5_1_address1 = 5'd0;
+
+assign pad_img3_5_1_ce0 = convolutional_layer_U0_pad_img3_5_1_ce0;
+
+assign pad_img3_5_1_ce1 = 1'b0;
+
+assign pad_img3_5_1_d0 = 32'd0;
+
+assign pad_img3_5_1_d1 = 32'd0;
+
+assign pad_img3_5_1_we0 = 1'b0;
+
+assign pad_img3_5_1_we1 = 1'b0;
+
+assign pad_img3_5_2_address0 = convolutional_layer_U0_pad_img3_5_2_address0;
+
+assign pad_img3_5_2_address1 = 5'd0;
+
+assign pad_img3_5_2_ce0 = convolutional_layer_U0_pad_img3_5_2_ce0;
+
+assign pad_img3_5_2_ce1 = 1'b0;
+
+assign pad_img3_5_2_d0 = 32'd0;
+
+assign pad_img3_5_2_d1 = 32'd0;
+
+assign pad_img3_5_2_we0 = 1'b0;
+
+assign pad_img3_5_2_we1 = 1'b0;
+
+assign pad_img3_5_3_address0 = convolutional_layer_U0_pad_img3_5_3_address0;
+
+assign pad_img3_5_3_address1 = 5'd0;
+
+assign pad_img3_5_3_ce0 = convolutional_layer_U0_pad_img3_5_3_ce0;
+
+assign pad_img3_5_3_ce1 = 1'b0;
+
+assign pad_img3_5_3_d0 = 32'd0;
+
+assign pad_img3_5_3_d1 = 32'd0;
+
+assign pad_img3_5_3_we0 = 1'b0;
+
+assign pad_img3_5_3_we1 = 1'b0;
+
+assign pad_img3_5_4_address0 = convolutional_layer_U0_pad_img3_5_4_address0;
+
+assign pad_img3_5_4_address1 = 5'd0;
+
+assign pad_img3_5_4_ce0 = convolutional_layer_U0_pad_img3_5_4_ce0;
+
+assign pad_img3_5_4_ce1 = 1'b0;
+
+assign pad_img3_5_4_d0 = 32'd0;
+
+assign pad_img3_5_4_d1 = 32'd0;
+
+assign pad_img3_5_4_we0 = 1'b0;
+
+assign pad_img3_5_4_we1 = 1'b0;
+
+assign pad_img3_5_5_address0 = convolutional_layer_U0_pad_img3_5_5_address0;
+
+assign pad_img3_5_5_address1 = 5'd0;
+
+assign pad_img3_5_5_ce0 = convolutional_layer_U0_pad_img3_5_5_ce0;
+
+assign pad_img3_5_5_ce1 = 1'b0;
+
+assign pad_img3_5_5_d0 = 32'd0;
+
+assign pad_img3_5_5_d1 = 32'd0;
+
+assign pad_img3_5_5_we0 = 1'b0;
+
+assign pad_img3_5_5_we1 = 1'b0;
+
+assign pad_img3_5_6_address0 = convolutional_layer_U0_pad_img3_5_6_address0;
+
+assign pad_img3_5_6_address1 = 5'd0;
+
+assign pad_img3_5_6_ce0 = convolutional_layer_U0_pad_img3_5_6_ce0;
+
+assign pad_img3_5_6_ce1 = 1'b0;
+
+assign pad_img3_5_6_d0 = 32'd0;
+
+assign pad_img3_5_6_d1 = 32'd0;
+
+assign pad_img3_5_6_we0 = 1'b0;
+
+assign pad_img3_5_6_we1 = 1'b0;
+
+assign pad_img3_6_0_address0 = convolutional_layer_U0_pad_img3_6_0_address0;
+
+assign pad_img3_6_0_address1 = 5'd0;
+
+assign pad_img3_6_0_ce0 = convolutional_layer_U0_pad_img3_6_0_ce0;
+
+assign pad_img3_6_0_ce1 = 1'b0;
+
+assign pad_img3_6_0_d0 = 32'd0;
+
+assign pad_img3_6_0_d1 = 32'd0;
+
+assign pad_img3_6_0_we0 = 1'b0;
+
+assign pad_img3_6_0_we1 = 1'b0;
+
+assign pad_img3_6_1_address0 = convolutional_layer_U0_pad_img3_6_1_address0;
+
+assign pad_img3_6_1_address1 = 5'd0;
+
+assign pad_img3_6_1_ce0 = convolutional_layer_U0_pad_img3_6_1_ce0;
+
+assign pad_img3_6_1_ce1 = 1'b0;
+
+assign pad_img3_6_1_d0 = 32'd0;
+
+assign pad_img3_6_1_d1 = 32'd0;
+
+assign pad_img3_6_1_we0 = 1'b0;
+
+assign pad_img3_6_1_we1 = 1'b0;
+
+assign pad_img3_6_2_address0 = convolutional_layer_U0_pad_img3_6_2_address0;
+
+assign pad_img3_6_2_address1 = 5'd0;
+
+assign pad_img3_6_2_ce0 = convolutional_layer_U0_pad_img3_6_2_ce0;
+
+assign pad_img3_6_2_ce1 = 1'b0;
+
+assign pad_img3_6_2_d0 = 32'd0;
+
+assign pad_img3_6_2_d1 = 32'd0;
+
+assign pad_img3_6_2_we0 = 1'b0;
+
+assign pad_img3_6_2_we1 = 1'b0;
+
+assign pad_img3_6_3_address0 = convolutional_layer_U0_pad_img3_6_3_address0;
+
+assign pad_img3_6_3_address1 = 5'd0;
+
+assign pad_img3_6_3_ce0 = convolutional_layer_U0_pad_img3_6_3_ce0;
+
+assign pad_img3_6_3_ce1 = 1'b0;
+
+assign pad_img3_6_3_d0 = 32'd0;
+
+assign pad_img3_6_3_d1 = 32'd0;
+
+assign pad_img3_6_3_we0 = 1'b0;
+
+assign pad_img3_6_3_we1 = 1'b0;
+
+assign pad_img3_6_4_address0 = convolutional_layer_U0_pad_img3_6_4_address0;
+
+assign pad_img3_6_4_address1 = 5'd0;
+
+assign pad_img3_6_4_ce0 = convolutional_layer_U0_pad_img3_6_4_ce0;
+
+assign pad_img3_6_4_ce1 = 1'b0;
+
+assign pad_img3_6_4_d0 = 32'd0;
+
+assign pad_img3_6_4_d1 = 32'd0;
+
+assign pad_img3_6_4_we0 = 1'b0;
+
+assign pad_img3_6_4_we1 = 1'b0;
+
+assign pad_img3_6_5_address0 = convolutional_layer_U0_pad_img3_6_5_address0;
+
+assign pad_img3_6_5_address1 = 5'd0;
+
+assign pad_img3_6_5_ce0 = convolutional_layer_U0_pad_img3_6_5_ce0;
+
+assign pad_img3_6_5_ce1 = 1'b0;
+
+assign pad_img3_6_5_d0 = 32'd0;
+
+assign pad_img3_6_5_d1 = 32'd0;
+
+assign pad_img3_6_5_we0 = 1'b0;
+
+assign pad_img3_6_5_we1 = 1'b0;
+
+assign pad_img3_6_6_address0 = convolutional_layer_U0_pad_img3_6_6_address0;
+
+assign pad_img3_6_6_address1 = 5'd0;
+
+assign pad_img3_6_6_ce0 = convolutional_layer_U0_pad_img3_6_6_ce0;
+
+assign pad_img3_6_6_ce1 = 1'b0;
+
+assign pad_img3_6_6_d0 = 32'd0;
+
+assign pad_img3_6_6_d1 = 32'd0;
+
+assign pad_img3_6_6_we0 = 1'b0;
+
+assign pad_img3_6_6_we1 = 1'b0;
+
+assign prediction_address0 = dense_layer_soft_max_U0_prediction_address0;
+
+assign prediction_address1 = dense_layer_soft_max_U0_prediction_address1;
+
+assign prediction_ce0 = dense_layer_soft_max_U0_prediction_ce0;
+
+assign prediction_ce1 = dense_layer_soft_max_U0_prediction_ce1;
+
+assign prediction_d0 = dense_layer_soft_max_U0_prediction_d0;
+
+assign prediction_d1 = 32'd0;
+
+assign prediction_we0 = dense_layer_soft_max_U0_prediction_we0;
+
+assign prediction_we1 = 1'b0;
+
+assign start_for_dense_layer_U0_din = 1'b1;
+
+assign start_for_flattening_layer_U0_din = 1'b1;
+
+assign start_for_max_pooling_layer_U0_din = 1'b1;
 
 endmodule //cnn_dataflow_section

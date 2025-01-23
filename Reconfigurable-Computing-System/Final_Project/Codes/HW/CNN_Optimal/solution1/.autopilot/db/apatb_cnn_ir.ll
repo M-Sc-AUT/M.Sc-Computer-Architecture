@@ -3,7 +3,7 @@ source_filename = "llvm-link"
 target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:2048-i4096:4096-n8:16:32:64-S128-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024"
 target triple = "fpga64-xilinx-none"
 
-; Function Attrs: inaccessiblemem_or_argmemonly noinline willreturn
+; Function Attrs: noinline
 define void @apatb_cnn_ir([28 x float]* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="28" %img_in, float* noalias nocapture nonnull "fpga.decayed.dim.hint"="10" %prediction) local_unnamed_addr #0 {
 entry:
   %img_in_copy = alloca [28 x [28 x float]], align 512
@@ -180,7 +180,7 @@ entry:
 
 declare void @cnn_hw_stub([28 x float]*, float*)
 
-attributes #0 = { inaccessiblemem_or_argmemonly noinline willreturn "fpga.wrapper.func"="wrapper" }
+attributes #0 = { noinline "fpga.wrapper.func"="wrapper" }
 attributes #1 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="copyin" }
 attributes #2 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="onebyonecpy_hls" }
 attributes #3 = { argmemonly noinline norecurse willreturn "fpga.wrapper.func"="arraycpy_hls" }

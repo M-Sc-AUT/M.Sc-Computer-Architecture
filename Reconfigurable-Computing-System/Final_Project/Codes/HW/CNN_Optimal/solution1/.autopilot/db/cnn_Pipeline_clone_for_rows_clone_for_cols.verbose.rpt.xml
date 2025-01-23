@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_Pipeline_clone_for_rows_clone_for_cols'" level="0">
-<item name = "Date">Thu Jan 23 14:50:49 2025
+<item name = "Date">Thu Jan 23 17:45:30 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -62,10 +62,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_6ns_8ns_13_1_1_U7">mul_6ns_8ns_13_1_1, 0, 0, 0, 41, 0</column>
 <column name="mul_6ns_8ns_13_1_1_U8">mul_6ns_8ns_13_1_1, 0, 0, 0, 41, 0</column>
-<column name="urem_6ns_4ns_3_10_1_U5">urem_6ns_4ns_3_10_1, 0, 0, 130, 79, 0</column>
+<column name="mul_6ns_8ns_13_1_1_U9">mul_6ns_8ns_13_1_1, 0, 0, 0, 41, 0</column>
 <column name="urem_6ns_4ns_3_10_1_U6">urem_6ns_4ns_3_10_1, 0, 0, 130, 79, 0</column>
+<column name="urem_6ns_4ns_3_10_1_U7">urem_6ns_4ns_3_10_1, 0, 0, 130, 79, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -82,17 +82,17 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln86_1_fu_888_p2">+, 0, 0, 12, 11, 1</column>
-<column name="add_ln86_fu_900_p2">+, 0, 0, 14, 6, 1</column>
-<column name="add_ln88_fu_940_p2">+, 0, 0, 14, 6, 1</column>
-<column name="add_ln90_1_fu_1017_p2">+, 0, 0, 11, 11, 11</column>
-<column name="add_ln90_fu_979_p2">+, 0, 0, 11, 11, 11</column>
-<column name="add_ln92_1_fu_1066_p2">+, 0, 0, 7, 5, 5</column>
-<column name="add_ln92_fu_1057_p2">+, 0, 0, 7, 5, 5</column>
-<column name="icmp_ln86_fu_882_p2">icmp, 0, 0, 12, 11, 11</column>
-<column name="icmp_ln88_fu_906_p2">icmp, 0, 0, 14, 6, 6</column>
+<column name="add_ln84_1_fu_888_p2">+, 0, 0, 12, 11, 1</column>
+<column name="add_ln84_fu_900_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln86_fu_940_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln88_1_fu_1017_p2">+, 0, 0, 11, 11, 11</column>
+<column name="add_ln88_fu_979_p2">+, 0, 0, 11, 11, 11</column>
+<column name="add_ln90_1_fu_1066_p2">+, 0, 0, 7, 5, 5</column>
+<column name="add_ln90_fu_1057_p2">+, 0, 0, 7, 5, 5</column>
+<column name="icmp_ln84_fu_882_p2">icmp, 0, 0, 12, 11, 11</column>
+<column name="icmp_ln86_fu_906_p2">icmp, 0, 0, 14, 6, 6</column>
 <column name="grp_fu_928_p0">select, 0, 0, 6, 1, 6</column>
-<column name="select_ln86_fu_912_p3">select, 0, 0, 6, 1, 1</column>
+<column name="select_ln84_fu_912_p3">select, 0, 0, 6, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -110,7 +110,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln92_1_reg_1198">5, 0, 5, 0</column>
+<column name="add_ln90_1_reg_1198">5, 0, 5, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -136,15 +136,15 @@
 <column name="indvar_flatten6_fu_182">11, 0, 11, 0</column>
 <column name="j_fu_174">6, 0, 6, 0</column>
 <column name="pad_img0_load_reg_1203">32, 0, 32, 0</column>
-<column name="select_ln86_1_reg_1164">6, 0, 6, 0</column>
-<column name="select_ln86_reg_1157">6, 0, 6, 0</column>
-<column name="trunc_ln86_reg_1256">3, 0, 3, 0</column>
-<column name="trunc_ln88_reg_1260">3, 0, 3, 0</column>
+<column name="select_ln84_1_reg_1164">6, 0, 6, 0</column>
+<column name="select_ln84_reg_1157">6, 0, 6, 0</column>
+<column name="trunc_ln84_reg_1256">3, 0, 3, 0</column>
+<column name="trunc_ln86_reg_1260">3, 0, 3, 0</column>
 <column name="udiv_ln3_cast_reg_1193">4, 0, 4, 0</column>
 <column name="udiv_ln_cast1_reg_1177">4, 0, 4, 0</column>
 <column name="udiv_ln_cast_reg_1172">3, 0, 3, 0</column>
-<column name="zext_ln90_2_reg_1182">11, 0, 64, 53</column>
-<column name="add_ln92_1_reg_1198">64, 32, 5, 0</column>
+<column name="zext_ln88_2_reg_1182">11, 0, 64, 53</column>
+<column name="add_ln90_1_reg_1198">64, 32, 5, 0</column>
 <column name="pad_img0_load_reg_1203">64, 32, 32, 0</column>
 </table>
 </item>

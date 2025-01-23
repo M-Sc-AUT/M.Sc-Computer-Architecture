@@ -292,7 +292,8 @@ class stream : public stream<__STREAM_T__, 0> {
 # 13 "/media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream.h" 2
 # 5 "CNN_Optimal/src/pool.h" 2
 
-void max_pooling_layer(hls::stream<float> conv_to_pool_streams[4], hls::stream<float> pool_to_flat_streams[4]);
+void max_pooling_layer( hls::stream<float> conv_to_pool_streams[4],
+                  hls::stream<float> pool_to_flat_streams[4] );
 # 2 "CNN_Optimal/src/pool.cpp" 2
 # 1 "/media/reza/_dev_sda1/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cfloat" 1 3
 # 40 "/media/reza/_dev_sda1/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cfloat" 3
@@ -362,35 +363,36 @@ namespace __gnu_cxx
 
 void max_pooling(hls::stream<float> & conv_to_pool_stream, hls::stream<float> & pool_to_flat_stream)
 {
-  float pool = 0.0;
+ float pool = 0.0;
 
-  pool_for_rows:
-  for (int r = 0; r < 28; r += 2)
+ pool_for_rows:
+ for (int r = 0; r < 28; r += 2)
+ {
+  pool_for_cols:
+  for(int c = 0; c < 28; c += 2)
   {
-    pool_for_cols:
-    for(int c = 0; c < 28; c += 2)
-    {
-      pool = 1.17549435e-38F;
+  pool = 1.17549435e-38F;
 
-      pool_for_pr:
-      for (int pr = 0; pr < 2; ++pr)
-        pool_for_pc:
-        for (int pc = 0; pc < 2; ++pc)
-        {
-          float value = conv_to_pool_stream.read();
-          if(value > pool)
-            pool = value;
-        }
+  pool_for_pr: for (int pr = 0; pr < 2; ++pr)
+   pool_for_pc: for (int pc = 0; pc < 2; ++pc)
+   {
+    float value = conv_to_pool_stream.read();
 
-      pool_to_flat_stream.write(pool);
-    }
+#pragma HLS UNROLL
+
+ if(value > pool)
+     pool = value;
+   }
+  pool_to_flat_stream.write(pool);
   }
+ }
 }
 
-void max_pooling_layer(hls::stream<float> conv_to_pool_streams[4], hls::stream<float> pool_to_flat_streams[4])
+void max_pooling_layer( hls::stream<float> conv_to_pool_streams[4],
+      hls::stream<float> pool_to_flat_streams[4] )
 {
-    max_pooling(conv_to_pool_streams[0], pool_to_flat_streams[0]);
-    max_pooling(conv_to_pool_streams[1], pool_to_flat_streams[1]);
-    max_pooling(conv_to_pool_streams[2], pool_to_flat_streams[2]);
-    max_pooling(conv_to_pool_streams[3], pool_to_flat_streams[3]);
+ max_pooling(conv_to_pool_streams[0], pool_to_flat_streams[0]);
+ max_pooling(conv_to_pool_streams[1], pool_to_flat_streams[1]);
+ max_pooling(conv_to_pool_streams[2], pool_to_flat_streams[2]);
+ max_pooling(conv_to_pool_streams[3], pool_to_flat_streams[3]);
 }

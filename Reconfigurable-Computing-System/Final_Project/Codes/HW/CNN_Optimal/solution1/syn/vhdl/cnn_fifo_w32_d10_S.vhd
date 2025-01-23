@@ -27,6 +27,8 @@ entity cnn_fifo_w32_d10_S is
         if_din            : in  std_logic_vector(DATA_WIDTH - 1 downto 0);
 
         -- read 
+        if_num_data_valid : out std_logic_vector(ADDR_WIDTH downto 0); -- for FRP
+        if_fifo_cap       : out std_logic_vector(ADDR_WIDTH downto 0); -- for FRP
 
         if_empty_n        : out std_logic;
         if_read_ce        : in  std_logic;
@@ -56,7 +58,8 @@ architecture rtl of cnn_fifo_w32_d10_S is
     signal mOutPtr : SIGNED(ADDR_WIDTH downto 0) := (others => '1');
     signal empty_n : STD_LOGIC := '0';
     signal full_n   : std_logic := '1';   
-    -- has num_data_valid? no 
+    -- has num_data_valid?
+    signal num_data_valid: UNSIGNED(ADDR_WIDTH downto 0); -- yes 
 begin
 ----------------------- Instantiation -----------------------
     U_cnn_fifo_w32_d10_S_ShiftReg : cnn_fifo_w32_d10_S_ShiftReg
@@ -71,7 +74,9 @@ begin
         din        => if_din,
         dout       => if_dout);
 --------------------------- Body ----------------------------
-    -- has num_data_valid ?  no 
+    -- has num_data_valid ? 
+    if_num_data_valid <= STD_LOGIC_VECTOR(num_data_valid); -- yes
+    if_fifo_cap <= STD_LOGIC_VECTOR(TO_UNSIGNED(DEPTH, ADDR_WIDTH + 1)); --yes 
 
     -- almost full/empty  
 
@@ -135,7 +140,19 @@ begin
 
     -- prog_empty_n 
 
-    -- num_data_valid 
+    -- num_data_valid  
+    process (clk) begin
+        -- reset  sync 
+        if clk'event and clk = '1' then
+            if reset = '1' then
+                num_data_valid <= (others => '0');
+            elsif push = '1' and pop = '0' then
+                num_data_valid <= num_data_valid + 1;
+            elsif push = '0' and pop = '1' then
+                num_data_valid <= num_data_valid - 1;
+            end if;
+        end if; -- sync end 
+    end process; -- 
 end rtl;
 
 

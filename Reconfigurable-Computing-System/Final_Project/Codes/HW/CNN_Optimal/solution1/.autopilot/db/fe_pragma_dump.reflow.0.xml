@@ -1,12 +1,17 @@
 <pragmas>
-<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 10>::stream()" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 10>::stream()" depth="10" type="fifo" variable="this"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 784>::stream()" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 784>::stream()" depth="784" type="fifo" variable="this"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 196>::stream()" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 196>::stream()" depth="196" type="fifo" variable="this"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 10>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 10>::stream()" depth="10" type="fifo" variable="this"/>
+<pragma file="CNN_Optimal/src/flat.cpp" line="10" pragmaType="unroll" parentfunction="flattening" factor="-1" skip_exit_check="0"/>
+<pragma file="CNN_Optimal/src/pool.cpp" line="21" pragmaType="unroll" parentfunction="max_pooling" factor="-1" skip_exit_check="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="CNN_Optimal/src/dense.cpp" line="42" pragmaType="pipeline" parentfunction="dense" off="0" ii="1" rewind="0" style=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 784>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 784>::stream()" depth="784" type="fifo" variable="this"/>
+<pragma file="CNN_Optimal/src/cnn.cpp" line="19" pragmaType="dataflow" parentfunction="dataflow_section" disable_start_propagation="0"/>
+<pragma file="CNN_Optimal/src/utils.cpp" line="14" pragmaType="pipeline" parentfunction="normalization_and_padding" off="0" ii="1" rewind="0" style=""/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 0>::stream()" off="0" region="0" recursive="0"/>
 </pragmas>

@@ -53,7 +53,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="18" bw="32" op_0_bw="64">
+<Node id="9" bw="32" op_0_bw="64">
 <![CDATA[
 entry:4 %dense_array = alloca i64 1
 
@@ -68,7 +68,7 @@ entry:4 %dense_array = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="0" op_0_bw="0" op_1_bw="32">
+<Node id="10" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
 entry:5 %call_ln0 = call void @dense_Pipeline_1, i32 %dense_array
 
@@ -86,7 +86,7 @@ entry:5 %call_ln0 = call void @dense_Pipeline_1, i32 %dense_array
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="2" op_0_bw="2" op_1_bw="2">
+<Node id="5" bw="2" op_0_bw="2" op_1_bw="2">
 <![CDATA[
 entry:0 %filter_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %filter
 
@@ -94,14 +94,32 @@ entry:0 %filter_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %filter
 <StgValue><ssdm name="filter_read"/></StgValue>
 </operation>
 
-<operation id="11" st_id="2" stage="1" lat="1">
+<operation id="11" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+entry:5 %call_ln0 = call void @dense_Pipeline_1, i32 %dense_array
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="12" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="10" op_0_bw="2">
+<Node id="6" bw="10" op_0_bw="2">
 <![CDATA[
 entry:1 %filter_cast = zext i2 %filter_read
 
@@ -109,38 +127,20 @@ entry:1 %filter_cast = zext i2 %filter_read
 <StgValue><ssdm name="filter_cast"/></StgValue>
 </operation>
 
-<operation id="12" st_id="2" stage="1" lat="2">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="19" bw="0" op_0_bw="0" op_1_bw="32">
-<![CDATA[
-entry:5 %call_ln0 = call void @dense_Pipeline_1, i32 %dense_array
-
-]]></Node>
-<StgValue><ssdm name="call_ln0"/></StgValue>
-</operation>
-
-<operation id="13" st_id="2" stage="1" lat="1">
+<operation id="13" st_id="3" stage="1" lat="1">
 <core>Multiplier</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="10" op_0_bw="10" op_1_bw="10">
+<Node id="11" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-entry:6 %mul = mul i10 %filter_cast, i10 196
+entry:6 %mul_ln36 = mul i10 %filter_cast, i10 196
 
 ]]></Node>
-<StgValue><ssdm name="mul"/></StgValue>
+<StgValue><ssdm name="mul_ln36"/></StgValue>
 </operation>
-</state>
-
-<state id="3" st_id="3">
 
 <operation id="14" st_id="3" stage="1" lat="1">
 <core>NULL</core>
@@ -149,7 +149,7 @@ entry:6 %mul = mul i10 %filter_cast, i10 196
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="0">
+<Node id="12" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 entry:7 %empty = wait i32 @_ssdm_op_Wait
 
@@ -164,12 +164,12 @@ entry:7 %empty = wait i32 @_ssdm_op_Wait
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="10" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0">
+<Node id="13" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:8 %call_ln0 = call void @dense_Pipeline_dense_for_flat, i32 %dense_array, i32 %flat_to_dense_streams_0, i10 %mul, i32 %dense_weights_0, i32 %dense_weights_1, i32 %dense_weights_2, i32 %dense_weights_3, i32 %dense_weights_4, i32 %dense_weights_5, i32 %dense_weights_6, i32 %dense_weights_7, i32 %dense_weights_8, i32 %dense_weights_9
+entry:8 %call_ln36 = call void @dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1, i10 %mul_ln36, i32 %dense_array, i32 %flat_to_dense_streams_0, i32 %dense_weights
 
 ]]></Node>
-<StgValue><ssdm name="call_ln0"/></StgValue>
+<StgValue><ssdm name="call_ln36"/></StgValue>
 </operation>
 </state>
 
@@ -182,12 +182,12 @@ entry:8 %call_ln0 = call void @dense_Pipeline_dense_for_flat, i32 %dense_array, 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="10" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0">
+<Node id="13" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-entry:8 %call_ln0 = call void @dense_Pipeline_dense_for_flat, i32 %dense_array, i32 %flat_to_dense_streams_0, i10 %mul, i32 %dense_weights_0, i32 %dense_weights_1, i32 %dense_weights_2, i32 %dense_weights_3, i32 %dense_weights_4, i32 %dense_weights_5, i32 %dense_weights_6, i32 %dense_weights_7, i32 %dense_weights_8, i32 %dense_weights_9
+entry:8 %call_ln36 = call void @dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1, i10 %mul_ln36, i32 %dense_array, i32 %flat_to_dense_streams_0, i32 %dense_weights
 
 ]]></Node>
-<StgValue><ssdm name="call_ln0"/></StgValue>
+<StgValue><ssdm name="call_ln36"/></StgValue>
 </operation>
 </state>
 
@@ -200,12 +200,12 @@ entry:8 %call_ln0 = call void @dense_Pipeline_dense_for_flat, i32 %dense_array, 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="0">
+<Node id="14" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-entry:9 %empty_18 = wait i32 @_ssdm_op_Wait
+entry:9 %empty_24 = wait i32 @_ssdm_op_Wait
 
 ]]></Node>
-<StgValue><ssdm name="empty_18"/></StgValue>
+<StgValue><ssdm name="empty_24"/></StgValue>
 </operation>
 </state>
 
@@ -218,12 +218,12 @@ entry:9 %empty_18 = wait i32 @_ssdm_op_Wait
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="32" op_0_bw="32" op_1_bw="0">
+<Node id="15" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:10 %empty_19 = wait i32 @_ssdm_op_Wait
+entry:10 %empty_25 = wait i32 @_ssdm_op_Wait
 
 ]]></Node>
-<StgValue><ssdm name="empty_19"/></StgValue>
+<StgValue><ssdm name="empty_25"/></StgValue>
 </operation>
 
 <operation id="19" st_id="6" stage="2" lat="2">
@@ -233,9 +233,9 @@ entry:10 %empty_19 = wait i32 @_ssdm_op_Wait
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="0">
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:11 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_50_2, i32 %dense_array, i32 %dense_to_softmax_streams_0
+entry:11 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_49_2, i32 %dense_array, i32 %dense_to_softmax_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -251,9 +251,9 @@ entry:11 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_50_2, i32 %dense_array
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
+entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_0, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -266,9 +266,9 @@ entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %de
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_0, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
+entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty_1, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -281,9 +281,9 @@ entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %fl
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="0">
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:11 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_50_2, i32 %dense_array, i32 %dense_to_softmax_streams_0
+entry:11 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_49_2, i32 %dense_array, i32 %dense_to_softmax_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -296,12 +296,12 @@ entry:11 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_50_2, i32 %dense_array
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="26" bw="0">
+<Node id="17" bw="0">
 <![CDATA[
-entry:12 %ret_ln54 = ret
+entry:12 %ret_ln53 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln54"/></StgValue>
+<StgValue><ssdm name="ret_ln53"/></StgValue>
 </operation>
 </state>
 </state_list>

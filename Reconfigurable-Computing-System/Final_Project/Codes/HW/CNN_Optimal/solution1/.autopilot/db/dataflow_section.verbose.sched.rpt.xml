@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dataflow_section'" level="0">
-<item name = "Date">Thu Jan 23 14:50:48 2025
+<item name = "Date">Thu Jan 23 17:45:28 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">43408, 43408, 0.434 ms, 0.434 ms, 43408, 43408, no</column>
+<column name="">19844, 19844, 0.198 ms, 0.198 ms, 19845, 19845, dataflow</column>
 </table>
 </item>
 <item name = "Detail">

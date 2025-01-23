@@ -292,9 +292,12 @@ class stream : public stream<__STREAM_T__, 0> {
 # 13 "/media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream.h" 2
 # 5 "CNN_Optimal/src/dense.h" 2
 
-void dense_layer_soft_max(hls::stream<float> dense_to_softmax_streams[4], float prediction[10]);
 
-void dense_layer(hls::stream<float> flat_to_dense_streams[4], hls::stream<float> dense_to_softmax_stream[4]);
+void dense_layer_soft_max( hls::stream<float> dense_to_softmax_streams[4],
+         float prediction[10] );
+
+void dense_layer( hls::stream<float> flat_to_dense_streams[4],
+      hls::stream<float> dense_to_softmax_stream[4] );
 # 2 "CNN_Optimal/src/dense.cpp" 2
 # 1 "CNN_Optimal/src/Headers/dense_weights.h" 1
 # 11 "CNN_Optimal/src/Headers/dense_weights.h"
@@ -7668,59 +7671,60 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-void dense_layer_soft_max(hls::stream<float> dense_to_softmax_streams[4], float prediction[10])
+void dense_layer_soft_max( hls::stream<float> dense_to_softmax_streams[4],
+         float prediction[10] )
 {
-  float sum;
-  float exp_sum = 0.0;
+ float sum;
+ float exp_sum = 0.0;
 
-  dense_soft_max_for_dense_size:
-  for(int d = 0; d < 10; ++d)
+ dense_soft_max_for_dense_size: for(int d = 0; d < 10; ++d)
+ {
+  sum = dense_biases[d];
+
+  dense_soft_max_for_filters: for(int f = 0; f < 4; ++f)
   {
-    sum = dense_biases[d];
-
-    dense_soft_max_for_filters:
-    for(int f = 0; f < 4; ++f)
-    {
-      sum += dense_to_softmax_streams[f].read();
-    }
-
-    exp_sum += prediction[d] = expf(sum);
+   sum += dense_to_softmax_streams[f].read();
   }
 
-  dense_soft_max_for_digits:
-  for(int p = 0; p < 10; ++p)
-  {
-    prediction[p] = prediction[p] / exp_sum;
-  }
+  exp_sum += prediction[d] = expf(sum);
+ }
+
+ dense_soft_max_for_digits: for(int p = 0; p < 10; ++p)
+ {
+  prediction[p] = prediction[p] / exp_sum;
+ }
 }
 
 void dense(hls::stream<float> & flat_to_dense_stream, int filter, hls::stream<float> & dense_to_softmax_stream)
 {
-  float flat_value;
-  float dense_array[10] = { 0 };
+ float flat_value;
+ float dense_array[10] = { 0 };
 
-  dense_for_flat:
-  for (int i = 0; i < (4 * (28 / 2) * (28 / 2)) / 4; ++i)
+ dense_for_flat: for(int i = 0; i < (4 * (28 / 2) * (28 / 2)) / 4; ++i)
+ {
+  flat_value = flat_to_dense_stream.read();
+
+  VITIS_LOOP_40_1: for (int d = 0; d < 10; ++d)
   {
-    flat_value = flat_to_dense_stream.read();
+#pragma HLS PIPELINE II=1
 
-    VITIS_LOOP_43_1: for (int d = 0; d < 10; ++d)
-    {
-      int index = filter * ((4 * (28 / 2) * (28 / 2)) / 4) + i;
-        dense_array[d] += dense_weights[index][d] * flat_value;
-    }
+ int index = filter * ((4 * (28 / 2) * (28 / 2)) / 4) + i;
+   dense_array[d] += dense_weights[index][d] * flat_value;
   }
+ }
 
-  VITIS_LOOP_50_2: for (int j = 0; j < 10; ++j)
-  {
-    dense_to_softmax_stream.write(dense_array[j]);
-  }
+ VITIS_LOOP_49_2: for (int j = 0; j < 10; ++j)
+ {
+  dense_to_softmax_stream.write(dense_array[j]);
+ }
 }
 
-void dense_layer(hls::stream<float> flat_to_dense_streams[4], hls::stream<float> dense_to_softmax_streams[4])
+
+void dense_layer( hls::stream<float> flat_to_dense_streams[4],
+      hls::stream<float> dense_to_softmax_streams[4] )
 {
-  dense(flat_to_dense_streams[0], 0, dense_to_softmax_streams[0]);
-  dense(flat_to_dense_streams[1], 1, dense_to_softmax_streams[1]);
-  dense(flat_to_dense_streams[2], 2, dense_to_softmax_streams[2]);
-  dense(flat_to_dense_streams[3], 3, dense_to_softmax_streams[3]);
+ dense(flat_to_dense_streams[0], 0, dense_to_softmax_streams[0]);
+ dense(flat_to_dense_streams[1], 1, dense_to_softmax_streams[1]);
+ dense(flat_to_dense_streams[2], 2, dense_to_softmax_streams[2]);
+ dense(flat_to_dense_streams[3], 3, dense_to_softmax_streams[3]);
 }

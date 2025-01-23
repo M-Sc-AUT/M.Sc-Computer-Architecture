@@ -292,7 +292,8 @@ class stream : public stream<__STREAM_T__, 0> {
 # 13 "/media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream.h" 2
 # 5 "CNN_Optimal/src/conv.h" 2
 
-void convolution(float pad_img [(28 + (7 - 1))][(28 + (7 - 1))], int filter, hls::stream<float> & conv_to_pool_stream);
+void convolution( float pad_img [(28 + (7 - 1))][(28 + (7 - 1))],
+      int filter, hls::stream<float> & conv_to_pool_stream );
 
 void convolutional_layer( float pad_img0 [(28 + (7 - 1))][(28 + (7 - 1))],
         float pad_img1 [(28 + (7 - 1))][(28 + (7 - 1))],
@@ -349,63 +350,59 @@ float conv_biases [4] = { -0.17830130457878113, -0.12248028814792633, -0.0032946
 
 float relu (float x)
 {
-  if(x > 0.0)
-    return x;
-  else
-    return 0.0;
+ if(x > 0.0)
+  return x;
+ else
+  return 0.0;
 }
 
-void convolution(float pad_img [(28 + (7 - 1))][(28 + (7 - 1))], int filter, hls::stream<float> & conv_to_pool_stream)
+void convolution( float pad_img [(28 + (7 - 1))][(28 + (7 - 1))],
+      int filter,
+      hls::stream<float> & conv_to_pool_stream )
 {
-  float w_sum = 0.0;
+ float w_sum = 0.0;
 
 
-  conv_for_rows:
-  for(int r = 0; r < 28; r += 2)
+ conv_for_rows: for(int r = 0; r < 28; r += 2)
+ {
+  conv_for_cols: for(int c = 0; c < 28; c += 2)
   {
-    conv_for_cols:
-    for(int c = 0; c < 28; c += 2)
+
+
+   pool_for_rows: for(int pr = 0; pr < 2; ++pr)
+   {
+    pool_for_cols: for(int pc = 0; pc < 2; ++pc)
     {
+     w_sum = 0.0;
 
 
-      pool_for_rows:
-      for (int pr = 0; pr < 2; ++pr)
+
+     krn_for_rows: for(int kr = 0; kr < 7; ++kr)
+     {
+      krn_for_cols: for(int kc = 0; kc < 7; ++kc)
       {
-        pool_for_cols:
-        for (int pc = 0; pc < 2; ++pc)
-        {
-          w_sum = 0.0;
-
-
-
-          krn_for_rows:
-          for(int kr = 0; kr < 7; ++kr)
-          {
-            krn_for_cols:
-            for(int kc = 0; kc < 7; ++kc)
-            {
-              float w = conv_weights[filter][kr][kc];
-              float pixel = pad_img[r+pr+kr][c+pc+kc];
-              w_sum += w * pixel;
-            }
-          }
-
-          conv_to_pool_stream.write(relu(w_sum + conv_biases[filter]));
-        }
+       float w = conv_weights[filter][kr][kc];
+       float pixel = pad_img[r+pr+kr][c+pc+kc];
+       w_sum += w * pixel;
       }
+     }
+
+     conv_to_pool_stream.write(relu(w_sum + conv_biases[filter]));
     }
+   }
   }
+ }
 }
 
-void convolutional_layer(
-   float pad_img0 [(28 + (7 - 1))][(28 + (7 - 1))],
-   float pad_img1 [(28 + (7 - 1))][(28 + (7 - 1))],
-   float pad_img2 [(28 + (7 - 1))][(28 + (7 - 1))],
-   float pad_img3 [(28 + (7 - 1))][(28 + (7 - 1))],
-   hls::stream<float> conv_to_pool_streams [4] )
+
+void convolutional_layer( float pad_img0 [(28 + (7 - 1))][(28 + (7 - 1))],
+        float pad_img1 [(28 + (7 - 1))][(28 + (7 - 1))],
+        float pad_img2 [(28 + (7 - 1))][(28 + (7 - 1))],
+           float pad_img3 [(28 + (7 - 1))][(28 + (7 - 1))],
+        hls::stream<float> conv_to_pool_streams [4] )
 {
-  convolution(pad_img0, 0, conv_to_pool_streams[0]);
-  convolution(pad_img1, 1, conv_to_pool_streams[1]);
-  convolution(pad_img2, 2, conv_to_pool_streams[2]);
-  convolution(pad_img3, 3, conv_to_pool_streams[3]);
+ convolution(pad_img0, 0, conv_to_pool_streams[0]);
+ convolution(pad_img1, 1, conv_to_pool_streams[1]);
+ convolution(pad_img2, 2, conv_to_pool_streams[2]);
+ convolution(pad_img3, 3, conv_to_pool_streams[3]);
 }

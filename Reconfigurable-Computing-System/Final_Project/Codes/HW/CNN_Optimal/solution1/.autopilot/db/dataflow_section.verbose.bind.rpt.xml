@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dataflow_section'" level="0">
-<item name = "Date">Thu Jan 23 14:50:48 2025
+<item name = "Date">Thu Jan 23 17:45:28 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -24,28 +24,18 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">43408, 43408, 0.434 ms, 0.434 ms, 43408, 43408, no</column>
+<column name="">19844, 19844, 0.198 ms, 0.198 ms, 19845, 19845, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_convolution_fu_284">convolution, 19841, 19841, 0.198 ms, 0.198 ms, 19841, 19841, no</column>
-<column name="grp_convolution_fu_295">convolution, 19841, 19841, 0.198 ms, 0.198 ms, 19841, 19841, no</column>
-<column name="grp_convolution_1_fu_304">convolution_1, 1055, 1055, 10.550 us, 10.550 us, 1055, 1055, no</column>
-<column name="grp_max_pooling_fu_407">max_pooling, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
-<column name="grp_max_pooling_fu_413">max_pooling, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
-<column name="grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols_fu_419">dataflow_section_Pipeline_flat_for_rows_flat_for_cols, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols4_fu_425">dataflow_section_Pipeline_flat_for_rows_flat_for_cols4, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols5_fu_431">dataflow_section_Pipeline_flat_for_rows_flat_for_cols5, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_dataflow_section_Pipeline_flat_for_rows_flat_for_cols6_fu_437">dataflow_section_Pipeline_flat_for_rows_flat_for_cols6, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_dense_fu_443">dense, 2002, 2002, 20.020 us, 20.020 us, 2002, 2002, no</column>
-<column name="grp_dense_fu_471">dense, 2002, 2002, 20.020 us, 20.020 us, 2002, 2002, no</column>
-<column name="grp_dense_fu_499">dense, 2002, 2002, 20.020 us, 20.020 us, 2002, 2002, no</column>
-<column name="grp_dense_fu_527">dense, 2002, 2002, 20.020 us, 20.020 us, 2002, 2002, no</column>
-<column name="grp_dataflow_section_Pipeline_dense_soft_max_for_dense_size_fu_555">dataflow_section_Pipeline_dense_soft_max_for_dense_size, 88, 88, 0.880 us, 0.880 us, 88, 88, no</column>
-<column name="grp_dataflow_section_Pipeline_dense_soft_max_for_digits_fu_568">dataflow_section_Pipeline_dense_soft_max_for_digits, 29, 29, 0.290 us, 0.290 us, 29, 29, no</column>
+<column name="grp_convolutional_layer_fu_344">convolutional_layer, 19844, 19844, 0.198 ms, 0.198 ms, 19844, 19844, no</column>
+<column name="grp_max_pooling_layer_fu_556">max_pooling_layer, 3182, 3182, 31.820 us, 31.820 us, 3182, 3182, no</column>
+<column name="grp_flattening_layer_fu_568">flattening_layer, 199, 199, 1.990 us, 1.990 us, 199, 199, no</column>
+<column name="grp_dense_layer_fu_580">dense_layer, 2004, 2004, 20.040 us, 20.040 us, 2004, 2004, no</column>
+<column name="grp_dense_layer_soft_max_fu_594">dense_layer_soft_max, 120, 120, 1.200 us, 1.200 us, 120, 120, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

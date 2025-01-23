@@ -1,0 +1,216 @@
+
+
+================================================================
+== Vitis HLS Report for 'dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1'
+================================================================
+* Date:           Thu Jan 23 17:45:41 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        CNN_Optimal
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.670 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1973|     1973|  19.730 us|  19.730 us|  1973|  1973|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name            |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- dense_for_flat_VITIS_LOOP_40_1  |     1971|     1971|        13|          1|          1|  1960|       yes|
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|    126|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   5|    348|    711|    -|
+|Memory           |       16|   -|      0|      0|    -|
+|Multiplexer      |        -|   -|      -|     81|    -|
+|Register         |        -|   -|    421|     96|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |       16|   5|    769|   1014|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      120|  80|  35200|  17600|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |       13|   6|      2|      5|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |               Instance              |             Module             | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |fadd_32ns_32ns_32_5_full_dsp_1_U540  |fadd_32ns_32ns_32_5_full_dsp_1  |        0|   2|  205|  390|    0|
+    |fmul_32ns_32ns_32_4_max_dsp_1_U541   |fmul_32ns_32ns_32_4_max_dsp_1   |        0|   3|  143|  321|    0|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |Total                                |                                |        0|   5|  348|  711|    0|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-----------------+-------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |      Memory     |                                  Module                                 | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------------+-------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |dense_weights_U  |dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1_dense_weights_ROM_AUTO_1R  |       16|  0|   0|    0|  7840|   32|     1|       250880|
+    +-----------------+-------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total            |                                                                         |       16|  0|   0|    0|  7840|   32|     1|       250880|
+    +-----------------+-------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln36_1_fu_163_p2              |         +|   0|  0|  12|          11|           1|
+    |add_ln36_fu_175_p2                |         +|   0|  0|  15|           8|           1|
+    |add_ln40_fu_219_p2                |         +|   0|  0|  13|           4|           1|
+    |add_ln45_1_fu_272_p2              |         +|   0|  0|  13|          13|          13|
+    |add_ln45_fu_263_p2                |         +|   0|  0|  13|          13|          13|
+    |empty_fu_213_p2                   |         +|   0|  0|  13|          10|          10|
+    |ap_block_pp0_stage0_11001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage0_iter2  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_401                  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln36_fu_157_p2               |      icmp|   0|  0|  12|          11|           8|
+    |icmp_ln40_fu_181_p2               |      icmp|   0|  0|  13|           4|           4|
+    |or_ln36_fu_187_p2                 |        or|   0|  0|   2|           1|           1|
+    |select_ln36_1_fu_201_p3           |    select|   0|  0|   8|           1|           8|
+    |select_ln36_fu_193_p3             |    select|   0|  0|   4|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 126|          81|          66|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1               |   9|          2|    1|          2|
+    |ap_sig_allocacmp_d_load               |   9|          2|    4|          8|
+    |ap_sig_allocacmp_i_load               |   9|          2|    8|         16|
+    |ap_sig_allocacmp_indvar_flatten_load  |   9|          2|   11|         22|
+    |d_fu_62                               |   9|          2|    4|          8|
+    |flat_to_dense_streams_0_blk_n         |   9|          2|    1|          2|
+    |i_fu_66                               |   9|          2|    8|         16|
+    |indvar_flatten_fu_70                  |   9|          2|   11|         22|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  81|         18|   49|         98|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |add_reg_373                        |  32|   0|   32|          0|
+    |ap_CS_fsm                          |   1|   0|    1|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9            |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter10_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter11_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter7_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter8_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter9_reg   |   1|   0|    1|          0|
+    |d_fu_62                            |   4|   0|    4|          0|
+    |dense_array_addr_reg_357           |   4|   0|    4|          0|
+    |dense_array_load_reg_368           |  32|   0|   32|          0|
+    |dense_weights_load_reg_342         |  32|   0|   32|          0|
+    |empty_reg_336                      |  10|   0|   10|          0|
+    |i_fu_66                            |   8|   0|    8|          0|
+    |icmp_ln36_reg_322                  |   1|   0|    1|          0|
+    |indvar_flatten_fu_70               |  11|   0|   11|          0|
+    |mul7_reg_363                       |  32|   0|   32|          0|
+    |or_ln36_reg_326                    |   1|   0|    1|          0|
+    |or_ln36_reg_326_pp0_iter1_reg      |   1|   0|    1|          0|
+    |p_07_fu_74                         |  32|   0|   32|          0|
+    |select_ln36_reg_330                |   4|   0|    4|          0|
+    |dense_array_addr_reg_357           |  64|  32|    4|          0|
+    |icmp_ln36_reg_322                  |  64|  32|    1|          0|
+    |select_ln36_reg_330                |  64|  32|    4|          0|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              | 421|  96|  238|          0|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------------+-----+-----+------------+-----------------------------------------------+--------------+
+|                RTL Ports               | Dir | Bits|  Protocol  |                 Source Object                 |    C Type    |
++----------------------------------------+-----+-----+------------+-----------------------------------------------+--------------+
+|ap_clk                                  |   in|    1|  ap_ctrl_hs|  dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1|  return value|
+|ap_rst                                  |   in|    1|  ap_ctrl_hs|  dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1|  return value|
+|ap_start                                |   in|    1|  ap_ctrl_hs|  dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1|  return value|
+|ap_done                                 |  out|    1|  ap_ctrl_hs|  dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1|  return value|
+|ap_idle                                 |  out|    1|  ap_ctrl_hs|  dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1|  return value|
+|ap_ready                                |  out|    1|  ap_ctrl_hs|  dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1|  return value|
+|flat_to_dense_streams_0_dout            |   in|   32|     ap_fifo|                        flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_num_data_valid  |   in|    9|     ap_fifo|                        flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_fifo_cap        |   in|    9|     ap_fifo|                        flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_empty_n         |   in|    1|     ap_fifo|                        flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_read            |  out|    1|     ap_fifo|                        flat_to_dense_streams_0|       pointer|
+|mul_ln36                                |   in|   10|     ap_none|                                       mul_ln36|        scalar|
+|dense_array_address0                    |  out|    4|   ap_memory|                                    dense_array|         array|
+|dense_array_ce0                         |  out|    1|   ap_memory|                                    dense_array|         array|
+|dense_array_we0                         |  out|    1|   ap_memory|                                    dense_array|         array|
+|dense_array_d0                          |  out|   32|   ap_memory|                                    dense_array|         array|
+|dense_array_address1                    |  out|    4|   ap_memory|                                    dense_array|         array|
+|dense_array_ce1                         |  out|    1|   ap_memory|                                    dense_array|         array|
+|dense_array_q1                          |   in|   32|   ap_memory|                                    dense_array|         array|
++----------------------------------------+-----+-----+------------+-----------------------------------------------+--------------+
+

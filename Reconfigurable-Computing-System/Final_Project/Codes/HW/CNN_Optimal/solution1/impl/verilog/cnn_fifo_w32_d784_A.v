@@ -26,6 +26,8 @@ module cnn_fifo_w32_d784_A
     input  wire [DATA_WIDTH-1:0] if_din,
     
     // read 
+    output wire [ADDR_WIDTH:0]   if_num_data_valid, // for FRP
+    output wire [ADDR_WIDTH:0]   if_fifo_cap,       // for FRP
 
     output wire                  if_empty_n,
     input  wire                  if_read_ce,
@@ -44,7 +46,9 @@ module cnn_fifo_w32_d784_A
     reg  [ADDR_WIDTH:0]   mOutPtr;
     reg                   empty_n = 1'b0;
     reg                   full_n = 1'b1;
-    // has num_data_valid?  no 
+    // has num_data_valid? 
+    wire                  num_extra_words;//yes
+    reg  [ADDR_WIDTH:0]   num_data_valid; //yes 
 
     wire                  pop_dout;
     reg  [ADDR_WIDTH:0]   num_data_cnt;
@@ -71,6 +75,8 @@ module cnn_fifo_w32_d784_A
 
 //------------------------Body---------------------------
     // num_data_valid 
+    assign if_num_data_valid = num_data_valid;
+    assign if_fifo_cap = DEPTH + 1;
 
     // almost full/empty 
 
@@ -155,6 +161,16 @@ module cnn_fifo_w32_d784_A
     end
 
     // num_data_valid 
+    assign num_extra_words = (dout_vld & ~pop_dout) ? 1 : 0;
+                             
+    always @(posedge clk) begin
+        if (reset)
+            num_data_valid <= {ADDR_WIDTH+1{1'b0}};
+        else if (empty_n | (dout_vld & ~pop_dout))
+            num_data_valid <= push + mOutPtr + num_extra_words;
+        else
+            num_data_valid <= num_extra_words;
+    end // 
 
     // dout_vld
     always @(posedge clk) begin

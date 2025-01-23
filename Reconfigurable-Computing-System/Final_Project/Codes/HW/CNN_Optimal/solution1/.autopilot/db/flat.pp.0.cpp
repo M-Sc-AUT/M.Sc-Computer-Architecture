@@ -292,26 +292,29 @@ class stream : public stream<__STREAM_T__, 0> {
 # 13 "/media/reza/_dev_sda1/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream.h" 2
 # 5 "CNN_Optimal/src/flat.h" 2
 
-void flattening_layer(hls::stream<float> pool_to_flat_streams[4], hls::stream<float> flat_to_dense_stream[4]);
+void flattening_layer( hls::stream<float> pool_to_flat_streams[4],
+           hls::stream<float> flat_to_dense_stream[4] );
 # 2 "CNN_Optimal/src/flat.cpp" 2
 
-void flattening(hls::stream<float> & pool_to_flat_stream, hls::stream<float> & flat_to_dense_stream)
+void flattening( hls::stream<float> & pool_to_flat_stream,
+     hls::stream<float> & flat_to_dense_stream )
 {
-  flat_for_rows:
-  for(int r = 0; r < (28 / 2); ++r)
+ flat_for_rows: for(int r = 0; r < (28 / 2); ++r)
+ {
+  flat_for_cols: for(int c = 0; c < (28 / 2); ++c)
   {
-    flat_for_cols:
-    for(int c = 0; c < (28 / 2); ++c)
-    {
-      flat_to_dense_stream.write(pool_to_flat_stream.read());
-    }
+#pragma HLS UNROLL
+ flat_to_dense_stream.write(pool_to_flat_stream.read());
   }
+ }
 }
 
-void flattening_layer(hls::stream<float> pool_to_flat_streams[4], hls::stream<float> flat_to_dense_streams[4])
+
+void flattening_layer( hls::stream<float> pool_to_flat_streams[4],
+        hls::stream<float> flat_to_dense_streams[4] )
 {
-  flattening(pool_to_flat_streams[0], flat_to_dense_streams[0]);
-  flattening(pool_to_flat_streams[1], flat_to_dense_streams[1]);
-  flattening(pool_to_flat_streams[2], flat_to_dense_streams[2]);
-  flattening(pool_to_flat_streams[3], flat_to_dense_streams[3]);
+ flattening(pool_to_flat_streams[0], flat_to_dense_streams[0]);
+ flattening(pool_to_flat_streams[1], flat_to_dense_streams[1]);
+ flattening(pool_to_flat_streams[2], flat_to_dense_streams[2]);
+ flattening(pool_to_flat_streams[3], flat_to_dense_streams[3]);
 }

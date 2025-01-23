@@ -303,14 +303,14 @@ void normalization_and_padding(float img_in[28][28], float img_out[(28 + (7 - 1)
 
 void normalization_and_padding(float img_in[28][28], float img_out[(28 + (7 - 1))][(28 + (7 - 1))])
 {
-  pad_for_rows:
-  for(int r = 0; r < 28; ++r)
-    pad_for_cols:
-    for(int c = 0; c < 28; ++c)
-    {
-      {
+ pad_for_rows: for(int r = 0; r < 28; ++r)
+ {
+  pad_for_cols: for(int c = 0; c < 28; ++c)
+  {
+#pragma HLS PIPELINE II=1
 
-        img_out[r + (7 - 1) / 2][c + (7 - 1) / 2] = img_in[r][c] / 255.0;
-      }
-    }
+ img_out[r + (7 - 1) / 2][c + (7 - 1) / 2] = img_in[r][c] / 255.0;
+  }
+ }
+
 }

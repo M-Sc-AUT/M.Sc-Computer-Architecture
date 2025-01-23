@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>Timing Violation</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN_Optimal/src/cnn.cpp:88</SourceLocation>
+<SourceLocation>CNN_Optimal/src/cnn.cpp:86</SourceLocation>
 <SummaryOfLoopViolations>
 <clone_for_rows_clone_for_cols>
 <Name>clone_for_rows_clone_for_cols</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN_Optimal/src/cnn.cpp:86</SourceLocation>
+<SourceLocation>CNN_Optimal/src/cnn.cpp:84</SourceLocation>
 </clone_for_rows_clone_for_cols>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
