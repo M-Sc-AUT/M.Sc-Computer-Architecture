@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_Pipeline_pad_for_rows_pad_for_cols'" level="0">
-<item name = "Date">Thu Jan 23 17:18:23 2025
+<item name = "Date">Fri Jan 24 14:37:58 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.951 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 8.323 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">804, 804, 8.040 us, 8.040 us, 804, 804, no</column>
+<column name="">812, 812, 8.120 us, 8.120 us, 812, 812, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- pad_for_rows_pad_for_cols">802, 802, 20, 1, 1, 784, yes</column>
+<column name="- pad_for_rows_pad_for_cols">810, 810, 28, 1, 1, 784, yes</column>
 </table>
 </item>
 </section>

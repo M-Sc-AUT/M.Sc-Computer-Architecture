@@ -7695,25 +7695,29 @@ void dense_layer_soft_max( hls::stream<float> dense_to_softmax_streams[4],
  }
 }
 
-void dense(hls::stream<float> & flat_to_dense_stream, int filter, hls::stream<float> & dense_to_softmax_stream)
+void dense( hls::stream<float> & flat_to_dense_stream,
+      int filter,
+   hls::stream<float> & dense_to_softmax_stream )
 {
  float flat_value;
  float dense_array[10] = { 0 };
+
+
+#pragma HLS ARRAY_PARTITION variable=dense_array complete
+#pragma HLS PIPELINE II=1
 
  dense_for_flat: for(int i = 0; i < (4 * (28 / 2) * (28 / 2)) / 4; ++i)
  {
   flat_value = flat_to_dense_stream.read();
 
-  VITIS_LOOP_40_1: for (int d = 0; d < 10; ++d)
+  VITIS_LOOP_46_1: for(int d = 0; d < 10; ++d)
   {
-#pragma HLS PIPELINE II=1
-
- int index = filter * ((4 * (28 / 2) * (28 / 2)) / 4) + i;
+   int index = filter * ((4 * (28 / 2) * (28 / 2)) / 4) + i;
    dense_array[d] += dense_weights[index][d] * flat_value;
   }
  }
 
- VITIS_LOOP_49_2: for (int j = 0; j < 10; ++j)
+ VITIS_LOOP_53_2: for(int j = 0; j < 10; ++j)
  {
   dense_to_softmax_stream.write(dense_array[j]);
  }

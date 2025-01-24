@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>conv_to_pool_streams_3</name>
+						<name>conv_to_pool_streams_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>pool_to_flat_streams_3</name>
+						<name>pool_to_flat_streams_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -92,7 +92,7 @@
 					<Obj>
 						<type>0</type>
 						<id>3</id>
-						<name>indvar_flatten20</name>
+						<name>indvar_flatten13</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -110,7 +110,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4190474720</coreId>
+						<coreId>3901818496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -134,7 +134,7 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>indvar_flatten20_write_ln0</name>
+						<name>indvar_flatten13_write_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -152,7 +152,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>304</coreId>
+						<coreId>3509903280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -219,10 +219,10 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>indvar_flatten20_load</name>
+						<name>indvar_flatten13_load</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>9</lineNumber>
+						<lineNumber>13</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -238,14 +238,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>9</second>
+										<second>13</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -283,10 +283,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>icmp_ln9</name>
+						<name>icmp_ln13</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>9</lineNumber>
+						<lineNumber>13</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -302,14 +302,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>9</second>
+										<second>13</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -322,7 +322,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886330980</coreId>
+						<coreId>1634560372</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -347,10 +347,10 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>add_ln9</name>
+						<name>add_ln13</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>9</lineNumber>
+						<lineNumber>13</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -366,14 +366,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>9</second>
+										<second>13</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -386,7 +386,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886330980</coreId>
+						<coreId>1768843590</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -411,10 +411,10 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>br_ln9</name>
+						<name>br_ln13</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>9</lineNumber>
+						<lineNumber>13</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -430,14 +430,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>9</second>
+										<second>13</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -450,7 +450,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886330980</coreId>
+						<coreId>1862282791</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -476,10 +476,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>conv_to_pool_streams_3_read</name>
+						<name>conv_to_pool_streams_2_read</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>19</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -495,14 +495,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>19</second>
+										<second>23</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -515,7 +515,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1932487777</coreId>
+						<coreId>1868767333</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -543,7 +543,7 @@
 						<name>value</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>19</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -559,14 +559,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>19</second>
+										<second>23</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -579,7 +579,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1920151404</coreId>
+						<coreId>1667199599</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -606,7 +606,7 @@
 						<name>tmp_s</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -622,14 +622,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -642,7 +642,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886330980</coreId>
+						<coreId>3494777072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -669,10 +669,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>trunc_ln23</name>
+						<name>trunc_ln27</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -688,14 +688,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -708,7 +708,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701409394</coreId>
+						<coreId>3494814208</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -732,10 +732,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>icmp_ln23</name>
+						<name>icmp_ln27</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -751,14 +751,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -771,7 +771,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>540876904</coreId>
+						<coreId>3494813152</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -796,10 +796,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>icmp_ln23_1</name>
+						<name>icmp_ln27_14</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -815,14 +815,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -835,7 +835,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1769103720</coreId>
+						<coreId>1</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -860,10 +860,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>or_ln23</name>
+						<name>or_ln27</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -879,14 +879,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -899,7 +899,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1868980076</coreId>
+						<coreId>3537087786</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -924,10 +924,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>tmp_1</name>
+						<name>tmp_11</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -943,14 +943,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -963,7 +963,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539570464</coreId>
+						<coreId>26</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -988,10 +988,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>and_ln23</name>
+						<name>and_ln27</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1007,14 +1007,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1027,7 +1027,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1819242352</coreId>
+						<coreId>1885414944</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1052,10 +1052,10 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>pool_1</name>
+						<name>pool_8</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1071,14 +1071,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1091,7 +1091,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852793632</coreId>
+						<coreId>1769238607</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1117,135 +1117,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>conv_to_pool_streams_3_read_1</name>
-						<fileName>CNN_Optimal/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>19</lineNumber>
-						<contextFuncName>max_pooling</contextFuncName>
-						<contextNormFuncName>max_pooling</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>CNN_Optimal/src/pool.cpp</first>
-											<second>max_pooling</second>
-										</first>
-										<second>19</second>
-									</item>
-									<item>
-										<first>
-											<first>CNN_Optimal/src/pool.cpp</first>
-											<second>max_pooling_layer</second>
-										</first>
-										<second>37</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1747857464</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>129</item>
-					<item>130</item>
-					<item>308</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-				<m_Display>1</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>1</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.56</m_delay>
-				<m_topoIndex>16</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_21">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>28</id>
-						<name>value_1</name>
-						<fileName>CNN_Optimal/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>19</lineNumber>
-						<contextFuncName>max_pooling</contextFuncName>
-						<contextNormFuncName>max_pooling</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>CNN_Optimal/src/pool.cpp</first>
-											<second>max_pooling</second>
-										</first>
-										<second>19</second>
-									</item>
-									<item>
-										<first>
-											<first>CNN_Optimal/src/pool.cpp</first>
-											<second>max_pooling_layer</second>
-										</first>
-										<second>37</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>value</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>778858351</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>131</item>
-				</oprand_edges>
-				<opcode>bitcast</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>29</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_22">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>29</id>
-						<name>tmp_2</name>
+						<name>conv_to_pool_streams_2_read_1</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
 						<lineNumber>23</lineNumber>
@@ -1271,7 +1143,7 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1284,7 +1156,135 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953065059</coreId>
+						<coreId>758329914</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>129</item>
+					<item>130</item>
+					<item>308</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+				<m_Display>1</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>1</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>3.56</m_delay>
+				<m_topoIndex>16</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_21">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>28</id>
+						<name>value_4</name>
+						<fileName>CNN_Optimal/src/pool.cpp</fileName>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
+						<lineNumber>23</lineNumber>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</first>
+								<second>
+									<count>2</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>CNN_Optimal/src/pool.cpp</first>
+											<second>max_pooling</second>
+										</first>
+										<second>23</second>
+									</item>
+									<item>
+										<first>
+											<first>CNN_Optimal/src/pool.cpp</first>
+											<second>max_pooling_layer</second>
+										</first>
+										<second>40</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>value</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1884249934</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>131</item>
+				</oprand_edges>
+				<opcode>bitcast</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>29</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_22">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>29</id>
+						<name>tmp_12</name>
+						<fileName>CNN_Optimal/src/pool.cpp</fileName>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
+						<lineNumber>27</lineNumber>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</first>
+								<second>
+									<count>2</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>CNN_Optimal/src/pool.cpp</first>
+											<second>max_pooling</second>
+										</first>
+										<second>27</second>
+									</item>
+									<item>
+										<first>
+											<first>CNN_Optimal/src/pool.cpp</first>
+											<second>max_pooling_layer</second>
+										</first>
+										<second>40</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1646274865</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1311,10 +1311,10 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>trunc_ln23_1</name>
+						<name>trunc_ln27_7</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1330,14 +1330,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1350,7 +1350,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>943140401</coreId>
+						<coreId>1600941935</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -1374,10 +1374,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>bitcast_ln23</name>
+						<name>bitcast_ln27</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1393,14 +1393,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1413,7 +1413,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3879653184</coreId>
+						<coreId>1953394531</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1437,10 +1437,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>tmp_3</name>
+						<name>tmp_13</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1456,14 +1456,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1476,7 +1476,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3879674952</coreId>
+						<coreId>1952984624</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1503,10 +1503,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>trunc_ln23_2</name>
+						<name>trunc_ln27_8</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1522,14 +1522,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1542,7 +1542,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1797268061</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -1566,10 +1566,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>icmp_ln23_2</name>
+						<name>icmp_ln27_15</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1585,14 +1585,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1605,7 +1605,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3879674272</coreId>
+						<coreId>3672558720</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1630,10 +1630,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>icmp_ln23_3</name>
+						<name>icmp_ln27_16</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1649,14 +1649,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1669,7 +1669,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2163301186</coreId>
+						<coreId>3494777072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1694,10 +1694,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>or_ln23_1</name>
+						<name>or_ln27_7</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1713,14 +1713,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1733,7 +1733,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784</coreId>
+						<coreId>3631971565</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1758,10 +1758,10 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>icmp_ln23_4</name>
+						<name>icmp_ln27_17</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1777,14 +1777,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1797,7 +1797,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3672563520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1822,10 +1822,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>icmp_ln23_5</name>
+						<name>icmp_ln27_18</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1841,14 +1841,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1861,7 +1861,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1819113532</coreId>
+						<coreId>3494777072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1886,10 +1886,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>or_ln23_2</name>
+						<name>or_ln27_8</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1905,14 +1905,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1925,7 +1925,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2163297011</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1950,10 +1950,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>and_ln23_1</name>
+						<name>and_ln27_7</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -1969,14 +1969,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1989,7 +1989,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3879681840</coreId>
+						<coreId>3672564736</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2014,10 +2014,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>tmp_4</name>
+						<name>tmp_14</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2033,14 +2033,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2078,10 +2078,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>and_ln23_2</name>
+						<name>and_ln27_8</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2097,14 +2097,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2117,7 +2117,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3879684504</coreId>
+						<coreId>3672567064</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2142,10 +2142,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>pool_3</name>
+						<name>pool_10</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2161,14 +2161,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2181,7 +2181,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>608</coreId>
+						<coreId>3626158191</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2207,135 +2207,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>conv_to_pool_streams_3_read_2</name>
-						<fileName>CNN_Optimal/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>19</lineNumber>
-						<contextFuncName>max_pooling</contextFuncName>
-						<contextNormFuncName>max_pooling</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>CNN_Optimal/src/pool.cpp</first>
-											<second>max_pooling</second>
-										</first>
-										<second>19</second>
-									</item>
-									<item>
-										<first>
-											<first>CNN_Optimal/src/pool.cpp</first>
-											<second>max_pooling_layer</second>
-										</first>
-										<second>37</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>164</item>
-					<item>165</item>
-					<item>307</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-				<m_Display>1</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>1</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.56</m_delay>
-				<m_topoIndex>24</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_38">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>45</id>
-						<name>value_2</name>
-						<fileName>CNN_Optimal/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>19</lineNumber>
-						<contextFuncName>max_pooling</contextFuncName>
-						<contextNormFuncName>max_pooling</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>CNN_Optimal/src/pool.cpp</first>
-											<second>max_pooling</second>
-										</first>
-										<second>19</second>
-									</item>
-									<item>
-										<first>
-											<first>CNN_Optimal/src/pool.cpp</first>
-											<second>max_pooling_layer</second>
-										</first>
-										<second>37</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>value</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>224</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>166</item>
-				</oprand_edges>
-				<opcode>bitcast</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>46</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_39">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>46</id>
-						<name>tmp_5</name>
+						<name>conv_to_pool_streams_2_read_2</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
 						<lineNumber>23</lineNumber>
@@ -2361,7 +2233,7 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2374,7 +2246,135 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3879688776</coreId>
+						<coreId>3672570912</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>164</item>
+					<item>165</item>
+					<item>307</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+				<m_Display>1</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>1</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>3.56</m_delay>
+				<m_topoIndex>24</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_38">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>45</id>
+						<name>value_5</name>
+						<fileName>CNN_Optimal/src/pool.cpp</fileName>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
+						<lineNumber>23</lineNumber>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</first>
+								<second>
+									<count>2</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>CNN_Optimal/src/pool.cpp</first>
+											<second>max_pooling</second>
+										</first>
+										<second>23</second>
+									</item>
+									<item>
+										<first>
+											<first>CNN_Optimal/src/pool.cpp</first>
+											<second>max_pooling_layer</second>
+										</first>
+										<second>40</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>value</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>3494812352</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>166</item>
+				</oprand_edges>
+				<opcode>bitcast</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>46</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_39">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>46</id>
+						<name>tmp_15</name>
+						<fileName>CNN_Optimal/src/pool.cpp</fileName>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
+						<lineNumber>27</lineNumber>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</first>
+								<second>
+									<count>2</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>CNN_Optimal/src/pool.cpp</first>
+											<second>max_pooling</second>
+										</first>
+										<second>27</second>
+									</item>
+									<item>
+										<first>
+											<first>CNN_Optimal/src/pool.cpp</first>
+											<second>max_pooling_layer</second>
+										</first>
+										<second>40</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -2401,10 +2401,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>trunc_ln23_3</name>
+						<name>trunc_ln27_9</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2420,14 +2420,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2440,7 +2440,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2163288581</coreId>
+						<coreId>3672572128</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -2464,10 +2464,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>bitcast_ln23_1</name>
+						<name>bitcast_ln27_3</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2483,14 +2483,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2503,7 +2503,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3667421344</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2527,10 +2527,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>tmp_6</name>
+						<name>tmp_16</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2546,14 +2546,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2566,7 +2566,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3856279456</coreId>
+						<coreId>3512505184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -2593,10 +2593,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>trunc_ln23_4</name>
+						<name>trunc_ln27_10</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2612,14 +2612,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2632,7 +2632,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3864362568</coreId>
+						<coreId>3503564208</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -2656,10 +2656,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>icmp_ln23_6</name>
+						<name>icmp_ln27_19</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2675,14 +2675,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2695,7 +2695,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3856281472</coreId>
+						<coreId>3528044924</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2720,10 +2720,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>icmp_ln23_7</name>
+						<name>icmp_ln27_20</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2739,14 +2739,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2759,7 +2759,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3863979104</coreId>
+						<coreId>3503559408</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2784,10 +2784,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>or_ln23_3</name>
+						<name>or_ln27_9</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2803,14 +2803,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2823,7 +2823,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2155924891</coreId>
+						<coreId>3498583920</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2848,10 +2848,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>icmp_ln23_8</name>
+						<name>icmp_ln27_21</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2867,14 +2867,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2887,7 +2887,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3834862288</coreId>
+						<coreId>3684452509</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2912,10 +2912,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>icmp_ln23_9</name>
+						<name>icmp_ln27_22</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2931,14 +2931,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -2951,7 +2951,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3834862288</coreId>
+						<coreId>3498584384</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2976,10 +2976,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>or_ln23_4</name>
+						<name>or_ln27_10</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -2995,14 +2995,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3015,7 +3015,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3834862288</coreId>
+						<coreId>3671693648</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3040,10 +3040,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>and_ln23_3</name>
+						<name>and_ln27_9</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3059,14 +3059,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3079,7 +3079,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3834863056</coreId>
+						<coreId>3503032496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3104,10 +3104,10 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>tmp_7</name>
+						<name>tmp_17</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3123,14 +3123,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3143,7 +3143,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3882187680</coreId>
+						<coreId>3635671824</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3168,10 +3168,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>and_ln23_4</name>
+						<name>and_ln27_10</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3187,14 +3187,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3207,7 +3207,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3882168144</coreId>
+						<coreId>3533958446</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3232,10 +3232,10 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>pool_5</name>
+						<name>pool_12</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3251,14 +3251,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3271,7 +3271,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3493784672</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3297,10 +3297,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>conv_to_pool_streams_3_read_3</name>
+						<name>conv_to_pool_streams_2_read_3</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>19</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3316,14 +3316,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>19</second>
+										<second>23</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3336,7 +3336,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3855969072</coreId>
+						<coreId>3512505184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3363,70 +3363,7 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>value_3</name>
-						<fileName>CNN_Optimal/src/pool.cpp</fileName>
-						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>19</lineNumber>
-						<contextFuncName>max_pooling</contextFuncName>
-						<contextNormFuncName>max_pooling</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>CNN_Optimal/src/pool.cpp</first>
-											<second>max_pooling</second>
-										</first>
-										<second>19</second>
-									</item>
-									<item>
-										<first>
-											<first>CNN_Optimal/src/pool.cpp</first>
-											<second>max_pooling_layer</second>
-										</first>
-										<second>37</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>value</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>2182815815</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>201</item>
-				</oprand_edges>
-				<opcode>bitcast</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>59</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_56">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>63</id>
-						<name>tmp_8</name>
+						<name>value_6</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
 						<lineNumber>23</lineNumber>
@@ -3452,7 +3389,70 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>value</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>3503032496</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>201</item>
+				</oprand_edges>
+				<opcode>bitcast</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>59</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_56">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>63</id>
+						<name>tmp_18</name>
+						<fileName>CNN_Optimal/src/pool.cpp</fileName>
+						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
+						<lineNumber>27</lineNumber>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</first>
+								<second>
+									<count>2</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>CNN_Optimal/src/pool.cpp</first>
+											<second>max_pooling</second>
+										</first>
+										<second>27</second>
+									</item>
+									<item>
+										<first>
+											<first>CNN_Optimal/src/pool.cpp</first>
+											<second>max_pooling_layer</second>
+										</first>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3465,7 +3465,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3880308272</coreId>
+						<coreId>3660269504</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3492,10 +3492,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>trunc_ln23_5</name>
+						<name>trunc_ln27_11</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3511,14 +3511,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3531,7 +3531,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>21</coreId>
+						<coreId>3512505184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -3555,10 +3555,10 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>bitcast_ln23_2</name>
+						<name>bitcast_ln27_4</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3574,14 +3574,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3594,7 +3594,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3882162672</coreId>
+						<coreId>3497088960</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3618,10 +3618,10 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>tmp_9</name>
+						<name>tmp_19</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3637,14 +3637,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3657,7 +3657,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2158713378</coreId>
+						<coreId>3660268304</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3684,10 +3684,10 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>trunc_ln23_6</name>
+						<name>trunc_ln27_12</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3703,14 +3703,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3723,7 +3723,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3835658784</coreId>
+						<coreId>3635671824</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -3747,10 +3747,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>icmp_ln23_10</name>
+						<name>icmp_ln27_23</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3766,14 +3766,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3786,7 +3786,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3835663536</coreId>
+						<coreId>3635671824</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3811,10 +3811,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>icmp_ln23_11</name>
+						<name>icmp_ln27_24</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3830,14 +3830,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3850,7 +3850,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3874574736</coreId>
+						<coreId>3690279184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3875,10 +3875,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>or_ln23_5</name>
+						<name>or_ln27_11</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3894,14 +3894,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3914,7 +3914,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>7955819</coreId>
+						<coreId>3690278720</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3939,10 +3939,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>icmp_ln23_12</name>
+						<name>icmp_ln27_25</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -3958,14 +3958,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -3978,7 +3978,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3880313184</coreId>
+						<coreId>3510139152</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4003,10 +4003,10 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>icmp_ln23_13</name>
+						<name>icmp_ln27_26</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -4022,14 +4022,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4042,7 +4042,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3503032496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4067,10 +4067,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>or_ln23_6</name>
+						<name>or_ln27_12</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -4086,14 +4086,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4106,7 +4106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3882165520</coreId>
+						<coreId>3497089088</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4131,10 +4131,10 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>and_ln23_5</name>
+						<name>and_ln27_11</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -4150,14 +4150,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4170,7 +4170,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3494772192</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4195,10 +4195,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>tmp_10</name>
+						<name>tmp_20</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -4214,14 +4214,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4234,7 +4234,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3855990280</coreId>
+						<coreId>3631393152</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4259,10 +4259,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>and_ln23_6</name>
+						<name>and_ln27_12</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -4278,14 +4278,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4298,7 +4298,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3872018368</coreId>
+						<coreId>3660464492</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4323,10 +4323,10 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>pool_7</name>
+						<name>pool_14</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -4342,14 +4342,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4362,7 +4362,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1397508187</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4388,10 +4388,10 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>bitcast_ln26</name>
+						<name>bitcast_ln30</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>26</lineNumber>
+						<lineNumber>30</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -4407,14 +4407,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>26</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4427,7 +4427,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3872018368</coreId>
+						<coreId>3536152758</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4451,10 +4451,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>pool_to_flat_streams_3_write_ln26</name>
+						<name>pool_to_flat_streams_2_write_ln30</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>26</lineNumber>
+						<lineNumber>30</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -4470,14 +4470,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>26</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4490,7 +4490,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>480</coreId>
+						<coreId>3503032496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4516,10 +4516,10 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>indvar_flatten20_write_ln9</name>
+						<name>indvar_flatten13_write_ln13</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>9</lineNumber>
+						<lineNumber>13</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -4535,14 +4535,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>9</second>
+										<second>13</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4555,7 +4555,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3872018368</coreId>
+						<coreId>3538705717</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4582,10 +4582,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>br_ln12</name>
+						<name>br_ln16</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>12</lineNumber>
+						<lineNumber>16</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
@@ -4601,14 +4601,14 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling</second>
 										</first>
-										<second>12</second>
+										<second>16</second>
 									</item>
 									<item>
 										<first>
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>37</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4621,7 +4621,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3855983712</coreId>
+						<coreId>3498582928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4663,7 +4663,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3880308272</coreId>
+						<coreId>3684280480</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4739,7 +4739,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3857274880</coreId>
+						<coreId>3501086944</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4770,7 +4770,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1918967922</coreId>
+						<coreId>3503031616</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4801,7 +4801,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>6775156</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4832,7 +4832,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3537047056</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4863,7 +4863,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2158692439</coreId>
+						<coreId>3537044639</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4894,7 +4894,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2163337561</coreId>
+						<coreId>3640776224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4925,7 +4925,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3880695568</coreId>
+						<coreId>3503032496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -4956,7 +4956,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3880308272</coreId>
+						<coreId>3512505184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5005,7 +5005,7 @@
 				<Obj>
 					<type>3</type>
 					<id>13</id>
-					<name>pool_for_pr.i47</name>
+					<name>pool_for_pr.i27</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5039,7 +5039,7 @@
 				<Obj>
 					<type>3</type>
 					<id>82</id>
-					<name>for.inc19.i62</name>
+					<name>for.inc19.i42</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5057,7 +5057,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>544106784</coreId>
+					<coreId>3497119648</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -5134,7 +5134,7 @@
 				<Obj>
 					<type>3</type>
 					<id>84</id>
-					<name>_Z11max_poolingRN3hls6streamIfLi0EEES2_.exit63.exitStub</name>
+					<name>pool_for_pr.i47.preheader.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5152,7 +5152,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2158755560</coreId>
+					<coreId>1919906921</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

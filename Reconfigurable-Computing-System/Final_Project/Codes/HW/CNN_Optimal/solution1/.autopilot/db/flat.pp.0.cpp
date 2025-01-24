@@ -299,6 +299,10 @@ void flattening_layer( hls::stream<float> pool_to_flat_streams[4],
 void flattening( hls::stream<float> & pool_to_flat_stream,
      hls::stream<float> & flat_to_dense_stream )
 {
+
+#pragma HLS ARRAY_PARTITION variable=pool_to_flat_stream complete
+#pragma HLS ARRAY_PARTITION variable=flat_to_dense_stream complete
+
  flat_for_rows: for(int r = 0; r < (28 / 2); ++r)
  {
   flat_for_cols: for(int c = 0; c < (28 / 2); ++c)

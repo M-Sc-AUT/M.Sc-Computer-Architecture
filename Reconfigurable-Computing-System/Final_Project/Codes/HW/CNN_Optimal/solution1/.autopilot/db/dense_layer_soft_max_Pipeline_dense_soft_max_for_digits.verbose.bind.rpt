@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dense_layer_soft_max_Pipeline_dense_soft_max_for_digits'
 ================================================================
-* Date:           Thu Jan 23 17:45:28 2025
+* Date:           Fri Jan 24 15:12:50 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN_Optimal
@@ -103,7 +103,7 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 4.91>
 ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p = alloca i32 1" [CNN_Optimal/src/dense.cpp:25]   --->   Operation 22 'alloca' 'p' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %prediction, void @empty_0, i32 0, i32 0, void @empty_2, i32 4294967295, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %prediction, void @empty_5, i32 0, i32 0, void @empty_4, i32 4294967295, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%exp_sum_reload_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %exp_sum_reload"   --->   Operation 24 'read' 'exp_sum_reload_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 25 [1/1] (1.58ns)   --->   "%store_ln25 = store i4 0, i4 %p" [CNN_Optimal/src/dense.cpp:25]   --->   Operation 25 'store' 'store_ln25' <Predicate = true> <Delay = 1.58>
 ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc21"   --->   Operation 26 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
@@ -170,9 +170,9 @@ ST_18 : Operation 52 [1/16] (6.07ns)   --->   "%div = fdiv i32 %bitcast_ln27, i3
 ST_18 : Operation 59 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 59 'ret' 'ret_ln0' <Predicate = (icmp_ln25)> <Delay = 0.00>
 
 State 19 <SV = 18> <Delay = 2.32>
-ST_19 : Operation 53 [1/1] (0.00ns)   --->   "%specpipeline_ln25 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_2" [CNN_Optimal/src/dense.cpp:25]   --->   Operation 53 'specpipeline' 'specpipeline_ln25' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 53 [1/1] (0.00ns)   --->   "%specpipeline_ln25 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_4" [CNN_Optimal/src/dense.cpp:25]   --->   Operation 53 'specpipeline' 'specpipeline_ln25' <Predicate = true> <Delay = 0.00>
 ST_19 : Operation 54 [1/1] (0.00ns)   --->   "%speclooptripcount_ln25 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10" [CNN_Optimal/src/dense.cpp:25]   --->   Operation 54 'speclooptripcount' 'speclooptripcount_ln25' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 55 [1/1] (0.00ns)   --->   "%specloopname_ln25 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [CNN_Optimal/src/dense.cpp:25]   --->   Operation 55 'specloopname' 'specloopname_ln25' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 55 [1/1] (0.00ns)   --->   "%specloopname_ln25 = specloopname void @_ssdm_op_SpecLoopName, void @empty_0" [CNN_Optimal/src/dense.cpp:25]   --->   Operation 55 'specloopname' 'specloopname_ln25' <Predicate = true> <Delay = 0.00>
 ST_19 : Operation 56 [1/1] (0.00ns)   --->   "%bitcast_ln27_1 = bitcast i32 %div" [CNN_Optimal/src/dense.cpp:27]   --->   Operation 56 'bitcast' 'bitcast_ln27_1' <Predicate = true> <Delay = 0.00>
 ST_19 : Operation 57 [1/1] (2.32ns)   --->   "%store_ln27 = store i32 %bitcast_ln27_1, i4 %prediction_addr" [CNN_Optimal/src/dense.cpp:27]   --->   Operation 57 'store' 'store_ln27' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
 ST_19 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln25 = br void %for.inc21" [CNN_Optimal/src/dense.cpp:25]   --->   Operation 58 'br' 'br_ln25' <Predicate = true> <Delay = 0.00>
@@ -266,7 +266,7 @@ ret_ln0                (ret              ) [ 00000000000000000000]
 <pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_0"/></StgValue>
+<StgValue><ssdm name="empty_5"/></StgValue>
 </bind>
 </comp>
 
@@ -284,7 +284,7 @@ ret_ln0                (ret              ) [ 00000000000000000000]
 <pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_2"/></StgValue>
+<StgValue><ssdm name="empty_4"/></StgValue>
 </bind>
 </comp>
 
@@ -383,7 +383,7 @@ ret_ln0                (ret              ) [ 00000000000000000000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_3"/></StgValue>
+<StgValue><ssdm name="empty_0"/></StgValue>
 </bind>
 </comp>
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_Pipeline_clone_for_rows_clone_for_cols'" level="0">
-<item name = "Date">Thu Jan 23 17:18:24 2025
+<item name = "Date">Fri Jan 24 14:37:59 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1167, 1167, 11.670 us, 11.670 us, 1167, 1167, no</column>
+<column name="">1169, 1169, 11.690 us, 11.690 us, 1169, 1169, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- clone_for_rows_clone_for_cols">1165, 1165, 11, 1, 1, 1156, yes</column>
+<column name="- clone_for_rows_clone_for_cols">1167, 1167, 13, 1, 1, 1156, yes</column>
 </table>
 </item>
 </section>

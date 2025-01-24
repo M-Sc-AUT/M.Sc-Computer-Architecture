@@ -242,17 +242,41 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-extern "C" void cnn(Byte<4>*, Byte<4>*);
-extern "C" void apatb_cnn_hw(volatile void * __xlx_apatb_param_img_in, volatile void * __xlx_apatb_param_prediction) {
+extern "C" void cnn(Byte<4>*, Byte<4>*, Byte<4>*, Byte<4>*, Byte<4>*);
+extern "C" void apatb_cnn_hw(volatile void * __xlx_apatb_param_img_in_0, volatile void * __xlx_apatb_param_img_in_1, volatile void * __xlx_apatb_param_img_in_2, volatile void * __xlx_apatb_param_img_in_3, volatile void * __xlx_apatb_param_prediction) {
 using hls::sim::createStream;
-  // Collect __xlx_img_in__tmp_vec
-std::vector<Byte<4>> __xlx_img_in__tmp_vec;
-for (size_t i = 0; i < 784; ++i){
-__xlx_img_in__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_img_in)[i]);
+  // Collect __xlx_img_in_0__tmp_vec
+std::vector<Byte<4>> __xlx_img_in_0__tmp_vec;
+for (size_t i = 0; i < 196; ++i){
+__xlx_img_in_0__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_img_in_0)[i]);
 }
-  int __xlx_size_param_img_in = 784;
-  int __xlx_offset_param_img_in = 0;
-  int __xlx_offset_byte_param_img_in = 0*4;
+  int __xlx_size_param_img_in_0 = 196;
+  int __xlx_offset_param_img_in_0 = 0;
+  int __xlx_offset_byte_param_img_in_0 = 0*4;
+  // Collect __xlx_img_in_1__tmp_vec
+std::vector<Byte<4>> __xlx_img_in_1__tmp_vec;
+for (size_t i = 0; i < 196; ++i){
+__xlx_img_in_1__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_img_in_1)[i]);
+}
+  int __xlx_size_param_img_in_1 = 196;
+  int __xlx_offset_param_img_in_1 = 0;
+  int __xlx_offset_byte_param_img_in_1 = 0*4;
+  // Collect __xlx_img_in_2__tmp_vec
+std::vector<Byte<4>> __xlx_img_in_2__tmp_vec;
+for (size_t i = 0; i < 196; ++i){
+__xlx_img_in_2__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_img_in_2)[i]);
+}
+  int __xlx_size_param_img_in_2 = 196;
+  int __xlx_offset_param_img_in_2 = 0;
+  int __xlx_offset_byte_param_img_in_2 = 0*4;
+  // Collect __xlx_img_in_3__tmp_vec
+std::vector<Byte<4>> __xlx_img_in_3__tmp_vec;
+for (size_t i = 0; i < 196; ++i){
+__xlx_img_in_3__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_img_in_3)[i]);
+}
+  int __xlx_size_param_img_in_3 = 196;
+  int __xlx_offset_param_img_in_3 = 0;
+  int __xlx_offset_byte_param_img_in_3 = 0*4;
   // Collect __xlx_prediction__tmp_vec
 std::vector<Byte<4>> __xlx_prediction__tmp_vec;
 for (size_t i = 0; i < 10; ++i){
@@ -262,10 +286,22 @@ __xlx_prediction__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_prediction)[i])
   int __xlx_offset_param_prediction = 0;
   int __xlx_offset_byte_param_prediction = 0*4;
   // DUT call
-  cnn(__xlx_img_in__tmp_vec.data(), __xlx_prediction__tmp_vec.data());
-// print __xlx_apatb_param_img_in
-for (size_t i = 0; i < __xlx_size_param_img_in; ++i) {
-((Byte<4>*)__xlx_apatb_param_img_in)[i] = __xlx_img_in__tmp_vec[__xlx_offset_param_img_in+i];
+  cnn(__xlx_img_in_0__tmp_vec.data(), __xlx_img_in_1__tmp_vec.data(), __xlx_img_in_2__tmp_vec.data(), __xlx_img_in_3__tmp_vec.data(), __xlx_prediction__tmp_vec.data());
+// print __xlx_apatb_param_img_in_0
+for (size_t i = 0; i < __xlx_size_param_img_in_0; ++i) {
+((Byte<4>*)__xlx_apatb_param_img_in_0)[i] = __xlx_img_in_0__tmp_vec[__xlx_offset_param_img_in_0+i];
+}
+// print __xlx_apatb_param_img_in_1
+for (size_t i = 0; i < __xlx_size_param_img_in_1; ++i) {
+((Byte<4>*)__xlx_apatb_param_img_in_1)[i] = __xlx_img_in_1__tmp_vec[__xlx_offset_param_img_in_1+i];
+}
+// print __xlx_apatb_param_img_in_2
+for (size_t i = 0; i < __xlx_size_param_img_in_2; ++i) {
+((Byte<4>*)__xlx_apatb_param_img_in_2)[i] = __xlx_img_in_2__tmp_vec[__xlx_offset_param_img_in_2+i];
+}
+// print __xlx_apatb_param_img_in_3
+for (size_t i = 0; i < __xlx_size_param_img_in_3; ++i) {
+((Byte<4>*)__xlx_apatb_param_img_in_3)[i] = __xlx_img_in_3__tmp_vec[__xlx_offset_param_img_in_3+i];
 }
 // print __xlx_apatb_param_prediction
 for (size_t i = 0; i < __xlx_size_param_prediction; ++i) {

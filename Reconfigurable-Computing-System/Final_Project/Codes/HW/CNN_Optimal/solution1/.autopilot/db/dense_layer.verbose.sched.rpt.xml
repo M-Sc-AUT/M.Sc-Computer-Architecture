@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_layer'" level="0">
-<item name = "Date">Thu Jan 23 17:45:27 2025
+<item name = "Date">Fri Jan 24 15:12:48 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.670 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 10.274 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2004, 2004, 20.040 us, 20.040 us, 2004, 2004, no</column>
+<column name="">996, 996, 10.233 us, 10.233 us, 996, 996, no</column>
 </table>
 </item>
 <item name = "Detail">

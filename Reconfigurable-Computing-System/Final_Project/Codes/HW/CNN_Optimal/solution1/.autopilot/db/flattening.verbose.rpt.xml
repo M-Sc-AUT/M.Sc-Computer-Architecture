@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'flattening'" level="0">
-<item name = "Date">Thu Jan 23 17:45:40 2025
+<item name = "Date">Fri Jan 24 15:13:13 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -93,7 +93,7 @@
 <column name="ap_block_pp0_stage7_01001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage8_01001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage9_01001">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln6_fu_62_p2">icmp, 0, 0, 13, 4, 3</column>
+<column name="icmp_ln10_fu_62_p2">icmp, 0, 0, 13, 4, 3</column>
 <column name="ap_block_state10_pp0_stage9_iter0">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state15_pp0_stage0_iter1">or, 0, 0, 2, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
@@ -118,7 +118,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="icmp_ln6_reg_85">1, 0, 1, 0</column>
+<column name="icmp_ln10_reg_85">1, 0, 1, 0</column>
 <column name="r_1_fu_36">4, 0, 4, 0</column>
 <column name="r_2_reg_89">4, 0, 4, 0</column>
 </table>

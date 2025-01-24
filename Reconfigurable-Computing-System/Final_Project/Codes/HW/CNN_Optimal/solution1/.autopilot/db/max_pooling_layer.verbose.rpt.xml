@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'max_pooling_layer'" level="0">
-<item name = "Date">Thu Jan 23 17:45:40 2025
+<item name = "Date">Fri Jan 24 15:13:13 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -32,9 +32,9 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
+<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
+<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
+<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -65,11 +65,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="fcmp_32ns_32ns_1_2_no_dsp_1_U520">fcmp_32ns_32ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fcmp_32ns_32ns_1_2_no_dsp_1_U1049">fcmp_32ns_32ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
 <column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols, 0, 0, 422, 606, 0</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5, 0, 0, 422, 606, 0</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6, 0, 0, 422, 606, 0</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7, 0, 0, 422, 606, 0</column>
+<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6, 0, 0, 422, 606, 0</column>
+<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7, 0, 0, 422, 606, 0</column>
+<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8, 0, 0, 422, 606, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -112,9 +112,9 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">11, 0, 11, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_ap_start_reg">1, 0, 1, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
 </table>

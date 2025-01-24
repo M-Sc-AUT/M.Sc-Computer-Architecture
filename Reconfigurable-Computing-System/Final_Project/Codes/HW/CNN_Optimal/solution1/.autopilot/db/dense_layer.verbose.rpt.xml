@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_layer'" level="0">
-<item name = "Date">Thu Jan 23 17:45:41 2025
+<item name = "Date">Fri Jan 24 15:13:30 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.670 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 10.274 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2004, 2004, 20.040 us, 20.040 us, 2004, 2004, no</column>
+<column name="">996, 996, 10.233 us, 10.233 us, 996, 996, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_fu_38">dense, 2003, 2003, 20.030 us, 20.030 us, 2003, 2003, no</column>
-<column name="grp_dense_fu_50">dense, 2003, 2003, 20.030 us, 20.030 us, 2003, 2003, no</column>
-<column name="grp_dense_fu_62">dense, 2003, 2003, 20.030 us, 20.030 us, 2003, 2003, no</column>
-<column name="grp_dense_fu_74">dense, 2003, 2003, 20.030 us, 20.030 us, 2003, 2003, no</column>
+<column name="grp_dense_fu_76">dense, 996, 996, 10.233 us, 10.233 us, 196, 196, yes</column>
+<column name="grp_dense_fu_126">dense, 996, 996, 10.233 us, 10.233 us, 196, 196, yes</column>
+<column name="grp_dense_fu_176">dense, 996, 996, 10.233 us, 10.233 us, 196, 196, yes</column>
+<column name="grp_dense_fu_226">dense, 996, 996, 10.233 us, 10.233 us, 196, 196, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -51,24 +51,24 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 4, -</column>
+<column name="Expression">-, -, 0, 12, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">64, 20, 3464, 5340, 0</column>
+<column name="Instance">80, 200, 735444, 315920, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 95, -</column>
-<column name="Register">-, -, 7, -, -</column>
+<column name="Multiplexer">-, -, -, 2846, -</column>
+<column name="Register">-, -, 998, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
-<specialColumn name="Utilization (%)">53, 25, 9, 30, 0</specialColumn>
+<specialColumn name="Utilization (%)">66, 250, 2092, 1811, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_dense_fu_38">dense, 16, 5, 866, 1335, 0</column>
-<column name="grp_dense_fu_50">dense, 16, 5, 866, 1335, 0</column>
-<column name="grp_dense_fu_62">dense, 16, 5, 866, 1335, 0</column>
-<column name="grp_dense_fu_74">dense, 16, 5, 866, 1335, 0</column>
+<column name="grp_dense_fu_76">dense, 20, 50, 183861, 78980, 0</column>
+<column name="grp_dense_fu_126">dense, 20, 50, 183861, 78980, 0</column>
+<column name="grp_dense_fu_176">dense, 20, 50, 183861, 78980, 0</column>
+<column name="grp_dense_fu_226">dense, 20, 50, 183861, 78980, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -86,31 +86,39 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state2_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state10">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1_ignore_call10">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1_ignore_call11">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1_ignore_call8">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1_ignore_call9">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">14, 3, 1, 3</column>
+<column name="ap_NS_fsm">2693, 998, 1, 998</column>
 <column name="ap_done">9, 2, 1, 2</column>
+<column name="dense_to_softmax_streams_0_blk_n">9, 2, 1, 2</column>
 <column name="dense_to_softmax_streams_0_write">9, 2, 1, 2</column>
+<column name="dense_to_softmax_streams_1_blk_n">9, 2, 1, 2</column>
 <column name="dense_to_softmax_streams_1_write">9, 2, 1, 2</column>
+<column name="dense_to_softmax_streams_2_blk_n">9, 2, 1, 2</column>
 <column name="dense_to_softmax_streams_2_write">9, 2, 1, 2</column>
+<column name="dense_to_softmax_streams_3_blk_n">9, 2, 1, 2</column>
 <column name="dense_to_softmax_streams_3_write">9, 2, 1, 2</column>
+<column name="flat_to_dense_streams_0_blk_n">9, 2, 1, 2</column>
 <column name="flat_to_dense_streams_0_read">9, 2, 1, 2</column>
+<column name="flat_to_dense_streams_1_blk_n">9, 2, 1, 2</column>
 <column name="flat_to_dense_streams_1_read">9, 2, 1, 2</column>
+<column name="flat_to_dense_streams_2_blk_n">9, 2, 1, 2</column>
 <column name="flat_to_dense_streams_2_read">9, 2, 1, 2</column>
+<column name="flat_to_dense_streams_3_blk_n">9, 2, 1, 2</column>
 <column name="flat_to_dense_streams_3_read">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="ap_CS_fsm">997, 0, 997, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_dense_fu_38_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_dense_fu_50_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_dense_fu_62_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_dense_fu_74_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>

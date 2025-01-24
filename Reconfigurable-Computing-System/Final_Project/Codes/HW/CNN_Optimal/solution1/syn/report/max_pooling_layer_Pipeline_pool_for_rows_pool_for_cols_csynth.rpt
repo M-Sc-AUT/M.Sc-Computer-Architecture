@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols'
 ================================================================
-* Date:           Thu Jan 23 17:45:39 2025
+* Date:           Fri Jan 24 15:13:12 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN_Optimal
@@ -85,38 +85,38 @@
     +----------------------------------+----------+----+---+----+------------+------------+
     |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------------+----------+----+---+----+------------+------------+
-    |add_ln9_fu_104_p2                 |         +|   0|  0|  15|           8|           1|
-    |and_ln23_1_fu_220_p2              |       and|   0|  0|   2|           1|           1|
-    |and_ln23_2_fu_226_p2              |       and|   0|  0|   2|           1|           1|
-    |and_ln23_3_fu_281_p2              |       and|   0|  0|   2|           1|           1|
-    |and_ln23_4_fu_287_p2              |       and|   0|  0|   2|           1|           1|
-    |and_ln23_5_fu_342_p2              |       and|   0|  0|   2|           1|           1|
-    |and_ln23_6_fu_348_p2              |       and|   0|  0|   2|           1|           1|
-    |and_ln23_fu_143_p2                |       and|   0|  0|   2|           1|           1|
+    |add_ln13_fu_104_p2                |         +|   0|  0|  15|           8|           1|
+    |and_ln27_1_fu_220_p2              |       and|   0|  0|   2|           1|           1|
+    |and_ln27_2_fu_226_p2              |       and|   0|  0|   2|           1|           1|
+    |and_ln27_3_fu_281_p2              |       and|   0|  0|   2|           1|           1|
+    |and_ln27_4_fu_287_p2              |       and|   0|  0|   2|           1|           1|
+    |and_ln27_5_fu_342_p2              |       and|   0|  0|   2|           1|           1|
+    |and_ln27_6_fu_348_p2              |       and|   0|  0|   2|           1|           1|
+    |and_ln27_fu_143_p2                |       and|   0|  0|   2|           1|           1|
     |ap_block_pp0_stage0_00001         |       and|   0|  0|   2|           1|           1|
     |ap_block_pp0_stage1_00001         |       and|   0|  0|   2|           1|           1|
     |ap_block_pp0_stage2_00001         |       and|   0|  0|   2|           1|           1|
     |ap_block_state2_pp0_stage1_iter0  |       and|   0|  0|   2|           1|           1|
     |grp_fu_80_p2                      |      icmp|   0|  0|  15|           8|           2|
-    |icmp_ln23_11_fu_175_p2            |      icmp|   0|  0|  30|          23|           1|
-    |icmp_ln23_12_fu_324_p2            |      icmp|   0|  0|  15|           8|           2|
-    |icmp_ln23_13_fu_330_p2            |      icmp|   0|  0|  30|          23|           1|
-    |icmp_ln23_1_fu_114_p2             |      icmp|   0|  0|  30|          23|           1|
-    |icmp_ln23_3_fu_133_p2             |      icmp|   0|  0|  30|          23|           1|
-    |icmp_ln23_4_fu_202_p2             |      icmp|   0|  0|  15|           8|           2|
-    |icmp_ln23_5_fu_208_p2             |      icmp|   0|  0|  30|          23|           1|
-    |icmp_ln23_7_fu_160_p2             |      icmp|   0|  0|  30|          23|           1|
-    |icmp_ln23_8_fu_263_p2             |      icmp|   0|  0|  15|           8|           2|
-    |icmp_ln23_9_fu_269_p2             |      icmp|   0|  0|  30|          23|           1|
-    |icmp_ln9_fu_98_p2                 |      icmp|   0|  0|  15|           8|           7|
+    |icmp_ln13_fu_98_p2                |      icmp|   0|  0|  15|           8|           7|
+    |icmp_ln27_11_fu_175_p2            |      icmp|   0|  0|  30|          23|           1|
+    |icmp_ln27_12_fu_324_p2            |      icmp|   0|  0|  15|           8|           2|
+    |icmp_ln27_13_fu_330_p2            |      icmp|   0|  0|  30|          23|           1|
+    |icmp_ln27_1_fu_114_p2             |      icmp|   0|  0|  30|          23|           1|
+    |icmp_ln27_3_fu_133_p2             |      icmp|   0|  0|  30|          23|           1|
+    |icmp_ln27_4_fu_202_p2             |      icmp|   0|  0|  15|           8|           2|
+    |icmp_ln27_5_fu_208_p2             |      icmp|   0|  0|  30|          23|           1|
+    |icmp_ln27_7_fu_160_p2             |      icmp|   0|  0|  30|          23|           1|
+    |icmp_ln27_8_fu_263_p2             |      icmp|   0|  0|  15|           8|           2|
+    |icmp_ln27_9_fu_269_p2             |      icmp|   0|  0|  30|          23|           1|
     |ap_block_pp0_stage3_00001         |        or|   0|  0|   2|           1|           1|
-    |or_ln23_1_fu_198_p2               |        or|   0|  0|   2|           1|           1|
-    |or_ln23_2_fu_214_p2               |        or|   0|  0|   2|           1|           1|
-    |or_ln23_3_fu_259_p2               |        or|   0|  0|   2|           1|           1|
-    |or_ln23_4_fu_275_p2               |        or|   0|  0|   2|           1|           1|
-    |or_ln23_5_fu_320_p2               |        or|   0|  0|   2|           1|           1|
-    |or_ln23_6_fu_336_p2               |        or|   0|  0|   2|           1|           1|
-    |or_ln23_fu_139_p2                 |        or|   0|  0|   2|           1|           1|
+    |or_ln27_1_fu_198_p2               |        or|   0|  0|   2|           1|           1|
+    |or_ln27_2_fu_214_p2               |        or|   0|  0|   2|           1|           1|
+    |or_ln27_3_fu_259_p2               |        or|   0|  0|   2|           1|           1|
+    |or_ln27_4_fu_275_p2               |        or|   0|  0|   2|           1|           1|
+    |or_ln27_5_fu_320_p2               |        or|   0|  0|   2|           1|           1|
+    |or_ln27_6_fu_336_p2               |        or|   0|  0|   2|           1|           1|
+    |or_ln27_fu_139_p2                 |        or|   0|  0|   2|           1|           1|
     |pool_23_fu_149_p3                 |    select|   0|  0|  32|           1|          32|
     |pool_25_fu_232_p3                 |    select|   0|  0|  32|           1|          32|
     |pool_27_fu_293_p3                 |    select|   0|  0|  32|           1|          32|
@@ -148,7 +148,7 @@
     +-----------------------------------------------------+----+----+-----+-----------+
     |                         Name                        | FF | LUT| Bits| Const Bits|
     +-----------------------------------------------------+----+----+-----+-----------+
-    |add_ln9_reg_375                                      |   8|   0|    8|          0|
+    |add_ln13_reg_375                                     |   8|   0|    8|          0|
     |ap_CS_fsm                                            |   4|   0|    4|          0|
     |ap_done_reg                                          |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter0_reg                          |   1|   0|    1|          0|
@@ -158,19 +158,19 @@
     |conv_to_pool_streams_0_read_2_reg_413                |  32|   0|   32|          0|
     |conv_to_pool_streams_0_read_3_reg_434                |  32|   0|   32|          0|
     |conv_to_pool_streams_0_read_3_reg_434_pp0_iter2_reg  |  32|   0|   32|          0|
-    |icmp_ln23_10_reg_439                                 |   1|   0|    1|          0|
-    |icmp_ln23_10_reg_439_pp0_iter2_reg                   |   1|   0|    1|          0|
-    |icmp_ln23_11_reg_444                                 |   1|   0|    1|          0|
-    |icmp_ln23_11_reg_444_pp0_iter2_reg                   |   1|   0|    1|          0|
-    |icmp_ln23_1_reg_385                                  |   1|   0|    1|          0|
-    |icmp_ln23_2_reg_396                                  |   1|   0|    1|          0|
-    |icmp_ln23_3_reg_401                                  |   1|   0|    1|          0|
-    |icmp_ln23_6_reg_418                                  |   1|   0|    1|          0|
-    |icmp_ln23_6_reg_418_pp0_iter1_reg                    |   1|   0|    1|          0|
-    |icmp_ln23_7_reg_423                                  |   1|   0|    1|          0|
-    |icmp_ln23_7_reg_423_pp0_iter1_reg                    |   1|   0|    1|          0|
-    |icmp_ln23_reg_380                                    |   1|   0|    1|          0|
-    |icmp_ln9_reg_371                                     |   1|   0|    1|          0|
+    |icmp_ln13_reg_371                                    |   1|   0|    1|          0|
+    |icmp_ln27_10_reg_439                                 |   1|   0|    1|          0|
+    |icmp_ln27_10_reg_439_pp0_iter2_reg                   |   1|   0|    1|          0|
+    |icmp_ln27_11_reg_444                                 |   1|   0|    1|          0|
+    |icmp_ln27_11_reg_444_pp0_iter2_reg                   |   1|   0|    1|          0|
+    |icmp_ln27_1_reg_385                                  |   1|   0|    1|          0|
+    |icmp_ln27_2_reg_396                                  |   1|   0|    1|          0|
+    |icmp_ln27_3_reg_401                                  |   1|   0|    1|          0|
+    |icmp_ln27_6_reg_418                                  |   1|   0|    1|          0|
+    |icmp_ln27_6_reg_418_pp0_iter1_reg                    |   1|   0|    1|          0|
+    |icmp_ln27_7_reg_423                                  |   1|   0|    1|          0|
+    |icmp_ln27_7_reg_423_pp0_iter1_reg                    |   1|   0|    1|          0|
+    |icmp_ln27_reg_380                                    |   1|   0|    1|          0|
     |indvar_flatten_fu_48                                 |   8|   0|    8|          0|
     |pool_23_reg_406                                      |  32|   0|   32|          0|
     |pool_25_reg_449                                      |  32|   0|   32|          0|

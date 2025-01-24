@@ -172,8 +172,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "dense_soft_max_for_dense_size", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter8", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter8", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36.dense_biases_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36.fadd_32ns_32ns_32_5_full_dsp_1_U562", "Parent" : "1"},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36.fexp_32ns_32ns_32_10_full_dsp_1_U563", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36.fadd_32ns_32ns_32_5_full_dsp_1_U1121", "Parent" : "1"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36.fexp_32ns_32ns_32_10_full_dsp_1_U1122", "Parent" : "1"},
 	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
 	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53", "Parent" : "0", "Child" : ["7", "8"],
 		"CDFG" : "dense_layer_soft_max_Pipeline_dense_soft_max_for_digits",
@@ -195,7 +195,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "dense_soft_max_for_digits", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter18", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter18", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53.fdiv_32ns_32ns_32_16_no_dsp_1_U572", "Parent" : "6"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53.fdiv_32ns_32ns_32_16_no_dsp_1_U1131", "Parent" : "6"},
 	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53.flow_control_loop_pipe_sequential_init_U", "Parent" : "6"}]}
 
 

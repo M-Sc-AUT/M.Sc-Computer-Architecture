@@ -265,7 +265,7 @@ begin
         ce0 => dense_biases_ce0,
         q0 => dense_biases_q0);
 
-    fadd_32ns_32ns_32_5_full_dsp_1_U562 : component cnn_fadd_32ns_32ns_32_5_full_dsp_1
+    fadd_32ns_32ns_32_5_full_dsp_1_U1121 : component cnn_fadd_32ns_32ns_32_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -280,7 +280,7 @@ begin
         ce => grp_fu_119_ce,
         dout => grp_fu_119_p2);
 
-    fexp_32ns_32ns_32_10_full_dsp_1_U563 : component cnn_fexp_32ns_32ns_32_10_full_dsp_1
+    fexp_32ns_32ns_32_10_full_dsp_1_U1122 : component cnn_fexp_32ns_32ns_32_10_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 10,

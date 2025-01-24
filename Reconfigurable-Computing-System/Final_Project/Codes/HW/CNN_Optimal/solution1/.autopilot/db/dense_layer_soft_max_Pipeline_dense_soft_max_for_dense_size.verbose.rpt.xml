@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size'" level="0">
-<item name = "Date">Thu Jan 23 17:45:42 2025
+<item name = "Date">Fri Jan 24 15:13:32 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -62,8 +62,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="fadd_32ns_32ns_32_5_full_dsp_1_U562">fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
-<column name="fexp_32ns_32ns_32_10_full_dsp_1_U563">fexp_32ns_32ns_32_10_full_dsp_1, 0, 7, 317, 918, 0</column>
+<column name="fadd_32ns_32ns_32_5_full_dsp_1_U1121">fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
+<column name="fexp_32ns_32ns_32_10_full_dsp_1_U1122">fexp_32ns_32ns_32_10_full_dsp_1, 0, 7, 317, 918, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

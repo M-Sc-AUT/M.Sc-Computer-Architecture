@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'convolutional_layer'" level="0">
-<item name = "Date">Thu Jan 23 17:45:25 2025
+<item name = "Date">Fri Jan 24 15:09:59 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -31,10 +31,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_convolution_fu_232">convolution, 19843, 19843, 0.198 ms, 0.198 ms, 19843, 19843, no</column>
-<column name="grp_convolution_fu_342">convolution, 19843, 19843, 0.198 ms, 0.198 ms, 19843, 19843, no</column>
-<column name="grp_convolution_fu_452">convolution, 19843, 19843, 0.198 ms, 0.198 ms, 19843, 19843, no</column>
-<column name="grp_convolution_1_fu_562">convolution_1, 1055, 1055, 10.550 us, 10.550 us, 1055, 1055, no</column>
+<column name="grp_convolution_fu_286">convolution, 1055, 1055, 10.550 us, 10.550 us, 1055, 1055, no</column>
+<column name="grp_convolution_1_fu_348">convolution_1, 19843, 19843, 0.198 ms, 0.198 ms, 19843, 19843, no</column>
+<column name="grp_convolution_1_fu_458">convolution_1, 19843, 19843, 0.198 ms, 0.198 ms, 19843, 19843, no</column>
+<column name="grp_convolution_2_fu_568">convolution_2, 1055, 1055, 10.550 us, 10.550 us, 1055, 1055, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

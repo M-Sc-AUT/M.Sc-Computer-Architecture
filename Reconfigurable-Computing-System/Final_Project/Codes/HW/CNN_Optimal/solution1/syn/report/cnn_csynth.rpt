@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cnn'
 ================================================================
-* Date:           Thu Jan 23 17:45:42 2025
+* Date:           Fri Jan 24 15:13:35 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN_Optimal
@@ -17,11 +17,11 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+----------+------------+
-    |  Clock |  Target  | Estimated| Uncertainty|
-    +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  8.643 ns|     2.70 ns|
-    +--------+----------+----------+------------+
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  10.00 ns|  10.274 ns|     2.70 ns|
+    +--------+----------+-----------+------------+
 
 + Latency: 
     * Summary: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
     |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
     +---------+---------+----------+----------+-------+-------+---------+
-    |    22980|    22980|  0.230 ms|  0.230 ms|  22981|  22981|       no|
+    |    22999|    22999|  0.236 ms|  0.236 ms|  23000|  23000|       no|
     +---------+---------+----------+----------+-------+-------+---------+
 
     + Detail: 
@@ -38,10 +38,10 @@
         |                                                       |                                            |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline |
         |                        Instance                       |                   Module                   |   min   |   max   |    min    |    max    |  min  |  max  |   Type   |
         +-------------------------------------------------------+--------------------------------------------+---------+---------+-----------+-----------+-------+-------+----------+
-        |grp_cnn_Pipeline_1_fu_342                              |cnn_Pipeline_1                              |     1158|     1158|  11.580 us|  11.580 us|   1158|   1158|        no|
-        |grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_348      |cnn_Pipeline_pad_for_rows_pad_for_cols      |      804|      804|   8.040 us|   8.040 us|    804|    804|        no|
-        |grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_355  |cnn_Pipeline_clone_for_rows_clone_for_cols  |     1167|     1167|  11.670 us|  11.670 us|   1167|   1167|        no|
-        |grp_dataflow_section_fu_411                            |dataflow_section                            |    19844|    19844|   0.198 ms|   0.198 ms|  19845|  19845|  dataflow|
+        |grp_cnn_Pipeline_1_fu_494                              |cnn_Pipeline_1                              |     1167|     1167|  11.670 us|  11.670 us|   1167|   1167|        no|
+        |grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_554      |cnn_Pipeline_pad_for_rows_pad_for_cols      |      812|      812|   8.120 us|   8.120 us|    812|    812|        no|
+        |grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_594  |cnn_Pipeline_clone_for_rows_clone_for_cols  |     1169|     1169|  11.690 us|  11.690 us|   1169|   1169|        no|
+        |grp_dataflow_section_fu_677                            |dataflow_section                            |    19844|    19844|   0.204 ms|   0.204 ms|  19845|  19845|  dataflow|
         +-------------------------------------------------------+--------------------------------------------+---------+---------+-----------+-----------+-------+-------+----------+
 
         * Loop: 
@@ -53,99 +53,126 @@
 == Utilization Estimates
 ================================================================
 * Summary: 
-+-----------------+---------+-----+-------+-------+-----+
-|       Name      | BRAM_18K| DSP |   FF  |  LUT  | URAM|
-+-----------------+---------+-----+-------+-------+-----+
-|DSP              |        -|    -|      -|      -|    -|
-|Expression       |        -|    -|      0|      4|    -|
-|FIFO             |        -|    -|      -|      -|    -|
-|Instance         |       88|  312|  63227|  81490|    0|
-|Memory           |       12|    -|   1568|    637|    0|
-|Multiplexer      |        -|    -|      -|   2040|    -|
-|Register         |        -|    -|     14|      -|    -|
-+-----------------+---------+-----+-------+-------+-----+
-|Total            |      100|  312|  64809|  84171|    0|
-+-----------------+---------+-----+-------+-------+-----+
-|Available        |      120|   80|  35200|  17600|    0|
-+-----------------+---------+-----+-------+-------+-----+
-|Utilization (%)  |       83|  390|    184|    478|    0|
-+-----------------+---------+-----+-------+-------+-----+
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|       4|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |      104|  732|  815405|  446759|    -|
+|Memory           |      344|    -|    1568|     637|    0|
+|Multiplexer      |        -|    -|       -|    5649|    -|
+|Register         |        -|    -|      14|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |      448|  732|  816987|  453049|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      120|   80|   35200|   17600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |      373|  915|    2320|    2574|    0|
++-----------------+---------+-----+--------+--------+-----+
 
 + Detail: 
     * Instance: 
-    +-------------------------------------------------------+--------------------------------------------+---------+-----+-------+-------+-----+
-    |                        Instance                       |                   Module                   | BRAM_18K| DSP |   FF  |  LUT  | URAM|
-    +-------------------------------------------------------+--------------------------------------------+---------+-----+-------+-------+-----+
-    |grp_cnn_Pipeline_1_fu_342                              |cnn_Pipeline_1                              |        0|    0|     13|     51|    0|
-    |grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_355  |cnn_Pipeline_clone_for_rows_clone_for_cols  |        0|    0|    509|    492|    0|
-    |grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_348      |cnn_Pipeline_pad_for_rows_pad_for_cols      |        0|    0|    271|    281|    0|
-    |grp_dataflow_section_fu_411                            |dataflow_section                            |       88|  312|  62434|  80666|    0|
-    +-------------------------------------------------------+--------------------------------------------+---------+-----+-------+-------+-----+
-    |Total                                                  |                                            |       88|  312|  63227|  81490|    0|
-    +-------------------------------------------------------+--------------------------------------------+---------+-----+-------+-------+-----+
+    +-------------------------------------------------------+--------------------------------------------+---------+-----+--------+--------+-----+
+    |                        Instance                       |                   Module                   | BRAM_18K| DSP |   FF   |   LUT  | URAM|
+    +-------------------------------------------------------+--------------------------------------------+---------+-----+--------+--------+-----+
+    |grp_cnn_Pipeline_1_fu_494                              |cnn_Pipeline_1                              |        0|    0|     492|     460|    0|
+    |grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_594  |cnn_Pipeline_clone_for_rows_clone_for_cols  |        0|    0|     821|     956|    0|
+    |grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_554      |cnn_Pipeline_pad_for_rows_pad_for_cols      |        0|    0|     818|     705|    0|
+    |grp_dataflow_section_fu_677                            |dataflow_section                            |      104|  732|  813274|  444638|    0|
+    +-------------------------------------------------------+--------------------------------------------+---------+-----+--------+--------+-----+
+    |Total                                                  |                                            |      104|  732|  815405|  446759|    0|
+    +-------------------------------------------------------+--------------------------------------------+---------+-----+--------+--------+-----+
 
     * DSP: 
     N/A
 
     * Memory: 
-    +---------------+------------------------+---------+----+----+-----+------+-----+------+-------------+
-    |     Memory    |         Module         | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
-    +---------------+------------------------+---------+----+----+-----+------+-----+------+-------------+
-    |pad_img0_U     |pad_img0_RAM_AUTO_1R1W  |        4|   0|   0|    0|  1156|   32|     1|        36992|
-    |pad_img1_U     |pad_img0_RAM_AUTO_1R1W  |        4|   0|   0|    0|  1156|   32|     1|        36992|
-    |pad_img2_U     |pad_img0_RAM_AUTO_1R1W  |        4|   0|   0|    0|  1156|   32|     1|        36992|
-    |pad_img3_U     |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_1_U   |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_2_U   |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_3_U   |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_4_U   |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_5_U   |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_6_U   |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_7_U   |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_8_U   |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_9_U   |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_10_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_11_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_12_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_13_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_14_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_15_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_16_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_17_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_18_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_19_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_20_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_21_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_22_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_23_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_24_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_25_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_26_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_27_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_28_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_29_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_30_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_31_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_32_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_33_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_34_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_35_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_36_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_37_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_38_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_39_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_40_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_41_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_42_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_43_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_44_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_45_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_46_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_47_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    |pad_img3_48_U  |pad_img3_RAM_AUTO_1R1W  |        0|  32|  13|    0|    25|   32|     1|          800|
-    +---------------+------------------------+---------+----+----+-----+------+-----+------+-------------+
-    |Total          |                        |       12|1568| 637|    0|  4693| 1664|    52|       150176|
-    +---------------+------------------------+---------+----+----+-----+------+-----+------+-------------+
+    +---------------+-----------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |     Memory    |            Module           | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------------+-----------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |pad_img0_U     |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_1_U   |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_2_U   |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_3_U   |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_4_U   |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_5_U   |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_6_U   |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_7_U   |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_8_U   |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_9_U   |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_10_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_11_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_12_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_13_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_14_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_15_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_16_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_17_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_18_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_19_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_20_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_21_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_22_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_23_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_24_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_25_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_26_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img0_27_U  |pad_img0_RAM_1WNR_AUTO_1R1W  |       12|   0|   0|    0|    45|   32|     1|         1440|
+    |pad_img1_U     |pad_img1_RAM_AUTO_1R1W       |        4|   0|   0|    0|  1156|   32|     1|        36992|
+    |pad_img2_U     |pad_img1_RAM_AUTO_1R1W       |        4|   0|   0|    0|  1156|   32|     1|        36992|
+    |pad_img3_U     |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_1_U   |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_2_U   |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_3_U   |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_4_U   |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_5_U   |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_6_U   |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_7_U   |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_8_U   |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_9_U   |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_10_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_11_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_12_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_13_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_14_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_15_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_16_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_17_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_18_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_19_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_20_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_21_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_22_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_23_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_24_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_25_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_26_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_27_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_28_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_29_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_30_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_31_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_32_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_33_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_34_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_35_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_36_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_37_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_38_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_39_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_40_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_41_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_42_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_43_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_44_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_45_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_46_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_47_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    |pad_img3_48_U  |pad_img3_RAM_AUTO_1R1W       |        0|  32|  13|    0|    25|   32|     1|          800|
+    +---------------+-----------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total          |                             |      344|1568| 637|    0|  4797| 2528|    79|       153504|
+    +---------------+-----------------------------+---------+----+----+-----+------+-----+------+-------------+
 
     * FIFO: 
     N/A
@@ -154,8 +181,8 @@
     +----------------------------------------------+----------+----+---+----+------------+------------+
     |                 Variable Name                | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------------------------+----------+----+---+----+------------+------------+
-    |ap_sync_grp_dataflow_section_fu_411_ap_done   |        or|   0|  0|   2|           1|           1|
-    |ap_sync_grp_dataflow_section_fu_411_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_grp_dataflow_section_fu_677_ap_done   |        or|   0|  0|   2|           1|           1|
+    |ap_sync_grp_dataflow_section_fu_677_ap_ready  |        or|   0|  0|   2|           1|           1|
     +----------------------------------------------+----------+----+---+----+------------+------------+
     |Total                                         |          |   0|  0|   4|           2|           2|
     +----------------------------------------------+----------+----+---+----+------------+------------+
@@ -165,9 +192,284 @@
     |         Name         | LUT| Input Size| Bits| Total Bits|
     +----------------------+----+-----------+-----+-----------+
     |ap_NS_fsm             |  48|          9|    1|          9|
-    |pad_img0_address0     |  25|          5|   11|         55|
+    |pad_img0_10_address0  |  25|          5|    6|         30|
+    |pad_img0_10_ce0       |  25|          5|    1|          5|
+    |pad_img0_10_ce1       |   9|          2|    1|          2|
+    |pad_img0_10_ce2       |   9|          2|    1|          2|
+    |pad_img0_10_ce3       |   9|          2|    1|          2|
+    |pad_img0_10_ce4       |   9|          2|    1|          2|
+    |pad_img0_10_ce5       |   9|          2|    1|          2|
+    |pad_img0_10_ce6       |   9|          2|    1|          2|
+    |pad_img0_10_d0        |  14|          3|   32|         96|
+    |pad_img0_10_we0       |  14|          3|    1|          3|
+    |pad_img0_11_address0  |  25|          5|    6|         30|
+    |pad_img0_11_ce0       |  25|          5|    1|          5|
+    |pad_img0_11_ce1       |   9|          2|    1|          2|
+    |pad_img0_11_ce2       |   9|          2|    1|          2|
+    |pad_img0_11_ce3       |   9|          2|    1|          2|
+    |pad_img0_11_ce4       |   9|          2|    1|          2|
+    |pad_img0_11_ce5       |   9|          2|    1|          2|
+    |pad_img0_11_ce6       |   9|          2|    1|          2|
+    |pad_img0_11_d0        |  14|          3|   32|         96|
+    |pad_img0_11_we0       |  14|          3|    1|          3|
+    |pad_img0_12_address0  |  25|          5|    6|         30|
+    |pad_img0_12_ce0       |  25|          5|    1|          5|
+    |pad_img0_12_ce1       |   9|          2|    1|          2|
+    |pad_img0_12_ce2       |   9|          2|    1|          2|
+    |pad_img0_12_ce3       |   9|          2|    1|          2|
+    |pad_img0_12_ce4       |   9|          2|    1|          2|
+    |pad_img0_12_ce5       |   9|          2|    1|          2|
+    |pad_img0_12_ce6       |   9|          2|    1|          2|
+    |pad_img0_12_d0        |  14|          3|   32|         96|
+    |pad_img0_12_we0       |  14|          3|    1|          3|
+    |pad_img0_13_address0  |  25|          5|    6|         30|
+    |pad_img0_13_ce0       |  25|          5|    1|          5|
+    |pad_img0_13_ce1       |   9|          2|    1|          2|
+    |pad_img0_13_ce2       |   9|          2|    1|          2|
+    |pad_img0_13_ce3       |   9|          2|    1|          2|
+    |pad_img0_13_ce4       |   9|          2|    1|          2|
+    |pad_img0_13_ce5       |   9|          2|    1|          2|
+    |pad_img0_13_ce6       |   9|          2|    1|          2|
+    |pad_img0_13_d0        |  14|          3|   32|         96|
+    |pad_img0_13_we0       |  14|          3|    1|          3|
+    |pad_img0_14_address0  |  25|          5|    6|         30|
+    |pad_img0_14_ce0       |  25|          5|    1|          5|
+    |pad_img0_14_ce1       |   9|          2|    1|          2|
+    |pad_img0_14_ce2       |   9|          2|    1|          2|
+    |pad_img0_14_ce3       |   9|          2|    1|          2|
+    |pad_img0_14_ce4       |   9|          2|    1|          2|
+    |pad_img0_14_ce5       |   9|          2|    1|          2|
+    |pad_img0_14_ce6       |   9|          2|    1|          2|
+    |pad_img0_14_d0        |  14|          3|   32|         96|
+    |pad_img0_14_we0       |  14|          3|    1|          3|
+    |pad_img0_15_address0  |  25|          5|    6|         30|
+    |pad_img0_15_ce0       |  25|          5|    1|          5|
+    |pad_img0_15_ce1       |   9|          2|    1|          2|
+    |pad_img0_15_ce2       |   9|          2|    1|          2|
+    |pad_img0_15_ce3       |   9|          2|    1|          2|
+    |pad_img0_15_ce4       |   9|          2|    1|          2|
+    |pad_img0_15_ce5       |   9|          2|    1|          2|
+    |pad_img0_15_ce6       |   9|          2|    1|          2|
+    |pad_img0_15_d0        |  14|          3|   32|         96|
+    |pad_img0_15_we0       |  14|          3|    1|          3|
+    |pad_img0_16_address0  |  25|          5|    6|         30|
+    |pad_img0_16_ce0       |  25|          5|    1|          5|
+    |pad_img0_16_ce1       |   9|          2|    1|          2|
+    |pad_img0_16_ce2       |   9|          2|    1|          2|
+    |pad_img0_16_ce3       |   9|          2|    1|          2|
+    |pad_img0_16_ce4       |   9|          2|    1|          2|
+    |pad_img0_16_ce5       |   9|          2|    1|          2|
+    |pad_img0_16_ce6       |   9|          2|    1|          2|
+    |pad_img0_16_d0        |  14|          3|   32|         96|
+    |pad_img0_16_we0       |  14|          3|    1|          3|
+    |pad_img0_17_address0  |  25|          5|    6|         30|
+    |pad_img0_17_ce0       |  25|          5|    1|          5|
+    |pad_img0_17_ce1       |   9|          2|    1|          2|
+    |pad_img0_17_ce2       |   9|          2|    1|          2|
+    |pad_img0_17_ce3       |   9|          2|    1|          2|
+    |pad_img0_17_ce4       |   9|          2|    1|          2|
+    |pad_img0_17_ce5       |   9|          2|    1|          2|
+    |pad_img0_17_ce6       |   9|          2|    1|          2|
+    |pad_img0_17_d0        |  14|          3|   32|         96|
+    |pad_img0_17_we0       |  14|          3|    1|          3|
+    |pad_img0_18_address0  |  25|          5|    6|         30|
+    |pad_img0_18_ce0       |  25|          5|    1|          5|
+    |pad_img0_18_ce1       |   9|          2|    1|          2|
+    |pad_img0_18_ce2       |   9|          2|    1|          2|
+    |pad_img0_18_ce3       |   9|          2|    1|          2|
+    |pad_img0_18_ce4       |   9|          2|    1|          2|
+    |pad_img0_18_ce5       |   9|          2|    1|          2|
+    |pad_img0_18_ce6       |   9|          2|    1|          2|
+    |pad_img0_18_d0        |  14|          3|   32|         96|
+    |pad_img0_18_we0       |  14|          3|    1|          3|
+    |pad_img0_19_address0  |  25|          5|    6|         30|
+    |pad_img0_19_ce0       |  25|          5|    1|          5|
+    |pad_img0_19_ce1       |   9|          2|    1|          2|
+    |pad_img0_19_ce2       |   9|          2|    1|          2|
+    |pad_img0_19_ce3       |   9|          2|    1|          2|
+    |pad_img0_19_ce4       |   9|          2|    1|          2|
+    |pad_img0_19_ce5       |   9|          2|    1|          2|
+    |pad_img0_19_ce6       |   9|          2|    1|          2|
+    |pad_img0_19_d0        |  14|          3|   32|         96|
+    |pad_img0_19_we0       |  14|          3|    1|          3|
+    |pad_img0_1_address0   |  25|          5|    6|         30|
+    |pad_img0_1_ce0        |  25|          5|    1|          5|
+    |pad_img0_1_ce1        |   9|          2|    1|          2|
+    |pad_img0_1_ce2        |   9|          2|    1|          2|
+    |pad_img0_1_ce3        |   9|          2|    1|          2|
+    |pad_img0_1_ce4        |   9|          2|    1|          2|
+    |pad_img0_1_ce5        |   9|          2|    1|          2|
+    |pad_img0_1_ce6        |   9|          2|    1|          2|
+    |pad_img0_1_d0         |  14|          3|   32|         96|
+    |pad_img0_1_we0        |  14|          3|    1|          3|
+    |pad_img0_20_address0  |  25|          5|    6|         30|
+    |pad_img0_20_ce0       |  25|          5|    1|          5|
+    |pad_img0_20_ce1       |   9|          2|    1|          2|
+    |pad_img0_20_ce2       |   9|          2|    1|          2|
+    |pad_img0_20_ce3       |   9|          2|    1|          2|
+    |pad_img0_20_ce4       |   9|          2|    1|          2|
+    |pad_img0_20_ce5       |   9|          2|    1|          2|
+    |pad_img0_20_ce6       |   9|          2|    1|          2|
+    |pad_img0_20_d0        |  14|          3|   32|         96|
+    |pad_img0_20_we0       |  14|          3|    1|          3|
+    |pad_img0_21_address0  |  25|          5|    6|         30|
+    |pad_img0_21_ce0       |  25|          5|    1|          5|
+    |pad_img0_21_ce1       |   9|          2|    1|          2|
+    |pad_img0_21_ce2       |   9|          2|    1|          2|
+    |pad_img0_21_ce3       |   9|          2|    1|          2|
+    |pad_img0_21_ce4       |   9|          2|    1|          2|
+    |pad_img0_21_ce5       |   9|          2|    1|          2|
+    |pad_img0_21_ce6       |   9|          2|    1|          2|
+    |pad_img0_21_d0        |  14|          3|   32|         96|
+    |pad_img0_21_we0       |  14|          3|    1|          3|
+    |pad_img0_22_address0  |  25|          5|    6|         30|
+    |pad_img0_22_ce0       |  25|          5|    1|          5|
+    |pad_img0_22_ce1       |   9|          2|    1|          2|
+    |pad_img0_22_ce2       |   9|          2|    1|          2|
+    |pad_img0_22_ce3       |   9|          2|    1|          2|
+    |pad_img0_22_ce4       |   9|          2|    1|          2|
+    |pad_img0_22_ce5       |   9|          2|    1|          2|
+    |pad_img0_22_ce6       |   9|          2|    1|          2|
+    |pad_img0_22_d0        |  14|          3|   32|         96|
+    |pad_img0_22_we0       |  14|          3|    1|          3|
+    |pad_img0_23_address0  |  25|          5|    6|         30|
+    |pad_img0_23_ce0       |  25|          5|    1|          5|
+    |pad_img0_23_ce1       |   9|          2|    1|          2|
+    |pad_img0_23_ce2       |   9|          2|    1|          2|
+    |pad_img0_23_ce3       |   9|          2|    1|          2|
+    |pad_img0_23_ce4       |   9|          2|    1|          2|
+    |pad_img0_23_ce5       |   9|          2|    1|          2|
+    |pad_img0_23_ce6       |   9|          2|    1|          2|
+    |pad_img0_23_d0        |  14|          3|   32|         96|
+    |pad_img0_23_we0       |  14|          3|    1|          3|
+    |pad_img0_24_address0  |  25|          5|    6|         30|
+    |pad_img0_24_ce0       |  25|          5|    1|          5|
+    |pad_img0_24_ce1       |   9|          2|    1|          2|
+    |pad_img0_24_ce2       |   9|          2|    1|          2|
+    |pad_img0_24_ce3       |   9|          2|    1|          2|
+    |pad_img0_24_ce4       |   9|          2|    1|          2|
+    |pad_img0_24_ce5       |   9|          2|    1|          2|
+    |pad_img0_24_ce6       |   9|          2|    1|          2|
+    |pad_img0_24_d0        |  14|          3|   32|         96|
+    |pad_img0_24_we0       |  14|          3|    1|          3|
+    |pad_img0_25_address0  |  25|          5|    6|         30|
+    |pad_img0_25_ce0       |  25|          5|    1|          5|
+    |pad_img0_25_ce1       |   9|          2|    1|          2|
+    |pad_img0_25_ce2       |   9|          2|    1|          2|
+    |pad_img0_25_ce3       |   9|          2|    1|          2|
+    |pad_img0_25_ce4       |   9|          2|    1|          2|
+    |pad_img0_25_ce5       |   9|          2|    1|          2|
+    |pad_img0_25_ce6       |   9|          2|    1|          2|
+    |pad_img0_25_d0        |  14|          3|   32|         96|
+    |pad_img0_25_we0       |  14|          3|    1|          3|
+    |pad_img0_26_address0  |  25|          5|    6|         30|
+    |pad_img0_26_ce0       |  25|          5|    1|          5|
+    |pad_img0_26_ce1       |   9|          2|    1|          2|
+    |pad_img0_26_ce2       |   9|          2|    1|          2|
+    |pad_img0_26_ce3       |   9|          2|    1|          2|
+    |pad_img0_26_ce4       |   9|          2|    1|          2|
+    |pad_img0_26_ce5       |   9|          2|    1|          2|
+    |pad_img0_26_ce6       |   9|          2|    1|          2|
+    |pad_img0_26_d0        |  14|          3|   32|         96|
+    |pad_img0_26_we0       |  14|          3|    1|          3|
+    |pad_img0_27_address0  |  25|          5|    6|         30|
+    |pad_img0_27_ce0       |  25|          5|    1|          5|
+    |pad_img0_27_ce1       |   9|          2|    1|          2|
+    |pad_img0_27_ce2       |   9|          2|    1|          2|
+    |pad_img0_27_ce3       |   9|          2|    1|          2|
+    |pad_img0_27_ce4       |   9|          2|    1|          2|
+    |pad_img0_27_ce5       |   9|          2|    1|          2|
+    |pad_img0_27_ce6       |   9|          2|    1|          2|
+    |pad_img0_27_d0        |  14|          3|   32|         96|
+    |pad_img0_27_we0       |  14|          3|    1|          3|
+    |pad_img0_2_address0   |  25|          5|    6|         30|
+    |pad_img0_2_ce0        |  25|          5|    1|          5|
+    |pad_img0_2_ce1        |   9|          2|    1|          2|
+    |pad_img0_2_ce2        |   9|          2|    1|          2|
+    |pad_img0_2_ce3        |   9|          2|    1|          2|
+    |pad_img0_2_ce4        |   9|          2|    1|          2|
+    |pad_img0_2_ce5        |   9|          2|    1|          2|
+    |pad_img0_2_ce6        |   9|          2|    1|          2|
+    |pad_img0_2_d0         |  14|          3|   32|         96|
+    |pad_img0_2_we0        |  14|          3|    1|          3|
+    |pad_img0_3_address0   |  25|          5|    6|         30|
+    |pad_img0_3_ce0        |  25|          5|    1|          5|
+    |pad_img0_3_ce1        |   9|          2|    1|          2|
+    |pad_img0_3_ce2        |   9|          2|    1|          2|
+    |pad_img0_3_ce3        |   9|          2|    1|          2|
+    |pad_img0_3_ce4        |   9|          2|    1|          2|
+    |pad_img0_3_ce5        |   9|          2|    1|          2|
+    |pad_img0_3_ce6        |   9|          2|    1|          2|
+    |pad_img0_3_d0         |  14|          3|   32|         96|
+    |pad_img0_3_we0        |  14|          3|    1|          3|
+    |pad_img0_4_address0   |  25|          5|    6|         30|
+    |pad_img0_4_ce0        |  25|          5|    1|          5|
+    |pad_img0_4_ce1        |   9|          2|    1|          2|
+    |pad_img0_4_ce2        |   9|          2|    1|          2|
+    |pad_img0_4_ce3        |   9|          2|    1|          2|
+    |pad_img0_4_ce4        |   9|          2|    1|          2|
+    |pad_img0_4_ce5        |   9|          2|    1|          2|
+    |pad_img0_4_ce6        |   9|          2|    1|          2|
+    |pad_img0_4_d0         |  14|          3|   32|         96|
+    |pad_img0_4_we0        |  14|          3|    1|          3|
+    |pad_img0_5_address0   |  25|          5|    6|         30|
+    |pad_img0_5_ce0        |  25|          5|    1|          5|
+    |pad_img0_5_ce1        |   9|          2|    1|          2|
+    |pad_img0_5_ce2        |   9|          2|    1|          2|
+    |pad_img0_5_ce3        |   9|          2|    1|          2|
+    |pad_img0_5_ce4        |   9|          2|    1|          2|
+    |pad_img0_5_ce5        |   9|          2|    1|          2|
+    |pad_img0_5_ce6        |   9|          2|    1|          2|
+    |pad_img0_5_d0         |  14|          3|   32|         96|
+    |pad_img0_5_we0        |  14|          3|    1|          3|
+    |pad_img0_6_address0   |  25|          5|    6|         30|
+    |pad_img0_6_ce0        |  25|          5|    1|          5|
+    |pad_img0_6_ce1        |   9|          2|    1|          2|
+    |pad_img0_6_ce2        |   9|          2|    1|          2|
+    |pad_img0_6_ce3        |   9|          2|    1|          2|
+    |pad_img0_6_ce4        |   9|          2|    1|          2|
+    |pad_img0_6_ce5        |   9|          2|    1|          2|
+    |pad_img0_6_ce6        |   9|          2|    1|          2|
+    |pad_img0_6_d0         |  14|          3|   32|         96|
+    |pad_img0_6_we0        |  14|          3|    1|          3|
+    |pad_img0_7_address0   |  25|          5|    6|         30|
+    |pad_img0_7_ce0        |  25|          5|    1|          5|
+    |pad_img0_7_ce1        |   9|          2|    1|          2|
+    |pad_img0_7_ce2        |   9|          2|    1|          2|
+    |pad_img0_7_ce3        |   9|          2|    1|          2|
+    |pad_img0_7_ce4        |   9|          2|    1|          2|
+    |pad_img0_7_ce5        |   9|          2|    1|          2|
+    |pad_img0_7_ce6        |   9|          2|    1|          2|
+    |pad_img0_7_d0         |  14|          3|   32|         96|
+    |pad_img0_7_we0        |  14|          3|    1|          3|
+    |pad_img0_8_address0   |  25|          5|    6|         30|
+    |pad_img0_8_ce0        |  25|          5|    1|          5|
+    |pad_img0_8_ce1        |   9|          2|    1|          2|
+    |pad_img0_8_ce2        |   9|          2|    1|          2|
+    |pad_img0_8_ce3        |   9|          2|    1|          2|
+    |pad_img0_8_ce4        |   9|          2|    1|          2|
+    |pad_img0_8_ce5        |   9|          2|    1|          2|
+    |pad_img0_8_ce6        |   9|          2|    1|          2|
+    |pad_img0_8_d0         |  14|          3|   32|         96|
+    |pad_img0_8_we0        |  14|          3|    1|          3|
+    |pad_img0_9_address0   |  25|          5|    6|         30|
+    |pad_img0_9_ce0        |  25|          5|    1|          5|
+    |pad_img0_9_ce1        |   9|          2|    1|          2|
+    |pad_img0_9_ce2        |   9|          2|    1|          2|
+    |pad_img0_9_ce3        |   9|          2|    1|          2|
+    |pad_img0_9_ce4        |   9|          2|    1|          2|
+    |pad_img0_9_ce5        |   9|          2|    1|          2|
+    |pad_img0_9_ce6        |   9|          2|    1|          2|
+    |pad_img0_9_d0         |  14|          3|   32|         96|
+    |pad_img0_9_we0        |  14|          3|    1|          3|
+    |pad_img0_address0     |  25|          5|    6|         30|
     |pad_img0_ce0          |  25|          5|    1|          5|
     |pad_img0_ce1          |   9|          2|    1|          2|
+    |pad_img0_ce2          |   9|          2|    1|          2|
+    |pad_img0_ce3          |   9|          2|    1|          2|
+    |pad_img0_ce4          |   9|          2|    1|          2|
+    |pad_img0_ce5          |   9|          2|    1|          2|
+    |pad_img0_ce6          |   9|          2|    1|          2|
     |pad_img0_d0           |  14|          3|   32|         96|
     |pad_img0_we0          |  14|          3|    1|          3|
     |pad_img1_address0     |  14|          3|   11|         33|
@@ -326,7 +628,7 @@
     |pad_img3_ce0          |  14|          3|    1|          3|
     |pad_img3_we0          |   9|          2|    1|          2|
     +----------------------+----+-----------+-----+-----------+
-    |Total                 |2040|        439|  418|       1230|
+    |Total                 |5649|       1205| 1660|       5157|
     +----------------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -334,12 +636,12 @@
     |                                Name                                | FF| LUT| Bits| Const Bits|
     +--------------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                           |  8|   0|    8|          0|
-    |ap_sync_reg_grp_dataflow_section_fu_411_ap_done                     |  1|   0|    1|          0|
-    |ap_sync_reg_grp_dataflow_section_fu_411_ap_ready                    |  1|   0|    1|          0|
-    |grp_cnn_Pipeline_1_fu_342_ap_start_reg                              |  1|   0|    1|          0|
-    |grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_355_ap_start_reg  |  1|   0|    1|          0|
-    |grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_348_ap_start_reg      |  1|   0|    1|          0|
-    |grp_dataflow_section_fu_411_ap_start_reg                            |  1|   0|    1|          0|
+    |ap_sync_reg_grp_dataflow_section_fu_677_ap_done                     |  1|   0|    1|          0|
+    |ap_sync_reg_grp_dataflow_section_fu_677_ap_ready                    |  1|   0|    1|          0|
+    |grp_cnn_Pipeline_1_fu_494_ap_start_reg                              |  1|   0|    1|          0|
+    |grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_594_ap_start_reg  |  1|   0|    1|          0|
+    |grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_554_ap_start_reg      |  1|   0|    1|          0|
+    |grp_dataflow_section_fu_677_ap_start_reg                            |  1|   0|    1|          0|
     +--------------------------------------------------------------------+---+----+-----+-----------+
     |Total                                                               | 14|   0|   14|          0|
     +--------------------------------------------------------------------+---+----+-----+-----------+
@@ -359,9 +661,18 @@
 |ap_done              |  out|    1|  ap_ctrl_hs|           cnn|  return value|
 |ap_idle              |  out|    1|  ap_ctrl_hs|           cnn|  return value|
 |ap_ready             |  out|    1|  ap_ctrl_hs|           cnn|  return value|
-|img_in_address0      |  out|   10|   ap_memory|        img_in|         array|
-|img_in_ce0           |  out|    1|   ap_memory|        img_in|         array|
-|img_in_q0            |   in|   32|   ap_memory|        img_in|         array|
+|img_in_0_address0    |  out|    8|   ap_memory|      img_in_0|         array|
+|img_in_0_ce0         |  out|    1|   ap_memory|      img_in_0|         array|
+|img_in_0_q0          |   in|   32|   ap_memory|      img_in_0|         array|
+|img_in_1_address0    |  out|    8|   ap_memory|      img_in_1|         array|
+|img_in_1_ce0         |  out|    1|   ap_memory|      img_in_1|         array|
+|img_in_1_q0          |   in|   32|   ap_memory|      img_in_1|         array|
+|img_in_2_address0    |  out|    8|   ap_memory|      img_in_2|         array|
+|img_in_2_ce0         |  out|    1|   ap_memory|      img_in_2|         array|
+|img_in_2_q0          |   in|   32|   ap_memory|      img_in_2|         array|
+|img_in_3_address0    |  out|    8|   ap_memory|      img_in_3|         array|
+|img_in_3_ce0         |  out|    1|   ap_memory|      img_in_3|         array|
+|img_in_3_q0          |   in|   32|   ap_memory|      img_in_3|         array|
 |prediction_address0  |  out|    4|   ap_memory|    prediction|         array|
 |prediction_ce0       |  out|    1|   ap_memory|    prediction|         array|
 |prediction_we0       |  out|    1|   ap_memory|    prediction|         array|

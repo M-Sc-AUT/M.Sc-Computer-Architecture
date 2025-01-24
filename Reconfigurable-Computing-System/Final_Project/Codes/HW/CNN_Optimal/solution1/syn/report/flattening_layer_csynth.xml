@@ -34,7 +34,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN_Optimal/src/flat.cpp:20</SourceLocation>
+<SourceLocation>CNN_Optimal/src/flat.cpp:24</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 

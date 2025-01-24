@@ -28,25 +28,29 @@ void dense_layer_soft_max( hls::stream<float> dense_to_softmax_streams[FILTERS],
 	}
 }
 
-void dense(hls::stream<float> & flat_to_dense_stream, int filter, hls::stream<float> & dense_to_softmax_stream)
+void dense( hls::stream<float> & flat_to_dense_stream,
+		    int filter,
+			hls::stream<float> & dense_to_softmax_stream )
 {
 	float flat_value;
 	float dense_array[DENSE_SIZE] = { 0 };
+
+
+	#pragma HLS ARRAY_PARTITION variable=dense_array complete
+	#pragma HLS PIPELINE II=1
 
 	dense_for_flat: for(int i = 0; i < FLAT_SIZE / FILTERS; ++i)
 	{
 		flat_value = flat_to_dense_stream.read();
 
-		for (int d = 0; d < DENSE_SIZE; ++d)
+		for(int d = 0; d < DENSE_SIZE; ++d)
 		{
-			#pragma HLS PIPELINE II=1
-
 			int index = filter * (FLAT_SIZE / FILTERS) + i;
 			dense_array[d] += dense_weights[index][d] * flat_value;
 		}
 	}
 
-	for (int j = 0; j < DENSE_SIZE; ++j)
+	for(int j = 0; j < DENSE_SIZE; ++j)
 	{
 		dense_to_softmax_stream.write(dense_array[j]);
 	}

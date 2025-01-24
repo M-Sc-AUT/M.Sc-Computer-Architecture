@@ -151,49 +151,49 @@ wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_g
 wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_grp_fu_68_p_din1;
 wire   [4:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_grp_fu_68_p_opcode;
 wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_grp_fu_68_p_ce;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_start;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_done;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_idle;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_ready;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_conv_to_pool_streams_1_read;
-wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_pool_to_flat_streams_1_din;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_pool_to_flat_streams_1_write;
-wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_din0;
-wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_din1;
-wire   [4:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_opcode;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_ce;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_start;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_done;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_idle;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_ready;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_conv_to_pool_streams_2_read;
-wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_pool_to_flat_streams_2_din;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_pool_to_flat_streams_2_write;
-wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_din0;
-wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_din1;
-wire   [4:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_opcode;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_ce;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_start;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_done;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_idle;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_ready;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_conv_to_pool_streams_3_read;
-wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_pool_to_flat_streams_3_din;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_pool_to_flat_streams_3_write;
-wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_din0;
-wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_din1;
-wire   [4:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_opcode;
-wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_ce;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_start;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_done;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_idle;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_ready;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_conv_to_pool_streams_1_read;
+wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_pool_to_flat_streams_1_din;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_pool_to_flat_streams_1_write;
+wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_din0;
+wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_din1;
+wire   [4:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_opcode;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_ce;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_start;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_done;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_idle;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_ready;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_conv_to_pool_streams_2_read;
+wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_pool_to_flat_streams_2_din;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_pool_to_flat_streams_2_write;
+wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_din0;
+wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_din1;
+wire   [4:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_opcode;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_ce;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_start;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_done;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_idle;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_ready;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_conv_to_pool_streams_3_read;
+wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_pool_to_flat_streams_3_din;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_pool_to_flat_streams_3_write;
+wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_din0;
+wire   [31:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_din1;
+wire   [4:0] grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_opcode;
+wire    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_ce;
 reg    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_ap_start_reg;
 reg    ap_block_state1_ignore_call9;
 wire    ap_CS_fsm_state2;
-reg    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_start_reg;
+reg    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_start_reg;
 wire    ap_CS_fsm_state4;
 wire    ap_CS_fsm_state5;
-reg    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_start_reg;
+reg    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_start_reg;
 wire    ap_CS_fsm_state7;
 wire    ap_CS_fsm_state8;
-reg    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_start_reg;
+reg    grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_start_reg;
 wire    ap_CS_fsm_state10;
 wire    ap_CS_fsm_state11;
 wire   [0:0] grp_fu_68_p2;
@@ -222,9 +222,9 @@ initial begin
 #0 ap_done_reg = 1'b0;
 #0 ap_CS_fsm = 11'd1;
 #0 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_ap_start_reg = 1'b0;
-#0 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_start_reg = 1'b0;
-#0 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_start_reg = 1'b0;
-#0 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_start_reg = 1'b0;
+#0 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_start_reg = 1'b0;
+#0 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_start_reg = 1'b0;
+#0 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_start_reg = 1'b0;
 end
 
 cnn_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36(
@@ -251,76 +251,76 @@ cnn_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols grp_max_pooling_layer
     .grp_fu_68_p_ce(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_grp_fu_68_p_ce)
 );
 
-cnn_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44(
+cnn_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_start),
-    .ap_done(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_done),
-    .ap_idle(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_idle),
-    .ap_ready(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_ready),
+    .ap_start(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_start),
+    .ap_done(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_done),
+    .ap_idle(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_idle),
+    .ap_ready(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_ready),
     .conv_to_pool_streams_1_dout(conv_to_pool_streams_1_dout),
     .conv_to_pool_streams_1_num_data_valid(11'd0),
     .conv_to_pool_streams_1_fifo_cap(11'd0),
     .conv_to_pool_streams_1_empty_n(conv_to_pool_streams_1_empty_n),
-    .conv_to_pool_streams_1_read(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_conv_to_pool_streams_1_read),
-    .pool_to_flat_streams_1_din(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_pool_to_flat_streams_1_din),
+    .conv_to_pool_streams_1_read(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_conv_to_pool_streams_1_read),
+    .pool_to_flat_streams_1_din(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_pool_to_flat_streams_1_din),
     .pool_to_flat_streams_1_num_data_valid(9'd0),
     .pool_to_flat_streams_1_fifo_cap(9'd0),
     .pool_to_flat_streams_1_full_n(pool_to_flat_streams_1_full_n),
-    .pool_to_flat_streams_1_write(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_pool_to_flat_streams_1_write),
-    .grp_fu_68_p_din0(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_din0),
-    .grp_fu_68_p_din1(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_din1),
-    .grp_fu_68_p_opcode(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_opcode),
+    .pool_to_flat_streams_1_write(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_pool_to_flat_streams_1_write),
+    .grp_fu_68_p_din0(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_din0),
+    .grp_fu_68_p_din1(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_din1),
+    .grp_fu_68_p_opcode(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_opcode),
     .grp_fu_68_p_dout0(grp_fu_68_p2),
-    .grp_fu_68_p_ce(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_ce)
+    .grp_fu_68_p_ce(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_ce)
 );
 
-cnn_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52(
+cnn_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_start),
-    .ap_done(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_done),
-    .ap_idle(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_idle),
-    .ap_ready(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_ready),
+    .ap_start(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_start),
+    .ap_done(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_done),
+    .ap_idle(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_idle),
+    .ap_ready(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_ready),
     .conv_to_pool_streams_2_dout(conv_to_pool_streams_2_dout),
     .conv_to_pool_streams_2_num_data_valid(11'd0),
     .conv_to_pool_streams_2_fifo_cap(11'd0),
     .conv_to_pool_streams_2_empty_n(conv_to_pool_streams_2_empty_n),
-    .conv_to_pool_streams_2_read(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_conv_to_pool_streams_2_read),
-    .pool_to_flat_streams_2_din(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_pool_to_flat_streams_2_din),
+    .conv_to_pool_streams_2_read(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_conv_to_pool_streams_2_read),
+    .pool_to_flat_streams_2_din(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_pool_to_flat_streams_2_din),
     .pool_to_flat_streams_2_num_data_valid(9'd0),
     .pool_to_flat_streams_2_fifo_cap(9'd0),
     .pool_to_flat_streams_2_full_n(pool_to_flat_streams_2_full_n),
-    .pool_to_flat_streams_2_write(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_pool_to_flat_streams_2_write),
-    .grp_fu_68_p_din0(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_din0),
-    .grp_fu_68_p_din1(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_din1),
-    .grp_fu_68_p_opcode(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_opcode),
+    .pool_to_flat_streams_2_write(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_pool_to_flat_streams_2_write),
+    .grp_fu_68_p_din0(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_din0),
+    .grp_fu_68_p_din1(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_din1),
+    .grp_fu_68_p_opcode(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_opcode),
     .grp_fu_68_p_dout0(grp_fu_68_p2),
-    .grp_fu_68_p_ce(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_ce)
+    .grp_fu_68_p_ce(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_ce)
 );
 
-cnn_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60(
+cnn_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8 grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_start),
-    .ap_done(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_done),
-    .ap_idle(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_idle),
-    .ap_ready(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_ready),
+    .ap_start(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_start),
+    .ap_done(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_done),
+    .ap_idle(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_idle),
+    .ap_ready(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_ready),
     .conv_to_pool_streams_3_dout(conv_to_pool_streams_3_dout),
     .conv_to_pool_streams_3_num_data_valid(11'd0),
     .conv_to_pool_streams_3_fifo_cap(11'd0),
     .conv_to_pool_streams_3_empty_n(conv_to_pool_streams_3_empty_n),
-    .conv_to_pool_streams_3_read(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_conv_to_pool_streams_3_read),
-    .pool_to_flat_streams_3_din(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_pool_to_flat_streams_3_din),
+    .conv_to_pool_streams_3_read(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_conv_to_pool_streams_3_read),
+    .pool_to_flat_streams_3_din(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_pool_to_flat_streams_3_din),
     .pool_to_flat_streams_3_num_data_valid(9'd0),
     .pool_to_flat_streams_3_fifo_cap(9'd0),
     .pool_to_flat_streams_3_full_n(pool_to_flat_streams_3_full_n),
-    .pool_to_flat_streams_3_write(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_pool_to_flat_streams_3_write),
-    .grp_fu_68_p_din0(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_din0),
-    .grp_fu_68_p_din1(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_din1),
-    .grp_fu_68_p_opcode(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_opcode),
+    .pool_to_flat_streams_3_write(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_pool_to_flat_streams_3_write),
+    .grp_fu_68_p_din0(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_din0),
+    .grp_fu_68_p_din1(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_din1),
+    .grp_fu_68_p_opcode(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_opcode),
     .grp_fu_68_p_dout0(grp_fu_68_p2),
-    .grp_fu_68_p_ce(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_ce)
+    .grp_fu_68_p_ce(grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_ce)
 );
 
 cnn_fcmp_32ns_32ns_1_2_no_dsp_1 #(
@@ -329,7 +329,7 @@ cnn_fcmp_32ns_32ns_1_2_no_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-fcmp_32ns_32ns_1_2_no_dsp_1_U520(
+fcmp_32ns_32ns_1_2_no_dsp_1_U1049(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_68_p0),
@@ -353,7 +353,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((1'b1 == ap_CS_fsm_state11) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_done == 1'b1))) begin
+        end else if (((1'b1 == ap_CS_fsm_state11) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_done == 1'b1))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -361,36 +361,36 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_start_reg <= 1'b0;
+        grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state4)) begin
-            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_start_reg <= 1'b1;
-        end else if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_ready == 1'b1)) begin
-            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_start_reg <= 1'b0;
+            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_start_reg <= 1'b1;
+        end else if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_ready == 1'b1)) begin
+            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_start_reg <= 1'b0;
+        grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state7)) begin
-            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_start_reg <= 1'b1;
-        end else if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_ready == 1'b1)) begin
-            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_start_reg <= 1'b0;
+            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_start_reg <= 1'b1;
+        end else if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_ready == 1'b1)) begin
+            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_start_reg <= 1'b0;
+        grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state10)) begin
-            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_start_reg <= 1'b1;
-        end else if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_ready == 1'b1)) begin
-            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_start_reg <= 1'b0;
+            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_start_reg <= 1'b1;
+        end else if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_ready == 1'b1)) begin
+            grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -422,7 +422,7 @@ end
 assign ap_ST_fsm_state10_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_done == 1'b0)) begin
+    if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_done == 1'b0)) begin
         ap_ST_fsm_state11_blk = 1'b1;
     end else begin
         ap_ST_fsm_state11_blk = 1'b0;
@@ -450,7 +450,7 @@ assign ap_ST_fsm_state3_blk = 1'b0;
 assign ap_ST_fsm_state4_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_done == 1'b0)) begin
+    if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_done == 1'b0)) begin
         ap_ST_fsm_state5_blk = 1'b1;
     end else begin
         ap_ST_fsm_state5_blk = 1'b0;
@@ -462,7 +462,7 @@ assign ap_ST_fsm_state6_blk = 1'b0;
 assign ap_ST_fsm_state7_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_done == 1'b0)) begin
+    if ((grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_done == 1'b0)) begin
         ap_ST_fsm_state8_blk = 1'b1;
     end else begin
         ap_ST_fsm_state8_blk = 1'b0;
@@ -472,7 +472,7 @@ end
 assign ap_ST_fsm_state9_blk = 1'b0;
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state11) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_done == 1'b1))) begin
+    if (((1'b1 == ap_CS_fsm_state11) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_done == 1'b1))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -497,7 +497,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        conv_to_pool_streams_1_read = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_conv_to_pool_streams_1_read;
+        conv_to_pool_streams_1_read = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_conv_to_pool_streams_1_read;
     end else begin
         conv_to_pool_streams_1_read = 1'b0;
     end
@@ -505,7 +505,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        conv_to_pool_streams_2_read = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_conv_to_pool_streams_2_read;
+        conv_to_pool_streams_2_read = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_conv_to_pool_streams_2_read;
     end else begin
         conv_to_pool_streams_2_read = 1'b0;
     end
@@ -513,7 +513,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state11)) begin
-        conv_to_pool_streams_3_read = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_conv_to_pool_streams_3_read;
+        conv_to_pool_streams_3_read = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_conv_to_pool_streams_3_read;
     end else begin
         conv_to_pool_streams_3_read = 1'b0;
     end
@@ -521,11 +521,11 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state11)) begin
-        grp_fu_68_ce = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_ce;
+        grp_fu_68_ce = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        grp_fu_68_ce = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_ce;
+        grp_fu_68_ce = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        grp_fu_68_ce = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_ce;
+        grp_fu_68_ce = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
         grp_fu_68_ce = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_grp_fu_68_p_ce;
     end else begin
@@ -535,11 +535,11 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state11)) begin
-        grp_fu_68_opcode = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_opcode;
+        grp_fu_68_opcode = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_opcode;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        grp_fu_68_opcode = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_opcode;
+        grp_fu_68_opcode = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_opcode;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        grp_fu_68_opcode = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_opcode;
+        grp_fu_68_opcode = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_opcode;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
         grp_fu_68_opcode = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_grp_fu_68_p_opcode;
     end else begin
@@ -549,11 +549,11 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state11)) begin
-        grp_fu_68_p0 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_din0;
+        grp_fu_68_p0 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        grp_fu_68_p0 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_din0;
+        grp_fu_68_p0 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        grp_fu_68_p0 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_din0;
+        grp_fu_68_p0 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
         grp_fu_68_p0 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_grp_fu_68_p_din0;
     end else begin
@@ -563,11 +563,11 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state11)) begin
-        grp_fu_68_p1 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_grp_fu_68_p_din1;
+        grp_fu_68_p1 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_grp_fu_68_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        grp_fu_68_p1 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_grp_fu_68_p_din1;
+        grp_fu_68_p1 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_grp_fu_68_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        grp_fu_68_p1 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_grp_fu_68_p_din1;
+        grp_fu_68_p1 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_grp_fu_68_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
         grp_fu_68_p1 = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_grp_fu_68_p_din1;
     end else begin
@@ -576,7 +576,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state11) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_done == 1'b1))) begin
+    if (((1'b1 == ap_CS_fsm_state11) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_done == 1'b1))) begin
         internal_ap_ready = 1'b1;
     end else begin
         internal_ap_ready = 1'b0;
@@ -593,7 +593,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        pool_to_flat_streams_1_write = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_pool_to_flat_streams_1_write;
+        pool_to_flat_streams_1_write = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_pool_to_flat_streams_1_write;
     end else begin
         pool_to_flat_streams_1_write = 1'b0;
     end
@@ -601,7 +601,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        pool_to_flat_streams_2_write = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_pool_to_flat_streams_2_write;
+        pool_to_flat_streams_2_write = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_pool_to_flat_streams_2_write;
     end else begin
         pool_to_flat_streams_2_write = 1'b0;
     end
@@ -609,7 +609,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state11)) begin
-        pool_to_flat_streams_3_write = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_pool_to_flat_streams_3_write;
+        pool_to_flat_streams_3_write = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_pool_to_flat_streams_3_write;
     end else begin
         pool_to_flat_streams_3_write = 1'b0;
     end
@@ -654,7 +654,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state5;
         end
         ap_ST_fsm_state5 : begin
-            if (((1'b1 == ap_CS_fsm_state5) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state5) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state6;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state5;
@@ -667,7 +667,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state8;
         end
         ap_ST_fsm_state8 : begin
-            if (((1'b1 == ap_CS_fsm_state8) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state8) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state9;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state8;
@@ -680,7 +680,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state11;
         end
         ap_ST_fsm_state11 : begin
-            if (((1'b1 == ap_CS_fsm_state11) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state11) & (grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state11;
@@ -718,21 +718,21 @@ end
 
 assign ap_ready = internal_ap_ready;
 
-assign grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_start = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_ap_start_reg;
+assign grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_start = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_ap_start_reg;
 
-assign grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_start = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_ap_start_reg;
+assign grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_start = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_ap_start_reg;
 
-assign grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_start = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_ap_start_reg;
+assign grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_start = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_ap_start_reg;
 
 assign grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_ap_start = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_ap_start_reg;
 
 assign pool_to_flat_streams_0_din = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36_pool_to_flat_streams_0_din;
 
-assign pool_to_flat_streams_1_din = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44_pool_to_flat_streams_1_din;
+assign pool_to_flat_streams_1_din = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44_pool_to_flat_streams_1_din;
 
-assign pool_to_flat_streams_2_din = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52_pool_to_flat_streams_2_din;
+assign pool_to_flat_streams_2_din = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52_pool_to_flat_streams_2_din;
 
-assign pool_to_flat_streams_3_din = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60_pool_to_flat_streams_3_din;
+assign pool_to_flat_streams_3_din = grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60_pool_to_flat_streams_3_din;
 
 assign start_out = real_start;
 

@@ -1,17 +1,24 @@
 <pragmas>
-<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 196>::stream()" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 196>::stream()" depth="196" type="fifo" variable="this"/>
+<pragma file="CNN_Optimal/src/flat.cpp" line="14" pragmaType="unroll" parentfunction="flattening" factor="-1" skip_exit_check="0"/>
+<pragma file="CNN_Optimal/src/flat.cpp" line="7" pragmaType="array_partition" parentfunction="flattening" dim="1" factor="0" mode="complete" dynamic="0" variable="pool_to_flat_stream"/>
+<pragma file="CNN_Optimal/src/flat.cpp" line="8" pragmaType="array_partition" parentfunction="flattening" dim="1" factor="0" mode="complete" dynamic="0" variable="flat_to_dense_stream"/>
+<pragma file="CNN_Optimal/src/pool.cpp" line="25" pragmaType="unroll" parentfunction="max_pooling" factor="-1" skip_exit_check="0"/>
+<pragma file="CNN_Optimal/src/pool.cpp" line="7" pragmaType="array_partition" parentfunction="max_pooling" dim="1" factor="0" mode="complete" dynamic="0" variable="conv_to_pool_stream"/>
+<pragma file="CNN_Optimal/src/pool.cpp" line="8" pragmaType="array_partition" parentfunction="max_pooling" dim="1" factor="0" mode="complete" dynamic="0" variable="pool_to_flat_stream"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="CNN_Optimal/src/dense.cpp" line="40" pragmaType="pipeline" parentfunction="dense" off="0" ii="1" style=""/>
+<pragma file="CNN_Optimal/src/dense.cpp" line="39" pragmaType="array_partition" parentfunction="dense" dim="1" factor="0" mode="complete" dynamic="0" variable="dense_array"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 10>::stream()" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 10>::stream()" depth="10" type="fifo" variable="this"/>
-<pragma file="CNN_Optimal/src/flat.cpp" line="10" pragmaType="unroll" parentfunction="flattening" factor="-1" skip_exit_check="0"/>
-<pragma file="CNN_Optimal/src/pool.cpp" line="21" pragmaType="unroll" parentfunction="max_pooling" factor="-1" skip_exit_check="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
-<pragma file="CNN_Optimal/src/dense.cpp" line="42" pragmaType="pipeline" parentfunction="dense" off="0" ii="1" rewind="0" style=""/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 196>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 196>::stream()" depth="196" type="fifo" variable="this"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 784>::stream()" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="stream" parentfunction="hls::stream<float, 784>::stream()" depth="784" type="fifo" variable="this"/>
 <pragma file="CNN_Optimal/src/cnn.cpp" line="19" pragmaType="dataflow" parentfunction="dataflow_section" disable_start_propagation="0"/>
-<pragma file="CNN_Optimal/src/utils.cpp" line="14" pragmaType="pipeline" parentfunction="normalization_and_padding" off="0" ii="1" rewind="0" style=""/>
+<pragma file="CNN_Optimal/src/utils.cpp" line="17" pragmaType="pipeline" parentfunction="normalization_and_padding" off="0" ii="1" rewind="0" style=""/>
+<pragma file="CNN_Optimal/src/utils.cpp" line="10" pragmaType="array_partition" parentfunction="normalization_and_padding" dim="1" factor="4" mode="block" dynamic="0" variable="img_in"/>
+<pragma file="CNN_Optimal/src/utils.cpp" line="11" pragmaType="array_partition" parentfunction="normalization_and_padding" dim="1" factor="4" mode="block" dynamic="0" variable="img_out"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 0>::stream()" off="0" region="0" recursive="0"/>
 </pragmas>

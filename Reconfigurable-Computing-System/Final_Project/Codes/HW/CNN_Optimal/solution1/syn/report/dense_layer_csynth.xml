@@ -18,32 +18,32 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.670</EstimatedClockPeriod>
+<EstimatedClockPeriod>10.274</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>2004</Best-caseLatency>
-<Average-caseLatency>2004</Average-caseLatency>
-<Worst-caseLatency>2004</Worst-caseLatency>
-<Best-caseRealTimeLatency>20.040 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>20.040 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>20.040 us</Worst-caseRealTimeLatency>
-<Interval-min>2004</Interval-min>
-<Interval-max>2004</Interval-max>
+<Best-caseLatency>996</Best-caseLatency>
+<Average-caseLatency>996</Average-caseLatency>
+<Worst-caseLatency>996</Worst-caseLatency>
+<Best-caseRealTimeLatency>10.233 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>10.233 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>10.233 us</Worst-caseRealTimeLatency>
+<Interval-min>996</Interval-min>
+<Interval-max>996</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN_Optimal/src/dense.cpp:59</SourceLocation>
+<SourceLocation>CNN_Optimal/src/dense.cpp:63</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>64</BRAM_18K>
-<DSP>20</DSP>
-<FF>3471</FF>
-<LUT>5439</LUT>
+<BRAM_18K>80</BRAM_18K>
+<DSP>200</DSP>
+<FF>736442</FF>
+<LUT>318778</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

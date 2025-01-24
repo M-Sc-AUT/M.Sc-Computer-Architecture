@@ -1,4 +1,3477 @@
 --- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 8, Column: 9 }
+Function:        _Z11max_poolingRN3hls6streamIfLi0EEES2_
+Args:            
+  - String:          'Adding '''
+  - Name:            pool_to_flat_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 7, Column: 9 }
+Function:        _Z11max_poolingRN3hls6streamIfLi0EEES2_
+Args:            
+  - String:          'Adding '''
+  - Name:            conv_to_pool_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/flat.cpp, Line: 8, Column: 9 }
+Function:        _Z10flatteningRN3hls6streamIfLi0EEES2_
+Args:            
+  - String:          'Adding '''
+  - Name:            flat_to_dense_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/flat.cpp, Line: 7, Column: 9 }
+Function:        _Z10flatteningRN3hls6streamIfLi0EEES2_
+Args:            
+  - String:          'Adding '''
+  - Name:            pool_to_flat_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            flat_to_dense_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            flat_to_dense_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            flat_to_dense_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            flat_to_dense_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            pool_to_flat_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            pool_to_flat_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            pool_to_flat_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            pool_to_flat_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            pool_to_flat_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            pool_to_flat_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            pool_to_flat_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            pool_to_flat_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            conv_to_pool_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            conv_to_pool_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            conv_to_pool_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Adding '''
+  - Name:            conv_to_pool_streams
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 52, Column: 52 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            flat_to_dense_streams
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 41, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pool_to_flat_streams
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 27, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            conv_to_pool_streams
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 53, Column: 19 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_53_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 42, Column: 18 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        dense_for_flat
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 46, Column: 20 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_53_2
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:53:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        dense_for_flat
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:42:18'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '196'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_46_1
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/dense.cpp:46:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 34, Column: 0 }
+Function:        _Z5denseRN3hls6streamIfLi0EEEiS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         ''
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: CNN_Optimal/src/flat.cpp, Line: 5, Column: 0 }
@@ -7,7 +3480,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        flat_for_cols
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/flat.cpp:8:18'
+  - LoopLoc:         'CNN_Optimal/src/flat.cpp:12:18'
   - String:          ') '
   - String:          'in function '''
   - String:          flattening
@@ -23,7 +3496,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        pool_for_pc
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:17:17'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:21:17'
   - String:          ') '
   - String:          'in function '''
   - String:          max_pooling
@@ -47,7 +3520,7 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 37, Column: 0 }
 Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Inlining function '''
@@ -55,7 +3528,7 @@ Args:
     DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 5, Column: 0 }
   - String:          ''' into '''
   - Caller:          'max_pooling_layer(hls::stream<float, 0>*, hls::stream<float, 0>*)'
-    DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+    DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 37, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -71,6 +3544,214 @@ Args:
   - Caller:          'cnn(float (*) [28], float*)'
     DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 64, Column: 0 }
   - String:          ''''
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            flat_to_dense_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            flat_to_dense_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            flat_to_dense_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            flat_to_dense_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            pool_to_flat_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            pool_to_flat_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            pool_to_flat_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 53, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            pool_to_flat_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            pool_to_flat_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            pool_to_flat_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            pool_to_flat_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            pool_to_flat_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            conv_to_pool_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            conv_to_pool_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            conv_to_pool_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 43, Column: 2 }
+Function:        _Z16dataflow_sectionPA34_fS0_S0_S0_Pf
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            conv_to_pool_streams
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
 ...
 --- !Passed
 Pass:            reflow-array-partition
@@ -144,6 +3825,46 @@ Args:
   - Dim:             '1'
   - String:          .
 ...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pad_img0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 64, Column: 0 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          img_in
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
 --- !HLSReportInfo
 Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
@@ -169,29 +3890,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        unknown
-  - String:          '> at '
-  - LoopLoc:         ''
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_49_2
-  - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/dense.cpp:49:19'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
   - LoopName:        flat_for_rows
   - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/flat.cpp:6:17'
+  - LoopLoc:         'CNN_Optimal/src/flat.cpp:10:17'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -201,7 +3902,7 @@ Args:
   - String:          'automatically set the pipeline for Loop< '
   - LoopName:        pool_for_cols
   - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:12:3'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:3'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -211,7 +3912,7 @@ Args:
   - String:          'automatically set the pipeline for Loop< '
   - LoopName:        pool_for_cols
   - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:12:3'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:3'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -221,7 +3922,7 @@ Args:
   - String:          'automatically set the pipeline for Loop< '
   - LoopName:        pool_for_cols
   - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:12:3'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:3'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -231,7 +3932,17 @@ Args:
   - String:          'automatically set the pipeline for Loop< '
   - LoopName:        pool_for_cols
   - String:          '> at '
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:12:3'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:3'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        pool_for_cols
+  - String:          '> at '
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:28:20'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -277,7 +3988,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 16, Column: 16 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 20, Column: 16 }
 Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Loop '''
@@ -287,7 +3998,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 16, Column: 16 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 20, Column: 16 }
 Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Loop '''
@@ -297,7 +4008,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 16, Column: 16 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 20, Column: 16 }
 Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Loop '''
@@ -307,7 +4018,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 16, Column: 16 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 20, Column: 16 }
 Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Loop '''
@@ -335,6 +4046,26 @@ Args:
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 34, Column: 20 }
+Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE.57.58
+Args:            
+  - String:          'Loop '''
+  - LoopName:        krn_for_rows
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 36, Column: 21 }
+Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE.57.58
+Args:            
+  - String:          'Loop '''
+  - LoopName:        krn_for_cols
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 9, Column: 0 }
@@ -353,13 +4084,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 37, Column: 0 }
 Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        pool_for_pr
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:16'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:20:16'
   - String:          ') '
   - String:          'in function '''
   - String:          max_pooling_layer
@@ -369,13 +4100,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 37, Column: 0 }
 Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        pool_for_pr
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:16'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:20:16'
   - String:          ') '
   - String:          'in function '''
   - String:          max_pooling_layer
@@ -385,13 +4116,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 37, Column: 0 }
 Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        pool_for_pr
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:16'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:20:16'
   - String:          ') '
   - String:          'in function '''
   - String:          max_pooling_layer
@@ -401,13 +4132,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 33, Column: 0 }
+DebugLoc:        { File: CNN_Optimal/src/pool.cpp, Line: 37, Column: 0 }
 Function:        _Z17max_pooling_layerPN3hls6streamIfLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        pool_for_pr
   - String:          ''' ('
-  - LoopLoc:         'CNN_Optimal/src/pool.cpp:16:16'
+  - LoopLoc:         'CNN_Optimal/src/pool.cpp:20:16'
   - String:          ') '
   - String:          'in function '''
   - String:          max_pooling_layer
@@ -543,6 +4274,134 @@ Args:
   - Factor:          '7'
 ...
 --- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
+Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE.57.58
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        krn_for_rows
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:34:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolution
+  - String:          ''' completely with a factor of '
+  - Factor:          '7'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
+Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE.57.58
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        krn_for_cols
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolution
+  - String:          ''' completely with a factor of '
+  - Factor:          '7'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
+Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE.57.58
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        krn_for_cols
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolution
+  - String:          ''' completely with a factor of '
+  - Factor:          '7'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
+Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE.57.58
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        krn_for_cols
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolution
+  - String:          ''' completely with a factor of '
+  - Factor:          '7'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
+Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE.57.58
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        krn_for_cols
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolution
+  - String:          ''' completely with a factor of '
+  - Factor:          '7'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
+Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE.57.58
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        krn_for_cols
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolution
+  - String:          ''' completely with a factor of '
+  - Factor:          '7'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
+Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE.57.58
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        krn_for_cols
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolution
+  - String:          ''' completely with a factor of '
+  - Factor:          '7'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: CNN_Optimal/src/conv.cpp, Line: 16, Column: 0 }
+Function:        _Z11convolutionPA34_fiRN3hls6streamIfLi0EEE.57.58
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        krn_for_cols
+  - String:          ''' ('
+  - LoopLoc:         'CNN_Optimal/src/conv.cpp:36:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          convolution
+  - String:          ''' completely with a factor of '
+  - Factor:          '7'
+...
+--- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: CNN_Optimal/src/Headers/conv_weights.h, Line: 11, 
@@ -617,6 +4476,209 @@ Args:
   - Dim:             '2'
   - String:          ''' for array '''
   - Name:            conv_weights
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: CNN_Optimal/src/Headers/dense_weights.h, Line: 11, 
+                   Column: 0 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=dense_weights'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn
+  - String:          ' '
+  - varLoc:          'CNN_Optimal/src/Headers/dense_weights.h:11:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'CNN_Optimal/src/dense.cpp:40:9'
+    DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 40, Column: 9 }
+  - VarName:         dense_weights
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: CNN_Optimal/src/dense.cpp, Line: 40, Column: 9 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            dense_weights
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=cyclic factor=7 variable=pad_img0_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn
+  - String:          ' '
+  - varLoc:          'CNN_Optimal/src/cnn.cpp:67:8'
+  - String:          ' '
+  - VarName:         pad_img0_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '7'
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            pad_img0_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=cyclic factor=7 variable=pad_img0_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn
+  - String:          ' '
+  - varLoc:          'CNN_Optimal/src/cnn.cpp:67:8'
+  - String:          ' '
+  - VarName:         pad_img0_1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '7'
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            pad_img0_1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=cyclic factor=7 variable=pad_img0_2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn
+  - String:          ' '
+  - varLoc:          'CNN_Optimal/src/cnn.cpp:67:8'
+  - String:          ' '
+  - VarName:         pad_img0_2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '7'
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            pad_img0_2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=cyclic factor=7 variable=pad_img0_3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn
+  - String:          ' '
+  - varLoc:          'CNN_Optimal/src/cnn.cpp:67:8'
+  - String:          ' '
+  - VarName:         pad_img0_3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '7'
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            pad_img0_3
   - String:          ''''
   - String:          ' due to '
   - String:          pipeline
@@ -705,6 +4767,27 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
+DebugLoc:        { File: CNN_Optimal/src/Headers/dense_weights.h, Line: 11, 
+                   Column: 0 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          dense_weights
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
 DebugLoc:        { File: CNN_Optimal/src/Headers/conv_weights.h, Line: 11, 
                    Column: 0 }
 Function:        _Z3cnnPA28_fPf
@@ -725,6 +4808,86 @@ Args:
   - String:          ' partitioning'
   - String:          ' on dimension '
   - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pad_img0_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '7'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pad_img0_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '7'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pad_img0_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '7'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: CNN_Optimal/src/cnn.cpp, Line: 67, Column: 8 }
+Function:        _Z3cnnPA28_fPf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pad_img0_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '7'
+  - String:          ' on dimension '
+  - Dim:             '2'
   - String:          .
 ...
 --- !Passed

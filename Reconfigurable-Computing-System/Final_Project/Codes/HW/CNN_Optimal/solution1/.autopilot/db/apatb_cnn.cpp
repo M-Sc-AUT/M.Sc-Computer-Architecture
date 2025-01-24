@@ -18,8 +18,14 @@
 using namespace std;
 
 // wrapc file define:
-#define AUTOTB_TVIN_img_in "../tv/cdatafile/c.cnn.autotvin_img_in.dat"
-#define AUTOTB_TVOUT_img_in "../tv/cdatafile/c.cnn.autotvout_img_in.dat"
+#define AUTOTB_TVIN_img_in_0 "../tv/cdatafile/c.cnn.autotvin_img_in_0.dat"
+#define AUTOTB_TVOUT_img_in_0 "../tv/cdatafile/c.cnn.autotvout_img_in_0.dat"
+#define AUTOTB_TVIN_img_in_1 "../tv/cdatafile/c.cnn.autotvin_img_in_1.dat"
+#define AUTOTB_TVOUT_img_in_1 "../tv/cdatafile/c.cnn.autotvout_img_in_1.dat"
+#define AUTOTB_TVIN_img_in_2 "../tv/cdatafile/c.cnn.autotvin_img_in_2.dat"
+#define AUTOTB_TVOUT_img_in_2 "../tv/cdatafile/c.cnn.autotvout_img_in_2.dat"
+#define AUTOTB_TVIN_img_in_3 "../tv/cdatafile/c.cnn.autotvin_img_in_3.dat"
+#define AUTOTB_TVOUT_img_in_3 "../tv/cdatafile/c.cnn.autotvout_img_in_3.dat"
 #define AUTOTB_TVIN_prediction "../tv/cdatafile/c.cnn.autotvin_prediction.dat"
 #define AUTOTB_TVOUT_prediction "../tv/cdatafile/c.cnn.autotvout_prediction.dat"
 
@@ -1026,10 +1032,10 @@ namespace hls::sim
 
 
 extern "C"
-void cnn_hw_stub_wrapper(void*, void*);
+void cnn_hw_stub_wrapper(void*, void*, void*, void*, void*);
 
 extern "C"
-void apatb_cnn_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_prediction)
+void apatb_cnn_hw(void* __xlx_apatb_param_img_in_0, void* __xlx_apatb_param_img_in_1, void* __xlx_apatb_param_img_in_2, void* __xlx_apatb_param_img_in_3, void* __xlx_apatb_param_prediction)
 {
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port0 {
@@ -1039,19 +1045,19 @@ void apatb_cnn_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_predic
     .width = 32,
     .asize = 4,
     .hbm = false,
-    .name = { "img_in" },
+    .name = { "img_in_0" },
 #ifdef POST_CHECK
 #else
     .owriter = nullptr,
 #ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_img_in),
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_img_in_0),
 #else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_img_in),
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_img_in_0),
 #endif
 #endif
   };
-  port0.param = { __xlx_apatb_param_img_in };
-  port0.nbytes = { 3136 };
+  port0.param = { __xlx_apatb_param_img_in_0 };
+  port0.nbytes = { 784 };
   port0.offset = {  };
   port0.hasWrite = { false };
 
@@ -1059,6 +1065,78 @@ void apatb_cnn_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_predic
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port1 {
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port1 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "img_in_1" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_img_in_1),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_img_in_1),
+#endif
+#endif
+  };
+  port1.param = { __xlx_apatb_param_img_in_1 };
+  port1.nbytes = { 784 };
+  port1.offset = {  };
+  port1.hasWrite = { false };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port2 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port2 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "img_in_2" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_img_in_2),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_img_in_2),
+#endif
+#endif
+  };
+  port2.param = { __xlx_apatb_param_img_in_2 };
+  port2.nbytes = { 784 };
+  port2.offset = {  };
+  port2.hasWrite = { false };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port3 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "img_in_3" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_img_in_3),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_img_in_3),
+#endif
+#endif
+  };
+  port3.param = { __xlx_apatb_param_img_in_3 };
+  port3.nbytes = { 784 };
+  port3.offset = {  };
+  port3.hasWrite = { false };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port4 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port4 {
 #endif
     .width = 32,
     .asize = 4,
@@ -1083,26 +1161,32 @@ void apatb_cnn_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_predic
 #endif
 #endif
   };
-  port1.param = { __xlx_apatb_param_prediction };
-  port1.nbytes = { 40 };
-  port1.offset = {  };
-  port1.hasWrite = { true };
+  port4.param = { __xlx_apatb_param_prediction };
+  port4.nbytes = { 40 };
+  port4.offset = {  };
+  port4.hasWrite = { true };
 
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
-    check(port1);
+    check(port4);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     CodeState = DUMP_INPUTS;
     dump(port0, port0.iwriter, tcl.AESL_transaction);
     dump(port1, port1.iwriter, tcl.AESL_transaction);
+    dump(port2, port2.iwriter, tcl.AESL_transaction);
+    dump(port3, port3.iwriter, tcl.AESL_transaction);
+    dump(port4, port4.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
+    port2.doTCL(tcl);
+    port3.doTCL(tcl);
+    port4.doTCL(tcl);
     CodeState = CALL_C_DUT;
-    cnn_hw_stub_wrapper(__xlx_apatb_param_img_in, __xlx_apatb_param_prediction);
+    cnn_hw_stub_wrapper(__xlx_apatb_param_img_in_0, __xlx_apatb_param_img_in_1, __xlx_apatb_param_img_in_2, __xlx_apatb_param_img_in_3, __xlx_apatb_param_prediction);
     CodeState = DUMP_OUTPUTS;
-    dump(port1, port1.owriter, tcl.AESL_transaction);
+    dump(port4, port4.owriter, tcl.AESL_transaction);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

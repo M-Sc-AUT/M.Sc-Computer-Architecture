@@ -157,7 +157,7 @@ cnn_fdiv_32ns_32ns_32_16_no_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fdiv_32ns_32ns_32_16_no_dsp_1_U572(
+fdiv_32ns_32ns_32_16_no_dsp_1_U1131(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_63_p0),

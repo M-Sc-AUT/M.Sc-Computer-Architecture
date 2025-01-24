@@ -1,5 +1,23 @@
 # This script segment is generated automatically by AutoPilot
 
+set name cnn_urem_6ns_5ns_6_10_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {urem} IMPL {auto} LATENCY 9 ALLOW_PRAGMA 1
+}
+
+
+set name cnn_mul_6ns_8ns_13_1_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
+}
+
+
+set name cnn_urem_6ns_4ns_3_10_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {urem} IMPL {auto} LATENCY 9 ALLOW_PRAGMA 1
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -11,14 +29,527 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1 \
+    id 7 \
+    name pad_img0_27 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_27 \
+    op interface \
+    ports { pad_img0_27_address0 { O 6 vector } pad_img0_27_ce0 { O 1 bit } pad_img0_27_we0 { O 1 bit } pad_img0_27_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_27'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 8 \
+    name pad_img0_26 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_26 \
+    op interface \
+    ports { pad_img0_26_address0 { O 6 vector } pad_img0_26_ce0 { O 1 bit } pad_img0_26_we0 { O 1 bit } pad_img0_26_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_26'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 9 \
+    name pad_img0_25 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_25 \
+    op interface \
+    ports { pad_img0_25_address0 { O 6 vector } pad_img0_25_ce0 { O 1 bit } pad_img0_25_we0 { O 1 bit } pad_img0_25_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_25'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 10 \
+    name pad_img0_24 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_24 \
+    op interface \
+    ports { pad_img0_24_address0 { O 6 vector } pad_img0_24_ce0 { O 1 bit } pad_img0_24_we0 { O 1 bit } pad_img0_24_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_24'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 11 \
+    name pad_img0_23 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_23 \
+    op interface \
+    ports { pad_img0_23_address0 { O 6 vector } pad_img0_23_ce0 { O 1 bit } pad_img0_23_we0 { O 1 bit } pad_img0_23_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_23'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 12 \
+    name pad_img0_22 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_22 \
+    op interface \
+    ports { pad_img0_22_address0 { O 6 vector } pad_img0_22_ce0 { O 1 bit } pad_img0_22_we0 { O 1 bit } pad_img0_22_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_22'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 13 \
+    name pad_img0_21 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_21 \
+    op interface \
+    ports { pad_img0_21_address0 { O 6 vector } pad_img0_21_ce0 { O 1 bit } pad_img0_21_we0 { O 1 bit } pad_img0_21_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_21'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 14 \
+    name pad_img0_20 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_20 \
+    op interface \
+    ports { pad_img0_20_address0 { O 6 vector } pad_img0_20_ce0 { O 1 bit } pad_img0_20_we0 { O 1 bit } pad_img0_20_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_20'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 15 \
+    name pad_img0_19 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_19 \
+    op interface \
+    ports { pad_img0_19_address0 { O 6 vector } pad_img0_19_ce0 { O 1 bit } pad_img0_19_we0 { O 1 bit } pad_img0_19_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_19'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 16 \
+    name pad_img0_18 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_18 \
+    op interface \
+    ports { pad_img0_18_address0 { O 6 vector } pad_img0_18_ce0 { O 1 bit } pad_img0_18_we0 { O 1 bit } pad_img0_18_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_18'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 17 \
+    name pad_img0_17 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_17 \
+    op interface \
+    ports { pad_img0_17_address0 { O 6 vector } pad_img0_17_ce0 { O 1 bit } pad_img0_17_we0 { O 1 bit } pad_img0_17_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_17'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 18 \
+    name pad_img0_16 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_16 \
+    op interface \
+    ports { pad_img0_16_address0 { O 6 vector } pad_img0_16_ce0 { O 1 bit } pad_img0_16_we0 { O 1 bit } pad_img0_16_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_16'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 19 \
+    name pad_img0_15 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_15 \
+    op interface \
+    ports { pad_img0_15_address0 { O 6 vector } pad_img0_15_ce0 { O 1 bit } pad_img0_15_we0 { O 1 bit } pad_img0_15_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_15'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 20 \
+    name pad_img0_14 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_14 \
+    op interface \
+    ports { pad_img0_14_address0 { O 6 vector } pad_img0_14_ce0 { O 1 bit } pad_img0_14_we0 { O 1 bit } pad_img0_14_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_14'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 21 \
+    name pad_img0_13 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_13 \
+    op interface \
+    ports { pad_img0_13_address0 { O 6 vector } pad_img0_13_ce0 { O 1 bit } pad_img0_13_we0 { O 1 bit } pad_img0_13_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_13'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 22 \
+    name pad_img0_12 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_12 \
+    op interface \
+    ports { pad_img0_12_address0 { O 6 vector } pad_img0_12_ce0 { O 1 bit } pad_img0_12_we0 { O 1 bit } pad_img0_12_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_12'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 23 \
+    name pad_img0_11 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_11 \
+    op interface \
+    ports { pad_img0_11_address0 { O 6 vector } pad_img0_11_ce0 { O 1 bit } pad_img0_11_we0 { O 1 bit } pad_img0_11_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_11'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 24 \
+    name pad_img0_10 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_10 \
+    op interface \
+    ports { pad_img0_10_address0 { O 6 vector } pad_img0_10_ce0 { O 1 bit } pad_img0_10_we0 { O 1 bit } pad_img0_10_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_10'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 25 \
+    name pad_img0_9 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_9 \
+    op interface \
+    ports { pad_img0_9_address0 { O 6 vector } pad_img0_9_ce0 { O 1 bit } pad_img0_9_we0 { O 1 bit } pad_img0_9_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_9'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 26 \
+    name pad_img0_8 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_8 \
+    op interface \
+    ports { pad_img0_8_address0 { O 6 vector } pad_img0_8_ce0 { O 1 bit } pad_img0_8_we0 { O 1 bit } pad_img0_8_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_8'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 27 \
+    name pad_img0_7 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_7 \
+    op interface \
+    ports { pad_img0_7_address0 { O 6 vector } pad_img0_7_ce0 { O 1 bit } pad_img0_7_we0 { O 1 bit } pad_img0_7_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_7'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 28 \
+    name pad_img0_6 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_6 \
+    op interface \
+    ports { pad_img0_6_address0 { O 6 vector } pad_img0_6_ce0 { O 1 bit } pad_img0_6_we0 { O 1 bit } pad_img0_6_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_6'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 29 \
+    name pad_img0_5 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_5 \
+    op interface \
+    ports { pad_img0_5_address0 { O 6 vector } pad_img0_5_ce0 { O 1 bit } pad_img0_5_we0 { O 1 bit } pad_img0_5_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_5'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 30 \
+    name pad_img0_4 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_4 \
+    op interface \
+    ports { pad_img0_4_address0 { O 6 vector } pad_img0_4_ce0 { O 1 bit } pad_img0_4_we0 { O 1 bit } pad_img0_4_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_4'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 31 \
+    name pad_img0_3 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_3 \
+    op interface \
+    ports { pad_img0_3_address0 { O 6 vector } pad_img0_3_ce0 { O 1 bit } pad_img0_3_we0 { O 1 bit } pad_img0_3_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_3'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 32 \
+    name pad_img0_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_2 \
+    op interface \
+    ports { pad_img0_2_address0 { O 6 vector } pad_img0_2_ce0 { O 1 bit } pad_img0_2_we0 { O 1 bit } pad_img0_2_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 33 \
+    name pad_img0_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename pad_img0_1 \
+    op interface \
+    ports { pad_img0_1_address0 { O 6 vector } pad_img0_1_ce0 { O 1 bit } pad_img0_1_we0 { O 1 bit } pad_img0_1_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 34 \
     name pad_img0 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename pad_img0 \
     op interface \
-    ports { pad_img0_address0 { O 11 vector } pad_img0_ce0 { O 1 bit } pad_img0_we0 { O 1 bit } pad_img0_d0 { O 32 vector } } \
+    ports { pad_img0_address0 { O 6 vector } pad_img0_ce0 { O 1 bit } pad_img0_we0 { O 1 bit } pad_img0_d0 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img0'"

@@ -303,6 +303,9 @@ void normalization_and_padding(float img_in[28][28], float img_out[(28 + (7 - 1)
 
 void normalization_and_padding(float img_in[28][28], float img_out[(28 + (7 - 1))][(28 + (7 - 1))])
 {
+#pragma HLS ARRAY_PARTITION variable=img_in block factor=4 dim=1
+#pragma HLS ARRAY_PARTITION variable=img_out block factor=4 dim=1
+
  pad_for_rows: for(int r = 0; r < 28; ++r)
  {
   pad_for_cols: for(int c = 0; c < 28; ++c)

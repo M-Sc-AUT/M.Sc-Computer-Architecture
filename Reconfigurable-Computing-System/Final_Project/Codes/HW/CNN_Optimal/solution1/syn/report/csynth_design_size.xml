@@ -2,54 +2,54 @@
     <item name="Total Instructions per Compilation Phase">
         <table>
             <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">,  1441, After all functions are compiled and linked into a single design</column>
+            <column name="Compile/Link">,   1463, After all functions are compiled and linked into a single design</column>
             <column name="">, , </column>
             <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll,    965, user unroll pragmas are applied</column>
-            <column name="">(2) simplification,    813, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline,    762, user inline pragmas are applied</column>
-            <column name="">(4) simplification,    762, simplification of applied user inline pragmas</column>
+            <column name="">(1) unroll,  59070, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  42363, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  34400, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  34400, simplification of applied user inline pragmas</column>
             <column name="">, , </column>
             <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition,    785, user array partition pragmas are applied</column>
-            <column name="">(2) simplification,    783, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate ,    783, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape,    782, apply array reshape pragmas</column>
-            <column name="">(5) access patterns,    796, array access pattern optmizations</column>
+            <column name="">(1) array partition,  34486, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  34482, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  34482, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  34479, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  34490, array access pattern optmizations</column>
             <column name="">, , </column>
             <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification,    782, loop and instruction simplification</column>
-            <column name="">(2) parallelization,  1916, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition, 18595, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification,  7599, simplification of design after performance transformations</column>
+            <column name="">(1) loop simplification,  34476, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  35866, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 132665 *, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  45397, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering,  7574, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations,  8014, high level synthesis optimizations</column>
+            <column name="">(1) lowering,  46197, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  48217, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="cnn" col1="cnn.cpp:63" col2="1441" col3="762" col4="796" col5="7599" col6="8014">
-                    <row id="9" col0="normalization_and_padding" col1="utils.cpp:8" col2="34" col3="" col4="" col5="" col6=""/>
-                    <row id="1" col0="dataflow_section" col1="cnn.cpp:13" col2="1329" col3="706" col4="744" col5="6976" col6="7368">
-                        <row id="2" col0="convolutional_layer" col1="conv.cpp:52" col2="401" col3="212" col4="217" col5="6465" col6="6428">
-                            <row id="7" col0="convolution" col1="conv.cpp:13" col2="392" col2_disp=" 392 (4 calls)" col3="204" col3_disp="204 (4 calls)" col4="212" col4_disp="212 (4 calls)" col5="6460" col5_disp="6,460 (4 calls)" col6="6423" col6_disp="6,423 (4 calls)">
-                                <row id="4" col0="relu" col1="conv.cpp:5" col2="28" col2_disp="  28 (4 calls)" col3="" col4="" col5="" col6=""/>
+                <row id="0" col0="cnn" col1="cnn.cpp:63" col2="1463" col3="34400" col4="34490" col5="45397" col6="48217">
+                    <row id="2" col0="normalization_and_padding" col1="utils.cpp:8" col2="36" col3="" col4="" col5="" col6=""/>
+                    <row id="4" col0="dataflow_section" col1="cnn.cpp:13" col2="1349" col3="34343" col4="34355" col5="44183" col6="46971">
+                        <row id="6" col0="convolutional_layer" col1="conv.cpp:52" col2="401" col3="212" col4="224" col5="9284" col6="9247">
+                            <row id="12" col0="convolution" col1="conv.cpp:13" col2="392" col2_disp=" 392 (4 calls)" col3="204" col3_disp="  204 (4 calls)" col4="219" col4_disp="  219 (4 calls)" col5="9279" col5_disp="9,279 (4 calls)" col6="9242" col6_disp="9,242 (4 calls)">
+                                <row id="10" col0="relu" col1="conv.cpp:5" col2="28" col2_disp="  28 (4 calls)" col3="" col4="" col5="" col6=""/>
                             </row>
                         </row>
-                        <row id="11" col0="max_pooling_layer" col1="pool.cpp:31" col2="281" col3="99" col4="97" col5="93" col6="181">
-                            <row id="3" col0="max_pooling" col1="pool.cpp:4" col2="268" col2_disp=" 268 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="8" col0="max_pooling_layer" col1="pool.cpp:35" col2="289" col3="99" col4="97" col5="93" col6="181">
+                            <row id="9" col0="max_pooling" col1="pool.cpp:4" col2="276" col2_disp=" 276 (4 calls)" col3="" col4="" col5="" col6=""/>
                         </row>
-                        <row id="12" col0="flattening_layer" col1="flat.cpp:17" col2="185" col3="147" col4="141" col5="141" col6="381">
-                            <row id="10" col0="flattening" col1="flat.cpp:3" col2="172" col2_disp=" 172 (4 calls)" col3="136" col3_disp="136 (4 calls)" col4="136" col4_disp="136 (4 calls)" col5="136" col5_disp=" 136 (4 calls)" col6="376" col6_disp=" 376 (4 calls)"/>
+                        <row id="3" col0="flattening_layer" col1="flat.cpp:21" col2="193" col3="147" col4="141" col5="141" col6="381">
+                            <row id="1" col0="flattening" col1="flat.cpp:3" col2="180" col2_disp=" 180 (4 calls)" col3="136" col3_disp="  136 (4 calls)" col4="136" col4_disp="  136 (4 calls)" col5="136" col5_disp="  136 (4 calls)" col6="376" col6_disp="  376 (4 calls)"/>
                         </row>
-                        <row id="8" col0="dense_layer" col1="dense.cpp:56" col2="285" col3="163" col4="157" col5="157" col6="237">
-                            <row id="5" col0="dense" col1="dense.cpp:31" col2="272" col2_disp=" 272 (4 calls)" col3="152" col3_disp="152 (4 calls)" col4="152" col4_disp="152 (4 calls)" col5="152" col5_disp=" 152 (4 calls)" col6="232" col6_disp=" 232 (4 calls)"/>
+                        <row id="11" col0="dense_layer" col1="dense.cpp:60" col2="289" col3="33775" col4="33761" col5="34545" col6="37021">
+                            <row id="7" col0="dense" col1="dense.cpp:31" col2="276" col2_disp=" 276 (4 calls)" col3="33764" col3_disp="33,764 (4 calls)" col4="33756" col4_disp="33,756 (4 calls)" col5="34540" col5_disp="34,540 (4 calls)" col6="37016" col6_disp="37,016 (4 calls)"/>
                         </row>
-                        <row id="6" col0="dense_layer_soft_max" col1="dense.cpp:7" col2="61" col3="31" col4="42" col5="30" col6="53"/>
+                        <row id="5" col0="dense_layer_soft_max" col1="dense.cpp:7" col2="61" col3="31" col4="42" col5="30" col6="53"/>
                     </row>
                 </row>
             </rows>

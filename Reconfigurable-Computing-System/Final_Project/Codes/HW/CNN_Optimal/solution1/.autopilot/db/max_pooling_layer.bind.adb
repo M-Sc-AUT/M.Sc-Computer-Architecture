@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3882160608</coreId>
+						<coreId>3659314640</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4023511040</coreId>
+						<coreId>3672527424</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4023511552</coreId>
+						<coreId>3671974656</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3856255504</coreId>
+						<coreId>1314013527</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3834844144</coreId>
+						<coreId>3659749312</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702192160</coreId>
+						<coreId>1886330980</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -368,7 +368,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886330980</coreId>
+						<coreId>544106784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -395,7 +395,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>empty_17</name>
+						<name>empty_22</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -413,7 +413,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1718558821</coreId>
+						<coreId>1886330980</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -439,7 +439,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>empty_18</name>
+						<name>empty_23</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -457,7 +457,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886330980</coreId>
+						<coreId>842690672</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -500,7 +500,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>825913456</coreId>
+						<coreId>1797268061</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -527,7 +527,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>empty_19</name>
+						<name>empty_24</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -545,7 +545,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1914708526</coreId>
+						<coreId>543518057</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -571,7 +571,7 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>empty_20</name>
+						<name>empty_25</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -589,7 +589,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1063479664</coreId>
+						<coreId>1701669236</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -632,7 +632,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1684959075</coreId>
+						<coreId>541345096</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -659,7 +659,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>empty_21</name>
+						<name>empty_26</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -677,7 +677,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1145981250</coreId>
+						<coreId>1986948963</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -703,7 +703,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>empty_22</name>
+						<name>empty_27</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -721,7 +721,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>573386029</coreId>
+						<coreId>543516513</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -764,7 +764,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1635000354</coreId>
+						<coreId>539110978</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -791,10 +791,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>_ln38</name>
+						<name>_ln42</name>
 						<fileName>CNN_Optimal/src/pool.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>38</lineNumber>
+						<lineNumber>42</lineNumber>
 						<contextFuncName>max_pooling_layer</contextFuncName>
 						<contextNormFuncName>max_pooling_layer</contextNormFuncName>
 						<inlineStackInfo>
@@ -810,7 +810,7 @@
 											<first>CNN_Optimal/src/pool.cpp</first>
 											<second>max_pooling_layer</second>
 										</first>
-										<second>38</second>
+										<second>42</second>
 									</item>
 								</second>
 							</item>
@@ -823,7 +823,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1600941935</coreId>
+						<coreId>808529205</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -868,7 +868,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869182049</coreId>
+						<coreId>1031040613</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -881,37 +881,6 @@
 					<Obj>
 						<type>2</type>
 						<id>38</id>
-						<name>max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1818324329</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<const_type>6</const_type>
-				<content>&lt;constant:max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5&gt;</content>
-			</item>
-			<item class_id_reference="16" object_id="_23">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>44</id>
 						<name>max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -930,7 +899,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936683105</coreId>
+						<coreId>1869635878</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -938,11 +907,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_24">
+			<item class_id_reference="16" object_id="_23">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>50</id>
+						<id>44</id>
 						<name>max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -961,13 +930,44 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936683105</coreId>
+						<coreId>876245104</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
 				<content>&lt;constant:max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_24">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>50</id>
+						<name>max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>574453865</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -995,7 +995,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>539452513</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1732,7 +1732,7 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item class_id="46" tracking_level="0" version="0">
-			<first>grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5_fu_44</first>
+			<first>grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -1741,7 +1741,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_52</first>
+			<first>grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -1750,7 +1750,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_60</first>
+			<first>grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

@@ -363,18 +363,22 @@ namespace __gnu_cxx
 
 void max_pooling(hls::stream<float> & conv_to_pool_stream, hls::stream<float> & pool_to_flat_stream)
 {
+
+#pragma HLS ARRAY_PARTITION variable=conv_to_pool_stream complete
+#pragma HLS ARRAY_PARTITION variable=pool_to_flat_stream complete
+
  float pool = 0.0;
 
  pool_for_rows:
- for (int r = 0; r < 28; r += 2)
+ for(int r = 0; r < 28; r += 2)
  {
   pool_for_cols:
   for(int c = 0; c < 28; c += 2)
   {
   pool = 1.17549435e-38F;
 
-  pool_for_pr: for (int pr = 0; pr < 2; ++pr)
-   pool_for_pc: for (int pc = 0; pc < 2; ++pc)
+  pool_for_pr: for(int pr = 0; pr < 2; ++pr)
+   pool_for_pc: for(int pc = 0; pc < 2; ++pc)
    {
     float value = conv_to_pool_stream.read();
 

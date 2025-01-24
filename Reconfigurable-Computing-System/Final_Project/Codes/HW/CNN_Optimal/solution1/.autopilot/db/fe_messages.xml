@@ -5,32 +5,107 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW/CNN_Optimal/solution1/csynth.tcl:26:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/dense.cpp:42:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/dense.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=dense_array complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/dense.cpp:40:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/flat.cpp:10:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/flat.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="flattening" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=pool_to_flat_stream complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/flat.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="flattening" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=flat_to_dense_stream complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/flat.cpp:14:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="flattening" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/pool.cpp:21:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/pool.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="max_pooling" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=conv_to_pool_stream complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/pool.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="max_pooling" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=pool_to_flat_stream complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/pool.cpp:25:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="max_pooling" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/utils.cpp:14:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/utils.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="normalization_and_padding" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=img_in block factor=4 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/utils.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="normalization_and_padding" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=img_out block factor=4 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CNN_Optimal/src/utils.cpp:17:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="normalization_and_padding" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/flat.cpp:5:0" msg_body="Unrolling loop 'flat_for_cols' (CNN_Optimal/src/flat.cpp:8:18) in function 'flattening' completely with a factor of 14">
-        <args Factor="14" LoopLoc="CNN_Optimal/src/flat.cpp:8:18" LoopName="flat_for_cols"/>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:53:2" msg_body="Adding 'flat_to_dense_streams' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="flat_to_dense_streams"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/pool.cpp:5:0" msg_body="Unrolling loop 'pool_for_pc' (CNN_Optimal/src/pool.cpp:17:17) in function 'max_pooling' completely with a factor of 2">
-        <args Factor="2" LoopLoc="CNN_Optimal/src/pool.cpp:17:17" LoopName="pool_for_pc"/>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:53:2" msg_body="Adding 'pool_to_flat_streams' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="pool_to_flat_streams"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:43:2" msg_body="Adding 'pool_to_flat_streams' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="pool_to_flat_streams"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:43:2" msg_body="Adding 'conv_to_pool_streams' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="conv_to_pool_streams"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:52:52" msg_body="Disaggregating variable 'flat_to_dense_streams'">
+        <args Name="flat_to_dense_streams"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:41:2" msg_body="Disaggregating variable 'pool_to_flat_streams'">
+        <args Name="pool_to_flat_streams"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:27:2" msg_body="Disaggregating variable 'conv_to_pool_streams'">
+        <args Name="conv_to_pool_streams"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN_Optimal/src/dense.cpp:53:19" msg_body="Loop 'VITIS_LOOP_53_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_53_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN_Optimal/src/dense.cpp:42:18" msg_body="Loop 'dense_for_flat' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="dense_for_flat"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN_Optimal/src/dense.cpp:46:20" msg_body="Loop 'VITIS_LOOP_46_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_46_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/dense.cpp:34:0" msg_body="Unrolling loop 'VITIS_LOOP_53_2' (CNN_Optimal/src/dense.cpp:53:19) in function 'dense' completely with a factor of 10">
+        <args Factor="10" LoopLoc="CNN_Optimal/src/dense.cpp:53:19" LoopName="VITIS_LOOP_53_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/dense.cpp:34:0" msg_body="Unrolling loop 'dense_for_flat' (CNN_Optimal/src/dense.cpp:42:18) in function 'dense' completely with a factor of 196">
+        <args Factor="196" LoopLoc="CNN_Optimal/src/dense.cpp:42:18" LoopName="dense_for_flat"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/dense.cpp:34:0" msg_body="Unrolling loop 'VITIS_LOOP_46_1' (CNN_Optimal/src/dense.cpp:46:20) in function 'dense' completely with a factor of 10">
+        <args Factor="10" LoopLoc="CNN_Optimal/src/dense.cpp:46:20" LoopName="VITIS_LOOP_46_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/dense.cpp:34:0" msg_body="Unrolling loop 'anonymous' () in function 'dense' completely with a factor of 10">
+        <args Factor="10" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/flat.cpp:5:0" msg_body="Unrolling loop 'flat_for_cols' (CNN_Optimal/src/flat.cpp:12:18) in function 'flattening' completely with a factor of 14">
+        <args Factor="14" LoopLoc="CNN_Optimal/src/flat.cpp:12:18" LoopName="flat_for_cols"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/pool.cpp:5:0" msg_body="Unrolling loop 'pool_for_pc' (CNN_Optimal/src/pool.cpp:21:17) in function 'max_pooling' completely with a factor of 2">
+        <args Factor="2" LoopLoc="CNN_Optimal/src/pool.cpp:21:17" LoopName="pool_for_pc"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN_Optimal/src/conv.cpp:16:0" msg_body="Inlining function 'relu(float)' into 'convolution(float (*) [34], int, hls::stream&lt;float, 0&gt;&amp;)'">
         <args Callee="relu(float)" Callee-DebugLoc="File CNN_Optimal/src/conv.cpp Line 6 Column 0" Caller="convolution(float (*) [34], int, hls::stream&lt;float, 0&gt;&amp;)" Caller-DebugLoc="File CNN_Optimal/src/conv.cpp Line 16 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN_Optimal/src/pool.cpp:33:0" msg_body="Inlining function 'max_pooling(hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)' into 'max_pooling_layer(hls::stream&lt;float, 0&gt;*, hls::stream&lt;float, 0&gt;*)'">
-        <args Callee="max_pooling(hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)" Callee-DebugLoc="File CNN_Optimal/src/pool.cpp Line 5 Column 0" Caller="max_pooling_layer(hls::stream&lt;float, 0&gt;*, hls::stream&lt;float, 0&gt;*)" Caller-DebugLoc="File CNN_Optimal/src/pool.cpp Line 33 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN_Optimal/src/pool.cpp:37:0" msg_body="Inlining function 'max_pooling(hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)' into 'max_pooling_layer(hls::stream&lt;float, 0&gt;*, hls::stream&lt;float, 0&gt;*)'">
+        <args Callee="max_pooling(hls::stream&lt;float, 0&gt;&amp;, hls::stream&lt;float, 0&gt;&amp;)" Callee-DebugLoc="File CNN_Optimal/src/pool.cpp Line 5 Column 0" Caller="max_pooling_layer(hls::stream&lt;float, 0&gt;*, hls::stream&lt;float, 0&gt;*)" Caller-DebugLoc="File CNN_Optimal/src/pool.cpp Line 37 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:64:0" msg_body="Inlining function 'normalization_and_padding(float (*) [28], float (*) [34])' into 'cnn(float (*) [28], float*)'">
         <args Callee="normalization_and_padding(float (*) [28], float (*) [34])" Callee-DebugLoc="File CNN_Optimal/src/utils.cpp Line 9 Column 0" Caller="cnn(float (*) [28], float*)" Caller-DebugLoc="File CNN_Optimal/src/cnn.cpp Line 64 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-253" msg_severity="WARNING" msg_loc="CNN_Optimal/src/cnn.cpp:53:2" msg_body="Ignored unsupported array_partition pragma on variable 'flat_to_dense_streams'. This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.">
+        <args Name="flat_to_dense_streams" PragmaName="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-253" msg_severity="WARNING" msg_loc="CNN_Optimal/src/cnn.cpp:53:2" msg_body="Ignored unsupported array_partition pragma on variable 'pool_to_flat_streams'. This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.">
+        <args Name="pool_to_flat_streams" PragmaName="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-253" msg_severity="WARNING" msg_loc="CNN_Optimal/src/cnn.cpp:43:2" msg_body="Ignored unsupported array_partition pragma on variable 'pool_to_flat_streams'. This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.">
+        <args Name="pool_to_flat_streams" PragmaName="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-253" msg_severity="WARNING" msg_loc="CNN_Optimal/src/cnn.cpp:43:2" msg_body="Ignored unsupported array_partition pragma on variable 'conv_to_pool_streams'. This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.">
+        <args Name="conv_to_pool_streams" PragmaName="array_partition"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:27:2" msg_body="Applying array_partition to 'conv_to_pool_streams': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="conv_to_pool_streams"/>
@@ -44,10 +119,16 @@
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:56:25" msg_body="Applying array_partition to 'dense_to_softmax_streams': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="dense_to_softmax_streams"/>
     </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="Applying array_partition to 'pad_img0': Block partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Block" UOName="pad_img0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:64:0" msg_body="Applying array_partition to 'img_in': Block partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Block" UOName="img_in"/>
+    </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN_Optimal/src/dense.cpp:17:31" msg_body="Loop 'dense_soft_max_for_filters' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="dense_soft_max_for_filters"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN_Optimal/src/pool.cpp:16:16" msg_body="Loop 'pool_for_pr' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN_Optimal/src/pool.cpp:20:16" msg_body="Loop 'pool_for_pr' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="pool_for_pr"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="CNN_Optimal/src/conv.cpp:34:20" msg_body="Loop 'krn_for_rows' is marked as complete unroll implied by the pipeline pragma">
@@ -59,8 +140,8 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/dense.cpp:9:0" msg_body="Unrolling loop 'dense_soft_max_for_filters' (CNN_Optimal/src/dense.cpp:17:31) in function 'dense_layer_soft_max' completely with a factor of 4">
         <args Factor="4" LoopLoc="CNN_Optimal/src/dense.cpp:17:31" LoopName="dense_soft_max_for_filters"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/pool.cpp:33:0" msg_body="Unrolling loop 'pool_for_pr' (CNN_Optimal/src/pool.cpp:16:16) in function 'max_pooling_layer' completely with a factor of 2">
-        <args Factor="2" LoopLoc="CNN_Optimal/src/pool.cpp:16:16" LoopName="pool_for_pr"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/pool.cpp:37:0" msg_body="Unrolling loop 'pool_for_pr' (CNN_Optimal/src/pool.cpp:20:16) in function 'max_pooling_layer' completely with a factor of 2">
+        <args Factor="2" LoopLoc="CNN_Optimal/src/pool.cpp:20:16" LoopName="pool_for_pr"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN_Optimal/src/conv.cpp:16:0" msg_body="Unrolling loop 'krn_for_rows' (CNN_Optimal/src/conv.cpp:34:20) in function 'convolution' completely with a factor of 7">
         <args Factor="7" LoopLoc="CNN_Optimal/src/conv.cpp:34:20" LoopName="krn_for_rows"/>
@@ -80,6 +161,36 @@
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="CNN_Optimal/src/Headers/conv_weights.h:11:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'conv_weights' due to pipeline pragma">
         <args Dim="2" Mode="complete" Name="conv_weights" PragmaType="array_partition"/>
     </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="CNN_Optimal/src/Headers/dense_weights.h:11:0" msg_body="array_partition dim=1 type=cyclic factor=2 variable=dense_weights 1 cnn CNN_Optimal/src/Headers/dense_weights.h:11:0 CNN_Optimal/src/dense.cpp:40:9dense_weights">
+        <args PragmaFunction="cnn" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=dense_weights" PragmaSrcLoc="CNN_Optimal/src/dense.cpp:40:9" PragmaSrcLoc-DebugLoc="File CNN_Optimal/src/dense.cpp Line 40 Column 9" PragmaType="array_partition" VarName="dense_weights" varLoc="CNN_Optimal/src/Headers/dense_weights.h:11:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="CNN_Optimal/src/dense.cpp:40:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'dense_weights' due to pipeline pragma">
+        <args Dim="1" Factor="2" Mode="cyclic" Name="dense_weights" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="array_partition dim=2 type=cyclic factor=7 variable=pad_img0_0 1 cnn CNN_Optimal/src/cnn.cpp:67:8 pad_img0_0">
+        <args PragmaFunction="cnn" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=7 variable=pad_img0_0" PragmaType="array_partition" VarName="pad_img0_0" varLoc="CNN_Optimal/src/cnn.cpp:67:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="Inferring pragma 'array_partition type=cyclic factor=7 dim=2' for array 'pad_img0_0' due to pipeline pragma">
+        <args Dim="2" Factor="7" Mode="cyclic" Name="pad_img0_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="array_partition dim=2 type=cyclic factor=7 variable=pad_img0_1 1 cnn CNN_Optimal/src/cnn.cpp:67:8 pad_img0_1">
+        <args PragmaFunction="cnn" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=7 variable=pad_img0_1" PragmaType="array_partition" VarName="pad_img0_1" varLoc="CNN_Optimal/src/cnn.cpp:67:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="Inferring pragma 'array_partition type=cyclic factor=7 dim=2' for array 'pad_img0_1' due to pipeline pragma">
+        <args Dim="2" Factor="7" Mode="cyclic" Name="pad_img0_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="array_partition dim=2 type=cyclic factor=7 variable=pad_img0_2 1 cnn CNN_Optimal/src/cnn.cpp:67:8 pad_img0_2">
+        <args PragmaFunction="cnn" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=7 variable=pad_img0_2" PragmaType="array_partition" VarName="pad_img0_2" varLoc="CNN_Optimal/src/cnn.cpp:67:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="Inferring pragma 'array_partition type=cyclic factor=7 dim=2' for array 'pad_img0_2' due to pipeline pragma">
+        <args Dim="2" Factor="7" Mode="cyclic" Name="pad_img0_2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="array_partition dim=2 type=cyclic factor=7 variable=pad_img0_3 1 cnn CNN_Optimal/src/cnn.cpp:67:8 pad_img0_3">
+        <args PragmaFunction="cnn" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=7 variable=pad_img0_3" PragmaType="array_partition" VarName="pad_img0_3" varLoc="CNN_Optimal/src/cnn.cpp:67:8"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="Inferring pragma 'array_partition type=cyclic factor=7 dim=2' for array 'pad_img0_3' due to pipeline pragma">
+        <args Dim="2" Factor="7" Mode="cyclic" Name="pad_img0_3" PragmaType="array_partition"/>
+    </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:80:8" msg_body="array_partition dim=1 type=cyclic factor=7 variable=pad_img3 1 cnn CNN_Optimal/src/cnn.cpp:80:8 pad_img3">
         <args PragmaFunction="cnn" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=7 variable=pad_img3" PragmaType="array_partition" VarName="pad_img3" varLoc="CNN_Optimal/src/cnn.cpp:80:8"/>
     </msg>
@@ -92,8 +203,23 @@
     <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:80:8" msg_body="Inferring pragma 'array_partition type=cyclic factor=7 dim=2' for array 'pad_img3' due to pipeline pragma">
         <args Dim="2" Factor="7" Mode="cyclic" Name="pad_img3" PragmaType="array_partition"/>
     </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/Headers/dense_weights.h:11:0" msg_body="Applying array_partition to 'dense_weights': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="dense_weights"/>
+    </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/Headers/conv_weights.h:11:0" msg_body="Applying array_partition to 'conv_weights': Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
         <args Dim="islist 2 3" Mode="islist Complete Complete" UOName="conv_weights"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="Applying array_partition to 'pad_img0_0': Cyclic partitioning with factor 7 on dimension 2.">
+        <args Dim="2" Factor="7" Mode="Cyclic" UOName="pad_img0_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="Applying array_partition to 'pad_img0_1': Cyclic partitioning with factor 7 on dimension 2.">
+        <args Dim="2" Factor="7" Mode="Cyclic" UOName="pad_img0_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="Applying array_partition to 'pad_img0_2': Cyclic partitioning with factor 7 on dimension 2.">
+        <args Dim="2" Factor="7" Mode="Cyclic" UOName="pad_img0_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:67:8" msg_body="Applying array_partition to 'pad_img0_3': Cyclic partitioning with factor 7 on dimension 2.">
+        <args Dim="2" Factor="7" Mode="Cyclic" UOName="pad_img0_3"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN_Optimal/src/cnn.cpp:80:8" msg_body="Applying array_partition to 'pad_img3': Cyclic partitioning with factor 7 on dimension 1. Cyclic partitioning with factor 7 on dimension 2.">
         <args Dim="islist 1 2" Factor="islist 7 7" Mode="islist Cyclic Cyclic" UOName="pad_img3"/>

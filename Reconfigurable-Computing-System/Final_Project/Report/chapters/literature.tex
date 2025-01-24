@@ -1,455 +1,586 @@
-\فصل{کار‌های پیشین}\label{کار‌های پیشین}
-
-\قسمت{مقدمه}
-یک روش برای تامین توان سیستم‌های \lr{IoT} غیر متصل به شبکه برق استفاده از سیستم برداشت توان از محیط می‌باشد. در این روش با توجه به وجود انرژی غیر الکتریکی در محیط و تبدیل این انرژی به روش‌های گوناگون به انرژی الکتریکی، می‌توان یک سیستم \lr{IoT} بدون نیاز به تغذیه را طراحی نمود.
-
-در تمامی سیستم‌های با قابلیت برداشت توان از محیط، یک بخش مربوط به مدیریت توان و تبدیل سطوح وجود دارد. طراحی این قسمت باتوجه به نوع سیستم‌ برداشت توان از محیط و سطح ولتاژ و جریان آن و همچنین توان مورد نیاز سیستم استفاده کننده توان متفاوت است اما به طور کلی می‌توان چنین سیستمی را مطابق شکل «\رجوع{شکل:بلوک دیاگرام یک سیستم برداشت توان از محیط}» نمایش داد:
+\فصل{طراحی و شبیه‌سازی}\label{طراحی و شبیه‌سازی}
 
 
-\شروع{شکل}[ht]
-\centerimg{img11}{10cm}
-\شرح{بلوک دیاگرام یک سیستم برداشت توان از محیط \مرجع{Elahi2020}}
-\برچسب{شکل:بلوک دیاگرام یک سیستم برداشت توان از محیط}
-\پایان{شکل}
+هدف در این پروژه پیاده سازی یک شبکه \lr{CNN} بر روی \lr{FPGA} با استفاده از ابزار \lr{HLS} با هدف تشخیص ارقام دست نویس است. بدین منظور پروژه را به دو فاز تقسیم می‌کنیم:
+\begin{enumerate}
+	\item فاز نرم‌افزاری
+	\item فاز سخت‌افزاری
+\end{enumerate}
 
-
-طبق شکل «\رجوع{شکل:بلوک دیاگرام یک سیستم برداشت توان از محیط}» با توجه به اینکه سطح ولتاژ دریافتی از محیط و پایداری آن معمولاً مناسب تغذیه مدار پردازنده و باقی قسمت‌های مدار نیست در ابتدا با استفاده از یک مبدل \lr{DC/DC} سطح ولتاژ به سطح مناسب تبدیل می‌گردد و سپس توسط یک رگلاتور ولتاژ، به ولتاژ پایدار و مناسب برای استفاده باقی مدار تبدیل می‌گردد. \مرجع{Grossi2021}
-
-در میان قسمت مبدل \lr{DC/DC} و رگلاتور، ممکن است یک عنصر قابل شارژ با ظرفیت بالا وجود داشته باشد (تقریباً در تمامی سیستم‌ها یک خازن برای پایدارسازی در برابر تغییرات وجود دارد)، که ممکن است از نوع باری قابل شارژ و یا ابرخازن باشد. با توجه به وجود یا عدم وجود این بخش دو دسته
-
-\شروع{شمارش}
-\فقره دارای عنصر ذخیره‌ساز 
-\فقره بدون عنصر ذخیره‌ساز 
-\پایان{شمارش}
-
-در سیستم‌های برداشت توان از محیط تعریف می‌گردند. سیستم‌های بدون عنصر ذخیره‌ساز در کاربردهای بسیار کم‌توان ‌زمان و یا قیمت کم مورد استفاده قرار می‌گیرند.
-
-در صورت برداشت توان به صورت \lr{AC} از محیط بایستی توجه داشت که در قسمت یکسوساز ورودی سیستم با توجه به نوع روش برداشت، پهنای باند سیگنال آن از چند هرتز تا چندین گیگاهرتز می‌تواند باشد و لذا برای هر مدل برداشت می‌بایست طراحی منحصربه فردی برای قسمت یکسوساز وجود داشته باشد. \مرجع{Grossi2021}
-
-
-به عنوان مثال در برداشت توان از محیط با استفاده از حرکت افراد، فرکانس ولتاژ ایجاد شده در حد چند هرتز می‌باشد اما در خصوص برداشت توان از سیستم \lr{RF} این فرکانس برابر با چندین گیگاهرتز می‌باشد.
-
-
-برخی از روش‌ها در برداشت توان از محیط ولتاژ را به صورت \lr{DC} ایجاد می‌نماید که در این حالت احتیاجی به قسمت یکسوساز ورودی نمی‌باشد. به عنوان مثال می‌توان به پنل‌های خورشیدی\پانویس{Solar Panel} اشاره نمود که خروجی آن‌ها به صورت \lr{DC} می‌باشد.
-
-
-در خصوص قسمت \lr{DC/DC} انواع مختلفی از مبدل‌های سوئیچینگ\پانویس{Switching Regulator} وجود دارند که مفصلا در \مرجع{Briones2019} به آن‌ها اشاره شده است. در شکل «\رجوع{شکل:مبدل‌های سوئیچینگ}» انواع مختلف مبدل‌های سوئیچینگ آورده شده است که موارد \lr{Buck}، \lr{Boost} و \lr{Buck\_Boost} پرکاربردتر آنها هستند. به طور کلی می‌توان به این نکته اشاره کرد که مبدل‌های \lr{Buck} نسبت به مبدل‌های \lr{Boost} و \lr{Buck\_Boost} کارایی بالاتری را دارا می‌باشند و لذا بایستی در صورت امکان خروجی قسمت برداشت توان از محیط ولتاژ بالاتری را از ولتاژ مورد نیاز مدار داشته باشد تا بتوان با استفاده از مبدل \lr{Buck} از بهره‌وری بیشتری آن استفاده نمود.
-
-
-\شروع{شکل}[ht]
-\centerimg{img12}{6cm}
-\شرح{مبدل‌های سوئیچینگ \مرجع{Briones2019}}
-\برچسب{شکل:مبدل‌های سوئیچینگ}
-\پایان{شکل}
-
-
-استفاده از رگلاتورهای خطی\پانویس{Linear Regulator} معمول، به غیر از موارد با جریان نشتی بسیار پایین و مصرف کم مدار به دلیل اتلاف بالا توصیه نمی‌گردد.
+که در ادامه هر یک از بخش‌های پروژه را با جزئیات توضیح می‌دهیم.
 
 
 
+\قسمت{فاز نرم‌افزاری}
 
-\قسمت{روش‌های برداشت توان از محیط}
-با توجه به محیط کاری یک سیستم و توان در دسترس از پارامترهای مختلف محیطی انواع مختلفی از روش‌های برداشت توان از محیط وجود دارد که هر یک مزایا و معایب مربوط به خود را دارا هستند و هیچ یک از روش‌ها به‌طور مطلق برتری کامل به روش‌های دیگر نداشته و هر یک بنا به شرایط کاری سیستم می‌توانند برای تامین تغذیه سیستم به کار روند.
+\زیرقسمت{انتخاب معماری}
+در ابتدا می‌بایست بهترین معماری را برای شبکه خود انتخاب کنیم. معیار‌هایی که در انتخاب معماری به آن توجه شده است به‌صورت زیر می‌باشد:
 
-منابع مختلف جهت برداشت توان از محیط در شکل زیر آورده شده‌اند:
+\شروع{فقرات}
 
-\شروع{شکل}[ht]
-\centerimg{img12}{6cm}
-\شرح{منابع مختلف برداشت توان \مرجع{Maamer2019}}
-\برچسب{شکل:منابع مختلف برداشت توان}
-\پایان{شکل}
+\فقره دقت\پانویس{\lr{Accuracy}} شبکه
+\فقره خطا\پانویس{\lr{Loss}} شبکه
+\فقره حجم پارامتر‌های ذخیره شده
 
-در جدول زیر یه مقایسه از پارامتر‌های مختلف هریک از روش‌ها گرد آوری شده است و برای هریک میزان چگالی توان و همچنین میزان توان معمول قابل برداشت آورده شده است:
+\پایان{فقرات}
+
+در صورت پروژه بیان شده است که دقت آموزش شبکه می‌بایست بالای ۹۰ درصد باشد. همچنین به دلیل آنکه قرار است پارامتر‌های آموزش دیده را در فاز دوم به \lr{HLS} ببریم و در آنجا بارگزاری کنیم یکی از مواردی که بسیار برای ما اهمیت دارد حجم پارامتر های ذخیره شده در مدل است. بنابر این با توجه به این سه معیار مطرح شده مدل های مختلفی را تست کرده ایم که در جدول زیر آورده شده است. \\
 
 
-\begin{latin}
-\begin{center}
-	\begin{table}[h!]
-		\resizebox{\columnwidth}{!}{%
-		\begin{tabular}{|c|c|c|c|c|}
+	
+\begin{table}[ht]
+	\centering
+	\caption{معماری‌های بررسی شده}
+	\label{جدول:جدول معماری ها}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{ c c c c c c c c c }
 			\hline
-			\textbf{Power Source} & \textbf{Type} & \textbf{Typical Power Density} & \textbf{Embedded Nominal Power} & \textbf{Transducer} \\
-			\hline
-			Wind & Mechanical & 28.5 mW/cm$^2$ & 47 dBm (50 W) & Wind Turbine \\
-			\hline
-			Solar & Electromagnetic & 15 mW/cm$^2$ & 42 dBm (15 W) & Solar Panels (Outdoors) (0--200 kLux) \\
-			\hline
-			Thermal & Thermal & 15 $\mu$W/cm$^3$ & 22 dBm (150 mW) & Thermoelectric Generator (TEG) \\
-			\hline
-			Vibration & Mechanical & 145 $\mu$W/cm$^3$ & 19 dBm (74 mW) & Electromagnetic \\
-			\hline
-			Mechanical & Mechanical & 330 $\mu$W/cm$^3$ & -7 dBm (200 $\mu$W) & Piezoelectric materials \\
-			\hline
-			Mechanical & Mechanical & 50 $\mu$W/cm$^3$ & -7 dBm (200 $\mu$W) & Electrostatic \\
-			\hline
-			Microbial & Biochemical & 2.6 $\mu$W/cm$^2$ & -2 dBm (600 $\mu$W) & Microbial Fuel Cell \\
-			\hline
-			Indoor Lights & Electromagnetic & 15 $\mu$W/cm$^2$ & -3 dBm (480 $\mu$W) & Solar Panels (Indoors) (1 Lux--3 kLux) \\
-			\hline
-			Directed RF & Electromagnetic & 50 mW/cm$^2$ & 20 dBm (100 mW) & Antenna \\
-			\hline
-			Acoustic & Mechanical & 96 $\mu$W/cm$^3$ & -11 dBm (80 $\mu$W) & Microphones/Piezoelectric \\
-			\hline
-			Ambient RF & Electromagnetic & 12 nW/cm$^2$ & -23 dBm (5 $\mu$W) & Antenna \\
-			\hline
-		\end{tabular} }
-		\caption{\rl{چگالی توان و میزان توان معمول قابل برداشت}}
-		\label{چگالی توان و میزان توان معمول قابل برداشت}
-	\end{table}
-\end{center} 
-\end{latin}
-
-
-هر یک از روش‌های یاد شده به‌طور خلاصه در ادامه مورد بررسی قرار می‌گیرند.
-
-
-\زیرقسمت{برداشت انرژی نوری از محیط}
-در صورت وجود نور با شدت کافی در محل مورد استفاده از سیستم، برداشت توان از محیط با استفاده از سلول‌های خورشیدی یکی از بهترین روش‌ها برای برداشت توان از محیط می‌باشد. دلیل این امر سطح بالاتر توان تولیدی در مقیاس حجم مدار در مقایسه با باقی روش‌ها می‌باشد \مرجع{Grossi2021}.
-
-نکته مهم در کاربردی سلول‌های خورشیدی حساسیت آن‌ها به نوع نور تابیده شده می‌باشد. در حقیقت برای منابع نوری مختلف سلول‌های نوری با تکنولوژی مختلف وجود دارند که هر یک به طیف خاصی از نور حساس هستند. لذا در صورتی که کاربردی سیستم در محیط سرباز\پانویس{Outdoor}، است از سلول‌های نوری خاص ساخته شده برای محیط سرباز و در صورتی که کاربردی در محیط سربسته\پانویس{Indoor} می‌باشد، از سلول‌های نوری خاص محیط سربسته و حساس به نور مصنوعی بهتر است استفاده شود \مرجع{Grossi2021}.
-
-به‌طور معمول سلول‌های نوری حساس به نور خورشید توان بیشتری را نسبت به موارد حساس به نور مصنوعی ایجاد می‌کنند. سلول‌های نوری در سایزها و توان‌های مختلف وجود دارند که با توجه به کاربرد سیستم \lr{IoT} مورد نظر قابل استفاده هستند.
-
-
-
-
-\زیرقسمت{برداشت توان از انرژی مکانیکی محیط}
-انرژی مکانیکی به صورت لرزش‌ها و یا حرکت‌های اشیا در محیط می‌تواند برای برداشت توان الکتریکی جهت تامین توان سیستم‌های \lr{IoT} مورد استفاده قرار گیرد. به‌طور کلی سه روش تبدیل انرژی مکانیکی به الکتریکی در برداشت توان از محیط مورد استفاده قرار می‌گیرد که عبارتند از:
-
-\شروع{شمارش}
-
-\فقره ابزارهای پیزوالکتریک
-\فقره سیستم‌های الکترومغناطیسی
-\فقره سیستم‌های الکتروستاتیک
-\پایان{شمارش}
-
-
-درخصوص تبدیل حرکت خطی به انرژی الکتریکی معمولاً حرکت خطی به یک حرکت دورانی و یا رفت و برگشتی برای تبدیل به انرژی الکتریکی تبدیل می‌گردد. به‌عنوان مثال با باز شدن یک درب، به کمک یک چرخ دنده افزاینده ۹۰ درجه باز شدن درب، به چندین دور تبدیل می‌گردد و این چرخش به یک مبدل الکترومغناطیسی دورانی برای تبدیل به انرژی الکتریکی داده می‌شود.
-
-سیستم‌های الکترومغناطیسی بر مبنای حرکت یک سیم‌پیچ درون یک میدان مغناطیسی و یا برعکس عمل می‌نمایند. این روش در شکل «\رجوع{شکل:مبدل الکترومغناطیسی}» نمایش داده شده است.
-
-\شروع{شکل}[ht]
-\centerimg{img14}{7cm}
-\شرح{مبدل الکترومغناطیسی}
-\برچسب{شکل:مبدل الکترومغناطیسی}
-\پایان{شکل}
-
-
-
-در مورد تبدیل لرزش به انرژی الکتریکی با توجه به فرکانس آن معمولاً این عمل به‌صورت مستقیم صورت می‌پذیرد. به این معنی که با اتصال مبدل به عنصر در حال لرزش بخشی از این لرزش به مبدل انتقال می‌یابد و باعث ایجاد پتانسیل الکتریکی در خروجی آن می‌گردد.
-
-علاوه بر روش الکترومغناطیسی، روش‌های الکتروستاتیک و پیزو الکتریک نیز جهت تبدیل انرژی مکانیکی به الکتریکی قابل استفاده هستند.
-
-در روش الکتروستاتیک با استفاده از تغییر فاصله و یا موقعیت دو صفحه، ظرفیت خازنی در حضور یک دی‌الکتریک پلاریزه‌کننده تغییر می‌یابد و این تغییر به پتانسیل الکتریکی تبدیل می‌گردد \مرجع{Boisseau2012}.
-
-\شروع{شکل}[ht]
-\centerimg{img15}{15cm}
-\شرح{مبدل‌های الکتروستاتیک}
-\برچسب{شکل:مبدل‌های الکتروستاتیک}
-\پایان{شکل}
-
-
-در روش پیزو الکتریک از یک عنصر با ساختار غیر یکنواخت استفاده می‌شود که با اعمال فشار به آن و تغییر نظم ساختار اتمی پتانسیل الکتریکی در دو سر آن ایجاد می‌گردد. در شکل زیر این روش نمایش داده شده است: 
-
-\شروع{شکل}[ht]
-\centerimg{img16}{8cm}
-\شرح{مبدل‌ پیزوالکتریک}
-\برچسب{شکل:مبدل‌ پیزوالکتریک}
-\پایان{شکل}
-
-
-\زیرقسمت{تبدیل گرما به انرژی الکتریکی}
-امکان تبدیل مستقیم انرژی گرمایی به انرژی الکتریکی با استفاده از مبدل‌های مبتنی بر اثر \lr{Seebeck} وجود دارد. روش کار این مبدل‌ها استفاده از دو فلز و یا نیمه‌هادی‌های مختلف و قرار دادن آن‌ها در دو دمای مختلف است. از آنجا که ولتاژ ایجاد شده توسط \lr{TEG}\پانویس{Thermoelectric Generator} بسیار کم است لذا این قطعات در تعداد زیاد، به‌صورت سری با یکدیگر، به‌صورت الکتریکی قرار می‌گیرند و به این صورت ولتاژ خروجی افزایش می‌یابد.
-
-نکته مهم اتصال این عناصر به صورت موازی از نظر گرمایی است که کار ساخت آن‌ها را مشکل می‌نماید \مرجع{Grossi2021}. روش‌های مختلف ساخت این مبدل‌ها در شکل «\رجوع{شکل:ساختار TEG}» آمده است:
-
-
-\شروع{شکل}[ht]
-\centerimg{img17}{8cm}
-\شرح{ساختار \lr{TEG}}
-\برچسب{شکل:ساختار TEG}
-\پایان{شکل}
-
-
-برخی مواد خاص با بازدهی بالاتر نسبت به موارد سنتی \lr{TEG} در حال ساخت و همچنین تحقیق هستند که استفاده از این روش را برای مواردی که سایر روش‌های برداشت توان از محیط امکان پذیر نیست ممکن می‌سازد. به عنوان مثال در \مرجع{Xia2019} و \مرجع{Xin2019} به \lr{TEG} هایی برای دریافت توان کاری یک سیستم پوشیدنی از بدن انسان اشاره شده است.
-
-
-
-
-
-\زیرقسمت{دریافت توان با استفاده از امواج}
-در این روش از امواج رادیویی موجود در محیط و یا ایجاد امواج خاص جهت انتقال توان استفاده می‌گردد. در روش اول از امواج مربوط به \lr{Wi-Fi}، رادیو \lr{FM}، فرستنده‌های تلویزیونی و ... برای دریافت توان از محیط اطراف استفاده می‌گردد. در این روش با استفاده از انرژی موجود در امواج و دریافت آن‌ها با یک آنتن مناسب و تبدیل آن به انرژی الکتریکی توان مورد نیاز جهت کارکرد سیستم ایجاد می‌گردد.
-
-
-دو ویژگی جذاب در این روش وجود دارد که یکی وجود امواج در تقریباً تمامی نقاطی که انسان وجود دارد و دیگری امکان ارسال همزمان داده و توان در این روش می‌باشد که به آن \lr{SWIPT}\پانویس{Simultaneous Wireless Information and Power Transfer} نیز گفته می‌شود.
-
-
-در خصوص ویژگی اول به عنوان مثال می‌توان به \lr{Wi-Fi Router} ها اشاره کرد که تقریباً در تمامی خانه‌ها وجود دارند و می‌توانند یک منبع توان برای کاربردهای سرپسته باشند. همچنین در کاربردهای سرباز می‌توان از امواج رادیو، تلویزیون و یا شبکه‌های سلولی استفاده کرد. در جدول «\رجوع{چگالی انرژی امواج در شهر لندن}» مقایسه‌ای از توان در دسترس حدودی که در محیط شهری لندن جمع‌آوری شده است نمایش داده می‌شود:
-
-\begin{latin}
-\begin{center}
-	\begin{table}[h!]
-		\centering
-		\begin{tabular}{lccc}
-			\toprule
-			Band & \thead{Frequencies \\ (MHz)} & \thead{Average $S_{BA}^2$ \\ (nW/cm$^2$)} & \thead{Maximum $S_{BA}^2$ \\ (nW/cm$^2$)} \\
-			\midrule
-			DTV (during switch over) & 470--610 & 0.89 & 460 \\
-			GSM900 (MTx) & 880--915 & 0.45 & 39 \\
-			GSM900 (BTx) & 925--960 & 36 & 1930 \\
-			GSM1800 (MTx) & 1710--1785 & 0.5 & 20 \\
-			GSM1800 (BTx) & 1805--1880 & 84 & 6390 \\
-			3G (MTx) & 1920--1980 & 0.46 & 66 \\
-			3G (BTx) & 2110--2170 & 12 & 240 \\
-			Wi-Fi & 2400--2500 & 0.18 & 6 \\
-			\bottomrule
+			\multirow{2}{*}{\textbf{معماری}} & \multirow{2}{*}{\textbf{لایه \lr{Zero Pading}}} & \multirow{2}{*}{\textbf{لایه \lr{Max Pooling}}} & \multirow{2}{*}{\textbf{تعداد لایه‌های کانولوشن}} & \multirow{2}{*}{\textbf{تعداد فیلترها}} & \multirow{2}{*}{\textbf{اندازه کرنل}} & \multirow{2}{*}{\textbf{\lr{Stride}}} & \multirow{2}{*}{\textbf{تابع فعالساز}} & \multirow{2}{*}{\textbf{تعداد لایه‌های \lr{Fully Connected}}} \\
+			& & & & & & & & \\ \hline\hline
+			\textbf{معماری 1} & بله & خیر & 1 & 8 & 3x3 & 1 & \lr{ReLU} & 4 (10, 64, 64, 128) \\ \hline
+			\textbf{معماری 2} & بله & خیر & 1 & 8 & 3x3 & 1 & \lr{ReLU} & 3 (10, 64, 128) \\ \hline
+			\textbf{معماری 3} & بله & خیر & 1 & 8 & 3x3 & 1 & \lr{ReLU} & 2 (10, 128) \\ \hline
+			\textbf{معماری 4} & بله & خیر & 1 & 8 & 3x3 & 1 & \lr{ReLU} & 1 (10) \\ \hline
+			\textbf{معماری 5} & بله & بله & 1 & 4 & 7x7 & 1 & \lr{ReLU} & 1 (10) \\ \hline\hline
 		\end{tabular}
-		\caption{\rl{چگالی انرژی امواج در شهر لندن}}
-		\label{چگالی انرژی امواج در شهر لندن}
-	\end{table}
-\end{center} 
-\end{latin}
+	}
+\end{table}
 
 
 
-بایستی توجه داشت که میزان توان در دسترس با فاصله سیستم برداشت توان از فرستنده امواج و بازدهی\پانویس{Gain} آنتن آن رابطه مستقیم دارد که این موضوع در جدول «\رجوع{تاثیر فاصله بر میزان انرژی آنتن}» و «\رجوع{تاثیر نوع آنتن بر انرژی جذب شده}» نمایش داده شده است.
+به‌ازای تمامی معماری های جدول \ref{جدول:جدول معماری ها} یک بار شبکه آموزش داده شده است و تعداد پارامتر‌های مدل و حجم آن‌ها به‌صورت زیر گزارش می‌شود:\\
 
-\begin{latin}
-\begin{center}
-	\begin{table}[h!]
-		\centering
-		\begin{tabular}{cccc}
-			\toprule
-			Distance (ft) & P ($\mu$W) & I ($\mu$A) & Recharge Time (hrs) \\
-			\midrule
-			2 & 3688 & 922 & 62.40 \\
-			4 & 1085 & 271 & 211.92 \\
-			6 & 259 & 65 & 888.72 \\
-			7 & 86 & 22 & 2659.92 \\
-			\bottomrule
+\begin{table}[ht]
+	\centering
+	\caption{اطلاعات مربوط به معماری‌های مختلف}
+	\resizebox{0.8\textwidth}{!}{ % Resize the table to 80% of the text width
+		\begin{tabular}{ c c c c c c }
+			\hline
+			\textbf{معماری} & \textbf{تعداد کل پارامتر‌ها} & \textbf{حجم مصرفی} & \textbf{دقت داده‌های آموزش} & \textbf{دقت داده‌های تست} \\ \hline \hline
+			\textbf{معماری 1} & 934874 & \lr{MB} ۳ & ۹۹۲۶٫۰ & ۹۷۷۶٫۰ \\ \hline
+			\textbf{معماری 2} & 930714 & \lr{MB} ۵۵٫۳ & ۹۹۵۹٫۰ & ۹۷۶۰٫۰ \\ \hline
+			\textbf{معماری 3} & 923098 & \lr{MB} ۵۲٫۳ & ۹۹۷۰٫۰ & ۹۸۰۸٫۰ \\ \hline
+			\textbf{معماری 4} & 72090 & \lr{KB} ۶۰٫۲۸۱ & ۹۸۵۷٫۰ & ۹۷۵۹٫۰ \\ \hline
+			\textbf{معماری 5} & 8050 & \lr{KB} 45.31 & ۹۷۷۹٫۰ & ۹۷۵۸٫۰ \\ \hline\hline
 		\end{tabular}
-		\caption{\rl{تاثیر فاصله بر میزان انرژی آنتن}}
-		\label{تاثیر فاصله بر میزان انرژی آنتن}
-	\end{table}
-\end{center} 
-\end{latin}
+	}
+\end{table}
+
+
+بنابر این طبق نتایج به‌دست آمده، معماری شماره ۵ را به‌عنوان معماری برگزیده انتخاب می‌کنیم.
+
+معماری نهایی شبکه به‌صورت زیر ارائه می‌شود:\newpage
+
+\شروع{شکل}[ht]
+\centerimg{img8}{9cm}
+\شرح{معماری شبکه}
+\برچسب{شکل:معماری شبکه}
+\پایان{شکل}
+
+
+\زیرقسمت{آموزش شبکه}
+پس از انتخاب معماری شبکه، نوبت به آموزش شبکه می‌رسد. به‌صورت نرم افزاری شبکه مورد نظر را تعریف کرده و آن را با داده‌های مجموعه داده \lr{MNIST} آموزش می‌دهیم تا از وزن‌های آن در فاز سخت افزاری استفاده کنیم.
+
+
+کد نوشته شده برای پیاده سازی شبکه به‌صورت زیر است: \newpage
 
 
 \begin{latin}
-\begin{center}
-	\begin{table}[h!]
-		\centering
-		\begin{tabular}{cccc}
-			\toprule
-			Distance (ft) & P ($\mu$W) & I ($\mu$A) & Recharge Time (hrs) \\
-			\midrule
-			2 & 16115 & 4029 & 14.16 \\
-			4 & 3070 & 768 & 74.88 \\
-			6 & 1551 & 388 & 148.30 \\
-			8 & 810 & 203 & 283.90 \\
-			10 & 366 & 92 & 627.60 \\
-			12 & 93 & 23 & 2475.00 \\
-			13 & 26 & 7 & 8750.00 \\
-			\bottomrule
-		\end{tabular}
-		\caption{\rl{تاثیر نوع آنتن بر انرژی جذب شده (آنتن جهت دار)}}
-		\label{تاثیر نوع آنتن بر انرژی جذب شده}
-	\end{table}
-\end{center} 
+\begin{lstlisting}[language=Python,caption={Model Definition}]
+	
+def define_model() -> Sequential:
+	# Define model.
+	model = Sequential()
+	model.add(ZeroPadding2D(padding=pad, input_shape=(input_size[0],
+		input_size[1], 1), name="padding_layer"))
+	model.add(Conv2D(conv_filter_num, conv_kernel_size, activation="relu",
+		padding="valid", kernel_initializer="he_uniform",
+		input_shape=(30, 30, 1), name="convolution_layer"))
+	model.add(MaxPooling2D(pool_size, name="max_pooling_layer"))
+	model.add(Flatten(name="flatten_layer"))
+	model.add(Dense(10, activation="softmax", name="dense_layer"))
+	
+	# Compile model.
+	model.Compile(optimizer=Adam(), loss="categorical_crossentropy",
+		metrics=["accuracy"])
+		
+	# Return model.
+	return model
+	
+\end{lstlisting}
 \end{latin}
 
 
 
-
-در خصوص \lr{SWIPT} تحقیقات زیادی انجام پذیرفته است و تحقیقات بسیاری نیز در دست انجام است \مرجع{Choi2020}، \مرجع{Liu2019}، \مرجع{Perera2017}. در \lr{SWIPT} از آنجا که عملکرد مدارات دریافت‌کننده اطلاعات و توان از موج \lr{RF} ورودی متفاوت است، این موج معمولاً در دو مسیر متفاوت مورد استفاده قرار می‌گیرد و هر یک عملکرد خاص خود را انجام می‌دهند. این موضوع در شکل «\رجوع{شکل:دیاگرام داخلی یک سیستم SWIPT}» نمایش داده شده است.
-
-
-\شروع{شکل}[ht]
-\centerimg{img18}{12cm}
-\شرح{دیاگرام داخلی یک سیستم \lr{SWIPT}}
-\برچسب{شکل:دیاگرام داخلی یک سیستم SWIPT}
-\پایان{شکل}
-
-
-یکی از قدیمی‌ترین موارد استفاده شده \lr{SWIPT} کارت‌ها و تگ‌های \lr{RFID}\پانویس{Radio Frequency Identification} و \lr{NFC}\پانویس{Near-Field Communication} هستند که ساختار آن‌ها در شکل «\رجوع{شکل:دیاگرام داخلی یک تگ RFID}» نمایش داده شده است \مرجع{Ng2019}. این تکنولوژی‌ها به مدت طولانی در حال استفاده هستند اما برد و توان انتقالی آن‌ها محدود می‌باشد.
+با کامپایل کردن مدل نوشته شده خروجی شبکه تعریف شده به‌صورت زیر می‌شود:
 
 
 \شروع{شکل}[ht]
-\centerimg{img19}{8cm}
-\شرح{دیاگرام داخلی یک \lr{RFID Tag}}
-\برچسب{شکل:دیاگرام داخلی یک تگ RFID}
-\پایان{شکل}
-
-
-تکنولوژی \lr{Qi} نیز روشی برای انتقال توان با نسبت زیاد، در فواصل کوتاه می‌باشد که به‌طور تجاری در شارژ لوازم قابل‌حمل خصوصاً تلفن‌های همراه استفاده می‌گیرد.
-
-روش‌های دیگری همچون \lr{Based Power Transfer} \lr{MIMO}\پانویس{Multiple-Input and Multiple-Output} برای انتقال توان در کانون توجه هستند که در آن‌ها قابلیت \lr{SWIPT} نیز قابل پیاده‌سازی می‌باشد. این موضوع در \مرجع{Perera2017} و \مرجع{Ng2019} اشاره شده است.
-
-در برخی پژوهش‌های جدید به استفاده از \lr{5G} برای مصرف \lr{SWIPT} اشاره شده است \مرجع{Eid2021}. در این راستا طراحی موسوم به \lr{Rectenna} برای استفاده برای برداشت توان خصوصاً در فرکانس‌های بالا که محدودیت‌های یکسوسازهای مرسوم و وجود دارد، بسیار نویدبخش است. یک نمونه ساده از این مدل طراحی در شکل «\رجوع{شکل:یک رکتنا ساده}» زیر آورده شده است.
-
-
-\شروع{شکل}[ht]
-\centerimg{img20}{8cm}
-\شرح{یک \lr{Rectenna} ساده \مرجع{Kanaujia2021}}
-\برچسب{شکل:یک رکتنا ساده}
+\centerimg{img9}{12cm}
+\شرح{ساختار شبکه تعریف شده}
+\برچسب{شکل:ساختار شبکه تعریف شده}
 \پایان{شکل}
 
 
 
+پس از تعریف ساختار شبکه، شبکه را با استفاده از دیتاست \lr{MNIST} در ۵ \lr{Epoch} آموزش می‌دهیم. که نمودار \lr{Loss} و \lr{Accuracy} شبکه برای داده‌های \lr{Train} و \lr{Validation} به‌صورت شکل «\ref{شکل:نمودارهای Loss و Accuracy}» به‌دست می‌آید:
 
 
-طراحی \lr{Rectenna} با قیمت ساخت پایین و همچنین توانایی خروجی مستقیم \lr{DC} که چالش بزرگی در مدارات مرسوم یکسوساز برای کار در فرکانس بالا می‌باشد کاربردهای فراوانی را در سیستم‌های \lr{IoT} بی‌سیم در آینده خواهد داشت \مرجع{Shafique2018}. طراحی و ساخت این نوع گیرنده توان در \مرجع{Kanaujia2021} به‌طور دقیق‌تر و مفصل بررسی شده است.
-در برخی تحقیقات از \lr{Rectenna} برای انتقال توان به یک \lr{UAV}\پانویس{Unmanned Aerial Vehicle} استفاده شده است که با توجه به میزان توان انتقالی مورد توجه است \مرجع{Hoque2022}.
+\شروع{شکل}[ht]
+\centerimg{img10}{12cm}
+\شرح{نمودارهای \lr{Loss} و \lr{Accuracy}}
+\برچسب{شکل:نمودارهای Loss و Accuracy}
+\پایان{شکل}
+
+
+
+دقت شبکه بر روی داده‌های آموزش و تست به ترتیب ۹۷۷۹٫۰ و ۹۷۵۸٫۰ به‌دست آمده است.
+
+همچنین زمان انجام فاز \lr{Inference} نرم‌افزاری برای ۱۰۰ داده از مجموعه داده \lr{MNIST}، ۹۷۳۲٫۳۹ میلی‌ثانیه به‌دست آمده است.
+
+\زیرقسمت{ذخیره پارامترها}
+در نهایت تمامی وزن‌ها و پارامتر‌های مورد نیاز شبکه برای فاز سخت‌افزاری را در ۳ فایل با نام‌های:
+
+\begin{latin}
+	\begin{itemize}
+		\item 
+		\texttt{conv\_weights.h}
+		
+		\item 
+		\texttt{dense\_weights.h}
+		
+		\item 
+		\texttt{definitions.h}
+	\end{itemize}
+\end{latin}
+
+
+ذخیره می‌کنیم. فایل \texttt{conv\_weights.h} شامل وزن‌های به‌دست آمده از لایه‌های کانولوشن، فایل \texttt{dense\_weights.h} نیز شامل وزن‌های لایه \lr{Fully Connected} و فایل \texttt{definitions.h} شامل برخی از ضرایب ثابت مورد استفاده در فاز سخت‌افزاری است.
+
+در ادامه تمامی داده‌های تست \lr{MNIST} شامل تصاویر و \lr{Label} های مربوط به آن را در دو فایل \texttt{in.dat} و \texttt{out.dat} ذخیره می‌کنیم. مراحل انجام به طور کامل در فایل \texttt{gen\_data.ipynb} مشخص شده است.
 
 
 
 
 
-\قسمت{ذخیره‌ساز های انرژی}
-در سیستم‌های برداشت انرژی از محیط به‌طور معمول از یک عنصر ذخیره‌سازی انرژی\پانویس{Energy Storage Device} استفاده می‌گردد که این عنصر بایستی انرژی دریافتی از روش‌های ذکر شده قبلی را با میزان بازده مناسب در خود ذخیره سازد و در موقع لزوم به مدارات دیگر جهت استفاده ارائه نماید. همچنین عنصر ذخیره‌ساز برای بهبود کیفیت و پایداری ولتاژ نیز مورد استفاده در مدار می‌گردد و اثرات تغییر میزان انرژی ورودی به سیستم را تا حد زیادی خنثی می‌نماید. در جدول زیر انواع مختلف عناصر ذخیره‌ساز از نوع باتری با یکدیگر مقایسه شده‌اند \مرجع{Prauzek2018}.
+\قسمت{فاز سخت‌افزاری}
+
+در این فاز نیاز است کد های همه لایه‌ها را به‌صورت سخت‌افزاری در \lr{HLS} نوشته و با همان معماری فاز نرم‌افزاری پیاده‌سازی کنیم.
+
+
+\زیرقسمت{لایه کانولوشن}
+برای مثال کد لایه کانولوشن به‌صورت زیر نوشته شده است:
+
 
 
 
 \begin{latin}
-\begin{center}
-	\begin{table}[h!]
-		\centering
-		\resizebox{\columnwidth}{!}{%
-		\begin{tabular}{lcccccc}
-			\toprule
-			Type & Rated Voltage (V) & Capacity (Ah) & Temperature Range (°C) & Cycling Capacity (-) & Specific Energy (Wh/kg) \\
-			\midrule
-			Lead-Acid & 2 & 1.3 & $-20$ to 60 & 500--1000 & 30--50 \\
-			MnO$_2$Li & 3 & 0.03--5 & $-20$ to 60 & 1000--2000 & 280 \\
-			Li poly-carbon & 3 & 0.025--5 & $-20$ to 60 & - & 100--250 \\
-			LiSOCl$_2$ & 3.6 & 0.025--40 & $-40$ to 85 & - & 350 \\
-			LiO$_2$S & 3 & 0.025--40 & $-60$ to 85 & - & 500--700 \\
-			NiCd & 1.2 & 1.1 & $-40$ to 70 & 10,000--20,000 & 50--60 \\
-			NiMH & 1.2 & 2.5 & $-20$ to 40 & 1000--20,000 & 60--70 \\
-			Li-Ion & 3.6 & 0.74 & $-30$ to 45 & 1000--100,000 & 75--200 \\
-			MnO$_2$ & 1.65 & 0.617 & $-20$ to 60 & - & 300--610 \\
-			\bottomrule
-		\end{tabular} }
-		\caption{\rl{مقایسه باتری‌ها \مرجع{Prauzek2018}}}
-		\label{مقایسه باتری‌ها}	
-	\end{table}
-\end{center} 
+\begin{lstlisting}[language=C,caption={HLS Implementation of Convolution Layer}]
+
+void convolution( float pad_img [PAD_IMG_ROWS][PAD_IMG_COLS],
+				  int filter,
+				  hls::stream<float> & conv_to_pool_stream )
+{
+	float w_sum = 0.0; // Weighted sum.
+	
+	// outer loops (r and c) loop over all pooling regions
+	conv_for_rows: for(int r = 0; r < IMG_ROWS; r += POOL_ROWS)
+	{
+		conv_for_cols: for(int c = 0; c < IMG_COLS; c += POOL_COLS)
+		{
+			// middle loops (pr and pc) loop over all pixels
+			// in selected pooling region
+			pool_for_rows: for(int pr = 0; pr < POOL_ROWS; ++pr)
+			{
+				pool_for_cols: for(int pc = 0; pc < POOL_COLS; ++pc)
+				{
+					w_sum = 0.0;
+					
+					// inner loops (kr and kc) loop over all filter coefficients
+					// applied to neighborhood of selected pixel
+					krn_for_rows: for(int kr = 0; kr < KRN_ROWS; ++kr)
+					{
+						krn_for_cols: for(int kc = 0; kc < KRN_COLS; ++kc)
+						{
+							float w     = conv_weights[filter][kr][kc];
+							float pixel = pad_img[r+pr+kr][c+pc+kc];
+							w_sum +=  w * pixel;
+						}
+					}
+					
+					conv_to_pool_stream.write(relu(w_sum + conv_biases[filter]));
+				}
+			}
+		}
+	}
+}
+\end{lstlisting}
+\end{latin}
+
+در این طراحی، کانولوشن چند کاناله را به‌صورت چند لایه کانولوشن تک کاناله پیاده سازی کرده‌ایم. در فاز نرم افزاری یک لایه کانولوشن ۴ کاناله داشتیم اما برای راحتی پیاده سازی، در فاز سخت‌افزاری، آن را به ۴ لایه کانولوشن تک کاناله شکسته ایم و آن را به‌صورت زیر پیاده‌سازی کرده‌ایم:
+
+
+
+\begin{latin}
+	\begin{lstlisting}[language=C,caption={HLS Implementation of Convolution Layers}]
+		
+		void convolutional_layer(float pad_img0 [PAD_IMG_ROWS][PAD_IMG_COLS],
+		float pad_img1 [PAD_IMG_ROWS][PAD_IMG_COLS],
+		float pad_img2 [PAD_IMG_ROWS][PAD_IMG_COLS],
+		float pad_img3 [PAD_IMG_ROWS][PAD_IMG_COLS],
+		hls::stream<float> conv_to_pool_streams [FILTERS] )
+		{
+			convolution(pad_img0, 0, conv_to_pool_streams[0]);
+			convolution(pad_img1, 1, conv_to_pool_streams[1]);
+			convolution(pad_img2, 2, conv_to_pool_streams[2]);
+			convolution(pad_img3, 3, conv_to_pool_streams[3]);
+		}
+	\end{lstlisting}
 \end{latin}
 
 
 
 
-بایستی توجه داشت که در جدول فوق موارد \lr{Lead-Acid}، \lr{NiMH}، \lr{NiCd} و \lr{Li-Ion} قابل شارژ مجدد هستند که در میان آن‌ها باتری‌های \lr{Li-Ion} به دلیل دارا بودن چگالی ظرفیت بالاتر و همچنین میزان دشارژ ذاتی کمتر در اکثر کاربردها به باقی موارد ترجیح داده می‌شوند. همچنین باتری‌های \lr{Lead-Acid} به دلیل سایز بزرگ و وزن زیاد استفاده چندانی در سیستم‌های \lr{IoT} ندارند. مشخصات این باتری‌ها در جدول «\رجوع{مقایسه باتری‌های قابل شارژ سیستم‌های iot}	» آمده است:
-
-
+\زیرقسمت{لایه \lr{Fully Connected}}
+کد لایه \lr{Fully Connected} نیز به‌صورت زیر نوشته شده است:
 
 \begin{latin}
-\begin{center}
-	\begin{table}[h!]
-		\centering
-		\resizebox{\columnwidth}{!}{%
-			\begin{tabular}{lccccccc}
-				\toprule
-				Type & Cycle Life & Charge Time & Self-discharge/Month & Voltage (V) & Capacity (mAh) & Energy (Wh) & Price (USD) \\
-				\midrule
-				NiMH & 300--500 & 2--4H & 30\% & 1.25 & 2500 & 3.0 & 60 \\
-				Li-Ion & 500--1000 & 2--4H & 10\% & 3.6 & 730 & 2.7 & 100 \\
-				LiPo & 300--500 & 2--4H & 10\% & 3.6 & 930 & 3.4 & 100 \\
-				\bottomrule
-				\end{tabular} }
-		\caption{\rl{مقایسه باتری‌های قابل شارژ سیستم‌های \lr{IoT} \مرجع{Deng2019}}}
-		\label{مقایسه باتری‌های قابل شارژ سیستم‌های iot}
-	\end{table}
-\end{center} 
+\begin{lstlisting}[language=C,caption={HLS Implementation of Dense Layer}]
+	
+void dense( hls::stream<float> & flat_to_dense_stream,
+			int filter,
+			hls::stream<float> & dense_to_softmax_stream )
+{
+	float flat_value;
+	float dense_array[DENSE_SIZE] = { 0 };
+	
+	
+	#pragma HLS ARRAY_PARTITION variable=dense_array complete
+	#pragma HLS PIPELINE II=1
+	
+	dense_for_flat: for(int i = 0; i < FLAT_SIZE / FILTERS; ++i)
+	{
+		flat_value = flat_to_dense_stream.read();
+		
+		for(int d = 0; d < DENSE_SIZE; ++d)
+		{
+			int index = filter * (FLAT_SIZE / FILTERS) + i;
+			dense_array[d] += dense_weights[index][d] * flat_value;
+		}
+	}
+	
+	for(int j = 0; j < DENSE_SIZE; ++j)
+	{
+		dense_to_softmax_stream.write(dense_array[j]);
+	}
+}
+\end{lstlisting}
+\end{latin}
+
+
+
+\زیرقسمت{لایه \lr{Flatten}}
+همچنین برای \lr{Flat} کردن \lr{Feature Map} های به‌دست آمده از خروجی لایه‌های کانولوشنی، ماژولی به‌نام \texttt{flattening} به‌صورت زیر تعریف شده است:
+
+\begin{latin}
+\begin{lstlisting}[language=C,caption={HLS Implementation of Flatten Layers}]
+
+void flattening( hls::stream<float> &  pool_to_flat_stream,
+				 hls::stream<float> &  flat_to_dense_stream )
+{
+	
+	#pragma HLS ARRAY_PARTITION variable=pool_to_flat_stream complete
+	#pragma HLS ARRAY_PARTITION variable=flat_to_dense_stream complete
+	
+	flat_for_rows: for(int r = 0; r < POOL_IMG_ROWS; ++r)
+	{
+		flat_for_cols: for(int c = 0; c < POOL_IMG_COLS; ++c)
+		{
+			#pragma HLS UNROLL
+			
+			flat_to_dense_stream.write(pool_to_flat_stream.read());
+		}
+	}
+}
+\end{lstlisting}
+\end{latin}
+
+
+\زیرقسمت{ماژول اصلی (\lr{Top Module})}
+تاپ ماژول طراحی به‌نام \lr{CNN} به‌صورت زیر تعریف شده است: \newpage
+
+\begin{latin}
+\begin{lstlisting}[language=C,caption={HLS Implementation of \texttt{CNN} Top Module}]
+
+void cnn(float img_in[IMG_ROWS][IMG_COLS], float prediction[DIGITS])
+{
+	/******** Pre-processing data. ********/
+	
+	float pad_img0[PAD_IMG_ROWS][PAD_IMG_COLS] = { 0 };
+	normalization_and_padding(img_in, pad_img0);
+	
+	#if 0
+		#ifndef __SYNTHESIS__
+			printf("Padded image.\n");
+			print_pad_img(pad_img);
+		#endif
+	#endif
+	
+	/* Allow parallelism cloning the padded image. */
+	float pad_img1[PAD_IMG_ROWS][PAD_IMG_COLS];
+	float pad_img2[PAD_IMG_ROWS][PAD_IMG_COLS];
+	float pad_img3[PAD_IMG_ROWS][PAD_IMG_COLS];
+	
+	float value;
+	
+	clone_for_rows: for(int i = 0; i < PAD_IMG_ROWS; ++i)
+	{
+		clone_for_cols: for(int j = 0; j < PAD_IMG_COLS; ++j)
+		{
+			pad_img1[i][j] = pad_img0[i][j];
+			pad_img2[i][j] = pad_img0[i][j];
+			pad_img3[i][j] = pad_img0[i][j];
+		}
+	}
+	
+	
+	/* Parallel executions start here. */
+	dataflow_section(pad_img0, pad_img1, pad_img2, pad_img3, prediction);
+}
+
+\end{lstlisting}
 \end{latin}
 
 
 
 
-امکان استفاده از انواع باتری‌های غیر قابل شارژ نیز در سیستم‌های مبتنی بر برداشت انرژی از محیط وجود دارد. در این حالت این باتری‌ها در جهت ایجاد یک منبع پشتیبان در صورت عدم وجود انرژی کافی برای شارژ باتری‌های قابل شارژ مورد استفاده قرار می‌گیرند. در این حالت به باتری غیر قابل شارژ باتری \lr{Primary} نیز گفته می‌شود.
-
-نوع دیگر ذخیره‌سازهای انرژی الکتریکی پرکاربرد در سیستم‌های \lr{IoT} ابر خازن‌ها هستند که دارای ظرفیت ذخیره‌سازی کمتری نسبت به باتری در سایز مشابه می‌باشند و همچنین میزان دشارژ ذاتی بالایی را دارا هستند، اما دارای ویژگی مثبت تعداد شارژ و دشارژ بسیار بالا و توانایی کار در محدوده دمایی گسترده می‌باشند. مشخصات چند نمونه از این ابر خازن‌ها در جدول «\رجوع{مشخصات چند ابرخازن نمونه}» آمده است:
-
+\زیرقسمت{ماژول \lr{Data Flow}}
+برای مشخص کردن جریان انجام محاسبات در \lr{Top Module}، ماژولی به‌نام \texttt{dataflow\_section} تعریف شده است که کد آن به‌صورت زیر ارائه می‌شود:
 
 
 \begin{latin}
-\begin{center}
-	\begin{table}[h!]
-		\centering
-		\resizebox{\columnwidth}{!}{%
-		\begin{tabular}{lcccc}
-			\toprule
-			Supercapacitor & Life Cycle (-) & Specify Energy (Wh/kg) & Operating Temperature (°C) & Cell Voltage (V) \\
-			\midrule
-			Maxwell PC10 & 500,000 & 1.4 & $-40$ to 70 & 2.50 \\
-			Maxwell BCAP0350 & 500,000 & 5.1 & $-40$ to 70 & 2.50 \\
-			Green-cap EDLC & >100,000 & 1.47 & $-40$ to 60 & 2.70 \\
-			EDLC SC & 1,000,000 & 3--5 & $-40$ to 65 & 2.70 \\
-			Pseudo SC & 100,000 & 10 & $-40$ to 65 & 2.3--2.8 \\
-			Hybrid SC & 500,000 & 180 & $-40$ to 65 & 2.3--2.8 \\
-			\bottomrule
-		\end{tabular} }
-		\caption{\rl{مشخصات چند ابرخازن نمونه \مرجع{Prauzek2018}}}
-		\label{مشخصات چند ابرخازن نمونه}
-	\end{table}
-\end{center} 
+\begin{lstlisting}[language=C,caption={HLS Implementation of \texttt{Data flow}  Module}]
+
+void dataflow_section( float pad_img0 [PAD_IMG_ROWS][PAD_IMG_COLS],
+					   float pad_img1 [PAD_IMG_ROWS][PAD_IMG_COLS],
+					   float pad_img2 [PAD_IMG_ROWS][PAD_IMG_COLS],
+					   float pad_img3 [PAD_IMG_ROWS][PAD_IMG_COLS],
+					   float prediction [DIGITS] )
+{
+	#pragma HLS DATAFLOW
+	/******** Convolution layer. ********/
+	/*
+	An array to collect the convolution results:
+	FILTERS resulting feature maps, one for each filter.
+	*/
+	
+	hls::stream<float, IMG_ROWS * IMG_COLS>
+	conv_to_pool_streams[FILTERS];
+	
+	// Convolution with relu as activation function.
+	convolutional_layer(pad_img0, pad_img1, pad_img2, pad_img3, conv_to_pool_streams);
+	
+	#if 0
+	#ifndef __SYNTHESIS__
+	// Print results.
+	print_features(conv_to_pool_streams);
+	#endif
+	#endif
+	
+	/******** Maxpooling layer. ********/
+	hls::stream<float, POOL_IMG_ROWS * POOL_IMG_COLS>
+	pool_to_flat_streams[FILTERS];
+	
+	max_pooling_layer(conv_to_pool_streams, pool_to_flat_streams);
+	
+	#if 0
+	#ifndef __SYNTHESIS__
+	print_pool_features(pool_to_flat_streams);
+	#endif
+	#endif
+	
+	/******** Flatten layer. ********/
+	hls::stream<float, FLAT_SIZE / FILTERS> flat_to_dense_streams[FILTERS];
+	flattening_layer(pool_to_flat_streams, flat_to_dense_streams);
+	
+	/******** Dense layer. ********/
+	hls::stream<float, DENSE_SIZE> dense_to_softmax_streams [FILTERS];
+	dense_layer(flat_to_dense_streams, dense_to_softmax_streams);
+	
+	/******** Softmax. ********/
+	dense_layer_soft_max(dense_to_softmax_streams, prediction);
+}
+	
+\end{lstlisting}
 \end{latin}
 
 
 
-
-ابرخازن‌ها می‌توانند به صورت ترکیبی با انواع دیگر ذخیره‌سازها مورد استفاده قرار گیرند و سیستم نهایی از مزایای هر دو بهره‌برداری نماید. در جدول زیر مقایسه‌ای از باتری‌ها و ابرخازن‌ها آمده است: \مرجع{Deng2019}
-
-
-
-\begin{latin}
-\begin{center}
-	\begin{table}[h!]
-		\centering
-		\resizebox{\columnwidth}{!}{%
-			\begin{tabular}{|m{3cm}|m{6cm}|m{6cm}|}
-				\hline
-				\textbf{Energy Storing Device} & \textbf{Advantages} & \textbf{Limitations} \\
-				\hline
-				\multirow{9}{3cm}{Super-capacitor} & Much higher recharge cycle life & Expensive \\
-				& High cycle efficiency (>95\%) & Low energy per unit weight \\
-				& Much longer lifetime compared to batteries & Low per cell voltage \\
-				& Environmentally friendly & High self-discharge rate \\
-				& Broader range of voltage and current & High dielectric absorption \\
-				& Low internal resistance & \\
-				& High performance in low temperatures & \\
-				\hline
-				\multirow{3}{3cm}{Rechargeable battery} & Inexpensive & Lower recharge cycle life \\
-				& Low self-discharge rate & Much lower lifetime \\
-				& High energy per unit weight & \\
-				\hline
-				\end{tabular} }
-		\caption{\rl{مقایسه ابرخازن ها و باتری های قابل شارژ \مرجع{Deng2019}} }
-		\label{مقایسه ابرخازن ها و باتری‌های قابل شارژ}
-	\end{table}
-\end{center} 
-\end{latin}
+ماژول‌های دیگری برای انجام عملیات‌هایی مانند \lr{Zero Padding}، \lr{Pooling}، \lr{Normalization} و ... تعریف شده است که به‌علت طولانی نشدن گزارش آورده نشده است.
 
 
 
 
-برخی روش‌های خاص برای تامین توان وجود دارد که به علت مصرف خاص و یا قیمت بالا چندان کاربردی به صورت عام ندارند. به عنوان مثال باتری‌های \lr{RTG}\پانویس{‫‪Radioisotope‬‬ Thermoelectric Generator} با استفاده از تبدیل انرژی حرارتی ناشی از واپاشی خود به خودی یک عنصر رادیواکتیو به الکتریسیته عمل می‌نمایند. این باتری‌ها عمر و توان نسبتاً زیادی دارند اما مصرف آن‌ها در حد کارهای خاص نظامی و هوافضا باقی مانده است.
+\قسمت{سنتز مدل}
+درنهایت ماژول \texttt{CNN} را سنتز می‌کنیم. گزارشات سنتز شبکه در شکل‌های «\ref{شکل:منابع مصرفی پس‌از سنتز (الف)}» و «\ref{شکل:منابع مصرفی پس‌از سنتز (ب)}» و «\ref{شکل:منابع مصرفی پس‌از سنتز (ج)}» آورده شده است.
 
-
-
-
-
-
-
-
-\قسمت{ترکیب چند روش دریافت توان از محیط}
-امکان ترکیب چند روش دریافت توان از محیط به سادگی وجود دارد و برخی از مدارات مبدل نیز از این ویژگی پشتیبانی می‌کنند در این حالت در صورت عدم وجود یک منبع توان در محیط، عنصر ذخیره کننده توسط منبع توان دیگری مورد شارژ قرار می‌گیرد. این موضوع در مقاله \مرجع{Deng2019} اشاره شده است و در شکل زیر نیز این روش ارائه شده است \مرجع{Grossi2021}.
 
 
 
 
 \شروع{شکل}[ht]
-\centerimg{img21}{13cm}
-\شرح{دریافت انرژی از چند منبع}
-\برچسب{شکل:دریافت انرژی از چند منبع}
+\centerimg{Synthesis_Result_1.png}{12cm}
+\شرح{منابع مصرفی پس‌از سنتز (الف)}
+\برچسب{شکل:منابع مصرفی پس‌از سنتز (الف)}
 \پایان{شکل}
+
+
+\شروع{شکل}[ht]
+\centerimg{Synthesis_Result_2.png}{12cm}
+\شرح{منابع مصرفی پس‌از سنتز (ب)}
+\برچسب{شکل:منابع مصرفی پس‌از سنتز (ب)}
+\پایان{شکل}
+
+
+\شروع{شکل}[ht]
+\centerimg{Synthesis_Result_3.png}{11cm}
+\شرح{منابع مصرفی پس‌از سنتز (ج)}
+\برچسب{شکل:منابع مصرفی پس‌از سنتز (ج)}
+\پایان{شکل}
+
+
+
+
+
+\قسمت{تست مدل}
+درنهایت فایل \lr{test bench} ای برای طراحی نوشته شده است که ۱۰۰ تصویر ابتدایی را از فایل تصاویر تولید شده در فاز قبل را بخواند و برای پردازش به شبکه بدهد. و خروجی شبکه میزان دقت تشخیص اعداد و زمان مصرف شده به‌ازای تمام فرایند می‌باشد.
+
+
+برای مثال، شبکه ما ۱۰۰ تصویر ابتدایی از مجموعه داده‌های تست دیتاست \lr{MNIST} را با دقت ۱۰۰٪ تشخیص می‌دهد «شکل \ref{شکل:Accuracy پیش‌بینی به‌ازای ۱۰۰ تصویر}»:
+
+
+
+\شروع{شکل}[ht]
+\centerimg{Synthesis_Result_3.png}{11cm}
+\شرح{\lr{Accuracy} پیش‌بینی به‌ازای ۱۰۰ تصویر}
+\برچسب{شکل:Accuracy پیش‌بینی به‌ازای ۱۰۰ تصویر}
+\پایان{شکل}
+
+
+
+
+
+
+شبکه ما فاز \lr{Inference} را به ازای ۱۰۰ تصویر در ۴۵٫۴ میلی‌ثانیه انجام داده است. درصورتی که در فاز نرم‌افزاری همین تعداد تصویر در مدت زمان ۹۷٫۳۹ میلی‌ثانیه انجام شده است. \newpage
+
+
+هرچه تعداد تصاویر را زیاد کنیم دقت شبکه کم می‌شود. برای مثال به ازای ۵۰۰ تصویر دقت تشخیص شبکه ۹۹ درصد به‌دست می‌آید.
+
+\شروع{شکل}[ht]
+\centerimg{Synthesis_Result_3.png}{11cm}
+\شرح{\lr{Accuracy} پیش‌بینی به‌ازای ۵۰۰ تصویر}
+\برچسب{شکل:Accuracy پیش‌بینی به‌ازای ۵۰۰ تصویر}
+\پایان{شکل}
+\newpage
+
+
+
+
+در این حالت شبکه ۵ تصویر زیر را به اشتباه تشخیص داده است:
+
+\شروع{شکل}[ht]
+\centerimg{img11.png}{15cm}
+\شرح{تشخیص‌های اشتباه شبکه}
+\برچسب{شکل:تشخیص‌های اشتباه شبکه}
+\پایان{شکل}
+
+
+
+
+مقادیری که شبکه برای هر خروجی اشتباه به‌دست آورده است نیز به‌صورت زیر ارائه می‌شود: \newpage
+
+
+\begin{latin}
+	\noindent\begin{multicols}{3}
+		\texttt{%
+			Prediction for A:\\
+			0: 0.000014\\
+			1: 0.000002\\
+			2: 0.000000\\
+			\hl{3: 0.806685}\\
+			4: 0.001617\\
+			5: 0.037086\\
+			6: 0.000001\\
+			7: 0.000960\\
+			8: 0.003560\\
+			9: 0.150075
+		}
+		
+		\vfill % Optional spacing
+		
+		\texttt{%
+			Prediction for B:\\
+			0: 0.000006\\
+			1: 0.000024\\
+			2: 0.078408\\
+			3: 0.048098\\
+			4: 0.000000\\
+			5: 0.000003\\
+			6: 0.000000\\
+			\hl{7: 0.596224}\\
+			8: 0.271232\\
+			9: 0.006006
+		}
+		
+		\vfill % Optional spacing
+		
+		\texttt{%
+			Prediction for C:\\
+			0: 0.268470\\
+			1: 0.006770\\
+			2: 0.000006\\
+			3: 0.000007\\
+			4: 0.025127\\
+			5: 0.002049\\
+			6: 0.006413\\
+			\hl{7: 0.627097}\\
+			8: 0.047987\\
+			9: 0.016075
+		}
+	\end{multicols}
+\end{latin}
+
+
+
+\begin{latin}
+	\noindent\begin{multicols}{2}
+		\texttt{%
+			Prediction for D:\\
+			0: 0.000006\\
+			1: 0.005681\\
+			2: 0.000050\\
+			\hl{3: 0.955743}\\
+			4: 0.000271\\
+			5: 0.037680\\
+			6: 0.000232\\
+			7: 0.000000\\
+			8: 0.000259\\
+			9: 0.000077
+		}
+		
+		
+		\texttt{%
+			Prediction for E:\\
+			0: 0.000000\\
+			1: 0.000000\\
+			2: 0.137538\\
+			3: 0.003166\\
+			4: 0.000000\\
+			5: 0.000000\\
+			6: 0.000000\\
+			7: 0.000023\\
+			\hl{8: 0.859272}\\
+			9: 0.000001
+		}
+	\end{multicols}
+\end{latin}

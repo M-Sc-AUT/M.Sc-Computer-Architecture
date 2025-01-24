@@ -2,21 +2,21 @@
 MainSourceFile:  /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW/CNN_Optimal/solution1/.autopilot/db/dense.pp.0.cpp
 Diagnostics:     
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_40_1:  '
-    FileOffset:      40
+    Message:         'Added loop label VITIS_LOOP_46_1:  '
+    FileOffset:      46
     FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW/CNN_Optimal/src/dense.cpp
     Replacements:    
       - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW/CNN_Optimal/solution1/.autopilot/db/dense.pp.0.cpp
-        Offset:          382009
+        Offset:          382106
         Length:          0
-        ReplacementText: 'VITIS_LOOP_40_1: '
+        ReplacementText: 'VITIS_LOOP_46_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_49_2:  '
-    FileOffset:      49
+    Message:         'Added loop label VITIS_LOOP_53_2:  '
+    FileOffset:      53
     FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW/CNN_Optimal/src/dense.cpp
     Replacements:    
       - FilePath:        /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW/CNN_Optimal/solution1/.autopilot/db/dense.pp.0.cpp
-        Offset:          382196
+        Offset:          382267
         Length:          0
-        ReplacementText: 'VITIS_LOOP_49_2: '
+        ReplacementText: 'VITIS_LOOP_53_2: '
 ...

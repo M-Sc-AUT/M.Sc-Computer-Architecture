@@ -7,7 +7,7 @@
 #include "hls_stream.h"
 
 #ifndef __SYNTHESIS__
-# include <cstdio>
+	#include <cstdio>
 #endif
 
 void dataflow_section( float pad_img0 [PAD_IMG_ROWS][PAD_IMG_COLS],

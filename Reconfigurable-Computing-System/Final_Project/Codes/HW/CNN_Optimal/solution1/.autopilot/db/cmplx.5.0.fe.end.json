@@ -1,14 +1,35 @@
 {
     "1": {
+        "name": "dense_layer_soft_max",
+        "file": "dense.cpp",
+        "fileloc": "7",
+        "instructions": "11",
+        "total_instructions": "77",
+        "calls": "10 7",
+        "basicblocks": "1",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "dense_layer",
+        "file": "dense.cpp",
+        "fileloc": "60",
+        "instructions": "13",
+        "total_instructions": "35369",
+        "calls": "16 16 16 16",
+        "basicblocks": "1"
+    },
+    "3": {
         "name": "cnn_Pipeline_clone_for_rows_clone_for_cols",
         "file": "CNN_Optimal\/src\/cnn.cpp",
         "fileloc": "84",
-        "instructions": "218",
-        "total_instructions": "218",
+        "instructions": "285",
+        "total_instructions": "285",
         "calls": "",
         "basicblocks": "68",
         "loads": {
-            "L": "4"
+            "L": "31"
         },
         "stores": {
             "L": "57"
@@ -17,296 +38,52 @@
             "L": "1"
         }
     },
-    "2": {
-        "name": "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols",
-        "file": "CNN_Optimal\/src\/pool.cpp",
-        "fileloc": "34",
-        "instructions": "78",
-        "total_instructions": "78",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "3": {
-        "name": "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols5",
-        "file": "CNN_Optimal\/src\/pool.cpp",
-        "fileloc": "35",
-        "instructions": "78",
-        "total_instructions": "78",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
     "4": {
-        "name": "dense_layer_soft_max",
-        "file": "dense.cpp",
-        "fileloc": "7",
-        "instructions": "11",
-        "total_instructions": "77",
-        "calls": "13 21",
-        "basicblocks": "1",
+        "name": "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8",
+        "file": "CNN_Optimal\/src\/pool.cpp",
+        "fileloc": "41",
+        "instructions": "78",
+        "total_instructions": "78",
+        "calls": "",
+        "basicblocks": "4",
         "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
             "L": "1"
         }
     },
     "5": {
-        "name": "dense_Pipeline_VITIS_LOOP_49_2",
-        "file": "CNN_Optimal\/src\/dense.cpp",
-        "fileloc": "49",
-        "instructions": "19",
-        "total_instructions": "19",
+        "name": "cnn_Pipeline_1",
+        "file": "CNN_Optimal\/src\/cnn.cpp",
+        "fileloc": "0",
+        "instructions": "136",
+        "total_instructions": "136",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "41",
         "loads": {
-            "L": "2"
+            "L": "4"
         },
         "stores": {
-            "L": "2"
+            "L": "36"
         },
         "loops": {
             "L": "1"
         }
     },
     "6": {
-        "name": "dataflow_section",
-        "file": "CNN_Optimal\/src\/cnn.cpp",
-        "fileloc": "13",
-        "instructions": "56",
-        "total_instructions": "8382",
-        "calls": "17 9 10 11 4",
+        "name": "max_pooling_layer",
+        "file": "pool.cpp",
+        "fileloc": "35",
+        "instructions": "20",
+        "total_instructions": "332",
+        "calls": "9 20 13 4",
         "basicblocks": "1"
     },
     "7": {
-        "name": "flattening",
-        "file": "flat.cpp",
-        "fileloc": "3",
-        "instructions": "43",
-        "total_instructions": "43",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "8": {
-        "name": "convolution",
-        "file": "CNN_Optimal\/src\/conv.cpp",
-        "fileloc": "38",
-        "instructions": "106",
-        "total_instructions": "583",
-        "calls": "12",
-        "basicblocks": "1",
-        "loads": {
-            "G": "50"
-        }
-    },
-    "0": {
-        "name": "cnn",
-        "file": "CNN_Optimal\/src\/cnn.cpp",
-        "fileloc": "63",
-        "instructions": "62",
-        "total_instructions": "8727",
-        "calls": "20 16 1 6",
-        "basicblocks": "1"
-    },
-    "9": {
-        "name": "max_pooling_layer",
-        "file": "pool.cpp",
-        "fileloc": "31",
-        "instructions": "20",
-        "total_instructions": "332",
-        "calls": "2 3 23 22",
-        "basicblocks": "1"
-    },
-    "10": {
-        "name": "flattening_layer",
-        "file": "flat.cpp",
-        "fileloc": "17",
-        "instructions": "13",
-        "total_instructions": "185",
-        "calls": "7 7 7 7",
-        "basicblocks": "1"
-    },
-    "11": {
-        "name": "dense_layer",
-        "file": "dense.cpp",
-        "fileloc": "56",
-        "instructions": "13",
-        "total_instructions": "417",
-        "calls": "19 19 19 19",
-        "basicblocks": "1"
-    },
-    "12": {
-        "name": "convolution_Pipeline_conv_for_rows_conv_for_cols_pool_for_rows_pool_for_cols",
-        "file": "CNN_Optimal\/src\/conv.cpp",
-        "fileloc": "17",
-        "instructions": "477",
-        "total_instructions": "477",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "56"
-        },
-        "stores": {
-            "L": "14"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "13": {
-        "name": "dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size",
-        "file": "CNN_Optimal\/src\/dense.cpp",
-        "fileloc": "10",
-        "instructions": "44",
-        "total_instructions": "44",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "G": "1",
-            "L": "3"
-        },
-        "stores": {
-            "L": "4",
-            "T": "1"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "14": {
-        "name": "dense_Pipeline_1",
-        "file": "dense.cpp",
-        "fileloc": "0",
-        "instructions": "15",
-        "total_instructions": "15",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "15": {
-        "name": "convolution.1",
-        "file": "CNN_Optimal\/src\/conv.cpp",
-        "fileloc": "17",
-        "instructions": "5557",
-        "total_instructions": "5557",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "2408"
-        },
-        "stores": {
-            "L": "14"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "16": {
-        "name": "cnn_Pipeline_pad_for_rows_pad_for_cols",
-        "file": "CNN_Optimal\/src\/cnn.cpp",
-        "fileloc": "68",
-        "instructions": "50",
-        "total_instructions": "50",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3",
-            "T": "1"
-        },
-        "stores": {
-            "L": "7"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "17": {
-        "name": "convolutional_layer",
-        "file": "CNN_Optimal\/src\/conv.cpp",
-        "fileloc": "52",
-        "instructions": "9",
-        "total_instructions": "7315",
-        "calls": "8 8 8 15",
-        "basicblocks": "1"
-    },
-    "18": {
-        "name": "dense_Pipeline_dense_for_flat_VITIS_LOOP_40_1",
-        "file": "CNN_Optimal\/src\/dense.cpp",
-        "fileloc": "33",
-        "instructions": "54",
-        "total_instructions": "54",
-        "calls": "",
-        "basicblocks": "6",
-        "loads": {
-            "G": "1",
-            "L": "5"
-        },
-        "stores": {
-            "L": "8"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "19": {
-        "name": "dense",
-        "file": "dense.cpp",
-        "fileloc": "31",
-        "instructions": "13",
-        "total_instructions": "101",
-        "calls": "14 18 5",
-        "basicblocks": "1"
-    },
-    "20": {
-        "name": "cnn_Pipeline_1",
-        "file": "CNN_Optimal\/src\/cnn.cpp",
-        "fileloc": "0",
-        "instructions": "15",
-        "total_instructions": "15",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "21": {
         "name": "dense_layer_soft_max_Pipeline_dense_soft_max_for_digits",
         "file": "CNN_Optimal\/src\/dense.cpp",
         "fileloc": "25",
@@ -326,10 +103,28 @@
             "L": "1"
         }
     },
-    "22": {
-        "name": "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7",
+    "8": {
+        "name": "convolution.2",
+        "file": "CNN_Optimal\/src\/conv.cpp",
+        "fileloc": "17",
+        "instructions": "5557",
+        "total_instructions": "5557",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2408"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols",
         "file": "CNN_Optimal\/src\/pool.cpp",
-        "fileloc": "37",
+        "fileloc": "38",
         "instructions": "78",
         "total_instructions": "78",
         "calls": "",
@@ -344,10 +139,60 @@
             "L": "1"
         }
     },
-    "23": {
-        "name": "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6",
+    "10": {
+        "name": "dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size",
+        "file": "CNN_Optimal\/src\/dense.cpp",
+        "fileloc": "10",
+        "instructions": "44",
+        "total_instructions": "44",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "convolution.1",
+        "file": "CNN_Optimal\/src\/conv.cpp",
+        "fileloc": "38",
+        "instructions": "106",
+        "total_instructions": "583",
+        "calls": "19",
+        "basicblocks": "1",
+        "loads": {
+            "G": "50"
+        }
+    },
+    "12": {
+        "name": "flattening_layer",
+        "file": "flat.cpp",
+        "fileloc": "21",
+        "instructions": "13",
+        "total_instructions": "185",
+        "calls": "18 18 18 18",
+        "basicblocks": "1"
+    },
+    "0": {
+        "name": "cnn",
+        "file": "CNN_Optimal\/src\/cnn.cpp",
+        "fileloc": "63",
+        "instructions": "95",
+        "total_instructions": "46794",
+        "calls": "5 21 3 14",
+        "basicblocks": "1"
+    },
+    "13": {
+        "name": "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7",
         "file": "CNN_Optimal\/src\/pool.cpp",
-        "fileloc": "36",
+        "fileloc": "40",
         "instructions": "78",
         "total_instructions": "78",
         "calls": "",
@@ -357,6 +202,127 @@
         },
         "stores": {
             "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "dataflow_section",
+        "file": "CNN_Optimal\/src\/cnn.cpp",
+        "fileloc": "13",
+        "instructions": "56",
+        "total_instructions": "46111",
+        "calls": "15 6 12 2 1",
+        "basicblocks": "1"
+    },
+    "15": {
+        "name": "convolutional_layer",
+        "file": "CNN_Optimal\/src\/conv.cpp",
+        "fileloc": "52",
+        "instructions": "9",
+        "total_instructions": "10092",
+        "calls": "17 11 11 8",
+        "basicblocks": "1"
+    },
+    "16": {
+        "name": "dense",
+        "file": "dense.cpp",
+        "fileloc": "31",
+        "instructions": "8839",
+        "total_instructions": "8839",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "1960"
+        }
+    },
+    "17": {
+        "name": "convolution",
+        "file": "CNN_Optimal\/src\/conv.cpp",
+        "fileloc": "17",
+        "instructions": "3360",
+        "total_instructions": "3360",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1379"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "flattening",
+        "file": "flat.cpp",
+        "fileloc": "3",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "convolution.1_Pipeline_conv_for_rows_conv_for_cols_pool_for_rows_pool_for_cols",
+        "file": "CNN_Optimal\/src\/conv.cpp",
+        "fileloc": "17",
+        "instructions": "477",
+        "total_instructions": "477",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "56"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6",
+        "file": "CNN_Optimal\/src\/pool.cpp",
+        "fileloc": "39",
+        "instructions": "78",
+        "total_instructions": "78",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "cnn_Pipeline_pad_for_rows_pad_for_cols",
+        "file": "CNN_Optimal\/src\/cnn.cpp",
+        "fileloc": "68",
+        "instructions": "167",
+        "total_instructions": "167",
+        "calls": "",
+        "basicblocks": "41",
+        "loads": {
+            "L": "3",
+            "T": "4"
+        },
+        "stores": {
+            "L": "34"
         },
         "loops": {
             "L": "1"

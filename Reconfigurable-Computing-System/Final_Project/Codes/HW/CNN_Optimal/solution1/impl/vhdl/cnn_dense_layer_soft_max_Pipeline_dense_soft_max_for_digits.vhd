@@ -161,7 +161,7 @@ attribute shreg_extract : string;
 
 
 begin
-    fdiv_32ns_32ns_32_16_no_dsp_1_U572 : component cnn_fdiv_32ns_32ns_32_16_no_dsp_1
+    fdiv_32ns_32ns_32_16_no_dsp_1_U1131 : component cnn_fdiv_32ns_32ns_32_16_no_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 16,

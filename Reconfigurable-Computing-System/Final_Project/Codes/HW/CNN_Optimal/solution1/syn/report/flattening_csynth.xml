@@ -46,14 +46,14 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN_Optimal/src/flat.cpp:6</SourceLocation>
+<SourceLocation>CNN_Optimal/src/flat.cpp:10</SourceLocation>
 <SummaryOfLoopViolations>
 <flat_for_rows>
 <Name>flat_for_rows</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Memory Dependency</ViolationType>
 <IterationDistance>1</IterationDistance>
-<SourceLocation>CNN_Optimal/src/flat.cpp:6</SourceLocation>
+<SourceLocation>CNN_Optimal/src/flat.cpp:10</SourceLocation>
 </flat_for_rows>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

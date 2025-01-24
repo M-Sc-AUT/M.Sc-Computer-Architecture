@@ -46,14 +46,14 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN_Optimal/src/pool.cpp:9~CNN_Optimal/src/pool.cpp:34</SourceLocation>
+<SourceLocation>CNN_Optimal/src/pool.cpp:13~CNN_Optimal/src/pool.cpp:38</SourceLocation>
 <SummaryOfLoopViolations>
 <pool_for_rows_pool_for_cols>
 <Name>pool_for_rows_pool_for_cols</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Memory Dependency</ViolationType>
 <IterationDistance>1</IterationDistance>
-<SourceLocation>CNN_Optimal/src/pool.cpp:9~CNN_Optimal/src/pool.cpp:34</SourceLocation>
+<SourceLocation>CNN_Optimal/src/pool.cpp:13~CNN_Optimal/src/pool.cpp:38</SourceLocation>
 </pool_for_rows_pool_for_cols>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

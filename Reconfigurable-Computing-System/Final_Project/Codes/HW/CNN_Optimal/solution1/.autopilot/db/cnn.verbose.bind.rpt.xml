@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn'" level="0">
-<item name = "Date">Thu Jan 23 17:45:28 2025
+<item name = "Date">Fri Jan 24 15:12:51 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.643 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 10.274 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">22980, 22980, 0.230 ms, 0.230 ms, 22981, 22981, no</column>
+<column name="">22999, 22999, 0.236 ms, 0.236 ms, 23000, 23000, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_cnn_Pipeline_1_fu_342">cnn_Pipeline_1, 1158, 1158, 11.580 us, 11.580 us, 1158, 1158, no</column>
-<column name="grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_348">cnn_Pipeline_pad_for_rows_pad_for_cols, 804, 804, 8.040 us, 8.040 us, 804, 804, no</column>
-<column name="grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_355">cnn_Pipeline_clone_for_rows_clone_for_cols, 1167, 1167, 11.670 us, 11.670 us, 1167, 1167, no</column>
-<column name="grp_dataflow_section_fu_411">dataflow_section, 19844, 19844, 0.198 ms, 0.198 ms, 19845, 19845, dataflow</column>
+<column name="grp_cnn_Pipeline_1_fu_494">cnn_Pipeline_1, 1167, 1167, 11.670 us, 11.670 us, 1167, 1167, no</column>
+<column name="grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_554">cnn_Pipeline_pad_for_rows_pad_for_cols, 812, 812, 8.120 us, 8.120 us, 812, 812, no</column>
+<column name="grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_594">cnn_Pipeline_clone_for_rows_clone_for_cols, 1169, 1169, 11.690 us, 11.690 us, 1169, 1169, no</column>
+<column name="grp_dataflow_section_fu_677">dataflow_section, 19844, 19844, 0.204 ms, 0.204 ms, 19845, 19845, dataflow</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

@@ -11,39 +11,42 @@
 <TopModelName>dense</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
+<TargetInitiationInterval>1</TargetInitiationInterval>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
 <PerformanceEstimates>
-<PipelineType>no</PipelineType>
+<PipelineType>yes</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.670</EstimatedClockPeriod>
+<EstimatedClockPeriod>10.274</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>2003</Best-caseLatency>
-<Average-caseLatency>2003</Average-caseLatency>
-<Worst-caseLatency>2003</Worst-caseLatency>
-<Best-caseRealTimeLatency>20.030 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>20.030 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>20.030 us</Worst-caseRealTimeLatency>
-<Interval-min>2003</Interval-min>
-<Interval-max>2003</Interval-max>
+<Best-caseLatency>996</Best-caseLatency>
+<Average-caseLatency>996</Average-caseLatency>
+<Worst-caseLatency>996</Worst-caseLatency>
+<Best-caseRealTimeLatency>10.233 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>10.233 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>10.233 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>196</PipelineInitiationInterval>
+<PipelineDepth>997</PipelineDepth>
+<Interval-min>196</Interval-min>
+<Interval-max>196</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN_Optimal/src/dense.cpp:34</SourceLocation>
+<SourceLocation>CNN_Optimal/src/dense.cpp:40</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>16</BRAM_18K>
-<DSP>5</DSP>
-<FF>866</FF>
-<LUT>1335</LUT>
+<BRAM_18K>20</BRAM_18K>
+<DSP>50</DSP>
+<FF>183861</FF>
+<LUT>78980</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -121,6 +124,28 @@
 <Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>flat_to_dense_streams_0_blk_n</name>
+<Object>dense</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>dense_to_softmax_streams_0_blk_n</name>
+<Object>dense</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>flat_to_dense_streams_0_dout</name>

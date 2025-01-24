@@ -236,7 +236,7 @@ cnn_fadd_32ns_32ns_32_5_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fadd_32ns_32ns_32_5_full_dsp_1_U562(
+fadd_32ns_32ns_32_5_full_dsp_1_U1121(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_119_p0),
@@ -251,7 +251,7 @@ cnn_fexp_32ns_32ns_32_10_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fexp_32ns_32ns_32_10_full_dsp_1_U563(
+fexp_32ns_32ns_32_10_full_dsp_1_U1122(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(32'd0),

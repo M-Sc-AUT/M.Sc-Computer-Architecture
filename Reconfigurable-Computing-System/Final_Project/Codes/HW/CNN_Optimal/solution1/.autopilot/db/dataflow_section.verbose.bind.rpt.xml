@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dataflow_section'" level="0">
-<item name = "Date">Thu Jan 23 17:45:28 2025
+<item name = "Date">Fri Jan 24 15:12:50 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.424 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 10.274 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,18 +24,18 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">19844, 19844, 0.198 ms, 0.198 ms, 19845, 19845, dataflow</column>
+<column name="">19844, 19844, 0.204 ms, 0.204 ms, 19845, 19845, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_convolutional_layer_fu_344">convolutional_layer, 19844, 19844, 0.198 ms, 0.198 ms, 19844, 19844, no</column>
-<column name="grp_max_pooling_layer_fu_556">max_pooling_layer, 3182, 3182, 31.820 us, 31.820 us, 3182, 3182, no</column>
-<column name="grp_flattening_layer_fu_568">flattening_layer, 199, 199, 1.990 us, 1.990 us, 199, 199, no</column>
-<column name="grp_dense_layer_fu_580">dense_layer, 2004, 2004, 20.040 us, 20.040 us, 2004, 2004, no</column>
-<column name="grp_dense_layer_soft_max_fu_594">dense_layer_soft_max, 120, 120, 1.200 us, 1.200 us, 120, 120, no</column>
+<column name="grp_convolutional_layer_fu_436">convolutional_layer, 19844, 19844, 0.198 ms, 0.198 ms, 19844, 19844, no</column>
+<column name="grp_max_pooling_layer_fu_702">max_pooling_layer, 3182, 3182, 31.820 us, 31.820 us, 3182, 3182, no</column>
+<column name="grp_flattening_layer_fu_714">flattening_layer, 199, 199, 1.990 us, 1.990 us, 199, 199, no</column>
+<column name="grp_dense_layer_fu_726">dense_layer, 996, 996, 10.233 us, 10.233 us, 996, 996, no</column>
+<column name="grp_dense_layer_soft_max_fu_778">dense_layer_soft_max, 120, 120, 1.200 us, 1.200 us, 120, 120, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
