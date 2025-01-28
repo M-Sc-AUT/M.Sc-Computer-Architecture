@@ -4,7 +4,7 @@
 #include <ctime>
 
 
-#define N 100
+#define N 200
 
 
 int read_images(const char* file, float images [N][IMG_ROWS][IMG_COLS])
@@ -102,7 +102,8 @@ int main()
 		}
 		else
 		{
-			printf("\nExpected: %d\n", labels[i]);
+			printf("True Label: %d\n", labels[i]);
+			printf("Network Predict: %d\n", get_max_prediction(prediction));
 			float pad_img [PAD_IMG_ROWS][PAD_IMG_COLS];
 			normalization_and_padding(images[i], pad_img);
 			print_pad_img(pad_img);

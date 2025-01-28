@@ -1,7 +1,7 @@
 #include "flat.h"
 
-void flattening( hls::stream<float> &  pool_to_flat_stream,
-				 hls::stream<float> &  flat_to_dense_stream )
+void flattening( hls::stream<fixed_point_t> &  pool_to_flat_stream,
+				 hls::stream<fixed_point_t> &  flat_to_dense_stream )
 {
 
 	#pragma HLS ARRAY_PARTITION variable=pool_to_flat_stream complete
@@ -18,8 +18,8 @@ void flattening( hls::stream<float> &  pool_to_flat_stream,
 }
 
 
-void flattening_layer( hls::stream<float> pool_to_flat_streams[FILTERS],
-					   hls::stream<float> flat_to_dense_streams[FILTERS] )
+void flattening_layer( hls::stream<fixed_point_t> pool_to_flat_streams[FILTERS],
+					   hls::stream<fixed_point_t> flat_to_dense_streams[FILTERS] )
 {
 	flattening(pool_to_flat_streams[0], flat_to_dense_streams[0]);
 	flattening(pool_to_flat_streams[1], flat_to_dense_streams[1]);

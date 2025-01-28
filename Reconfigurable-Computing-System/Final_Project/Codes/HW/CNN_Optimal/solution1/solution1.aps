@@ -6,11 +6,12 @@
         <DownStreamTool name="vivado"/>
     </downStreamTool>
     <synthesis askAgain="true"/>
-    <config/>
+    <config>
+        <config_cosim tool="xsim" trace_level="all"/>
+    </config>
     <UIConfigurations>
         <UIAutosynConf boardInfo="EBAZ4205 Development Board (xc7z010clg400-1) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/zynq/zynq</Platform>
-            <Platform>xilinx/zynq/zynq_fpv6</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -45,9 +46,10 @@
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>
         <Format formatName="pcore" use_netlist="none"/>
+        <Format formatName="xo"/>
     </ExportDesign>
-    <Simulation>
-        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="none" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="false">
+    <Simulation argv="">
+        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="xsim" waveDebug="false" ldflags="" mflags="" compiledLibrary="">
             <Rtl active="false" name="systemc"/>
             <Rtl active="true" name="verilog"/>
             <Rtl active="false" name="vhdl"/>

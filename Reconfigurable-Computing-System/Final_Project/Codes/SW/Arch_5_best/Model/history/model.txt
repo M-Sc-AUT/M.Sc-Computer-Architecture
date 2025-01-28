@@ -19,6 +19,6 @@ Model: "sequential"
  Optimizer params: 16,102 (62.90 KB)
 
 
-Accuracy on test set: 97.780
+Accuracy on test set: 97.620
 
-Mean time taken for a prediction: 39.9732 ms
+Mean time taken for a prediction: 45.4736 ms

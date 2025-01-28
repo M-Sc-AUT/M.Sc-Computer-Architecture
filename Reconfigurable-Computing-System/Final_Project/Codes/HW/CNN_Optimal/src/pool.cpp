@@ -1,13 +1,13 @@
 #include "pool.h"
 #include <cfloat>
 
-void max_pooling(hls::stream<float> & conv_to_pool_stream, hls::stream<float> & pool_to_flat_stream)
+void max_pooling(hls::stream<fixed_point_t> & conv_to_pool_stream, hls::stream<fixed_point_t> & pool_to_flat_stream)
 {
 
 	#pragma HLS ARRAY_PARTITION variable=conv_to_pool_stream complete
 	#pragma HLS ARRAY_PARTITION variable=pool_to_flat_stream complete
 
-	float pool = 0.0;
+	fixed_point_t pool = 0.0;
 
 	pool_for_rows:
 	for(int r = 0; r < IMG_ROWS; r += POOL_ROWS)
@@ -20,7 +20,7 @@ void max_pooling(hls::stream<float> & conv_to_pool_stream, hls::stream<float> & 
 		pool_for_pr: for(int pr = 0; pr < POOL_ROWS; ++pr)
 			pool_for_pc: for(int pc = 0; pc < POOL_COLS; ++pc)
 			{
-				float value = conv_to_pool_stream.read();
+				fixed_point_t value = conv_to_pool_stream.read();
 
 				#pragma HLS UNROLL
 
@@ -32,8 +32,8 @@ void max_pooling(hls::stream<float> & conv_to_pool_stream, hls::stream<float> & 
 	}
 }
 
-void max_pooling_layer( hls::stream<float> conv_to_pool_streams[FILTERS],
-						hls::stream<float> pool_to_flat_streams[FILTERS] )
+void max_pooling_layer( hls::stream<fixed_point_t> conv_to_pool_streams[FILTERS],
+						hls::stream<fixed_point_t> pool_to_flat_streams[FILTERS] )
 {
 	max_pooling(conv_to_pool_streams[0], pool_to_flat_streams[0]);
 	max_pooling(conv_to_pool_streams[1], pool_to_flat_streams[1]);

@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW/CNN_Optimal/solution1/./sim/autowrap/testbench/cnn.cpp_pre.cpp.tb.cpp

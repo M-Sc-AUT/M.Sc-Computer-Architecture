@@ -4,6 +4,12 @@
 
 #pragma once
 
+#include <ap_fixed.h>
+
+const int INT_BITS = 16; // Number of integer bits
+const int FRAC_BITS = 8; // Number of fractional bits
+typedef ap_fixed<INT_BITS + FRAC_BITS, INT_BITS> fixed_point_t;
+
 #define DIGITS 10
 
 #define IMG_ROWS 28

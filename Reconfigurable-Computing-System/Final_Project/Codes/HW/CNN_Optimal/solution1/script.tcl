@@ -22,8 +22,9 @@ add_files -tb CNN_Optimal/src/cnn_tb.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xc7z010-clg400-1}
 create_clock -period 10 -name default
+config_cosim -tool xsim -trace_level all
 source "./CNN_Optimal/solution1/directives.tcl"
 csim_design
 csynth_design
-cosim_design
+cosim_design -trace_level all -tool xsim
 export_design -format ip_catalog

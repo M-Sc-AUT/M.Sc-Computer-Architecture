@@ -4,4 +4,4 @@
 
 // Get a prediction in output.
 // Take an image in input.
-void cnn(float img_in[IMG_ROWS][IMG_COLS], float pred[DIGITS]);
+void cnn(fixed_point_t img_in[IMG_ROWS][IMG_COLS], fixed_point_t pred[DIGITS]);

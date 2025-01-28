@@ -4,11 +4,11 @@
 #include "hls_stream.h"
 
 
-void dense_layer_soft_max( hls::stream<float> dense_to_softmax_streams[FILTERS],
-						   float prediction[DIGITS] )
+void dense_layer_soft_max( hls::stream<fixed_point_t> dense_to_softmax_streams[FILTERS],
+						   fixed_point_t prediction[DIGITS] )
 {
-	float sum;
-	float exp_sum = 0.0;
+	fixed_point_t sum;
+	fixed_point_t exp_sum = 0.0;
 
 	dense_soft_max_for_dense_size: for(int d = 0; d < DENSE_SIZE; ++d)
 	{
@@ -28,12 +28,12 @@ void dense_layer_soft_max( hls::stream<float> dense_to_softmax_streams[FILTERS],
 	}
 }
 
-void dense( hls::stream<float> & flat_to_dense_stream,
+void dense( hls::stream<fixed_point_t> & flat_to_dense_stream,
 		    int filter,
-			hls::stream<float> & dense_to_softmax_stream )
+			hls::stream<fixed_point_t> & dense_to_softmax_stream )
 {
-	float flat_value;
-	float dense_array[DENSE_SIZE] = { 0 };
+	fixed_point_t flat_value;
+	fixed_point_t dense_array[DENSE_SIZE] = { 0 };
 
 
 	#pragma HLS ARRAY_PARTITION variable=dense_array complete
@@ -57,8 +57,8 @@ void dense( hls::stream<float> & flat_to_dense_stream,
 }
 
 
-void dense_layer( hls::stream<float> flat_to_dense_streams[FILTERS],
-				  hls::stream<float> dense_to_softmax_streams[FILTERS] )
+void dense_layer( hls::stream<fixed_point_t> flat_to_dense_streams[FILTERS],
+				  hls::stream<fixed_point_t> dense_to_softmax_streams[FILTERS] )
 {
 	dense(flat_to_dense_streams[0], 0, dense_to_softmax_streams[0]);
 	dense(flat_to_dense_streams[1], 1, dense_to_softmax_streams[1]);

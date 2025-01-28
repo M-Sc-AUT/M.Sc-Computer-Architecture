@@ -5,7 +5,7 @@
 #include <cstdio>
 #endif
 
-void normalization_and_padding(float img_in[IMG_ROWS][IMG_COLS], float img_out[PAD_IMG_ROWS][PAD_IMG_COLS])
+void normalization_and_padding(fixed_point_t img_in[IMG_ROWS][IMG_COLS], fixed_point_t img_out[PAD_IMG_ROWS][PAD_IMG_COLS])
 {
 	#pragma HLS ARRAY_PARTITION variable=img_in block factor=4 dim=1
 	#pragma HLS ARRAY_PARTITION variable=img_out block factor=4 dim=1
@@ -16,7 +16,7 @@ void normalization_and_padding(float img_in[IMG_ROWS][IMG_COLS], float img_out[P
 		{
 			#pragma HLS PIPELINE II=1
 			// Normalize.
-			img_out[r + PAD_ROWS / 2][c + PAD_ROWS / 2] = img_in[r][c] / 255.0;
+			img_out[r + PAD_ROWS / 2][c + PAD_ROWS / 2] = img_in[r][c];
 		}
 	}
 
@@ -25,7 +25,7 @@ void normalization_and_padding(float img_in[IMG_ROWS][IMG_COLS], float img_out[P
 #ifndef __SYNTHESIS__
 
 
-void print_pad_img(float img[PAD_IMG_ROWS][PAD_IMG_COLS])
+void print_pad_img(fixed_point_t img[PAD_IMG_ROWS][PAD_IMG_COLS])
 {
 	for(int i = 0; i < PAD_IMG_ROWS; ++i)
 	{
@@ -40,7 +40,7 @@ void print_pad_img(float img[PAD_IMG_ROWS][PAD_IMG_COLS])
 }
 
 
-void print_features(hls::stream<float> conv_to_pool_streams[FILTERS])
+void print_features(hls::stream<fixed_point_t> conv_to_pool_streams[FILTERS])
 {
 	for(int f = 0; f < FILTERS; ++f)
 	{
@@ -58,7 +58,7 @@ void print_features(hls::stream<float> conv_to_pool_streams[FILTERS])
 }
 
 
-void print_pool_features(hls::stream<float> pool_to_flat_streams[FILTERS])
+void print_pool_features(hls::stream<fixed_point_t> pool_to_flat_streams[FILTERS])
 {
 	for(int f = 0; f < FILTERS; ++f)
 	{
