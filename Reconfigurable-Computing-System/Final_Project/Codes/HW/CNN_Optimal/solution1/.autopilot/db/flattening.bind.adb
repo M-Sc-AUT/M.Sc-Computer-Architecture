@@ -37,7 +37,7 @@
 						<coreId>34</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -70,10 +70,10 @@
 						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3502537904</coreId>
+						<coreId>31</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -92,7 +92,7 @@
 					<Obj>
 						<type>0</type>
 						<id>3</id>
-						<name>r_1</name>
+						<name>r</name>
 						<fileName>CNN_Optimal/src/flat.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
 						<lineNumber>10</lineNumber>
@@ -124,7 +124,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886330980</coreId>
+						<coreId>757935405</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -148,7 +148,7 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>r_1_write_ln10</name>
+						<name>r_write_ln10</name>
 						<fileName>CNN_Optimal/src/flat.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
 						<lineNumber>10</lineNumber>
@@ -180,7 +180,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886330980</coreId>
+						<coreId>544106784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -237,7 +237,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886330980</coreId>
+						<coreId>1702060392</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -261,7 +261,7 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>r</name>
+						<name>r_1</name>
 						<fileName>CNN_Optimal/src/flat.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
 						<lineNumber>10</lineNumber>
@@ -293,7 +293,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886330980</coreId>
+						<coreId>775500595</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -464,7 +464,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702060392</coreId>
+						<coreId>1966959730</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -525,7 +525,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -640,7 +640,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -757,7 +757,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -874,7 +874,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -991,7 +991,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1108,7 +1108,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1225,7 +1225,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1342,7 +1342,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1459,7 +1459,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1576,7 +1576,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1693,7 +1693,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1810,7 +1810,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1927,7 +1927,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2044,7 +2044,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -2127,7 +2127,7 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>r_1_write_ln10</name>
+						<name>r_write_ln10</name>
 						<fileName>CNN_Optimal/src/flat.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
 						<lineNumber>10</lineNumber>
@@ -2159,7 +2159,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3660026768</coreId>
+						<coreId>2150533360</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2218,7 +2218,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3660027600</coreId>
+						<coreId>448</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2274,7 +2274,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>2343268208</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2319,7 +2319,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3634723581</coreId>
+						<coreId>2341069344</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2381,7 +2381,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3660029424</coreId>
+						<coreId>2343269056</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -2412,7 +2412,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2331791264</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -2513,7 +2513,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1663986799</coreId>
+					<coreId>18</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2573,7 +2573,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>3660028184</coreId>
+					<coreId>27</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -4466,19 +4466,19 @@
 			</second>
 		</item>
 		<item>
-			<first>r_1_fu_36</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>3</item>
-			</second>
-		</item>
-		<item>
 			<first>r_2_fu_68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>11</item>
+			</second>
+		</item>
+		<item>
+			<first>r_fu_36</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>3</item>
 			</second>
 		</item>
 	</dp_fu_nodes_expression>
@@ -4532,7 +4532,7 @@
 			</second>
 		</item>
 		<item>
-			<first>r_load_fu_59</first>
+			<first>r_1_load_fu_59</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4604,19 +4604,19 @@
 			</second>
 		</item>
 		<item>
-			<first>r_1_reg_78</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>3</item>
-			</second>
-		</item>
-		<item>
 			<first>r_2_reg_89</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>11</item>
+			</second>
+		</item>
+		<item>
+			<first>r_reg_78</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>3</item>
 			</second>
 		</item>
 	</dp_regname_nodes>

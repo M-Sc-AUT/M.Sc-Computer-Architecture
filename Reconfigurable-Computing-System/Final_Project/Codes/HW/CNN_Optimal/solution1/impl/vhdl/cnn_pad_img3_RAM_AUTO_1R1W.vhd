@@ -11,7 +11,7 @@ use ieee.std_logic_unsigned.all;
 entity cnn_pad_img3_RAM_AUTO_1R1W is 
     generic(
         MEM_TYPE        : string    := "auto"; 
-        DataWidth       : integer   := 32; 
+        DataWidth       : integer   := 24; 
         AddressWidth    : integer   := 5;
         AddressRange    : integer   := 25
     ); 

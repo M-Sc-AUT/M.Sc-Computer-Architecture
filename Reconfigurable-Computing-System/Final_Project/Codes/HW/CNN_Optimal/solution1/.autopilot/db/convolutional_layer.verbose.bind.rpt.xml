@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'convolutional_layer'" level="0">
-<item name = "Date">Fri Jan 24 15:09:59 2025
+<item name = "Date">Tue Jan 28 18:58:47 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.280 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.287 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">19844, 19844, 0.198 ms, 0.198 ms, 19844, 19844, no</column>
+<column name="">19642, 19642, 0.196 ms, 0.196 ms, 19642, 19642, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_convolution_fu_286">convolution, 1055, 1055, 10.550 us, 10.550 us, 1055, 1055, no</column>
-<column name="grp_convolution_1_fu_348">convolution_1, 19843, 19843, 0.198 ms, 0.198 ms, 19843, 19843, no</column>
-<column name="grp_convolution_1_fu_458">convolution_1, 19843, 19843, 0.198 ms, 0.198 ms, 19843, 19843, no</column>
-<column name="grp_convolution_2_fu_568">convolution_2, 1055, 1055, 10.550 us, 10.550 us, 1055, 1055, no</column>
+<column name="grp_convolution_1_fu_286">convolution_1, 846, 846, 8.460 us, 8.460 us, 846, 846, no</column>
+<column name="grp_convolution_fu_348">convolution, 19641, 19641, 0.196 ms, 0.196 ms, 19641, 19641, no</column>
+<column name="grp_convolution_fu_458">convolution, 19641, 19641, 0.196 ms, 0.196 ms, 19641, 19641, no</column>
+<column name="grp_convolution_2_fu_568">convolution_2, 841, 841, 8.410 us, 8.410 us, 841, 841, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

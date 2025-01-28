@@ -7,7 +7,7 @@
 #define N 200
 
 
-int read_images(const char* file, float images [N][IMG_ROWS][IMG_COLS])
+int read_images(const char* file, fixed_point_t images[N][IMG_ROWS][IMG_COLS])
 {
 	FILE *fp;
 
@@ -45,7 +45,7 @@ int read_labels(const char* file, int labels[N])
 	return fclose(fp);
 }
 
-int get_max_prediction(float prediction [DIGITS])
+int get_max_prediction(fixed_point_t prediction[DIGITS])
 {
 	int max_digit = 0;
 	for(int i = 0; i < DIGITS; ++i)
@@ -69,7 +69,7 @@ int main()
 	}
 
 	/**** Read the images. ****/
-	float images[N][IMG_ROWS][IMG_COLS];
+	fixed_point_t images[N][IMG_ROWS][IMG_COLS];
 	if( 0 != read_images("/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW/CNN_Optimal/src/Data/in.dat", images) )
 	{
 		printf("Error: can't open file ``Data/in.dat''\n");
@@ -87,7 +87,7 @@ int main()
 	/**** Do N predictions. ****/
 	double time = 0;
 	int correct_predictions = 0;
-	float prediction[DIGITS];
+	fixed_point_t prediction[DIGITS];
 
 	for(int i = 0; i < N; ++i)
 	{
@@ -104,7 +104,7 @@ int main()
 		{
 			printf("True Label: %d\n", labels[i]);
 			printf("Network Predict: %d\n", get_max_prediction(prediction));
-			float pad_img [PAD_IMG_ROWS][PAD_IMG_COLS];
+			fixed_point_t pad_img [PAD_IMG_ROWS][PAD_IMG_COLS];
 			normalization_and_padding(images[i], pad_img);
 			print_pad_img(pad_img);
 			printf("Prediction:\n");

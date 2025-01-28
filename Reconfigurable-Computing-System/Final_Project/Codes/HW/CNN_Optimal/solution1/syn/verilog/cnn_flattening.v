@@ -46,12 +46,12 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-input  [31:0] pool_to_flat_streams_0_dout;
+input  [23:0] pool_to_flat_streams_0_dout;
 input  [8:0] pool_to_flat_streams_0_num_data_valid;
 input  [8:0] pool_to_flat_streams_0_fifo_cap;
 input   pool_to_flat_streams_0_empty_n;
 output   pool_to_flat_streams_0_read;
-output  [31:0] flat_to_dense_streams_0_din;
+output  [23:0] flat_to_dense_streams_0_din;
 input  [8:0] flat_to_dense_streams_0_num_data_valid;
 input  [8:0] flat_to_dense_streams_0_fifo_cap;
 input   flat_to_dense_streams_0_full_n;
@@ -108,11 +108,11 @@ reg    ap_block_pp0_stage0_11001;
 wire   [3:0] r_2_fu_68_p2;
 reg   [3:0] r_2_reg_89;
 reg    ap_enable_reg_pp0_iter0_reg;
-reg   [3:0] r_1_fu_36;
+reg   [3:0] r_fu_36;
 reg    ap_block_state2_pp0_stage1_iter0;
 reg    ap_block_pp0_stage1_11001;
 wire    ap_loop_init;
-reg   [3:0] ap_sig_allocacmp_r;
+reg   [3:0] ap_sig_allocacmp_r_1;
 reg    ap_block_state3_pp0_stage2_iter0;
 reg    ap_block_pp0_stage2_11001;
 reg    ap_block_state4_pp0_stage3_iter0;
@@ -176,7 +176,7 @@ initial begin
 #0 ap_CS_fsm = 14'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_enable_reg_pp0_iter0_reg = 1'b0;
-#0 r_1_fu_36 = 4'd0;
+#0 r_fu_36 = 4'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -241,9 +241,9 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        r_1_fu_36 <= 4'd0;
+        r_fu_36 <= 4'd0;
     end else if (((icmp_ln10_reg_85 == 1'd0) & (1'b0 == ap_block_pp0_stage1_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
-        r_1_fu_36 <= r_2_reg_89;
+        r_fu_36 <= r_2_reg_89;
     end
 end
 
@@ -312,9 +312,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_r = 4'd0;
+        ap_sig_allocacmp_r_1 = 4'd0;
     end else begin
-        ap_sig_allocacmp_r = r_1_fu_36;
+        ap_sig_allocacmp_r_1 = r_fu_36;
     end
 end
 
@@ -748,8 +748,8 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign flat_to_dense_streams_0_din = pool_to_flat_streams_0_dout;
 
-assign icmp_ln10_fu_62_p2 = ((ap_sig_allocacmp_r == 4'd14) ? 1'b1 : 1'b0);
+assign icmp_ln10_fu_62_p2 = ((ap_sig_allocacmp_r_1 == 4'd14) ? 1'b1 : 1'b0);
 
-assign r_2_fu_68_p2 = (ap_sig_allocacmp_r + 4'd1);
+assign r_2_fu_68_p2 = (ap_sig_allocacmp_r_1 + 4'd1);
 
 endmodule //cnn_flattening

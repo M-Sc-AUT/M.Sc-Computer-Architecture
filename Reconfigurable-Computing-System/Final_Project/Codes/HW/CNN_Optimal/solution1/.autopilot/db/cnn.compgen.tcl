@@ -1,5 +1,11 @@
 # This script segment is generated automatically by AutoPilot
 
+set name cnn_urem_6ns_5ns_6_10_seq_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {urem} IMPL {auto_seq} LATENCY 9 ALLOW_PRAGMA 1
+}
+
+
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler cnn_pad_img0_RAM_1WNR_AUTO_1R1W BINDTYPE {storage} TYPE {ram_1wnr} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
@@ -27,14 +33,14 @@ set axilite_register_dict [dict create]
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1241 \
+    id 3104 \
     name img_in_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename img_in_0 \
     op interface \
-    ports { img_in_0_address0 { O 8 vector } img_in_0_ce0 { O 1 bit } img_in_0_q0 { I 32 vector } } \
+    ports { img_in_0_address0 { O 8 vector } img_in_0_ce0 { O 1 bit } img_in_0_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'img_in_0'"
@@ -46,14 +52,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1242 \
+    id 3105 \
     name img_in_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename img_in_1 \
     op interface \
-    ports { img_in_1_address0 { O 8 vector } img_in_1_ce0 { O 1 bit } img_in_1_q0 { I 32 vector } } \
+    ports { img_in_1_address0 { O 8 vector } img_in_1_ce0 { O 1 bit } img_in_1_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'img_in_1'"
@@ -65,14 +71,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1243 \
+    id 3106 \
     name img_in_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename img_in_2 \
     op interface \
-    ports { img_in_2_address0 { O 8 vector } img_in_2_ce0 { O 1 bit } img_in_2_q0 { I 32 vector } } \
+    ports { img_in_2_address0 { O 8 vector } img_in_2_ce0 { O 1 bit } img_in_2_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'img_in_2'"
@@ -84,14 +90,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1244 \
+    id 3107 \
     name img_in_3 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename img_in_3 \
     op interface \
-    ports { img_in_3_address0 { O 8 vector } img_in_3_ce0 { O 1 bit } img_in_3_q0 { I 32 vector } } \
+    ports { img_in_3_address0 { O 8 vector } img_in_3_ce0 { O 1 bit } img_in_3_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'img_in_3'"
@@ -103,14 +109,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1245 \
+    id 3108 \
     name prediction \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename prediction \
     op interface \
-    ports { prediction_address0 { O 4 vector } prediction_ce0 { O 1 bit } prediction_we0 { O 1 bit } prediction_d0 { O 32 vector } prediction_address1 { O 4 vector } prediction_ce1 { O 1 bit } prediction_q1 { I 32 vector } } \
+    ports { prediction_address0 { O 4 vector } prediction_ce0 { O 1 bit } prediction_we0 { O 1 bit } prediction_d0 { O 24 vector } prediction_address1 { O 4 vector } prediction_ce1 { O 1 bit } prediction_q1 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'prediction'"

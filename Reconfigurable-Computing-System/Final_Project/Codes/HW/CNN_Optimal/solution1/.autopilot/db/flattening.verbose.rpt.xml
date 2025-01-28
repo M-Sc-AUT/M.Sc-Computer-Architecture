@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'flattening'" level="0">
-<item name = "Date">Fri Jan 24 15:13:13 2025
+<item name = "Date">Tue Jan 28 19:05:57 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -106,10 +106,10 @@
 <column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter0_reg">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_r">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_r_1">9, 2, 4, 8</column>
 <column name="flat_to_dense_streams_0_blk_n">9, 2, 1, 2</column>
 <column name="pool_to_flat_streams_0_blk_n">9, 2, 1, 2</column>
-<column name="r_1_fu_36">9, 2, 4, 8</column>
+<column name="r_fu_36">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -119,8 +119,8 @@
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="icmp_ln10_reg_85">1, 0, 1, 0</column>
-<column name="r_1_fu_36">4, 0, 4, 0</column>
 <column name="r_2_reg_89">4, 0, 4, 0</column>
+<column name="r_fu_36">4, 0, 4, 0</column>
 </table>
 </item>
 </section>
@@ -136,12 +136,12 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, flattening, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, flattening, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, flattening, return value</column>
-<column name="pool_to_flat_streams_0_dout">in, 32, ap_fifo, pool_to_flat_streams_0, pointer</column>
+<column name="pool_to_flat_streams_0_dout">in, 24, ap_fifo, pool_to_flat_streams_0, pointer</column>
 <column name="pool_to_flat_streams_0_num_data_valid">in, 9, ap_fifo, pool_to_flat_streams_0, pointer</column>
 <column name="pool_to_flat_streams_0_fifo_cap">in, 9, ap_fifo, pool_to_flat_streams_0, pointer</column>
 <column name="pool_to_flat_streams_0_empty_n">in, 1, ap_fifo, pool_to_flat_streams_0, pointer</column>
 <column name="pool_to_flat_streams_0_read">out, 1, ap_fifo, pool_to_flat_streams_0, pointer</column>
-<column name="flat_to_dense_streams_0_din">out, 32, ap_fifo, flat_to_dense_streams_0, pointer</column>
+<column name="flat_to_dense_streams_0_din">out, 24, ap_fifo, flat_to_dense_streams_0, pointer</column>
 <column name="flat_to_dense_streams_0_num_data_valid">in, 9, ap_fifo, flat_to_dense_streams_0, pointer</column>
 <column name="flat_to_dense_streams_0_fifo_cap">in, 9, ap_fifo, flat_to_dense_streams_0, pointer</column>
 <column name="flat_to_dense_streams_0_full_n">in, 1, ap_fifo, flat_to_dense_streams_0, pointer</column>

@@ -23,9 +23,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="138" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32">
+<Node id="138" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="24" op_13_bw="24" op_14_bw="24" op_15_bw="24" op_16_bw="24" op_17_bw="24" op_18_bw="24" op_19_bw="24" op_20_bw="24" op_21_bw="24" op_22_bw="24" op_23_bw="24" op_24_bw="24" op_25_bw="24" op_26_bw="24" op_27_bw="24" op_28_bw="24" op_29_bw="24">
 <![CDATA[
-entry:4 %call_ln58 = call void @convolution, i32 %pad_img0_0_0, i32 %pad_img0_0_1, i32 %pad_img0_0_2, i32 %pad_img0_0_3, i32 %pad_img0_0_4, i32 %pad_img0_0_5, i32 %pad_img0_0_6, i32 %pad_img0_1_0, i32 %pad_img0_1_1, i32 %pad_img0_1_2, i32 %pad_img0_1_3, i32 %pad_img0_1_4, i32 %pad_img0_1_5, i32 %pad_img0_1_6, i32 %pad_img0_2_0, i32 %pad_img0_2_1, i32 %pad_img0_2_2, i32 %pad_img0_2_3, i32 %pad_img0_2_4, i32 %pad_img0_2_5, i32 %pad_img0_2_6, i32 %pad_img0_3_0, i32 %pad_img0_3_1, i32 %pad_img0_3_2, i32 %pad_img0_3_3, i32 %pad_img0_3_4, i32 %pad_img0_3_5, i32 %pad_img0_3_6, i32 %conv_to_pool_streams_0
+entry:4 %call_ln58 = call void @convolution.1, i24 %pad_img0_0_0, i24 %pad_img0_0_1, i24 %pad_img0_0_2, i24 %pad_img0_0_3, i24 %pad_img0_0_4, i24 %pad_img0_0_5, i24 %pad_img0_0_6, i24 %pad_img0_1_0, i24 %pad_img0_1_1, i24 %pad_img0_1_2, i24 %pad_img0_1_3, i24 %pad_img0_1_4, i24 %pad_img0_1_5, i24 %pad_img0_1_6, i24 %pad_img0_2_0, i24 %pad_img0_2_1, i24 %pad_img0_2_2, i24 %pad_img0_2_3, i24 %pad_img0_2_4, i24 %pad_img0_2_5, i24 %pad_img0_2_6, i24 %pad_img0_3_0, i24 %pad_img0_3_1, i24 %pad_img0_3_2, i24 %pad_img0_3_3, i24 %pad_img0_3_4, i24 %pad_img0_3_5, i24 %pad_img0_3_6, i24 %conv_to_pool_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln58"/></StgValue>
@@ -38,9 +38,9 @@ entry:4 %call_ln58 = call void @convolution, i32 %pad_img0_0_0, i32 %pad_img0_0_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="139" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="2" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32">
+<Node id="139" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="2" op_3_bw="24" op_4_bw="6" op_5_bw="8" op_6_bw="7" op_7_bw="8" op_8_bw="8" op_9_bw="9" op_10_bw="8" op_11_bw="9" op_12_bw="8" op_13_bw="9" op_14_bw="8" op_15_bw="9" op_16_bw="8" op_17_bw="9" op_18_bw="8" op_19_bw="8" op_20_bw="9" op_21_bw="8" op_22_bw="8" op_23_bw="9" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="9" op_28_bw="9" op_29_bw="8" op_30_bw="9" op_31_bw="9" op_32_bw="8" op_33_bw="8" op_34_bw="8" op_35_bw="9" op_36_bw="9" op_37_bw="8" op_38_bw="9" op_39_bw="9" op_40_bw="9" op_41_bw="9" op_42_bw="9" op_43_bw="9" op_44_bw="9" op_45_bw="7" op_46_bw="9" op_47_bw="9" op_48_bw="9" op_49_bw="10" op_50_bw="9" op_51_bw="9" op_52_bw="9" op_53_bw="9">
 <![CDATA[
-entry:5 %call_ln59 = call void @convolution.1, i32 %pad_img1, i2 1, i32 %conv_to_pool_streams_1, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6
+entry:5 %call_ln59 = call void @convolution, i24 %pad_img1, i2 1, i24 %conv_to_pool_streams_1, i6 %conv_biases, i8 %conv_weights_0_0, i7 %conv_weights_0_1, i8 %conv_weights_0_2, i8 %conv_weights_0_3, i9 %conv_weights_0_4, i8 %conv_weights_0_5, i9 %conv_weights_0_6, i8 %conv_weights_1_0, i9 %conv_weights_1_1, i8 %conv_weights_1_2, i9 %conv_weights_1_3, i8 %conv_weights_1_4, i9 %conv_weights_1_5, i8 %conv_weights_1_6, i8 %conv_weights_2_0, i9 %conv_weights_2_1, i8 %conv_weights_2_2, i8 %conv_weights_2_3, i9 %conv_weights_2_4, i8 %conv_weights_2_5, i8 %conv_weights_2_6, i8 %conv_weights_3_0, i9 %conv_weights_3_1, i9 %conv_weights_3_2, i8 %conv_weights_3_3, i9 %conv_weights_3_4, i9 %conv_weights_3_5, i8 %conv_weights_3_6, i8 %conv_weights_4_0, i8 %conv_weights_4_1, i9 %conv_weights_4_2, i9 %conv_weights_4_3, i8 %conv_weights_4_4, i9 %conv_weights_4_5, i9 %conv_weights_4_6, i9 %conv_weights_5_0, i9 %conv_weights_5_1, i9 %conv_weights_5_2, i9 %conv_weights_5_3, i9 %conv_weights_5_4, i7 %conv_weights_5_5, i9 %conv_weights_5_6, i9 %conv_weights_6_0, i9 %conv_weights_6_1, i10 %conv_weights_6_2, i9 %conv_weights_6_3, i9 %conv_weights_6_4, i9 %conv_weights_6_5, i9 %conv_weights_6_6
 
 ]]></Node>
 <StgValue><ssdm name="call_ln59"/></StgValue>
@@ -53,9 +53,9 @@ entry:5 %call_ln59 = call void @convolution.1, i32 %pad_img1, i2 1, i32 %conv_to
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="140" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="2" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32">
+<Node id="140" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="2" op_3_bw="24" op_4_bw="6" op_5_bw="8" op_6_bw="7" op_7_bw="8" op_8_bw="8" op_9_bw="9" op_10_bw="8" op_11_bw="9" op_12_bw="8" op_13_bw="9" op_14_bw="8" op_15_bw="9" op_16_bw="8" op_17_bw="9" op_18_bw="8" op_19_bw="8" op_20_bw="9" op_21_bw="8" op_22_bw="8" op_23_bw="9" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="9" op_28_bw="9" op_29_bw="8" op_30_bw="9" op_31_bw="9" op_32_bw="8" op_33_bw="8" op_34_bw="8" op_35_bw="9" op_36_bw="9" op_37_bw="8" op_38_bw="9" op_39_bw="9" op_40_bw="9" op_41_bw="9" op_42_bw="9" op_43_bw="9" op_44_bw="9" op_45_bw="7" op_46_bw="9" op_47_bw="9" op_48_bw="9" op_49_bw="10" op_50_bw="9" op_51_bw="9" op_52_bw="9" op_53_bw="9">
 <![CDATA[
-entry:6 %call_ln60 = call void @convolution.1, i32 %pad_img2, i2 2, i32 %conv_to_pool_streams_2, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6
+entry:6 %call_ln60 = call void @convolution, i24 %pad_img2, i2 2, i24 %conv_to_pool_streams_2, i6 %conv_biases, i8 %conv_weights_0_0, i7 %conv_weights_0_1, i8 %conv_weights_0_2, i8 %conv_weights_0_3, i9 %conv_weights_0_4, i8 %conv_weights_0_5, i9 %conv_weights_0_6, i8 %conv_weights_1_0, i9 %conv_weights_1_1, i8 %conv_weights_1_2, i9 %conv_weights_1_3, i8 %conv_weights_1_4, i9 %conv_weights_1_5, i8 %conv_weights_1_6, i8 %conv_weights_2_0, i9 %conv_weights_2_1, i8 %conv_weights_2_2, i8 %conv_weights_2_3, i9 %conv_weights_2_4, i8 %conv_weights_2_5, i8 %conv_weights_2_6, i8 %conv_weights_3_0, i9 %conv_weights_3_1, i9 %conv_weights_3_2, i8 %conv_weights_3_3, i9 %conv_weights_3_4, i9 %conv_weights_3_5, i8 %conv_weights_3_6, i8 %conv_weights_4_0, i8 %conv_weights_4_1, i9 %conv_weights_4_2, i9 %conv_weights_4_3, i8 %conv_weights_4_4, i9 %conv_weights_4_5, i9 %conv_weights_4_6, i9 %conv_weights_5_0, i9 %conv_weights_5_1, i9 %conv_weights_5_2, i9 %conv_weights_5_3, i9 %conv_weights_5_4, i7 %conv_weights_5_5, i9 %conv_weights_5_6, i9 %conv_weights_6_0, i9 %conv_weights_6_1, i10 %conv_weights_6_2, i9 %conv_weights_6_3, i9 %conv_weights_6_4, i9 %conv_weights_6_5, i9 %conv_weights_6_6
 
 ]]></Node>
 <StgValue><ssdm name="call_ln60"/></StgValue>
@@ -68,9 +68,9 @@ entry:6 %call_ln60 = call void @convolution.1, i32 %pad_img2, i2 2, i32 %conv_to
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="141" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32">
+<Node id="141" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="24" op_13_bw="24" op_14_bw="24" op_15_bw="24" op_16_bw="24" op_17_bw="24" op_18_bw="24" op_19_bw="24" op_20_bw="24" op_21_bw="24" op_22_bw="24" op_23_bw="24" op_24_bw="24" op_25_bw="24" op_26_bw="24" op_27_bw="24" op_28_bw="24" op_29_bw="24" op_30_bw="24" op_31_bw="24" op_32_bw="24" op_33_bw="24" op_34_bw="24" op_35_bw="24" op_36_bw="24" op_37_bw="24" op_38_bw="24" op_39_bw="24" op_40_bw="24" op_41_bw="24" op_42_bw="24" op_43_bw="24" op_44_bw="24" op_45_bw="24" op_46_bw="24" op_47_bw="24" op_48_bw="24" op_49_bw="24" op_50_bw="24">
 <![CDATA[
-entry:7 %call_ln61 = call void @convolution.2, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams_3
+entry:7 %call_ln61 = call void @convolution.2, i24 %pad_img3_0_0, i24 %pad_img3_0_1, i24 %pad_img3_0_2, i24 %pad_img3_0_3, i24 %pad_img3_0_4, i24 %pad_img3_0_5, i24 %pad_img3_0_6, i24 %pad_img3_1_0, i24 %pad_img3_1_1, i24 %pad_img3_1_2, i24 %pad_img3_1_3, i24 %pad_img3_1_4, i24 %pad_img3_1_5, i24 %pad_img3_1_6, i24 %pad_img3_2_0, i24 %pad_img3_2_1, i24 %pad_img3_2_2, i24 %pad_img3_2_3, i24 %pad_img3_2_4, i24 %pad_img3_2_5, i24 %pad_img3_2_6, i24 %pad_img3_3_0, i24 %pad_img3_3_1, i24 %pad_img3_3_2, i24 %pad_img3_3_3, i24 %pad_img3_3_4, i24 %pad_img3_3_5, i24 %pad_img3_3_6, i24 %pad_img3_4_0, i24 %pad_img3_4_1, i24 %pad_img3_4_2, i24 %pad_img3_4_3, i24 %pad_img3_4_4, i24 %pad_img3_4_5, i24 %pad_img3_4_6, i24 %pad_img3_5_0, i24 %pad_img3_5_1, i24 %pad_img3_5_2, i24 %pad_img3_5_3, i24 %pad_img3_5_4, i24 %pad_img3_5_5, i24 %pad_img3_5_6, i24 %pad_img3_6_0, i24 %pad_img3_6_1, i24 %pad_img3_6_2, i24 %pad_img3_6_3, i24 %pad_img3_6_4, i24 %pad_img3_6_5, i24 %pad_img3_6_6, i24 %conv_to_pool_streams_3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln61"/></StgValue>
@@ -86,9 +86,9 @@ entry:7 %call_ln61 = call void @convolution.2, i32 %pad_img3_0_0, i32 %pad_img3_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="134" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="134" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_3, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0
+entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_3, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -101,9 +101,9 @@ entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %co
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="135" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="135" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_2, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0
+entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_2, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -116,9 +116,9 @@ entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %co
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="136" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="136" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_1, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0
+entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_1, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -131,9 +131,9 @@ entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %co
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="137" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="137" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_0, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0
+entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_0, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -146,9 +146,9 @@ entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %co
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="138" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32">
+<Node id="138" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="24" op_13_bw="24" op_14_bw="24" op_15_bw="24" op_16_bw="24" op_17_bw="24" op_18_bw="24" op_19_bw="24" op_20_bw="24" op_21_bw="24" op_22_bw="24" op_23_bw="24" op_24_bw="24" op_25_bw="24" op_26_bw="24" op_27_bw="24" op_28_bw="24" op_29_bw="24">
 <![CDATA[
-entry:4 %call_ln58 = call void @convolution, i32 %pad_img0_0_0, i32 %pad_img0_0_1, i32 %pad_img0_0_2, i32 %pad_img0_0_3, i32 %pad_img0_0_4, i32 %pad_img0_0_5, i32 %pad_img0_0_6, i32 %pad_img0_1_0, i32 %pad_img0_1_1, i32 %pad_img0_1_2, i32 %pad_img0_1_3, i32 %pad_img0_1_4, i32 %pad_img0_1_5, i32 %pad_img0_1_6, i32 %pad_img0_2_0, i32 %pad_img0_2_1, i32 %pad_img0_2_2, i32 %pad_img0_2_3, i32 %pad_img0_2_4, i32 %pad_img0_2_5, i32 %pad_img0_2_6, i32 %pad_img0_3_0, i32 %pad_img0_3_1, i32 %pad_img0_3_2, i32 %pad_img0_3_3, i32 %pad_img0_3_4, i32 %pad_img0_3_5, i32 %pad_img0_3_6, i32 %conv_to_pool_streams_0
+entry:4 %call_ln58 = call void @convolution.1, i24 %pad_img0_0_0, i24 %pad_img0_0_1, i24 %pad_img0_0_2, i24 %pad_img0_0_3, i24 %pad_img0_0_4, i24 %pad_img0_0_5, i24 %pad_img0_0_6, i24 %pad_img0_1_0, i24 %pad_img0_1_1, i24 %pad_img0_1_2, i24 %pad_img0_1_3, i24 %pad_img0_1_4, i24 %pad_img0_1_5, i24 %pad_img0_1_6, i24 %pad_img0_2_0, i24 %pad_img0_2_1, i24 %pad_img0_2_2, i24 %pad_img0_2_3, i24 %pad_img0_2_4, i24 %pad_img0_2_5, i24 %pad_img0_2_6, i24 %pad_img0_3_0, i24 %pad_img0_3_1, i24 %pad_img0_3_2, i24 %pad_img0_3_3, i24 %pad_img0_3_4, i24 %pad_img0_3_5, i24 %pad_img0_3_6, i24 %conv_to_pool_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln58"/></StgValue>
@@ -161,9 +161,9 @@ entry:4 %call_ln58 = call void @convolution, i32 %pad_img0_0_0, i32 %pad_img0_0_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="139" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="2" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32">
+<Node id="139" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="2" op_3_bw="24" op_4_bw="6" op_5_bw="8" op_6_bw="7" op_7_bw="8" op_8_bw="8" op_9_bw="9" op_10_bw="8" op_11_bw="9" op_12_bw="8" op_13_bw="9" op_14_bw="8" op_15_bw="9" op_16_bw="8" op_17_bw="9" op_18_bw="8" op_19_bw="8" op_20_bw="9" op_21_bw="8" op_22_bw="8" op_23_bw="9" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="9" op_28_bw="9" op_29_bw="8" op_30_bw="9" op_31_bw="9" op_32_bw="8" op_33_bw="8" op_34_bw="8" op_35_bw="9" op_36_bw="9" op_37_bw="8" op_38_bw="9" op_39_bw="9" op_40_bw="9" op_41_bw="9" op_42_bw="9" op_43_bw="9" op_44_bw="9" op_45_bw="7" op_46_bw="9" op_47_bw="9" op_48_bw="9" op_49_bw="10" op_50_bw="9" op_51_bw="9" op_52_bw="9" op_53_bw="9">
 <![CDATA[
-entry:5 %call_ln59 = call void @convolution.1, i32 %pad_img1, i2 1, i32 %conv_to_pool_streams_1, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6
+entry:5 %call_ln59 = call void @convolution, i24 %pad_img1, i2 1, i24 %conv_to_pool_streams_1, i6 %conv_biases, i8 %conv_weights_0_0, i7 %conv_weights_0_1, i8 %conv_weights_0_2, i8 %conv_weights_0_3, i9 %conv_weights_0_4, i8 %conv_weights_0_5, i9 %conv_weights_0_6, i8 %conv_weights_1_0, i9 %conv_weights_1_1, i8 %conv_weights_1_2, i9 %conv_weights_1_3, i8 %conv_weights_1_4, i9 %conv_weights_1_5, i8 %conv_weights_1_6, i8 %conv_weights_2_0, i9 %conv_weights_2_1, i8 %conv_weights_2_2, i8 %conv_weights_2_3, i9 %conv_weights_2_4, i8 %conv_weights_2_5, i8 %conv_weights_2_6, i8 %conv_weights_3_0, i9 %conv_weights_3_1, i9 %conv_weights_3_2, i8 %conv_weights_3_3, i9 %conv_weights_3_4, i9 %conv_weights_3_5, i8 %conv_weights_3_6, i8 %conv_weights_4_0, i8 %conv_weights_4_1, i9 %conv_weights_4_2, i9 %conv_weights_4_3, i8 %conv_weights_4_4, i9 %conv_weights_4_5, i9 %conv_weights_4_6, i9 %conv_weights_5_0, i9 %conv_weights_5_1, i9 %conv_weights_5_2, i9 %conv_weights_5_3, i9 %conv_weights_5_4, i7 %conv_weights_5_5, i9 %conv_weights_5_6, i9 %conv_weights_6_0, i9 %conv_weights_6_1, i10 %conv_weights_6_2, i9 %conv_weights_6_3, i9 %conv_weights_6_4, i9 %conv_weights_6_5, i9 %conv_weights_6_6
 
 ]]></Node>
 <StgValue><ssdm name="call_ln59"/></StgValue>
@@ -176,9 +176,9 @@ entry:5 %call_ln59 = call void @convolution.1, i32 %pad_img1, i2 1, i32 %conv_to
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="140" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="2" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32">
+<Node id="140" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="2" op_3_bw="24" op_4_bw="6" op_5_bw="8" op_6_bw="7" op_7_bw="8" op_8_bw="8" op_9_bw="9" op_10_bw="8" op_11_bw="9" op_12_bw="8" op_13_bw="9" op_14_bw="8" op_15_bw="9" op_16_bw="8" op_17_bw="9" op_18_bw="8" op_19_bw="8" op_20_bw="9" op_21_bw="8" op_22_bw="8" op_23_bw="9" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="9" op_28_bw="9" op_29_bw="8" op_30_bw="9" op_31_bw="9" op_32_bw="8" op_33_bw="8" op_34_bw="8" op_35_bw="9" op_36_bw="9" op_37_bw="8" op_38_bw="9" op_39_bw="9" op_40_bw="9" op_41_bw="9" op_42_bw="9" op_43_bw="9" op_44_bw="9" op_45_bw="7" op_46_bw="9" op_47_bw="9" op_48_bw="9" op_49_bw="10" op_50_bw="9" op_51_bw="9" op_52_bw="9" op_53_bw="9">
 <![CDATA[
-entry:6 %call_ln60 = call void @convolution.1, i32 %pad_img2, i2 2, i32 %conv_to_pool_streams_2, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6
+entry:6 %call_ln60 = call void @convolution, i24 %pad_img2, i2 2, i24 %conv_to_pool_streams_2, i6 %conv_biases, i8 %conv_weights_0_0, i7 %conv_weights_0_1, i8 %conv_weights_0_2, i8 %conv_weights_0_3, i9 %conv_weights_0_4, i8 %conv_weights_0_5, i9 %conv_weights_0_6, i8 %conv_weights_1_0, i9 %conv_weights_1_1, i8 %conv_weights_1_2, i9 %conv_weights_1_3, i8 %conv_weights_1_4, i9 %conv_weights_1_5, i8 %conv_weights_1_6, i8 %conv_weights_2_0, i9 %conv_weights_2_1, i8 %conv_weights_2_2, i8 %conv_weights_2_3, i9 %conv_weights_2_4, i8 %conv_weights_2_5, i8 %conv_weights_2_6, i8 %conv_weights_3_0, i9 %conv_weights_3_1, i9 %conv_weights_3_2, i8 %conv_weights_3_3, i9 %conv_weights_3_4, i9 %conv_weights_3_5, i8 %conv_weights_3_6, i8 %conv_weights_4_0, i8 %conv_weights_4_1, i9 %conv_weights_4_2, i9 %conv_weights_4_3, i8 %conv_weights_4_4, i9 %conv_weights_4_5, i9 %conv_weights_4_6, i9 %conv_weights_5_0, i9 %conv_weights_5_1, i9 %conv_weights_5_2, i9 %conv_weights_5_3, i9 %conv_weights_5_4, i7 %conv_weights_5_5, i9 %conv_weights_5_6, i9 %conv_weights_6_0, i9 %conv_weights_6_1, i10 %conv_weights_6_2, i9 %conv_weights_6_3, i9 %conv_weights_6_4, i9 %conv_weights_6_5, i9 %conv_weights_6_6
 
 ]]></Node>
 <StgValue><ssdm name="call_ln60"/></StgValue>
@@ -191,9 +191,9 @@ entry:6 %call_ln60 = call void @convolution.1, i32 %pad_img2, i2 2, i32 %conv_to
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="141" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32">
+<Node id="141" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="24" op_4_bw="24" op_5_bw="24" op_6_bw="24" op_7_bw="24" op_8_bw="24" op_9_bw="24" op_10_bw="24" op_11_bw="24" op_12_bw="24" op_13_bw="24" op_14_bw="24" op_15_bw="24" op_16_bw="24" op_17_bw="24" op_18_bw="24" op_19_bw="24" op_20_bw="24" op_21_bw="24" op_22_bw="24" op_23_bw="24" op_24_bw="24" op_25_bw="24" op_26_bw="24" op_27_bw="24" op_28_bw="24" op_29_bw="24" op_30_bw="24" op_31_bw="24" op_32_bw="24" op_33_bw="24" op_34_bw="24" op_35_bw="24" op_36_bw="24" op_37_bw="24" op_38_bw="24" op_39_bw="24" op_40_bw="24" op_41_bw="24" op_42_bw="24" op_43_bw="24" op_44_bw="24" op_45_bw="24" op_46_bw="24" op_47_bw="24" op_48_bw="24" op_49_bw="24" op_50_bw="24">
 <![CDATA[
-entry:7 %call_ln61 = call void @convolution.2, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams_3
+entry:7 %call_ln61 = call void @convolution.2, i24 %pad_img3_0_0, i24 %pad_img3_0_1, i24 %pad_img3_0_2, i24 %pad_img3_0_3, i24 %pad_img3_0_4, i24 %pad_img3_0_5, i24 %pad_img3_0_6, i24 %pad_img3_1_0, i24 %pad_img3_1_1, i24 %pad_img3_1_2, i24 %pad_img3_1_3, i24 %pad_img3_1_4, i24 %pad_img3_1_5, i24 %pad_img3_1_6, i24 %pad_img3_2_0, i24 %pad_img3_2_1, i24 %pad_img3_2_2, i24 %pad_img3_2_3, i24 %pad_img3_2_4, i24 %pad_img3_2_5, i24 %pad_img3_2_6, i24 %pad_img3_3_0, i24 %pad_img3_3_1, i24 %pad_img3_3_2, i24 %pad_img3_3_3, i24 %pad_img3_3_4, i24 %pad_img3_3_5, i24 %pad_img3_3_6, i24 %pad_img3_4_0, i24 %pad_img3_4_1, i24 %pad_img3_4_2, i24 %pad_img3_4_3, i24 %pad_img3_4_4, i24 %pad_img3_4_5, i24 %pad_img3_4_6, i24 %pad_img3_5_0, i24 %pad_img3_5_1, i24 %pad_img3_5_2, i24 %pad_img3_5_3, i24 %pad_img3_5_4, i24 %pad_img3_5_5, i24 %pad_img3_5_6, i24 %pad_img3_6_0, i24 %pad_img3_6_1, i24 %pad_img3_6_2, i24 %pad_img3_6_3, i24 %pad_img3_6_4, i24 %pad_img3_6_5, i24 %pad_img3_6_6, i24 %conv_to_pool_streams_3
 
 ]]></Node>
 <StgValue><ssdm name="call_ln61"/></StgValue>
@@ -750,7 +750,7 @@ entry:8 %ret_ln62 = ret
 
 
 <dataflows>
-<dataflow id="151" from="convolution" to="call_ln58" fromId="150" toId="3">
+<dataflow id="151" from="convolution.1" to="call_ln58" fromId="150" toId="3">
 </dataflow>
 <dataflow id="152" from="pad_img0_0_0" to="call_ln58" fromId="17" toId="3">
 </dataflow>
@@ -810,7 +810,7 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="180" from="conv_to_pool_streams_0" to="call_ln58" fromId="96" toId="3">
 </dataflow>
-<dataflow id="182" from="convolution.1" to="call_ln59" fromId="181" toId="4">
+<dataflow id="182" from="convolution" to="call_ln59" fromId="181" toId="4">
 </dataflow>
 <dataflow id="183" from="pad_img1" to="call_ln59" fromId="45" toId="4">
 </dataflow>
@@ -918,7 +918,7 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="236" from="conv_weights_6_6" to="call_ln59" fromId="149" toId="4">
 </dataflow>
-<dataflow id="237" from="convolution.1" to="call_ln60" fromId="181" toId="5">
+<dataflow id="237" from="convolution" to="call_ln60" fromId="181" toId="5">
 </dataflow>
 <dataflow id="238" from="pad_img2" to="call_ln60" fromId="46" toId="5">
 </dataflow>
@@ -1132,23 +1132,23 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="346" from="conv_to_pool_streams_3" to="specinterface_ln0" fromId="99" toId="7">
 </dataflow>
-<dataflow id="348" from="empty_3" to="specinterface_ln0" fromId="347" toId="7">
+<dataflow id="348" from="empty_2" to="specinterface_ln0" fromId="347" toId="7">
 </dataflow>
 <dataflow id="350" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="7">
 </dataflow>
 <dataflow id="351" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="7">
 </dataflow>
-<dataflow id="353" from="empty_4" to="specinterface_ln0" fromId="352" toId="7">
+<dataflow id="353" from="empty_3" to="specinterface_ln0" fromId="352" toId="7">
 </dataflow>
 <dataflow id="354" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="7">
 </dataflow>
 <dataflow id="355" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="7">
 </dataflow>
-<dataflow id="356" from="empty_4" to="specinterface_ln0" fromId="352" toId="7">
+<dataflow id="356" from="empty_3" to="specinterface_ln0" fromId="352" toId="7">
 </dataflow>
-<dataflow id="357" from="empty_4" to="specinterface_ln0" fromId="352" toId="7">
+<dataflow id="357" from="empty_3" to="specinterface_ln0" fromId="352" toId="7">
 </dataflow>
-<dataflow id="358" from="empty_4" to="specinterface_ln0" fromId="352" toId="7">
+<dataflow id="358" from="empty_3" to="specinterface_ln0" fromId="352" toId="7">
 </dataflow>
 <dataflow id="359" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="7">
 </dataflow>
@@ -1158,9 +1158,9 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="362" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="7">
 </dataflow>
-<dataflow id="363" from="empty_4" to="specinterface_ln0" fromId="352" toId="7">
+<dataflow id="363" from="empty_3" to="specinterface_ln0" fromId="352" toId="7">
 </dataflow>
-<dataflow id="364" from="empty_4" to="specinterface_ln0" fromId="352" toId="7">
+<dataflow id="364" from="empty_3" to="specinterface_ln0" fromId="352" toId="7">
 </dataflow>
 <dataflow id="366" from="StgValue_365" to="specinterface_ln0" fromId="365" toId="7">
 </dataflow>
@@ -1170,23 +1170,23 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="369" from="conv_to_pool_streams_2" to="specinterface_ln0" fromId="98" toId="8">
 </dataflow>
-<dataflow id="370" from="empty_3" to="specinterface_ln0" fromId="347" toId="8">
+<dataflow id="370" from="empty_2" to="specinterface_ln0" fromId="347" toId="8">
 </dataflow>
 <dataflow id="371" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="8">
 </dataflow>
 <dataflow id="372" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="8">
 </dataflow>
-<dataflow id="373" from="empty_4" to="specinterface_ln0" fromId="352" toId="8">
+<dataflow id="373" from="empty_3" to="specinterface_ln0" fromId="352" toId="8">
 </dataflow>
 <dataflow id="374" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="8">
 </dataflow>
 <dataflow id="375" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="8">
 </dataflow>
-<dataflow id="376" from="empty_4" to="specinterface_ln0" fromId="352" toId="8">
+<dataflow id="376" from="empty_3" to="specinterface_ln0" fromId="352" toId="8">
 </dataflow>
-<dataflow id="377" from="empty_4" to="specinterface_ln0" fromId="352" toId="8">
+<dataflow id="377" from="empty_3" to="specinterface_ln0" fromId="352" toId="8">
 </dataflow>
-<dataflow id="378" from="empty_4" to="specinterface_ln0" fromId="352" toId="8">
+<dataflow id="378" from="empty_3" to="specinterface_ln0" fromId="352" toId="8">
 </dataflow>
 <dataflow id="379" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="8">
 </dataflow>
@@ -1196,9 +1196,9 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="382" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="8">
 </dataflow>
-<dataflow id="383" from="empty_4" to="specinterface_ln0" fromId="352" toId="8">
+<dataflow id="383" from="empty_3" to="specinterface_ln0" fromId="352" toId="8">
 </dataflow>
-<dataflow id="384" from="empty_4" to="specinterface_ln0" fromId="352" toId="8">
+<dataflow id="384" from="empty_3" to="specinterface_ln0" fromId="352" toId="8">
 </dataflow>
 <dataflow id="385" from="StgValue_365" to="specinterface_ln0" fromId="365" toId="8">
 </dataflow>
@@ -1208,23 +1208,23 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="388" from="conv_to_pool_streams_1" to="specinterface_ln0" fromId="97" toId="9">
 </dataflow>
-<dataflow id="389" from="empty_3" to="specinterface_ln0" fromId="347" toId="9">
+<dataflow id="389" from="empty_2" to="specinterface_ln0" fromId="347" toId="9">
 </dataflow>
 <dataflow id="390" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="9">
 </dataflow>
 <dataflow id="391" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="9">
 </dataflow>
-<dataflow id="392" from="empty_4" to="specinterface_ln0" fromId="352" toId="9">
+<dataflow id="392" from="empty_3" to="specinterface_ln0" fromId="352" toId="9">
 </dataflow>
 <dataflow id="393" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="9">
 </dataflow>
 <dataflow id="394" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="9">
 </dataflow>
-<dataflow id="395" from="empty_4" to="specinterface_ln0" fromId="352" toId="9">
+<dataflow id="395" from="empty_3" to="specinterface_ln0" fromId="352" toId="9">
 </dataflow>
-<dataflow id="396" from="empty_4" to="specinterface_ln0" fromId="352" toId="9">
+<dataflow id="396" from="empty_3" to="specinterface_ln0" fromId="352" toId="9">
 </dataflow>
-<dataflow id="397" from="empty_4" to="specinterface_ln0" fromId="352" toId="9">
+<dataflow id="397" from="empty_3" to="specinterface_ln0" fromId="352" toId="9">
 </dataflow>
 <dataflow id="398" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="9">
 </dataflow>
@@ -1234,9 +1234,9 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="401" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="9">
 </dataflow>
-<dataflow id="402" from="empty_4" to="specinterface_ln0" fromId="352" toId="9">
+<dataflow id="402" from="empty_3" to="specinterface_ln0" fromId="352" toId="9">
 </dataflow>
-<dataflow id="403" from="empty_4" to="specinterface_ln0" fromId="352" toId="9">
+<dataflow id="403" from="empty_3" to="specinterface_ln0" fromId="352" toId="9">
 </dataflow>
 <dataflow id="404" from="StgValue_365" to="specinterface_ln0" fromId="365" toId="9">
 </dataflow>
@@ -1246,23 +1246,23 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="407" from="conv_to_pool_streams_0" to="specinterface_ln0" fromId="96" toId="10">
 </dataflow>
-<dataflow id="408" from="empty_3" to="specinterface_ln0" fromId="347" toId="10">
+<dataflow id="408" from="empty_2" to="specinterface_ln0" fromId="347" toId="10">
 </dataflow>
 <dataflow id="409" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="10">
 </dataflow>
 <dataflow id="410" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="10">
 </dataflow>
-<dataflow id="411" from="empty_4" to="specinterface_ln0" fromId="352" toId="10">
+<dataflow id="411" from="empty_3" to="specinterface_ln0" fromId="352" toId="10">
 </dataflow>
 <dataflow id="412" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="10">
 </dataflow>
 <dataflow id="413" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="10">
 </dataflow>
-<dataflow id="414" from="empty_4" to="specinterface_ln0" fromId="352" toId="10">
+<dataflow id="414" from="empty_3" to="specinterface_ln0" fromId="352" toId="10">
 </dataflow>
-<dataflow id="415" from="empty_4" to="specinterface_ln0" fromId="352" toId="10">
+<dataflow id="415" from="empty_3" to="specinterface_ln0" fromId="352" toId="10">
 </dataflow>
-<dataflow id="416" from="empty_4" to="specinterface_ln0" fromId="352" toId="10">
+<dataflow id="416" from="empty_3" to="specinterface_ln0" fromId="352" toId="10">
 </dataflow>
 <dataflow id="417" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="10">
 </dataflow>
@@ -1272,15 +1272,15 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="420" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="10">
 </dataflow>
-<dataflow id="421" from="empty_4" to="specinterface_ln0" fromId="352" toId="10">
+<dataflow id="421" from="empty_3" to="specinterface_ln0" fromId="352" toId="10">
 </dataflow>
-<dataflow id="422" from="empty_4" to="specinterface_ln0" fromId="352" toId="10">
+<dataflow id="422" from="empty_3" to="specinterface_ln0" fromId="352" toId="10">
 </dataflow>
 <dataflow id="423" from="StgValue_365" to="specinterface_ln0" fromId="365" toId="10">
 </dataflow>
 <dataflow id="424" from="StgValue_349" to="specinterface_ln0" fromId="349" toId="10">
 </dataflow>
-<dataflow id="425" from="convolution" to="call_ln58" fromId="150" toId="11">
+<dataflow id="425" from="convolution.1" to="call_ln58" fromId="150" toId="11">
 </dataflow>
 <dataflow id="426" from="pad_img0_0_0" to="call_ln58" fromId="17" toId="11">
 </dataflow>
@@ -1340,7 +1340,7 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="454" from="conv_to_pool_streams_0" to="call_ln58" fromId="96" toId="11">
 </dataflow>
-<dataflow id="455" from="convolution.1" to="call_ln59" fromId="181" toId="12">
+<dataflow id="455" from="convolution" to="call_ln59" fromId="181" toId="12">
 </dataflow>
 <dataflow id="456" from="pad_img1" to="call_ln59" fromId="45" toId="12">
 </dataflow>
@@ -1448,7 +1448,7 @@ entry:8 %ret_ln62 = ret
 </dataflow>
 <dataflow id="508" from="conv_weights_6_6" to="call_ln59" fromId="149" toId="12">
 </dataflow>
-<dataflow id="509" from="convolution.1" to="call_ln60" fromId="181" toId="13">
+<dataflow id="509" from="convolution" to="call_ln60" fromId="181" toId="13">
 </dataflow>
 <dataflow id="510" from="pad_img2" to="call_ln60" fromId="46" toId="13">
 </dataflow>

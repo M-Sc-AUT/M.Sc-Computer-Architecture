@@ -1,0 +1,190 @@
+
+
+================================================================
+== Vitis HLS Report for 'max_pooling'
+================================================================
+* Date:           Tue Jan 28 18:58:48 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        CNN_Optimal
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.636 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      787|      787|  7.870 us|  7.870 us|  787|  787|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |           Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- pool_for_rows_pool_for_cols  |      785|      785|         6|          4|          1|   196|       yes|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 4, depth = 6
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 4, D = 6, States = { 1 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.50>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 9 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_0, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %pool_to_flat_streams_0, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 0, i8 %indvar_flatten"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln13 = br void %pool_for_pr" [CNN_Optimal/src/pool.cpp:13]   --->   Operation 13 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i8 %indvar_flatten" [CNN_Optimal/src/pool.cpp:13]   --->   Operation 14 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.91ns)   --->   "%icmp_ln13 = icmp_eq  i8 %indvar_flatten_load, i8 196" [CNN_Optimal/src/pool.cpp:13]   --->   Operation 15 'icmp' 'icmp_ln13' <Predicate = true> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (1.91ns)   --->   "%add_ln13 = add i8 %indvar_flatten_load, i8 1" [CNN_Optimal/src/pool.cpp:13]   --->   Operation 16 'add' 'add_ln13' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln13 = br i1 %icmp_ln13, void %for.inc18, void %for.cond.cleanup" [CNN_Optimal/src/pool.cpp:13]   --->   Operation 17 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.56>
+ST_2 : Operation 18 [1/1] (3.56ns)   --->   "%value = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %conv_to_pool_streams_0" [CNN_Optimal/src/pool.cpp:23]   --->   Operation 18 'read' 'value' <Predicate = (!icmp_ln13)> <Delay = 3.56> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 784> <FIFO>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln23 = trunc i24 %value" [CNN_Optimal/src/pool.cpp:23]   --->   Operation 19 'trunc' 'trunc_ln23' <Predicate = (!icmp_ln13)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.58ns)   --->   "%store_ln13 = store i8 %add_ln13, i8 %indvar_flatten" [CNN_Optimal/src/pool.cpp:13]   --->   Operation 20 'store' 'store_ln13' <Predicate = (!icmp_ln13)> <Delay = 1.58>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%ret_ln33 = ret" [CNN_Optimal/src/pool.cpp:33]   --->   Operation 38 'ret' 'ret_ln33' <Predicate = (icmp_ln13)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.56>
+ST_3 : Operation 21 [1/1] (3.56ns)   --->   "%value_1 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %conv_to_pool_streams_0" [CNN_Optimal/src/pool.cpp:23]   --->   Operation 21 'read' 'value_1' <Predicate = (!icmp_ln13)> <Delay = 3.56> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 784> <FIFO>
+
+State 4 <SV = 3> <Delay = 3.56>
+ST_4 : Operation 22 [1/1] (2.31ns)   --->   "%icmp_ln27 = icmp_sgt  i24 %value, i24 0" [CNN_Optimal/src/pool.cpp:27]   --->   Operation 22 'icmp' 'icmp_ln27' <Predicate = (!icmp_ln13)> <Delay = 2.31> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.31> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 23 [1/1] (0.69ns)   --->   "%select_ln27 = select i1 %icmp_ln27, i23 %trunc_ln23, i23 0" [CNN_Optimal/src/pool.cpp:27]   --->   Operation 23 'select' 'select_ln27' <Predicate = (!icmp_ln13)> <Delay = 0.69> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 24 [1/1] (3.56ns)   --->   "%value_2 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %conv_to_pool_streams_0" [CNN_Optimal/src/pool.cpp:23]   --->   Operation 24 'read' 'value_2' <Predicate = (!icmp_ln13)> <Delay = 3.56> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 784> <FIFO>
+
+State 5 <SV = 4> <Delay = 6.01>
+ST_5 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln23 = zext i23 %select_ln27" [CNN_Optimal/src/pool.cpp:23]   --->   Operation 25 'zext' 'zext_ln23' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 26 [1/1] (2.31ns)   --->   "%icmp_ln27_1 = icmp_sgt  i24 %value_1, i24 %zext_ln23" [CNN_Optimal/src/pool.cpp:27]   --->   Operation 26 'icmp' 'icmp_ln27_1' <Predicate = true> <Delay = 2.31> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.31> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 27 [1/1] (0.69ns)   --->   "%select_ln27_1 = select i1 %icmp_ln27_1, i24 %value_1, i24 %zext_ln23" [CNN_Optimal/src/pool.cpp:27]   --->   Operation 27 'select' 'select_ln27_1' <Predicate = true> <Delay = 0.69> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 28 [1/1] (2.31ns)   --->   "%icmp_ln27_2 = icmp_sgt  i24 %value_2, i24 %select_ln27_1" [CNN_Optimal/src/pool.cpp:27]   --->   Operation 28 'icmp' 'icmp_ln27_2' <Predicate = true> <Delay = 2.31> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.31> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 29 [1/1] (0.69ns)   --->   "%select_ln27_2 = select i1 %icmp_ln27_2, i24 %value_2, i24 %select_ln27_1" [CNN_Optimal/src/pool.cpp:27]   --->   Operation 29 'select' 'select_ln27_2' <Predicate = true> <Delay = 0.69> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 30 [1/1] (3.56ns)   --->   "%value_3 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %conv_to_pool_streams_0" [CNN_Optimal/src/pool.cpp:23]   --->   Operation 30 'read' 'value_3' <Predicate = true> <Delay = 3.56> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 784> <FIFO>
+
+State 6 <SV = 5> <Delay = 6.63>
+ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @pool_for_rows_pool_for_cols_str"   --->   Operation 31 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 32 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 196, i64 196, i64 196"   --->   Operation 32 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 33 [1/1] (0.00ns)   --->   "%specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_3" [CNN_Optimal/src/pool.cpp:16]   --->   Operation 33 'specpipeline' 'specpipeline_ln16' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 34 [1/1] (2.31ns)   --->   "%icmp_ln27_3 = icmp_sgt  i24 %value_3, i24 %select_ln27_2" [CNN_Optimal/src/pool.cpp:27]   --->   Operation 34 'icmp' 'icmp_ln27_3' <Predicate = true> <Delay = 2.31> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.31> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 35 [1/1] (0.69ns)   --->   "%select_ln27_3 = select i1 %icmp_ln27_3, i24 %value_3, i24 %select_ln27_2" [CNN_Optimal/src/pool.cpp:27]   --->   Operation 35 'select' 'select_ln27_3' <Predicate = true> <Delay = 0.69> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 36 [1/1] (3.62ns)   --->   "%write_ln30 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0, i24 %select_ln27_3" [CNN_Optimal/src/pool.cpp:30]   --->   Operation 36 'write' 'write_ln30' <Predicate = true> <Delay = 3.62> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 196> <FIFO>
+ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln16 = br void %pool_for_pr" [CNN_Optimal/src/pool.cpp:16]   --->   Operation 37 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.503ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten' [6]  (1.588 ns)
+	'load' operation 8 bit ('indvar_flatten_load', CNN_Optimal/src/pool.cpp:13) on local variable 'indvar_flatten' [9]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln13', CNN_Optimal/src/pool.cpp:13) [10]  (1.915 ns)
+
+ <State 2>: 3.563ns
+The critical path consists of the following:
+	fifo read operation ('value', CNN_Optimal/src/pool.cpp:23) on port 'conv_to_pool_streams_0' (CNN_Optimal/src/pool.cpp:23) [17]  (3.563 ns)
+
+ <State 3>: 3.563ns
+The critical path consists of the following:
+	fifo read operation ('value', CNN_Optimal/src/pool.cpp:23) on port 'conv_to_pool_streams_0' (CNN_Optimal/src/pool.cpp:23) [22]  (3.563 ns)
+
+ <State 4>: 3.563ns
+The critical path consists of the following:
+	fifo read operation ('value', CNN_Optimal/src/pool.cpp:23) on port 'conv_to_pool_streams_0' (CNN_Optimal/src/pool.cpp:23) [25]  (3.563 ns)
+
+ <State 5>: 6.017ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('icmp_ln27_1', CNN_Optimal/src/pool.cpp:27) [23]  (2.314 ns)
+	'select' operation 24 bit ('select_ln27_1', CNN_Optimal/src/pool.cpp:27) [24]  (0.694 ns)
+	'icmp' operation 1 bit ('icmp_ln27_2', CNN_Optimal/src/pool.cpp:27) [26]  (2.314 ns)
+	'select' operation 24 bit ('select_ln27_2', CNN_Optimal/src/pool.cpp:27) [27]  (0.694 ns)
+
+ <State 6>: 6.636ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('icmp_ln27_3', CNN_Optimal/src/pool.cpp:27) [29]  (2.314 ns)
+	'select' operation 24 bit ('select_ln27_3', CNN_Optimal/src/pool.cpp:27) [30]  (0.694 ns)
+	fifo write operation ('write_ln30', CNN_Optimal/src/pool.cpp:30) on port 'pool_to_flat_streams_0' (CNN_Optimal/src/pool.cpp:30) [31]  (3.627 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

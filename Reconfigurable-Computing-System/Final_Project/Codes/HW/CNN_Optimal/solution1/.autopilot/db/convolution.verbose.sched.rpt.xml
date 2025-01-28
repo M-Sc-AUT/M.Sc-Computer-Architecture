@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'convolution'" level="0">
-<item name = "Date">Fri Jan 24 14:42:31 2025
+<item name = "Date">Tue Jan 28 18:31:34 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.265 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.287 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1055, 1055, 10.550 us, 10.550 us, 1055, 1055, no</column>
+<column name="">19641, 19641, 0.196 ms, 0.196 ms, 19641, 19641, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,6 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- conv_for_rows_conv_for_cols_pool_for_rows_pool_for_cols">1053, 1053, 271, 1, 1, 784, yes</column>
 </table>
 </item>
 </section>

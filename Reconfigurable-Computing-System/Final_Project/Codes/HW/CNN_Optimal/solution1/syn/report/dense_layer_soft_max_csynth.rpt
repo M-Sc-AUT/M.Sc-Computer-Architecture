@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dense_layer_soft_max'
 ================================================================
-* Date:           Fri Jan 24 15:13:32 2025
+* Date:           Tue Jan 28 19:06:26 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN_Optimal
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  8.424 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.141 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      120|      120|  1.200 us|  1.200 us|  120|  120|       no|
+    |       83|       83|  0.830 us|  0.830 us|   83|   83|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,8 +38,8 @@
         |                                                                       |                                                             |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |                                Instance                               |                            Module                           |   min   |   max   |    min   |    max   | min | max |   Type  |
         +-----------------------------------------------------------------------+-------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36  |dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size  |       88|       88|  0.880 us|  0.880 us|   88|   88|       no|
-        |grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53      |dense_layer_soft_max_Pipeline_dense_soft_max_for_digits      |       29|       29|  0.290 us|  0.290 us|   29|   29|       no|
+        |grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36  |dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size  |       33|       33|  0.330 us|  0.330 us|   33|   33|       no|
+        |grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53      |dense_layer_soft_max_Pipeline_dense_soft_max_for_digits      |       47|       47|  0.470 us|  0.470 us|   47|   47|       no|
         +-----------------------------------------------------------------------+-------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -57,16 +57,16 @@
 |DSP              |        -|   -|      -|      -|    -|
 |Expression       |        -|   -|      0|      2|    -|
 |FIFO             |        -|   -|      -|      -|    -|
-|Instance         |        0|   9|   1430|   1833|    -|
+|Instance         |        0|   7|   4038|   4842|    -|
 |Memory           |        -|   -|      -|      -|    -|
 |Multiplexer      |        -|   -|      -|    135|    -|
 |Register         |        -|   -|      7|      -|    -|
 +-----------------+---------+----+-------+-------+-----+
-|Total            |        0|   9|   1437|   1970|    0|
+|Total            |        0|   7|   4045|   4979|    0|
 +-----------------+---------+----+-------+-------+-----+
 |Available        |      120|  80|  35200|  17600|    0|
 +-----------------+---------+----+-------+-------+-----+
-|Utilization (%)  |        0|  11|      4|     11|    0|
+|Utilization (%)  |        0|   8|     11|     28|    0|
 +-----------------+---------+----+-------+-------+-----+
 
 + Detail: 
@@ -74,10 +74,10 @@
     +-----------------------------------------------------------------------+-------------------------------------------------------------+---------+----+------+------+-----+
     |                                Instance                               |                            Module                           | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +-----------------------------------------------------------------------+-------------------------------------------------------------+---------+----+------+------+-----+
-    |grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36  |dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size  |        0|   9|  1257|  1737|    0|
-    |grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53      |dense_layer_soft_max_Pipeline_dense_soft_max_for_digits      |        0|   0|   173|    96|    0|
+    |grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36  |dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size  |        0|   7|  1578|  3008|    0|
+    |grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53      |dense_layer_soft_max_Pipeline_dense_soft_max_for_digits      |        0|   0|  2460|  1834|    0|
     +-----------------------------------------------------------------------+-------------------------------------------------------------+---------+----+------+------+-----+
-    |Total                                                                  |                                                             |        0|   9|  1430|  1833|    0|
+    |Total                                                                  |                                                             |        0|   7|  4038|  4842|    0|
     +-----------------------------------------------------------------------+-------------------------------------------------------------+---------+----+------+------+-----+
 
     * DSP: 
@@ -111,10 +111,10 @@
     |prediction_address0              |  14|          3|    4|         12|
     |prediction_ce0                   |  14|          3|    1|          3|
     |prediction_ce1                   |   9|          2|    1|          2|
-    |prediction_d0                    |  14|          3|   32|         96|
+    |prediction_d0                    |  14|          3|   24|         72|
     |prediction_we0                   |  14|          3|    1|          3|
     +---------------------------------+----+-----------+-----+-----------+
-    |Total                            | 135|         29|   45|        131|
+    |Total                            | 135|         29|   37|        107|
     +---------------------------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -145,22 +145,22 @@
 |ap_continue                                |   in|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
 |ap_idle                                    |  out|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
 |ap_ready                                   |  out|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
-|dense_to_softmax_streams_0_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_0_dout            |   in|   24|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
 |dense_to_softmax_streams_0_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
 |dense_to_softmax_streams_0_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
 |dense_to_softmax_streams_0_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
 |dense_to_softmax_streams_0_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
-|dense_to_softmax_streams_1_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
+|dense_to_softmax_streams_1_dout            |   in|   24|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
 |dense_to_softmax_streams_1_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
 |dense_to_softmax_streams_1_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
 |dense_to_softmax_streams_1_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
 |dense_to_softmax_streams_1_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
-|dense_to_softmax_streams_2_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
+|dense_to_softmax_streams_2_dout            |   in|   24|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
 |dense_to_softmax_streams_2_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
 |dense_to_softmax_streams_2_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
 |dense_to_softmax_streams_2_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
 |dense_to_softmax_streams_2_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
-|dense_to_softmax_streams_3_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
+|dense_to_softmax_streams_3_dout            |   in|   24|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
 |dense_to_softmax_streams_3_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
 |dense_to_softmax_streams_3_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
 |dense_to_softmax_streams_3_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
@@ -168,9 +168,9 @@
 |prediction_address0                        |  out|    4|   ap_memory|                  prediction|         array|
 |prediction_ce0                             |  out|    1|   ap_memory|                  prediction|         array|
 |prediction_we0                             |  out|    1|   ap_memory|                  prediction|         array|
-|prediction_d0                              |  out|   32|   ap_memory|                  prediction|         array|
+|prediction_d0                              |  out|   24|   ap_memory|                  prediction|         array|
 |prediction_address1                        |  out|    4|   ap_memory|                  prediction|         array|
 |prediction_ce1                             |  out|    1|   ap_memory|                  prediction|         array|
-|prediction_q1                              |   in|   32|   ap_memory|                  prediction|         array|
+|prediction_q1                              |   in|   24|   ap_memory|                  prediction|         array|
 +-------------------------------------------+-----+-----+------------+----------------------------+--------------+
 

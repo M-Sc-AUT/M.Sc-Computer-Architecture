@@ -1,5 +1,11 @@
 # This script segment is generated automatically by AutoPilot
 
+set name cnn_sdiv_32ns_24s_24_36_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {sdiv} IMPL {auto} LATENCY 35 ALLOW_PRAGMA 1
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -11,14 +17,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1132 \
+    id 2992 \
     name prediction \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename prediction \
     op interface \
-    ports { prediction_address0 { O 4 vector } prediction_ce0 { O 1 bit } prediction_we0 { O 1 bit } prediction_d0 { O 32 vector } prediction_address1 { O 4 vector } prediction_ce1 { O 1 bit } prediction_q1 { I 32 vector } } \
+    ports { prediction_address0 { O 4 vector } prediction_ce0 { O 1 bit } prediction_we0 { O 1 bit } prediction_d0 { O 24 vector } prediction_address1 { O 4 vector } prediction_ce1 { O 1 bit } prediction_q1 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'prediction'"
@@ -29,15 +35,15 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1133 \
-    name exp_sum_reload \
+    id 2993 \
+    name conv_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_exp_sum_reload \
+    corename dc_conv_i \
     op interface \
-    ports { exp_sum_reload { I 32 vector } } \
+    ports { conv_i { I 24 vector } } \
 } "
 }
 

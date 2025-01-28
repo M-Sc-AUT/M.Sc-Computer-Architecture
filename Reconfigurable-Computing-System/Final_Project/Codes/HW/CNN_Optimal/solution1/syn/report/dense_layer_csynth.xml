@@ -18,18 +18,18 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>10.274</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.540</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>996</Best-caseLatency>
-<Average-caseLatency>996</Average-caseLatency>
-<Worst-caseLatency>996</Worst-caseLatency>
-<Best-caseRealTimeLatency>10.233 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>10.233 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>10.233 us</Worst-caseRealTimeLatency>
-<Interval-min>996</Interval-min>
-<Interval-max>996</Interval-max>
+<Best-caseLatency>208</Best-caseLatency>
+<Average-caseLatency>208</Average-caseLatency>
+<Worst-caseLatency>208</Worst-caseLatency>
+<Best-caseRealTimeLatency>2.080 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>2.080 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.080 us</Worst-caseRealTimeLatency>
+<Interval-min>208</Interval-min>
+<Interval-max>208</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
@@ -41,9 +41,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>80</BRAM_18K>
-<DSP>200</DSP>
-<FF>736442</FF>
-<LUT>318778</LUT>
+<DSP>7840</DSP>
+<FF>63650</FF>
+<LUT>58699</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -141,7 +141,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -196,7 +196,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -251,7 +251,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -306,7 +306,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -361,7 +361,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -416,7 +416,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -471,7 +471,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -526,7 +526,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>

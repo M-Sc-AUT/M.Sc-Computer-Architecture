@@ -9,7 +9,7 @@ use ieee.std_logic_unsigned.all;
 
 entity cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_dense_biases_ROM_bkb is 
     generic(
-             DataWidth     : integer := 32; 
+             DataWidth     : integer := 7; 
              AddressWidth     : integer := 4; 
              AddressRange    : integer := 10
     ); 
@@ -32,9 +32,9 @@ signal address0_tmp : std_logic_vector(AddressWidth-1 downto 0);
 type mem_array is array (0 to AddressRange-1) of std_logic_vector (DataWidth-1 downto 0); 
 
 signal mem0 : mem_array := (
-    0 => "00111101001010111000110100111111", 1 => "00111101111011010001101110110001", 2 => "00111101100100011101010010100110", 3 => "10111101111001100011110100011111", 
-    4 => "10111100101010100001010100011110", 5 => "00111101011000101010110111011001", 6 => "10111100011111001101111010000110", 7 => "00111110000010110100001011110111", 
-    8 => "10111110001100111000111001111000", 9 => "10111101000011011100101100101101");
+    0 => "0000100", 1 => "0101011", 2 => "0001111", 3 => "1111010", 
+    4 => "1110001", 5 => "0011111", 6 => "1110100", 7 => "0011000", 
+    8 => "1000011", 9 => "1111000");
 
 
 

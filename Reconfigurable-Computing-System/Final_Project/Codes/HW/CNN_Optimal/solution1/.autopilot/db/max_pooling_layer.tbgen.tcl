@@ -15,26 +15,26 @@ set DLRegItemOffset 0
 set C_modelName {max_pooling_layer}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ conv_to_pool_streams_0 int 32 regular {fifo 0 volatile }  }
-	{ conv_to_pool_streams_1 int 32 regular {fifo 0 volatile }  }
-	{ conv_to_pool_streams_2 int 32 regular {fifo 0 volatile }  }
-	{ conv_to_pool_streams_3 int 32 regular {fifo 0 volatile }  }
-	{ pool_to_flat_streams_0 int 32 regular {fifo 1 volatile }  }
-	{ pool_to_flat_streams_1 int 32 regular {fifo 1 volatile }  }
-	{ pool_to_flat_streams_2 int 32 regular {fifo 1 volatile }  }
-	{ pool_to_flat_streams_3 int 32 regular {fifo 1 volatile }  }
+	{ conv_to_pool_streams_0 int 24 regular {fifo 0 volatile }  }
+	{ conv_to_pool_streams_1 int 24 regular {fifo 0 volatile }  }
+	{ conv_to_pool_streams_2 int 24 regular {fifo 0 volatile }  }
+	{ conv_to_pool_streams_3 int 24 regular {fifo 0 volatile }  }
+	{ pool_to_flat_streams_0 int 24 regular {fifo 1 volatile }  }
+	{ pool_to_flat_streams_1 int 24 regular {fifo 1 volatile }  }
+	{ pool_to_flat_streams_2 int 24 regular {fifo 1 volatile }  }
+	{ pool_to_flat_streams_3 int 24 regular {fifo 1 volatile }  }
 }
 set hasAXIMCache 0
 set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
-	{ "Name" : "conv_to_pool_streams_0", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "conv_to_pool_streams_1", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "conv_to_pool_streams_2", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "conv_to_pool_streams_3", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "pool_to_flat_streams_0", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "pool_to_flat_streams_1", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "pool_to_flat_streams_2", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "pool_to_flat_streams_3", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
+	{ "Name" : "conv_to_pool_streams_0", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "conv_to_pool_streams_1", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "conv_to_pool_streams_2", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "conv_to_pool_streams_3", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "pool_to_flat_streams_0", "interface" : "fifo", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "pool_to_flat_streams_1", "interface" : "fifo", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "pool_to_flat_streams_2", "interface" : "fifo", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "pool_to_flat_streams_3", "interface" : "fifo", "bitwidth" : 24, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 50
 set portList { 
@@ -48,42 +48,42 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ start_out sc_out sc_logic 1 signal -1 } 
 	{ start_write sc_out sc_logic 1 signal -1 } 
-	{ conv_to_pool_streams_0_dout sc_in sc_lv 32 signal 0 } 
+	{ conv_to_pool_streams_0_dout sc_in sc_lv 24 signal 0 } 
 	{ conv_to_pool_streams_0_num_data_valid sc_in sc_lv 11 signal 0 } 
 	{ conv_to_pool_streams_0_fifo_cap sc_in sc_lv 11 signal 0 } 
 	{ conv_to_pool_streams_0_empty_n sc_in sc_logic 1 signal 0 } 
 	{ conv_to_pool_streams_0_read sc_out sc_logic 1 signal 0 } 
-	{ conv_to_pool_streams_1_dout sc_in sc_lv 32 signal 1 } 
+	{ conv_to_pool_streams_1_dout sc_in sc_lv 24 signal 1 } 
 	{ conv_to_pool_streams_1_num_data_valid sc_in sc_lv 11 signal 1 } 
 	{ conv_to_pool_streams_1_fifo_cap sc_in sc_lv 11 signal 1 } 
 	{ conv_to_pool_streams_1_empty_n sc_in sc_logic 1 signal 1 } 
 	{ conv_to_pool_streams_1_read sc_out sc_logic 1 signal 1 } 
-	{ conv_to_pool_streams_2_dout sc_in sc_lv 32 signal 2 } 
+	{ conv_to_pool_streams_2_dout sc_in sc_lv 24 signal 2 } 
 	{ conv_to_pool_streams_2_num_data_valid sc_in sc_lv 11 signal 2 } 
 	{ conv_to_pool_streams_2_fifo_cap sc_in sc_lv 11 signal 2 } 
 	{ conv_to_pool_streams_2_empty_n sc_in sc_logic 1 signal 2 } 
 	{ conv_to_pool_streams_2_read sc_out sc_logic 1 signal 2 } 
-	{ conv_to_pool_streams_3_dout sc_in sc_lv 32 signal 3 } 
+	{ conv_to_pool_streams_3_dout sc_in sc_lv 24 signal 3 } 
 	{ conv_to_pool_streams_3_num_data_valid sc_in sc_lv 11 signal 3 } 
 	{ conv_to_pool_streams_3_fifo_cap sc_in sc_lv 11 signal 3 } 
 	{ conv_to_pool_streams_3_empty_n sc_in sc_logic 1 signal 3 } 
 	{ conv_to_pool_streams_3_read sc_out sc_logic 1 signal 3 } 
-	{ pool_to_flat_streams_0_din sc_out sc_lv 32 signal 4 } 
+	{ pool_to_flat_streams_0_din sc_out sc_lv 24 signal 4 } 
 	{ pool_to_flat_streams_0_num_data_valid sc_in sc_lv 9 signal 4 } 
 	{ pool_to_flat_streams_0_fifo_cap sc_in sc_lv 9 signal 4 } 
 	{ pool_to_flat_streams_0_full_n sc_in sc_logic 1 signal 4 } 
 	{ pool_to_flat_streams_0_write sc_out sc_logic 1 signal 4 } 
-	{ pool_to_flat_streams_1_din sc_out sc_lv 32 signal 5 } 
+	{ pool_to_flat_streams_1_din sc_out sc_lv 24 signal 5 } 
 	{ pool_to_flat_streams_1_num_data_valid sc_in sc_lv 9 signal 5 } 
 	{ pool_to_flat_streams_1_fifo_cap sc_in sc_lv 9 signal 5 } 
 	{ pool_to_flat_streams_1_full_n sc_in sc_logic 1 signal 5 } 
 	{ pool_to_flat_streams_1_write sc_out sc_logic 1 signal 5 } 
-	{ pool_to_flat_streams_2_din sc_out sc_lv 32 signal 6 } 
+	{ pool_to_flat_streams_2_din sc_out sc_lv 24 signal 6 } 
 	{ pool_to_flat_streams_2_num_data_valid sc_in sc_lv 9 signal 6 } 
 	{ pool_to_flat_streams_2_fifo_cap sc_in sc_lv 9 signal 6 } 
 	{ pool_to_flat_streams_2_full_n sc_in sc_logic 1 signal 6 } 
 	{ pool_to_flat_streams_2_write sc_out sc_logic 1 signal 6 } 
-	{ pool_to_flat_streams_3_din sc_out sc_lv 32 signal 7 } 
+	{ pool_to_flat_streams_3_din sc_out sc_lv 24 signal 7 } 
 	{ pool_to_flat_streams_3_num_data_valid sc_in sc_lv 9 signal 7 } 
 	{ pool_to_flat_streams_3_fifo_cap sc_in sc_lv 9 signal 7 } 
 	{ pool_to_flat_streams_3_full_n sc_in sc_logic 1 signal 7 } 
@@ -100,55 +100,55 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "start_out", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_out", "role": "default" }} , 
  	{ "name": "start_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_write", "role": "default" }} , 
- 	{ "name": "conv_to_pool_streams_0_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "dout" }} , 
+ 	{ "name": "conv_to_pool_streams_0_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "dout" }} , 
  	{ "name": "conv_to_pool_streams_0_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "num_data_valid" }} , 
  	{ "name": "conv_to_pool_streams_0_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "fifo_cap" }} , 
  	{ "name": "conv_to_pool_streams_0_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "empty_n" }} , 
  	{ "name": "conv_to_pool_streams_0_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "read" }} , 
- 	{ "name": "conv_to_pool_streams_1_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv_to_pool_streams_1", "role": "dout" }} , 
+ 	{ "name": "conv_to_pool_streams_1_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "conv_to_pool_streams_1", "role": "dout" }} , 
  	{ "name": "conv_to_pool_streams_1_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_1", "role": "num_data_valid" }} , 
  	{ "name": "conv_to_pool_streams_1_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_1", "role": "fifo_cap" }} , 
  	{ "name": "conv_to_pool_streams_1_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_1", "role": "empty_n" }} , 
  	{ "name": "conv_to_pool_streams_1_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_1", "role": "read" }} , 
- 	{ "name": "conv_to_pool_streams_2_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv_to_pool_streams_2", "role": "dout" }} , 
+ 	{ "name": "conv_to_pool_streams_2_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "conv_to_pool_streams_2", "role": "dout" }} , 
  	{ "name": "conv_to_pool_streams_2_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_2", "role": "num_data_valid" }} , 
  	{ "name": "conv_to_pool_streams_2_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_2", "role": "fifo_cap" }} , 
  	{ "name": "conv_to_pool_streams_2_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_2", "role": "empty_n" }} , 
  	{ "name": "conv_to_pool_streams_2_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_2", "role": "read" }} , 
- 	{ "name": "conv_to_pool_streams_3_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "dout" }} , 
+ 	{ "name": "conv_to_pool_streams_3_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "dout" }} , 
  	{ "name": "conv_to_pool_streams_3_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "num_data_valid" }} , 
  	{ "name": "conv_to_pool_streams_3_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "fifo_cap" }} , 
  	{ "name": "conv_to_pool_streams_3_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "empty_n" }} , 
  	{ "name": "conv_to_pool_streams_3_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "read" }} , 
- 	{ "name": "pool_to_flat_streams_0_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "din" }} , 
+ 	{ "name": "pool_to_flat_streams_0_din", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "din" }} , 
  	{ "name": "pool_to_flat_streams_0_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "num_data_valid" }} , 
  	{ "name": "pool_to_flat_streams_0_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "fifo_cap" }} , 
  	{ "name": "pool_to_flat_streams_0_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "full_n" }} , 
  	{ "name": "pool_to_flat_streams_0_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "write" }} , 
- 	{ "name": "pool_to_flat_streams_1_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "din" }} , 
+ 	{ "name": "pool_to_flat_streams_1_din", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "din" }} , 
  	{ "name": "pool_to_flat_streams_1_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "num_data_valid" }} , 
  	{ "name": "pool_to_flat_streams_1_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "fifo_cap" }} , 
  	{ "name": "pool_to_flat_streams_1_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "full_n" }} , 
  	{ "name": "pool_to_flat_streams_1_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "write" }} , 
- 	{ "name": "pool_to_flat_streams_2_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "din" }} , 
+ 	{ "name": "pool_to_flat_streams_2_din", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "din" }} , 
  	{ "name": "pool_to_flat_streams_2_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "num_data_valid" }} , 
  	{ "name": "pool_to_flat_streams_2_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "fifo_cap" }} , 
  	{ "name": "pool_to_flat_streams_2_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "full_n" }} , 
  	{ "name": "pool_to_flat_streams_2_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "write" }} , 
- 	{ "name": "pool_to_flat_streams_3_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "din" }} , 
+ 	{ "name": "pool_to_flat_streams_3_din", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "din" }} , 
  	{ "name": "pool_to_flat_streams_3_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "num_data_valid" }} , 
  	{ "name": "pool_to_flat_streams_3_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "fifo_cap" }} , 
  	{ "name": "pool_to_flat_streams_3_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "full_n" }} , 
  	{ "name": "pool_to_flat_streams_3_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "write" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "3", "5", "7", "9"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "3", "5", "7"],
 		"CDFG" : "max_pooling_layer",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3182", "EstimateLatencyMax" : "3182",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "788", "EstimateLatencyMax" : "788",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -159,35 +159,35 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "conv_to_pool_streams_0", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36", "Port" : "conv_to_pool_streams_0", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
+					{"ID" : "1", "SubInstance" : "grp_max_pooling_fu_28", "Port" : "conv_to_pool_streams_0", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "conv_to_pool_streams_1", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44", "Port" : "conv_to_pool_streams_1", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+					{"ID" : "3", "SubInstance" : "grp_max_pooling_fu_36", "Port" : "conv_to_pool_streams_0", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "conv_to_pool_streams_2", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52", "Port" : "conv_to_pool_streams_2", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
+					{"ID" : "5", "SubInstance" : "grp_max_pooling_fu_44", "Port" : "conv_to_pool_streams_0", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "conv_to_pool_streams_3", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60", "Port" : "conv_to_pool_streams_3", "Inst_start_state" : "10", "Inst_end_state" : "11"}]},
+					{"ID" : "7", "SubInstance" : "grp_max_pooling_fu_52", "Port" : "conv_to_pool_streams_0", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "pool_to_flat_streams_0", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36", "Port" : "pool_to_flat_streams_0", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
+					{"ID" : "1", "SubInstance" : "grp_max_pooling_fu_28", "Port" : "pool_to_flat_streams_0", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "pool_to_flat_streams_1", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44", "Port" : "pool_to_flat_streams_1", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+					{"ID" : "3", "SubInstance" : "grp_max_pooling_fu_36", "Port" : "pool_to_flat_streams_0", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "pool_to_flat_streams_2", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52", "Port" : "pool_to_flat_streams_2", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
+					{"ID" : "5", "SubInstance" : "grp_max_pooling_fu_44", "Port" : "pool_to_flat_streams_0", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "pool_to_flat_streams_3", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60", "Port" : "pool_to_flat_streams_3", "Inst_start_state" : "10", "Inst_end_state" : "11"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36", "Parent" : "0", "Child" : ["2"],
-		"CDFG" : "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols",
+					{"ID" : "7", "SubInstance" : "grp_max_pooling_fu_52", "Port" : "pool_to_flat_streams_0", "Inst_start_state" : "1", "Inst_end_state" : "2"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_fu_28", "Parent" : "0", "Child" : ["2"],
+		"CDFG" : "max_pooling",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "793", "EstimateLatencyMax" : "793",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "787", "EstimateLatencyMax" : "787",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -204,15 +204,15 @@ set RtlHierarchyInfo {[
 					{"Name" : "pool_to_flat_streams_0_blk_n", "Type" : "RtlSignal"}]}],
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage3", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage3_subdone", "QuitState" : "ap_ST_fsm_pp0_stage3", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage3_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44", "Parent" : "0", "Child" : ["4"],
-		"CDFG" : "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6",
+				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_fu_28.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_fu_36", "Parent" : "0", "Child" : ["4"],
+		"CDFG" : "max_pooling",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "793", "EstimateLatencyMax" : "793",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "787", "EstimateLatencyMax" : "787",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -221,23 +221,23 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "conv_to_pool_streams_1", "Type" : "Fifo", "Direction" : "I",
+			{"Name" : "conv_to_pool_streams_0", "Type" : "Fifo", "Direction" : "I",
 				"BlockSignal" : [
-					{"Name" : "conv_to_pool_streams_1_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "pool_to_flat_streams_1", "Type" : "Fifo", "Direction" : "O",
+					{"Name" : "conv_to_pool_streams_0_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "pool_to_flat_streams_0", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
-					{"Name" : "pool_to_flat_streams_1_blk_n", "Type" : "RtlSignal"}]}],
+					{"Name" : "pool_to_flat_streams_0_blk_n", "Type" : "RtlSignal"}]}],
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage3", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage3_subdone", "QuitState" : "ap_ST_fsm_pp0_stage3", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage3_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44.flow_control_loop_pipe_sequential_init_U", "Parent" : "3"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52", "Parent" : "0", "Child" : ["6"],
-		"CDFG" : "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7",
+				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_fu_36.flow_control_loop_pipe_sequential_init_U", "Parent" : "3"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_fu_44", "Parent" : "0", "Child" : ["6"],
+		"CDFG" : "max_pooling",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "793", "EstimateLatencyMax" : "793",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "787", "EstimateLatencyMax" : "787",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -246,23 +246,23 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "conv_to_pool_streams_2", "Type" : "Fifo", "Direction" : "I",
+			{"Name" : "conv_to_pool_streams_0", "Type" : "Fifo", "Direction" : "I",
 				"BlockSignal" : [
-					{"Name" : "conv_to_pool_streams_2_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "pool_to_flat_streams_2", "Type" : "Fifo", "Direction" : "O",
+					{"Name" : "conv_to_pool_streams_0_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "pool_to_flat_streams_0", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
-					{"Name" : "pool_to_flat_streams_2_blk_n", "Type" : "RtlSignal"}]}],
+					{"Name" : "pool_to_flat_streams_0_blk_n", "Type" : "RtlSignal"}]}],
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage3", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage3_subdone", "QuitState" : "ap_ST_fsm_pp0_stage3", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage3_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52.flow_control_loop_pipe_sequential_init_U", "Parent" : "5"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60", "Parent" : "0", "Child" : ["8"],
-		"CDFG" : "max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8",
+				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_fu_44.flow_control_loop_pipe_sequential_init_U", "Parent" : "5"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_fu_52", "Parent" : "0", "Child" : ["8"],
+		"CDFG" : "max_pooling",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "793", "EstimateLatencyMax" : "793",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "787", "EstimateLatencyMax" : "787",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -271,17 +271,16 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "conv_to_pool_streams_3", "Type" : "Fifo", "Direction" : "I",
+			{"Name" : "conv_to_pool_streams_0", "Type" : "Fifo", "Direction" : "I",
 				"BlockSignal" : [
-					{"Name" : "conv_to_pool_streams_3_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "pool_to_flat_streams_3", "Type" : "Fifo", "Direction" : "O",
+					{"Name" : "conv_to_pool_streams_0_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "pool_to_flat_streams_0", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
-					{"Name" : "pool_to_flat_streams_3_blk_n", "Type" : "RtlSignal"}]}],
+					{"Name" : "pool_to_flat_streams_0_blk_n", "Type" : "RtlSignal"}]}],
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage3", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage3_subdone", "QuitState" : "ap_ST_fsm_pp0_stage3", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage3_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60.flow_control_loop_pipe_sequential_init_U", "Parent" : "7"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_2_no_dsp_1_U1049", "Parent" : "0"}]}
+				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_max_pooling_fu_52.flow_control_loop_pipe_sequential_init_U", "Parent" : "7"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -290,40 +289,40 @@ set ArgLastReadFirstWriteLatency {
 		conv_to_pool_streams_1 {Type I LastRead 4 FirstWrite -1}
 		conv_to_pool_streams_2 {Type I LastRead 4 FirstWrite -1}
 		conv_to_pool_streams_3 {Type I LastRead 4 FirstWrite -1}
-		pool_to_flat_streams_0 {Type O LastRead -1 FirstWrite 11}
-		pool_to_flat_streams_1 {Type O LastRead -1 FirstWrite 11}
-		pool_to_flat_streams_2 {Type O LastRead -1 FirstWrite 11}
-		pool_to_flat_streams_3 {Type O LastRead -1 FirstWrite 11}}
-	max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols {
+		pool_to_flat_streams_0 {Type O LastRead -1 FirstWrite 5}
+		pool_to_flat_streams_1 {Type O LastRead -1 FirstWrite 5}
+		pool_to_flat_streams_2 {Type O LastRead -1 FirstWrite 5}
+		pool_to_flat_streams_3 {Type O LastRead -1 FirstWrite 5}}
+	max_pooling {
 		conv_to_pool_streams_0 {Type I LastRead 4 FirstWrite -1}
-		pool_to_flat_streams_0 {Type O LastRead -1 FirstWrite 11}}
-	max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6 {
-		conv_to_pool_streams_1 {Type I LastRead 4 FirstWrite -1}
-		pool_to_flat_streams_1 {Type O LastRead -1 FirstWrite 11}}
-	max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7 {
-		conv_to_pool_streams_2 {Type I LastRead 4 FirstWrite -1}
-		pool_to_flat_streams_2 {Type O LastRead -1 FirstWrite 11}}
-	max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8 {
-		conv_to_pool_streams_3 {Type I LastRead 4 FirstWrite -1}
-		pool_to_flat_streams_3 {Type O LastRead -1 FirstWrite 11}}}
+		pool_to_flat_streams_0 {Type O LastRead -1 FirstWrite 5}}
+	max_pooling {
+		conv_to_pool_streams_0 {Type I LastRead 4 FirstWrite -1}
+		pool_to_flat_streams_0 {Type O LastRead -1 FirstWrite 5}}
+	max_pooling {
+		conv_to_pool_streams_0 {Type I LastRead 4 FirstWrite -1}
+		pool_to_flat_streams_0 {Type O LastRead -1 FirstWrite 5}}
+	max_pooling {
+		conv_to_pool_streams_0 {Type I LastRead 4 FirstWrite -1}
+		pool_to_flat_streams_0 {Type O LastRead -1 FirstWrite 5}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "3182", "Max" : "3182"}
-	, {"Name" : "Interval", "Min" : "3182", "Max" : "3182"}
+	{"Name" : "Latency", "Min" : "788", "Max" : "788"}
+	, {"Name" : "Interval", "Min" : "788", "Max" : "788"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	conv_to_pool_streams_0 { ap_fifo {  { conv_to_pool_streams_0_dout fifo_data_in 0 32 }  { conv_to_pool_streams_0_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_0_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_0_empty_n fifo_status 0 1 }  { conv_to_pool_streams_0_read fifo_port_we 1 1 } } }
-	conv_to_pool_streams_1 { ap_fifo {  { conv_to_pool_streams_1_dout fifo_data_in 0 32 }  { conv_to_pool_streams_1_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_1_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_1_empty_n fifo_status 0 1 }  { conv_to_pool_streams_1_read fifo_port_we 1 1 } } }
-	conv_to_pool_streams_2 { ap_fifo {  { conv_to_pool_streams_2_dout fifo_data_in 0 32 }  { conv_to_pool_streams_2_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_2_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_2_empty_n fifo_status 0 1 }  { conv_to_pool_streams_2_read fifo_port_we 1 1 } } }
-	conv_to_pool_streams_3 { ap_fifo {  { conv_to_pool_streams_3_dout fifo_data_in 0 32 }  { conv_to_pool_streams_3_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_3_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_3_empty_n fifo_status 0 1 }  { conv_to_pool_streams_3_read fifo_port_we 1 1 } } }
-	pool_to_flat_streams_0 { ap_fifo {  { pool_to_flat_streams_0_din fifo_data_in 1 32 }  { pool_to_flat_streams_0_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_0_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_0_full_n fifo_status 0 1 }  { pool_to_flat_streams_0_write fifo_port_we 1 1 } } }
-	pool_to_flat_streams_1 { ap_fifo {  { pool_to_flat_streams_1_din fifo_data_in 1 32 }  { pool_to_flat_streams_1_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_1_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_1_full_n fifo_status 0 1 }  { pool_to_flat_streams_1_write fifo_port_we 1 1 } } }
-	pool_to_flat_streams_2 { ap_fifo {  { pool_to_flat_streams_2_din fifo_data_in 1 32 }  { pool_to_flat_streams_2_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_2_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_2_full_n fifo_status 0 1 }  { pool_to_flat_streams_2_write fifo_port_we 1 1 } } }
-	pool_to_flat_streams_3 { ap_fifo {  { pool_to_flat_streams_3_din fifo_data_in 1 32 }  { pool_to_flat_streams_3_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_3_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_3_full_n fifo_status 0 1 }  { pool_to_flat_streams_3_write fifo_port_we 1 1 } } }
+	conv_to_pool_streams_0 { ap_fifo {  { conv_to_pool_streams_0_dout fifo_data_in 0 24 }  { conv_to_pool_streams_0_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_0_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_0_empty_n fifo_status 0 1 }  { conv_to_pool_streams_0_read fifo_port_we 1 1 } } }
+	conv_to_pool_streams_1 { ap_fifo {  { conv_to_pool_streams_1_dout fifo_data_in 0 24 }  { conv_to_pool_streams_1_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_1_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_1_empty_n fifo_status 0 1 }  { conv_to_pool_streams_1_read fifo_port_we 1 1 } } }
+	conv_to_pool_streams_2 { ap_fifo {  { conv_to_pool_streams_2_dout fifo_data_in 0 24 }  { conv_to_pool_streams_2_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_2_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_2_empty_n fifo_status 0 1 }  { conv_to_pool_streams_2_read fifo_port_we 1 1 } } }
+	conv_to_pool_streams_3 { ap_fifo {  { conv_to_pool_streams_3_dout fifo_data_in 0 24 }  { conv_to_pool_streams_3_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_3_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_3_empty_n fifo_status 0 1 }  { conv_to_pool_streams_3_read fifo_port_we 1 1 } } }
+	pool_to_flat_streams_0 { ap_fifo {  { pool_to_flat_streams_0_din fifo_data_in 1 24 }  { pool_to_flat_streams_0_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_0_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_0_full_n fifo_status 0 1 }  { pool_to_flat_streams_0_write fifo_port_we 1 1 } } }
+	pool_to_flat_streams_1 { ap_fifo {  { pool_to_flat_streams_1_din fifo_data_in 1 24 }  { pool_to_flat_streams_1_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_1_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_1_full_n fifo_status 0 1 }  { pool_to_flat_streams_1_write fifo_port_we 1 1 } } }
+	pool_to_flat_streams_2 { ap_fifo {  { pool_to_flat_streams_2_din fifo_data_in 1 24 }  { pool_to_flat_streams_2_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_2_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_2_full_n fifo_status 0 1 }  { pool_to_flat_streams_2_write fifo_port_we 1 1 } } }
+	pool_to_flat_streams_3 { ap_fifo {  { pool_to_flat_streams_3_din fifo_data_in 1 24 }  { pool_to_flat_streams_3_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_3_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_3_full_n fifo_status 0 1 }  { pool_to_flat_streams_3_write fifo_port_we 1 1 } } }
 }

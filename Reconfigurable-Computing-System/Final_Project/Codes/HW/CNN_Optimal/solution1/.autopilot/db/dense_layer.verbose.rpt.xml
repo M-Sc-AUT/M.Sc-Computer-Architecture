@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_layer'" level="0">
-<item name = "Date">Fri Jan 24 15:13:30 2025
+<item name = "Date">Tue Jan 28 19:06:23 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 10.274 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.540 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">996, 996, 10.233 us, 10.233 us, 996, 996, no</column>
+<column name="">208, 208, 2.080 us, 2.080 us, 208, 208, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_fu_76">dense, 996, 996, 10.233 us, 10.233 us, 196, 196, yes</column>
-<column name="grp_dense_fu_126">dense, 996, 996, 10.233 us, 10.233 us, 196, 196, yes</column>
-<column name="grp_dense_fu_176">dense, 996, 996, 10.233 us, 10.233 us, 196, 196, yes</column>
-<column name="grp_dense_fu_226">dense, 996, 996, 10.233 us, 10.233 us, 196, 196, yes</column>
+<column name="grp_dense_fu_76">dense, 208, 208, 2.080 us, 2.080 us, 196, 196, yes</column>
+<column name="grp_dense_fu_126">dense, 208, 208, 2.080 us, 2.080 us, 196, 196, yes</column>
+<column name="grp_dense_fu_176">dense, 208, 208, 2.080 us, 2.080 us, 196, 196, yes</column>
+<column name="grp_dense_fu_226">dense, 208, 208, 2.080 us, 2.080 us, 196, 196, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -53,22 +53,22 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 12, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">80, 200, 735444, 315920, -</column>
+<column name="Instance">80, 7840, 63440, 57416, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 2846, -</column>
-<column name="Register">-, -, 998, -, -</column>
+<column name="Multiplexer">-, -, -, 1271, -</column>
+<column name="Register">-, -, 210, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
-<specialColumn name="Utilization (%)">66, 250, 2092, 1811, 0</specialColumn>
+<specialColumn name="Utilization (%)">66, 9800, 180, 333, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_dense_fu_76">dense, 20, 50, 183861, 78980, 0</column>
-<column name="grp_dense_fu_126">dense, 20, 50, 183861, 78980, 0</column>
-<column name="grp_dense_fu_176">dense, 20, 50, 183861, 78980, 0</column>
-<column name="grp_dense_fu_226">dense, 20, 50, 183861, 78980, 0</column>
+<column name="grp_dense_fu_76">dense, 20, 1960, 15860, 14354, 0</column>
+<column name="grp_dense_fu_126">dense, 20, 1960, 15860, 14354, 0</column>
+<column name="grp_dense_fu_176">dense, 20, 1960, 15860, 14354, 0</column>
+<column name="grp_dense_fu_226">dense, 20, 1960, 15860, 14354, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -95,7 +95,7 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">2693, 998, 1, 998</column>
+<column name="ap_NS_fsm">1118, 210, 1, 210</column>
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="dense_to_softmax_streams_0_blk_n">9, 2, 1, 2</column>
 <column name="dense_to_softmax_streams_0_write">9, 2, 1, 2</column>
@@ -117,7 +117,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">997, 0, 997, 0</column>
+<column name="ap_CS_fsm">209, 0, 209, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 </table>
 </item>
@@ -135,42 +135,42 @@
 <column name="ap_continue">in, 1, ap_ctrl_hs, dense_layer, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, dense_layer, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, dense_layer, return value</column>
-<column name="flat_to_dense_streams_0_dout">in, 32, ap_fifo, flat_to_dense_streams_0, pointer</column>
+<column name="flat_to_dense_streams_0_dout">in, 24, ap_fifo, flat_to_dense_streams_0, pointer</column>
 <column name="flat_to_dense_streams_0_num_data_valid">in, 9, ap_fifo, flat_to_dense_streams_0, pointer</column>
 <column name="flat_to_dense_streams_0_fifo_cap">in, 9, ap_fifo, flat_to_dense_streams_0, pointer</column>
 <column name="flat_to_dense_streams_0_empty_n">in, 1, ap_fifo, flat_to_dense_streams_0, pointer</column>
 <column name="flat_to_dense_streams_0_read">out, 1, ap_fifo, flat_to_dense_streams_0, pointer</column>
-<column name="flat_to_dense_streams_1_dout">in, 32, ap_fifo, flat_to_dense_streams_1, pointer</column>
+<column name="flat_to_dense_streams_1_dout">in, 24, ap_fifo, flat_to_dense_streams_1, pointer</column>
 <column name="flat_to_dense_streams_1_num_data_valid">in, 9, ap_fifo, flat_to_dense_streams_1, pointer</column>
 <column name="flat_to_dense_streams_1_fifo_cap">in, 9, ap_fifo, flat_to_dense_streams_1, pointer</column>
 <column name="flat_to_dense_streams_1_empty_n">in, 1, ap_fifo, flat_to_dense_streams_1, pointer</column>
 <column name="flat_to_dense_streams_1_read">out, 1, ap_fifo, flat_to_dense_streams_1, pointer</column>
-<column name="flat_to_dense_streams_2_dout">in, 32, ap_fifo, flat_to_dense_streams_2, pointer</column>
+<column name="flat_to_dense_streams_2_dout">in, 24, ap_fifo, flat_to_dense_streams_2, pointer</column>
 <column name="flat_to_dense_streams_2_num_data_valid">in, 9, ap_fifo, flat_to_dense_streams_2, pointer</column>
 <column name="flat_to_dense_streams_2_fifo_cap">in, 9, ap_fifo, flat_to_dense_streams_2, pointer</column>
 <column name="flat_to_dense_streams_2_empty_n">in, 1, ap_fifo, flat_to_dense_streams_2, pointer</column>
 <column name="flat_to_dense_streams_2_read">out, 1, ap_fifo, flat_to_dense_streams_2, pointer</column>
-<column name="flat_to_dense_streams_3_dout">in, 32, ap_fifo, flat_to_dense_streams_3, pointer</column>
+<column name="flat_to_dense_streams_3_dout">in, 24, ap_fifo, flat_to_dense_streams_3, pointer</column>
 <column name="flat_to_dense_streams_3_num_data_valid">in, 9, ap_fifo, flat_to_dense_streams_3, pointer</column>
 <column name="flat_to_dense_streams_3_fifo_cap">in, 9, ap_fifo, flat_to_dense_streams_3, pointer</column>
 <column name="flat_to_dense_streams_3_empty_n">in, 1, ap_fifo, flat_to_dense_streams_3, pointer</column>
 <column name="flat_to_dense_streams_3_read">out, 1, ap_fifo, flat_to_dense_streams_3, pointer</column>
-<column name="dense_to_softmax_streams_0_din">out, 32, ap_fifo, dense_to_softmax_streams_0, pointer</column>
+<column name="dense_to_softmax_streams_0_din">out, 24, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 <column name="dense_to_softmax_streams_0_num_data_valid">in, 5, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 <column name="dense_to_softmax_streams_0_fifo_cap">in, 5, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 <column name="dense_to_softmax_streams_0_full_n">in, 1, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 <column name="dense_to_softmax_streams_0_write">out, 1, ap_fifo, dense_to_softmax_streams_0, pointer</column>
-<column name="dense_to_softmax_streams_1_din">out, 32, ap_fifo, dense_to_softmax_streams_1, pointer</column>
+<column name="dense_to_softmax_streams_1_din">out, 24, ap_fifo, dense_to_softmax_streams_1, pointer</column>
 <column name="dense_to_softmax_streams_1_num_data_valid">in, 5, ap_fifo, dense_to_softmax_streams_1, pointer</column>
 <column name="dense_to_softmax_streams_1_fifo_cap">in, 5, ap_fifo, dense_to_softmax_streams_1, pointer</column>
 <column name="dense_to_softmax_streams_1_full_n">in, 1, ap_fifo, dense_to_softmax_streams_1, pointer</column>
 <column name="dense_to_softmax_streams_1_write">out, 1, ap_fifo, dense_to_softmax_streams_1, pointer</column>
-<column name="dense_to_softmax_streams_2_din">out, 32, ap_fifo, dense_to_softmax_streams_2, pointer</column>
+<column name="dense_to_softmax_streams_2_din">out, 24, ap_fifo, dense_to_softmax_streams_2, pointer</column>
 <column name="dense_to_softmax_streams_2_num_data_valid">in, 5, ap_fifo, dense_to_softmax_streams_2, pointer</column>
 <column name="dense_to_softmax_streams_2_fifo_cap">in, 5, ap_fifo, dense_to_softmax_streams_2, pointer</column>
 <column name="dense_to_softmax_streams_2_full_n">in, 1, ap_fifo, dense_to_softmax_streams_2, pointer</column>
 <column name="dense_to_softmax_streams_2_write">out, 1, ap_fifo, dense_to_softmax_streams_2, pointer</column>
-<column name="dense_to_softmax_streams_3_din">out, 32, ap_fifo, dense_to_softmax_streams_3, pointer</column>
+<column name="dense_to_softmax_streams_3_din">out, 24, ap_fifo, dense_to_softmax_streams_3, pointer</column>
 <column name="dense_to_softmax_streams_3_num_data_valid">in, 5, ap_fifo, dense_to_softmax_streams_3, pointer</column>
 <column name="dense_to_softmax_streams_3_fifo_cap">in, 5, ap_fifo, dense_to_softmax_streams_3, pointer</column>
 <column name="dense_to_softmax_streams_3_full_n">in, 1, ap_fifo, dense_to_softmax_streams_3, pointer</column>

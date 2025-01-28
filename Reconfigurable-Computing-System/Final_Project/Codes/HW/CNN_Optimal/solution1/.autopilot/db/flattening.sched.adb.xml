@@ -103,10 +103,10 @@
 
 <Node id="3" bw="4" op_0_bw="32">
 <![CDATA[
-entry:0 %r_1 = alloca i32 1
+entry:0 %r = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="r_1"/></StgValue>
+<StgValue><ssdm name="r"/></StgValue>
 </operation>
 
 <operation id="19" st_id="1" stage="1" lat="1">
@@ -116,9 +116,9 @@ entry:0 %r_1 = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pool_to_flat_streams_0, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0
+entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %pool_to_flat_streams_0, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -131,9 +131,9 @@ entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %po
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_0, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0
+entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %flat_to_dense_streams_0, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -148,7 +148,7 @@ entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %fl
 
 <Node id="6" bw="0" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-entry:3 %store_ln10 = store i4 0, i4 %r_1
+entry:3 %store_ln10 = store i4 0, i4 %r
 
 ]]></Node>
 <StgValue><ssdm name="store_ln10"/></StgValue>
@@ -178,10 +178,10 @@ entry:4 %br_ln10 = br void %flat_for_cols
 
 <Node id="9" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-flat_for_cols:0 %r = load i4 %r_1
+flat_for_cols:0 %r_1 = load i4 %r
 
 ]]></Node>
-<StgValue><ssdm name="r"/></StgValue>
+<StgValue><ssdm name="r_1"/></StgValue>
 </operation>
 
 <operation id="24" st_id="1" stage="1" lat="1">
@@ -193,7 +193,7 @@ flat_for_cols:0 %r = load i4 %r_1
 
 <Node id="10" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-flat_for_cols:1 %icmp_ln10 = icmp_eq  i4 %r, i4 14
+flat_for_cols:1 %icmp_ln10 = icmp_eq  i4 %r_1, i4 14
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln10"/></StgValue>
@@ -208,7 +208,7 @@ flat_for_cols:1 %icmp_ln10 = icmp_eq  i4 %r, i4 14
 
 <Node id="11" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-flat_for_cols:2 %r_2 = add i4 %r, i4 1
+flat_for_cols:2 %r_2 = add i4 %r_1, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="r_2"/></StgValue>
@@ -256,9 +256,9 @@ for.end7:0 %ret_ln18 = ret
 </and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="17" bw="24" op_0_bw="24" op_1_bw="24">
 <![CDATA[
-flat_for_cols.split:3 %pool_to_flat_streams_0_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:3 %pool_to_flat_streams_0_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read"/></StgValue>
@@ -272,9 +272,9 @@ flat_for_cols.split:3 %pool_to_flat_streams_0_read = read i32 @_ssdm_op_Read.ap_
 </and_exp></or_exp>
 </condition>
 
-<Node id="18" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<Node id="18" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24">
 <![CDATA[
-flat_for_cols.split:4 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read
+flat_for_cols.split:4 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -290,7 +290,7 @@ flat_for_cols.split:4 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.
 
 <Node id="45" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:31 %store_ln10 = store i4 %r_2, i4 %r_1
+flat_for_cols.split:31 %store_ln10 = store i4 %r_2, i4 %r
 
 ]]></Node>
 <StgValue><ssdm name="store_ln10"/></StgValue>
@@ -307,9 +307,9 @@ flat_for_cols.split:31 %store_ln10 = store i4 %r_2, i4 %r_1
 </and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="19" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:5 %pool_to_flat_streams_0_read_1 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:5 %pool_to_flat_streams_0_read_1 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_1"/></StgValue>
@@ -323,9 +323,9 @@ flat_for_cols.split:5 %pool_to_flat_streams_0_read_1 = read i32 @_ssdm_op_Read.a
 </and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="20" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:6 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_1
+flat_for_cols.split:6 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_1
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -342,9 +342,9 @@ flat_for_cols.split:6 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.
 </and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="21" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:7 %pool_to_flat_streams_0_read_2 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:7 %pool_to_flat_streams_0_read_2 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_2"/></StgValue>
@@ -358,9 +358,9 @@ flat_for_cols.split:7 %pool_to_flat_streams_0_read_2 = read i32 @_ssdm_op_Read.a
 </and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="22" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:8 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_2
+flat_for_cols.split:8 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_2
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -377,9 +377,9 @@ flat_for_cols.split:8 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.
 </and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="23" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:9 %pool_to_flat_streams_0_read_3 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:9 %pool_to_flat_streams_0_read_3 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_3"/></StgValue>
@@ -393,9 +393,9 @@ flat_for_cols.split:9 %pool_to_flat_streams_0_read_3 = read i32 @_ssdm_op_Read.a
 </and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="24" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:10 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_3
+flat_for_cols.split:10 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_3
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -412,9 +412,9 @@ flat_for_cols.split:10 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile
 </and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="25" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:11 %pool_to_flat_streams_0_read_4 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:11 %pool_to_flat_streams_0_read_4 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_4"/></StgValue>
@@ -428,9 +428,9 @@ flat_for_cols.split:11 %pool_to_flat_streams_0_read_4 = read i32 @_ssdm_op_Read.
 </and_exp></or_exp>
 </condition>
 
-<Node id="26" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="26" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:12 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_4
+flat_for_cols.split:12 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_4
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -447,9 +447,9 @@ flat_for_cols.split:12 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile
 </and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="27" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:13 %pool_to_flat_streams_0_read_5 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:13 %pool_to_flat_streams_0_read_5 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_5"/></StgValue>
@@ -463,9 +463,9 @@ flat_for_cols.split:13 %pool_to_flat_streams_0_read_5 = read i32 @_ssdm_op_Read.
 </and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="28" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:14 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_5
+flat_for_cols.split:14 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_5
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -482,9 +482,9 @@ flat_for_cols.split:14 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile
 </and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="29" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:15 %pool_to_flat_streams_0_read_6 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:15 %pool_to_flat_streams_0_read_6 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_6"/></StgValue>
@@ -498,9 +498,9 @@ flat_for_cols.split:15 %pool_to_flat_streams_0_read_6 = read i32 @_ssdm_op_Read.
 </and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="30" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:16 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_6
+flat_for_cols.split:16 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_6
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -517,9 +517,9 @@ flat_for_cols.split:16 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile
 </and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="31" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:17 %pool_to_flat_streams_0_read_7 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:17 %pool_to_flat_streams_0_read_7 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_7"/></StgValue>
@@ -533,9 +533,9 @@ flat_for_cols.split:17 %pool_to_flat_streams_0_read_7 = read i32 @_ssdm_op_Read.
 </and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="32" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:18 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_7
+flat_for_cols.split:18 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_7
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -552,9 +552,9 @@ flat_for_cols.split:18 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile
 </and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="33" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:19 %pool_to_flat_streams_0_read_8 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:19 %pool_to_flat_streams_0_read_8 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_8"/></StgValue>
@@ -568,9 +568,9 @@ flat_for_cols.split:19 %pool_to_flat_streams_0_read_8 = read i32 @_ssdm_op_Read.
 </and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="34" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:20 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_8
+flat_for_cols.split:20 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_8
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -587,9 +587,9 @@ flat_for_cols.split:20 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile
 </and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="35" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:21 %pool_to_flat_streams_0_read_9 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:21 %pool_to_flat_streams_0_read_9 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_9"/></StgValue>
@@ -603,9 +603,9 @@ flat_for_cols.split:21 %pool_to_flat_streams_0_read_9 = read i32 @_ssdm_op_Read.
 </and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="36" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:22 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_9
+flat_for_cols.split:22 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_9
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -622,9 +622,9 @@ flat_for_cols.split:22 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile
 </and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="37" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:23 %pool_to_flat_streams_0_read_10 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:23 %pool_to_flat_streams_0_read_10 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_10"/></StgValue>
@@ -638,9 +638,9 @@ flat_for_cols.split:23 %pool_to_flat_streams_0_read_10 = read i32 @_ssdm_op_Read
 </and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="38" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:24 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_10
+flat_for_cols.split:24 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_10
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -657,9 +657,9 @@ flat_for_cols.split:24 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile
 </and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="39" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:25 %pool_to_flat_streams_0_read_11 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:25 %pool_to_flat_streams_0_read_11 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_11"/></StgValue>
@@ -673,9 +673,9 @@ flat_for_cols.split:25 %pool_to_flat_streams_0_read_11 = read i32 @_ssdm_op_Read
 </and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="40" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:26 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_11
+flat_for_cols.split:26 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_11
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -692,9 +692,9 @@ flat_for_cols.split:26 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile
 </and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="41" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:27 %pool_to_flat_streams_0_read_12 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:27 %pool_to_flat_streams_0_read_12 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_12"/></StgValue>
@@ -708,9 +708,9 @@ flat_for_cols.split:27 %pool_to_flat_streams_0_read_12 = read i32 @_ssdm_op_Read
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="42" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:28 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_12
+flat_for_cols.split:28 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_12
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>
@@ -728,7 +728,7 @@ flat_for_cols.split:28 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-flat_for_cols.split:0 %specpipeline_ln10 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_4
+flat_for_cols.split:0 %specpipeline_ln10 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_3
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln10"/></StgValue>
@@ -758,7 +758,7 @@ flat_for_cols.split:1 %speclooptripcount_ln10 = speclooptripcount void @_ssdm_op
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-flat_for_cols.split:2 %specloopname_ln10 = specloopname void @_ssdm_op_SpecLoopName, void @empty
+flat_for_cols.split:2 %specloopname_ln10 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln10"/></StgValue>
@@ -771,9 +771,9 @@ flat_for_cols.split:2 %specloopname_ln10 = specloopname void @_ssdm_op_SpecLoopN
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="43" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0">
+<Node id="43" bw="24" op_0_bw="24" op_1_bw="24" op_2_bw="0">
 <![CDATA[
-flat_for_cols.split:29 %pool_to_flat_streams_0_read_13 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+flat_for_cols.split:29 %pool_to_flat_streams_0_read_13 = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read_13"/></StgValue>
@@ -786,9 +786,9 @@ flat_for_cols.split:29 %pool_to_flat_streams_0_read_13 = read i32 @_ssdm_op_Read
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="44" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-flat_for_cols.split:30 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read_13
+flat_for_cols.split:30 %write_ln15 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %flat_to_dense_streams_0, i24 %pool_to_flat_streams_0_read_13
 
 ]]></Node>
 <StgValue><ssdm name="write_ln15"/></StgValue>

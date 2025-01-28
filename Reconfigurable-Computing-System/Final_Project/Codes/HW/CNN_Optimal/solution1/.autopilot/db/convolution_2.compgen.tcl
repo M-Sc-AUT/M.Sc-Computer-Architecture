@@ -1,7 +1,66 @@
 # This script segment is generated automatically by AutoPilot
 
+set id 813
+set name cnn_mac_muladd_24s_5ns_32s_32_4_1
+set corename simcore_mac
+set op mac
+set stage_num 4
+set clk_width 1
+set clk_signed 0
+set reset_width 1
+set reset_signed 0
+set in0_width 24
+set in0_signed 1
+set in1_width 5
+set in1_signed 0
+set in2_width 32
+set in2_signed 1
+set ce_width 1
+set ce_signed 0
+set out_width 32
+set arg_lists {i0 {24 1 +} i1 {5 0 +} m {30 1 +} i2 {32 1 +} p {32 1 +} c_reg {1} rnd {0} acc {0} }
+set TrueReset 0
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3 ALLOW_PRAGMA 1
+}
+
+
+set op mac
+set corename DSP48
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    in2_width ${in2_width} \
+    in2_signed ${in2_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
+    out_width ${out_width} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
+}
+}
+
+
 # FIFO definition:
-set ID 903
+set ID 831
 set FifoName cnn_frp_fifoout
 set InstName cnn_frp_fifoout_U
 set CoreName ap_simcore_frp_fifoout
@@ -41,14 +100,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 904 \
+    id 832 \
     name pad_img_0_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_0_0 \
     op interface \
-    ports { pad_img_0_0_address0 { O 5 vector } pad_img_0_0_ce0 { O 1 bit } pad_img_0_0_q0 { I 32 vector } } \
+    ports { pad_img_0_0_address0 { O 5 vector } pad_img_0_0_ce0 { O 1 bit } pad_img_0_0_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_0_0'"
@@ -60,14 +119,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 905 \
+    id 833 \
     name pad_img_0_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_0_1 \
     op interface \
-    ports { pad_img_0_1_address0 { O 5 vector } pad_img_0_1_ce0 { O 1 bit } pad_img_0_1_q0 { I 32 vector } } \
+    ports { pad_img_0_1_address0 { O 5 vector } pad_img_0_1_ce0 { O 1 bit } pad_img_0_1_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_0_1'"
@@ -79,14 +138,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 906 \
+    id 834 \
     name pad_img_0_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_0_2 \
     op interface \
-    ports { pad_img_0_2_address0 { O 5 vector } pad_img_0_2_ce0 { O 1 bit } pad_img_0_2_q0 { I 32 vector } } \
+    ports { pad_img_0_2_address0 { O 5 vector } pad_img_0_2_ce0 { O 1 bit } pad_img_0_2_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_0_2'"
@@ -98,14 +157,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 907 \
+    id 835 \
     name pad_img_0_3 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_0_3 \
     op interface \
-    ports { pad_img_0_3_address0 { O 5 vector } pad_img_0_3_ce0 { O 1 bit } pad_img_0_3_q0 { I 32 vector } } \
+    ports { pad_img_0_3_address0 { O 5 vector } pad_img_0_3_ce0 { O 1 bit } pad_img_0_3_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_0_3'"
@@ -117,14 +176,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 908 \
+    id 836 \
     name pad_img_0_4 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_0_4 \
     op interface \
-    ports { pad_img_0_4_address0 { O 5 vector } pad_img_0_4_ce0 { O 1 bit } pad_img_0_4_q0 { I 32 vector } } \
+    ports { pad_img_0_4_address0 { O 5 vector } pad_img_0_4_ce0 { O 1 bit } pad_img_0_4_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_0_4'"
@@ -136,14 +195,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 909 \
+    id 837 \
     name pad_img_0_5 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_0_5 \
     op interface \
-    ports { pad_img_0_5_address0 { O 5 vector } pad_img_0_5_ce0 { O 1 bit } pad_img_0_5_q0 { I 32 vector } } \
+    ports { pad_img_0_5_address0 { O 5 vector } pad_img_0_5_ce0 { O 1 bit } pad_img_0_5_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_0_5'"
@@ -155,14 +214,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 910 \
+    id 838 \
     name pad_img_0_6 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_0_6 \
     op interface \
-    ports { pad_img_0_6_address0 { O 5 vector } pad_img_0_6_ce0 { O 1 bit } pad_img_0_6_q0 { I 32 vector } } \
+    ports { pad_img_0_6_address0 { O 5 vector } pad_img_0_6_ce0 { O 1 bit } pad_img_0_6_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_0_6'"
@@ -174,14 +233,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 911 \
+    id 839 \
     name pad_img_1_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_1_0 \
     op interface \
-    ports { pad_img_1_0_address0 { O 5 vector } pad_img_1_0_ce0 { O 1 bit } pad_img_1_0_q0 { I 32 vector } } \
+    ports { pad_img_1_0_address0 { O 5 vector } pad_img_1_0_ce0 { O 1 bit } pad_img_1_0_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_1_0'"
@@ -193,14 +252,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 912 \
+    id 840 \
     name pad_img_1_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_1_1 \
     op interface \
-    ports { pad_img_1_1_address0 { O 5 vector } pad_img_1_1_ce0 { O 1 bit } pad_img_1_1_q0 { I 32 vector } } \
+    ports { pad_img_1_1_address0 { O 5 vector } pad_img_1_1_ce0 { O 1 bit } pad_img_1_1_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_1_1'"
@@ -212,14 +271,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 913 \
+    id 841 \
     name pad_img_1_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_1_2 \
     op interface \
-    ports { pad_img_1_2_address0 { O 5 vector } pad_img_1_2_ce0 { O 1 bit } pad_img_1_2_q0 { I 32 vector } } \
+    ports { pad_img_1_2_address0 { O 5 vector } pad_img_1_2_ce0 { O 1 bit } pad_img_1_2_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_1_2'"
@@ -231,14 +290,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 914 \
+    id 842 \
     name pad_img_1_3 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_1_3 \
     op interface \
-    ports { pad_img_1_3_address0 { O 5 vector } pad_img_1_3_ce0 { O 1 bit } pad_img_1_3_q0 { I 32 vector } } \
+    ports { pad_img_1_3_address0 { O 5 vector } pad_img_1_3_ce0 { O 1 bit } pad_img_1_3_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_1_3'"
@@ -250,14 +309,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 915 \
+    id 843 \
     name pad_img_1_4 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_1_4 \
     op interface \
-    ports { pad_img_1_4_address0 { O 5 vector } pad_img_1_4_ce0 { O 1 bit } pad_img_1_4_q0 { I 32 vector } } \
+    ports { pad_img_1_4_address0 { O 5 vector } pad_img_1_4_ce0 { O 1 bit } pad_img_1_4_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_1_4'"
@@ -269,14 +328,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 916 \
+    id 844 \
     name pad_img_1_5 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_1_5 \
     op interface \
-    ports { pad_img_1_5_address0 { O 5 vector } pad_img_1_5_ce0 { O 1 bit } pad_img_1_5_q0 { I 32 vector } } \
+    ports { pad_img_1_5_address0 { O 5 vector } pad_img_1_5_ce0 { O 1 bit } pad_img_1_5_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_1_5'"
@@ -288,14 +347,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 917 \
+    id 845 \
     name pad_img_1_6 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_1_6 \
     op interface \
-    ports { pad_img_1_6_address0 { O 5 vector } pad_img_1_6_ce0 { O 1 bit } pad_img_1_6_q0 { I 32 vector } } \
+    ports { pad_img_1_6_address0 { O 5 vector } pad_img_1_6_ce0 { O 1 bit } pad_img_1_6_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_1_6'"
@@ -307,14 +366,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 918 \
+    id 846 \
     name pad_img_2_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_2_0 \
     op interface \
-    ports { pad_img_2_0_address0 { O 5 vector } pad_img_2_0_ce0 { O 1 bit } pad_img_2_0_q0 { I 32 vector } } \
+    ports { pad_img_2_0_address0 { O 5 vector } pad_img_2_0_ce0 { O 1 bit } pad_img_2_0_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_2_0'"
@@ -326,14 +385,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 919 \
+    id 847 \
     name pad_img_2_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_2_1 \
     op interface \
-    ports { pad_img_2_1_address0 { O 5 vector } pad_img_2_1_ce0 { O 1 bit } pad_img_2_1_q0 { I 32 vector } } \
+    ports { pad_img_2_1_address0 { O 5 vector } pad_img_2_1_ce0 { O 1 bit } pad_img_2_1_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_2_1'"
@@ -345,14 +404,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 920 \
+    id 848 \
     name pad_img_2_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_2_2 \
     op interface \
-    ports { pad_img_2_2_address0 { O 5 vector } pad_img_2_2_ce0 { O 1 bit } pad_img_2_2_q0 { I 32 vector } } \
+    ports { pad_img_2_2_address0 { O 5 vector } pad_img_2_2_ce0 { O 1 bit } pad_img_2_2_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_2_2'"
@@ -364,14 +423,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 921 \
+    id 849 \
     name pad_img_2_3 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_2_3 \
     op interface \
-    ports { pad_img_2_3_address0 { O 5 vector } pad_img_2_3_ce0 { O 1 bit } pad_img_2_3_q0 { I 32 vector } } \
+    ports { pad_img_2_3_address0 { O 5 vector } pad_img_2_3_ce0 { O 1 bit } pad_img_2_3_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_2_3'"
@@ -383,14 +442,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 922 \
+    id 850 \
     name pad_img_2_4 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_2_4 \
     op interface \
-    ports { pad_img_2_4_address0 { O 5 vector } pad_img_2_4_ce0 { O 1 bit } pad_img_2_4_q0 { I 32 vector } } \
+    ports { pad_img_2_4_address0 { O 5 vector } pad_img_2_4_ce0 { O 1 bit } pad_img_2_4_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_2_4'"
@@ -402,14 +461,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 923 \
+    id 851 \
     name pad_img_2_5 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_2_5 \
     op interface \
-    ports { pad_img_2_5_address0 { O 5 vector } pad_img_2_5_ce0 { O 1 bit } pad_img_2_5_q0 { I 32 vector } } \
+    ports { pad_img_2_5_address0 { O 5 vector } pad_img_2_5_ce0 { O 1 bit } pad_img_2_5_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_2_5'"
@@ -421,14 +480,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 924 \
+    id 852 \
     name pad_img_2_6 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_2_6 \
     op interface \
-    ports { pad_img_2_6_address0 { O 5 vector } pad_img_2_6_ce0 { O 1 bit } pad_img_2_6_q0 { I 32 vector } } \
+    ports { pad_img_2_6_address0 { O 5 vector } pad_img_2_6_ce0 { O 1 bit } pad_img_2_6_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_2_6'"
@@ -440,14 +499,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 925 \
+    id 853 \
     name pad_img_3_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_3_0 \
     op interface \
-    ports { pad_img_3_0_address0 { O 5 vector } pad_img_3_0_ce0 { O 1 bit } pad_img_3_0_q0 { I 32 vector } } \
+    ports { pad_img_3_0_address0 { O 5 vector } pad_img_3_0_ce0 { O 1 bit } pad_img_3_0_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_3_0'"
@@ -459,14 +518,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 926 \
+    id 854 \
     name pad_img_3_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_3_1 \
     op interface \
-    ports { pad_img_3_1_address0 { O 5 vector } pad_img_3_1_ce0 { O 1 bit } pad_img_3_1_q0 { I 32 vector } } \
+    ports { pad_img_3_1_address0 { O 5 vector } pad_img_3_1_ce0 { O 1 bit } pad_img_3_1_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_3_1'"
@@ -478,14 +537,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 927 \
+    id 855 \
     name pad_img_3_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_3_2 \
     op interface \
-    ports { pad_img_3_2_address0 { O 5 vector } pad_img_3_2_ce0 { O 1 bit } pad_img_3_2_q0 { I 32 vector } } \
+    ports { pad_img_3_2_address0 { O 5 vector } pad_img_3_2_ce0 { O 1 bit } pad_img_3_2_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_3_2'"
@@ -497,14 +556,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 928 \
+    id 856 \
     name pad_img_3_3 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_3_3 \
     op interface \
-    ports { pad_img_3_3_address0 { O 5 vector } pad_img_3_3_ce0 { O 1 bit } pad_img_3_3_q0 { I 32 vector } } \
+    ports { pad_img_3_3_address0 { O 5 vector } pad_img_3_3_ce0 { O 1 bit } pad_img_3_3_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_3_3'"
@@ -516,14 +575,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 929 \
+    id 857 \
     name pad_img_3_4 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_3_4 \
     op interface \
-    ports { pad_img_3_4_address0 { O 5 vector } pad_img_3_4_ce0 { O 1 bit } pad_img_3_4_q0 { I 32 vector } } \
+    ports { pad_img_3_4_address0 { O 5 vector } pad_img_3_4_ce0 { O 1 bit } pad_img_3_4_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_3_4'"
@@ -535,14 +594,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 930 \
+    id 858 \
     name pad_img_3_5 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_3_5 \
     op interface \
-    ports { pad_img_3_5_address0 { O 5 vector } pad_img_3_5_ce0 { O 1 bit } pad_img_3_5_q0 { I 32 vector } } \
+    ports { pad_img_3_5_address0 { O 5 vector } pad_img_3_5_ce0 { O 1 bit } pad_img_3_5_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_3_5'"
@@ -554,14 +613,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 931 \
+    id 859 \
     name pad_img_3_6 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_3_6 \
     op interface \
-    ports { pad_img_3_6_address0 { O 5 vector } pad_img_3_6_ce0 { O 1 bit } pad_img_3_6_q0 { I 32 vector } } \
+    ports { pad_img_3_6_address0 { O 5 vector } pad_img_3_6_ce0 { O 1 bit } pad_img_3_6_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_3_6'"
@@ -573,14 +632,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 932 \
+    id 860 \
     name pad_img_4_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_4_0 \
     op interface \
-    ports { pad_img_4_0_address0 { O 5 vector } pad_img_4_0_ce0 { O 1 bit } pad_img_4_0_q0 { I 32 vector } } \
+    ports { pad_img_4_0_address0 { O 5 vector } pad_img_4_0_ce0 { O 1 bit } pad_img_4_0_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_4_0'"
@@ -592,14 +651,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 933 \
+    id 861 \
     name pad_img_4_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_4_1 \
     op interface \
-    ports { pad_img_4_1_address0 { O 5 vector } pad_img_4_1_ce0 { O 1 bit } pad_img_4_1_q0 { I 32 vector } } \
+    ports { pad_img_4_1_address0 { O 5 vector } pad_img_4_1_ce0 { O 1 bit } pad_img_4_1_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_4_1'"
@@ -611,14 +670,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 934 \
+    id 862 \
     name pad_img_4_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_4_2 \
     op interface \
-    ports { pad_img_4_2_address0 { O 5 vector } pad_img_4_2_ce0 { O 1 bit } pad_img_4_2_q0 { I 32 vector } } \
+    ports { pad_img_4_2_address0 { O 5 vector } pad_img_4_2_ce0 { O 1 bit } pad_img_4_2_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_4_2'"
@@ -630,14 +689,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 935 \
+    id 863 \
     name pad_img_4_3 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_4_3 \
     op interface \
-    ports { pad_img_4_3_address0 { O 5 vector } pad_img_4_3_ce0 { O 1 bit } pad_img_4_3_q0 { I 32 vector } } \
+    ports { pad_img_4_3_address0 { O 5 vector } pad_img_4_3_ce0 { O 1 bit } pad_img_4_3_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_4_3'"
@@ -649,14 +708,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 936 \
+    id 864 \
     name pad_img_4_4 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_4_4 \
     op interface \
-    ports { pad_img_4_4_address0 { O 5 vector } pad_img_4_4_ce0 { O 1 bit } pad_img_4_4_q0 { I 32 vector } } \
+    ports { pad_img_4_4_address0 { O 5 vector } pad_img_4_4_ce0 { O 1 bit } pad_img_4_4_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_4_4'"
@@ -668,14 +727,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 937 \
+    id 865 \
     name pad_img_4_5 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_4_5 \
     op interface \
-    ports { pad_img_4_5_address0 { O 5 vector } pad_img_4_5_ce0 { O 1 bit } pad_img_4_5_q0 { I 32 vector } } \
+    ports { pad_img_4_5_address0 { O 5 vector } pad_img_4_5_ce0 { O 1 bit } pad_img_4_5_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_4_5'"
@@ -687,14 +746,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 938 \
+    id 866 \
     name pad_img_4_6 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_4_6 \
     op interface \
-    ports { pad_img_4_6_address0 { O 5 vector } pad_img_4_6_ce0 { O 1 bit } pad_img_4_6_q0 { I 32 vector } } \
+    ports { pad_img_4_6_address0 { O 5 vector } pad_img_4_6_ce0 { O 1 bit } pad_img_4_6_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_4_6'"
@@ -706,14 +765,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 939 \
+    id 867 \
     name pad_img_5_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_5_0 \
     op interface \
-    ports { pad_img_5_0_address0 { O 5 vector } pad_img_5_0_ce0 { O 1 bit } pad_img_5_0_q0 { I 32 vector } } \
+    ports { pad_img_5_0_address0 { O 5 vector } pad_img_5_0_ce0 { O 1 bit } pad_img_5_0_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_5_0'"
@@ -725,14 +784,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 940 \
+    id 868 \
     name pad_img_5_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_5_1 \
     op interface \
-    ports { pad_img_5_1_address0 { O 5 vector } pad_img_5_1_ce0 { O 1 bit } pad_img_5_1_q0 { I 32 vector } } \
+    ports { pad_img_5_1_address0 { O 5 vector } pad_img_5_1_ce0 { O 1 bit } pad_img_5_1_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_5_1'"
@@ -744,14 +803,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 941 \
+    id 869 \
     name pad_img_5_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_5_2 \
     op interface \
-    ports { pad_img_5_2_address0 { O 5 vector } pad_img_5_2_ce0 { O 1 bit } pad_img_5_2_q0 { I 32 vector } } \
+    ports { pad_img_5_2_address0 { O 5 vector } pad_img_5_2_ce0 { O 1 bit } pad_img_5_2_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_5_2'"
@@ -763,14 +822,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 942 \
+    id 870 \
     name pad_img_5_3 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_5_3 \
     op interface \
-    ports { pad_img_5_3_address0 { O 5 vector } pad_img_5_3_ce0 { O 1 bit } pad_img_5_3_q0 { I 32 vector } } \
+    ports { pad_img_5_3_address0 { O 5 vector } pad_img_5_3_ce0 { O 1 bit } pad_img_5_3_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_5_3'"
@@ -782,14 +841,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 943 \
+    id 871 \
     name pad_img_5_4 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_5_4 \
     op interface \
-    ports { pad_img_5_4_address0 { O 5 vector } pad_img_5_4_ce0 { O 1 bit } pad_img_5_4_q0 { I 32 vector } } \
+    ports { pad_img_5_4_address0 { O 5 vector } pad_img_5_4_ce0 { O 1 bit } pad_img_5_4_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_5_4'"
@@ -801,14 +860,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 944 \
+    id 872 \
     name pad_img_5_5 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_5_5 \
     op interface \
-    ports { pad_img_5_5_address0 { O 5 vector } pad_img_5_5_ce0 { O 1 bit } pad_img_5_5_q0 { I 32 vector } } \
+    ports { pad_img_5_5_address0 { O 5 vector } pad_img_5_5_ce0 { O 1 bit } pad_img_5_5_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_5_5'"
@@ -820,14 +879,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 945 \
+    id 873 \
     name pad_img_5_6 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_5_6 \
     op interface \
-    ports { pad_img_5_6_address0 { O 5 vector } pad_img_5_6_ce0 { O 1 bit } pad_img_5_6_q0 { I 32 vector } } \
+    ports { pad_img_5_6_address0 { O 5 vector } pad_img_5_6_ce0 { O 1 bit } pad_img_5_6_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_5_6'"
@@ -839,14 +898,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 946 \
+    id 874 \
     name pad_img_6_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_6_0 \
     op interface \
-    ports { pad_img_6_0_address0 { O 5 vector } pad_img_6_0_ce0 { O 1 bit } pad_img_6_0_q0 { I 32 vector } } \
+    ports { pad_img_6_0_address0 { O 5 vector } pad_img_6_0_ce0 { O 1 bit } pad_img_6_0_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_6_0'"
@@ -858,14 +917,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 947 \
+    id 875 \
     name pad_img_6_1 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_6_1 \
     op interface \
-    ports { pad_img_6_1_address0 { O 5 vector } pad_img_6_1_ce0 { O 1 bit } pad_img_6_1_q0 { I 32 vector } } \
+    ports { pad_img_6_1_address0 { O 5 vector } pad_img_6_1_ce0 { O 1 bit } pad_img_6_1_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_6_1'"
@@ -877,14 +936,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 948 \
+    id 876 \
     name pad_img_6_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_6_2 \
     op interface \
-    ports { pad_img_6_2_address0 { O 5 vector } pad_img_6_2_ce0 { O 1 bit } pad_img_6_2_q0 { I 32 vector } } \
+    ports { pad_img_6_2_address0 { O 5 vector } pad_img_6_2_ce0 { O 1 bit } pad_img_6_2_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_6_2'"
@@ -896,14 +955,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 949 \
+    id 877 \
     name pad_img_6_3 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_6_3 \
     op interface \
-    ports { pad_img_6_3_address0 { O 5 vector } pad_img_6_3_ce0 { O 1 bit } pad_img_6_3_q0 { I 32 vector } } \
+    ports { pad_img_6_3_address0 { O 5 vector } pad_img_6_3_ce0 { O 1 bit } pad_img_6_3_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_6_3'"
@@ -915,14 +974,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 950 \
+    id 878 \
     name pad_img_6_4 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_6_4 \
     op interface \
-    ports { pad_img_6_4_address0 { O 5 vector } pad_img_6_4_ce0 { O 1 bit } pad_img_6_4_q0 { I 32 vector } } \
+    ports { pad_img_6_4_address0 { O 5 vector } pad_img_6_4_ce0 { O 1 bit } pad_img_6_4_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_6_4'"
@@ -934,14 +993,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 951 \
+    id 879 \
     name pad_img_6_5 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_6_5 \
     op interface \
-    ports { pad_img_6_5_address0 { O 5 vector } pad_img_6_5_ce0 { O 1 bit } pad_img_6_5_q0 { I 32 vector } } \
+    ports { pad_img_6_5_address0 { O 5 vector } pad_img_6_5_ce0 { O 1 bit } pad_img_6_5_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_6_5'"
@@ -953,14 +1012,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 952 \
+    id 880 \
     name pad_img_6_6 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename pad_img_6_6 \
     op interface \
-    ports { pad_img_6_6_address0 { O 5 vector } pad_img_6_6_ce0 { O 1 bit } pad_img_6_6_q0 { I 32 vector } } \
+    ports { pad_img_6_6_address0 { O 5 vector } pad_img_6_6_ce0 { O 1 bit } pad_img_6_6_q0 { I 24 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'pad_img_6_6'"
@@ -971,7 +1030,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 953 \
+    id 881 \
     name conv_to_pool_streams_3 \
     type fifo \
     dir O \
@@ -979,7 +1038,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_conv_to_pool_streams_3 \
     op interface \
-    ports { conv_to_pool_streams_3_din { O 32 vector } conv_to_pool_streams_3_num_data_valid { I 11 vector } conv_to_pool_streams_3_fifo_cap { I 11 vector } conv_to_pool_streams_3_full_n { I 1 bit } conv_to_pool_streams_3_write { O 1 bit } } \
+    ports { conv_to_pool_streams_3_din { O 24 vector } conv_to_pool_streams_3_num_data_valid { I 11 vector } conv_to_pool_streams_3_fifo_cap { I 11 vector } conv_to_pool_streams_3_full_n { I 1 bit } conv_to_pool_streams_3_write { O 1 bit } } \
 } "
 }
 

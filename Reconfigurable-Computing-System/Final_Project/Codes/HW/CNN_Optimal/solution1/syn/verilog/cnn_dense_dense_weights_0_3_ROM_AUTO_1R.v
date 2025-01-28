@@ -8,7 +8,7 @@ module cnn_dense_dense_weights_0_3_ROM_AUTO_1R (
     address0, ce0, q0, 
     reset, clk);
 
-parameter DataWidth = 32;
+parameter DataWidth = 9;
 parameter AddressWidth = 9;
 parameter AddressRange = 392;
  

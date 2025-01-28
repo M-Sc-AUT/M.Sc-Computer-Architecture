@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'convolutional_layer'
 ================================================================
-* Date:           Fri Jan 24 15:09:59 2025
+* Date:           Tue Jan 28 18:58:47 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN_Optimal
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  8.280 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.287 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,20 +29,20 @@
     |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
     |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
     +---------+---------+----------+----------+-------+-------+---------+
-    |    19844|    19844|  0.198 ms|  0.198 ms|  19844|  19844|       no|
+    |    19642|    19642|  0.196 ms|  0.196 ms|  19642|  19642|       no|
     +---------+---------+----------+----------+-------+-------+---------+
 
     + Detail: 
         * Instance: 
-        +--------------------------+---------------+---------+---------+-----------+-----------+-------+-------+---------+
-        |                          |               |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline|
-        |         Instance         |     Module    |   min   |   max   |    min    |    max    |  min  |  max  |   Type  |
-        +--------------------------+---------------+---------+---------+-----------+-----------+-------+-------+---------+
-        |grp_convolution_fu_286    |convolution    |     1055|     1055|  10.550 us|  10.550 us|   1055|   1055|       no|
-        |grp_convolution_1_fu_348  |convolution_1  |    19843|    19843|   0.198 ms|   0.198 ms|  19843|  19843|       no|
-        |grp_convolution_1_fu_458  |convolution_1  |    19843|    19843|   0.198 ms|   0.198 ms|  19843|  19843|       no|
-        |grp_convolution_2_fu_568  |convolution_2  |     1055|     1055|  10.550 us|  10.550 us|   1055|   1055|       no|
-        +--------------------------+---------------+---------+---------+-----------+-----------+-------+-------+---------+
+        +--------------------------+---------------+---------+---------+----------+----------+-------+-------+---------+
+        |                          |               |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+        |         Instance         |     Module    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+        +--------------------------+---------------+---------+---------+----------+----------+-------+-------+---------+
+        |grp_convolution_1_fu_286  |convolution_1  |      846|      846|  8.460 us|  8.460 us|    846|    846|       no|
+        |grp_convolution_fu_348    |convolution    |    19641|    19641|  0.196 ms|  0.196 ms|  19641|  19641|       no|
+        |grp_convolution_fu_458    |convolution    |    19641|    19641|  0.196 ms|  0.196 ms|  19641|  19641|       no|
+        |grp_convolution_2_fu_568  |convolution_2  |      841|      841|  8.410 us|  8.410 us|    841|    841|       no|
+        +--------------------------+---------------+---------+---------+----------+----------+-------+-------+---------+
 
         * Loop: 
         N/A
@@ -84,20 +84,20 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.32>
-ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln58 = call void @convolution, i32 %pad_img0_0_0, i32 %pad_img0_0_1, i32 %pad_img0_0_2, i32 %pad_img0_0_3, i32 %pad_img0_0_4, i32 %pad_img0_0_5, i32 %pad_img0_0_6, i32 %pad_img0_1_0, i32 %pad_img0_1_1, i32 %pad_img0_1_2, i32 %pad_img0_1_3, i32 %pad_img0_1_4, i32 %pad_img0_1_5, i32 %pad_img0_1_6, i32 %pad_img0_2_0, i32 %pad_img0_2_1, i32 %pad_img0_2_2, i32 %pad_img0_2_3, i32 %pad_img0_2_4, i32 %pad_img0_2_5, i32 %pad_img0_2_6, i32 %pad_img0_3_0, i32 %pad_img0_3_1, i32 %pad_img0_3_2, i32 %pad_img0_3_3, i32 %pad_img0_3_4, i32 %pad_img0_3_5, i32 %pad_img0_3_6, i32 %conv_to_pool_streams_0" [CNN_Optimal/src/conv.cpp:58]   --->   Operation 3 'call' 'call_ln58' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 4 [2/2] (2.32ns)   --->   "%call_ln59 = call void @convolution.1, i32 %pad_img1, i2 1, i32 %conv_to_pool_streams_1, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6" [CNN_Optimal/src/conv.cpp:59]   --->   Operation 4 'call' 'call_ln59' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 5 [2/2] (2.32ns)   --->   "%call_ln60 = call void @convolution.1, i32 %pad_img2, i2 2, i32 %conv_to_pool_streams_2, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6" [CNN_Optimal/src/conv.cpp:60]   --->   Operation 5 'call' 'call_ln60' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln61 = call void @convolution.2, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams_3" [CNN_Optimal/src/conv.cpp:61]   --->   Operation 6 'call' 'call_ln61' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln58 = call void @convolution.1, i24 %pad_img0_0_0, i24 %pad_img0_0_1, i24 %pad_img0_0_2, i24 %pad_img0_0_3, i24 %pad_img0_0_4, i24 %pad_img0_0_5, i24 %pad_img0_0_6, i24 %pad_img0_1_0, i24 %pad_img0_1_1, i24 %pad_img0_1_2, i24 %pad_img0_1_3, i24 %pad_img0_1_4, i24 %pad_img0_1_5, i24 %pad_img0_1_6, i24 %pad_img0_2_0, i24 %pad_img0_2_1, i24 %pad_img0_2_2, i24 %pad_img0_2_3, i24 %pad_img0_2_4, i24 %pad_img0_2_5, i24 %pad_img0_2_6, i24 %pad_img0_3_0, i24 %pad_img0_3_1, i24 %pad_img0_3_2, i24 %pad_img0_3_3, i24 %pad_img0_3_4, i24 %pad_img0_3_5, i24 %pad_img0_3_6, i24 %conv_to_pool_streams_0" [CNN_Optimal/src/conv.cpp:58]   --->   Operation 3 'call' 'call_ln58' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 4 [2/2] (2.32ns)   --->   "%call_ln59 = call void @convolution, i24 %pad_img1, i2 1, i24 %conv_to_pool_streams_1, i6 %conv_biases, i8 %conv_weights_0_0, i7 %conv_weights_0_1, i8 %conv_weights_0_2, i8 %conv_weights_0_3, i9 %conv_weights_0_4, i8 %conv_weights_0_5, i9 %conv_weights_0_6, i8 %conv_weights_1_0, i9 %conv_weights_1_1, i8 %conv_weights_1_2, i9 %conv_weights_1_3, i8 %conv_weights_1_4, i9 %conv_weights_1_5, i8 %conv_weights_1_6, i8 %conv_weights_2_0, i9 %conv_weights_2_1, i8 %conv_weights_2_2, i8 %conv_weights_2_3, i9 %conv_weights_2_4, i8 %conv_weights_2_5, i8 %conv_weights_2_6, i8 %conv_weights_3_0, i9 %conv_weights_3_1, i9 %conv_weights_3_2, i8 %conv_weights_3_3, i9 %conv_weights_3_4, i9 %conv_weights_3_5, i8 %conv_weights_3_6, i8 %conv_weights_4_0, i8 %conv_weights_4_1, i9 %conv_weights_4_2, i9 %conv_weights_4_3, i8 %conv_weights_4_4, i9 %conv_weights_4_5, i9 %conv_weights_4_6, i9 %conv_weights_5_0, i9 %conv_weights_5_1, i9 %conv_weights_5_2, i9 %conv_weights_5_3, i9 %conv_weights_5_4, i7 %conv_weights_5_5, i9 %conv_weights_5_6, i9 %conv_weights_6_0, i9 %conv_weights_6_1, i10 %conv_weights_6_2, i9 %conv_weights_6_3, i9 %conv_weights_6_4, i9 %conv_weights_6_5, i9 %conv_weights_6_6" [CNN_Optimal/src/conv.cpp:59]   --->   Operation 4 'call' 'call_ln59' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 5 [2/2] (2.32ns)   --->   "%call_ln60 = call void @convolution, i24 %pad_img2, i2 2, i24 %conv_to_pool_streams_2, i6 %conv_biases, i8 %conv_weights_0_0, i7 %conv_weights_0_1, i8 %conv_weights_0_2, i8 %conv_weights_0_3, i9 %conv_weights_0_4, i8 %conv_weights_0_5, i9 %conv_weights_0_6, i8 %conv_weights_1_0, i9 %conv_weights_1_1, i8 %conv_weights_1_2, i9 %conv_weights_1_3, i8 %conv_weights_1_4, i9 %conv_weights_1_5, i8 %conv_weights_1_6, i8 %conv_weights_2_0, i9 %conv_weights_2_1, i8 %conv_weights_2_2, i8 %conv_weights_2_3, i9 %conv_weights_2_4, i8 %conv_weights_2_5, i8 %conv_weights_2_6, i8 %conv_weights_3_0, i9 %conv_weights_3_1, i9 %conv_weights_3_2, i8 %conv_weights_3_3, i9 %conv_weights_3_4, i9 %conv_weights_3_5, i8 %conv_weights_3_6, i8 %conv_weights_4_0, i8 %conv_weights_4_1, i9 %conv_weights_4_2, i9 %conv_weights_4_3, i8 %conv_weights_4_4, i9 %conv_weights_4_5, i9 %conv_weights_4_6, i9 %conv_weights_5_0, i9 %conv_weights_5_1, i9 %conv_weights_5_2, i9 %conv_weights_5_3, i9 %conv_weights_5_4, i7 %conv_weights_5_5, i9 %conv_weights_5_6, i9 %conv_weights_6_0, i9 %conv_weights_6_1, i10 %conv_weights_6_2, i9 %conv_weights_6_3, i9 %conv_weights_6_4, i9 %conv_weights_6_5, i9 %conv_weights_6_6" [CNN_Optimal/src/conv.cpp:60]   --->   Operation 5 'call' 'call_ln60' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln61 = call void @convolution.2, i24 %pad_img3_0_0, i24 %pad_img3_0_1, i24 %pad_img3_0_2, i24 %pad_img3_0_3, i24 %pad_img3_0_4, i24 %pad_img3_0_5, i24 %pad_img3_0_6, i24 %pad_img3_1_0, i24 %pad_img3_1_1, i24 %pad_img3_1_2, i24 %pad_img3_1_3, i24 %pad_img3_1_4, i24 %pad_img3_1_5, i24 %pad_img3_1_6, i24 %pad_img3_2_0, i24 %pad_img3_2_1, i24 %pad_img3_2_2, i24 %pad_img3_2_3, i24 %pad_img3_2_4, i24 %pad_img3_2_5, i24 %pad_img3_2_6, i24 %pad_img3_3_0, i24 %pad_img3_3_1, i24 %pad_img3_3_2, i24 %pad_img3_3_3, i24 %pad_img3_3_4, i24 %pad_img3_3_5, i24 %pad_img3_3_6, i24 %pad_img3_4_0, i24 %pad_img3_4_1, i24 %pad_img3_4_2, i24 %pad_img3_4_3, i24 %pad_img3_4_4, i24 %pad_img3_4_5, i24 %pad_img3_4_6, i24 %pad_img3_5_0, i24 %pad_img3_5_1, i24 %pad_img3_5_2, i24 %pad_img3_5_3, i24 %pad_img3_5_4, i24 %pad_img3_5_5, i24 %pad_img3_5_6, i24 %pad_img3_6_0, i24 %pad_img3_6_1, i24 %pad_img3_6_2, i24 %pad_img3_6_3, i24 %pad_img3_6_4, i24 %pad_img3_6_5, i24 %pad_img3_6_6, i24 %conv_to_pool_streams_3" [CNN_Optimal/src/conv.cpp:61]   --->   Operation 6 'call' 'call_ln61' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_3, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_2, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_1, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_0, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 11 [1/2] (0.00ns)   --->   "%call_ln58 = call void @convolution, i32 %pad_img0_0_0, i32 %pad_img0_0_1, i32 %pad_img0_0_2, i32 %pad_img0_0_3, i32 %pad_img0_0_4, i32 %pad_img0_0_5, i32 %pad_img0_0_6, i32 %pad_img0_1_0, i32 %pad_img0_1_1, i32 %pad_img0_1_2, i32 %pad_img0_1_3, i32 %pad_img0_1_4, i32 %pad_img0_1_5, i32 %pad_img0_1_6, i32 %pad_img0_2_0, i32 %pad_img0_2_1, i32 %pad_img0_2_2, i32 %pad_img0_2_3, i32 %pad_img0_2_4, i32 %pad_img0_2_5, i32 %pad_img0_2_6, i32 %pad_img0_3_0, i32 %pad_img0_3_1, i32 %pad_img0_3_2, i32 %pad_img0_3_3, i32 %pad_img0_3_4, i32 %pad_img0_3_5, i32 %pad_img0_3_6, i32 %conv_to_pool_streams_0" [CNN_Optimal/src/conv.cpp:58]   --->   Operation 11 'call' 'call_ln58' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln59 = call void @convolution.1, i32 %pad_img1, i2 1, i32 %conv_to_pool_streams_1, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6" [CNN_Optimal/src/conv.cpp:59]   --->   Operation 12 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln60 = call void @convolution.1, i32 %pad_img2, i2 2, i32 %conv_to_pool_streams_2, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6" [CNN_Optimal/src/conv.cpp:60]   --->   Operation 13 'call' 'call_ln60' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 14 [1/2] (0.00ns)   --->   "%call_ln61 = call void @convolution.2, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams_3" [CNN_Optimal/src/conv.cpp:61]   --->   Operation 14 'call' 'call_ln61' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_3, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_2, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_1, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_0, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/2] (0.00ns)   --->   "%call_ln58 = call void @convolution.1, i24 %pad_img0_0_0, i24 %pad_img0_0_1, i24 %pad_img0_0_2, i24 %pad_img0_0_3, i24 %pad_img0_0_4, i24 %pad_img0_0_5, i24 %pad_img0_0_6, i24 %pad_img0_1_0, i24 %pad_img0_1_1, i24 %pad_img0_1_2, i24 %pad_img0_1_3, i24 %pad_img0_1_4, i24 %pad_img0_1_5, i24 %pad_img0_1_6, i24 %pad_img0_2_0, i24 %pad_img0_2_1, i24 %pad_img0_2_2, i24 %pad_img0_2_3, i24 %pad_img0_2_4, i24 %pad_img0_2_5, i24 %pad_img0_2_6, i24 %pad_img0_3_0, i24 %pad_img0_3_1, i24 %pad_img0_3_2, i24 %pad_img0_3_3, i24 %pad_img0_3_4, i24 %pad_img0_3_5, i24 %pad_img0_3_6, i24 %conv_to_pool_streams_0" [CNN_Optimal/src/conv.cpp:58]   --->   Operation 11 'call' 'call_ln58' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln59 = call void @convolution, i24 %pad_img1, i2 1, i24 %conv_to_pool_streams_1, i6 %conv_biases, i8 %conv_weights_0_0, i7 %conv_weights_0_1, i8 %conv_weights_0_2, i8 %conv_weights_0_3, i9 %conv_weights_0_4, i8 %conv_weights_0_5, i9 %conv_weights_0_6, i8 %conv_weights_1_0, i9 %conv_weights_1_1, i8 %conv_weights_1_2, i9 %conv_weights_1_3, i8 %conv_weights_1_4, i9 %conv_weights_1_5, i8 %conv_weights_1_6, i8 %conv_weights_2_0, i9 %conv_weights_2_1, i8 %conv_weights_2_2, i8 %conv_weights_2_3, i9 %conv_weights_2_4, i8 %conv_weights_2_5, i8 %conv_weights_2_6, i8 %conv_weights_3_0, i9 %conv_weights_3_1, i9 %conv_weights_3_2, i8 %conv_weights_3_3, i9 %conv_weights_3_4, i9 %conv_weights_3_5, i8 %conv_weights_3_6, i8 %conv_weights_4_0, i8 %conv_weights_4_1, i9 %conv_weights_4_2, i9 %conv_weights_4_3, i8 %conv_weights_4_4, i9 %conv_weights_4_5, i9 %conv_weights_4_6, i9 %conv_weights_5_0, i9 %conv_weights_5_1, i9 %conv_weights_5_2, i9 %conv_weights_5_3, i9 %conv_weights_5_4, i7 %conv_weights_5_5, i9 %conv_weights_5_6, i9 %conv_weights_6_0, i9 %conv_weights_6_1, i10 %conv_weights_6_2, i9 %conv_weights_6_3, i9 %conv_weights_6_4, i9 %conv_weights_6_5, i9 %conv_weights_6_6" [CNN_Optimal/src/conv.cpp:59]   --->   Operation 12 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln60 = call void @convolution, i24 %pad_img2, i2 2, i24 %conv_to_pool_streams_2, i6 %conv_biases, i8 %conv_weights_0_0, i7 %conv_weights_0_1, i8 %conv_weights_0_2, i8 %conv_weights_0_3, i9 %conv_weights_0_4, i8 %conv_weights_0_5, i9 %conv_weights_0_6, i8 %conv_weights_1_0, i9 %conv_weights_1_1, i8 %conv_weights_1_2, i9 %conv_weights_1_3, i8 %conv_weights_1_4, i9 %conv_weights_1_5, i8 %conv_weights_1_6, i8 %conv_weights_2_0, i9 %conv_weights_2_1, i8 %conv_weights_2_2, i8 %conv_weights_2_3, i9 %conv_weights_2_4, i8 %conv_weights_2_5, i8 %conv_weights_2_6, i8 %conv_weights_3_0, i9 %conv_weights_3_1, i9 %conv_weights_3_2, i8 %conv_weights_3_3, i9 %conv_weights_3_4, i9 %conv_weights_3_5, i8 %conv_weights_3_6, i8 %conv_weights_4_0, i8 %conv_weights_4_1, i9 %conv_weights_4_2, i9 %conv_weights_4_3, i8 %conv_weights_4_4, i9 %conv_weights_4_5, i9 %conv_weights_4_6, i9 %conv_weights_5_0, i9 %conv_weights_5_1, i9 %conv_weights_5_2, i9 %conv_weights_5_3, i9 %conv_weights_5_4, i7 %conv_weights_5_5, i9 %conv_weights_5_6, i9 %conv_weights_6_0, i9 %conv_weights_6_1, i10 %conv_weights_6_2, i9 %conv_weights_6_3, i9 %conv_weights_6_4, i9 %conv_weights_6_5, i9 %conv_weights_6_6" [CNN_Optimal/src/conv.cpp:60]   --->   Operation 13 'call' 'call_ln60' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 14 [1/2] (0.00ns)   --->   "%call_ln61 = call void @convolution.2, i24 %pad_img3_0_0, i24 %pad_img3_0_1, i24 %pad_img3_0_2, i24 %pad_img3_0_3, i24 %pad_img3_0_4, i24 %pad_img3_0_5, i24 %pad_img3_0_6, i24 %pad_img3_1_0, i24 %pad_img3_1_1, i24 %pad_img3_1_2, i24 %pad_img3_1_3, i24 %pad_img3_1_4, i24 %pad_img3_1_5, i24 %pad_img3_1_6, i24 %pad_img3_2_0, i24 %pad_img3_2_1, i24 %pad_img3_2_2, i24 %pad_img3_2_3, i24 %pad_img3_2_4, i24 %pad_img3_2_5, i24 %pad_img3_2_6, i24 %pad_img3_3_0, i24 %pad_img3_3_1, i24 %pad_img3_3_2, i24 %pad_img3_3_3, i24 %pad_img3_3_4, i24 %pad_img3_3_5, i24 %pad_img3_3_6, i24 %pad_img3_4_0, i24 %pad_img3_4_1, i24 %pad_img3_4_2, i24 %pad_img3_4_3, i24 %pad_img3_4_4, i24 %pad_img3_4_5, i24 %pad_img3_4_6, i24 %pad_img3_5_0, i24 %pad_img3_5_1, i24 %pad_img3_5_2, i24 %pad_img3_5_3, i24 %pad_img3_5_4, i24 %pad_img3_5_5, i24 %pad_img3_5_6, i24 %pad_img3_6_0, i24 %pad_img3_6_1, i24 %pad_img3_6_2, i24 %pad_img3_6_3, i24 %pad_img3_6_4, i24 %pad_img3_6_5, i24 %pad_img3_6_6, i24 %conv_to_pool_streams_3" [CNN_Optimal/src/conv.cpp:61]   --->   Operation 14 'call' 'call_ln61' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln62 = ret" [CNN_Optimal/src/conv.cpp:62]   --->   Operation 15 'ret' 'ret_ln62' <Predicate = true> <Delay = 0.00>
 
 
@@ -1596,7 +1596,7 @@ ret_ln62          (ret          ) [ 000]
 <pin id="267" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="convolution"/></StgValue>
+<StgValue><ssdm name="convolution.1"/></StgValue>
 </bind>
 </comp>
 
@@ -1605,7 +1605,7 @@ ret_ln62          (ret          ) [ 000]
 <pin id="269" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="convolution.1"/></StgValue>
+<StgValue><ssdm name="convolution"/></StgValue>
 </bind>
 </comp>
 
@@ -1650,7 +1650,7 @@ ret_ln62          (ret          ) [ 000]
 <pin id="279" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_3"/></StgValue>
+<StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 
@@ -1668,7 +1668,7 @@ ret_ln62          (ret          ) [ 000]
 <pin id="283" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_4"/></StgValue>
+<StgValue><ssdm name="empty_3"/></StgValue>
 </bind>
 </comp>
 
@@ -1681,38 +1681,38 @@ ret_ln62          (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="286" class="1004" name="grp_convolution_fu_286">
+<comp id="286" class="1004" name="grp_convolution_1_fu_286">
 <pin_list>
 <pin id="287" dir="0" index="0" bw="0" slack="0"/>
-<pin id="288" dir="0" index="1" bw="32" slack="0"/>
-<pin id="289" dir="0" index="2" bw="32" slack="0"/>
-<pin id="290" dir="0" index="3" bw="32" slack="0"/>
-<pin id="291" dir="0" index="4" bw="32" slack="0"/>
-<pin id="292" dir="0" index="5" bw="32" slack="0"/>
-<pin id="293" dir="0" index="6" bw="32" slack="0"/>
-<pin id="294" dir="0" index="7" bw="32" slack="0"/>
-<pin id="295" dir="0" index="8" bw="32" slack="0"/>
-<pin id="296" dir="0" index="9" bw="32" slack="0"/>
-<pin id="297" dir="0" index="10" bw="32" slack="0"/>
-<pin id="298" dir="0" index="11" bw="32" slack="0"/>
-<pin id="299" dir="0" index="12" bw="32" slack="0"/>
-<pin id="300" dir="0" index="13" bw="32" slack="0"/>
-<pin id="301" dir="0" index="14" bw="32" slack="0"/>
-<pin id="302" dir="0" index="15" bw="32" slack="0"/>
-<pin id="303" dir="0" index="16" bw="32" slack="0"/>
-<pin id="304" dir="0" index="17" bw="32" slack="0"/>
-<pin id="305" dir="0" index="18" bw="32" slack="0"/>
-<pin id="306" dir="0" index="19" bw="32" slack="0"/>
-<pin id="307" dir="0" index="20" bw="32" slack="0"/>
-<pin id="308" dir="0" index="21" bw="32" slack="0"/>
-<pin id="309" dir="0" index="22" bw="32" slack="0"/>
-<pin id="310" dir="0" index="23" bw="32" slack="0"/>
-<pin id="311" dir="0" index="24" bw="32" slack="0"/>
-<pin id="312" dir="0" index="25" bw="32" slack="0"/>
-<pin id="313" dir="0" index="26" bw="32" slack="0"/>
-<pin id="314" dir="0" index="27" bw="32" slack="0"/>
-<pin id="315" dir="0" index="28" bw="32" slack="0"/>
-<pin id="316" dir="0" index="29" bw="32" slack="0"/>
+<pin id="288" dir="0" index="1" bw="24" slack="0"/>
+<pin id="289" dir="0" index="2" bw="24" slack="0"/>
+<pin id="290" dir="0" index="3" bw="24" slack="0"/>
+<pin id="291" dir="0" index="4" bw="24" slack="0"/>
+<pin id="292" dir="0" index="5" bw="24" slack="0"/>
+<pin id="293" dir="0" index="6" bw="24" slack="0"/>
+<pin id="294" dir="0" index="7" bw="24" slack="0"/>
+<pin id="295" dir="0" index="8" bw="24" slack="0"/>
+<pin id="296" dir="0" index="9" bw="24" slack="0"/>
+<pin id="297" dir="0" index="10" bw="24" slack="0"/>
+<pin id="298" dir="0" index="11" bw="24" slack="0"/>
+<pin id="299" dir="0" index="12" bw="24" slack="0"/>
+<pin id="300" dir="0" index="13" bw="24" slack="0"/>
+<pin id="301" dir="0" index="14" bw="24" slack="0"/>
+<pin id="302" dir="0" index="15" bw="24" slack="0"/>
+<pin id="303" dir="0" index="16" bw="24" slack="0"/>
+<pin id="304" dir="0" index="17" bw="24" slack="0"/>
+<pin id="305" dir="0" index="18" bw="24" slack="0"/>
+<pin id="306" dir="0" index="19" bw="24" slack="0"/>
+<pin id="307" dir="0" index="20" bw="24" slack="0"/>
+<pin id="308" dir="0" index="21" bw="24" slack="0"/>
+<pin id="309" dir="0" index="22" bw="24" slack="0"/>
+<pin id="310" dir="0" index="23" bw="24" slack="0"/>
+<pin id="311" dir="0" index="24" bw="24" slack="0"/>
+<pin id="312" dir="0" index="25" bw="24" slack="0"/>
+<pin id="313" dir="0" index="26" bw="24" slack="0"/>
+<pin id="314" dir="0" index="27" bw="24" slack="0"/>
+<pin id="315" dir="0" index="28" bw="24" slack="0"/>
+<pin id="316" dir="0" index="29" bw="24" slack="0"/>
 <pin id="317" dir="1" index="30" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1721,62 +1721,62 @@ ret_ln62          (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="348" class="1004" name="grp_convolution_1_fu_348">
+<comp id="348" class="1004" name="grp_convolution_fu_348">
 <pin_list>
 <pin id="349" dir="0" index="0" bw="0" slack="0"/>
-<pin id="350" dir="0" index="1" bw="32" slack="0"/>
+<pin id="350" dir="0" index="1" bw="24" slack="0"/>
 <pin id="351" dir="0" index="2" bw="1" slack="0"/>
-<pin id="352" dir="0" index="3" bw="32" slack="0"/>
-<pin id="353" dir="0" index="4" bw="32" slack="0"/>
-<pin id="354" dir="0" index="5" bw="32" slack="0"/>
-<pin id="355" dir="0" index="6" bw="32" slack="0"/>
-<pin id="356" dir="0" index="7" bw="32" slack="0"/>
-<pin id="357" dir="0" index="8" bw="32" slack="0"/>
-<pin id="358" dir="0" index="9" bw="32" slack="0"/>
-<pin id="359" dir="0" index="10" bw="32" slack="0"/>
-<pin id="360" dir="0" index="11" bw="32" slack="0"/>
-<pin id="361" dir="0" index="12" bw="32" slack="0"/>
-<pin id="362" dir="0" index="13" bw="32" slack="0"/>
-<pin id="363" dir="0" index="14" bw="32" slack="0"/>
-<pin id="364" dir="0" index="15" bw="32" slack="0"/>
-<pin id="365" dir="0" index="16" bw="32" slack="0"/>
-<pin id="366" dir="0" index="17" bw="32" slack="0"/>
-<pin id="367" dir="0" index="18" bw="32" slack="0"/>
-<pin id="368" dir="0" index="19" bw="32" slack="0"/>
-<pin id="369" dir="0" index="20" bw="32" slack="0"/>
-<pin id="370" dir="0" index="21" bw="32" slack="0"/>
-<pin id="371" dir="0" index="22" bw="32" slack="0"/>
-<pin id="372" dir="0" index="23" bw="32" slack="0"/>
-<pin id="373" dir="0" index="24" bw="32" slack="0"/>
-<pin id="374" dir="0" index="25" bw="32" slack="0"/>
-<pin id="375" dir="0" index="26" bw="32" slack="0"/>
-<pin id="376" dir="0" index="27" bw="32" slack="0"/>
-<pin id="377" dir="0" index="28" bw="32" slack="0"/>
-<pin id="378" dir="0" index="29" bw="32" slack="0"/>
-<pin id="379" dir="0" index="30" bw="32" slack="0"/>
-<pin id="380" dir="0" index="31" bw="32" slack="0"/>
-<pin id="381" dir="0" index="32" bw="32" slack="0"/>
-<pin id="382" dir="0" index="33" bw="32" slack="0"/>
-<pin id="383" dir="0" index="34" bw="32" slack="0"/>
-<pin id="384" dir="0" index="35" bw="32" slack="0"/>
-<pin id="385" dir="0" index="36" bw="32" slack="0"/>
-<pin id="386" dir="0" index="37" bw="32" slack="0"/>
-<pin id="387" dir="0" index="38" bw="32" slack="0"/>
-<pin id="388" dir="0" index="39" bw="32" slack="0"/>
-<pin id="389" dir="0" index="40" bw="32" slack="0"/>
-<pin id="390" dir="0" index="41" bw="32" slack="0"/>
-<pin id="391" dir="0" index="42" bw="32" slack="0"/>
-<pin id="392" dir="0" index="43" bw="32" slack="0"/>
-<pin id="393" dir="0" index="44" bw="32" slack="0"/>
-<pin id="394" dir="0" index="45" bw="32" slack="0"/>
-<pin id="395" dir="0" index="46" bw="32" slack="0"/>
-<pin id="396" dir="0" index="47" bw="32" slack="0"/>
-<pin id="397" dir="0" index="48" bw="32" slack="0"/>
-<pin id="398" dir="0" index="49" bw="32" slack="0"/>
-<pin id="399" dir="0" index="50" bw="32" slack="0"/>
-<pin id="400" dir="0" index="51" bw="32" slack="0"/>
-<pin id="401" dir="0" index="52" bw="32" slack="0"/>
-<pin id="402" dir="0" index="53" bw="32" slack="0"/>
+<pin id="352" dir="0" index="3" bw="24" slack="0"/>
+<pin id="353" dir="0" index="4" bw="6" slack="0"/>
+<pin id="354" dir="0" index="5" bw="8" slack="0"/>
+<pin id="355" dir="0" index="6" bw="7" slack="0"/>
+<pin id="356" dir="0" index="7" bw="8" slack="0"/>
+<pin id="357" dir="0" index="8" bw="8" slack="0"/>
+<pin id="358" dir="0" index="9" bw="9" slack="0"/>
+<pin id="359" dir="0" index="10" bw="8" slack="0"/>
+<pin id="360" dir="0" index="11" bw="9" slack="0"/>
+<pin id="361" dir="0" index="12" bw="8" slack="0"/>
+<pin id="362" dir="0" index="13" bw="9" slack="0"/>
+<pin id="363" dir="0" index="14" bw="8" slack="0"/>
+<pin id="364" dir="0" index="15" bw="9" slack="0"/>
+<pin id="365" dir="0" index="16" bw="8" slack="0"/>
+<pin id="366" dir="0" index="17" bw="9" slack="0"/>
+<pin id="367" dir="0" index="18" bw="8" slack="0"/>
+<pin id="368" dir="0" index="19" bw="8" slack="0"/>
+<pin id="369" dir="0" index="20" bw="9" slack="0"/>
+<pin id="370" dir="0" index="21" bw="8" slack="0"/>
+<pin id="371" dir="0" index="22" bw="8" slack="0"/>
+<pin id="372" dir="0" index="23" bw="9" slack="0"/>
+<pin id="373" dir="0" index="24" bw="8" slack="0"/>
+<pin id="374" dir="0" index="25" bw="8" slack="0"/>
+<pin id="375" dir="0" index="26" bw="8" slack="0"/>
+<pin id="376" dir="0" index="27" bw="9" slack="0"/>
+<pin id="377" dir="0" index="28" bw="9" slack="0"/>
+<pin id="378" dir="0" index="29" bw="8" slack="0"/>
+<pin id="379" dir="0" index="30" bw="9" slack="0"/>
+<pin id="380" dir="0" index="31" bw="9" slack="0"/>
+<pin id="381" dir="0" index="32" bw="8" slack="0"/>
+<pin id="382" dir="0" index="33" bw="8" slack="0"/>
+<pin id="383" dir="0" index="34" bw="8" slack="0"/>
+<pin id="384" dir="0" index="35" bw="9" slack="0"/>
+<pin id="385" dir="0" index="36" bw="9" slack="0"/>
+<pin id="386" dir="0" index="37" bw="8" slack="0"/>
+<pin id="387" dir="0" index="38" bw="9" slack="0"/>
+<pin id="388" dir="0" index="39" bw="9" slack="0"/>
+<pin id="389" dir="0" index="40" bw="9" slack="0"/>
+<pin id="390" dir="0" index="41" bw="9" slack="0"/>
+<pin id="391" dir="0" index="42" bw="9" slack="0"/>
+<pin id="392" dir="0" index="43" bw="9" slack="0"/>
+<pin id="393" dir="0" index="44" bw="9" slack="0"/>
+<pin id="394" dir="0" index="45" bw="7" slack="0"/>
+<pin id="395" dir="0" index="46" bw="9" slack="0"/>
+<pin id="396" dir="0" index="47" bw="9" slack="0"/>
+<pin id="397" dir="0" index="48" bw="9" slack="0"/>
+<pin id="398" dir="0" index="49" bw="10" slack="0"/>
+<pin id="399" dir="0" index="50" bw="9" slack="0"/>
+<pin id="400" dir="0" index="51" bw="9" slack="0"/>
+<pin id="401" dir="0" index="52" bw="9" slack="0"/>
+<pin id="402" dir="0" index="53" bw="9" slack="0"/>
 <pin id="403" dir="1" index="54" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1785,62 +1785,62 @@ ret_ln62          (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="458" class="1004" name="grp_convolution_1_fu_458">
+<comp id="458" class="1004" name="grp_convolution_fu_458">
 <pin_list>
 <pin id="459" dir="0" index="0" bw="0" slack="0"/>
-<pin id="460" dir="0" index="1" bw="32" slack="0"/>
+<pin id="460" dir="0" index="1" bw="24" slack="0"/>
 <pin id="461" dir="0" index="2" bw="2" slack="0"/>
-<pin id="462" dir="0" index="3" bw="32" slack="0"/>
-<pin id="463" dir="0" index="4" bw="32" slack="0"/>
-<pin id="464" dir="0" index="5" bw="32" slack="0"/>
-<pin id="465" dir="0" index="6" bw="32" slack="0"/>
-<pin id="466" dir="0" index="7" bw="32" slack="0"/>
-<pin id="467" dir="0" index="8" bw="32" slack="0"/>
-<pin id="468" dir="0" index="9" bw="32" slack="0"/>
-<pin id="469" dir="0" index="10" bw="32" slack="0"/>
-<pin id="470" dir="0" index="11" bw="32" slack="0"/>
-<pin id="471" dir="0" index="12" bw="32" slack="0"/>
-<pin id="472" dir="0" index="13" bw="32" slack="0"/>
-<pin id="473" dir="0" index="14" bw="32" slack="0"/>
-<pin id="474" dir="0" index="15" bw="32" slack="0"/>
-<pin id="475" dir="0" index="16" bw="32" slack="0"/>
-<pin id="476" dir="0" index="17" bw="32" slack="0"/>
-<pin id="477" dir="0" index="18" bw="32" slack="0"/>
-<pin id="478" dir="0" index="19" bw="32" slack="0"/>
-<pin id="479" dir="0" index="20" bw="32" slack="0"/>
-<pin id="480" dir="0" index="21" bw="32" slack="0"/>
-<pin id="481" dir="0" index="22" bw="32" slack="0"/>
-<pin id="482" dir="0" index="23" bw="32" slack="0"/>
-<pin id="483" dir="0" index="24" bw="32" slack="0"/>
-<pin id="484" dir="0" index="25" bw="32" slack="0"/>
-<pin id="485" dir="0" index="26" bw="32" slack="0"/>
-<pin id="486" dir="0" index="27" bw="32" slack="0"/>
-<pin id="487" dir="0" index="28" bw="32" slack="0"/>
-<pin id="488" dir="0" index="29" bw="32" slack="0"/>
-<pin id="489" dir="0" index="30" bw="32" slack="0"/>
-<pin id="490" dir="0" index="31" bw="32" slack="0"/>
-<pin id="491" dir="0" index="32" bw="32" slack="0"/>
-<pin id="492" dir="0" index="33" bw="32" slack="0"/>
-<pin id="493" dir="0" index="34" bw="32" slack="0"/>
-<pin id="494" dir="0" index="35" bw="32" slack="0"/>
-<pin id="495" dir="0" index="36" bw="32" slack="0"/>
-<pin id="496" dir="0" index="37" bw="32" slack="0"/>
-<pin id="497" dir="0" index="38" bw="32" slack="0"/>
-<pin id="498" dir="0" index="39" bw="32" slack="0"/>
-<pin id="499" dir="0" index="40" bw="32" slack="0"/>
-<pin id="500" dir="0" index="41" bw="32" slack="0"/>
-<pin id="501" dir="0" index="42" bw="32" slack="0"/>
-<pin id="502" dir="0" index="43" bw="32" slack="0"/>
-<pin id="503" dir="0" index="44" bw="32" slack="0"/>
-<pin id="504" dir="0" index="45" bw="32" slack="0"/>
-<pin id="505" dir="0" index="46" bw="32" slack="0"/>
-<pin id="506" dir="0" index="47" bw="32" slack="0"/>
-<pin id="507" dir="0" index="48" bw="32" slack="0"/>
-<pin id="508" dir="0" index="49" bw="32" slack="0"/>
-<pin id="509" dir="0" index="50" bw="32" slack="0"/>
-<pin id="510" dir="0" index="51" bw="32" slack="0"/>
-<pin id="511" dir="0" index="52" bw="32" slack="0"/>
-<pin id="512" dir="0" index="53" bw="32" slack="0"/>
+<pin id="462" dir="0" index="3" bw="24" slack="0"/>
+<pin id="463" dir="0" index="4" bw="6" slack="0"/>
+<pin id="464" dir="0" index="5" bw="8" slack="0"/>
+<pin id="465" dir="0" index="6" bw="7" slack="0"/>
+<pin id="466" dir="0" index="7" bw="8" slack="0"/>
+<pin id="467" dir="0" index="8" bw="8" slack="0"/>
+<pin id="468" dir="0" index="9" bw="9" slack="0"/>
+<pin id="469" dir="0" index="10" bw="8" slack="0"/>
+<pin id="470" dir="0" index="11" bw="9" slack="0"/>
+<pin id="471" dir="0" index="12" bw="8" slack="0"/>
+<pin id="472" dir="0" index="13" bw="9" slack="0"/>
+<pin id="473" dir="0" index="14" bw="8" slack="0"/>
+<pin id="474" dir="0" index="15" bw="9" slack="0"/>
+<pin id="475" dir="0" index="16" bw="8" slack="0"/>
+<pin id="476" dir="0" index="17" bw="9" slack="0"/>
+<pin id="477" dir="0" index="18" bw="8" slack="0"/>
+<pin id="478" dir="0" index="19" bw="8" slack="0"/>
+<pin id="479" dir="0" index="20" bw="9" slack="0"/>
+<pin id="480" dir="0" index="21" bw="8" slack="0"/>
+<pin id="481" dir="0" index="22" bw="8" slack="0"/>
+<pin id="482" dir="0" index="23" bw="9" slack="0"/>
+<pin id="483" dir="0" index="24" bw="8" slack="0"/>
+<pin id="484" dir="0" index="25" bw="8" slack="0"/>
+<pin id="485" dir="0" index="26" bw="8" slack="0"/>
+<pin id="486" dir="0" index="27" bw="9" slack="0"/>
+<pin id="487" dir="0" index="28" bw="9" slack="0"/>
+<pin id="488" dir="0" index="29" bw="8" slack="0"/>
+<pin id="489" dir="0" index="30" bw="9" slack="0"/>
+<pin id="490" dir="0" index="31" bw="9" slack="0"/>
+<pin id="491" dir="0" index="32" bw="8" slack="0"/>
+<pin id="492" dir="0" index="33" bw="8" slack="0"/>
+<pin id="493" dir="0" index="34" bw="8" slack="0"/>
+<pin id="494" dir="0" index="35" bw="9" slack="0"/>
+<pin id="495" dir="0" index="36" bw="9" slack="0"/>
+<pin id="496" dir="0" index="37" bw="8" slack="0"/>
+<pin id="497" dir="0" index="38" bw="9" slack="0"/>
+<pin id="498" dir="0" index="39" bw="9" slack="0"/>
+<pin id="499" dir="0" index="40" bw="9" slack="0"/>
+<pin id="500" dir="0" index="41" bw="9" slack="0"/>
+<pin id="501" dir="0" index="42" bw="9" slack="0"/>
+<pin id="502" dir="0" index="43" bw="9" slack="0"/>
+<pin id="503" dir="0" index="44" bw="9" slack="0"/>
+<pin id="504" dir="0" index="45" bw="7" slack="0"/>
+<pin id="505" dir="0" index="46" bw="9" slack="0"/>
+<pin id="506" dir="0" index="47" bw="9" slack="0"/>
+<pin id="507" dir="0" index="48" bw="9" slack="0"/>
+<pin id="508" dir="0" index="49" bw="10" slack="0"/>
+<pin id="509" dir="0" index="50" bw="9" slack="0"/>
+<pin id="510" dir="0" index="51" bw="9" slack="0"/>
+<pin id="511" dir="0" index="52" bw="9" slack="0"/>
+<pin id="512" dir="0" index="53" bw="9" slack="0"/>
 <pin id="513" dir="1" index="54" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1852,56 +1852,56 @@ ret_ln62          (ret          ) [ 000]
 <comp id="568" class="1004" name="grp_convolution_2_fu_568">
 <pin_list>
 <pin id="569" dir="0" index="0" bw="0" slack="0"/>
-<pin id="570" dir="0" index="1" bw="32" slack="0"/>
-<pin id="571" dir="0" index="2" bw="32" slack="0"/>
-<pin id="572" dir="0" index="3" bw="32" slack="0"/>
-<pin id="573" dir="0" index="4" bw="32" slack="0"/>
-<pin id="574" dir="0" index="5" bw="32" slack="0"/>
-<pin id="575" dir="0" index="6" bw="32" slack="0"/>
-<pin id="576" dir="0" index="7" bw="32" slack="0"/>
-<pin id="577" dir="0" index="8" bw="32" slack="0"/>
-<pin id="578" dir="0" index="9" bw="32" slack="0"/>
-<pin id="579" dir="0" index="10" bw="32" slack="0"/>
-<pin id="580" dir="0" index="11" bw="32" slack="0"/>
-<pin id="581" dir="0" index="12" bw="32" slack="0"/>
-<pin id="582" dir="0" index="13" bw="32" slack="0"/>
-<pin id="583" dir="0" index="14" bw="32" slack="0"/>
-<pin id="584" dir="0" index="15" bw="32" slack="0"/>
-<pin id="585" dir="0" index="16" bw="32" slack="0"/>
-<pin id="586" dir="0" index="17" bw="32" slack="0"/>
-<pin id="587" dir="0" index="18" bw="32" slack="0"/>
-<pin id="588" dir="0" index="19" bw="32" slack="0"/>
-<pin id="589" dir="0" index="20" bw="32" slack="0"/>
-<pin id="590" dir="0" index="21" bw="32" slack="0"/>
-<pin id="591" dir="0" index="22" bw="32" slack="0"/>
-<pin id="592" dir="0" index="23" bw="32" slack="0"/>
-<pin id="593" dir="0" index="24" bw="32" slack="0"/>
-<pin id="594" dir="0" index="25" bw="32" slack="0"/>
-<pin id="595" dir="0" index="26" bw="32" slack="0"/>
-<pin id="596" dir="0" index="27" bw="32" slack="0"/>
-<pin id="597" dir="0" index="28" bw="32" slack="0"/>
-<pin id="598" dir="0" index="29" bw="32" slack="0"/>
-<pin id="599" dir="0" index="30" bw="32" slack="0"/>
-<pin id="600" dir="0" index="31" bw="32" slack="0"/>
-<pin id="601" dir="0" index="32" bw="32" slack="0"/>
-<pin id="602" dir="0" index="33" bw="32" slack="0"/>
-<pin id="603" dir="0" index="34" bw="32" slack="0"/>
-<pin id="604" dir="0" index="35" bw="32" slack="0"/>
-<pin id="605" dir="0" index="36" bw="32" slack="0"/>
-<pin id="606" dir="0" index="37" bw="32" slack="0"/>
-<pin id="607" dir="0" index="38" bw="32" slack="0"/>
-<pin id="608" dir="0" index="39" bw="32" slack="0"/>
-<pin id="609" dir="0" index="40" bw="32" slack="0"/>
-<pin id="610" dir="0" index="41" bw="32" slack="0"/>
-<pin id="611" dir="0" index="42" bw="32" slack="0"/>
-<pin id="612" dir="0" index="43" bw="32" slack="0"/>
-<pin id="613" dir="0" index="44" bw="32" slack="0"/>
-<pin id="614" dir="0" index="45" bw="32" slack="0"/>
-<pin id="615" dir="0" index="46" bw="32" slack="0"/>
-<pin id="616" dir="0" index="47" bw="32" slack="0"/>
-<pin id="617" dir="0" index="48" bw="32" slack="0"/>
-<pin id="618" dir="0" index="49" bw="32" slack="0"/>
-<pin id="619" dir="0" index="50" bw="32" slack="0"/>
+<pin id="570" dir="0" index="1" bw="24" slack="0"/>
+<pin id="571" dir="0" index="2" bw="24" slack="0"/>
+<pin id="572" dir="0" index="3" bw="24" slack="0"/>
+<pin id="573" dir="0" index="4" bw="24" slack="0"/>
+<pin id="574" dir="0" index="5" bw="24" slack="0"/>
+<pin id="575" dir="0" index="6" bw="24" slack="0"/>
+<pin id="576" dir="0" index="7" bw="24" slack="0"/>
+<pin id="577" dir="0" index="8" bw="24" slack="0"/>
+<pin id="578" dir="0" index="9" bw="24" slack="0"/>
+<pin id="579" dir="0" index="10" bw="24" slack="0"/>
+<pin id="580" dir="0" index="11" bw="24" slack="0"/>
+<pin id="581" dir="0" index="12" bw="24" slack="0"/>
+<pin id="582" dir="0" index="13" bw="24" slack="0"/>
+<pin id="583" dir="0" index="14" bw="24" slack="0"/>
+<pin id="584" dir="0" index="15" bw="24" slack="0"/>
+<pin id="585" dir="0" index="16" bw="24" slack="0"/>
+<pin id="586" dir="0" index="17" bw="24" slack="0"/>
+<pin id="587" dir="0" index="18" bw="24" slack="0"/>
+<pin id="588" dir="0" index="19" bw="24" slack="0"/>
+<pin id="589" dir="0" index="20" bw="24" slack="0"/>
+<pin id="590" dir="0" index="21" bw="24" slack="0"/>
+<pin id="591" dir="0" index="22" bw="24" slack="0"/>
+<pin id="592" dir="0" index="23" bw="24" slack="0"/>
+<pin id="593" dir="0" index="24" bw="24" slack="0"/>
+<pin id="594" dir="0" index="25" bw="24" slack="0"/>
+<pin id="595" dir="0" index="26" bw="24" slack="0"/>
+<pin id="596" dir="0" index="27" bw="24" slack="0"/>
+<pin id="597" dir="0" index="28" bw="24" slack="0"/>
+<pin id="598" dir="0" index="29" bw="24" slack="0"/>
+<pin id="599" dir="0" index="30" bw="24" slack="0"/>
+<pin id="600" dir="0" index="31" bw="24" slack="0"/>
+<pin id="601" dir="0" index="32" bw="24" slack="0"/>
+<pin id="602" dir="0" index="33" bw="24" slack="0"/>
+<pin id="603" dir="0" index="34" bw="24" slack="0"/>
+<pin id="604" dir="0" index="35" bw="24" slack="0"/>
+<pin id="605" dir="0" index="36" bw="24" slack="0"/>
+<pin id="606" dir="0" index="37" bw="24" slack="0"/>
+<pin id="607" dir="0" index="38" bw="24" slack="0"/>
+<pin id="608" dir="0" index="39" bw="24" slack="0"/>
+<pin id="609" dir="0" index="40" bw="24" slack="0"/>
+<pin id="610" dir="0" index="41" bw="24" slack="0"/>
+<pin id="611" dir="0" index="42" bw="24" slack="0"/>
+<pin id="612" dir="0" index="43" bw="24" slack="0"/>
+<pin id="613" dir="0" index="44" bw="24" slack="0"/>
+<pin id="614" dir="0" index="45" bw="24" slack="0"/>
+<pin id="615" dir="0" index="46" bw="24" slack="0"/>
+<pin id="616" dir="0" index="47" bw="24" slack="0"/>
+<pin id="617" dir="0" index="48" bw="24" slack="0"/>
+<pin id="618" dir="0" index="49" bw="24" slack="0"/>
+<pin id="619" dir="0" index="50" bw="24" slack="0"/>
 <pin id="620" dir="1" index="51" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -2445,12 +2445,12 @@ ret_ln62          (ret          ) [ 000]
 |----------|--------------------------|---------|---------|---------|---------|
 | Operation|      Functional Unit     |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|--------------------------|---------|---------|---------|---------|
-|          |  grp_convolution_fu_286  |   250   | 485.926 |  31314  |  58325  |
-|   call   | grp_convolution_1_fu_348 |    10   | 190.129 |   7118  |   4501  |
-|          | grp_convolution_1_fu_458 |    10   | 190.129 |   7118  |   4501  |
-|          | grp_convolution_2_fu_568 |   253   | 207.324 |  34325  |  64356  |
+|          | grp_convolution_1_fu_286 |    39   |  590.1  |  13355  |  25442  |
+|   call   |  grp_convolution_fu_348  |    49   | 261.401 |   7389  |   4090  |
+|          |  grp_convolution_fu_458  |    49   | 261.401 |   7389  |   4090  |
+|          | grp_convolution_2_fu_568 |    34   | 281.446 |  15944  |  31927  |
 |----------|--------------------------|---------|---------|---------|---------|
-|   Total  |                          |   523   | 1073.51 |  79875  |  131683 |
+|   Total  |                          |   171   | 1394.35 |  44077  |  65549  |
 |----------|--------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -2472,10 +2472,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   523  |  1073  |  79875 | 131683 |
+|  Function |   171  |  1394  |  44077 |  65549 |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   523  |  1073  |  79875 | 131683 |
+|   Total   |   171  |  1394  |  44077 |  65549 |
 +-----------+--------+--------+--------+--------+

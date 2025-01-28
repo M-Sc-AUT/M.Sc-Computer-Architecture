@@ -18,27 +18,27 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.075</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.658</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>29</Best-caseLatency>
-<Average-caseLatency>29</Average-caseLatency>
-<Worst-caseLatency>29</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.290 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.290 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.290 us</Worst-caseRealTimeLatency>
-<Interval-min>29</Interval-min>
-<Interval-max>29</Interval-max>
+<Best-caseLatency>47</Best-caseLatency>
+<Average-caseLatency>47</Average-caseLatency>
+<Worst-caseLatency>47</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.470 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.470 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.470 us</Worst-caseRealTimeLatency>
+<Interval-min>47</Interval-min>
+<Interval-max>47</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <dense_soft_max_for_digits>
 <Slack>7.30</Slack>
 <TripCount>10</TripCount>
-<Latency>27</Latency>
-<AbsoluteTimeLatency>270</AbsoluteTimeLatency>
+<Latency>45</Latency>
+<AbsoluteTimeLatency>450</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>19</PipelineDepth>
+<PipelineDepth>37</PipelineDepth>
 <InstanceList>
 </InstanceList>
 </dense_soft_max_for_digits>
@@ -60,8 +60,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>173</FF>
-<LUT>96</LUT>
+<FF>2460</FF>
+<LUT>1834</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -183,7 +183,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -216,18 +216,18 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>exp_sum_reload</name>
-<Object>exp_sum_reload</Object>
+<name>conv_i</name>
+<Object>conv_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

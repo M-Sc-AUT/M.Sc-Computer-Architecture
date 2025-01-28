@@ -34,10 +34,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1886330980</coreId>
+              <coreId>1919251317</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>24</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>3</if_type>
@@ -70,10 +70,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1886330980</coreId>
+              <coreId>1752375397</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>24</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>3</if_type>
@@ -106,10 +106,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1886330980</coreId>
+              <coreId>1043276322</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>24</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>3</if_type>
@@ -142,10 +142,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1886330980</coreId>
+              <coreId>875573792</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>24</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>3</if_type>
@@ -178,10 +178,10 @@
               <coreName>RAM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1886330980</coreId>
+              <coreId>1145981250</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>24</bitwidth>
           </Value>
           <direction>2</direction>
           <if_type>1</if_type>
@@ -200,7 +200,7 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>exp_sum_loc</name>
+              <name>p_loc</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -218,10 +218,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1886330980</coreId>
+              <coreId>828330828</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>24</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -260,7 +260,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1769238607</coreId>
+              <coreId>1528970616</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -302,7 +302,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>543236197</coreId>
+              <coreId>1109419109</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -334,7 +334,7 @@
             <Obj>
               <type>0</type>
               <id>15</id>
-              <name>exp_sum_loc_load</name>
+              <name>p_loc_load</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -352,10 +352,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1970238309</coreId>
+              <coreId>574452846</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>24</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -395,7 +395,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1920151404</coreId>
+              <coreId>1717532769</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -456,7 +456,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1881154127</coreId>
+              <coreId>1313415741</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -501,7 +501,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1699750461</coreId>
+              <coreId>1852142702</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -532,7 +532,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1702043749</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -563,7 +563,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1919252069</coreId>
+              <coreId>2121556231</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -597,7 +597,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>0</coreId>
+            <coreId>4294967275</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -764,8 +764,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>120</mMinLatency>
-        <mMaxLatency>120</mMaxLatency>
+        <mMinLatency>83</mMinLatency>
+        <mMaxLatency>83</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -933,15 +933,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>9</second>
+              <second>7</second>
             </item>
             <item>
               <first>FF</first>
-              <second>1257</second>
+              <second>1578</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1737</second>
+              <second>3008</second>
             </item>
           </second>
         </item>
@@ -952,11 +952,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>173</second>
+              <second>2460</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>96</second>
+              <second>1834</second>
             </item>
           </second>
         </item>
@@ -1217,11 +1217,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>32</second>
+              <second>24</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>96</second>
+              <second>72</second>
             </item>
             <item>
               <first>LUT</first>
@@ -1487,7 +1487,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>exp_sum_loc_fu_32</first>
+        <first>p_loc_fu_32</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1521,7 +1521,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>exp_sum_loc_load_load_fu_60</first>
+        <first>p_loc_load_load_fu_60</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1564,7 +1564,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>exp_sum_loc_reg_64</first>
+        <first>p_loc_reg_64</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -8,7 +8,7 @@ module cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_dense_bia
     address0, ce0, q0, 
     reset, clk);
 
-parameter DataWidth = 32;
+parameter DataWidth = 7;
 parameter AddressWidth = 4;
 parameter AddressRange = 10;
  

@@ -18,27 +18,27 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>8.424</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.141</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>88</Best-caseLatency>
-<Average-caseLatency>88</Average-caseLatency>
-<Worst-caseLatency>88</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.880 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.880 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.880 us</Worst-caseRealTimeLatency>
-<Interval-min>88</Interval-min>
-<Interval-max>88</Interval-max>
+<Best-caseLatency>33</Best-caseLatency>
+<Average-caseLatency>33</Average-caseLatency>
+<Worst-caseLatency>33</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.330 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.330 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.330 us</Worst-caseRealTimeLatency>
+<Interval-min>33</Interval-min>
+<Interval-max>33</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <dense_soft_max_for_dense_size>
 <Slack>7.30</Slack>
 <TripCount>10</TripCount>
-<Latency>86</Latency>
-<AbsoluteTimeLatency>860</AbsoluteTimeLatency>
-<PipelineII>5</PipelineII>
-<PipelineDepth>42</PipelineDepth>
+<Latency>31</Latency>
+<AbsoluteTimeLatency>310</AbsoluteTimeLatency>
+<PipelineII>1</PipelineII>
+<PipelineDepth>23</PipelineDepth>
 <InstanceList>
 </InstanceList>
 </dense_soft_max_for_dense_size>
@@ -46,13 +46,12 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN_Optimal/src/dense.cpp:11</SourceLocation>
+<SourceLocation>CNN_Optimal/src/dense.cpp:13</SourceLocation>
 <SummaryOfLoopViolations>
 <dense_soft_max_for_dense_size>
 <Name>dense_soft_max_for_dense_size</Name>
-<IssueType>II Violation</IssueType>
-<ViolationType>Memory Dependency</ViolationType>
-<IterationDistance>1</IterationDistance>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
 <SourceLocation>CNN_Optimal/src/dense.cpp:13</SourceLocation>
 </dense_soft_max_for_dense_size>
 </SummaryOfLoopViolations>
@@ -62,9 +61,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<DSP>9</DSP>
-<FF>1257</FF>
-<LUT>1737</LUT>
+<DSP>7</DSP>
+<FF>1578</FF>
+<LUT>3008</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -151,7 +150,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -206,7 +205,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -261,7 +260,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -316,7 +315,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -404,23 +403,23 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>exp_sum_out</name>
-<Object>exp_sum_out</Object>
+<name>p_out</name>
+<Object>p_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>exp_sum_out_ap_vld</name>
-<Object>exp_sum_out</Object>
+<name>p_out_ap_vld</name>
+<Object>p_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>

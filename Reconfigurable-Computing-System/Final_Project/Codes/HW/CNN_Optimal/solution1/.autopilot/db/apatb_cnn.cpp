@@ -1042,7 +1042,7 @@ void apatb_cnn_hw(void* __xlx_apatb_param_img_in_0, void* __xlx_apatb_param_img_
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port0 {
 #endif
-    .width = 32,
+    .width = 24,
     .asize = 4,
     .hbm = false,
     .name = { "img_in_0" },
@@ -1066,7 +1066,7 @@ void apatb_cnn_hw(void* __xlx_apatb_param_img_in_0, void* __xlx_apatb_param_img_
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port1 {
 #endif
-    .width = 32,
+    .width = 24,
     .asize = 4,
     .hbm = false,
     .name = { "img_in_1" },
@@ -1090,7 +1090,7 @@ void apatb_cnn_hw(void* __xlx_apatb_param_img_in_0, void* __xlx_apatb_param_img_
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port2 {
 #endif
-    .width = 32,
+    .width = 24,
     .asize = 4,
     .hbm = false,
     .name = { "img_in_2" },
@@ -1114,7 +1114,7 @@ void apatb_cnn_hw(void* __xlx_apatb_param_img_in_0, void* __xlx_apatb_param_img_
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
 #endif
-    .width = 32,
+    .width = 24,
     .asize = 4,
     .hbm = false,
     .name = { "img_in_3" },
@@ -1138,7 +1138,7 @@ void apatb_cnn_hw(void* __xlx_apatb_param_img_in_0, void* __xlx_apatb_param_img_
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port4 {
 #endif
-    .width = 32,
+    .width = 24,
     .asize = 4,
     .hbm = false,
     .name = { "prediction" },

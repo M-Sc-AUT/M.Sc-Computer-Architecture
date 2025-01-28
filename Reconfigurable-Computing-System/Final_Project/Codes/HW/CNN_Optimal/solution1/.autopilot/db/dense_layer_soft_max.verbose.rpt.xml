@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_layer_soft_max'" level="0">
-<item name = "Date">Fri Jan 24 15:13:32 2025
+<item name = "Date">Tue Jan 28 19:06:26 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.424 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.141 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">120, 120, 1.200 us, 1.200 us, 120, 120, no</column>
+<column name="">83, 83, 0.830 us, 0.830 us, 83, 83, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36">dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size, 88, 88, 0.880 us, 0.880 us, 88, 88, no</column>
-<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53">dense_layer_soft_max_Pipeline_dense_soft_max_for_digits, 29, 29, 0.290 us, 0.290 us, 29, 29, no</column>
+<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36">dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
+<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53">dense_layer_soft_max_Pipeline_dense_soft_max_for_digits, 47, 47, 0.470 us, 0.470 us, 47, 47, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -51,20 +51,20 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 9, 1430, 1833, -</column>
+<column name="Instance">0, 7, 4038, 4842, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 135, -</column>
 <column name="Register">-, -, 7, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 11, 4, 11, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 8, 11, 28, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36">dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size, 0, 9, 1257, 1737, 0</column>
-<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53">dense_layer_soft_max_Pipeline_dense_soft_max_for_digits, 0, 0, 173, 96, 0</column>
+<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36">dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size, 0, 7, 1578, 3008, 0</column>
+<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53">dense_layer_soft_max_Pipeline_dense_soft_max_for_digits, 0, 0, 2460, 1834, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -95,7 +95,7 @@
 <column name="prediction_address0">14, 3, 4, 12</column>
 <column name="prediction_ce0">14, 3, 1, 3</column>
 <column name="prediction_ce1">9, 2, 1, 2</column>
-<column name="prediction_d0">14, 3, 32, 96</column>
+<column name="prediction_d0">14, 3, 24, 72</column>
 <column name="prediction_we0">14, 3, 1, 3</column>
 </table>
 </item>
@@ -121,22 +121,22 @@
 <column name="ap_continue">in, 1, ap_ctrl_hs, dense_layer_soft_max, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, dense_layer_soft_max, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, dense_layer_soft_max, return value</column>
-<column name="dense_to_softmax_streams_0_dout">in, 32, ap_fifo, dense_to_softmax_streams_0, pointer</column>
+<column name="dense_to_softmax_streams_0_dout">in, 24, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 <column name="dense_to_softmax_streams_0_num_data_valid">in, 5, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 <column name="dense_to_softmax_streams_0_fifo_cap">in, 5, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 <column name="dense_to_softmax_streams_0_empty_n">in, 1, ap_fifo, dense_to_softmax_streams_0, pointer</column>
 <column name="dense_to_softmax_streams_0_read">out, 1, ap_fifo, dense_to_softmax_streams_0, pointer</column>
-<column name="dense_to_softmax_streams_1_dout">in, 32, ap_fifo, dense_to_softmax_streams_1, pointer</column>
+<column name="dense_to_softmax_streams_1_dout">in, 24, ap_fifo, dense_to_softmax_streams_1, pointer</column>
 <column name="dense_to_softmax_streams_1_num_data_valid">in, 5, ap_fifo, dense_to_softmax_streams_1, pointer</column>
 <column name="dense_to_softmax_streams_1_fifo_cap">in, 5, ap_fifo, dense_to_softmax_streams_1, pointer</column>
 <column name="dense_to_softmax_streams_1_empty_n">in, 1, ap_fifo, dense_to_softmax_streams_1, pointer</column>
 <column name="dense_to_softmax_streams_1_read">out, 1, ap_fifo, dense_to_softmax_streams_1, pointer</column>
-<column name="dense_to_softmax_streams_2_dout">in, 32, ap_fifo, dense_to_softmax_streams_2, pointer</column>
+<column name="dense_to_softmax_streams_2_dout">in, 24, ap_fifo, dense_to_softmax_streams_2, pointer</column>
 <column name="dense_to_softmax_streams_2_num_data_valid">in, 5, ap_fifo, dense_to_softmax_streams_2, pointer</column>
 <column name="dense_to_softmax_streams_2_fifo_cap">in, 5, ap_fifo, dense_to_softmax_streams_2, pointer</column>
 <column name="dense_to_softmax_streams_2_empty_n">in, 1, ap_fifo, dense_to_softmax_streams_2, pointer</column>
 <column name="dense_to_softmax_streams_2_read">out, 1, ap_fifo, dense_to_softmax_streams_2, pointer</column>
-<column name="dense_to_softmax_streams_3_dout">in, 32, ap_fifo, dense_to_softmax_streams_3, pointer</column>
+<column name="dense_to_softmax_streams_3_dout">in, 24, ap_fifo, dense_to_softmax_streams_3, pointer</column>
 <column name="dense_to_softmax_streams_3_num_data_valid">in, 5, ap_fifo, dense_to_softmax_streams_3, pointer</column>
 <column name="dense_to_softmax_streams_3_fifo_cap">in, 5, ap_fifo, dense_to_softmax_streams_3, pointer</column>
 <column name="dense_to_softmax_streams_3_empty_n">in, 1, ap_fifo, dense_to_softmax_streams_3, pointer</column>
@@ -144,10 +144,10 @@
 <column name="prediction_address0">out, 4, ap_memory, prediction, array</column>
 <column name="prediction_ce0">out, 1, ap_memory, prediction, array</column>
 <column name="prediction_we0">out, 1, ap_memory, prediction, array</column>
-<column name="prediction_d0">out, 32, ap_memory, prediction, array</column>
+<column name="prediction_d0">out, 24, ap_memory, prediction, array</column>
 <column name="prediction_address1">out, 4, ap_memory, prediction, array</column>
 <column name="prediction_ce1">out, 1, ap_memory, prediction, array</column>
-<column name="prediction_q1">in, 32, ap_memory, prediction, array</column>
+<column name="prediction_q1">in, 24, ap_memory, prediction, array</column>
 </table>
 </item>
 </section>

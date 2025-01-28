@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'max_pooling_layer'" level="0">
-<item name = "Date">Fri Jan 24 15:10:03 2025
+<item name = "Date">Tue Jan 28 18:58:48 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.107 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.636 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3182, 3182, 31.820 us, 31.820 us, 3182, 3182, no</column>
+<column name="">788, 788, 7.880 us, 7.880 us, 788, 788, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols_fu_36">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6_fu_44">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols6, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7_fu_52">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols7, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
-<column name="grp_max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8_fu_60">max_pooling_layer_Pipeline_pool_for_rows_pool_for_cols8, 793, 793, 7.930 us, 7.930 us, 793, 793, no</column>
+<column name="grp_max_pooling_fu_28">max_pooling, 787, 787, 7.870 us, 7.870 us, 787, 787, no</column>
+<column name="grp_max_pooling_fu_36">max_pooling, 787, 787, 7.870 us, 7.870 us, 787, 787, no</column>
+<column name="grp_max_pooling_fu_44">max_pooling, 787, 787, 7.870 us, 7.870 us, 787, 787, no</column>
+<column name="grp_max_pooling_fu_52">max_pooling, 787, 787, 7.870 us, 7.870 us, 787, 787, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

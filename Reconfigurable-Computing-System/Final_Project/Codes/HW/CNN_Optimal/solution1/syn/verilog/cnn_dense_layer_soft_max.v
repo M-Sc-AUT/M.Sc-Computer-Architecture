@@ -55,22 +55,22 @@ output   ap_done;
 input   ap_continue;
 output   ap_idle;
 output   ap_ready;
-input  [31:0] dense_to_softmax_streams_0_dout;
+input  [23:0] dense_to_softmax_streams_0_dout;
 input  [4:0] dense_to_softmax_streams_0_num_data_valid;
 input  [4:0] dense_to_softmax_streams_0_fifo_cap;
 input   dense_to_softmax_streams_0_empty_n;
 output   dense_to_softmax_streams_0_read;
-input  [31:0] dense_to_softmax_streams_1_dout;
+input  [23:0] dense_to_softmax_streams_1_dout;
 input  [4:0] dense_to_softmax_streams_1_num_data_valid;
 input  [4:0] dense_to_softmax_streams_1_fifo_cap;
 input   dense_to_softmax_streams_1_empty_n;
 output   dense_to_softmax_streams_1_read;
-input  [31:0] dense_to_softmax_streams_2_dout;
+input  [23:0] dense_to_softmax_streams_2_dout;
 input  [4:0] dense_to_softmax_streams_2_num_data_valid;
 input  [4:0] dense_to_softmax_streams_2_fifo_cap;
 input   dense_to_softmax_streams_2_empty_n;
 output   dense_to_softmax_streams_2_read;
-input  [31:0] dense_to_softmax_streams_3_dout;
+input  [23:0] dense_to_softmax_streams_3_dout;
 input  [4:0] dense_to_softmax_streams_3_num_data_valid;
 input  [4:0] dense_to_softmax_streams_3_fifo_cap;
 input   dense_to_softmax_streams_3_empty_n;
@@ -78,10 +78,10 @@ output   dense_to_softmax_streams_3_read;
 output  [3:0] prediction_address0;
 output   prediction_ce0;
 output   prediction_we0;
-output  [31:0] prediction_d0;
+output  [23:0] prediction_d0;
 output  [3:0] prediction_address1;
 output   prediction_ce1;
-input  [31:0] prediction_q1;
+input  [23:0] prediction_q1;
 
 reg ap_done;
 reg ap_idle;
@@ -93,7 +93,7 @@ reg dense_to_softmax_streams_3_read;
 reg[3:0] prediction_address0;
 reg prediction_ce0;
 reg prediction_we0;
-reg[31:0] prediction_d0;
+reg[23:0] prediction_d0;
 reg prediction_ce1;
 
 reg    ap_done_reg;
@@ -110,9 +110,9 @@ wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_de
 wire   [3:0] grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_address0;
 wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_ce0;
 wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_we0;
-wire   [31:0] grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_d0;
-wire   [31:0] grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_exp_sum_out;
-wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_exp_sum_out_ap_vld;
+wire   [23:0] grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_d0;
+wire   [23:0] grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_p_out;
+wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_p_out_ap_vld;
 wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_ap_start;
 wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_ap_done;
 wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_ap_idle;
@@ -120,7 +120,7 @@ wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_ap_rea
 wire   [3:0] grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_address0;
 wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_ce0;
 wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_we0;
-wire   [31:0] grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_d0;
+wire   [23:0] grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_d0;
 wire   [3:0] grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_address1;
 wire    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_ce1;
 reg    grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_ap_start_reg;
@@ -176,8 +176,8 @@ cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size grp_dense_layer_
     .prediction_ce0(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_ce0),
     .prediction_we0(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_we0),
     .prediction_d0(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_d0),
-    .exp_sum_out(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_exp_sum_out),
-    .exp_sum_out_ap_vld(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_exp_sum_out_ap_vld)
+    .p_out(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_p_out),
+    .p_out_ap_vld(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_p_out_ap_vld)
 );
 
 cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53(
@@ -194,7 +194,7 @@ cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits grp_dense_layer_soft
     .prediction_address1(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_address1),
     .prediction_ce1(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_ce1),
     .prediction_q1(prediction_q1),
-    .exp_sum_reload(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_exp_sum_out)
+    .conv_i(grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_p_out)
 );
 
 always @ (posedge ap_clk) begin

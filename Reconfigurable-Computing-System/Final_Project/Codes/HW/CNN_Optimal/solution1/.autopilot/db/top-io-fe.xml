@@ -1,22 +1,22 @@
 <root versionMajor = "1" versionMinor = "5">
   <kernel src_name="cnn" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
     <args>
-      <arg id="0" access_type="r" src_name="img_in" src_type="float*" src_isptr="1" src_bitwidth="32" src_size_or_depth="784">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="img_in_0" hw_bitwidth="32" hw_size_or_depth="196" hw_kernel_support="false">
+      <arg id="0" access_type="r" src_name="img_in" src_type="ap_fixed&lt;24, 16, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="32" src_size_or_depth="784">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="img_in_0" hw_bitwidth="24" hw_size_or_depth="196" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="img_in_1" hw_bitwidth="32" hw_size_or_depth="196" hw_kernel_support="false">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="img_in_1" hw_bitwidth="24" hw_size_or_depth="196" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="img_in_2" hw_bitwidth="32" hw_size_or_depth="196" hw_kernel_support="false">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="img_in_2" hw_bitwidth="24" hw_size_or_depth="196" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="img_in_3" hw_bitwidth="32" hw_size_or_depth="196" hw_kernel_support="false">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="img_in_3" hw_bitwidth="24" hw_size_or_depth="196" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="1" access_type="rw" src_name="prediction" src_type="float*" src_isptr="1" src_bitwidth="32" src_size_or_depth="10">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="prediction" hw_bitwidth="32" hw_size_or_depth="10" hw_kernel_support="false">
+      <arg id="1" access_type="rw" src_name="prediction" src_type="ap_fixed&lt;24, 16, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="32" src_size_or_depth="10">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="prediction" hw_bitwidth="24" hw_size_or_depth="10" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>

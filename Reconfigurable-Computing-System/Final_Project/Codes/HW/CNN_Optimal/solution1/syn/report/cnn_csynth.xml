@@ -18,32 +18,51 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>10.274</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.643</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>22999</Best-caseLatency>
-<Average-caseLatency>22999</Average-caseLatency>
-<Worst-caseLatency>22999</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.236 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.236 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.236 ms</Worst-caseRealTimeLatency>
-<Interval-min>23000</Interval-min>
-<Interval-max>23000</Interval-max>
+<Best-caseLatency>23210</Best-caseLatency>
+<Average-caseLatency>23210</Average-caseLatency>
+<Worst-caseLatency>23210</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.232 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.232 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.232 ms</Worst-caseRealTimeLatency>
+<Interval-min>23211</Interval-min>
+<Interval-max>23211</Interval-max>
 </SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<Loop1>
+<Slack>7.30</Slack>
+<TripCount>33</TripCount>
+<Latency>1550</Latency>
+<AbsoluteTimeLatency>15500</AbsoluteTimeLatency>
+<IterationLatency>47</IterationLatency>
+<InstanceList>
+</InstanceList>
+</Loop1>
+</SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>CNN_Optimal/src/cnn.cpp:63</SourceLocation>
+<SourceLocation>CNN_Optimal/src/cnn.cpp:65</SourceLocation>
+<SummaryOfLoopViolations>
+<Loop1>
+<Name>Loop 1</Name>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>CNN_Optimal/src/cnn.cpp:69</SourceLocation>
+</Loop1>
+</SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>448</BRAM_18K>
-<DSP>732</DSP>
-<FF>816987</FF>
-<LUT>453049</LUT>
+<BRAM_18K>446</BRAM_18K>
+<DSP>8018</DSP>
+<FF>93705</FF>
+<LUT>124429</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -154,7 +173,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -190,7 +209,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -226,7 +245,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -262,7 +281,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -310,7 +329,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -346,7 +365,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>24</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>

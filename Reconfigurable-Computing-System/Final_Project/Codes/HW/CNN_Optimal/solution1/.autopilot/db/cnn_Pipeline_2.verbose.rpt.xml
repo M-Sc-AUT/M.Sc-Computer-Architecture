@@ -1,0 +1,240 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'cnn_Pipeline_2'" level="0">
+<item name = "Date">Tue Jan 28 19:05:37 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">CNN_Optimal</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.014 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">33, 33, 1, 1, 1, 34, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 88, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 63, -</column>
+<column name="Register">-, -, 26, -, -</column>
+<specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln69_1_fu_620_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln69_2_fu_578_p2">+, 0, 0, 14, 6, 6</column>
+<column name="add_ln69_4_fu_626_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln69_fu_558_p2">+, 0, 0, 12, 12, 7</column>
+<column name="icmp_ln69_1_fu_646_p2">icmp, 0, 0, 14, 6, 6</column>
+<column name="icmp_ln69_fu_632_p2">icmp, 0, 0, 14, 6, 3</column>
+<column name="select_ln69_fu_638_p3">select, 0, 0, 6, 1, 6</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_arrayinit_curidx8_load">9, 2, 6, 12</column>
+<column name="ap_sig_allocacmp_phi_mul_load">9, 2, 12, 24</column>
+<column name="ap_sig_allocacmp_phi_urem_load">9, 2, 6, 12</column>
+<column name="arrayinit_curidx8_fu_126">9, 2, 6, 12</column>
+<column name="phi_mul_fu_122">9, 2, 12, 24</column>
+<column name="phi_urem_fu_118">9, 2, 6, 12</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="arrayinit_curidx8_fu_126">6, 0, 6, 0</column>
+<column name="phi_mul_fu_122">12, 0, 12, 0</column>
+<column name="phi_urem_fu_118">6, 0, 6, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, cnn_Pipeline_2, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, cnn_Pipeline_2, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, cnn_Pipeline_2, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, cnn_Pipeline_2, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, cnn_Pipeline_2, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, cnn_Pipeline_2, return value</column>
+<column name="add_ln69_3">in, 6, ap_none, add_ln69_3, scalar</column>
+<column name="pad_img0_address0">out, 6, ap_memory, pad_img0, array</column>
+<column name="pad_img0_ce0">out, 1, ap_memory, pad_img0, array</column>
+<column name="pad_img0_we0">out, 1, ap_memory, pad_img0, array</column>
+<column name="pad_img0_d0">out, 24, ap_memory, pad_img0, array</column>
+<column name="pad_img0_1_address0">out, 6, ap_memory, pad_img0_1, array</column>
+<column name="pad_img0_1_ce0">out, 1, ap_memory, pad_img0_1, array</column>
+<column name="pad_img0_1_we0">out, 1, ap_memory, pad_img0_1, array</column>
+<column name="pad_img0_1_d0">out, 24, ap_memory, pad_img0_1, array</column>
+<column name="pad_img0_2_address0">out, 6, ap_memory, pad_img0_2, array</column>
+<column name="pad_img0_2_ce0">out, 1, ap_memory, pad_img0_2, array</column>
+<column name="pad_img0_2_we0">out, 1, ap_memory, pad_img0_2, array</column>
+<column name="pad_img0_2_d0">out, 24, ap_memory, pad_img0_2, array</column>
+<column name="pad_img0_3_address0">out, 6, ap_memory, pad_img0_3, array</column>
+<column name="pad_img0_3_ce0">out, 1, ap_memory, pad_img0_3, array</column>
+<column name="pad_img0_3_we0">out, 1, ap_memory, pad_img0_3, array</column>
+<column name="pad_img0_3_d0">out, 24, ap_memory, pad_img0_3, array</column>
+<column name="pad_img0_4_address0">out, 6, ap_memory, pad_img0_4, array</column>
+<column name="pad_img0_4_ce0">out, 1, ap_memory, pad_img0_4, array</column>
+<column name="pad_img0_4_we0">out, 1, ap_memory, pad_img0_4, array</column>
+<column name="pad_img0_4_d0">out, 24, ap_memory, pad_img0_4, array</column>
+<column name="pad_img0_5_address0">out, 6, ap_memory, pad_img0_5, array</column>
+<column name="pad_img0_5_ce0">out, 1, ap_memory, pad_img0_5, array</column>
+<column name="pad_img0_5_we0">out, 1, ap_memory, pad_img0_5, array</column>
+<column name="pad_img0_5_d0">out, 24, ap_memory, pad_img0_5, array</column>
+<column name="pad_img0_6_address0">out, 6, ap_memory, pad_img0_6, array</column>
+<column name="pad_img0_6_ce0">out, 1, ap_memory, pad_img0_6, array</column>
+<column name="pad_img0_6_we0">out, 1, ap_memory, pad_img0_6, array</column>
+<column name="pad_img0_6_d0">out, 24, ap_memory, pad_img0_6, array</column>
+<column name="pad_img0_7_address0">out, 6, ap_memory, pad_img0_7, array</column>
+<column name="pad_img0_7_ce0">out, 1, ap_memory, pad_img0_7, array</column>
+<column name="pad_img0_7_we0">out, 1, ap_memory, pad_img0_7, array</column>
+<column name="pad_img0_7_d0">out, 24, ap_memory, pad_img0_7, array</column>
+<column name="pad_img0_8_address0">out, 6, ap_memory, pad_img0_8, array</column>
+<column name="pad_img0_8_ce0">out, 1, ap_memory, pad_img0_8, array</column>
+<column name="pad_img0_8_we0">out, 1, ap_memory, pad_img0_8, array</column>
+<column name="pad_img0_8_d0">out, 24, ap_memory, pad_img0_8, array</column>
+<column name="pad_img0_9_address0">out, 6, ap_memory, pad_img0_9, array</column>
+<column name="pad_img0_9_ce0">out, 1, ap_memory, pad_img0_9, array</column>
+<column name="pad_img0_9_we0">out, 1, ap_memory, pad_img0_9, array</column>
+<column name="pad_img0_9_d0">out, 24, ap_memory, pad_img0_9, array</column>
+<column name="pad_img0_10_address0">out, 6, ap_memory, pad_img0_10, array</column>
+<column name="pad_img0_10_ce0">out, 1, ap_memory, pad_img0_10, array</column>
+<column name="pad_img0_10_we0">out, 1, ap_memory, pad_img0_10, array</column>
+<column name="pad_img0_10_d0">out, 24, ap_memory, pad_img0_10, array</column>
+<column name="pad_img0_11_address0">out, 6, ap_memory, pad_img0_11, array</column>
+<column name="pad_img0_11_ce0">out, 1, ap_memory, pad_img0_11, array</column>
+<column name="pad_img0_11_we0">out, 1, ap_memory, pad_img0_11, array</column>
+<column name="pad_img0_11_d0">out, 24, ap_memory, pad_img0_11, array</column>
+<column name="pad_img0_12_address0">out, 6, ap_memory, pad_img0_12, array</column>
+<column name="pad_img0_12_ce0">out, 1, ap_memory, pad_img0_12, array</column>
+<column name="pad_img0_12_we0">out, 1, ap_memory, pad_img0_12, array</column>
+<column name="pad_img0_12_d0">out, 24, ap_memory, pad_img0_12, array</column>
+<column name="pad_img0_13_address0">out, 6, ap_memory, pad_img0_13, array</column>
+<column name="pad_img0_13_ce0">out, 1, ap_memory, pad_img0_13, array</column>
+<column name="pad_img0_13_we0">out, 1, ap_memory, pad_img0_13, array</column>
+<column name="pad_img0_13_d0">out, 24, ap_memory, pad_img0_13, array</column>
+<column name="pad_img0_14_address0">out, 6, ap_memory, pad_img0_14, array</column>
+<column name="pad_img0_14_ce0">out, 1, ap_memory, pad_img0_14, array</column>
+<column name="pad_img0_14_we0">out, 1, ap_memory, pad_img0_14, array</column>
+<column name="pad_img0_14_d0">out, 24, ap_memory, pad_img0_14, array</column>
+<column name="pad_img0_15_address0">out, 6, ap_memory, pad_img0_15, array</column>
+<column name="pad_img0_15_ce0">out, 1, ap_memory, pad_img0_15, array</column>
+<column name="pad_img0_15_we0">out, 1, ap_memory, pad_img0_15, array</column>
+<column name="pad_img0_15_d0">out, 24, ap_memory, pad_img0_15, array</column>
+<column name="pad_img0_16_address0">out, 6, ap_memory, pad_img0_16, array</column>
+<column name="pad_img0_16_ce0">out, 1, ap_memory, pad_img0_16, array</column>
+<column name="pad_img0_16_we0">out, 1, ap_memory, pad_img0_16, array</column>
+<column name="pad_img0_16_d0">out, 24, ap_memory, pad_img0_16, array</column>
+<column name="pad_img0_17_address0">out, 6, ap_memory, pad_img0_17, array</column>
+<column name="pad_img0_17_ce0">out, 1, ap_memory, pad_img0_17, array</column>
+<column name="pad_img0_17_we0">out, 1, ap_memory, pad_img0_17, array</column>
+<column name="pad_img0_17_d0">out, 24, ap_memory, pad_img0_17, array</column>
+<column name="pad_img0_18_address0">out, 6, ap_memory, pad_img0_18, array</column>
+<column name="pad_img0_18_ce0">out, 1, ap_memory, pad_img0_18, array</column>
+<column name="pad_img0_18_we0">out, 1, ap_memory, pad_img0_18, array</column>
+<column name="pad_img0_18_d0">out, 24, ap_memory, pad_img0_18, array</column>
+<column name="pad_img0_19_address0">out, 6, ap_memory, pad_img0_19, array</column>
+<column name="pad_img0_19_ce0">out, 1, ap_memory, pad_img0_19, array</column>
+<column name="pad_img0_19_we0">out, 1, ap_memory, pad_img0_19, array</column>
+<column name="pad_img0_19_d0">out, 24, ap_memory, pad_img0_19, array</column>
+<column name="pad_img0_20_address0">out, 6, ap_memory, pad_img0_20, array</column>
+<column name="pad_img0_20_ce0">out, 1, ap_memory, pad_img0_20, array</column>
+<column name="pad_img0_20_we0">out, 1, ap_memory, pad_img0_20, array</column>
+<column name="pad_img0_20_d0">out, 24, ap_memory, pad_img0_20, array</column>
+<column name="pad_img0_21_address0">out, 6, ap_memory, pad_img0_21, array</column>
+<column name="pad_img0_21_ce0">out, 1, ap_memory, pad_img0_21, array</column>
+<column name="pad_img0_21_we0">out, 1, ap_memory, pad_img0_21, array</column>
+<column name="pad_img0_21_d0">out, 24, ap_memory, pad_img0_21, array</column>
+<column name="pad_img0_22_address0">out, 6, ap_memory, pad_img0_22, array</column>
+<column name="pad_img0_22_ce0">out, 1, ap_memory, pad_img0_22, array</column>
+<column name="pad_img0_22_we0">out, 1, ap_memory, pad_img0_22, array</column>
+<column name="pad_img0_22_d0">out, 24, ap_memory, pad_img0_22, array</column>
+<column name="pad_img0_23_address0">out, 6, ap_memory, pad_img0_23, array</column>
+<column name="pad_img0_23_ce0">out, 1, ap_memory, pad_img0_23, array</column>
+<column name="pad_img0_23_we0">out, 1, ap_memory, pad_img0_23, array</column>
+<column name="pad_img0_23_d0">out, 24, ap_memory, pad_img0_23, array</column>
+<column name="pad_img0_24_address0">out, 6, ap_memory, pad_img0_24, array</column>
+<column name="pad_img0_24_ce0">out, 1, ap_memory, pad_img0_24, array</column>
+<column name="pad_img0_24_we0">out, 1, ap_memory, pad_img0_24, array</column>
+<column name="pad_img0_24_d0">out, 24, ap_memory, pad_img0_24, array</column>
+<column name="pad_img0_25_address0">out, 6, ap_memory, pad_img0_25, array</column>
+<column name="pad_img0_25_ce0">out, 1, ap_memory, pad_img0_25, array</column>
+<column name="pad_img0_25_we0">out, 1, ap_memory, pad_img0_25, array</column>
+<column name="pad_img0_25_d0">out, 24, ap_memory, pad_img0_25, array</column>
+<column name="pad_img0_26_address0">out, 6, ap_memory, pad_img0_26, array</column>
+<column name="pad_img0_26_ce0">out, 1, ap_memory, pad_img0_26, array</column>
+<column name="pad_img0_26_we0">out, 1, ap_memory, pad_img0_26, array</column>
+<column name="pad_img0_26_d0">out, 24, ap_memory, pad_img0_26, array</column>
+<column name="pad_img0_27_address0">out, 6, ap_memory, pad_img0_27, array</column>
+<column name="pad_img0_27_ce0">out, 1, ap_memory, pad_img0_27, array</column>
+<column name="pad_img0_27_we0">out, 1, ap_memory, pad_img0_27, array</column>
+<column name="pad_img0_27_d0">out, 24, ap_memory, pad_img0_27, array</column>
+<column name="trunc_ln">in, 2, ap_none, trunc_ln, scalar</column>
+</table>
+</item>
+</section>
+</profile>

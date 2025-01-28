@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dataflow_section'
 ================================================================
-* Date:           Fri Jan 24 15:12:50 2025
+* Date:           Tue Jan 28 19:05:33 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        CNN_Optimal
@@ -17,11 +17,11 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+-----------+------------+
-    |  Clock |  Target  | Estimated | Uncertainty|
-    +--------+----------+-----------+------------+
-    |ap_clk  |  10.00 ns|  10.274 ns|     2.70 ns|
-    +--------+----------+-----------+------------+
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.287 ns|     2.70 ns|
+    +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
@@ -29,21 +29,21 @@
     |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline |
     |   min   |   max   |    min   |    max   |  min  |  max  |   Type   |
     +---------+---------+----------+----------+-------+-------+----------+
-    |    19844|    19844|  0.204 ms|  0.204 ms|  19845|  19845|  dataflow|
+    |    19642|    19642|  0.196 ms|  0.196 ms|  19643|  19643|  dataflow|
     +---------+---------+----------+----------+-------+-------+----------+
 
     + Detail: 
         * Instance: 
-        +---------------------------------+----------------------+---------+---------+-----------+-----------+-------+-------+---------+
-        |                                 |                      |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline|
-        |             Instance            |        Module        |   min   |   max   |    min    |    max    |  min  |  max  |   Type  |
-        +---------------------------------+----------------------+---------+---------+-----------+-----------+-------+-------+---------+
-        |grp_convolutional_layer_fu_436   |convolutional_layer   |    19844|    19844|   0.198 ms|   0.198 ms|  19844|  19844|       no|
-        |grp_max_pooling_layer_fu_702     |max_pooling_layer     |     3182|     3182|  31.820 us|  31.820 us|   3182|   3182|       no|
-        |grp_flattening_layer_fu_714      |flattening_layer      |      199|      199|   1.990 us|   1.990 us|    199|    199|       no|
-        |grp_dense_layer_fu_726           |dense_layer           |      996|      996|  10.233 us|  10.233 us|    996|    996|       no|
-        |grp_dense_layer_soft_max_fu_778  |dense_layer_soft_max  |      120|      120|   1.200 us|   1.200 us|    120|    120|       no|
-        +---------------------------------+----------------------+---------+---------+-----------+-----------+-------+-------+---------+
+        +---------------------------------+----------------------+---------+---------+----------+----------+-------+-------+---------+
+        |                                 |                      |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+        |             Instance            |        Module        |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+        +---------------------------------+----------------------+---------+---------+----------+----------+-------+-------+---------+
+        |grp_convolutional_layer_fu_436   |convolutional_layer   |    19642|    19642|  0.196 ms|  0.196 ms|  19642|  19642|       no|
+        |grp_max_pooling_layer_fu_702     |max_pooling_layer     |      788|      788|  7.880 us|  7.880 us|    788|    788|       no|
+        |grp_flattening_layer_fu_714      |flattening_layer      |      199|      199|  1.990 us|  1.990 us|    199|    199|       no|
+        |grp_dense_layer_fu_726           |dense_layer           |      208|      208|  2.080 us|  2.080 us|    208|    208|       no|
+        |grp_dense_layer_soft_max_fu_778  |dense_layer_soft_max  |       83|       83|  0.830 us|  0.830 us|     83|     83|       no|
+        +---------------------------------+----------------------+---------+---------+----------+----------+-------+-------+---------+
 
         * Loop: 
         N/A
@@ -94,85 +94,85 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%conv_to_pool_streams = alloca i64 1" [CNN_Optimal/src/cnn.cpp:27]   --->   Operation 11 'alloca' 'conv_to_pool_streams' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 784> <FIFO>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%conv_to_pool_streams_1 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:27]   --->   Operation 12 'alloca' 'conv_to_pool_streams_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 784> <FIFO>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%conv_to_pool_streams_2 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:27]   --->   Operation 13 'alloca' 'conv_to_pool_streams_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 784> <FIFO>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%conv_to_pool_streams_3 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:27]   --->   Operation 14 'alloca' 'conv_to_pool_streams_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 784> <FIFO>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%pool_to_flat_streams = alloca i64 1" [CNN_Optimal/src/cnn.cpp:41]   --->   Operation 15 'alloca' 'pool_to_flat_streams' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 196> <FIFO>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%pool_to_flat_streams_1 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:41]   --->   Operation 16 'alloca' 'pool_to_flat_streams_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 196> <FIFO>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%pool_to_flat_streams_2 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:41]   --->   Operation 17 'alloca' 'pool_to_flat_streams_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 196> <FIFO>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%pool_to_flat_streams_3 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:41]   --->   Operation 18 'alloca' 'pool_to_flat_streams_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 196> <FIFO>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%flat_to_dense_streams = alloca i64 1" [CNN_Optimal/src/cnn.cpp:52]   --->   Operation 19 'alloca' 'flat_to_dense_streams' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 196> <FIFO>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%flat_to_dense_streams_1 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:52]   --->   Operation 20 'alloca' 'flat_to_dense_streams_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 196> <FIFO>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%flat_to_dense_streams_2 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:52]   --->   Operation 21 'alloca' 'flat_to_dense_streams_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 196> <FIFO>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%flat_to_dense_streams_3 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:52]   --->   Operation 22 'alloca' 'flat_to_dense_streams_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 196> <FIFO>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams = alloca i64 1" [CNN_Optimal/src/cnn.cpp:56]   --->   Operation 23 'alloca' 'dense_to_softmax_streams' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.61> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 10> <FIFO>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams_1 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:56]   --->   Operation 24 'alloca' 'dense_to_softmax_streams_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.61> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 10> <FIFO>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams_2 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:56]   --->   Operation 25 'alloca' 'dense_to_softmax_streams_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.61> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 10> <FIFO>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams_3 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:56]   --->   Operation 26 'alloca' 'dense_to_softmax_streams_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.61> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 10> <FIFO>
-ST_1 : Operation 27 [2/2] (0.00ns)   --->   "%call_ln30 = call void @convolutional_layer, i32 %pad_img0_0_0, i32 %pad_img0_0_1, i32 %pad_img0_0_2, i32 %pad_img0_0_3, i32 %pad_img0_0_4, i32 %pad_img0_0_5, i32 %pad_img0_0_6, i32 %pad_img0_1_0, i32 %pad_img0_1_1, i32 %pad_img0_1_2, i32 %pad_img0_1_3, i32 %pad_img0_1_4, i32 %pad_img0_1_5, i32 %pad_img0_1_6, i32 %pad_img0_2_0, i32 %pad_img0_2_1, i32 %pad_img0_2_2, i32 %pad_img0_2_3, i32 %pad_img0_2_4, i32 %pad_img0_2_5, i32 %pad_img0_2_6, i32 %pad_img0_3_0, i32 %pad_img0_3_1, i32 %pad_img0_3_2, i32 %pad_img0_3_3, i32 %pad_img0_3_4, i32 %pad_img0_3_5, i32 %pad_img0_3_6, i32 %pad_img1, i32 %pad_img2, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams, i32 %conv_to_pool_streams_1, i32 %conv_to_pool_streams_2, i32 %conv_to_pool_streams_3, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6" [CNN_Optimal/src/cnn.cpp:30]   --->   Operation 27 'call' 'call_ln30' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%conv_to_pool_streams = alloca i64 1" [CNN_Optimal/src/cnn.cpp:29]   --->   Operation 11 'alloca' 'conv_to_pool_streams' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 784> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%conv_to_pool_streams_1 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:29]   --->   Operation 12 'alloca' 'conv_to_pool_streams_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 784> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%conv_to_pool_streams_2 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:29]   --->   Operation 13 'alloca' 'conv_to_pool_streams_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 784> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%conv_to_pool_streams_3 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:29]   --->   Operation 14 'alloca' 'conv_to_pool_streams_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 784> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%pool_to_flat_streams = alloca i64 1" [CNN_Optimal/src/cnn.cpp:43]   --->   Operation 15 'alloca' 'pool_to_flat_streams' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 196> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%pool_to_flat_streams_1 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:43]   --->   Operation 16 'alloca' 'pool_to_flat_streams_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 196> <FIFO>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%pool_to_flat_streams_2 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:43]   --->   Operation 17 'alloca' 'pool_to_flat_streams_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 196> <FIFO>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%pool_to_flat_streams_3 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:43]   --->   Operation 18 'alloca' 'pool_to_flat_streams_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 196> <FIFO>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%flat_to_dense_streams = alloca i64 1" [CNN_Optimal/src/cnn.cpp:54]   --->   Operation 19 'alloca' 'flat_to_dense_streams' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 196> <FIFO>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%flat_to_dense_streams_1 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:54]   --->   Operation 20 'alloca' 'flat_to_dense_streams_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 196> <FIFO>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%flat_to_dense_streams_2 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:54]   --->   Operation 21 'alloca' 'flat_to_dense_streams_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 196> <FIFO>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%flat_to_dense_streams_3 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:54]   --->   Operation 22 'alloca' 'flat_to_dense_streams_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.62> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 196> <FIFO>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams = alloca i64 1" [CNN_Optimal/src/cnn.cpp:58]   --->   Operation 23 'alloca' 'dense_to_softmax_streams' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.61> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 10> <FIFO>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams_1 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:58]   --->   Operation 24 'alloca' 'dense_to_softmax_streams_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.61> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 10> <FIFO>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams_2 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:58]   --->   Operation 25 'alloca' 'dense_to_softmax_streams_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.61> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 10> <FIFO>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%dense_to_softmax_streams_3 = alloca i64 1" [CNN_Optimal/src/cnn.cpp:58]   --->   Operation 26 'alloca' 'dense_to_softmax_streams_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.61> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 10> <FIFO>
+ST_1 : Operation 27 [2/2] (0.00ns)   --->   "%call_ln32 = call void @convolutional_layer, i24 %pad_img0_0_0, i24 %pad_img0_0_1, i24 %pad_img0_0_2, i24 %pad_img0_0_3, i24 %pad_img0_0_4, i24 %pad_img0_0_5, i24 %pad_img0_0_6, i24 %pad_img0_1_0, i24 %pad_img0_1_1, i24 %pad_img0_1_2, i24 %pad_img0_1_3, i24 %pad_img0_1_4, i24 %pad_img0_1_5, i24 %pad_img0_1_6, i24 %pad_img0_2_0, i24 %pad_img0_2_1, i24 %pad_img0_2_2, i24 %pad_img0_2_3, i24 %pad_img0_2_4, i24 %pad_img0_2_5, i24 %pad_img0_2_6, i24 %pad_img0_3_0, i24 %pad_img0_3_1, i24 %pad_img0_3_2, i24 %pad_img0_3_3, i24 %pad_img0_3_4, i24 %pad_img0_3_5, i24 %pad_img0_3_6, i24 %pad_img1, i24 %pad_img2, i24 %pad_img3_0_0, i24 %pad_img3_0_1, i24 %pad_img3_0_2, i24 %pad_img3_0_3, i24 %pad_img3_0_4, i24 %pad_img3_0_5, i24 %pad_img3_0_6, i24 %pad_img3_1_0, i24 %pad_img3_1_1, i24 %pad_img3_1_2, i24 %pad_img3_1_3, i24 %pad_img3_1_4, i24 %pad_img3_1_5, i24 %pad_img3_1_6, i24 %pad_img3_2_0, i24 %pad_img3_2_1, i24 %pad_img3_2_2, i24 %pad_img3_2_3, i24 %pad_img3_2_4, i24 %pad_img3_2_5, i24 %pad_img3_2_6, i24 %pad_img3_3_0, i24 %pad_img3_3_1, i24 %pad_img3_3_2, i24 %pad_img3_3_3, i24 %pad_img3_3_4, i24 %pad_img3_3_5, i24 %pad_img3_3_6, i24 %pad_img3_4_0, i24 %pad_img3_4_1, i24 %pad_img3_4_2, i24 %pad_img3_4_3, i24 %pad_img3_4_4, i24 %pad_img3_4_5, i24 %pad_img3_4_6, i24 %pad_img3_5_0, i24 %pad_img3_5_1, i24 %pad_img3_5_2, i24 %pad_img3_5_3, i24 %pad_img3_5_4, i24 %pad_img3_5_5, i24 %pad_img3_5_6, i24 %pad_img3_6_0, i24 %pad_img3_6_1, i24 %pad_img3_6_2, i24 %pad_img3_6_3, i24 %pad_img3_6_4, i24 %pad_img3_6_5, i24 %pad_img3_6_6, i24 %conv_to_pool_streams, i24 %conv_to_pool_streams_1, i24 %conv_to_pool_streams_2, i24 %conv_to_pool_streams_3, i6 %conv_biases, i8 %conv_weights_0_0, i7 %conv_weights_0_1, i8 %conv_weights_0_2, i8 %conv_weights_0_3, i9 %conv_weights_0_4, i8 %conv_weights_0_5, i9 %conv_weights_0_6, i8 %conv_weights_1_0, i9 %conv_weights_1_1, i8 %conv_weights_1_2, i9 %conv_weights_1_3, i8 %conv_weights_1_4, i9 %conv_weights_1_5, i8 %conv_weights_1_6, i8 %conv_weights_2_0, i9 %conv_weights_2_1, i8 %conv_weights_2_2, i8 %conv_weights_2_3, i9 %conv_weights_2_4, i8 %conv_weights_2_5, i8 %conv_weights_2_6, i8 %conv_weights_3_0, i9 %conv_weights_3_1, i9 %conv_weights_3_2, i8 %conv_weights_3_3, i9 %conv_weights_3_4, i9 %conv_weights_3_5, i8 %conv_weights_3_6, i8 %conv_weights_4_0, i8 %conv_weights_4_1, i9 %conv_weights_4_2, i9 %conv_weights_4_3, i8 %conv_weights_4_4, i9 %conv_weights_4_5, i9 %conv_weights_4_6, i9 %conv_weights_5_0, i9 %conv_weights_5_1, i9 %conv_weights_5_2, i9 %conv_weights_5_3, i9 %conv_weights_5_4, i7 %conv_weights_5_5, i9 %conv_weights_5_6, i9 %conv_weights_6_0, i9 %conv_weights_6_1, i10 %conv_weights_6_2, i9 %conv_weights_6_3, i9 %conv_weights_6_4, i9 %conv_weights_6_5, i9 %conv_weights_6_6" [CNN_Optimal/src/cnn.cpp:32]   --->   Operation 27 'call' 'call_ln32' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 28 [1/2] (0.00ns)   --->   "%call_ln30 = call void @convolutional_layer, i32 %pad_img0_0_0, i32 %pad_img0_0_1, i32 %pad_img0_0_2, i32 %pad_img0_0_3, i32 %pad_img0_0_4, i32 %pad_img0_0_5, i32 %pad_img0_0_6, i32 %pad_img0_1_0, i32 %pad_img0_1_1, i32 %pad_img0_1_2, i32 %pad_img0_1_3, i32 %pad_img0_1_4, i32 %pad_img0_1_5, i32 %pad_img0_1_6, i32 %pad_img0_2_0, i32 %pad_img0_2_1, i32 %pad_img0_2_2, i32 %pad_img0_2_3, i32 %pad_img0_2_4, i32 %pad_img0_2_5, i32 %pad_img0_2_6, i32 %pad_img0_3_0, i32 %pad_img0_3_1, i32 %pad_img0_3_2, i32 %pad_img0_3_3, i32 %pad_img0_3_4, i32 %pad_img0_3_5, i32 %pad_img0_3_6, i32 %pad_img1, i32 %pad_img2, i32 %pad_img3_0_0, i32 %pad_img3_0_1, i32 %pad_img3_0_2, i32 %pad_img3_0_3, i32 %pad_img3_0_4, i32 %pad_img3_0_5, i32 %pad_img3_0_6, i32 %pad_img3_1_0, i32 %pad_img3_1_1, i32 %pad_img3_1_2, i32 %pad_img3_1_3, i32 %pad_img3_1_4, i32 %pad_img3_1_5, i32 %pad_img3_1_6, i32 %pad_img3_2_0, i32 %pad_img3_2_1, i32 %pad_img3_2_2, i32 %pad_img3_2_3, i32 %pad_img3_2_4, i32 %pad_img3_2_5, i32 %pad_img3_2_6, i32 %pad_img3_3_0, i32 %pad_img3_3_1, i32 %pad_img3_3_2, i32 %pad_img3_3_3, i32 %pad_img3_3_4, i32 %pad_img3_3_5, i32 %pad_img3_3_6, i32 %pad_img3_4_0, i32 %pad_img3_4_1, i32 %pad_img3_4_2, i32 %pad_img3_4_3, i32 %pad_img3_4_4, i32 %pad_img3_4_5, i32 %pad_img3_4_6, i32 %pad_img3_5_0, i32 %pad_img3_5_1, i32 %pad_img3_5_2, i32 %pad_img3_5_3, i32 %pad_img3_5_4, i32 %pad_img3_5_5, i32 %pad_img3_5_6, i32 %pad_img3_6_0, i32 %pad_img3_6_1, i32 %pad_img3_6_2, i32 %pad_img3_6_3, i32 %pad_img3_6_4, i32 %pad_img3_6_5, i32 %pad_img3_6_6, i32 %conv_to_pool_streams, i32 %conv_to_pool_streams_1, i32 %conv_to_pool_streams_2, i32 %conv_to_pool_streams_3, i32 %conv_biases, i32 %conv_weights_0_0, i32 %conv_weights_0_1, i32 %conv_weights_0_2, i32 %conv_weights_0_3, i32 %conv_weights_0_4, i32 %conv_weights_0_5, i32 %conv_weights_0_6, i32 %conv_weights_1_0, i32 %conv_weights_1_1, i32 %conv_weights_1_2, i32 %conv_weights_1_3, i32 %conv_weights_1_4, i32 %conv_weights_1_5, i32 %conv_weights_1_6, i32 %conv_weights_2_0, i32 %conv_weights_2_1, i32 %conv_weights_2_2, i32 %conv_weights_2_3, i32 %conv_weights_2_4, i32 %conv_weights_2_5, i32 %conv_weights_2_6, i32 %conv_weights_3_0, i32 %conv_weights_3_1, i32 %conv_weights_3_2, i32 %conv_weights_3_3, i32 %conv_weights_3_4, i32 %conv_weights_3_5, i32 %conv_weights_3_6, i32 %conv_weights_4_0, i32 %conv_weights_4_1, i32 %conv_weights_4_2, i32 %conv_weights_4_3, i32 %conv_weights_4_4, i32 %conv_weights_4_5, i32 %conv_weights_4_6, i32 %conv_weights_5_0, i32 %conv_weights_5_1, i32 %conv_weights_5_2, i32 %conv_weights_5_3, i32 %conv_weights_5_4, i32 %conv_weights_5_5, i32 %conv_weights_5_6, i32 %conv_weights_6_0, i32 %conv_weights_6_1, i32 %conv_weights_6_2, i32 %conv_weights_6_3, i32 %conv_weights_6_4, i32 %conv_weights_6_5, i32 %conv_weights_6_6" [CNN_Optimal/src/cnn.cpp:30]   --->   Operation 28 'call' 'call_ln30' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 28 [1/2] (0.00ns)   --->   "%call_ln32 = call void @convolutional_layer, i24 %pad_img0_0_0, i24 %pad_img0_0_1, i24 %pad_img0_0_2, i24 %pad_img0_0_3, i24 %pad_img0_0_4, i24 %pad_img0_0_5, i24 %pad_img0_0_6, i24 %pad_img0_1_0, i24 %pad_img0_1_1, i24 %pad_img0_1_2, i24 %pad_img0_1_3, i24 %pad_img0_1_4, i24 %pad_img0_1_5, i24 %pad_img0_1_6, i24 %pad_img0_2_0, i24 %pad_img0_2_1, i24 %pad_img0_2_2, i24 %pad_img0_2_3, i24 %pad_img0_2_4, i24 %pad_img0_2_5, i24 %pad_img0_2_6, i24 %pad_img0_3_0, i24 %pad_img0_3_1, i24 %pad_img0_3_2, i24 %pad_img0_3_3, i24 %pad_img0_3_4, i24 %pad_img0_3_5, i24 %pad_img0_3_6, i24 %pad_img1, i24 %pad_img2, i24 %pad_img3_0_0, i24 %pad_img3_0_1, i24 %pad_img3_0_2, i24 %pad_img3_0_3, i24 %pad_img3_0_4, i24 %pad_img3_0_5, i24 %pad_img3_0_6, i24 %pad_img3_1_0, i24 %pad_img3_1_1, i24 %pad_img3_1_2, i24 %pad_img3_1_3, i24 %pad_img3_1_4, i24 %pad_img3_1_5, i24 %pad_img3_1_6, i24 %pad_img3_2_0, i24 %pad_img3_2_1, i24 %pad_img3_2_2, i24 %pad_img3_2_3, i24 %pad_img3_2_4, i24 %pad_img3_2_5, i24 %pad_img3_2_6, i24 %pad_img3_3_0, i24 %pad_img3_3_1, i24 %pad_img3_3_2, i24 %pad_img3_3_3, i24 %pad_img3_3_4, i24 %pad_img3_3_5, i24 %pad_img3_3_6, i24 %pad_img3_4_0, i24 %pad_img3_4_1, i24 %pad_img3_4_2, i24 %pad_img3_4_3, i24 %pad_img3_4_4, i24 %pad_img3_4_5, i24 %pad_img3_4_6, i24 %pad_img3_5_0, i24 %pad_img3_5_1, i24 %pad_img3_5_2, i24 %pad_img3_5_3, i24 %pad_img3_5_4, i24 %pad_img3_5_5, i24 %pad_img3_5_6, i24 %pad_img3_6_0, i24 %pad_img3_6_1, i24 %pad_img3_6_2, i24 %pad_img3_6_3, i24 %pad_img3_6_4, i24 %pad_img3_6_5, i24 %pad_img3_6_6, i24 %conv_to_pool_streams, i24 %conv_to_pool_streams_1, i24 %conv_to_pool_streams_2, i24 %conv_to_pool_streams_3, i6 %conv_biases, i8 %conv_weights_0_0, i7 %conv_weights_0_1, i8 %conv_weights_0_2, i8 %conv_weights_0_3, i9 %conv_weights_0_4, i8 %conv_weights_0_5, i9 %conv_weights_0_6, i8 %conv_weights_1_0, i9 %conv_weights_1_1, i8 %conv_weights_1_2, i9 %conv_weights_1_3, i8 %conv_weights_1_4, i9 %conv_weights_1_5, i8 %conv_weights_1_6, i8 %conv_weights_2_0, i9 %conv_weights_2_1, i8 %conv_weights_2_2, i8 %conv_weights_2_3, i9 %conv_weights_2_4, i8 %conv_weights_2_5, i8 %conv_weights_2_6, i8 %conv_weights_3_0, i9 %conv_weights_3_1, i9 %conv_weights_3_2, i8 %conv_weights_3_3, i9 %conv_weights_3_4, i9 %conv_weights_3_5, i8 %conv_weights_3_6, i8 %conv_weights_4_0, i8 %conv_weights_4_1, i9 %conv_weights_4_2, i9 %conv_weights_4_3, i8 %conv_weights_4_4, i9 %conv_weights_4_5, i9 %conv_weights_4_6, i9 %conv_weights_5_0, i9 %conv_weights_5_1, i9 %conv_weights_5_2, i9 %conv_weights_5_3, i9 %conv_weights_5_4, i7 %conv_weights_5_5, i9 %conv_weights_5_6, i9 %conv_weights_6_0, i9 %conv_weights_6_1, i10 %conv_weights_6_2, i9 %conv_weights_6_3, i9 %conv_weights_6_4, i9 %conv_weights_6_5, i9 %conv_weights_6_6" [CNN_Optimal/src/cnn.cpp:32]   --->   Operation 28 'call' 'call_ln32' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln43 = call void @max_pooling_layer, i32 %conv_to_pool_streams, i32 %conv_to_pool_streams_1, i32 %conv_to_pool_streams_2, i32 %conv_to_pool_streams_3, i32 %pool_to_flat_streams, i32 %pool_to_flat_streams_1, i32 %pool_to_flat_streams_2, i32 %pool_to_flat_streams_3" [CNN_Optimal/src/cnn.cpp:43]   --->   Operation 29 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln45 = call void @max_pooling_layer, i24 %conv_to_pool_streams, i24 %conv_to_pool_streams_1, i24 %conv_to_pool_streams_2, i24 %conv_to_pool_streams_3, i24 %pool_to_flat_streams, i24 %pool_to_flat_streams_1, i24 %pool_to_flat_streams_2, i24 %pool_to_flat_streams_3" [CNN_Optimal/src/cnn.cpp:45]   --->   Operation 29 'call' 'call_ln45' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln43 = call void @max_pooling_layer, i32 %conv_to_pool_streams, i32 %conv_to_pool_streams_1, i32 %conv_to_pool_streams_2, i32 %conv_to_pool_streams_3, i32 %pool_to_flat_streams, i32 %pool_to_flat_streams_1, i32 %pool_to_flat_streams_2, i32 %pool_to_flat_streams_3" [CNN_Optimal/src/cnn.cpp:43]   --->   Operation 30 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln45 = call void @max_pooling_layer, i24 %conv_to_pool_streams, i24 %conv_to_pool_streams_1, i24 %conv_to_pool_streams_2, i24 %conv_to_pool_streams_3, i24 %pool_to_flat_streams, i24 %pool_to_flat_streams_1, i24 %pool_to_flat_streams_2, i24 %pool_to_flat_streams_3" [CNN_Optimal/src/cnn.cpp:45]   --->   Operation 30 'call' 'call_ln45' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln53 = call void @flattening_layer, i32 %pool_to_flat_streams, i32 %pool_to_flat_streams_1, i32 %pool_to_flat_streams_2, i32 %pool_to_flat_streams_3, i32 %flat_to_dense_streams, i32 %flat_to_dense_streams_1, i32 %flat_to_dense_streams_2, i32 %flat_to_dense_streams_3" [CNN_Optimal/src/cnn.cpp:53]   --->   Operation 31 'call' 'call_ln53' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln55 = call void @flattening_layer, i24 %pool_to_flat_streams, i24 %pool_to_flat_streams_1, i24 %pool_to_flat_streams_2, i24 %pool_to_flat_streams_3, i24 %flat_to_dense_streams, i24 %flat_to_dense_streams_1, i24 %flat_to_dense_streams_2, i24 %flat_to_dense_streams_3" [CNN_Optimal/src/cnn.cpp:55]   --->   Operation 31 'call' 'call_ln55' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln53 = call void @flattening_layer, i32 %pool_to_flat_streams, i32 %pool_to_flat_streams_1, i32 %pool_to_flat_streams_2, i32 %pool_to_flat_streams_3, i32 %flat_to_dense_streams, i32 %flat_to_dense_streams_1, i32 %flat_to_dense_streams_2, i32 %flat_to_dense_streams_3" [CNN_Optimal/src/cnn.cpp:53]   --->   Operation 32 'call' 'call_ln53' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln55 = call void @flattening_layer, i24 %pool_to_flat_streams, i24 %pool_to_flat_streams_1, i24 %pool_to_flat_streams_2, i24 %pool_to_flat_streams_3, i24 %flat_to_dense_streams, i24 %flat_to_dense_streams_1, i24 %flat_to_dense_streams_2, i24 %flat_to_dense_streams_3" [CNN_Optimal/src/cnn.cpp:55]   --->   Operation 32 'call' 'call_ln55' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln57 = call void @dense_layer, i32 %flat_to_dense_streams, i32 %flat_to_dense_streams_1, i32 %flat_to_dense_streams_2, i32 %flat_to_dense_streams_3, i32 %dense_to_softmax_streams, i32 %dense_to_softmax_streams_1, i32 %dense_to_softmax_streams_2, i32 %dense_to_softmax_streams_3, i32 %dense_weights_0_0, i32 %dense_weights_0_1, i32 %dense_weights_0_2, i32 %dense_weights_0_3, i32 %dense_weights_0_4, i32 %dense_weights_0_5, i32 %dense_weights_0_6, i32 %dense_weights_0_7, i32 %dense_weights_0_8, i32 %dense_weights_0_9, i32 %dense_weights_1_0, i32 %dense_weights_1_1, i32 %dense_weights_1_2, i32 %dense_weights_1_3, i32 %dense_weights_1_4, i32 %dense_weights_1_5, i32 %dense_weights_1_6, i32 %dense_weights_1_7, i32 %dense_weights_1_8, i32 %dense_weights_1_9" [CNN_Optimal/src/cnn.cpp:57]   --->   Operation 33 'call' 'call_ln57' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln59 = call void @dense_layer, i24 %flat_to_dense_streams, i24 %flat_to_dense_streams_1, i24 %flat_to_dense_streams_2, i24 %flat_to_dense_streams_3, i24 %dense_to_softmax_streams, i24 %dense_to_softmax_streams_1, i24 %dense_to_softmax_streams_2, i24 %dense_to_softmax_streams_3, i9 %dense_weights_0_0, i9 %dense_weights_0_1, i9 %dense_weights_0_2, i9 %dense_weights_0_3, i9 %dense_weights_0_4, i9 %dense_weights_0_5, i9 %dense_weights_0_6, i9 %dense_weights_0_7, i9 %dense_weights_0_8, i9 %dense_weights_0_9, i9 %dense_weights_1_0, i9 %dense_weights_1_1, i9 %dense_weights_1_2, i9 %dense_weights_1_3, i9 %dense_weights_1_4, i9 %dense_weights_1_5, i8 %dense_weights_1_6, i9 %dense_weights_1_7, i9 %dense_weights_1_8, i9 %dense_weights_1_9" [CNN_Optimal/src/cnn.cpp:59]   --->   Operation 33 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln57 = call void @dense_layer, i32 %flat_to_dense_streams, i32 %flat_to_dense_streams_1, i32 %flat_to_dense_streams_2, i32 %flat_to_dense_streams_3, i32 %dense_to_softmax_streams, i32 %dense_to_softmax_streams_1, i32 %dense_to_softmax_streams_2, i32 %dense_to_softmax_streams_3, i32 %dense_weights_0_0, i32 %dense_weights_0_1, i32 %dense_weights_0_2, i32 %dense_weights_0_3, i32 %dense_weights_0_4, i32 %dense_weights_0_5, i32 %dense_weights_0_6, i32 %dense_weights_0_7, i32 %dense_weights_0_8, i32 %dense_weights_0_9, i32 %dense_weights_1_0, i32 %dense_weights_1_1, i32 %dense_weights_1_2, i32 %dense_weights_1_3, i32 %dense_weights_1_4, i32 %dense_weights_1_5, i32 %dense_weights_1_6, i32 %dense_weights_1_7, i32 %dense_weights_1_8, i32 %dense_weights_1_9" [CNN_Optimal/src/cnn.cpp:57]   --->   Operation 34 'call' 'call_ln57' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln59 = call void @dense_layer, i24 %flat_to_dense_streams, i24 %flat_to_dense_streams_1, i24 %flat_to_dense_streams_2, i24 %flat_to_dense_streams_3, i24 %dense_to_softmax_streams, i24 %dense_to_softmax_streams_1, i24 %dense_to_softmax_streams_2, i24 %dense_to_softmax_streams_3, i9 %dense_weights_0_0, i9 %dense_weights_0_1, i9 %dense_weights_0_2, i9 %dense_weights_0_3, i9 %dense_weights_0_4, i9 %dense_weights_0_5, i9 %dense_weights_0_6, i9 %dense_weights_0_7, i9 %dense_weights_0_8, i9 %dense_weights_0_9, i9 %dense_weights_1_0, i9 %dense_weights_1_1, i9 %dense_weights_1_2, i9 %dense_weights_1_3, i9 %dense_weights_1_4, i9 %dense_weights_1_5, i8 %dense_weights_1_6, i9 %dense_weights_1_7, i9 %dense_weights_1_8, i9 %dense_weights_1_9" [CNN_Optimal/src/cnn.cpp:59]   --->   Operation 34 'call' 'call_ln59' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln60 = call void @dense_layer_soft_max, i32 %dense_to_softmax_streams, i32 %dense_to_softmax_streams_1, i32 %dense_to_softmax_streams_2, i32 %dense_to_softmax_streams_3, i32 %prediction, i32 %dense_biases" [CNN_Optimal/src/cnn.cpp:60]   --->   Operation 35 'call' 'call_ln60' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln62 = call void @dense_layer_soft_max, i24 %dense_to_softmax_streams, i24 %dense_to_softmax_streams_1, i24 %dense_to_softmax_streams_2, i24 %dense_to_softmax_streams_3, i24 %prediction, i7 %dense_biases" [CNN_Optimal/src/cnn.cpp:62]   --->   Operation 35 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 36 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln19 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_4" [CNN_Optimal/src/cnn.cpp:19]   --->   Operation 36 'specdataflowpipeline' 'specdataflowpipeline_ln19' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %prediction, void @empty_5, i32 0, i32 0, void @empty_4, i32 4294967295, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 38 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @conv_to_pool_streams_str, i32 1, void @p_str, void @p_str, i32 784, i32 784, i32 %conv_to_pool_streams, i32 %conv_to_pool_streams"   --->   Operation 38 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 40 [1/1] (0.00ns)   --->   "%empty_28 = specchannel i32 @_ssdm_op_SpecChannel, void @conv_to_pool_streams_OC_1_str, i32 1, void @p_str, void @p_str, i32 784, i32 784, i32 %conv_to_pool_streams_1, i32 %conv_to_pool_streams_1"   --->   Operation 40 'specchannel' 'empty_28' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_1, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 42 [1/1] (0.00ns)   --->   "%empty_29 = specchannel i32 @_ssdm_op_SpecChannel, void @conv_to_pool_streams_OC_2_str, i32 1, void @p_str, void @p_str, i32 784, i32 784, i32 %conv_to_pool_streams_2, i32 %conv_to_pool_streams_2"   --->   Operation 42 'specchannel' 'empty_29' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_2, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 44 [1/1] (0.00ns)   --->   "%empty_30 = specchannel i32 @_ssdm_op_SpecChannel, void @conv_to_pool_streams_OC_3_str, i32 1, void @p_str, void @p_str, i32 784, i32 784, i32 %conv_to_pool_streams_3, i32 %conv_to_pool_streams_3"   --->   Operation 44 'specchannel' 'empty_30' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 45 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_3, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 45 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 46 [1/1] (0.00ns)   --->   "%empty_31 = specchannel i32 @_ssdm_op_SpecChannel, void @pool_to_flat_streams_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i32 %pool_to_flat_streams, i32 %pool_to_flat_streams"   --->   Operation 46 'specchannel' 'empty_31' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pool_to_flat_streams, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 48 [1/1] (0.00ns)   --->   "%empty_32 = specchannel i32 @_ssdm_op_SpecChannel, void @pool_to_flat_streams_OC_1_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i32 %pool_to_flat_streams_1, i32 %pool_to_flat_streams_1"   --->   Operation 48 'specchannel' 'empty_32' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pool_to_flat_streams_1, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 50 [1/1] (0.00ns)   --->   "%empty_33 = specchannel i32 @_ssdm_op_SpecChannel, void @pool_to_flat_streams_OC_2_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i32 %pool_to_flat_streams_2, i32 %pool_to_flat_streams_2"   --->   Operation 50 'specchannel' 'empty_33' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pool_to_flat_streams_2, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 52 [1/1] (0.00ns)   --->   "%empty_34 = specchannel i32 @_ssdm_op_SpecChannel, void @pool_to_flat_streams_OC_3_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i32 %pool_to_flat_streams_3, i32 %pool_to_flat_streams_3"   --->   Operation 52 'specchannel' 'empty_34' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pool_to_flat_streams_3, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 54 [1/1] (0.00ns)   --->   "%empty_35 = specchannel i32 @_ssdm_op_SpecChannel, void @flat_to_dense_streams_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i32 %flat_to_dense_streams, i32 %flat_to_dense_streams"   --->   Operation 54 'specchannel' 'empty_35' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 56 [1/1] (0.00ns)   --->   "%empty_36 = specchannel i32 @_ssdm_op_SpecChannel, void @flat_to_dense_streams_OC_1_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i32 %flat_to_dense_streams_1, i32 %flat_to_dense_streams_1"   --->   Operation 56 'specchannel' 'empty_36' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_1, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 58 [1/1] (0.00ns)   --->   "%empty_37 = specchannel i32 @_ssdm_op_SpecChannel, void @flat_to_dense_streams_OC_2_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i32 %flat_to_dense_streams_2, i32 %flat_to_dense_streams_2"   --->   Operation 58 'specchannel' 'empty_37' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_2, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 60 [1/1] (0.00ns)   --->   "%empty_38 = specchannel i32 @_ssdm_op_SpecChannel, void @flat_to_dense_streams_OC_3_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i32 %flat_to_dense_streams_3, i32 %flat_to_dense_streams_3"   --->   Operation 60 'specchannel' 'empty_38' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_3, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 62 [1/1] (0.00ns)   --->   "%empty_39 = specchannel i32 @_ssdm_op_SpecChannel, void @dense_to_softmax_streams_str, i32 1, void @p_str, void @p_str, i32 10, i32 10, i32 %dense_to_softmax_streams, i32 %dense_to_softmax_streams"   --->   Operation 62 'specchannel' 'empty_39' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 63 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 63 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 64 [1/1] (0.00ns)   --->   "%empty_40 = specchannel i32 @_ssdm_op_SpecChannel, void @dense_to_softmax_streams_OC_1_str, i32 1, void @p_str, void @p_str, i32 10, i32 10, i32 %dense_to_softmax_streams_1, i32 %dense_to_softmax_streams_1"   --->   Operation 64 'specchannel' 'empty_40' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 65 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_1, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 65 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 66 [1/1] (0.00ns)   --->   "%empty_41 = specchannel i32 @_ssdm_op_SpecChannel, void @dense_to_softmax_streams_OC_2_str, i32 1, void @p_str, void @p_str, i32 10, i32 10, i32 %dense_to_softmax_streams_2, i32 %dense_to_softmax_streams_2"   --->   Operation 66 'specchannel' 'empty_41' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_2, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 67 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 68 [1/1] (0.00ns)   --->   "%empty_42 = specchannel i32 @_ssdm_op_SpecChannel, void @dense_to_softmax_streams_OC_3_str, i32 1, void @p_str, void @p_str, i32 10, i32 10, i32 %dense_to_softmax_streams_3, i32 %dense_to_softmax_streams_3"   --->   Operation 68 'specchannel' 'empty_42' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 69 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_3, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 69 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln60 = call void @dense_layer_soft_max, i32 %dense_to_softmax_streams, i32 %dense_to_softmax_streams_1, i32 %dense_to_softmax_streams_2, i32 %dense_to_softmax_streams_3, i32 %prediction, i32 %dense_biases" [CNN_Optimal/src/cnn.cpp:60]   --->   Operation 70 'call' 'call_ln60' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_10 : Operation 71 [1/1] (0.00ns)   --->   "%ret_ln61 = ret" [CNN_Optimal/src/cnn.cpp:61]   --->   Operation 71 'ret' 'ret_ln61' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 36 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln21 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_3" [CNN_Optimal/src/cnn.cpp:21]   --->   Operation 36 'specdataflowpipeline' 'specdataflowpipeline_ln21' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %prediction, void @empty_4, i32 0, i32 0, void @empty_3, i32 4294967295, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 38 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @conv_to_pool_streams_str, i32 1, void @p_str, void @p_str, i32 784, i32 784, i24 %conv_to_pool_streams, i24 %conv_to_pool_streams"   --->   Operation 38 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 40 [1/1] (0.00ns)   --->   "%empty_35 = specchannel i32 @_ssdm_op_SpecChannel, void @conv_to_pool_streams_OC_1_str, i32 1, void @p_str, void @p_str, i32 784, i32 784, i24 %conv_to_pool_streams_1, i24 %conv_to_pool_streams_1"   --->   Operation 40 'specchannel' 'empty_35' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_1, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 42 [1/1] (0.00ns)   --->   "%empty_36 = specchannel i32 @_ssdm_op_SpecChannel, void @conv_to_pool_streams_OC_2_str, i32 1, void @p_str, void @p_str, i32 784, i32 784, i24 %conv_to_pool_streams_2, i24 %conv_to_pool_streams_2"   --->   Operation 42 'specchannel' 'empty_36' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_2, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 44 [1/1] (0.00ns)   --->   "%empty_37 = specchannel i32 @_ssdm_op_SpecChannel, void @conv_to_pool_streams_OC_3_str, i32 1, void @p_str, void @p_str, i32 784, i32 784, i24 %conv_to_pool_streams_3, i24 %conv_to_pool_streams_3"   --->   Operation 44 'specchannel' 'empty_37' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 45 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %conv_to_pool_streams_3, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 45 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 46 [1/1] (0.00ns)   --->   "%empty_38 = specchannel i32 @_ssdm_op_SpecChannel, void @pool_to_flat_streams_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i24 %pool_to_flat_streams, i24 %pool_to_flat_streams"   --->   Operation 46 'specchannel' 'empty_38' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %pool_to_flat_streams, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 48 [1/1] (0.00ns)   --->   "%empty_39 = specchannel i32 @_ssdm_op_SpecChannel, void @pool_to_flat_streams_OC_1_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i24 %pool_to_flat_streams_1, i24 %pool_to_flat_streams_1"   --->   Operation 48 'specchannel' 'empty_39' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %pool_to_flat_streams_1, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 50 [1/1] (0.00ns)   --->   "%empty_40 = specchannel i32 @_ssdm_op_SpecChannel, void @pool_to_flat_streams_OC_2_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i24 %pool_to_flat_streams_2, i24 %pool_to_flat_streams_2"   --->   Operation 50 'specchannel' 'empty_40' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %pool_to_flat_streams_2, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 52 [1/1] (0.00ns)   --->   "%empty_41 = specchannel i32 @_ssdm_op_SpecChannel, void @pool_to_flat_streams_OC_3_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i24 %pool_to_flat_streams_3, i24 %pool_to_flat_streams_3"   --->   Operation 52 'specchannel' 'empty_41' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %pool_to_flat_streams_3, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 54 [1/1] (0.00ns)   --->   "%empty_42 = specchannel i32 @_ssdm_op_SpecChannel, void @flat_to_dense_streams_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i24 %flat_to_dense_streams, i24 %flat_to_dense_streams"   --->   Operation 54 'specchannel' 'empty_42' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %flat_to_dense_streams, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 56 [1/1] (0.00ns)   --->   "%empty_43 = specchannel i32 @_ssdm_op_SpecChannel, void @flat_to_dense_streams_OC_1_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i24 %flat_to_dense_streams_1, i24 %flat_to_dense_streams_1"   --->   Operation 56 'specchannel' 'empty_43' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %flat_to_dense_streams_1, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 58 [1/1] (0.00ns)   --->   "%empty_44 = specchannel i32 @_ssdm_op_SpecChannel, void @flat_to_dense_streams_OC_2_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i24 %flat_to_dense_streams_2, i24 %flat_to_dense_streams_2"   --->   Operation 58 'specchannel' 'empty_44' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %flat_to_dense_streams_2, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 60 [1/1] (0.00ns)   --->   "%empty_45 = specchannel i32 @_ssdm_op_SpecChannel, void @flat_to_dense_streams_OC_3_str, i32 1, void @p_str, void @p_str, i32 196, i32 196, i24 %flat_to_dense_streams_3, i24 %flat_to_dense_streams_3"   --->   Operation 60 'specchannel' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %flat_to_dense_streams_3, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 62 [1/1] (0.00ns)   --->   "%empty_46 = specchannel i32 @_ssdm_op_SpecChannel, void @dense_to_softmax_streams_str, i32 1, void @p_str, void @p_str, i32 10, i32 10, i24 %dense_to_softmax_streams, i24 %dense_to_softmax_streams"   --->   Operation 62 'specchannel' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 63 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %dense_to_softmax_streams, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 63 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 64 [1/1] (0.00ns)   --->   "%empty_47 = specchannel i32 @_ssdm_op_SpecChannel, void @dense_to_softmax_streams_OC_1_str, i32 1, void @p_str, void @p_str, i32 10, i32 10, i24 %dense_to_softmax_streams_1, i24 %dense_to_softmax_streams_1"   --->   Operation 64 'specchannel' 'empty_47' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 65 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %dense_to_softmax_streams_1, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 65 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 66 [1/1] (0.00ns)   --->   "%empty_48 = specchannel i32 @_ssdm_op_SpecChannel, void @dense_to_softmax_streams_OC_2_str, i32 1, void @p_str, void @p_str, i32 10, i32 10, i24 %dense_to_softmax_streams_2, i24 %dense_to_softmax_streams_2"   --->   Operation 66 'specchannel' 'empty_48' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %dense_to_softmax_streams_2, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 67 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 68 [1/1] (0.00ns)   --->   "%empty_49 = specchannel i32 @_ssdm_op_SpecChannel, void @dense_to_softmax_streams_OC_3_str, i32 1, void @p_str, void @p_str, i32 10, i32 10, i24 %dense_to_softmax_streams_3, i24 %dense_to_softmax_streams_3"   --->   Operation 68 'specchannel' 'empty_49' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 69 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %dense_to_softmax_streams_3, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 69 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln62 = call void @dense_layer_soft_max, i24 %dense_to_softmax_streams, i24 %dense_to_softmax_streams_1, i24 %dense_to_softmax_streams_2, i24 %dense_to_softmax_streams_3, i24 %prediction, i7 %dense_biases" [CNN_Optimal/src/cnn.cpp:62]   --->   Operation 70 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 71 [1/1] (0.00ns)   --->   "%ret_ln63 = ret" [CNN_Optimal/src/cnn.cpp:63]   --->   Operation 71 'ret' 'ret_ln63' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -359,27 +359,13 @@ dense_to_softmax_streams   (alloca              ) [ 00111111111]
 dense_to_softmax_streams_1 (alloca              ) [ 00111111111]
 dense_to_softmax_streams_2 (alloca              ) [ 00111111111]
 dense_to_softmax_streams_3 (alloca              ) [ 00111111111]
-call_ln30                  (call                ) [ 00000000000]
-call_ln43                  (call                ) [ 00000000000]
-call_ln53                  (call                ) [ 00000000000]
-call_ln57                  (call                ) [ 00000000000]
-specdataflowpipeline_ln19  (specdataflowpipeline) [ 00000000000]
+call_ln32                  (call                ) [ 00000000000]
+call_ln45                  (call                ) [ 00000000000]
+call_ln55                  (call                ) [ 00000000000]
+call_ln59                  (call                ) [ 00000000000]
+specdataflowpipeline_ln21  (specdataflowpipeline) [ 00000000000]
 specinterface_ln0          (specinterface       ) [ 00000000000]
 empty                      (specchannel         ) [ 00000000000]
-specinterface_ln0          (specinterface       ) [ 00000000000]
-empty_28                   (specchannel         ) [ 00000000000]
-specinterface_ln0          (specinterface       ) [ 00000000000]
-empty_29                   (specchannel         ) [ 00000000000]
-specinterface_ln0          (specinterface       ) [ 00000000000]
-empty_30                   (specchannel         ) [ 00000000000]
-specinterface_ln0          (specinterface       ) [ 00000000000]
-empty_31                   (specchannel         ) [ 00000000000]
-specinterface_ln0          (specinterface       ) [ 00000000000]
-empty_32                   (specchannel         ) [ 00000000000]
-specinterface_ln0          (specinterface       ) [ 00000000000]
-empty_33                   (specchannel         ) [ 00000000000]
-specinterface_ln0          (specinterface       ) [ 00000000000]
-empty_34                   (specchannel         ) [ 00000000000]
 specinterface_ln0          (specinterface       ) [ 00000000000]
 empty_35                   (specchannel         ) [ 00000000000]
 specinterface_ln0          (specinterface       ) [ 00000000000]
@@ -397,8 +383,22 @@ empty_41                   (specchannel         ) [ 00000000000]
 specinterface_ln0          (specinterface       ) [ 00000000000]
 empty_42                   (specchannel         ) [ 00000000000]
 specinterface_ln0          (specinterface       ) [ 00000000000]
-call_ln60                  (call                ) [ 00000000000]
-ret_ln61                   (ret                 ) [ 00000000000]
+empty_43                   (specchannel         ) [ 00000000000]
+specinterface_ln0          (specinterface       ) [ 00000000000]
+empty_44                   (specchannel         ) [ 00000000000]
+specinterface_ln0          (specinterface       ) [ 00000000000]
+empty_45                   (specchannel         ) [ 00000000000]
+specinterface_ln0          (specinterface       ) [ 00000000000]
+empty_46                   (specchannel         ) [ 00000000000]
+specinterface_ln0          (specinterface       ) [ 00000000000]
+empty_47                   (specchannel         ) [ 00000000000]
+specinterface_ln0          (specinterface       ) [ 00000000000]
+empty_48                   (specchannel         ) [ 00000000000]
+specinterface_ln0          (specinterface       ) [ 00000000000]
+empty_49                   (specchannel         ) [ 00000000000]
+specinterface_ln0          (specinterface       ) [ 00000000000]
+call_ln62                  (call                ) [ 00000000000]
+ret_ln63                   (ret                 ) [ 00000000000]
 </LifeTime>
 
 <model>
@@ -2000,7 +2000,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <pin id="321" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_4"/></StgValue>
+<StgValue><ssdm name="empty_3"/></StgValue>
 </bind>
 </comp>
 
@@ -2018,7 +2018,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <pin id="325" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_5"/></StgValue>
+<StgValue><ssdm name="empty_4"/></StgValue>
 </bind>
 </comp>
 
@@ -2072,7 +2072,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <pin id="337" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_3"/></StgValue>
+<StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 
@@ -2232,7 +2232,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="372" class="1004" name="conv_to_pool_streams_fu_372">
 <pin_list>
 <pin id="373" dir="0" index="0" bw="1" slack="0"/>
-<pin id="374" dir="1" index="1" bw="32" slack="0"/>
+<pin id="374" dir="1" index="1" bw="24" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2243,7 +2243,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="376" class="1004" name="conv_to_pool_streams_1_fu_376">
 <pin_list>
 <pin id="377" dir="0" index="0" bw="1" slack="0"/>
-<pin id="378" dir="1" index="1" bw="32" slack="0"/>
+<pin id="378" dir="1" index="1" bw="24" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2254,7 +2254,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="380" class="1004" name="conv_to_pool_streams_2_fu_380">
 <pin_list>
 <pin id="381" dir="0" index="0" bw="1" slack="0"/>
-<pin id="382" dir="1" index="1" bw="32" slack="0"/>
+<pin id="382" dir="1" index="1" bw="24" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2265,7 +2265,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="384" class="1004" name="conv_to_pool_streams_3_fu_384">
 <pin_list>
 <pin id="385" dir="0" index="0" bw="1" slack="0"/>
-<pin id="386" dir="1" index="1" bw="32" slack="0"/>
+<pin id="386" dir="1" index="1" bw="24" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2276,7 +2276,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="388" class="1004" name="pool_to_flat_streams_fu_388">
 <pin_list>
 <pin id="389" dir="0" index="0" bw="1" slack="0"/>
-<pin id="390" dir="1" index="1" bw="32" slack="2"/>
+<pin id="390" dir="1" index="1" bw="24" slack="2"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2287,7 +2287,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="392" class="1004" name="pool_to_flat_streams_1_fu_392">
 <pin_list>
 <pin id="393" dir="0" index="0" bw="1" slack="0"/>
-<pin id="394" dir="1" index="1" bw="32" slack="2"/>
+<pin id="394" dir="1" index="1" bw="24" slack="2"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2298,7 +2298,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="396" class="1004" name="pool_to_flat_streams_2_fu_396">
 <pin_list>
 <pin id="397" dir="0" index="0" bw="1" slack="0"/>
-<pin id="398" dir="1" index="1" bw="32" slack="2"/>
+<pin id="398" dir="1" index="1" bw="24" slack="2"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2309,7 +2309,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="400" class="1004" name="pool_to_flat_streams_3_fu_400">
 <pin_list>
 <pin id="401" dir="0" index="0" bw="1" slack="0"/>
-<pin id="402" dir="1" index="1" bw="32" slack="2"/>
+<pin id="402" dir="1" index="1" bw="24" slack="2"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2320,7 +2320,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="404" class="1004" name="flat_to_dense_streams_fu_404">
 <pin_list>
 <pin id="405" dir="0" index="0" bw="1" slack="0"/>
-<pin id="406" dir="1" index="1" bw="32" slack="4"/>
+<pin id="406" dir="1" index="1" bw="24" slack="4"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2331,7 +2331,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="408" class="1004" name="flat_to_dense_streams_1_fu_408">
 <pin_list>
 <pin id="409" dir="0" index="0" bw="1" slack="0"/>
-<pin id="410" dir="1" index="1" bw="32" slack="4"/>
+<pin id="410" dir="1" index="1" bw="24" slack="4"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2342,7 +2342,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="412" class="1004" name="flat_to_dense_streams_2_fu_412">
 <pin_list>
 <pin id="413" dir="0" index="0" bw="1" slack="0"/>
-<pin id="414" dir="1" index="1" bw="32" slack="4"/>
+<pin id="414" dir="1" index="1" bw="24" slack="4"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2353,7 +2353,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="416" class="1004" name="flat_to_dense_streams_3_fu_416">
 <pin_list>
 <pin id="417" dir="0" index="0" bw="1" slack="0"/>
-<pin id="418" dir="1" index="1" bw="32" slack="4"/>
+<pin id="418" dir="1" index="1" bw="24" slack="4"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2364,7 +2364,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="420" class="1004" name="dense_to_softmax_streams_fu_420">
 <pin_list>
 <pin id="421" dir="0" index="0" bw="1" slack="0"/>
-<pin id="422" dir="1" index="1" bw="32" slack="6"/>
+<pin id="422" dir="1" index="1" bw="24" slack="6"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2375,7 +2375,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="424" class="1004" name="dense_to_softmax_streams_1_fu_424">
 <pin_list>
 <pin id="425" dir="0" index="0" bw="1" slack="0"/>
-<pin id="426" dir="1" index="1" bw="32" slack="6"/>
+<pin id="426" dir="1" index="1" bw="24" slack="6"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2386,7 +2386,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="428" class="1004" name="dense_to_softmax_streams_2_fu_428">
 <pin_list>
 <pin id="429" dir="0" index="0" bw="1" slack="0"/>
-<pin id="430" dir="1" index="1" bw="32" slack="6"/>
+<pin id="430" dir="1" index="1" bw="24" slack="6"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2397,7 +2397,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="432" class="1004" name="dense_to_softmax_streams_3_fu_432">
 <pin_list>
 <pin id="433" dir="0" index="0" bw="1" slack="0"/>
-<pin id="434" dir="1" index="1" bw="32" slack="6"/>
+<pin id="434" dir="1" index="1" bw="24" slack="6"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -2408,245 +2408,245 @@ ret_ln61                   (ret                 ) [ 00000000000]
 <comp id="436" class="1004" name="grp_convolutional_layer_fu_436">
 <pin_list>
 <pin id="437" dir="0" index="0" bw="0" slack="0"/>
-<pin id="438" dir="0" index="1" bw="32" slack="0"/>
-<pin id="439" dir="0" index="2" bw="32" slack="0"/>
-<pin id="440" dir="0" index="3" bw="32" slack="0"/>
-<pin id="441" dir="0" index="4" bw="32" slack="0"/>
-<pin id="442" dir="0" index="5" bw="32" slack="0"/>
-<pin id="443" dir="0" index="6" bw="32" slack="0"/>
-<pin id="444" dir="0" index="7" bw="32" slack="0"/>
-<pin id="445" dir="0" index="8" bw="32" slack="0"/>
-<pin id="446" dir="0" index="9" bw="32" slack="0"/>
-<pin id="447" dir="0" index="10" bw="32" slack="0"/>
-<pin id="448" dir="0" index="11" bw="32" slack="0"/>
-<pin id="449" dir="0" index="12" bw="32" slack="0"/>
-<pin id="450" dir="0" index="13" bw="32" slack="0"/>
-<pin id="451" dir="0" index="14" bw="32" slack="0"/>
-<pin id="452" dir="0" index="15" bw="32" slack="0"/>
-<pin id="453" dir="0" index="16" bw="32" slack="0"/>
-<pin id="454" dir="0" index="17" bw="32" slack="0"/>
-<pin id="455" dir="0" index="18" bw="32" slack="0"/>
-<pin id="456" dir="0" index="19" bw="32" slack="0"/>
-<pin id="457" dir="0" index="20" bw="32" slack="0"/>
-<pin id="458" dir="0" index="21" bw="32" slack="0"/>
-<pin id="459" dir="0" index="22" bw="32" slack="0"/>
-<pin id="460" dir="0" index="23" bw="32" slack="0"/>
-<pin id="461" dir="0" index="24" bw="32" slack="0"/>
-<pin id="462" dir="0" index="25" bw="32" slack="0"/>
-<pin id="463" dir="0" index="26" bw="32" slack="0"/>
-<pin id="464" dir="0" index="27" bw="32" slack="0"/>
-<pin id="465" dir="0" index="28" bw="32" slack="0"/>
-<pin id="466" dir="0" index="29" bw="32" slack="0"/>
-<pin id="467" dir="0" index="30" bw="32" slack="0"/>
-<pin id="468" dir="0" index="31" bw="32" slack="0"/>
-<pin id="469" dir="0" index="32" bw="32" slack="0"/>
-<pin id="470" dir="0" index="33" bw="32" slack="0"/>
-<pin id="471" dir="0" index="34" bw="32" slack="0"/>
-<pin id="472" dir="0" index="35" bw="32" slack="0"/>
-<pin id="473" dir="0" index="36" bw="32" slack="0"/>
-<pin id="474" dir="0" index="37" bw="32" slack="0"/>
-<pin id="475" dir="0" index="38" bw="32" slack="0"/>
-<pin id="476" dir="0" index="39" bw="32" slack="0"/>
-<pin id="477" dir="0" index="40" bw="32" slack="0"/>
-<pin id="478" dir="0" index="41" bw="32" slack="0"/>
-<pin id="479" dir="0" index="42" bw="32" slack="0"/>
-<pin id="480" dir="0" index="43" bw="32" slack="0"/>
-<pin id="481" dir="0" index="44" bw="32" slack="0"/>
-<pin id="482" dir="0" index="45" bw="32" slack="0"/>
-<pin id="483" dir="0" index="46" bw="32" slack="0"/>
-<pin id="484" dir="0" index="47" bw="32" slack="0"/>
-<pin id="485" dir="0" index="48" bw="32" slack="0"/>
-<pin id="486" dir="0" index="49" bw="32" slack="0"/>
-<pin id="487" dir="0" index="50" bw="32" slack="0"/>
-<pin id="488" dir="0" index="51" bw="32" slack="0"/>
-<pin id="489" dir="0" index="52" bw="32" slack="0"/>
-<pin id="490" dir="0" index="53" bw="32" slack="0"/>
-<pin id="491" dir="0" index="54" bw="32" slack="0"/>
-<pin id="492" dir="0" index="55" bw="32" slack="0"/>
-<pin id="493" dir="0" index="56" bw="32" slack="0"/>
-<pin id="494" dir="0" index="57" bw="32" slack="0"/>
-<pin id="495" dir="0" index="58" bw="32" slack="0"/>
-<pin id="496" dir="0" index="59" bw="32" slack="0"/>
-<pin id="497" dir="0" index="60" bw="32" slack="0"/>
-<pin id="498" dir="0" index="61" bw="32" slack="0"/>
-<pin id="499" dir="0" index="62" bw="32" slack="0"/>
-<pin id="500" dir="0" index="63" bw="32" slack="0"/>
-<pin id="501" dir="0" index="64" bw="32" slack="0"/>
-<pin id="502" dir="0" index="65" bw="32" slack="0"/>
-<pin id="503" dir="0" index="66" bw="32" slack="0"/>
-<pin id="504" dir="0" index="67" bw="32" slack="0"/>
-<pin id="505" dir="0" index="68" bw="32" slack="0"/>
-<pin id="506" dir="0" index="69" bw="32" slack="0"/>
-<pin id="507" dir="0" index="70" bw="32" slack="0"/>
-<pin id="508" dir="0" index="71" bw="32" slack="0"/>
-<pin id="509" dir="0" index="72" bw="32" slack="0"/>
-<pin id="510" dir="0" index="73" bw="32" slack="0"/>
-<pin id="511" dir="0" index="74" bw="32" slack="0"/>
-<pin id="512" dir="0" index="75" bw="32" slack="0"/>
-<pin id="513" dir="0" index="76" bw="32" slack="0"/>
-<pin id="514" dir="0" index="77" bw="32" slack="0"/>
-<pin id="515" dir="0" index="78" bw="32" slack="0"/>
-<pin id="516" dir="0" index="79" bw="32" slack="0"/>
-<pin id="517" dir="0" index="80" bw="32" slack="0"/>
-<pin id="518" dir="0" index="81" bw="32" slack="0"/>
-<pin id="519" dir="0" index="82" bw="32" slack="0"/>
-<pin id="520" dir="0" index="83" bw="32" slack="0"/>
-<pin id="521" dir="0" index="84" bw="32" slack="0"/>
-<pin id="522" dir="0" index="85" bw="32" slack="0"/>
-<pin id="523" dir="0" index="86" bw="32" slack="0"/>
-<pin id="524" dir="0" index="87" bw="32" slack="0"/>
-<pin id="525" dir="0" index="88" bw="32" slack="0"/>
-<pin id="526" dir="0" index="89" bw="32" slack="0"/>
-<pin id="527" dir="0" index="90" bw="32" slack="0"/>
-<pin id="528" dir="0" index="91" bw="32" slack="0"/>
-<pin id="529" dir="0" index="92" bw="32" slack="0"/>
-<pin id="530" dir="0" index="93" bw="32" slack="0"/>
-<pin id="531" dir="0" index="94" bw="32" slack="0"/>
-<pin id="532" dir="0" index="95" bw="32" slack="0"/>
-<pin id="533" dir="0" index="96" bw="32" slack="0"/>
-<pin id="534" dir="0" index="97" bw="32" slack="0"/>
-<pin id="535" dir="0" index="98" bw="32" slack="0"/>
-<pin id="536" dir="0" index="99" bw="32" slack="0"/>
-<pin id="537" dir="0" index="100" bw="32" slack="0"/>
-<pin id="538" dir="0" index="101" bw="32" slack="0"/>
-<pin id="539" dir="0" index="102" bw="32" slack="0"/>
-<pin id="540" dir="0" index="103" bw="32" slack="0"/>
-<pin id="541" dir="0" index="104" bw="32" slack="0"/>
-<pin id="542" dir="0" index="105" bw="32" slack="0"/>
-<pin id="543" dir="0" index="106" bw="32" slack="0"/>
-<pin id="544" dir="0" index="107" bw="32" slack="0"/>
-<pin id="545" dir="0" index="108" bw="32" slack="0"/>
-<pin id="546" dir="0" index="109" bw="32" slack="0"/>
-<pin id="547" dir="0" index="110" bw="32" slack="0"/>
-<pin id="548" dir="0" index="111" bw="32" slack="0"/>
-<pin id="549" dir="0" index="112" bw="32" slack="0"/>
-<pin id="550" dir="0" index="113" bw="32" slack="0"/>
-<pin id="551" dir="0" index="114" bw="32" slack="0"/>
-<pin id="552" dir="0" index="115" bw="32" slack="0"/>
-<pin id="553" dir="0" index="116" bw="32" slack="0"/>
-<pin id="554" dir="0" index="117" bw="32" slack="0"/>
-<pin id="555" dir="0" index="118" bw="32" slack="0"/>
-<pin id="556" dir="0" index="119" bw="32" slack="0"/>
-<pin id="557" dir="0" index="120" bw="32" slack="0"/>
-<pin id="558" dir="0" index="121" bw="32" slack="0"/>
-<pin id="559" dir="0" index="122" bw="32" slack="0"/>
-<pin id="560" dir="0" index="123" bw="32" slack="0"/>
-<pin id="561" dir="0" index="124" bw="32" slack="0"/>
-<pin id="562" dir="0" index="125" bw="32" slack="0"/>
-<pin id="563" dir="0" index="126" bw="32" slack="0"/>
-<pin id="564" dir="0" index="127" bw="32" slack="0"/>
-<pin id="565" dir="0" index="128" bw="32" slack="0"/>
-<pin id="566" dir="0" index="129" bw="32" slack="0"/>
-<pin id="567" dir="0" index="130" bw="32" slack="0"/>
-<pin id="568" dir="0" index="131" bw="32" slack="0"/>
-<pin id="569" dir="0" index="132" bw="32" slack="0"/>
-<pin id="570" dir="0" index="133" bw="32" slack="0"/>
+<pin id="438" dir="0" index="1" bw="24" slack="0"/>
+<pin id="439" dir="0" index="2" bw="24" slack="0"/>
+<pin id="440" dir="0" index="3" bw="24" slack="0"/>
+<pin id="441" dir="0" index="4" bw="24" slack="0"/>
+<pin id="442" dir="0" index="5" bw="24" slack="0"/>
+<pin id="443" dir="0" index="6" bw="24" slack="0"/>
+<pin id="444" dir="0" index="7" bw="24" slack="0"/>
+<pin id="445" dir="0" index="8" bw="24" slack="0"/>
+<pin id="446" dir="0" index="9" bw="24" slack="0"/>
+<pin id="447" dir="0" index="10" bw="24" slack="0"/>
+<pin id="448" dir="0" index="11" bw="24" slack="0"/>
+<pin id="449" dir="0" index="12" bw="24" slack="0"/>
+<pin id="450" dir="0" index="13" bw="24" slack="0"/>
+<pin id="451" dir="0" index="14" bw="24" slack="0"/>
+<pin id="452" dir="0" index="15" bw="24" slack="0"/>
+<pin id="453" dir="0" index="16" bw="24" slack="0"/>
+<pin id="454" dir="0" index="17" bw="24" slack="0"/>
+<pin id="455" dir="0" index="18" bw="24" slack="0"/>
+<pin id="456" dir="0" index="19" bw="24" slack="0"/>
+<pin id="457" dir="0" index="20" bw="24" slack="0"/>
+<pin id="458" dir="0" index="21" bw="24" slack="0"/>
+<pin id="459" dir="0" index="22" bw="24" slack="0"/>
+<pin id="460" dir="0" index="23" bw="24" slack="0"/>
+<pin id="461" dir="0" index="24" bw="24" slack="0"/>
+<pin id="462" dir="0" index="25" bw="24" slack="0"/>
+<pin id="463" dir="0" index="26" bw="24" slack="0"/>
+<pin id="464" dir="0" index="27" bw="24" slack="0"/>
+<pin id="465" dir="0" index="28" bw="24" slack="0"/>
+<pin id="466" dir="0" index="29" bw="24" slack="0"/>
+<pin id="467" dir="0" index="30" bw="24" slack="0"/>
+<pin id="468" dir="0" index="31" bw="24" slack="0"/>
+<pin id="469" dir="0" index="32" bw="24" slack="0"/>
+<pin id="470" dir="0" index="33" bw="24" slack="0"/>
+<pin id="471" dir="0" index="34" bw="24" slack="0"/>
+<pin id="472" dir="0" index="35" bw="24" slack="0"/>
+<pin id="473" dir="0" index="36" bw="24" slack="0"/>
+<pin id="474" dir="0" index="37" bw="24" slack="0"/>
+<pin id="475" dir="0" index="38" bw="24" slack="0"/>
+<pin id="476" dir="0" index="39" bw="24" slack="0"/>
+<pin id="477" dir="0" index="40" bw="24" slack="0"/>
+<pin id="478" dir="0" index="41" bw="24" slack="0"/>
+<pin id="479" dir="0" index="42" bw="24" slack="0"/>
+<pin id="480" dir="0" index="43" bw="24" slack="0"/>
+<pin id="481" dir="0" index="44" bw="24" slack="0"/>
+<pin id="482" dir="0" index="45" bw="24" slack="0"/>
+<pin id="483" dir="0" index="46" bw="24" slack="0"/>
+<pin id="484" dir="0" index="47" bw="24" slack="0"/>
+<pin id="485" dir="0" index="48" bw="24" slack="0"/>
+<pin id="486" dir="0" index="49" bw="24" slack="0"/>
+<pin id="487" dir="0" index="50" bw="24" slack="0"/>
+<pin id="488" dir="0" index="51" bw="24" slack="0"/>
+<pin id="489" dir="0" index="52" bw="24" slack="0"/>
+<pin id="490" dir="0" index="53" bw="24" slack="0"/>
+<pin id="491" dir="0" index="54" bw="24" slack="0"/>
+<pin id="492" dir="0" index="55" bw="24" slack="0"/>
+<pin id="493" dir="0" index="56" bw="24" slack="0"/>
+<pin id="494" dir="0" index="57" bw="24" slack="0"/>
+<pin id="495" dir="0" index="58" bw="24" slack="0"/>
+<pin id="496" dir="0" index="59" bw="24" slack="0"/>
+<pin id="497" dir="0" index="60" bw="24" slack="0"/>
+<pin id="498" dir="0" index="61" bw="24" slack="0"/>
+<pin id="499" dir="0" index="62" bw="24" slack="0"/>
+<pin id="500" dir="0" index="63" bw="24" slack="0"/>
+<pin id="501" dir="0" index="64" bw="24" slack="0"/>
+<pin id="502" dir="0" index="65" bw="24" slack="0"/>
+<pin id="503" dir="0" index="66" bw="24" slack="0"/>
+<pin id="504" dir="0" index="67" bw="24" slack="0"/>
+<pin id="505" dir="0" index="68" bw="24" slack="0"/>
+<pin id="506" dir="0" index="69" bw="24" slack="0"/>
+<pin id="507" dir="0" index="70" bw="24" slack="0"/>
+<pin id="508" dir="0" index="71" bw="24" slack="0"/>
+<pin id="509" dir="0" index="72" bw="24" slack="0"/>
+<pin id="510" dir="0" index="73" bw="24" slack="0"/>
+<pin id="511" dir="0" index="74" bw="24" slack="0"/>
+<pin id="512" dir="0" index="75" bw="24" slack="0"/>
+<pin id="513" dir="0" index="76" bw="24" slack="0"/>
+<pin id="514" dir="0" index="77" bw="24" slack="0"/>
+<pin id="515" dir="0" index="78" bw="24" slack="0"/>
+<pin id="516" dir="0" index="79" bw="24" slack="0"/>
+<pin id="517" dir="0" index="80" bw="24" slack="0"/>
+<pin id="518" dir="0" index="81" bw="24" slack="0"/>
+<pin id="519" dir="0" index="82" bw="24" slack="0"/>
+<pin id="520" dir="0" index="83" bw="24" slack="0"/>
+<pin id="521" dir="0" index="84" bw="6" slack="0"/>
+<pin id="522" dir="0" index="85" bw="8" slack="0"/>
+<pin id="523" dir="0" index="86" bw="7" slack="0"/>
+<pin id="524" dir="0" index="87" bw="8" slack="0"/>
+<pin id="525" dir="0" index="88" bw="8" slack="0"/>
+<pin id="526" dir="0" index="89" bw="9" slack="0"/>
+<pin id="527" dir="0" index="90" bw="8" slack="0"/>
+<pin id="528" dir="0" index="91" bw="9" slack="0"/>
+<pin id="529" dir="0" index="92" bw="8" slack="0"/>
+<pin id="530" dir="0" index="93" bw="9" slack="0"/>
+<pin id="531" dir="0" index="94" bw="8" slack="0"/>
+<pin id="532" dir="0" index="95" bw="9" slack="0"/>
+<pin id="533" dir="0" index="96" bw="8" slack="0"/>
+<pin id="534" dir="0" index="97" bw="9" slack="0"/>
+<pin id="535" dir="0" index="98" bw="8" slack="0"/>
+<pin id="536" dir="0" index="99" bw="8" slack="0"/>
+<pin id="537" dir="0" index="100" bw="9" slack="0"/>
+<pin id="538" dir="0" index="101" bw="8" slack="0"/>
+<pin id="539" dir="0" index="102" bw="8" slack="0"/>
+<pin id="540" dir="0" index="103" bw="9" slack="0"/>
+<pin id="541" dir="0" index="104" bw="8" slack="0"/>
+<pin id="542" dir="0" index="105" bw="8" slack="0"/>
+<pin id="543" dir="0" index="106" bw="8" slack="0"/>
+<pin id="544" dir="0" index="107" bw="9" slack="0"/>
+<pin id="545" dir="0" index="108" bw="9" slack="0"/>
+<pin id="546" dir="0" index="109" bw="8" slack="0"/>
+<pin id="547" dir="0" index="110" bw="9" slack="0"/>
+<pin id="548" dir="0" index="111" bw="9" slack="0"/>
+<pin id="549" dir="0" index="112" bw="8" slack="0"/>
+<pin id="550" dir="0" index="113" bw="8" slack="0"/>
+<pin id="551" dir="0" index="114" bw="8" slack="0"/>
+<pin id="552" dir="0" index="115" bw="9" slack="0"/>
+<pin id="553" dir="0" index="116" bw="9" slack="0"/>
+<pin id="554" dir="0" index="117" bw="8" slack="0"/>
+<pin id="555" dir="0" index="118" bw="9" slack="0"/>
+<pin id="556" dir="0" index="119" bw="9" slack="0"/>
+<pin id="557" dir="0" index="120" bw="9" slack="0"/>
+<pin id="558" dir="0" index="121" bw="9" slack="0"/>
+<pin id="559" dir="0" index="122" bw="9" slack="0"/>
+<pin id="560" dir="0" index="123" bw="9" slack="0"/>
+<pin id="561" dir="0" index="124" bw="9" slack="0"/>
+<pin id="562" dir="0" index="125" bw="7" slack="0"/>
+<pin id="563" dir="0" index="126" bw="9" slack="0"/>
+<pin id="564" dir="0" index="127" bw="9" slack="0"/>
+<pin id="565" dir="0" index="128" bw="9" slack="0"/>
+<pin id="566" dir="0" index="129" bw="10" slack="0"/>
+<pin id="567" dir="0" index="130" bw="9" slack="0"/>
+<pin id="568" dir="0" index="131" bw="9" slack="0"/>
+<pin id="569" dir="0" index="132" bw="9" slack="0"/>
+<pin id="570" dir="0" index="133" bw="9" slack="0"/>
 <pin id="571" dir="1" index="134" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln30/1 "/>
+<opset="call_ln32/1 "/>
 </bind>
 </comp>
 
 <comp id="702" class="1004" name="grp_max_pooling_layer_fu_702">
 <pin_list>
 <pin id="703" dir="0" index="0" bw="0" slack="0"/>
-<pin id="704" dir="0" index="1" bw="32" slack="2"/>
-<pin id="705" dir="0" index="2" bw="32" slack="2"/>
-<pin id="706" dir="0" index="3" bw="32" slack="2"/>
-<pin id="707" dir="0" index="4" bw="32" slack="2"/>
-<pin id="708" dir="0" index="5" bw="32" slack="2"/>
-<pin id="709" dir="0" index="6" bw="32" slack="2"/>
-<pin id="710" dir="0" index="7" bw="32" slack="2"/>
-<pin id="711" dir="0" index="8" bw="32" slack="2"/>
+<pin id="704" dir="0" index="1" bw="24" slack="2"/>
+<pin id="705" dir="0" index="2" bw="24" slack="2"/>
+<pin id="706" dir="0" index="3" bw="24" slack="2"/>
+<pin id="707" dir="0" index="4" bw="24" slack="2"/>
+<pin id="708" dir="0" index="5" bw="24" slack="2"/>
+<pin id="709" dir="0" index="6" bw="24" slack="2"/>
+<pin id="710" dir="0" index="7" bw="24" slack="2"/>
+<pin id="711" dir="0" index="8" bw="24" slack="2"/>
 <pin id="712" dir="1" index="9" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln43/3 "/>
+<opset="call_ln45/3 "/>
 </bind>
 </comp>
 
 <comp id="714" class="1004" name="grp_flattening_layer_fu_714">
 <pin_list>
 <pin id="715" dir="0" index="0" bw="0" slack="0"/>
-<pin id="716" dir="0" index="1" bw="32" slack="4"/>
-<pin id="717" dir="0" index="2" bw="32" slack="4"/>
-<pin id="718" dir="0" index="3" bw="32" slack="4"/>
-<pin id="719" dir="0" index="4" bw="32" slack="4"/>
-<pin id="720" dir="0" index="5" bw="32" slack="4"/>
-<pin id="721" dir="0" index="6" bw="32" slack="4"/>
-<pin id="722" dir="0" index="7" bw="32" slack="4"/>
-<pin id="723" dir="0" index="8" bw="32" slack="4"/>
+<pin id="716" dir="0" index="1" bw="24" slack="4"/>
+<pin id="717" dir="0" index="2" bw="24" slack="4"/>
+<pin id="718" dir="0" index="3" bw="24" slack="4"/>
+<pin id="719" dir="0" index="4" bw="24" slack="4"/>
+<pin id="720" dir="0" index="5" bw="24" slack="4"/>
+<pin id="721" dir="0" index="6" bw="24" slack="4"/>
+<pin id="722" dir="0" index="7" bw="24" slack="4"/>
+<pin id="723" dir="0" index="8" bw="24" slack="4"/>
 <pin id="724" dir="1" index="9" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln53/5 "/>
+<opset="call_ln55/5 "/>
 </bind>
 </comp>
 
 <comp id="726" class="1004" name="grp_dense_layer_fu_726">
 <pin_list>
 <pin id="727" dir="0" index="0" bw="0" slack="0"/>
-<pin id="728" dir="0" index="1" bw="32" slack="6"/>
-<pin id="729" dir="0" index="2" bw="32" slack="6"/>
-<pin id="730" dir="0" index="3" bw="32" slack="6"/>
-<pin id="731" dir="0" index="4" bw="32" slack="6"/>
-<pin id="732" dir="0" index="5" bw="32" slack="6"/>
-<pin id="733" dir="0" index="6" bw="32" slack="6"/>
-<pin id="734" dir="0" index="7" bw="32" slack="6"/>
-<pin id="735" dir="0" index="8" bw="32" slack="6"/>
-<pin id="736" dir="0" index="9" bw="32" slack="0"/>
-<pin id="737" dir="0" index="10" bw="32" slack="0"/>
-<pin id="738" dir="0" index="11" bw="32" slack="0"/>
-<pin id="739" dir="0" index="12" bw="32" slack="0"/>
-<pin id="740" dir="0" index="13" bw="32" slack="0"/>
-<pin id="741" dir="0" index="14" bw="32" slack="0"/>
-<pin id="742" dir="0" index="15" bw="32" slack="0"/>
-<pin id="743" dir="0" index="16" bw="32" slack="0"/>
-<pin id="744" dir="0" index="17" bw="32" slack="0"/>
-<pin id="745" dir="0" index="18" bw="32" slack="0"/>
-<pin id="746" dir="0" index="19" bw="32" slack="0"/>
-<pin id="747" dir="0" index="20" bw="32" slack="0"/>
-<pin id="748" dir="0" index="21" bw="32" slack="0"/>
-<pin id="749" dir="0" index="22" bw="32" slack="0"/>
-<pin id="750" dir="0" index="23" bw="32" slack="0"/>
-<pin id="751" dir="0" index="24" bw="32" slack="0"/>
-<pin id="752" dir="0" index="25" bw="32" slack="0"/>
-<pin id="753" dir="0" index="26" bw="32" slack="0"/>
-<pin id="754" dir="0" index="27" bw="32" slack="0"/>
-<pin id="755" dir="0" index="28" bw="32" slack="0"/>
+<pin id="728" dir="0" index="1" bw="24" slack="6"/>
+<pin id="729" dir="0" index="2" bw="24" slack="6"/>
+<pin id="730" dir="0" index="3" bw="24" slack="6"/>
+<pin id="731" dir="0" index="4" bw="24" slack="6"/>
+<pin id="732" dir="0" index="5" bw="24" slack="6"/>
+<pin id="733" dir="0" index="6" bw="24" slack="6"/>
+<pin id="734" dir="0" index="7" bw="24" slack="6"/>
+<pin id="735" dir="0" index="8" bw="24" slack="6"/>
+<pin id="736" dir="0" index="9" bw="9" slack="0"/>
+<pin id="737" dir="0" index="10" bw="9" slack="0"/>
+<pin id="738" dir="0" index="11" bw="9" slack="0"/>
+<pin id="739" dir="0" index="12" bw="9" slack="0"/>
+<pin id="740" dir="0" index="13" bw="9" slack="0"/>
+<pin id="741" dir="0" index="14" bw="9" slack="0"/>
+<pin id="742" dir="0" index="15" bw="9" slack="0"/>
+<pin id="743" dir="0" index="16" bw="9" slack="0"/>
+<pin id="744" dir="0" index="17" bw="9" slack="0"/>
+<pin id="745" dir="0" index="18" bw="9" slack="0"/>
+<pin id="746" dir="0" index="19" bw="9" slack="0"/>
+<pin id="747" dir="0" index="20" bw="9" slack="0"/>
+<pin id="748" dir="0" index="21" bw="9" slack="0"/>
+<pin id="749" dir="0" index="22" bw="9" slack="0"/>
+<pin id="750" dir="0" index="23" bw="9" slack="0"/>
+<pin id="751" dir="0" index="24" bw="9" slack="0"/>
+<pin id="752" dir="0" index="25" bw="8" slack="0"/>
+<pin id="753" dir="0" index="26" bw="9" slack="0"/>
+<pin id="754" dir="0" index="27" bw="9" slack="0"/>
+<pin id="755" dir="0" index="28" bw="9" slack="0"/>
 <pin id="756" dir="1" index="29" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln57/7 "/>
+<opset="call_ln59/7 "/>
 </bind>
 </comp>
 
 <comp id="778" class="1004" name="grp_dense_layer_soft_max_fu_778">
 <pin_list>
 <pin id="779" dir="0" index="0" bw="0" slack="0"/>
-<pin id="780" dir="0" index="1" bw="32" slack="8"/>
-<pin id="781" dir="0" index="2" bw="32" slack="8"/>
-<pin id="782" dir="0" index="3" bw="32" slack="8"/>
-<pin id="783" dir="0" index="4" bw="32" slack="8"/>
-<pin id="784" dir="0" index="5" bw="32" slack="0"/>
-<pin id="785" dir="0" index="6" bw="32" slack="0"/>
+<pin id="780" dir="0" index="1" bw="24" slack="8"/>
+<pin id="781" dir="0" index="2" bw="24" slack="8"/>
+<pin id="782" dir="0" index="3" bw="24" slack="8"/>
+<pin id="783" dir="0" index="4" bw="24" slack="8"/>
+<pin id="784" dir="0" index="5" bw="24" slack="0"/>
+<pin id="785" dir="0" index="6" bw="7" slack="0"/>
 <pin id="786" dir="1" index="7" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln60/9 "/>
+<opset="call_ln62/9 "/>
 </bind>
 </comp>
 
 <comp id="790" class="1005" name="conv_to_pool_streams_reg_790">
 <pin_list>
-<pin id="791" dir="0" index="0" bw="32" slack="0"/>
-<pin id="792" dir="1" index="1" bw="32" slack="0"/>
+<pin id="791" dir="0" index="0" bw="24" slack="0"/>
+<pin id="792" dir="1" index="1" bw="24" slack="0"/>
 </pin_list>
 <bind>
 <opset="conv_to_pool_streams "/>
@@ -2655,8 +2655,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="796" class="1005" name="conv_to_pool_streams_1_reg_796">
 <pin_list>
-<pin id="797" dir="0" index="0" bw="32" slack="0"/>
-<pin id="798" dir="1" index="1" bw="32" slack="0"/>
+<pin id="797" dir="0" index="0" bw="24" slack="0"/>
+<pin id="798" dir="1" index="1" bw="24" slack="0"/>
 </pin_list>
 <bind>
 <opset="conv_to_pool_streams_1 "/>
@@ -2665,8 +2665,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="802" class="1005" name="conv_to_pool_streams_2_reg_802">
 <pin_list>
-<pin id="803" dir="0" index="0" bw="32" slack="0"/>
-<pin id="804" dir="1" index="1" bw="32" slack="0"/>
+<pin id="803" dir="0" index="0" bw="24" slack="0"/>
+<pin id="804" dir="1" index="1" bw="24" slack="0"/>
 </pin_list>
 <bind>
 <opset="conv_to_pool_streams_2 "/>
@@ -2675,8 +2675,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="808" class="1005" name="conv_to_pool_streams_3_reg_808">
 <pin_list>
-<pin id="809" dir="0" index="0" bw="32" slack="0"/>
-<pin id="810" dir="1" index="1" bw="32" slack="0"/>
+<pin id="809" dir="0" index="0" bw="24" slack="0"/>
+<pin id="810" dir="1" index="1" bw="24" slack="0"/>
 </pin_list>
 <bind>
 <opset="conv_to_pool_streams_3 "/>
@@ -2685,8 +2685,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="814" class="1005" name="pool_to_flat_streams_reg_814">
 <pin_list>
-<pin id="815" dir="0" index="0" bw="32" slack="2"/>
-<pin id="816" dir="1" index="1" bw="32" slack="2"/>
+<pin id="815" dir="0" index="0" bw="24" slack="2"/>
+<pin id="816" dir="1" index="1" bw="24" slack="2"/>
 </pin_list>
 <bind>
 <opset="pool_to_flat_streams "/>
@@ -2695,8 +2695,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="820" class="1005" name="pool_to_flat_streams_1_reg_820">
 <pin_list>
-<pin id="821" dir="0" index="0" bw="32" slack="2"/>
-<pin id="822" dir="1" index="1" bw="32" slack="2"/>
+<pin id="821" dir="0" index="0" bw="24" slack="2"/>
+<pin id="822" dir="1" index="1" bw="24" slack="2"/>
 </pin_list>
 <bind>
 <opset="pool_to_flat_streams_1 "/>
@@ -2705,8 +2705,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="826" class="1005" name="pool_to_flat_streams_2_reg_826">
 <pin_list>
-<pin id="827" dir="0" index="0" bw="32" slack="2"/>
-<pin id="828" dir="1" index="1" bw="32" slack="2"/>
+<pin id="827" dir="0" index="0" bw="24" slack="2"/>
+<pin id="828" dir="1" index="1" bw="24" slack="2"/>
 </pin_list>
 <bind>
 <opset="pool_to_flat_streams_2 "/>
@@ -2715,8 +2715,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="832" class="1005" name="pool_to_flat_streams_3_reg_832">
 <pin_list>
-<pin id="833" dir="0" index="0" bw="32" slack="2"/>
-<pin id="834" dir="1" index="1" bw="32" slack="2"/>
+<pin id="833" dir="0" index="0" bw="24" slack="2"/>
+<pin id="834" dir="1" index="1" bw="24" slack="2"/>
 </pin_list>
 <bind>
 <opset="pool_to_flat_streams_3 "/>
@@ -2725,8 +2725,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="838" class="1005" name="flat_to_dense_streams_reg_838">
 <pin_list>
-<pin id="839" dir="0" index="0" bw="32" slack="4"/>
-<pin id="840" dir="1" index="1" bw="32" slack="4"/>
+<pin id="839" dir="0" index="0" bw="24" slack="4"/>
+<pin id="840" dir="1" index="1" bw="24" slack="4"/>
 </pin_list>
 <bind>
 <opset="flat_to_dense_streams "/>
@@ -2735,8 +2735,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="844" class="1005" name="flat_to_dense_streams_1_reg_844">
 <pin_list>
-<pin id="845" dir="0" index="0" bw="32" slack="4"/>
-<pin id="846" dir="1" index="1" bw="32" slack="4"/>
+<pin id="845" dir="0" index="0" bw="24" slack="4"/>
+<pin id="846" dir="1" index="1" bw="24" slack="4"/>
 </pin_list>
 <bind>
 <opset="flat_to_dense_streams_1 "/>
@@ -2745,8 +2745,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="850" class="1005" name="flat_to_dense_streams_2_reg_850">
 <pin_list>
-<pin id="851" dir="0" index="0" bw="32" slack="4"/>
-<pin id="852" dir="1" index="1" bw="32" slack="4"/>
+<pin id="851" dir="0" index="0" bw="24" slack="4"/>
+<pin id="852" dir="1" index="1" bw="24" slack="4"/>
 </pin_list>
 <bind>
 <opset="flat_to_dense_streams_2 "/>
@@ -2755,8 +2755,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="856" class="1005" name="flat_to_dense_streams_3_reg_856">
 <pin_list>
-<pin id="857" dir="0" index="0" bw="32" slack="4"/>
-<pin id="858" dir="1" index="1" bw="32" slack="4"/>
+<pin id="857" dir="0" index="0" bw="24" slack="4"/>
+<pin id="858" dir="1" index="1" bw="24" slack="4"/>
 </pin_list>
 <bind>
 <opset="flat_to_dense_streams_3 "/>
@@ -2765,8 +2765,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="862" class="1005" name="dense_to_softmax_streams_reg_862">
 <pin_list>
-<pin id="863" dir="0" index="0" bw="32" slack="6"/>
-<pin id="864" dir="1" index="1" bw="32" slack="6"/>
+<pin id="863" dir="0" index="0" bw="24" slack="6"/>
+<pin id="864" dir="1" index="1" bw="24" slack="6"/>
 </pin_list>
 <bind>
 <opset="dense_to_softmax_streams "/>
@@ -2775,8 +2775,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="868" class="1005" name="dense_to_softmax_streams_1_reg_868">
 <pin_list>
-<pin id="869" dir="0" index="0" bw="32" slack="6"/>
-<pin id="870" dir="1" index="1" bw="32" slack="6"/>
+<pin id="869" dir="0" index="0" bw="24" slack="6"/>
+<pin id="870" dir="1" index="1" bw="24" slack="6"/>
 </pin_list>
 <bind>
 <opset="dense_to_softmax_streams_1 "/>
@@ -2785,8 +2785,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="874" class="1005" name="dense_to_softmax_streams_2_reg_874">
 <pin_list>
-<pin id="875" dir="0" index="0" bw="32" slack="6"/>
-<pin id="876" dir="1" index="1" bw="32" slack="6"/>
+<pin id="875" dir="0" index="0" bw="24" slack="6"/>
+<pin id="876" dir="1" index="1" bw="24" slack="6"/>
 </pin_list>
 <bind>
 <opset="dense_to_softmax_streams_2 "/>
@@ -2795,8 +2795,8 @@ ret_ln61                   (ret                 ) [ 00000000000]
 
 <comp id="880" class="1005" name="dense_to_softmax_streams_3_reg_880">
 <pin_list>
-<pin id="881" dir="0" index="0" bw="32" slack="6"/>
-<pin id="882" dir="1" index="1" bw="32" slack="6"/>
+<pin id="881" dir="0" index="0" bw="24" slack="6"/>
+<pin id="882" dir="1" index="1" bw="24" slack="6"/>
 </pin_list>
 <bind>
 <opset="dense_to_softmax_streams_3 "/>
@@ -3408,7 +3408,7 @@ ret_ln61                   (ret                 ) [ 00000000000]
 	Port: dataflow_section : dense_biases | {9 10 }
   - Chain level:
 	State 1
-		call_ln30 : 1
+		call_ln32 : 1
 	State 2
 	State 3
 	State 4
@@ -3428,13 +3428,13 @@ ret_ln61                   (ret                 ) [ 00000000000]
 |----------|---------------------------------|---------|---------|---------|---------|
 | Operation|         Functional Unit         |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|---------------------------------|---------|---------|---------|---------|
-|          |  grp_convolutional_layer_fu_436 |   523   | 1073.51 |  79875  |  131683 |
-|          |   grp_max_pooling_layer_fu_702  |    0    | 16.5216 |   1508  |   2072  |
+|          |  grp_convolutional_layer_fu_436 |   171   | 1394.35 |  44077  |  65549  |
+|          |   grp_max_pooling_layer_fu_702  |    0    |    0    |   540   |   996   |
 |   call   |   grp_flattening_layer_fu_714   |    0    |    0    |    36   |   104   |
-|          |      grp_dense_layer_fu_726     |   200   | 990.022 |  490316 |  234632 |
-|          | grp_dense_layer_soft_max_fu_778 |    9    |  9.2523 |   1308  |   1466  |
+|          |      grp_dense_layer_fu_726     |   7840  | 14929.7 |  632408 |  211660 |
+|          | grp_dense_layer_soft_max_fu_778 |    7    |  4.764  |   3539  |   4298  |
 |----------|---------------------------------|---------|---------|---------|---------|
-|   Total  |                                 |   732   |  2089.3 |  573043 |  369957 |
+|   Total  |                                 |   8018  | 16328.8 |  680600 |  282607 |
 |----------|---------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -3444,24 +3444,24 @@ N/A
 +----------------------------------+--------+
 |                                  |   FF   |
 +----------------------------------+--------+
-|  conv_to_pool_streams_1_reg_796  |   32   |
-|  conv_to_pool_streams_2_reg_802  |   32   |
-|  conv_to_pool_streams_3_reg_808  |   32   |
-|   conv_to_pool_streams_reg_790   |   32   |
-|dense_to_softmax_streams_1_reg_868|   32   |
-|dense_to_softmax_streams_2_reg_874|   32   |
-|dense_to_softmax_streams_3_reg_880|   32   |
-| dense_to_softmax_streams_reg_862 |   32   |
-|  flat_to_dense_streams_1_reg_844 |   32   |
-|  flat_to_dense_streams_2_reg_850 |   32   |
-|  flat_to_dense_streams_3_reg_856 |   32   |
-|   flat_to_dense_streams_reg_838  |   32   |
-|  pool_to_flat_streams_1_reg_820  |   32   |
-|  pool_to_flat_streams_2_reg_826  |   32   |
-|  pool_to_flat_streams_3_reg_832  |   32   |
-|   pool_to_flat_streams_reg_814   |   32   |
+|  conv_to_pool_streams_1_reg_796  |   24   |
+|  conv_to_pool_streams_2_reg_802  |   24   |
+|  conv_to_pool_streams_3_reg_808  |   24   |
+|   conv_to_pool_streams_reg_790   |   24   |
+|dense_to_softmax_streams_1_reg_868|   24   |
+|dense_to_softmax_streams_2_reg_874|   24   |
+|dense_to_softmax_streams_3_reg_880|   24   |
+| dense_to_softmax_streams_reg_862 |   24   |
+|  flat_to_dense_streams_1_reg_844 |   24   |
+|  flat_to_dense_streams_2_reg_850 |   24   |
+|  flat_to_dense_streams_3_reg_856 |   24   |
+|   flat_to_dense_streams_reg_838  |   24   |
+|  pool_to_flat_streams_1_reg_820  |   24   |
+|  pool_to_flat_streams_2_reg_826  |   24   |
+|  pool_to_flat_streams_3_reg_832  |   24   |
+|   pool_to_flat_streams_reg_814   |   24   |
 +----------------------------------+--------+
-|               Total              |   512  |
+|               Total              |   384  |
 +----------------------------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -3477,10 +3477,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   732  |  2089  | 573043 | 369957 |
+|  Function |  8018  |  16328 | 680600 | 282607 |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
-|  Register |    -   |    -   |   512  |    -   |
+|  Register |    -   |    -   |   384  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   732  |  2089  | 573555 | 369957 |
+|   Total   |  8018  |  16328 | 680984 | 282607 |
 +-----------+--------+--------+--------+--------+

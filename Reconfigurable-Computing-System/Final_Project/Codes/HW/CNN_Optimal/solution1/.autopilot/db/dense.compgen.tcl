@@ -6,6 +6,12 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
+set name cnn_mul_24s_9s_32_1_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
+}
+
+
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler cnn_dense_dense_weights_0_0_ROM_AUTO_1R BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
@@ -116,7 +122,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1110 \
+    id 2968 \
     name flat_to_dense_streams_0 \
     type fifo \
     dir I \
@@ -124,14 +130,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_flat_to_dense_streams_0 \
     op interface \
-    ports { flat_to_dense_streams_0_dout { I 32 vector } flat_to_dense_streams_0_num_data_valid { I 9 vector } flat_to_dense_streams_0_fifo_cap { I 9 vector } flat_to_dense_streams_0_empty_n { I 1 bit } flat_to_dense_streams_0_read { O 1 bit } } \
+    ports { flat_to_dense_streams_0_dout { I 24 vector } flat_to_dense_streams_0_num_data_valid { I 9 vector } flat_to_dense_streams_0_fifo_cap { I 9 vector } flat_to_dense_streams_0_empty_n { I 1 bit } flat_to_dense_streams_0_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1111 \
+    id 2969 \
     name filter \
     type other \
     dir I \
@@ -146,7 +152,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1112 \
+    id 2970 \
     name dense_to_softmax_streams_0 \
     type fifo \
     dir O \
@@ -154,7 +160,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_0 \
     op interface \
-    ports { dense_to_softmax_streams_0_din { O 32 vector } dense_to_softmax_streams_0_num_data_valid { I 5 vector } dense_to_softmax_streams_0_fifo_cap { I 5 vector } dense_to_softmax_streams_0_full_n { I 1 bit } dense_to_softmax_streams_0_write { O 1 bit } } \
+    ports { dense_to_softmax_streams_0_din { O 24 vector } dense_to_softmax_streams_0_num_data_valid { I 5 vector } dense_to_softmax_streams_0_fifo_cap { I 5 vector } dense_to_softmax_streams_0_full_n { I 1 bit } dense_to_softmax_streams_0_write { O 1 bit } } \
 } "
 }
 

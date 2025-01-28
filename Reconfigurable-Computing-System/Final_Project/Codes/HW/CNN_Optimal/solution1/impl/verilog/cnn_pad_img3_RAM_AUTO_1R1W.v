@@ -12,7 +12,7 @@ module cnn_pad_img3_RAM_AUTO_1R1W (
      
     reset, clk);
 
-parameter DataWidth = 32;
+parameter DataWidth = 24;
 parameter AddressWidth = 5;
 parameter AddressRange = 25;
  

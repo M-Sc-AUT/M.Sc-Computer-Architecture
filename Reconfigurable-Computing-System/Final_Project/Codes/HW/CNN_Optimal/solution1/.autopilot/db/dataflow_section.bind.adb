@@ -37,7 +37,7 @@
 						<coreId>31</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -73,7 +73,7 @@
 						<coreId>31</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -109,7 +109,7 @@
 						<coreId>31</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -145,7 +145,7 @@
 						<coreId>183</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -181,7 +181,7 @@
 						<coreId>183</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -214,10 +214,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3265841216</coreId>
+						<coreId>2122181768</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -250,10 +250,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260113968</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -286,10 +286,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>542329928</coreId>
+						<coreId>1136</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -322,10 +322,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259165824</coreId>
+						<coreId>2121869808</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -358,10 +358,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260113968</coreId>
+						<coreId>542329928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -394,10 +394,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>542329928</coreId>
+						<coreId>2121869808</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -430,10 +430,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260840464</coreId>
+						<coreId>542329928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -466,10 +466,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3258644992</coreId>
+						<coreId>2121869808</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -502,10 +502,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>448</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -538,10 +538,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259868912</coreId>
+						<coreId>2121869808</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -574,10 +574,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260113968</coreId>
+						<coreId>1668236351</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -610,10 +610,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260113968</coreId>
+						<coreId>136182475</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -646,10 +646,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702060392</coreId>
+						<coreId>1947909024</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -682,10 +682,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259756512</coreId>
+						<coreId>1947909376</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -718,10 +718,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3234451294</coreId>
+						<coreId>2122147200</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -754,10 +754,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260409760</coreId>
+						<coreId>42704823</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -790,10 +790,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3258607344</coreId>
+						<coreId>1145981184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -826,10 +826,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259244832</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -862,10 +862,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3258646528</coreId>
+						<coreId>2206239920</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -898,10 +898,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259636144</coreId>
+						<coreId>41866499</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -934,10 +934,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3225125338</coreId>
+						<coreId>2121872384</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -970,10 +970,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3265762000</coreId>
+						<coreId>2121871360</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1006,10 +1006,10 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3265762000</coreId>
+						<coreId>1946164816</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1042,10 +1042,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1886218528</coreId>
+						<coreId>45598754</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1078,10 +1078,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>542329928</coreId>
+						<coreId>2206238944</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1114,10 +1114,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260239616</coreId>
+						<coreId>4286337462</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1150,10 +1150,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3234818789</coreId>
+						<coreId>1852138543</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1186,10 +1186,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3234910271</coreId>
+						<coreId>2205776416</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1222,10 +1222,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3265768048</coreId>
+						<coreId>2204193856</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1258,10 +1258,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3258641840</coreId>
+						<coreId>2121929536</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1294,10 +1294,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3258669408</coreId>
+						<coreId>41685983</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1330,10 +1330,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3265700160</coreId>
+						<coreId>2122053072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1366,10 +1366,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3265700160</coreId>
+						<coreId>2122052096</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1402,10 +1402,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>320</coreId>
+						<coreId>2121727488</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1438,10 +1438,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260892704</coreId>
+						<coreId>41795429</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1474,10 +1474,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3231928343</coreId>
+						<coreId>1313423963</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1510,10 +1510,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>144</coreId>
+						<coreId>4287153407</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1546,10 +1546,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259244832</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1582,10 +1582,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259244832</coreId>
+						<coreId>2206268048</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1618,10 +1618,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3265677712</coreId>
+						<coreId>1313423963</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1654,10 +1654,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259643872</coreId>
+						<coreId>2205878528</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1690,10 +1690,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3225051412</coreId>
+						<coreId>41073413</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1726,10 +1726,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3265677584</coreId>
+						<coreId>2203968592</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1762,10 +1762,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260972608</coreId>
+						<coreId>3274102464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1798,10 +1798,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3261129536</coreId>
+						<coreId>2121885664</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1834,10 +1834,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259482240</coreId>
+						<coreId>2204094992</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1870,10 +1870,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3234185049</coreId>
+						<coreId>1947909520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1906,10 +1906,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260517376</coreId>
+						<coreId>120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1942,10 +1942,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3261038528</coreId>
+						<coreId>2125474816</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -1978,10 +1978,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3234572440</coreId>
+						<coreId>2125474304</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2014,10 +2014,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260517248</coreId>
+						<coreId>1947909520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2050,10 +2050,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259484816</coreId>
+						<coreId>125</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2086,10 +2086,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936942413</coreId>
+						<coreId>2205481824</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2122,10 +2122,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3235902813</coreId>
+						<coreId>2205714736</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2158,10 +2158,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3235264339</coreId>
+						<coreId>1947909520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2194,10 +2194,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3235164745</coreId>
+						<coreId>122</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2230,10 +2230,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3225049031</coreId>
+						<coreId>2203530416</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2266,10 +2266,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3235165025</coreId>
+						<coreId>2122027104</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2302,10 +2302,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3235750008</coreId>
+						<coreId>1947909520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2338,10 +2338,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3224962243</coreId>
+						<coreId>120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2374,10 +2374,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260517264</coreId>
+						<coreId>2125473856</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2410,10 +2410,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3224487150</coreId>
+						<coreId>825440032</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2446,10 +2446,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3235021146</coreId>
+						<coreId>1947670928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2482,10 +2482,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3224711925</coreId>
+						<coreId>1947909520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2518,10 +2518,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3231904349</coreId>
+						<coreId>120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2554,10 +2554,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3234916508</coreId>
+						<coreId>2122104896</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2590,10 +2590,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3231905825</coreId>
+						<coreId>1330007552</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2626,10 +2626,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3261155456</coreId>
+						<coreId>1947909520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2662,10 +2662,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3265760880</coreId>
+						<coreId>2123668480</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2698,10 +2698,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3237833844</coreId>
+						<coreId>2122109536</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2734,10 +2734,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3261155328</coreId>
+						<coreId>1330007625</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2770,10 +2770,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260791568</coreId>
+						<coreId>1947909520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2806,10 +2806,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259675232</coreId>
+						<coreId>542329928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2842,10 +2842,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260576304</coreId>
+						<coreId>2122045936</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -2878,10 +2878,10 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3234141618</coreId>
+						<coreId>2121756736</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
@@ -2903,7 +2903,7 @@
 						<name>conv_to_pool_streams</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>27</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -2919,7 +2919,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>27</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -2935,7 +2935,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2959,7 +2959,7 @@
 						<name>conv_to_pool_streams_1</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>27</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -2975,7 +2975,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>27</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -2991,7 +2991,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3015,7 +3015,7 @@
 						<name>conv_to_pool_streams_2</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>27</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3031,7 +3031,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>27</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -3047,7 +3047,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3071,7 +3071,7 @@
 						<name>conv_to_pool_streams_3</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>27</lineNumber>
+						<lineNumber>29</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3087,7 +3087,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>27</second>
+										<second>29</second>
 									</item>
 								</second>
 							</item>
@@ -3103,7 +3103,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3127,7 +3127,7 @@
 						<name>pool_to_flat_streams</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3143,7 +3143,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>41</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -3159,7 +3159,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3183,7 +3183,7 @@
 						<name>pool_to_flat_streams_1</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3199,7 +3199,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>41</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -3215,7 +3215,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3239,7 +3239,7 @@
 						<name>pool_to_flat_streams_2</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3255,7 +3255,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>41</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -3271,7 +3271,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3295,7 +3295,7 @@
 						<name>pool_to_flat_streams_3</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>41</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3311,7 +3311,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>41</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -3327,7 +3327,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3351,7 +3351,7 @@
 						<name>flat_to_dense_streams</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3367,7 +3367,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>52</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3383,7 +3383,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3407,7 +3407,7 @@
 						<name>flat_to_dense_streams_1</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3423,7 +3423,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>52</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3439,7 +3439,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3463,7 +3463,7 @@
 						<name>flat_to_dense_streams_2</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3479,7 +3479,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>52</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3495,7 +3495,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3519,7 +3519,7 @@
 						<name>flat_to_dense_streams_3</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3535,7 +3535,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>52</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -3551,7 +3551,7 @@
 						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3575,7 +3575,7 @@
 						<name>dense_to_softmax_streams</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3591,7 +3591,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>56</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -3607,7 +3607,7 @@
 						<coreId>81</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3631,7 +3631,7 @@
 						<name>dense_to_softmax_streams_1</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3647,7 +3647,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>56</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -3663,7 +3663,7 @@
 						<coreId>81</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3687,7 +3687,7 @@
 						<name>dense_to_softmax_streams_2</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3703,7 +3703,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>56</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -3719,7 +3719,7 @@
 						<coreId>81</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3743,7 +3743,7 @@
 						<name>dense_to_softmax_streams_3</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3759,7 +3759,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>56</second>
+										<second>58</second>
 									</item>
 								</second>
 							</item>
@@ -3775,7 +3775,7 @@
 						<coreId>81</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3796,10 +3796,10 @@
 					<Obj>
 						<type>0</type>
 						<id>202</id>
-						<name>_ln30</name>
+						<name>_ln32</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>30</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -3815,7 +3815,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>30</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -3828,7 +3828,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3265762000</coreId>
+						<coreId>2121885968</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3985,10 +3985,10 @@
 					<Obj>
 						<type>0</type>
 						<id>203</id>
-						<name>_ln43</name>
+						<name>_ln45</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -4004,7 +4004,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>43</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -4017,7 +4017,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3234322671</coreId>
+						<coreId>117</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4051,10 +4051,10 @@
 					<Obj>
 						<type>0</type>
 						<id>204</id>
-						<name>_ln53</name>
+						<name>_ln55</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>55</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -4070,7 +4070,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>53</second>
+										<second>55</second>
 									</item>
 								</second>
 							</item>
@@ -4083,7 +4083,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260240384</coreId>
+						<coreId>2205262032</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4117,10 +4117,10 @@
 					<Obj>
 						<type>0</type>
 						<id>205</id>
-						<name>_ln57</name>
+						<name>_ln59</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -4136,7 +4136,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>57</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -4149,7 +4149,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260420912</coreId>
+						<coreId>2130169264</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4203,10 +4203,10 @@
 					<Obj>
 						<type>0</type>
 						<id>206</id>
-						<name>_ln60</name>
+						<name>_ln62</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -4222,7 +4222,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>60</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -4235,7 +4235,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3234435426</coreId>
+						<coreId>134701554</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4268,10 +4268,10 @@
 					<Obj>
 						<type>0</type>
 						<id>207</id>
-						<name>_ln61</name>
+						<name>_ln63</name>
 						<fileName>CNN_Optimal/src/cnn.cpp</fileName>
 						<fileDirectory>/mnt/9636D17436D15639/University/CE-Github-Repository/M.Sc-Computer-Architecture/Reconfigurable-Computing-System/Final_Project/Codes/HW</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>63</lineNumber>
 						<contextFuncName>dataflow_section</contextFuncName>
 						<contextNormFuncName>dataflow_section</contextNormFuncName>
 						<inlineStackInfo>
@@ -4287,7 +4287,7 @@
 											<first>CNN_Optimal/src/cnn.cpp</first>
 											<second>dataflow_section</second>
 										</first>
-										<second>61</second>
+										<second>63</second>
 									</item>
 								</second>
 							</item>
@@ -4300,7 +4300,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3260555520</coreId>
+						<coreId>1946165744</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4376,7 +4376,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3231748891</coreId>
+						<coreId>1947909520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4407,7 +4407,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4268212784</coreId>
+						<coreId>1948234384</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4438,7 +4438,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1127184756</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4469,7 +4469,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3234453503</coreId>
+						<coreId>42726361</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4500,7 +4500,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3259744832</coreId>
+						<coreId>2123109440</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4534,7 +4534,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>531</coreId>
+					<coreId>540946464</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6082,8 +6082,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>19844</mMinLatency>
-			<mMaxLatency>19844</mMaxLatency>
+			<mMinLatency>19642</mMinLatency>
+			<mMaxLatency>19642</mMaxLatency>
 			<mIsDfPipe>1</mIsDfPipe>
 			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_324">
 				<port_list class_id="24" tracking_level="0" version="0">
@@ -7691,7 +7691,7 @@
 						<ssdmobj_id>154</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>784</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>784</suggested_depth>
 						<source_list>
@@ -7730,7 +7730,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 784 1</storage_size>
+						<storage_size>24 784 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_578">
 						<type>1</type>
@@ -7738,7 +7738,7 @@
 						<ssdmobj_id>157</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>784</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>784</suggested_depth>
 						<source_list>
@@ -7773,7 +7773,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 784 1</storage_size>
+						<storage_size>24 784 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_583">
 						<type>1</type>
@@ -7781,7 +7781,7 @@
 						<ssdmobj_id>160</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>784</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>784</suggested_depth>
 						<source_list>
@@ -7816,7 +7816,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 784 1</storage_size>
+						<storage_size>24 784 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_588">
 						<type>1</type>
@@ -7824,7 +7824,7 @@
 						<ssdmobj_id>163</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>784</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>784</suggested_depth>
 						<source_list>
@@ -7859,7 +7859,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 784 1</storage_size>
+						<storage_size>24 784 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_593">
 						<type>1</type>
@@ -7867,7 +7867,7 @@
 						<ssdmobj_id>166</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>196</suggested_depth>
 						<source_list>
@@ -7906,7 +7906,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 196 1</storage_size>
+						<storage_size>24 196 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_599">
 						<type>1</type>
@@ -7914,7 +7914,7 @@
 						<ssdmobj_id>169</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>196</suggested_depth>
 						<source_list>
@@ -7949,7 +7949,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 196 1</storage_size>
+						<storage_size>24 196 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_604">
 						<type>1</type>
@@ -7957,7 +7957,7 @@
 						<ssdmobj_id>172</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>196</suggested_depth>
 						<source_list>
@@ -7992,7 +7992,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 196 1</storage_size>
+						<storage_size>24 196 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_609">
 						<type>1</type>
@@ -8000,7 +8000,7 @@
 						<ssdmobj_id>175</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>196</suggested_depth>
 						<source_list>
@@ -8035,7 +8035,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 196 1</storage_size>
+						<storage_size>24 196 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_614">
 						<type>1</type>
@@ -8043,7 +8043,7 @@
 						<ssdmobj_id>178</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>196</suggested_depth>
 						<source_list>
@@ -8082,7 +8082,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 196 1</storage_size>
+						<storage_size>24 196 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_620">
 						<type>1</type>
@@ -8090,7 +8090,7 @@
 						<ssdmobj_id>181</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>196</suggested_depth>
 						<source_list>
@@ -8125,7 +8125,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 196 1</storage_size>
+						<storage_size>24 196 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_625">
 						<type>1</type>
@@ -8133,7 +8133,7 @@
 						<ssdmobj_id>184</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>196</suggested_depth>
 						<source_list>
@@ -8168,7 +8168,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 196 1</storage_size>
+						<storage_size>24 196 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_630">
 						<type>1</type>
@@ -8176,7 +8176,7 @@
 						<ssdmobj_id>187</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>196</suggested_depth>
 						<source_list>
@@ -8211,7 +8211,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 196 1</storage_size>
+						<storage_size>24 196 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_635">
 						<type>1</type>
@@ -8219,7 +8219,7 @@
 						<ssdmobj_id>190</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>10</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>10</suggested_depth>
 						<source_list>
@@ -8254,7 +8254,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 10 1</storage_size>
+						<storage_size>24 10 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_640">
 						<type>1</type>
@@ -8262,7 +8262,7 @@
 						<ssdmobj_id>193</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>10</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>10</suggested_depth>
 						<source_list>
@@ -8297,7 +8297,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 10 1</storage_size>
+						<storage_size>24 10 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_645">
 						<type>1</type>
@@ -8305,7 +8305,7 @@
 						<ssdmobj_id>196</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>10</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>10</suggested_depth>
 						<source_list>
@@ -8340,7 +8340,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 10 1</storage_size>
+						<storage_size>24 10 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_650">
 						<type>1</type>
@@ -8348,7 +8348,7 @@
 						<ssdmobj_id>199</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>10</depth>
-						<bitwidth>32</bitwidth>
+						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>10</suggested_depth>
 						<source_list>
@@ -8383,7 +8383,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>32 10 1</storage_size>
+						<storage_size>24 10 1</storage_size>
 					</item>
 				</channel_list>
 				<net_list class_id="33" tracking_level="0" version="0">

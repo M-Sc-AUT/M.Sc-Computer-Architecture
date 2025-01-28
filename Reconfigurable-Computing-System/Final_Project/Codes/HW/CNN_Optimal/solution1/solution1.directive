@@ -5,6 +5,11 @@
                 <option name="name" value="cnn"/>
             </pragma>
         </directive>
+        <directive functionName="cnn" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="cnn"/>
+            </pragma>
+        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

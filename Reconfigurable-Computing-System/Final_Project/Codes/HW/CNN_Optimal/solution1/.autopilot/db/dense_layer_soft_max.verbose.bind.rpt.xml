@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_layer_soft_max'" level="0">
-<item name = "Date">Fri Jan 24 15:12:50 2025
+<item name = "Date">Tue Jan 28 19:05:32 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.424 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.141 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">120, 120, 1.200 us, 1.200 us, 120, 120, no</column>
+<column name="">83, 83, 0.830 us, 0.830 us, 83, 83, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36">dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size, 88, 88, 0.880 us, 0.880 us, 88, 88, no</column>
-<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53">dense_layer_soft_max_Pipeline_dense_soft_max_for_digits, 29, 29, 0.290 us, 0.290 us, 29, 29, no</column>
+<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36">dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
+<column name="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53">dense_layer_soft_max_Pipeline_dense_soft_max_for_digits, 47, 47, 0.470 us, 0.470 us, 47, 47, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

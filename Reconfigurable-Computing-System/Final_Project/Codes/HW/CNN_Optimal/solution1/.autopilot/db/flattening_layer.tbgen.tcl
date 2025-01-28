@@ -15,26 +15,26 @@ set DLRegItemOffset 0
 set C_modelName {flattening_layer}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ pool_to_flat_streams_0 int 32 regular {fifo 0 volatile }  }
-	{ pool_to_flat_streams_1 int 32 regular {fifo 0 volatile }  }
-	{ pool_to_flat_streams_2 int 32 regular {fifo 0 volatile }  }
-	{ pool_to_flat_streams_3 int 32 regular {fifo 0 volatile }  }
-	{ flat_to_dense_streams_0 int 32 regular {fifo 1 volatile }  }
-	{ flat_to_dense_streams_1 int 32 regular {fifo 1 volatile }  }
-	{ flat_to_dense_streams_2 int 32 regular {fifo 1 volatile }  }
-	{ flat_to_dense_streams_3 int 32 regular {fifo 1 volatile }  }
+	{ pool_to_flat_streams_0 int 24 regular {fifo 0 volatile }  }
+	{ pool_to_flat_streams_1 int 24 regular {fifo 0 volatile }  }
+	{ pool_to_flat_streams_2 int 24 regular {fifo 0 volatile }  }
+	{ pool_to_flat_streams_3 int 24 regular {fifo 0 volatile }  }
+	{ flat_to_dense_streams_0 int 24 regular {fifo 1 volatile }  }
+	{ flat_to_dense_streams_1 int 24 regular {fifo 1 volatile }  }
+	{ flat_to_dense_streams_2 int 24 regular {fifo 1 volatile }  }
+	{ flat_to_dense_streams_3 int 24 regular {fifo 1 volatile }  }
 }
 set hasAXIMCache 0
 set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
-	{ "Name" : "pool_to_flat_streams_0", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "pool_to_flat_streams_1", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "pool_to_flat_streams_2", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "pool_to_flat_streams_3", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "flat_to_dense_streams_0", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "flat_to_dense_streams_1", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "flat_to_dense_streams_2", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "flat_to_dense_streams_3", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
+	{ "Name" : "pool_to_flat_streams_0", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "pool_to_flat_streams_1", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "pool_to_flat_streams_2", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "pool_to_flat_streams_3", "interface" : "fifo", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "flat_to_dense_streams_0", "interface" : "fifo", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "flat_to_dense_streams_1", "interface" : "fifo", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "flat_to_dense_streams_2", "interface" : "fifo", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "flat_to_dense_streams_3", "interface" : "fifo", "bitwidth" : 24, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 50
 set portList { 
@@ -48,42 +48,42 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ start_out sc_out sc_logic 1 signal -1 } 
 	{ start_write sc_out sc_logic 1 signal -1 } 
-	{ pool_to_flat_streams_0_dout sc_in sc_lv 32 signal 0 } 
+	{ pool_to_flat_streams_0_dout sc_in sc_lv 24 signal 0 } 
 	{ pool_to_flat_streams_0_num_data_valid sc_in sc_lv 9 signal 0 } 
 	{ pool_to_flat_streams_0_fifo_cap sc_in sc_lv 9 signal 0 } 
 	{ pool_to_flat_streams_0_empty_n sc_in sc_logic 1 signal 0 } 
 	{ pool_to_flat_streams_0_read sc_out sc_logic 1 signal 0 } 
-	{ pool_to_flat_streams_1_dout sc_in sc_lv 32 signal 1 } 
+	{ pool_to_flat_streams_1_dout sc_in sc_lv 24 signal 1 } 
 	{ pool_to_flat_streams_1_num_data_valid sc_in sc_lv 9 signal 1 } 
 	{ pool_to_flat_streams_1_fifo_cap sc_in sc_lv 9 signal 1 } 
 	{ pool_to_flat_streams_1_empty_n sc_in sc_logic 1 signal 1 } 
 	{ pool_to_flat_streams_1_read sc_out sc_logic 1 signal 1 } 
-	{ pool_to_flat_streams_2_dout sc_in sc_lv 32 signal 2 } 
+	{ pool_to_flat_streams_2_dout sc_in sc_lv 24 signal 2 } 
 	{ pool_to_flat_streams_2_num_data_valid sc_in sc_lv 9 signal 2 } 
 	{ pool_to_flat_streams_2_fifo_cap sc_in sc_lv 9 signal 2 } 
 	{ pool_to_flat_streams_2_empty_n sc_in sc_logic 1 signal 2 } 
 	{ pool_to_flat_streams_2_read sc_out sc_logic 1 signal 2 } 
-	{ pool_to_flat_streams_3_dout sc_in sc_lv 32 signal 3 } 
+	{ pool_to_flat_streams_3_dout sc_in sc_lv 24 signal 3 } 
 	{ pool_to_flat_streams_3_num_data_valid sc_in sc_lv 9 signal 3 } 
 	{ pool_to_flat_streams_3_fifo_cap sc_in sc_lv 9 signal 3 } 
 	{ pool_to_flat_streams_3_empty_n sc_in sc_logic 1 signal 3 } 
 	{ pool_to_flat_streams_3_read sc_out sc_logic 1 signal 3 } 
-	{ flat_to_dense_streams_0_din sc_out sc_lv 32 signal 4 } 
+	{ flat_to_dense_streams_0_din sc_out sc_lv 24 signal 4 } 
 	{ flat_to_dense_streams_0_num_data_valid sc_in sc_lv 9 signal 4 } 
 	{ flat_to_dense_streams_0_fifo_cap sc_in sc_lv 9 signal 4 } 
 	{ flat_to_dense_streams_0_full_n sc_in sc_logic 1 signal 4 } 
 	{ flat_to_dense_streams_0_write sc_out sc_logic 1 signal 4 } 
-	{ flat_to_dense_streams_1_din sc_out sc_lv 32 signal 5 } 
+	{ flat_to_dense_streams_1_din sc_out sc_lv 24 signal 5 } 
 	{ flat_to_dense_streams_1_num_data_valid sc_in sc_lv 9 signal 5 } 
 	{ flat_to_dense_streams_1_fifo_cap sc_in sc_lv 9 signal 5 } 
 	{ flat_to_dense_streams_1_full_n sc_in sc_logic 1 signal 5 } 
 	{ flat_to_dense_streams_1_write sc_out sc_logic 1 signal 5 } 
-	{ flat_to_dense_streams_2_din sc_out sc_lv 32 signal 6 } 
+	{ flat_to_dense_streams_2_din sc_out sc_lv 24 signal 6 } 
 	{ flat_to_dense_streams_2_num_data_valid sc_in sc_lv 9 signal 6 } 
 	{ flat_to_dense_streams_2_fifo_cap sc_in sc_lv 9 signal 6 } 
 	{ flat_to_dense_streams_2_full_n sc_in sc_logic 1 signal 6 } 
 	{ flat_to_dense_streams_2_write sc_out sc_logic 1 signal 6 } 
-	{ flat_to_dense_streams_3_din sc_out sc_lv 32 signal 7 } 
+	{ flat_to_dense_streams_3_din sc_out sc_lv 24 signal 7 } 
 	{ flat_to_dense_streams_3_num_data_valid sc_in sc_lv 9 signal 7 } 
 	{ flat_to_dense_streams_3_fifo_cap sc_in sc_lv 9 signal 7 } 
 	{ flat_to_dense_streams_3_full_n sc_in sc_logic 1 signal 7 } 
@@ -100,42 +100,42 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "start_out", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_out", "role": "default" }} , 
  	{ "name": "start_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_write", "role": "default" }} , 
- 	{ "name": "pool_to_flat_streams_0_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "dout" }} , 
+ 	{ "name": "pool_to_flat_streams_0_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "dout" }} , 
  	{ "name": "pool_to_flat_streams_0_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "num_data_valid" }} , 
  	{ "name": "pool_to_flat_streams_0_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "fifo_cap" }} , 
  	{ "name": "pool_to_flat_streams_0_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "empty_n" }} , 
  	{ "name": "pool_to_flat_streams_0_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "read" }} , 
- 	{ "name": "pool_to_flat_streams_1_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "dout" }} , 
+ 	{ "name": "pool_to_flat_streams_1_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "dout" }} , 
  	{ "name": "pool_to_flat_streams_1_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "num_data_valid" }} , 
  	{ "name": "pool_to_flat_streams_1_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "fifo_cap" }} , 
  	{ "name": "pool_to_flat_streams_1_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "empty_n" }} , 
  	{ "name": "pool_to_flat_streams_1_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_1", "role": "read" }} , 
- 	{ "name": "pool_to_flat_streams_2_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "dout" }} , 
+ 	{ "name": "pool_to_flat_streams_2_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "dout" }} , 
  	{ "name": "pool_to_flat_streams_2_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "num_data_valid" }} , 
  	{ "name": "pool_to_flat_streams_2_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "fifo_cap" }} , 
  	{ "name": "pool_to_flat_streams_2_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "empty_n" }} , 
  	{ "name": "pool_to_flat_streams_2_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_2", "role": "read" }} , 
- 	{ "name": "pool_to_flat_streams_3_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "dout" }} , 
+ 	{ "name": "pool_to_flat_streams_3_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "dout" }} , 
  	{ "name": "pool_to_flat_streams_3_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "num_data_valid" }} , 
  	{ "name": "pool_to_flat_streams_3_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "fifo_cap" }} , 
  	{ "name": "pool_to_flat_streams_3_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "empty_n" }} , 
  	{ "name": "pool_to_flat_streams_3_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_3", "role": "read" }} , 
- 	{ "name": "flat_to_dense_streams_0_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "flat_to_dense_streams_0", "role": "din" }} , 
+ 	{ "name": "flat_to_dense_streams_0_din", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "flat_to_dense_streams_0", "role": "din" }} , 
  	{ "name": "flat_to_dense_streams_0_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "flat_to_dense_streams_0", "role": "num_data_valid" }} , 
  	{ "name": "flat_to_dense_streams_0_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "flat_to_dense_streams_0", "role": "fifo_cap" }} , 
  	{ "name": "flat_to_dense_streams_0_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "flat_to_dense_streams_0", "role": "full_n" }} , 
  	{ "name": "flat_to_dense_streams_0_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "flat_to_dense_streams_0", "role": "write" }} , 
- 	{ "name": "flat_to_dense_streams_1_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "flat_to_dense_streams_1", "role": "din" }} , 
+ 	{ "name": "flat_to_dense_streams_1_din", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "flat_to_dense_streams_1", "role": "din" }} , 
  	{ "name": "flat_to_dense_streams_1_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "flat_to_dense_streams_1", "role": "num_data_valid" }} , 
  	{ "name": "flat_to_dense_streams_1_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "flat_to_dense_streams_1", "role": "fifo_cap" }} , 
  	{ "name": "flat_to_dense_streams_1_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "flat_to_dense_streams_1", "role": "full_n" }} , 
  	{ "name": "flat_to_dense_streams_1_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "flat_to_dense_streams_1", "role": "write" }} , 
- 	{ "name": "flat_to_dense_streams_2_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "flat_to_dense_streams_2", "role": "din" }} , 
+ 	{ "name": "flat_to_dense_streams_2_din", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "flat_to_dense_streams_2", "role": "din" }} , 
  	{ "name": "flat_to_dense_streams_2_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "flat_to_dense_streams_2", "role": "num_data_valid" }} , 
  	{ "name": "flat_to_dense_streams_2_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "flat_to_dense_streams_2", "role": "fifo_cap" }} , 
  	{ "name": "flat_to_dense_streams_2_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "flat_to_dense_streams_2", "role": "full_n" }} , 
  	{ "name": "flat_to_dense_streams_2_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "flat_to_dense_streams_2", "role": "write" }} , 
- 	{ "name": "flat_to_dense_streams_3_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "flat_to_dense_streams_3", "role": "din" }} , 
+ 	{ "name": "flat_to_dense_streams_3_din", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "flat_to_dense_streams_3", "role": "din" }} , 
  	{ "name": "flat_to_dense_streams_3_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "flat_to_dense_streams_3", "role": "num_data_valid" }} , 
  	{ "name": "flat_to_dense_streams_3_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "flat_to_dense_streams_3", "role": "fifo_cap" }} , 
  	{ "name": "flat_to_dense_streams_3_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "flat_to_dense_streams_3", "role": "full_n" }} , 
@@ -317,12 +317,12 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	pool_to_flat_streams_0 { ap_fifo {  { pool_to_flat_streams_0_dout fifo_data_in 0 32 }  { pool_to_flat_streams_0_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_0_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_0_empty_n fifo_status 0 1 }  { pool_to_flat_streams_0_read fifo_port_we 1 1 } } }
-	pool_to_flat_streams_1 { ap_fifo {  { pool_to_flat_streams_1_dout fifo_data_in 0 32 }  { pool_to_flat_streams_1_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_1_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_1_empty_n fifo_status 0 1 }  { pool_to_flat_streams_1_read fifo_port_we 1 1 } } }
-	pool_to_flat_streams_2 { ap_fifo {  { pool_to_flat_streams_2_dout fifo_data_in 0 32 }  { pool_to_flat_streams_2_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_2_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_2_empty_n fifo_status 0 1 }  { pool_to_flat_streams_2_read fifo_port_we 1 1 } } }
-	pool_to_flat_streams_3 { ap_fifo {  { pool_to_flat_streams_3_dout fifo_data_in 0 32 }  { pool_to_flat_streams_3_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_3_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_3_empty_n fifo_status 0 1 }  { pool_to_flat_streams_3_read fifo_port_we 1 1 } } }
-	flat_to_dense_streams_0 { ap_fifo {  { flat_to_dense_streams_0_din fifo_data_in 1 32 }  { flat_to_dense_streams_0_num_data_valid fifo_status_num_data_valid 0 9 }  { flat_to_dense_streams_0_fifo_cap fifo_update 0 9 }  { flat_to_dense_streams_0_full_n fifo_status 0 1 }  { flat_to_dense_streams_0_write fifo_port_we 1 1 } } }
-	flat_to_dense_streams_1 { ap_fifo {  { flat_to_dense_streams_1_din fifo_data_in 1 32 }  { flat_to_dense_streams_1_num_data_valid fifo_status_num_data_valid 0 9 }  { flat_to_dense_streams_1_fifo_cap fifo_update 0 9 }  { flat_to_dense_streams_1_full_n fifo_status 0 1 }  { flat_to_dense_streams_1_write fifo_port_we 1 1 } } }
-	flat_to_dense_streams_2 { ap_fifo {  { flat_to_dense_streams_2_din fifo_data_in 1 32 }  { flat_to_dense_streams_2_num_data_valid fifo_status_num_data_valid 0 9 }  { flat_to_dense_streams_2_fifo_cap fifo_update 0 9 }  { flat_to_dense_streams_2_full_n fifo_status 0 1 }  { flat_to_dense_streams_2_write fifo_port_we 1 1 } } }
-	flat_to_dense_streams_3 { ap_fifo {  { flat_to_dense_streams_3_din fifo_data_in 1 32 }  { flat_to_dense_streams_3_num_data_valid fifo_status_num_data_valid 0 9 }  { flat_to_dense_streams_3_fifo_cap fifo_update 0 9 }  { flat_to_dense_streams_3_full_n fifo_status 0 1 }  { flat_to_dense_streams_3_write fifo_port_we 1 1 } } }
+	pool_to_flat_streams_0 { ap_fifo {  { pool_to_flat_streams_0_dout fifo_data_in 0 24 }  { pool_to_flat_streams_0_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_0_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_0_empty_n fifo_status 0 1 }  { pool_to_flat_streams_0_read fifo_port_we 1 1 } } }
+	pool_to_flat_streams_1 { ap_fifo {  { pool_to_flat_streams_1_dout fifo_data_in 0 24 }  { pool_to_flat_streams_1_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_1_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_1_empty_n fifo_status 0 1 }  { pool_to_flat_streams_1_read fifo_port_we 1 1 } } }
+	pool_to_flat_streams_2 { ap_fifo {  { pool_to_flat_streams_2_dout fifo_data_in 0 24 }  { pool_to_flat_streams_2_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_2_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_2_empty_n fifo_status 0 1 }  { pool_to_flat_streams_2_read fifo_port_we 1 1 } } }
+	pool_to_flat_streams_3 { ap_fifo {  { pool_to_flat_streams_3_dout fifo_data_in 0 24 }  { pool_to_flat_streams_3_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_3_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_3_empty_n fifo_status 0 1 }  { pool_to_flat_streams_3_read fifo_port_we 1 1 } } }
+	flat_to_dense_streams_0 { ap_fifo {  { flat_to_dense_streams_0_din fifo_data_in 1 24 }  { flat_to_dense_streams_0_num_data_valid fifo_status_num_data_valid 0 9 }  { flat_to_dense_streams_0_fifo_cap fifo_update 0 9 }  { flat_to_dense_streams_0_full_n fifo_status 0 1 }  { flat_to_dense_streams_0_write fifo_port_we 1 1 } } }
+	flat_to_dense_streams_1 { ap_fifo {  { flat_to_dense_streams_1_din fifo_data_in 1 24 }  { flat_to_dense_streams_1_num_data_valid fifo_status_num_data_valid 0 9 }  { flat_to_dense_streams_1_fifo_cap fifo_update 0 9 }  { flat_to_dense_streams_1_full_n fifo_status 0 1 }  { flat_to_dense_streams_1_write fifo_port_we 1 1 } } }
+	flat_to_dense_streams_2 { ap_fifo {  { flat_to_dense_streams_2_din fifo_data_in 1 24 }  { flat_to_dense_streams_2_num_data_valid fifo_status_num_data_valid 0 9 }  { flat_to_dense_streams_2_fifo_cap fifo_update 0 9 }  { flat_to_dense_streams_2_full_n fifo_status 0 1 }  { flat_to_dense_streams_2_write fifo_port_we 1 1 } } }
+	flat_to_dense_streams_3 { ap_fifo {  { flat_to_dense_streams_3_din fifo_data_in 1 24 }  { flat_to_dense_streams_3_num_data_valid fifo_status_num_data_valid 0 9 }  { flat_to_dense_streams_3_fifo_cap fifo_update 0 9 }  { flat_to_dense_streams_3_full_n fifo_status 0 1 }  { flat_to_dense_streams_3_write fifo_port_we 1 1 } } }
 }

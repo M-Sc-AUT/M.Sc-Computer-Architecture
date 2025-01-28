@@ -17,22 +17,22 @@ port (
     ap_continue : IN STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    dense_to_softmax_streams_0_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+    dense_to_softmax_streams_0_dout : IN STD_LOGIC_VECTOR (23 downto 0);
     dense_to_softmax_streams_0_num_data_valid : IN STD_LOGIC_VECTOR (4 downto 0);
     dense_to_softmax_streams_0_fifo_cap : IN STD_LOGIC_VECTOR (4 downto 0);
     dense_to_softmax_streams_0_empty_n : IN STD_LOGIC;
     dense_to_softmax_streams_0_read : OUT STD_LOGIC;
-    dense_to_softmax_streams_1_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+    dense_to_softmax_streams_1_dout : IN STD_LOGIC_VECTOR (23 downto 0);
     dense_to_softmax_streams_1_num_data_valid : IN STD_LOGIC_VECTOR (4 downto 0);
     dense_to_softmax_streams_1_fifo_cap : IN STD_LOGIC_VECTOR (4 downto 0);
     dense_to_softmax_streams_1_empty_n : IN STD_LOGIC;
     dense_to_softmax_streams_1_read : OUT STD_LOGIC;
-    dense_to_softmax_streams_2_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+    dense_to_softmax_streams_2_dout : IN STD_LOGIC_VECTOR (23 downto 0);
     dense_to_softmax_streams_2_num_data_valid : IN STD_LOGIC_VECTOR (4 downto 0);
     dense_to_softmax_streams_2_fifo_cap : IN STD_LOGIC_VECTOR (4 downto 0);
     dense_to_softmax_streams_2_empty_n : IN STD_LOGIC;
     dense_to_softmax_streams_2_read : OUT STD_LOGIC;
-    dense_to_softmax_streams_3_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+    dense_to_softmax_streams_3_dout : IN STD_LOGIC_VECTOR (23 downto 0);
     dense_to_softmax_streams_3_num_data_valid : IN STD_LOGIC_VECTOR (4 downto 0);
     dense_to_softmax_streams_3_fifo_cap : IN STD_LOGIC_VECTOR (4 downto 0);
     dense_to_softmax_streams_3_empty_n : IN STD_LOGIC;
@@ -40,10 +40,10 @@ port (
     prediction_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
     prediction_ce0 : OUT STD_LOGIC;
     prediction_we0 : OUT STD_LOGIC;
-    prediction_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+    prediction_d0 : OUT STD_LOGIC_VECTOR (23 downto 0);
     prediction_address1 : OUT STD_LOGIC_VECTOR (3 downto 0);
     prediction_ce1 : OUT STD_LOGIC;
-    prediction_q1 : IN STD_LOGIC_VECTOR (31 downto 0) );
+    prediction_q1 : IN STD_LOGIC_VECTOR (23 downto 0) );
 end;
 
 
@@ -80,9 +80,9 @@ attribute shreg_extract : string;
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_address0 : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_ce0 : STD_LOGIC;
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_we0 : STD_LOGIC;
-    signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_exp_sum_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_exp_sum_out_ap_vld : STD_LOGIC;
+    signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_d0 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_p_out : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_p_out_ap_vld : STD_LOGIC;
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_ap_start : STD_LOGIC;
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_ap_done : STD_LOGIC;
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_ap_idle : STD_LOGIC;
@@ -90,7 +90,7 @@ attribute shreg_extract : string;
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_address0 : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_ce0 : STD_LOGIC;
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_we0 : STD_LOGIC;
-    signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_d0 : STD_LOGIC_VECTOR (23 downto 0);
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_address1 : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_ce1 : STD_LOGIC;
     signal grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_ap_start_reg : STD_LOGIC := '0';
@@ -118,22 +118,22 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        dense_to_softmax_streams_0_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+        dense_to_softmax_streams_0_dout : IN STD_LOGIC_VECTOR (23 downto 0);
         dense_to_softmax_streams_0_num_data_valid : IN STD_LOGIC_VECTOR (4 downto 0);
         dense_to_softmax_streams_0_fifo_cap : IN STD_LOGIC_VECTOR (4 downto 0);
         dense_to_softmax_streams_0_empty_n : IN STD_LOGIC;
         dense_to_softmax_streams_0_read : OUT STD_LOGIC;
-        dense_to_softmax_streams_1_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+        dense_to_softmax_streams_1_dout : IN STD_LOGIC_VECTOR (23 downto 0);
         dense_to_softmax_streams_1_num_data_valid : IN STD_LOGIC_VECTOR (4 downto 0);
         dense_to_softmax_streams_1_fifo_cap : IN STD_LOGIC_VECTOR (4 downto 0);
         dense_to_softmax_streams_1_empty_n : IN STD_LOGIC;
         dense_to_softmax_streams_1_read : OUT STD_LOGIC;
-        dense_to_softmax_streams_2_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+        dense_to_softmax_streams_2_dout : IN STD_LOGIC_VECTOR (23 downto 0);
         dense_to_softmax_streams_2_num_data_valid : IN STD_LOGIC_VECTOR (4 downto 0);
         dense_to_softmax_streams_2_fifo_cap : IN STD_LOGIC_VECTOR (4 downto 0);
         dense_to_softmax_streams_2_empty_n : IN STD_LOGIC;
         dense_to_softmax_streams_2_read : OUT STD_LOGIC;
-        dense_to_softmax_streams_3_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+        dense_to_softmax_streams_3_dout : IN STD_LOGIC_VECTOR (23 downto 0);
         dense_to_softmax_streams_3_num_data_valid : IN STD_LOGIC_VECTOR (4 downto 0);
         dense_to_softmax_streams_3_fifo_cap : IN STD_LOGIC_VECTOR (4 downto 0);
         dense_to_softmax_streams_3_empty_n : IN STD_LOGIC;
@@ -141,9 +141,9 @@ attribute shreg_extract : string;
         prediction_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
         prediction_ce0 : OUT STD_LOGIC;
         prediction_we0 : OUT STD_LOGIC;
-        prediction_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        exp_sum_out : OUT STD_LOGIC_VECTOR (31 downto 0);
-        exp_sum_out_ap_vld : OUT STD_LOGIC );
+        prediction_d0 : OUT STD_LOGIC_VECTOR (23 downto 0);
+        p_out : OUT STD_LOGIC_VECTOR (23 downto 0);
+        p_out_ap_vld : OUT STD_LOGIC );
     end component;
 
 
@@ -158,11 +158,11 @@ attribute shreg_extract : string;
         prediction_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
         prediction_ce0 : OUT STD_LOGIC;
         prediction_we0 : OUT STD_LOGIC;
-        prediction_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        prediction_d0 : OUT STD_LOGIC_VECTOR (23 downto 0);
         prediction_address1 : OUT STD_LOGIC_VECTOR (3 downto 0);
         prediction_ce1 : OUT STD_LOGIC;
-        prediction_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
-        exp_sum_reload : IN STD_LOGIC_VECTOR (31 downto 0) );
+        prediction_q1 : IN STD_LOGIC_VECTOR (23 downto 0);
+        conv_i : IN STD_LOGIC_VECTOR (23 downto 0) );
     end component;
 
 
@@ -200,8 +200,8 @@ begin
         prediction_ce0 => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_ce0,
         prediction_we0 => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_we0,
         prediction_d0 => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_d0,
-        exp_sum_out => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_exp_sum_out,
-        exp_sum_out_ap_vld => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_exp_sum_out_ap_vld);
+        p_out => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_p_out,
+        p_out_ap_vld => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_p_out_ap_vld);
 
     grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53 : component cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits
     port map (
@@ -218,7 +218,7 @@ begin
         prediction_address1 => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_address1,
         prediction_ce1 => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_53_prediction_ce1,
         prediction_q1 => prediction_q1,
-        exp_sum_reload => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_exp_sum_out);
+        conv_i => grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_p_out);
 
 
 
@@ -473,7 +473,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
             prediction_d0 <= grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_36_prediction_d0;
         else 
-            prediction_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            prediction_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 

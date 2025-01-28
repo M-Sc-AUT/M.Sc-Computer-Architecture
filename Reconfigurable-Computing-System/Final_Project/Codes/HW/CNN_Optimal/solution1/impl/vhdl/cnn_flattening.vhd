@@ -16,12 +16,12 @@ port (
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    pool_to_flat_streams_0_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+    pool_to_flat_streams_0_dout : IN STD_LOGIC_VECTOR (23 downto 0);
     pool_to_flat_streams_0_num_data_valid : IN STD_LOGIC_VECTOR (8 downto 0);
     pool_to_flat_streams_0_fifo_cap : IN STD_LOGIC_VECTOR (8 downto 0);
     pool_to_flat_streams_0_empty_n : IN STD_LOGIC;
     pool_to_flat_streams_0_read : OUT STD_LOGIC;
-    flat_to_dense_streams_0_din : OUT STD_LOGIC_VECTOR (31 downto 0);
+    flat_to_dense_streams_0_din : OUT STD_LOGIC_VECTOR (23 downto 0);
     flat_to_dense_streams_0_num_data_valid : IN STD_LOGIC_VECTOR (8 downto 0);
     flat_to_dense_streams_0_fifo_cap : IN STD_LOGIC_VECTOR (8 downto 0);
     flat_to_dense_streams_0_full_n : IN STD_LOGIC;
@@ -132,11 +132,11 @@ attribute shreg_extract : string;
     signal r_2_fu_68_p2 : STD_LOGIC_VECTOR (3 downto 0);
     signal r_2_reg_89 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_enable_reg_pp0_iter0_reg : STD_LOGIC := '0';
-    signal r_1_fu_36 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
+    signal r_fu_36 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal ap_block_state2_pp0_stage1_iter0 : BOOLEAN;
     signal ap_block_pp0_stage1_11001 : BOOLEAN;
     signal ap_loop_init : STD_LOGIC;
-    signal ap_sig_allocacmp_r : STD_LOGIC_VECTOR (3 downto 0);
+    signal ap_sig_allocacmp_r_1 : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_block_state3_pp0_stage2_iter0 : BOOLEAN;
     signal ap_block_pp0_stage2_11001 : BOOLEAN;
     signal ap_block_state4_pp0_stage3_iter0 : BOOLEAN;
@@ -293,13 +293,13 @@ begin
     end process;
 
 
-    r_1_fu_36_assign_proc : process (ap_clk)
+    r_fu_36_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-                r_1_fu_36 <= ap_const_lv4_0;
+                r_fu_36 <= ap_const_lv4_0;
             elsif (((icmp_ln10_reg_85 = ap_const_lv1_0) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1))) then 
-                r_1_fu_36 <= r_2_reg_89;
+                r_fu_36 <= r_2_reg_89;
             end if; 
         end if;
     end process;
@@ -843,12 +843,12 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_r_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, r_1_fu_36, ap_loop_init)
+    ap_sig_allocacmp_r_1_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, r_fu_36, ap_loop_init)
     begin
         if (((ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            ap_sig_allocacmp_r <= ap_const_lv4_0;
+            ap_sig_allocacmp_r_1 <= ap_const_lv4_0;
         else 
-            ap_sig_allocacmp_r <= r_1_fu_36;
+            ap_sig_allocacmp_r_1 <= r_fu_36;
         end if; 
     end process;
 
@@ -877,7 +877,7 @@ begin
         end if; 
     end process;
 
-    icmp_ln10_fu_62_p2 <= "1" when (ap_sig_allocacmp_r = ap_const_lv4_E) else "0";
+    icmp_ln10_fu_62_p2 <= "1" when (ap_sig_allocacmp_r_1 = ap_const_lv4_E) else "0";
 
     pool_to_flat_streams_0_blk_n_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_enable_reg_pp0_iter1, pool_to_flat_streams_0_empty_n, ap_CS_fsm_pp0_stage13, icmp_ln10_reg_85, ap_CS_fsm_pp0_stage1, ap_block_pp0_stage1, ap_CS_fsm_pp0_stage2, ap_block_pp0_stage2, ap_CS_fsm_pp0_stage3, ap_block_pp0_stage3, ap_CS_fsm_pp0_stage4, ap_block_pp0_stage4, ap_CS_fsm_pp0_stage5, ap_block_pp0_stage5, ap_CS_fsm_pp0_stage6, ap_block_pp0_stage6, ap_CS_fsm_pp0_stage7, ap_block_pp0_stage7, ap_CS_fsm_pp0_stage8, ap_block_pp0_stage8, ap_CS_fsm_pp0_stage9, ap_block_pp0_stage9, ap_CS_fsm_pp0_stage10, ap_block_pp0_stage10, ap_CS_fsm_pp0_stage11, ap_block_pp0_stage11, ap_CS_fsm_pp0_stage12, ap_block_pp0_stage12, ap_block_pp0_stage13, ap_block_pp0_stage0)
     begin
@@ -902,5 +902,5 @@ begin
         end if; 
     end process;
 
-    r_2_fu_68_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_r) + unsigned(ap_const_lv4_1));
+    r_2_fu_68_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_r_1) + unsigned(ap_const_lv4_1));
 end behav;

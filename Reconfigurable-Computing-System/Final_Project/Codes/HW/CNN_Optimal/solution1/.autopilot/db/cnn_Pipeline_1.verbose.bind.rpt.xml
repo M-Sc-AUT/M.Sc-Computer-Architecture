@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_Pipeline_1'" level="0">
-<item name = "Date">Fri Jan 24 14:37:57 2025
+<item name = "Date">Tue Jan 28 18:27:01 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">CNN_Optimal</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.746 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 5.915 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1167, 1167, 11.670 us, 11.670 us, 1167, 1167, no</column>
+<column name="">44, 44, 0.440 us, 0.440 us, 44, 44, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">1165, 1165, 11, 1, 1, 1156, yes</column>
+<column name="- Loop 1">42, 42, 11, 1, 1, 33, yes</column>
 </table>
 </item>
 </section>

@@ -10,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1058 \
+    id 975 \
     name pool_to_flat_streams_0 \
     type fifo \
     dir I \
@@ -18,14 +18,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_pool_to_flat_streams_0 \
     op interface \
-    ports { pool_to_flat_streams_0_dout { I 32 vector } pool_to_flat_streams_0_num_data_valid { I 9 vector } pool_to_flat_streams_0_fifo_cap { I 9 vector } pool_to_flat_streams_0_empty_n { I 1 bit } pool_to_flat_streams_0_read { O 1 bit } } \
+    ports { pool_to_flat_streams_0_dout { I 24 vector } pool_to_flat_streams_0_num_data_valid { I 9 vector } pool_to_flat_streams_0_fifo_cap { I 9 vector } pool_to_flat_streams_0_empty_n { I 1 bit } pool_to_flat_streams_0_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1059 \
+    id 976 \
     name flat_to_dense_streams_0 \
     type fifo \
     dir O \
@@ -33,7 +33,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_flat_to_dense_streams_0 \
     op interface \
-    ports { flat_to_dense_streams_0_din { O 32 vector } flat_to_dense_streams_0_num_data_valid { I 9 vector } flat_to_dense_streams_0_fifo_cap { I 9 vector } flat_to_dense_streams_0_full_n { I 1 bit } flat_to_dense_streams_0_write { O 1 bit } } \
+    ports { flat_to_dense_streams_0_din { O 24 vector } flat_to_dense_streams_0_num_data_valid { I 9 vector } flat_to_dense_streams_0_fifo_cap { I 9 vector } flat_to_dense_streams_0_full_n { I 1 bit } flat_to_dense_streams_0_write { O 1 bit } } \
 } "
 }
 
